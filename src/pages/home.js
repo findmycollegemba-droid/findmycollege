@@ -19,7 +19,7 @@ export function renderHomePage() {
           <!-- Trust Eyebrow Pill -->
           <div class="c4s-trust-pill">
             <span class="trust-dot"></span>
-            <span class="trust-pill-text">✨ FINDMYCOLLEGE • INDIA'S MOST TRUSTED MBA & PGDM PORTAL</span>
+            <span class="trust-pill-text">✨ FINDMYCOLLEGES • INDIA'S MOST TRUSTED MBA & PGDM PORTAL</span>
             <span class="trust-badge-accent">2026-27 Audited</span>
           </div>
 

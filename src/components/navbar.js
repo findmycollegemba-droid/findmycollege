@@ -11,7 +11,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
             </svg>
           </div>
           <div class="brand-text">
-            <span class="brand-title">FindMy<span class="brand-accent">College</span></span>
+            <span class="brand-title">FindMy<span class="brand-accent">Colleges</span></span>
           </div>
         </a>
 
@@ -190,7 +190,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
                 <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
               </svg>
             </div>
-            <span class="brand-title">FindMy<span class="brand-accent">College</span></span>
+            <span class="brand-title">FindMy<span class="brand-accent">Colleges</span></span>
           </div>
           <button class="mobile-drawer-close-btn" id="closeMobileDrawerBtn" aria-label="Close menu">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>

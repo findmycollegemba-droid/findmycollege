@@ -110,7 +110,7 @@ function renderFullArticleView(article) {
           <div class="author-avatar lg">${article.author.charAt(0)}</div>
           <div>
             <div class="author-name">${article.author}</div>
-            <div class="author-badge">Verified Mentor • FindMyCollege Admissions Faculty</div>
+            <div class="author-badge">Verified Mentor • FindMyColleges Admissions Faculty</div>
           </div>
         </div>
       </header>

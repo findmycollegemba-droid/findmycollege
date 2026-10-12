@@ -481,7 +481,7 @@ export function renderToolsPage(activeSub = 'cat') {
                 <div class="edu-step-card">
                   <span class="step-num">Step 4</span>
                   <h4>Scan & Predict Calls</h4>
-                  <p>Paste into the FindMyCollege Calculator above for instant sectional audits, slot scaling, and call forecasts.</p>
+                  <p>Paste into the FindMyColleges Calculator above for instant sectional audits, slot scaling, and call forecasts.</p>
                 </div>
               </div>
             </article>

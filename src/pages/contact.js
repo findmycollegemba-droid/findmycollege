@@ -120,7 +120,7 @@ export function renderContactPage() {
             <div class="sidebar-box-icon">💬</div>
             <h3>Instant WhatsApp Helpdesk</h3>
             <p>Have an urgent query regarding exam deadlines or forms? Chat with our admission counselors directly.</p>
-            <a href="https://api.whatsapp.com/send?phone=919876543210&text=Hi%20FindMyCollege%20Team,%20I%20need%20help%20with%20MBA%20Admissions" target="_blank" class="whatsapp-btn">
+            <a href="https://api.whatsapp.com/send?phone=919876543210&text=Hi%20FindMyColleges%20Team,%20I%20need%20help%20with%20MBA%20Admissions" target="_blank" class="whatsapp-btn">
               <span>Chat on WhatsApp</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
             </a>
@@ -132,19 +132,19 @@ export function renderContactPage() {
             <div class="hub-item">
               <div class="hub-city">🏛️ Delhi-NCR Center</div>
               <div class="hub-address">Barakhamba Road, Connaught Place, New Delhi - 110001</div>
-              <div class="hub-contact">📞 +91 11 4567 8900 • delhi@findmycollege.in</div>
+              <div class="hub-contact">📞 +91 11 4567 8900 • delhi@findmycolleges.in</div>
             </div>
 
             <div class="hub-item">
               <div class="hub-city">🌊 Mumbai Center</div>
               <div class="hub-address">Bandra-Kurla Complex (BKC), Bandra East, Mumbai - 400051</div>
-              <div class="hub-contact">📞 +91 22 2654 3210 • mumbai@findmycollege.in</div>
+              <div class="hub-contact">📞 +91 22 2654 3210 • mumbai@findmycolleges.in</div>
             </div>
 
             <div class="hub-item">
               <div class="hub-city">🚀 Bengaluru Center</div>
               <div class="hub-address">Indiranagar 100ft Road, Bengaluru, Karnataka - 560038</div>
-              <div class="hub-contact">📞 +91 80 4123 4567 • blr@findmycollege.in</div>
+              <div class="hub-contact">📞 +91 80 4123 4567 • blr@findmycolleges.in</div>
             </div>
           </div>
         </div>
