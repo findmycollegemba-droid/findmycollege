@@ -383,7 +383,6 @@ export function renderCollegesPage() {
               </button>
             </div>
           </aside>
-          <div class="mobile-filter-backdrop" id="mobileFilterBackdrop"></div>
 
           <!-- RIGHT COLUMN: RESULTS FEED -->
           <main class="portal-results-feed">
@@ -436,6 +435,7 @@ export function renderCollegesPage() {
           </main>
 
         </div>
+        <div class="mobile-filter-backdrop" id="mobileFilterBackdrop"></div>
       </section>
 
       <!-- FLOATING COMPARE BOTTOM DRAWER -->

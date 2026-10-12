@@ -462,7 +462,6 @@ export function renderHomePage() {
               </button>
             </div>
           </aside>
-          <div class="mobile-filter-backdrop" id="mobileFilterBackdrop"></div>
 
           <!-- RIGHT COLUMN: RESULTS FEED -->
           <main class="portal-results-feed">
@@ -515,6 +514,7 @@ export function renderHomePage() {
           </main>
 
         </div>
+        <div class="mobile-filter-backdrop" id="mobileFilterBackdrop"></div>
       </section>
 
       <!-- 3. LIVE EXAM COUNTDOWN TICKERS -->

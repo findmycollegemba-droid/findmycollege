@@ -3495,7 +3495,7 @@ button, input, select, textarea {
   align-items: start;
 }
 
-/* Mobile Filter Bar */
+/* Mobile Filter Bar & Drawer Elements (Hidden on Desktop by default) */
 .mobile-filter-bar {
   display: none;
   grid-column: 1 / -1;
@@ -3505,6 +3505,15 @@ button, input, select, textarea {
   padding: 10px 14px;
   justify-content: space-between;
   align-items: center;
+}
+.filter-drawer-close-btn {
+  display: none !important;
+}
+.mobile-filter-drawer-footer {
+  display: none !important;
+}
+.mobile-filter-backdrop {
+  display: none !important;
 }
 [data-theme="dark"] .mobile-filter-bar {
   background: var(--bg-surface-card);
@@ -5352,28 +5361,6 @@ button, input, select, textarea {
   .portal-layout-container {
     grid-template-columns: 1fr;
   }
-  .mobile-filter-bar {
-    display: flex;
-  }
-  .portal-filter-sidebar {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    max-height: 100vh;
-    z-index: 10001;
-    border-radius: 0;
-  }
-  .portal-filter-sidebar.mobile-open {
-    display: block;
-    animation: slideInDrawer 0.3s ease;
-  }
-  @keyframes slideInDrawer {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
-  }
   .shiksha-metrics-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -6997,6 +6984,50 @@ html, body {
   }
 }
 
+/* ============================================================
+   DESKTOP VIEWPORT LOCK (>= 993px)
+   Guarantees 2-column grid layout, sticky sidebar, and full-width feed
+============================================================ */
+@media (min-width: 993px) {
+  .portal-layout-container {
+    display: grid !important;
+    grid-template-columns: 290px 1fr !important;
+    gap: 28px !important;
+    align-items: start !important;
+  }
+  .portal-filter-sidebar {
+    display: block !important;
+    position: sticky !important;
+    top: 86px !important;
+    max-height: calc(100vh - 100px) !important;
+    overflow-y: auto !important;
+    transform: none !important;
+    width: auto !important;
+    height: auto !important;
+    box-shadow: 0 2px 12px rgba(1, 22, 56, 0.05) !important;
+    border-radius: var(--radius-lg) !important;
+    z-index: 10 !important;
+    background: #ffffff !important;
+    border: 1px solid var(--border-card) !important;
+    padding: 20px !important;
+  }
+  .portal-results-feed {
+    display: block !important;
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+  .shiksha-metrics-grid {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .filter-drawer-close-btn,
+  .mobile-filter-drawer-footer,
+  .mobile-filter-bar,
+  .mobile-filter-backdrop,
+  .mobile-bottom-dock {
+    display: none !important;
+  }
+}
+
 /* Tablet & Mobile Colleges Filter Bar & Drawer */
 @media (max-width: 992px) {
   .portal-layout-container {
@@ -7086,7 +7117,7 @@ html, body {
   .filter-drawer-close-btn {
     width: 32px;
     height: 32px;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
     background: #ffffff;
@@ -7102,7 +7133,7 @@ html, body {
     -webkit-overflow-scrolling: touch;
   }
   .mobile-filter-drawer-footer {
-    display: block;
+    display: block !important;
     padding: 12px 18px;
     background: #ffffff;
     border-top: 1px solid #e2e8f0;
