@@ -131,7 +131,12 @@ export function renderCollegesPage() {
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
                 <h3>Filters</h3>
               </div>
-              <button class="filter-reset-link" id="resetAllFiltersBtn">Reset All</button>
+              <div class="filter-header-right-btns">
+                <button class="filter-reset-link" id="resetAllFiltersBtn">Reset All</button>
+                <button class="filter-drawer-close-btn" id="closeFilterDrawerBtn" aria-label="Close Filters">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+              </div>
             </div>
 
             <!-- Active Filters Summary Chips -->
@@ -371,14 +376,14 @@ export function renderCollegesPage() {
 
             </div>
 
-            <!-- Sidebar Promo Banner -->
-            <div class="sidebar-counseling-box">
-              <span class="counseling-mini-badge">AI Assistant</span>
-              <h4>Not sure which B-School fits your profile?</h4>
-              <p>AdmitIQ evaluates your 10th, 12th, graduation score & work-ex to give instant recommendations.</p>
-              <a href="#ai-chat" class="sidebar-counseling-btn">Ask AI Mentor →</a>
+            <!-- Mobile Sticky Footer -->
+            <div class="mobile-filter-drawer-footer">
+              <button class="btn-apply-filters-dock" id="applyMobileFilterBtn">
+                Apply Filters & View Colleges
+              </button>
             </div>
           </aside>
+          <div class="mobile-filter-backdrop" id="mobileFilterBackdrop"></div>
 
           <!-- RIGHT COLUMN: RESULTS FEED -->
           <main class="portal-results-feed">

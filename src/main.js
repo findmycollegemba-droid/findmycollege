@@ -27,13 +27,13 @@ import { EXAMS_DATA } from './data/examsData.js';
 const state = {
   currentPage: 'home',
   currentSub: null,
-  theme: localStorage.getItem('pc_theme') || 'light',
+  theme: 'light',
   chatHistory: []
 };
 
 // Initialize App
 function initApp() {
-  document.documentElement.setAttribute('data-theme', state.theme);
+  document.documentElement.setAttribute('data-theme', 'light');
   
   // Render App Skeleton
   const appEl = document.getElementById('app');
@@ -160,15 +160,8 @@ function setupGlobalEvents() {
 }
 
 function setupNavbarEvents() {
-  // Theme Toggle
-  const themeBtn = document.getElementById('themeToggleBtn');
-  if (themeBtn) {
-    themeBtn.addEventListener('click', () => {
-      state.theme = state.theme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', state.theme);
-      localStorage.setItem('pc_theme', state.theme);
-    });
-  }
+  // Always enforce clean light theme
+  document.documentElement.setAttribute('data-theme', 'light');
 
   // Search Trigger
   const searchBtn = document.getElementById('openSearchBtn');
@@ -176,20 +169,31 @@ function setupNavbarEvents() {
     searchBtn.addEventListener('click', () => toggleSearchModal(true));
   }
 
-  // Mobile Menu
+  // Mobile Menu Drawer
   const mobileBtn = document.getElementById('mobileMenuBtn');
+  const closeDrawerBtn = document.getElementById('closeMobileDrawerBtn');
+  const drawerBackdrop = document.getElementById('mobileDrawerBackdrop');
   const drawer = document.getElementById('mobileNavDrawer');
-  if (mobileBtn && drawer) {
+
+  const toggleDrawer = (open) => {
+    if (drawer) drawer.classList.toggle('open', open);
+    if (drawerBackdrop) drawerBackdrop.classList.toggle('open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+
+  if (mobileBtn) {
     mobileBtn.addEventListener('click', () => {
-      drawer.classList.toggle('open');
+      const isOpen = drawer?.classList.contains('open');
+      toggleDrawer(!isOpen);
     });
   }
 
+  closeDrawerBtn?.addEventListener('click', () => toggleDrawer(false));
+  drawerBackdrop?.addEventListener('click', () => toggleDrawer(false));
+
   // Close drawer on link click
   document.querySelectorAll('.mobile-nav-content a').forEach(link => {
-    link.addEventListener('click', () => {
-      if (drawer) drawer.classList.remove('open');
-    });
+    link.addEventListener('click', () => toggleDrawer(false));
   });
 }
 
@@ -789,12 +793,27 @@ function initCollegesInteractions(subId, params) {
     });
   }
 
-  // Mobile Filter Drawer toggle
+  // Mobile Filter Drawer toggle & close
+  const closeFilterDrawerBtn = document.getElementById('closeFilterDrawerBtn');
+  const applyMobileFilterBtn = document.getElementById('applyMobileFilterBtn');
+  const mobileFilterBackdrop = document.getElementById('mobileFilterBackdrop');
+
+  const setMobileFilterOpen = (open) => {
+    if (sidebar) sidebar.classList.toggle('mobile-open', open);
+    if (mobileFilterBackdrop) mobileFilterBackdrop.classList.toggle('open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+
   if (mobileFilterToggleBtn && sidebar) {
     mobileFilterToggleBtn.addEventListener('click', () => {
-      sidebar.classList.toggle('mobile-open');
+      const isOpen = sidebar.classList.contains('mobile-open');
+      setMobileFilterOpen(!isOpen);
     });
   }
+
+  closeFilterDrawerBtn?.addEventListener('click', () => setMobileFilterOpen(false));
+  applyMobileFilterBtn?.addEventListener('click', () => setMobileFilterOpen(false));
+  mobileFilterBackdrop?.addEventListener('click', () => setMobileFilterOpen(false));
 
   // Compare Checkboxes & Action handlers
   document.addEventListener('change', (e) => {
