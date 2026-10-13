@@ -1,76 +1,363 @@
-import { EXAMS_DATA } from '../data/examsData.js';
 import { COLLEGES_DATA } from '../data/collegesData.js';
+import { CITY_INFOGRAPHICS_DATA } from '../data/cityInfographicsData.js';
 import { BLOGS_DATA } from '../data/blogsData.js';
-import { renderCollegesCards } from './colleges.js';
 
-export function renderHomePage() {
-  return `
-    <div class="page-home college4sure-theme">
-      <!-- 1. COLLEGE4SURE SEARCH HERO -->
-      <section class="c4s-hero-section">
-        <!-- Ambient Neon Blobs -->
-        <div class="hero-blobs-wrap" aria-hidden="true">
-          <div class="blob b1"></div>
-          <div class="blob b2"></div>
-          <div class="blob b3"></div>
+// Helper to filter featured colleges by category
+export function getFeaturedColleges(category = 'nirf') {
+  if (category === 'roi') {
+    // High ROI: Low fees (< 15L), high average salary
+    return COLLEGES_DATA
+      .filter(c => c.feeNum && c.feeNum <= 15 && c.avgSalaryNum)
+      .sort((a, b) => (b.avgSalaryNum / b.feeNum) - (a.avgSalaryNum / a.feeNum))
+      .slice(0, 6);
+  } else if (category === 'metro') {
+    // Metro powerhouses in Delhi-NCR, Mumbai, Bengaluru, Pune
+    const metroColleges = COLLEGES_DATA.filter(c => ['Delhi-NCR', 'Mumbai', 'Bengaluru', 'Pune'].includes(c.city));
+    return metroColleges.slice(0, 6);
+  } else if (category === 'iim') {
+    // Premier IIMs
+    return COLLEGES_DATA.filter(c => c.shortName?.startsWith('IIM ') || c.name.startsWith('IIM ')).slice(0, 6);
+  } else {
+    // Default NIRF Top Tier
+    return COLLEGES_DATA
+      .filter(c => c.nirfRank)
+      .sort((a, b) => a.nirfRank - b.nirfRank)
+      .slice(0, 6);
+  }
+}
+
+// Render Featured College Cards (compact, sleek light theme)
+export function renderFeaturedCollegesCards(category = 'nirf') {
+  const colleges = getFeaturedColleges(category);
+  
+  return colleges.map(c => `
+    <div class="featured-college-card" data-college-id="${c.id}">
+      <div class="fcard-header">
+        <div class="fcard-avatar">${c.shortName ? c.shortName.substring(0, 3) : 'MBA'}</div>
+        <div class="fcard-meta">
+          <div class="fcard-rank-row">
+            ${c.nirfRank ? `<span class="fcard-badge-nirf">#${c.nirfRank} NIRF 2026</span>` : ''}
+            <span class="fcard-badge-type">${c.degreeTypes ? c.degreeTypes[0] : 'MBA'}</span>
+            <span class="fcard-city">📍 ${c.city}</span>
+          </div>
+          <h3 class="fcard-title" title="${c.name}">${c.shortName || c.name}</h3>
+        </div>
+      </div>
+
+      <div class="fcard-kpi-grid">
+        <div class="fcard-kpi-item">
+          <span class="kpi-label">Course Fee (2-Yr)</span>
+          <span class="kpi-val fee-val">${c.fees || 'N/A'}</span>
+        </div>
+        <div class="fcard-kpi-item">
+          <span class="kpi-label">Avg CTC / Salary</span>
+          <span class="kpi-val salary-val">${c.avgSalary || 'N/A'}</span>
+        </div>
+        <div class="fcard-kpi-item">
+          <span class="kpi-label">Cutoff (General)</span>
+          <span class="kpi-val cutoff-val">${c.cutoffCAT !== 'N/A' ? 'CAT: ' + c.cutoffCAT : (c.cutoffXAT !== 'N/A' ? 'XAT: ' + c.cutoffXAT : 'Exam Mapped')}</span>
+        </div>
+        <div class="fcard-kpi-item">
+          <span class="kpi-label">ROI Rating</span>
+          <span class="kpi-val roi-val">⭐ ${c.roiScore || '9.0 / 10'}</span>
+        </div>
+      </div>
+
+      <div class="fcard-recruiters">
+        <span class="rec-label">Top Hiring Partners:</span>
+        <span class="rec-names">${(c.topRecruiters || []).slice(0, 3).join(', ')}</span>
+      </div>
+
+      <div class="fcard-actions">
+        <button class="btn-fcard-brochure" data-brochure-id="${c.id}">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Brochure</span>
+        </button>
+        <button class="btn-fcard-view" data-college-detail="${c.id}">
+          <span>View 360° Profile</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Render City Infographic Cards
+export function renderCityInfographicCards(filterCity = 'all') {
+  const list = filterCity === 'all' 
+    ? CITY_INFOGRAPHICS_DATA 
+    : CITY_INFOGRAPHICS_DATA.filter(c => c.id === filterCity || c.cityName.toLowerCase() === filterCity.toLowerCase());
+
+  return list.map(city => `
+    <div class="city-infographic-card" data-city-id="${city.id}">
+      <!-- Card Top Banner -->
+      <div class="city-card-banner" style="background: ${city.gradient};">
+        <div class="city-banner-top">
+          <span class="city-emblem">${city.icon}</span>
+          <span class="city-colleges-badge">🏫 ${city.collegesCount} Top B-Schools</span>
+        </div>
+        <h3 class="city-card-name">${city.cityName}</h3>
+        <p class="city-card-tagline">${city.tagline}</p>
+      </div>
+
+      <!-- Card Infographic Body -->
+      <div class="city-card-body">
+        <!-- 4 KPI Blocks -->
+        <div class="city-stats-quad">
+          <div class="city-stat-box">
+            <span class="cs-label">Avg Package</span>
+            <span class="cs-value text-accent">${city.avgCTC}</span>
+            <span class="cs-sub">${city.avgCTCLabel}</span>
+          </div>
+          <div class="city-stat-box">
+            <span class="cs-label">Highest Package</span>
+            <span class="cs-value text-green">${city.highestCTC}</span>
+            <span class="cs-sub">${city.highestCollege}</span>
+          </div>
+          <div class="city-stat-box">
+            <span class="cs-label">2-Yr Fee Range</span>
+            <span class="cs-value">${city.feeRange}</span>
+            <span class="cs-sub">Min to Max</span>
+          </div>
+          <div class="city-stat-box">
+            <span class="cs-label">Student Rating</span>
+            <span class="cs-value text-amber">⭐ ${city.studentRating}</span>
+            <span class="cs-sub">${city.livingCostIndex.split('(')[0]}</span>
+          </div>
         </div>
 
-        <div class="c4s-hero-container">
-          <!-- Trust Eyebrow Pill -->
-          <div class="c4s-trust-pill">
-            <span class="trust-dot"></span>
-            <span class="trust-pill-text">✨ FINDMYCOLLEGES • INDIA'S MOST TRUSTED MBA & PGDM PORTAL</span>
-            <span class="trust-badge-accent">2026-27 Audited</span>
+        <!-- Best ROI Highlight Pill -->
+        <div class="city-roi-pill">
+          <span class="roi-pill-icon">💎</span>
+          <div class="roi-pill-text">
+            <strong>Best ROI Star:</strong> ${city.bestROICollege}
+          </div>
+        </div>
+
+        <!-- Hiring Sectors Infographic Mini Bars -->
+        <div class="city-sectors-breakdown">
+          <span class="sectors-title">Dominant Hiring Sectors:</span>
+          <div class="sectors-progress-stacked">
+            ${city.sectorBreakdown.map(s => `
+              <div class="sector-bar-segment" style="width: ${s.percent}%; background: ${s.color};" title="${s.name}: ${s.percent}%"></div>
+            `).join('')}
+          </div>
+          <div class="sectors-legend">
+            ${city.sectorBreakdown.map(s => `
+              <span class="sector-legend-item">
+                <span class="legend-dot" style="background: ${s.color};"></span>
+                <span>${s.name} (${s.percent}%)</span>
+              </span>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- Key Recruiters Badges -->
+        <div class="city-recruiters-row">
+          <span class="rec-row-title">Active Recruiters:</span>
+          <div class="rec-chips-wrap">
+            ${city.topRecruiters.slice(0, 4).map(r => `<span class="rec-chip">${r}</span>`).join('')}
+            <span class="rec-chip-more">+${city.topRecruiters.length - 4} more</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Action Buttons -->
+      <div class="city-card-footer">
+        <button class="btn-city-infographic-modal" data-open-city-modal="${city.id}">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+          <span>View Full Infographic</span>
+        </button>
+        <a href="#colleges?city=${encodeURIComponent(city.cityName)}" class="btn-city-explore" data-route="colleges" data-city-direct="${city.cityName}">
+          <span>Explore ${city.collegesCount} Colleges</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Render City Infographic Modal Content (Rich Visual Breakdown)
+export function renderCityInfographicModalContent(cityId) {
+  const city = CITY_INFOGRAPHICS_DATA.find(c => c.id === cityId) || CITY_INFOGRAPHICS_DATA[0];
+
+  return `
+    <div class="city-modal-content">
+      <!-- Modal Header Banner -->
+      <div class="city-modal-header" style="background: ${city.gradient};">
+        <div class="city-modal-header-top">
+          <div class="city-modal-title-group">
+            <span class="city-modal-emblem">${city.icon}</span>
+            <div>
+              <span class="city-modal-badge">CITY INFOGRAPHIC & PLACEMENT REPORT</span>
+              <h2 class="city-modal-heading">${city.cityName} MBA Colleges Ecosystem</h2>
+              <p class="city-modal-sub">${city.tagline}</p>
+            </div>
+          </div>
+          <button class="city-modal-close-btn" id="closeCityModalBtn" aria-label="Close modal">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="city-modal-body">
+        <!-- 4 Key Infographic Metrics -->
+        <div class="city-modal-kpi-grid">
+          <div class="modal-kpi-card">
+            <div class="mk-icon">🏫</div>
+            <div class="mk-data">
+              <span class="mk-val">${city.collegesCount}</span>
+              <span class="mk-label">Verified B-Schools</span>
+            </div>
+          </div>
+          <div class="modal-kpi-card">
+            <div class="mk-icon">💼</div>
+            <div class="mk-data">
+              <span class="mk-val text-blue">${city.avgCTC}</span>
+              <span class="mk-label">${city.avgCTCLabel}</span>
+            </div>
+          </div>
+          <div class="modal-kpi-card">
+            <div class="mk-icon">🚀</div>
+            <div class="mk-data">
+              <span class="mk-val text-green">${city.highestCTC}</span>
+              <span class="mk-label">Highest Package (${city.highestCollege})</span>
+            </div>
+          </div>
+          <div class="modal-kpi-card">
+            <div class="mk-icon">💰</div>
+            <div class="mk-data">
+              <span class="mk-val">${city.feeRange}</span>
+              <span class="mk-label">Tuition Fee Range (2-Yr)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Study Here Card -->
+        <div class="modal-info-block">
+          <h4 class="block-title">💡 Why Pursue an MBA in ${city.cityName}?</h4>
+          <p class="block-text">${city.whyStudyHere}</p>
+          <div class="block-highlights-row">
+            <div class="bh-item">
+              <strong>🏭 Industry Clusters:</strong>
+              <span>${city.industryStrengths}</span>
+            </div>
+            <div class="bh-item">
+              <strong>🚇 Transit & Living:</strong>
+              <span>${city.metroConnectivity} • ${city.livingCostIndex}</span>
+            </div>
+            <div class="bh-item">
+              <strong>📝 Entrance Exams:</strong>
+              <span>${city.examsAccepted.join(', ')}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dominant Hiring Sectors Breakdown -->
+        <div class="modal-info-block">
+          <h4 class="block-title">📊 Dominant Hiring Sectors & Placement Distribution</h4>
+          <div class="modal-sectors-grid">
+            ${city.sectorBreakdown.map(s => `
+              <div class="modal-sector-card">
+                <div class="msc-header">
+                  <span class="msc-name">${s.name}</span>
+                  <span class="msc-percent" style="color: ${s.color};">${s.percent}%</span>
+                </div>
+                <div class="msc-bar-bg">
+                  <div class="msc-bar-fill" style="width: ${s.percent}%; background: ${s.color};"></div>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- Flagship Colleges Table -->
+        <div class="modal-info-block">
+          <h4 class="block-title">🏆 Flagship B-Schools in ${city.cityName}</h4>
+          <div class="modal-colleges-table-wrap">
+            <table class="modal-colleges-table">
+              <thead>
+                <tr>
+                  <th>College Name</th>
+                  <th>Key Strength / Tag</th>
+                  <th>Average CTC</th>
+                  <th>2-Yr Course Fee</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${city.flagshipColleges.map(fc => `
+                  <tr>
+                    <td><strong>${fc.name}</strong></td>
+                    <td><span class="table-tag-badge">${fc.badge}</span></td>
+                    <td class="table-salary">${fc.ctc}</td>
+                    <td>${fc.fees}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Top Recruiters Row -->
+        <div class="modal-info-block">
+          <h4 class="block-title">🤝 Top Corporate Recruiters</h4>
+          <div class="modal-recruiters-cloud">
+            ${city.topRecruiters.map(r => `<span class="recruiter-badge-pill">${r}</span>`).join('')}
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer CTA -->
+      <div class="city-modal-footer">
+        <div class="footer-left-info">
+          <span>Found ${city.collegesCount} verified colleges in ${city.cityName}</span>
+        </div>
+        <div class="footer-right-actions">
+          <button class="btn-modal-cancel" id="closeCityModalCancelBtn">Close</button>
+          <a href="#colleges?city=${encodeURIComponent(city.cityName)}" class="btn-modal-primary-explore" id="modalExploreCityCollegesBtn">
+            <span>Explore All ${city.collegesCount} ${city.cityName} Colleges</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// MAIN HOME PAGE RENDERER
+export function renderHomePage() {
+  return `
+    <div class="page-home light-portal-theme">
+      
+      <!-- 1. LIGHT THEME SEARCH HERO SECTION -->
+      <section class="portal-light-hero">
+        <div class="hero-bg-patterns" aria-hidden="true">
+          <div class="hero-circle c1"></div>
+          <div class="hero-circle c2"></div>
+        </div>
+
+        <div class="hero-content-wrap">
+          <!-- Trust Eyebrow -->
+          <div class="hero-trust-tag">
+            <span class="trust-live-pulse"></span>
+            <span class="tag-title">FINDMYCOLLEGES • INDIA'S VERIFIED MBA DIRECTORY</span>
+            <span class="tag-divider">|</span>
+            <span class="tag-audit">2026-27 Audited</span>
           </div>
 
-          <!-- Hero Main Title with College4Sure Marker Sweep -->
-          <h1 class="c4s-hero-title">
-            Find & Compare Top <span class="c4s-marker">MBA Colleges</span> in India 2026
+          <!-- Hero Main Heading -->
+          <h1 class="hero-title">
+            Find Your Dream <span class="highlight-title">MBA College</span> in India
           </h1>
-
-          <p class="c4s-hero-subtitle">
-            Explore 500+ verified B-schools with real-time CAT/XAT/CMAT cutoffs, audited tuition fees, verified placements, and human-guided admissions. 100% transparent data, 0% scrapers.
+          <p class="hero-subtitle">
+            Compare 110+ verified B-schools with transparent tuition fees, audited CTC averages, real CAT/XAT cutoffs, and city infographics. 0% scrapers, 100% human-verified data.
           </p>
 
-          <!-- Trust Strip (College4Sure Pillars) -->
-          <div class="c4s-pillars-strip">
-            <div class="cpillar-item">
-              <span class="cpillar-icon">🛡️</span>
-              <div>
-                <strong>Human-Verified Data</strong>
-                <span>Counsellor checked, zero scrapers</span>
-              </div>
-            </div>
-            <div class="cpillar-divider"></div>
-            <div class="cpillar-item">
-              <span class="cpillar-icon">📊</span>
-              <div>
-                <strong>Standardized Comparison</strong>
-                <span>Uniform parameters across all B-schools</span>
-              </div>
-            </div>
-            <div class="cpillar-divider"></div>
-            <div class="cpillar-item">
-              <span class="cpillar-icon">🎯</span>
-              <div>
-                <strong>Direct Percentile Mapping</strong>
-                <span>Match your mock score to target calls</span>
-              </div>
-            </div>
-            <div class="cpillar-divider"></div>
-            <div class="cpillar-item">
-              <span class="cpillar-icon">⚡</span>
-              <div>
-                <strong>Live Score Calculators</strong>
-                <span>Precision CAT, XAT & CMAT evaluators</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- CENTRAL COLLEGE SEARCH OMNIBOX (COLLEGE4SURE ENGINE) -->
-          <div class="c4s-omnibox-card">
-            <div class="c4s-input-group">
-              <div class="c4s-search-icon">
+          <!-- CENTRAL COLLEGE SEARCH OMNIBOX -->
+          <div class="hero-omnibox-wrapper">
+            <div class="hero-omnibox-card">
+              <div class="omnibox-search-icon">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
                   <circle cx="11" cy="11" r="8"></circle>
                   <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -79,453 +366,253 @@ export function renderHomePage() {
               <input 
                 type="text" 
                 id="portalCollegeSearchInput" 
-                class="c4s-search-input" 
-                placeholder="Search 500+ MBA colleges by name (IIM, FMS, XLRI), city (Mumbai, Delhi), exam (CAT, XAT), or course (PGDM, MBA)..." 
+                class="omnibox-text-input" 
+                placeholder="Search colleges (e.g. IIM, FMS, SPJIMR), cities (Delhi, Mumbai, Pune), or exams (CAT, XAT)..." 
                 autocomplete="off"
               />
               <button class="omnibox-clear-btn" id="portalSearchClearBtn" title="Clear Search" style="display:none;">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
               </button>
-              <button class="c4s-search-btn" id="portalSearchTriggerBtn">
+              <button class="omnibox-submit-btn" id="portalSearchTriggerBtn">
                 <span>Search Colleges</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
               </button>
             </div>
 
-            <!-- College4Sure Popular Filter Chips Row -->
-            <div class="c4s-quick-chips-row">
-              <span class="c4s-chips-label">Popular Searches:</span>
-              <div class="c4s-chips-scroll" id="portalQuickChips">
-                <button class="quick-chip-btn active" data-filter-type="all">All Colleges (${COLLEGES_DATA.length})</button>
-                <button class="quick-chip-btn" data-filter-type="degree" data-degree="MBA">🎓 MBA Colleges (${COLLEGES_DATA.filter(c => c.degreeTypes && c.degreeTypes.includes('MBA')).length})</button>
-                <button class="quick-chip-btn" data-filter-type="degree" data-degree="PGDM">💼 PGDM Colleges (${COLLEGES_DATA.filter(c => c.degreeTypes && c.degreeTypes.includes('PGDM')).length})</button>
-                <button class="quick-chip-btn" data-filter-type="top10">🏆 Top 10 NIRF</button>
-                <button class="quick-chip-btn" data-filter-type="highroi">💎 High ROI (Fees &lt; ₹15L)</button>
-                <button class="quick-chip-btn" data-filter-type="sal30">🚀 Avg CTC &gt; ₹30 LPA</button>
-                <button class="quick-chip-btn" data-filter-type="exam" data-exam="CAT">🐱 CAT Accepted</button>
-                <button class="quick-chip-btn" data-filter-type="exam" data-exam="XAT">🎯 XAT Accepted</button>
-                <button class="quick-chip-btn" data-filter-type="exam" data-exam="CMAT">⚡ CMAT Accepted</button>
-                <button class="quick-chip-btn" data-filter-type="exam" data-exam="SNAP">🦁 SNAP Accepted</button>
-                <button class="quick-chip-btn" data-filter-type="exam" data-exam="MH-CET">🏙️ MAH-CET (Mumbai)</button>
-                <button class="quick-chip-btn" data-filter-type="govt">🏛️ Government / IIMs</button>
-                <button class="quick-chip-btn" data-filter-type="private">💼 Top Private B-Schools</button>
-              </div>
-            </div>
+            <!-- Instant Live Auto-Suggest Dropdown Mount -->
+            <div class="omnibox-live-suggestions" id="portalLiveSuggestionsContainer" style="display:none;"></div>
+          </div>
 
-            <!-- College4Sure Fast-Track Discovery Hub (Cities & Exams) -->
-            <div class="c4s-browse-categories-bar">
-              <div class="c4s-browse-group">
-                <span class="c4s-browse-title">📍 Top MBA Hubs:</span>
-                <div class="c4s-browse-tags" id="browseCityTags">
-                  <button class="browse-tag-btn" data-city-click="Delhi-NCR">Delhi-NCR</button>
-                  <button class="browse-tag-btn" data-city-click="Mumbai">Mumbai</button>
-                  <button class="browse-tag-btn" data-city-click="Bengaluru">Bengaluru</button>
-                  <button class="browse-tag-btn" data-city-click="Pune">Pune</button>
-                  <button class="browse-tag-btn" data-city-click="Ahmedabad">Ahmedabad</button>
-                  <button class="browse-tag-btn" data-city-click="Kolkata">Kolkata</button>
-                  <button class="browse-tag-btn" data-city-click="Lucknow">Lucknow</button>
-                  <button class="browse-tag-btn" data-city-click="Goa">Goa</button>
-                </div>
-              </div>
+          <!-- Quick Discovery Chips -->
+          <div class="hero-quick-filters">
+            <span class="quick-filters-label">Popular Searches:</span>
+            <div class="quick-filters-pills" id="homeQuickPills">
+              <button class="q-pill-btn active" data-filter="all">All Colleges (${COLLEGES_DATA.length})</button>
+              <button class="q-pill-btn" data-filter="mba">🎓 MBA Colleges</button>
+              <button class="q-pill-btn" data-filter="pgdm">💼 PGDM Colleges</button>
+              <button class="q-pill-btn" data-filter="top10">🏆 Top 10 NIRF</button>
+              <button class="q-pill-btn" data-filter="roi">💎 High ROI (&lt; ₹15L)</button>
+              <button class="q-pill-btn" data-filter="cat">🐱 CAT Accepted</button>
+              <button class="q-pill-btn" data-filter="xat">🎯 XAT Accepted</button>
+              <button class="q-pill-btn" data-filter="cmat">⚡ CMAT Accepted</button>
+              <button class="q-pill-btn" data-filter="snap">🦁 SNAP Accepted</button>
             </div>
           </div>
 
-          <!-- INTERACTIVE PERCENTILE CALL MATCHER WIDGET (COLLEGE4SURE ENGINE) -->
-          <div class="c4s-matcher-widget-card">
-            <div class="matcher-header">
-              <div class="matcher-title-wrap">
-                <span class="matcher-icon">🎯</span>
-                <div>
-                  <h3 class="matcher-title">Instant Percentile & B-School Call Predictor</h3>
-                  <p class="matcher-sub">Enter your mock score or target percentile to project realistic calls</p>
-                </div>
+          <!-- Trust Proof Metrics Row -->
+          <div class="hero-trust-metrics-strip">
+            <div class="htm-item">
+              <div class="htm-icon">🛡️</div>
+              <div class="htm-text">
+                <strong>100% Counsellor Audited</strong>
+                <span>Audited batch sizes & fees</span>
               </div>
-              <span class="matcher-tag">Verified 2026 Cutoffs</span>
             </div>
-
-            <div class="matcher-input-row">
-              <div class="matcher-input-group">
-                <label>Expected / Mock Percentile</label>
-                <div class="input-with-suffix">
-                  <input type="number" id="quickPercentileInput" min="40" max="100" step="0.5" value="98.5" placeholder="e.g. 98.5" />
-                  <span class="input-suffix">%ile</span>
-                </div>
+            <div class="htm-divider"></div>
+            <div class="htm-item">
+              <div class="htm-icon">💰</div>
+              <div class="htm-text">
+                <strong>Zero Hidden Charges</strong>
+                <span>Exact 2-year total tuition</span>
               </div>
-
-              <div class="matcher-input-group">
-                <label>Entrance Exam</label>
-                <select id="quickExamSelect" class="styled-select">
-                  <option value="CAT">CAT 2026 (IIMs, FMS Delhi, SPJIMR)</option>
-                  <option value="XAT">XAT 2027 (XLRI Jamshedpur, IMT, XIMB)</option>
-                  <option value="SNAP">SNAP 2026 (SIBM Pune, SCMHRD)</option>
-                  <option value="NMAT">NMAT by GMAC (NMIMS Mumbai)</option>
-                  <option value="CMAT">CMAT 2026 (JBIMS MMS, SIMSREE, GIM)</option>
-                  <option value="MHCET">MAH MBA CET (JBIMS, SIMSREE, PUMBA)</option>
-                </select>
-              </div>
-
-              <button class="c4s-matcher-btn" id="runQuickMatchBtn">
-                <span>Check Eligibility</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-              </button>
             </div>
-
-            <div class="matcher-results-preview" id="quickMatchResultsPreview">
-              <div class="match-badge-result dream">
-                <span class="call-type">🏆 Dream Calls:</span>
-                <strong>IIM Lucknow, IIM Kozhikode, IIM Indore, SPJIMR, FMS Delhi</strong>
+            <div class="htm-divider"></div>
+            <div class="htm-item">
+              <div class="htm-icon">📊</div>
+              <div class="htm-text">
+                <strong>Standardized Cutoffs</strong>
+                <span>Category percentile matrix</span>
               </div>
-              <div class="match-badge-result strong">
-                <span class="call-type">💎 High Probability:</span>
-                <strong>MDI Gurgaon, IIT Bombay (SJMSOM), CAP Round New IIMs (Udaipur, Trichy)</strong>
+            </div>
+            <div class="htm-divider"></div>
+            <div class="htm-item">
+              <div class="htm-icon">⚡</div>
+              <div class="htm-text">
+                <strong>Live Score Predictors</strong>
+                <span>CAT, XAT & CMAT calculators</span>
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
-      <!-- 2. MAIN 2-COLUMN COLLEGE SEARCH DIRECTORY (SHIKSHA / COLLEGE4SURE THEME) -->
-      <section class="portal-main-directory-section" id="collegeDirectoryAnchor">
-        <div class="portal-layout-container">
-          
-          <!-- MOBILE FILTER TOGGLE BAR -->
-          <div class="mobile-filter-bar">
-            <button class="mobile-filter-toggle-btn" id="mobileFilterToggleBtn">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="21" y2="21"></line><line x1="4" x2="20" y1="14" y2="14"></line><line x1="4" x2="20" y1="7" y2="7"></line></svg>
-              <span>Filters</span>
-              <span class="active-filters-count-badge" id="mobileFiltersBadge" style="display:none;">0</span>
-            </button>
-            <div class="mobile-sort-wrap">
-              <label>Sort:</label>
-              <select id="mobileSortSelect" class="mobile-sort-select">
-                <option value="nirf">NIRF Rank (Low to High)</option>
-                <option value="fees-asc">Fees (Low to High - Best ROI)</option>
-                <option value="fees-desc">Fees (High to Low)</option>
-                <option value="salary-desc">Average CTC (High to Low)</option>
-                <option value="rating-desc">Student Rating (High to Low)</option>
-              </select>
+      <!-- 2. CITY COLLEGES INFOGRAPHICS HUB (USER'S FEATURE IDEA) -->
+      <section class="section city-infographics-section" id="cityInfographicsSection">
+        <div class="section-container">
+          <div class="section-header-compact">
+            <div>
+              <span class="section-tag-pill">📍 Top MBA Hubs & Infographics</span>
+              <h2 class="section-title-sm">City Colleges Infographics: Where Should You Study?</h2>
+              <p class="section-desc-sm">Visual placement comparisons, dominant industries, cost of living, and flagship B-schools across India's premier management cities.</p>
+            </div>
+            <div class="city-filter-tabs" id="cityTabsContainer">
+              <button class="city-tab-btn active" data-city-tab="all">All Cities</button>
+              <button class="city-tab-btn" data-city-tab="delhi-ncr">🏛️ Delhi-NCR</button>
+              <button class="city-tab-btn" data-city-tab="mumbai">🏙️ Mumbai</button>
+              <button class="city-tab-btn" data-city-tab="pune">🎓 Pune</button>
+              <button class="city-tab-btn" data-city-tab="bengaluru">🚀 Bengaluru</button>
+              <button class="city-tab-btn" data-city-tab="ahmedabad">💎 Ahmedabad</button>
+              <button class="city-tab-btn" data-city-tab="jaipur">🏰 Jaipur</button>
+              <button class="city-tab-btn" data-city-tab="kolkata">🏛️ Kolkata</button>
             </div>
           </div>
 
-          <!-- LEFT COLUMN: FACETED FILTER SIDEBAR -->
-          <aside class="portal-filter-sidebar" id="portalFilterSidebar">
-            <div class="filter-sidebar-header">
-              <div class="filter-sidebar-title-wrap">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
-                <h3>Filters</h3>
-              </div>
-              <div class="filter-header-right-btns">
-                <button class="filter-reset-link" id="resetAllFiltersBtn">Reset All</button>
-                <button class="filter-drawer-close-btn" id="closeFilterDrawerBtn" aria-label="Close Filters">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                </button>
-              </div>
+          <!-- City Infographics Cards Grid -->
+          <div class="city-infographics-grid" id="cityInfographicsGrid">
+            ${renderCityInfographicCards('all')}
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. TOP FEATURED B-SCHOOLS SHOWCASE (CURATED 6 CARDS) -->
+      <section class="section featured-colleges-section" id="featuredCollegesSection">
+        <div class="section-container">
+          <div class="section-header-compact">
+            <div>
+              <span class="section-tag-pill">🏆 Top Picks 2026</span>
+              <h2 class="section-title-sm">Featured Management Institutes</h2>
+              <p class="section-desc-sm">India’s highest-ranked business schools categorized by NIRF stature, return on investment, and corporate placements.</p>
             </div>
-
-            <!-- Active Filters Summary Chips -->
-            <div class="active-filter-chips-wrap" id="activeFilterChipsContainer" style="display:none;">
-              <!-- Dynamically populated -->
+            <div class="featured-category-tabs" id="featuredTabsContainer">
+              <button class="f-tab-btn active" data-featured-tab="nirf">🏆 Top NIRF Tier</button>
+              <button class="f-tab-btn" data-featured-tab="roi">💎 High ROI Champions</button>
+              <button class="f-tab-btn" data-featured-tab="metro">🏙️ Metro Giants</button>
+              <button class="f-tab-btn" data-featured-tab="iim">🏛️ Top IIMs</button>
             </div>
+          </div>
 
-            <div class="sidebar-accordions-group">
-              <!-- ACCORDION 1: LOCATION / CITIES -->
-              <div class="filter-group">
-                <div class="filter-group-title">
-                  <span>Location / City</span>
-                  <span class="group-count-tag" id="cityCountTag">All</span>
-                </div>
-                <div class="filter-group-options" id="filterCityOptions">
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="cityFilter" value="Delhi-NCR" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Delhi-NCR</span>
-                    <span class="cb-badge">3</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="cityFilter" value="Mumbai" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Mumbai</span>
-                    <span class="cb-badge">4</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="cityFilter" value="Bengaluru" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Bengaluru</span>
-                    <span class="cb-badge">1</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="cityFilter" value="Ahmedabad" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Ahmedabad</span>
-                    <span class="cb-badge">2</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="cityFilter" value="Kolkata" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Kolkata</span>
-                    <span class="cb-badge">1</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="cityFilter" value="Pune" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Pune</span>
-                    <span class="cb-badge">1</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="cityFilter" value="Lucknow" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Lucknow</span>
-                    <span class="cb-badge">1</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="cityFilter" value="Kozhikode" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Kozhikode</span>
-                    <span class="cb-badge">1</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="cityFilter" value="Jamshedpur" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Jamshedpur</span>
-                    <span class="cb-badge">1</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="cityFilter" value="Indore" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Indore</span>
-                    <span class="cb-badge">1</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="cityFilter" value="Goa" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Goa</span>
-                    <span class="cb-badge">1</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="cityFilter" value="Manipal" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Manipal</span>
-                    <span class="cb-badge">1</span>
-                  </label>
-                </div>
-              </div>
+          <!-- Featured College Cards Grid -->
+          <div class="featured-colleges-grid" id="featuredCollegesGrid">
+            ${renderFeaturedCollegesCards('nirf')}
+          </div>
 
-              <!-- ACCORDION 2: ENTRANCE EXAM -->
-              <div class="filter-group">
-                <div class="filter-group-title">
-                  <span>Entrance Exams Accepted</span>
-                  <span class="group-count-tag" id="examCountTag">All</span>
-                </div>
-                <div class="filter-group-options" id="filterExamOptions">
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="examFilter" value="CAT" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">CAT (Common Admission Test)</span>
-                    <span class="cb-badge">15</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="examFilter" value="XAT" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">XAT (Xavier Aptitude Test)</span>
-                    <span class="cb-badge">5</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="examFilter" value="CMAT" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">CMAT (Common Management)</span>
-                    <span class="cb-badge">4</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="examFilter" value="SNAP" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">SNAP (Symbiosis Entrance)</span>
-                    <span class="cb-badge">1</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="examFilter" value="NMAT" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">NMAT by GMAC (NMIMS)</span>
-                    <span class="cb-badge">2</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="examFilter" value="MH-CET" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">MAH MBA CET (Maharashtra)</span>
-                    <span class="cb-badge">2</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="examFilter" value="CUET-PG" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">CUET PG (TISS Mumbai)</span>
-                    <span class="cb-badge">1</span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- ACCORDION 3: TOTAL FEES -->
-              <div class="filter-group">
-                <div class="filter-group-title">
-                  <span>Total Course Fees (2-Yr)</span>
-                </div>
-                <div class="filter-group-options" id="filterFeeOptions">
-                  <label class="filter-radio-item">
-                    <input type="radio" name="feeRangeFilter" value="all" checked class="portal-radio" />
-                    <span class="rb-custom"></span>
-                    <span class="cb-label">Any Fee Range</span>
-                  </label>
-                  <label class="filter-radio-item">
-                    <input type="radio" name="feeRangeFilter" value="under5" class="portal-radio" />
-                    <span class="rb-custom"></span>
-                    <span class="cb-label">&lt; ₹5 Lakhs (Super High ROI)</span>
-                    <span class="cb-badge">2</span>
-                  </label>
-                  <label class="filter-radio-item">
-                    <input type="radio" name="feeRangeFilter" value="5to15" class="portal-radio" />
-                    <span class="rb-custom"></span>
-                    <span class="cb-label">₹5 Lakhs - ₹15 Lakhs</span>
-                    <span class="cb-badge">3</span>
-                  </label>
-                  <label class="filter-radio-item">
-                    <input type="radio" name="feeRangeFilter" value="15to25" class="portal-radio" />
-                    <span class="rb-custom"></span>
-                    <span class="cb-label">₹15 Lakhs - ₹25 Lakhs</span>
-                    <span class="cb-badge">7</span>
-                  </label>
-                  <label class="filter-radio-item">
-                    <input type="radio" name="feeRangeFilter" value="above25" class="portal-radio" />
-                    <span class="rb-custom"></span>
-                    <span class="cb-label">&gt; ₹25 Lakhs (Elite Tier)</span>
-                    <span class="cb-badge">8</span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- ACCORDION 4: AVERAGE SALARY / CTC -->
-              <div class="filter-group">
-                <div class="filter-group-title">
-                  <span>Average Salary / CTC</span>
-                </div>
-                <div class="filter-group-options" id="filterSalaryOptions">
-                  <label class="filter-radio-item">
-                    <input type="radio" name="salaryRangeFilter" value="all" checked class="portal-radio" />
-                    <span class="rb-custom"></span>
-                    <span class="cb-label">Any Average CTC</span>
-                  </label>
-                  <label class="filter-radio-item">
-                    <input type="radio" name="salaryRangeFilter" value="above30" class="portal-radio" />
-                    <span class="rb-custom"></span>
-                    <span class="cb-label">&gt; ₹30 LPA (Elite League)</span>
-                    <span class="cb-badge">7</span>
-                  </label>
-                  <label class="filter-radio-item">
-                    <input type="radio" name="salaryRangeFilter" value="20to30" class="portal-radio" />
-                    <span class="rb-custom"></span>
-                    <span class="cb-label">₹20 LPA - ₹30 LPA</span>
-                    <span class="cb-badge">8</span>
-                  </label>
-                  <label class="filter-radio-item">
-                    <input type="radio" name="salaryRangeFilter" value="under20" class="portal-radio" />
-                    <span class="rb-custom"></span>
-                    <span class="cb-label">&lt; ₹20 LPA</span>
-                    <span class="cb-badge">5</span>
-                  </label>
-                </div>
-              </div>
-
-              <!-- ACCORDION 5: OWNERSHIP -->
-              <div class="filter-group">
-                <div class="filter-group-title">
-                  <span>Institute Ownership</span>
-                </div>
-                <div class="filter-group-options" id="filterOwnershipOptions">
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="ownershipFilter" value="Government" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Government / Public / Central</span>
-                    <span class="cb-badge">11</span>
-                  </label>
-                  <label class="filter-checkbox-item">
-                    <input type="checkbox" name="ownershipFilter" value="Private" class="portal-checkbox" />
-                    <span class="cb-custom"></span>
-                    <span class="cb-label">Private Autonomous</span>
-                    <span class="cb-badge">9</span>
-                  </label>
-                </div>
-              </div>
+          <!-- Big Action Banner to Explore Full Directory -->
+          <div class="explore-all-colleges-dock">
+            <div class="dock-text">
+              <h3>Looking for more B-schools or specialized filters?</h3>
+              <p>Explore our complete catalog of 110+ verified colleges with fee sliders, percentile cutoffs, and exam filters.</p>
             </div>
+            <a href="#colleges" class="btn-dock-browse" data-route="colleges">
+              <span>Browse All ${COLLEGES_DATA.length} Colleges with Filters</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
 
-            <!-- Mobile Sticky Footer -->
-            <div class="mobile-filter-drawer-footer">
-              <button class="btn-apply-filters-dock" id="applyMobileFilterBtn">
-                Apply Filters & View Colleges
-              </button>
-            </div>
-          </aside>
-
-          <!-- RIGHT COLUMN: RESULTS FEED -->
-          <main class="portal-results-feed">
-            <!-- Feed Control Bar -->
-            <div class="feed-control-bar">
-              <div class="feed-results-info">
-                <h2 class="feed-results-title">
-                  <span id="resultsCountSpan">${COLLEGES_DATA.length}</span> Verified <span id="resultsLabelSpan">Colleges</span> Found
-                </h2>
-                <span class="feed-subtitle">Audited fees, placement records & category percentiles</span>
+      <!-- 4. SMART TOOLS & INSTANT CALL PREDICTOR STRIP -->
+      <section class="section tools-highlight-section">
+        <div class="section-container">
+          <div class="tools-two-column-layout">
+            
+            <!-- Left: Percentile to Call Predictor Card -->
+            <div class="tool-call-matcher-card">
+              <div class="matcher-card-header">
+                <span class="mch-icon">🎯</span>
+                <div>
+                  <h3 class="mch-title">Instant B-School Call Matcher</h3>
+                  <p class="mch-sub">Estimate your interview calls based on your mock percentile</p>
+                </div>
               </div>
 
-              <div class="feed-actions-group">
-                <!-- Sort Select (Desktop) -->
-                <div class="feed-sort-wrap">
-                  <label for="portalSortSelect">Sort by:</label>
-                  <select id="portalSortSelect" class="feed-sort-select">
-                    <option value="nirf">NIRF Ranking (Top to Bottom)</option>
-                    <option value="fees-asc">Fees (Low to High - Best ROI)</option>
-                    <option value="fees-desc">Fees (High to Low)</option>
-                    <option value="salary-desc">Average CTC (High to Low)</option>
-                    <option value="rating-desc">Student Rating (High to Low)</option>
+              <div class="matcher-controls-grid">
+                <div class="control-item">
+                  <label for="homePercentileInput">Expected Mock Percentile</label>
+                  <div class="input-with-pill">
+                    <input type="number" id="homePercentileInput" min="40" max="100" step="0.5" value="98.5" />
+                    <span class="input-tag">%ile</span>
+                  </div>
+                </div>
+
+                <div class="control-item">
+                  <label for="homeExamSelect">Target Entrance Exam</label>
+                  <select id="homeExamSelect" class="styled-select-portal">
+                    <option value="CAT">CAT (IIMs, FMS Delhi, SPJIMR)</option>
+                    <option value="XAT">XAT (XLRI Jamshedpur, IMT, XIMB)</option>
+                    <option value="SNAP">SNAP (SIBM Pune, SCMHRD)</option>
+                    <option value="NMAT">NMAT by GMAC (NMIMS Mumbai)</option>
+                    <option value="CMAT">CMAT (JBIMS, SIMSREE, GIM)</option>
                   </select>
                 </div>
+              </div>
 
-                <!-- View Mode Toggle -->
-                <div class="feed-view-toggle">
-                  <button class="view-btn active" id="viewCardBtn" title="Detailed Card View">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
-                  </button>
-                  <button class="view-btn" id="viewListBtn" title="Compact Table / Shiksha List View">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
-                  </button>
+              <div class="matcher-output-box" id="homeMatcherResultsBox">
+                <div class="call-result-item dream">
+                  <span class="call-badge">🏆 Dream Calls:</span>
+                  <strong>IIM Lucknow, IIM Kozhikode, IIM Indore, SPJIMR, FMS Delhi</strong>
                 </div>
+                <div class="call-result-item strong">
+                  <span class="call-badge">💎 High Probability:</span>
+                  <strong>MDI Gurgaon, IIT Bombay (SJMSOM), CAP Round New IIMs (Udaipur, Trichy)</strong>
+                </div>
+              </div>
+
+              <button class="btn-matcher-submit" id="homeRunMatchBtn">
+                <span>Evaluate My Calls</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+
+            <!-- Right: 4 Direct Calculators Quick Access Grid -->
+            <div class="tools-quick-access-box">
+              <div class="tqa-header">
+                <span class="tqa-tag">⚡ Precision Tools</span>
+                <h3 class="tqa-title">MBA Entrance Score & Goal Calculators</h3>
+                <p class="tqa-sub">Official response sheet parsers, raw score to percentile formulas, and prep planners.</p>
+              </div>
+
+              <div class="tqa-cards-grid">
+                <a href="#tools?sub=cat" class="tqa-card" data-route="tools" data-sub="cat">
+                  <span class="tqa-card-icon">🐱</span>
+                  <div class="tqa-card-info">
+                    <h4>CAT Score Calculator</h4>
+                    <p>Raw score & slot normalizer</p>
+                  </div>
+                  <span class="tqa-arrow">→</span>
+                </a>
+
+                <a href="#tools?sub=xat" class="tqa-card" data-route="tools" data-sub="xat">
+                  <span class="tqa-card-icon">🎯</span>
+                  <div class="tqa-card-info">
+                    <h4>XAT Percentile Calculator</h4>
+                    <p>Decision making & negative marking</p>
+                  </div>
+                  <span class="tqa-arrow">→</span>
+                </a>
+
+                <a href="#tools?sub=cmat" class="tqa-card" data-route="tools" data-sub="cmat">
+                  <span class="tqa-card-icon">🚀</span>
+                  <div class="tqa-card-info">
+                    <h4>CMAT Rank Predictor</h4>
+                    <p>JBIMS & SIMSREE cutoffs</p>
+                  </div>
+                  <span class="tqa-arrow">→</span>
+                </a>
+
+                <a href="#programs?sub=compare" class="tqa-card" data-route="programs" data-sub="compare">
+                  <span class="tqa-card-icon">⚖️</span>
+                  <div class="tqa-card-info">
+                    <h4>MBA vs PGDM Guide</h4>
+                    <p>AICTE vs UGC accreditation guide</p>
+                  </div>
+                  <span class="tqa-arrow">→</span>
+                </a>
               </div>
             </div>
 
-            <!-- College Cards & Feed Container -->
-            <div class="portal-colleges-container" id="portalCollegesContainer">
-              ${renderCollegesCards(COLLEGES_DATA, [], 'card')}
-            </div>
-
-            <!-- Empty State -->
-            <div class="portal-empty-state" id="portalEmptyState" style="display:none;">
-              <div class="empty-state-icon">🔍</div>
-              <h3>No Colleges Match Your Selected Filters</h3>
-              <p>Try clearing some filters or searching for another keyword like "IIM", "Mumbai", "CAT", or "FMS".</p>
-              <button class="btn-gradient-pill" id="emptyStateResetBtn">Reset All Filters</button>
-            </div>
-          </main>
-
+          </div>
         </div>
-        <div class="mobile-filter-backdrop" id="mobileFilterBackdrop"></div>
       </section>
 
-      <!-- 3. LIVE EXAM COUNTDOWN TICKERS -->
+      <!-- 5. LIVE EXAM COUNTDOWN TICKERS -->
       <section class="section countdown-section">
         <div class="section-container">
           <div class="section-header-compact">
-            <div class="header-left">
-              <span class="section-tag-pill">⏳ Upcoming Schedules</span>
-              <h2 class="section-title-sm">Countdown to Key MBA Entrance Exams 2026-27</h2>
+            <div>
+              <span class="section-tag-pill">⏳ Admission Deadlines</span>
+              <h2 class="section-title-sm">Countdown to Key Entrance Exams 2026-27</h2>
             </div>
-            <a href="#exams" class="see-all-link" data-route="exams">View All 8 Exams & Patterns →</a>
+            <a href="#exams" class="see-all-link" data-route="exams">View All Exam Dates & Syllabus →</a>
           </div>
 
           <div class="countdown-cards-grid">
@@ -542,7 +629,7 @@ export function renderHomePage() {
                 <div class="time-sep">:</div>
                 <div class="time-box"><span class="time-num" id="cat-mins">35</span><span class="time-lbl">Mins</span></div>
               </div>
-              <a href="#tools?sub=cat" class="card-action-btn" data-route="tools" data-sub="cat">CAT Score Calculator →</a>
+              <a href="#tools?sub=cat" class="card-action-btn" data-route="tools" data-sub="cat">CAT Calculator →</a>
             </div>
 
             <!-- XAT Card -->
@@ -558,7 +645,7 @@ export function renderHomePage() {
                 <div class="time-sep">:</div>
                 <div class="time-box"><span class="time-num" id="xat-mins">40</span><span class="time-lbl">Mins</span></div>
               </div>
-              <a href="#tools?sub=xat" class="card-action-btn" data-route="tools" data-sub="xat">XAT Score Calculator →</a>
+              <a href="#tools?sub=xat" class="card-action-btn" data-route="tools" data-sub="xat">XAT Calculator →</a>
             </div>
 
             <!-- SNAP Card -->
@@ -574,7 +661,7 @@ export function renderHomePage() {
                 <div class="time-sep">:</div>
                 <div class="time-box"><span class="time-num" id="snap-mins">20</span><span class="time-lbl">Mins</span></div>
               </div>
-              <a href="#exams?exam=snap" class="card-action-btn" data-route="exams" data-sub="snap">SNAP Pattern & Tips →</a>
+              <a href="#exams?exam=snap" class="card-action-btn" data-route="exams" data-sub="snap">SNAP Details →</a>
             </div>
 
             <!-- CMAT Card -->
@@ -596,46 +683,13 @@ export function renderHomePage() {
         </div>
       </section>
 
-      <!-- 4. EDITORIAL INSIGHTS & BLOGS PREVIEW -->
-      <section class="section blogs-preview-section">
-        <div class="section-container">
-          <div class="section-header-compact">
-            <div>
-              <span class="section-tag-pill">📰 Expert Insights</span>
-              <h2 class="section-title-sm">Latest MBA Prep Strategies & Admission Analysis</h2>
-            </div>
-            <a href="#blog" class="see-all-link" data-route="blog">Read All Articles →</a>
-          </div>
-
-          <div class="blogs-grid">
-            ${BLOGS_DATA.slice(0, 3).map(blog => `
-              <div class="blog-card" data-blog-id="${blog.id}">
-                <div class="blog-card-meta">
-                  <span class="blog-category-badge">${blog.category}</span>
-                  <span class="blog-read-time">${blog.readTime}</span>
-                </div>
-                <h3 class="blog-card-title">${blog.title}</h3>
-                <p class="blog-card-summary">${blog.summary}</p>
-                <div class="blog-card-footer">
-                  <div class="blog-author">
-                    <div class="author-avatar">${blog.author.charAt(0)}</div>
-                    <span>${blog.author.split('(')[0]}</span>
-                  </div>
-                  <a href="#blog?id=${blog.id}" class="read-article-btn" data-route="blog" data-sub="id=${blog.id}">Read →</a>
-                </div>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. ASPIRANT COMMUNITY TESTIMONIALS -->
+      <!-- 6. STUDENT CONVERTS REVIEWS -->
       <section class="section testimonials-section">
         <div class="section-container">
           <div class="section-title-center">
             <span class="section-tag-pill">⭐ Student Reviews</span>
             <h2 class="section-title">Aspirants Who Converted Top B-Schools</h2>
-            <p class="section-desc">Real feedback from students who used our verified portal, cutoffs, and guidance.</p>
+            <p class="section-desc">Real feedback from students who used FindMyColleges transparent cutoffs, calculators and city infographics.</p>
           </div>
 
           <div class="testimonials-grid">
@@ -648,7 +702,7 @@ export function renderHomePage() {
                 <div class="user-avatar-circle">AK</div>
                 <div>
                   <div class="user-name">Ananya Kulkarni</div>
-                  <div class="user-sub">Converted IIM Bangalore (Batch of 2026-28) • CAT 99.4%ile</div>
+                  <div class="user-sub">Converted IIM Bangalore • Batch of 2026-28 • CAT 99.4%ile</div>
                 </div>
               </div>
             </div>
@@ -670,13 +724,13 @@ export function renderHomePage() {
             <div class="testimonial-card">
               <div class="stars-row">★★★★★</div>
               <p class="testimonial-text">
-                "The side-by-side comparison tool and XAT score calculator gave me the clarity I needed between XLRI BM vs HRM. Highly recommend every serious aspirant to use this portal."
+                "The city infographics for Mumbai and Pune gave me crystal clarity on BFSI vs Auto/IT campus placements. Converted SIBM Pune with 98.7%ile SNAP score!"
               </p>
               <div class="testimonial-user">
                 <div class="user-avatar-circle">PD</div>
                 <div>
                   <div class="user-name">Priyanka Das</div>
-                  <div class="user-sub">Converted XLRI Jamshedpur (HRM) • XAT 96.8%ile</div>
+                  <div class="user-sub">Converted SIBM Pune • SNAP 98.7%ile</div>
                 </div>
               </div>
             </div>
@@ -684,14 +738,14 @@ export function renderHomePage() {
         </div>
       </section>
 
-      <!-- 6. BOTTOM COUNSELING CTA BANNER -->
+      <!-- 7. COUNSELING CTA BANNER -->
       <section class="section cta-banner-section">
         <div class="section-container">
           <div class="cta-banner-box">
             <div class="cta-banner-text">
               <span class="cta-mini-tag">Free 1-on-1 Guidance</span>
               <h2 class="cta-banner-heading">Need Personalized MBA Admission Strategy?</h2>
-              <p class="cta-banner-sub">Speak directly with an IIM or XLRI alumnus. We evaluate your profile, map your realistic calls, and craft an admission roadmap tailored to your target scores.</p>
+              <p class="cta-banner-sub">Speak directly with an IIM, XLRI or FMS alumnus. We evaluate your profile, map your realistic calls, and craft an admission roadmap tailored to your target scores.</p>
             </div>
             <div class="cta-banner-actions">
               <a href="#contact" class="btn-gradient-pill btn-lg" data-route="contact">
@@ -706,51 +760,28 @@ export function renderHomePage() {
         </div>
       </section>
 
-      <!-- FLOATING COMPARE BOTTOM DRAWER -->
-      <div class="portal-compare-floating-bar" id="portalCompareBar" style="display:none;">
-        <div class="compare-bar-content">
-          <div class="compare-bar-info">
-            <span class="compare-badge-icon">⚖️</span>
-            <div>
-              <div class="compare-bar-title"><span id="compareCountNum">0</span> of 3 Colleges Selected for Comparison</div>
-              <div class="compare-bar-sub">Compare fees, cutoffs, placements and eligibility side-by-side</div>
-            </div>
-          </div>
-
-          <div class="compare-selected-chips" id="compareSelectedChips">
-            <!-- Chips rendered dynamically -->
-          </div>
-
-          <div class="compare-bar-actions">
-            <button class="btn-gradient-pill compare-launch-btn" id="launchComparisonModalBtn">
-              <span>Compare Now</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
-            </button>
-            <button class="compare-clear-btn" id="clearAllCompareBtn" title="Clear Comparison List">Clear All</button>
-          </div>
+      <!-- MODALS MOUNT -->
+      <!-- City Infographic Modal Mount -->
+      <div class="portal-modal-overlay" id="cityInfographicModalOverlay" style="display:none;">
+        <div class="portal-modal-dialog city-infographic-dialog" id="cityInfographicModalDialog">
+          <!-- Dynamically populated -->
         </div>
       </div>
 
-      <!-- 360° COLLEGE DETAIL MODAL MOUNT -->
+      <!-- 360° College Detail Modal Mount -->
       <div class="portal-modal-overlay" id="portalDetailModalOverlay" style="display:none;">
         <div class="portal-modal-dialog" id="portalDetailModalDialog">
           <!-- Dynamically populated -->
         </div>
       </div>
 
-      <!-- SIDE-BY-SIDE COMPARISON MODAL MOUNT -->
-      <div class="portal-modal-overlay" id="portalCompareModalOverlay" style="display:none;">
-        <div class="portal-modal-dialog compare-dialog" id="portalCompareModalDialog">
-          <!-- Dynamically populated -->
-        </div>
-      </div>
-
-      <!-- BROCHURE ENQUIRY MODAL MOUNT -->
+      <!-- Brochure Enquiry Modal Mount -->
       <div class="portal-modal-overlay" id="portalBrochureModalOverlay" style="display:none;">
         <div class="portal-modal-dialog brochure-dialog" id="portalBrochureModalDialog">
           <!-- Dynamically populated -->
         </div>
       </div>
+
     </div>
   `;
 }
