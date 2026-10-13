@@ -1,7 +1,7 @@
 export const COLLEGES_DATA = [
 {
     id: 'iim-ahmedabad',
-    degreeTypes: ['MBA'],
+    degreeTypes: ['MBA', 'PGPM'],
     name: 'IIM Ahmedabad - Indian Institute of Management',
     shortName: 'IIM Ahmedabad',
     location: 'Ahmedabad, Gujarat',
@@ -58,7 +58,7 @@ export const COLLEGES_DATA = [
   },
   {
     id: 'iim-bangalore',
-    degreeTypes: ['MBA'],
+    degreeTypes: ['MBA', 'PGPM'],
     name: 'IIM Bangalore - Indian Institute of Management',
     shortName: 'IIM Bangalore',
     location: 'Bengaluru, Karnataka',
@@ -115,7 +115,7 @@ export const COLLEGES_DATA = [
   },
   {
     id: 'iim-calcutta',
-    degreeTypes: ['MBA'],
+    degreeTypes: ['MBA', 'PGPM'],
     name: 'IIM Calcutta - Indian Institute of Management',
     shortName: 'IIM Calcutta',
     location: 'Kolkata, West Bengal',
@@ -229,7 +229,7 @@ export const COLLEGES_DATA = [
   },
   {
     id: 'xlri-jamshedpur',
-    degreeTypes: ["PGDM"],
+    degreeTypes: ['PGDM', 'PGPM'],
     name: 'XLRI Jamshedpur - Xavier School of Management',
     shortName: 'XLRI Jamshedpur',
     location: 'Jamshedpur, Jharkhand',
@@ -283,7 +283,7 @@ export const COLLEGES_DATA = [
   },
   {
     id: 'spjimr-mumbai',
-    degreeTypes: ["PGDM"],
+    degreeTypes: ['PGDM', 'PGPM'],
     name: 'SPJIMR Mumbai - S.P. Jain Institute of Management and Research',
     shortName: 'SPJIMR Mumbai',
     location: 'Mumbai, Maharashtra',
@@ -2411,7 +2411,9 @@ export const COLLEGES_DATA = [
   {
     "id": "great-lakes-chennai",
     "degreeTypes": [
-      "PGDM"
+      "PGDM",
+      "PGPM",
+      "Global MBA"
     ],
     "name": "Great Lakes Institute of Management, Chennai (GLIM)",
     "shortName": "Great Lakes Chennai",
@@ -9283,4 +9285,1377 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "JECRC University in Jaipur is renowned for its vibrant innovation-centric campus and extensive placement records with tech companies, banks, and startups. The School of Management offers forward-looking MBA specializations in Data Analytics, Digital Marketing, and FinTech. Key Highlights: 32-acre modern campus in Jaipur's premier institutional hub; 2026 placement cycle achieved highest package of ₹33 LPA and top 30% avg of ₹10.70 LPA"
   }
+,
+{
+  "id": "sscbs-delhi",
+  "degreeTypes": [
+    "BBA"
+  ],
+  "name": "Shaheed Sukhdev College of Business Studies (SSCBS), Delhi University",
+  "shortName": "SSCBS Delhi (BBA / BMS)",
+  "location": "Rohini Sector 16, New Delhi",
+  "city": "Delhi-NCR",
+  "state": "Delhi",
+  "nirfRank": 1,
+  "rating": 4.8,
+  "reviewsCount": 145,
+  "programType": "BBA / BMS (Delhi University)",
+  "ownership": "Government / Delhi University",
+  "establishedYear": 1987,
+  "campusArea": "5 Acres Modern Campus",
+  "accreditation": "NAAC A+ Grade, DU Affiliated",
+  "fees": "₹70,000 Total",
+  "feeNum": 0.7,
+  "avgSalary": "₹11.2 LPA",
+  "avgSalaryNum": 11.2,
+  "highestSalary": "₹44.0 LPA",
+  "medianSalary": "₹10.5 LPA",
+  "batchSize": 230,
+  "roiScore": "9.8 / 10",
+  "examsAccepted": [
+    "CUET-UG"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "CUET 99+ %ile (Maths compulsory)",
+    "ncObc": "CUET 95+ %ile",
+    "sc": "CUET 88+ %ile",
+    "st": "CUET 80+ %ile"
+  },
+  "topRecruiters": [
+    "McKinsey & Company",
+    "Bain & Company",
+    "Boston Consulting Group",
+    "Goldman Sachs",
+    "DE Shaw",
+    "Kearney",
+    "Google"
+  ],
+  "domainDistribution": {
+    "consulting": "46%",
+    "finance": "32%",
+    "analytics": "14%",
+    "marketing": "8%"
+  },
+  "courses": [
+    {
+      "name": "Bachelor of Management Studies (BMS)",
+      "duration": "3/4 Years",
+      "seats": 120,
+      "fee": "₹70,000"
+    },
+    {
+      "name": "BBA in Financial and Investment Analysis (BBA FIA)",
+      "duration": "3/4 Years",
+      "seats": 110,
+      "fee": "₹75,000"
+    }
+  ],
+  "admissionCriteria": {
+    "cuetScore": "100% CUET-UG (English + Mathematics + Section III General Test)",
+    "selection": "DU CSAS Portal Counselling"
+  },
+  "facilities": [
+    "State-of-the-Art Bloomberg Financial Terminal Lab",
+    "Air-Conditioned Auditoriums",
+    "High-Speed Wi-Fi Campus",
+    "Central Digital Library",
+    "Incubation Center"
+  ],
+  "highlights": "India’s undisputed #1 undergraduate management institution. Offers unbeatable ROI with ₹70k fees and ₹44 LPA highest placement package with global bulge-bracket banks and top 3 strategy consulting firms."
+},
+{
+  "id": "nmims-asmsoc-mumbai",
+  "degreeTypes": [
+    "BBA"
+  ],
+  "name": "NMIMS ASMSOC - Anil Surendra Modi School of Commerce, Mumbai",
+  "shortName": "NMIMS ASMSOC Mumbai (BBA)",
+  "location": "Vile Parle West, Mumbai",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "nirfRank": 21,
+  "rating": 4.6,
+  "reviewsCount": 198,
+  "programType": "BBA (Deemed University)",
+  "ownership": "Private / Deemed-to-be University",
+  "establishedYear": 2005,
+  "campusArea": "Urban Campus (Vile Parle Hub)",
+  "accreditation": "NAAC A+ Grade, AICTE",
+  "fees": "₹10.5 Lakhs",
+  "feeNum": 10.5,
+  "avgSalary": "₹9.2 LPA",
+  "avgSalaryNum": 9.2,
+  "highestSalary": "₹21.5 LPA",
+  "medianSalary": "₹8.8 LPA",
+  "batchSize": 600,
+  "roiScore": "8.4 / 10",
+  "examsAccepted": [
+    "NMIMS NPAT"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "NPAT Score Merit List"
+  },
+  "topRecruiters": [
+    "Deloitte",
+    "PwC",
+    "EY",
+    "KPMG",
+    "Barclays",
+    "Morgan Stanley",
+    "ITC",
+    "HUL"
+  ],
+  "domainDistribution": {
+    "finance": "42%",
+    "consulting": "28%",
+    "marketing": "20%",
+    "operations": "10%"
+  },
+  "courses": [
+    {
+      "name": "Bachelor of Business Administration (BBA Flagship)",
+      "duration": "3 Years Full Time",
+      "seats": 600,
+      "fee": "₹10,50,000"
+    }
+  ],
+  "admissionCriteria": {
+    "entranceExam": "NMIMS NPAT Merit Score",
+    "eligibility": "Minimum 50% in 10+2 with Mathematics/Statistics"
+  },
+  "facilities": [
+    "Smart Classrooms",
+    "Bloomberg Terminals",
+    "Central Air-Conditioned Library",
+    "Student Cafeteria",
+    "Placement Cell"
+  ],
+  "highlights": "Ranked among India’s top private BBA colleges. High placement records in Mumbai’s corporate and financial capital with Big 4 consultancies and investment banks."
+},
+{
+  "id": "scms-pune-bba",
+  "degreeTypes": [
+    "BBA"
+  ],
+  "name": "Symbiosis Centre for Management Studies (SCMS Pune)",
+  "shortName": "SCMS Pune (BBA)",
+  "location": "Viman Nagar, Pune",
+  "city": "Pune",
+  "state": "Maharashtra",
+  "nirfRank": 17,
+  "rating": 4.5,
+  "reviewsCount": 160,
+  "programType": "BBA (Symbiosis International)",
+  "ownership": "Private / Deemed University",
+  "establishedYear": 2004,
+  "campusArea": "15 Acres Viman Nagar Campus",
+  "accreditation": "NAAC A++ Grade",
+  "fees": "₹11.2 Lakhs",
+  "feeNum": 11.2,
+  "avgSalary": "₹8.8 LPA",
+  "avgSalaryNum": 8.8,
+  "highestSalary": "₹18.0 LPA",
+  "medianSalary": "₹8.2 LPA",
+  "batchSize": 300,
+  "roiScore": "8.3 / 10",
+  "examsAccepted": [
+    "SET (Symbiosis Entrance Test)"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "SET 85+ Score out of 100 + PI-WAT"
+  },
+  "topRecruiters": [
+    "KPMG",
+    "Deloitte",
+    "Credit Suisse",
+    "Accenture",
+    "Zomato",
+    "Amazon",
+    "Wipro"
+  ],
+  "domainDistribution": {
+    "marketing": "38%",
+    "finance": "32%",
+    "humanResources": "18%",
+    "internationalBusiness": "12%"
+  },
+  "courses": [
+    {
+      "name": "Bachelor of Business Administration (BBA Honours)",
+      "duration": "4 Years",
+      "seats": 300,
+      "fee": "₹11,20,000"
+    }
+  ],
+  "admissionCriteria": {
+    "entranceExam": "SET Test (50% weightage)",
+    "piWat": "Personal Interview & Writing Ability Test (50% weightage)"
+  },
+  "facilities": [
+    "Global Immersion Program",
+    "Modern Computer Labs",
+    "Hostels",
+    "Sports Ground",
+    "Auditorium"
+  ],
+  "highlights": "Flagship undergraduate B-school under Symbiosis International. Offers dual-specializations and international semester exchange programs with universities in Germany, France, and UK."
+},
+{
+  "id": "christ-university-bba",
+  "degreeTypes": [
+    "BBA"
+  ],
+  "name": "Christ (Deemed to be University) - School of Business and Management",
+  "shortName": "Christ University Bengaluru (BBA)",
+  "location": "Hosur Road, Bengaluru",
+  "city": "Bengaluru",
+  "state": "Karnataka",
+  "nirfRank": 60,
+  "rating": 4.4,
+  "reviewsCount": 210,
+  "programType": "BBA (Deemed University)",
+  "ownership": "Private / Deemed-to-be University",
+  "establishedYear": 1969,
+  "campusArea": "75 Acres Lush Green Campus",
+  "accreditation": "NAAC A+ Grade",
+  "fees": "₹6.8 Lakhs",
+  "feeNum": 6.8,
+  "avgSalary": "₹7.5 LPA",
+  "avgSalaryNum": 7.5,
+  "highestSalary": "₹16.0 LPA",
+  "medianSalary": "₹7.0 LPA",
+  "batchSize": 450,
+  "roiScore": "8.6 / 10",
+  "examsAccepted": [
+    "Christ University Entrance Test (CUET)"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "CUET Entrance + Micro Presentation + PI"
+  },
+  "topRecruiters": [
+    "Goldman Sachs",
+    "DE Shaw",
+    "EY",
+    "Deloitte",
+    "Amazon",
+    "Arcesium",
+    "Target"
+  ],
+  "domainDistribution": {
+    "finance": "40%",
+    "marketing": "30%",
+    "analytics": "20%",
+    "generalMgmt": "10%"
+  },
+  "courses": [
+    {
+      "name": "BBA (Honours / Honours with Research)",
+      "duration": "4 Years",
+      "seats": 350,
+      "fee": "₹6,80,000"
+    },
+    {
+      "name": "BBA in Decision Sciences & Business Analytics",
+      "duration": "3/4 Years",
+      "seats": 100,
+      "fee": "₹7,50,000"
+    }
+  ],
+  "admissionCriteria": {
+    "test": "Christ University Entrance Test",
+    "piMp": "Skill Assessment & Personal Interview"
+  },
+  "facilities": [
+    "State-of-the-Art Research Center",
+    "Air-Conditioned Auditoriums",
+    "Hostel Dormitories",
+    "Basketball & Football Courts"
+  ],
+  "highlights": "Premier BBA destination in Bangalore. Highly disciplined academic ecosystem with robust corporate placements across Bangalore’s tech corridor and multinational banks."
+},
+{
+  "id": "iim-indore-ipm",
+  "degreeTypes": [
+    "BBA",
+    "MBA"
+  ],
+  "name": "IIM Indore - Integrated Programme in Management (IPM BBA+MBA)",
+  "shortName": "IIM Indore IPM",
+  "location": "Prabandh Shikhar, Rau, Indore",
+  "city": "Indore",
+  "state": "Madhya Pradesh",
+  "nirfRank": 8,
+  "rating": 4.8,
+  "reviewsCount": 175,
+  "programType": "Integrated BBA + MBA (5 Years)",
+  "ownership": "Government / Institute of National Importance",
+  "establishedYear": 1996,
+  "campusArea": "193 Acres Scenic Hill Campus",
+  "accreditation": "Triple Crown (AACSB, AMBA, EQUIS)",
+  "fees": "₹35.0 Lakhs (5 Years Total)",
+  "feeNum": 35,
+  "avgSalary": "₹25.68 LPA",
+  "avgSalaryNum": 25.68,
+  "highestSalary": "₹1.0 CPA",
+  "medianSalary": "₹24.5 LPA",
+  "batchSize": 150,
+  "roiScore": "9.0 / 10",
+  "examsAccepted": [
+    "IPMAT (IIM Indore)"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "IPMAT Quantitative Ability & Verbal Aptitude cutoffs + PI"
+  },
+  "topRecruiters": [
+    "Boston Consulting Group",
+    "McKinsey",
+    "Bain",
+    "Deutsche Bank",
+    "Goldman Sachs",
+    "Amazon",
+    "HUL",
+    "P&G"
+  ],
+  "domainDistribution": {
+    "consulting": "34%",
+    "finance": "26%",
+    "salesMarketing": "20%",
+    "generalMgmt": "12%",
+    "productTech": "8%"
+  },
+  "courses": [
+    {
+      "name": "Five Year Integrated Programme in Management (IPM - BBA + MBA)",
+      "duration": "5 Years Full Time",
+      "seats": 150,
+      "fee": "₹35,00,000"
+    }
+  ],
+  "admissionCriteria": {
+    "ipmatScore": "Aptitude Test Score (ATS) 65% weightage",
+    "pi": "Personal Interview 35% weightage"
+  },
+  "facilities": [
+    "Olympic Sports Complex",
+    "Single Occupancy Dorms",
+    "Finance Lab",
+    "Student Dining Halls",
+    "High-Speed Campus LAN"
+  ],
+  "highlights": "The pioneer 5-year dual degree IPM in India. Students enter right after Class 12 and graduate with an authentic MBA from IIM Indore without taking CAT."
+},
+{
+  "id": "upes-dehradun-bba",
+  "degreeTypes": [
+    "BBA"
+  ],
+  "name": "UPES Dehradun - School of Business (BBA)",
+  "shortName": "UPES BBA Dehradun",
+  "location": "Energy Acres, Bidholi, Dehradun",
+  "city": "Dehradun",
+  "state": "Uttarakhand",
+  "nirfRank": 39,
+  "rating": 4.3,
+  "reviewsCount": 140,
+  "programType": "BBA (Specialized Industry)",
+  "ownership": "Private University",
+  "establishedYear": 2003,
+  "campusArea": "44 Acres Himalayan Foothills Campus",
+  "accreditation": "NAAC A Grade, UGC & IACBE",
+  "fees": "₹9.8 Lakhs",
+  "feeNum": 9.8,
+  "avgSalary": "₹7.2 LPA",
+  "avgSalaryNum": 7.2,
+  "highestSalary": "₹18.0 LPA",
+  "medianSalary": "₹6.8 LPA",
+  "batchSize": 240,
+  "roiScore": "8.1 / 10",
+  "examsAccepted": [
+    "UGAT",
+    "CUET-UG",
+    "UPESMET-UG"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "Minimum 50% in Class 10 & 12 + Screening Interview"
+  },
+  "topRecruiters": [
+    "Deloitte",
+    "Amazon",
+    "Reliance Retail",
+    "Adani Group",
+    "Tata Power",
+    "FedEx",
+    "KPMG"
+  ],
+  "domainDistribution": {
+    "digitalBusiness": "32%",
+    "marketing": "28%",
+    "logisticsSupplyChain": "22%",
+    "finance": "18%"
+  },
+  "courses": [
+    {
+      "name": "BBA in Digital Business & Marketing",
+      "duration": "3/4 Years",
+      "seats": 120,
+      "fee": "₹9,80,000"
+    },
+    {
+      "name": "BBA in Logistics & Aviation Management",
+      "duration": "3/4 Years",
+      "seats": 120,
+      "fee": "₹9,80,000"
+    }
+  ],
+  "admissionCriteria": {
+    "entrance": "UPESMET-UG or CUET-UG score followed by Personal Interview"
+  },
+  "facilities": [
+    "Modern High-Tech Labs",
+    "Scenic Mountain View Hostels",
+    "Auditoriums",
+    "Sports Arenas",
+    "Startup Hatchery"
+  ],
+  "highlights": "Premier BBA campus in Uttarakhand foothills. Features specialized industry tracks, live company internships, and global semester exchange."
+},
+{
+  "id": "jecrc-jaipur-bba",
+  "degreeTypes": [
+    "BBA"
+  ],
+  "name": "JECRC University - School of Management (BBA)",
+  "shortName": "JECRC BBA Jaipur",
+  "location": "Plot No. IS-2036 to 2039, Ramchandrapura, Sitapura Industrial Area Extension, Jaipur",
+  "city": "Jaipur",
+  "state": "Rajasthan",
+  "nirfRank": 85,
+  "rating": 4.3,
+  "reviewsCount": 125,
+  "programType": "BBA (Undergraduate Degree)",
+  "ownership": "Private University",
+  "establishedYear": 2012,
+  "campusArea": "32 Acres Campus",
+  "accreditation": "UGC Recognized, NAAC Accredited",
+  "fees": "₹3.6 Lakhs",
+  "feeNum": 3.6,
+  "avgSalary": "₹6.2 LPA",
+  "avgSalaryNum": 6.2,
+  "highestSalary": "₹15.0 LPA",
+  "medianSalary": "₹5.5 LPA",
+  "batchSize": 180,
+  "roiScore": "8.8 / 10",
+  "examsAccepted": [
+    "Merit / CUET-UG"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "Class 12 Merit (Minimum 50%)"
+  },
+  "topRecruiters": [
+    "Wipro",
+    "TCS",
+    "ICICI Bank",
+    "HDFC Bank",
+    "Byju’s",
+    "AU Small Finance Bank",
+    "Amazon"
+  ],
+  "domainDistribution": {
+    "marketing": "40%",
+    "bankingFinance": "32%",
+    "hrOperations": "28%"
+  },
+  "courses": [
+    {
+      "name": "Bachelor of Business Administration (BBA Core & Analytics)",
+      "duration": "3 Years",
+      "seats": 180,
+      "fee": "₹3,60,000"
+    }
+  ],
+  "admissionCriteria": {
+    "merit": "10+2 marks + Personal Counseling Session"
+  },
+  "facilities": [
+    "Smart Classrooms",
+    "Air-Conditioned Hostels",
+    "Makerspace Innovation Lab",
+    "Sports Complex"
+  ],
+  "highlights": "Most preferred affordable BBA destination in Jaipur. Exceptional placement-to-fee ratio with top domestic banks and IT firms."
+},
+{
+  "id": "poornima-jaipur-bba",
+  "degreeTypes": [
+    "BBA"
+  ],
+  "name": "Poornima University (GCEC School of Management - BBA)",
+  "shortName": "Poornima BBA Jaipur",
+  "location": "IS-2027 to 2031, Ramchandrapura, P.O. Vidhani Vatika, Sitapura Extension, Jaipur",
+  "city": "Jaipur",
+  "state": "Rajasthan",
+  "nirfRank": 95,
+  "rating": 4.2,
+  "reviewsCount": 110,
+  "programType": "BBA in Entrepreneurship",
+  "ownership": "Private University",
+  "establishedYear": 2012,
+  "campusArea": "32.67 Acres",
+  "accreditation": "UGC Recognized",
+  "fees": "₹3.4 Lakhs",
+  "feeNum": 3.4,
+  "avgSalary": "₹5.8 LPA",
+  "avgSalaryNum": 5.8,
+  "highestSalary": "₹12.0 LPA",
+  "medianSalary": "₹5.2 LPA",
+  "batchSize": 120,
+  "roiScore": "8.7 / 10",
+  "examsAccepted": [
+    "Merit / PU Entrance"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "Class 12 Merit (Minimum 50%)"
+  },
+  "topRecruiters": [
+    "Decathlon",
+    "Genpact",
+    "Infosys",
+    "AU Small Finance Bank",
+    "Zomato",
+    "Reliance Retail"
+  ],
+  "domainDistribution": {
+    "entrepreneurship": "35%",
+    "marketing": "35%",
+    "finance": "30%"
+  },
+  "courses": [
+    {
+      "name": "BBA in Entrepreneurship & International Business",
+      "duration": "3 Years",
+      "seats": 120,
+      "fee": "₹3,40,000"
+    }
+  ],
+  "admissionCriteria": {
+    "merit": "10+2 marks + Student Statement of Purpose"
+  },
+  "facilities": [
+    "Incubation Center",
+    "Hostels",
+    "Sports Ground",
+    "Cafeteria"
+  ],
+  "highlights": "Practical learning model with 3-day work and 3-day study framework, helping students build real-world startups during their BBA."
+},
+{
+  "id": "great-lakes-pgpm-1yr",
+  "degreeTypes": [
+    "PGPM"
+  ],
+  "name": "Great Lakes Institute of Management (Flagship 1-Year PGPM)",
+  "shortName": "Great Lakes PGPM (1-Year)",
+  "location": "Chennai Campus (ECR Road) & Gurgaon (Delhi-NCR)",
+  "city": "Bengaluru",
+  "state": "Pan India",
+  "nirfRank": 31,
+  "rating": 4.7,
+  "reviewsCount": 185,
+  "programType": "PGPM (1-Year Accelerated Program)",
+  "ownership": "Private Autonomous Institute",
+  "establishedYear": 2004,
+  "campusArea": "27.5 Acres LEED Platinum Campus",
+  "accreditation": "AMBA (UK), SAQS, AICTE Approved",
+  "fees": "₹18.5 Lakhs",
+  "feeNum": 18.5,
+  "avgSalary": "₹18.1 LPA",
+  "avgSalaryNum": 18.1,
+  "highestSalary": "₹34.0 LPA",
+  "medianSalary": "₹17.5 LPA",
+  "batchSize": 360,
+  "roiScore": "9.2 / 10",
+  "examsAccepted": [
+    "CAT",
+    "XAT",
+    "GMAT",
+    "CMAT"
+  ],
+  "cutoffCAT": "85+ %ile",
+  "cutoffXAT": "85+ %ile",
+  "cutoffCMAT": "95+ %ile",
+  "cutoffDetails": {
+    "general": "CAT/XAT 85+ %ile, GMAT 600+ with 24+ months work experience"
+  },
+  "topRecruiters": [
+    "Microsoft",
+    "Accenture Strategy",
+    "Deloitte",
+    "Cognizant",
+    "Infosys Consulting",
+    "Amazon",
+    "Aditya Birla Group",
+    "EY"
+  ],
+  "domainDistribution": {
+    "techConsulting": "38%",
+    "analyticsAI": "24%",
+    "financeProduct": "20%",
+    "salesMarketing": "18%"
+  },
+  "courses": [
+    {
+      "name": "Post Graduate Program in Management (PGPM - 1 Year Fast Track)",
+      "duration": "1 Year Full Time",
+      "seats": 360,
+      "fee": "₹18,50,000"
+    }
+  ],
+  "admissionCriteria": {
+    "eligibility": "Bachelor degree with minimum 24 months of full-time work experience",
+    "selection": "Exam Score + Essay + Profile Evaluation + Personal Interview"
+  },
+  "facilities": [
+    "LEED Platinum Green Campus",
+    "Bloomberg Trading Lab",
+    "Single AC Rooms Hostels",
+    "Resource Center",
+    "Multi-Cuisine Food Court"
+  ],
+  "highlights": "India’s pioneer and #1 ranked 1-year fast-track management program for experienced professionals. Exceptional career pivot opportunities into AI, Tech Consulting, and Product Management in just 12 months."
+},
+{
+  "id": "soil-gurgaon-pgpm",
+  "degreeTypes": [
+    "PGPM"
+  ],
+  "name": "SOIL Institute of Management, Gurgaon (1-Year PGPM)",
+  "shortName": "SOIL Gurgaon (1-Year PGPM)",
+  "location": "Plot 76, Sector 44, Gurgaon (Delhi-NCR)",
+  "city": "Delhi-NCR",
+  "state": "Haryana",
+  "nirfRank": 55,
+  "rating": 4.4,
+  "reviewsCount": 130,
+  "programType": "PGPM (1-Year Business Leadership)",
+  "ownership": "Private Autonomous Business School",
+  "establishedYear": 2008,
+  "campusArea": "Modern Cyber Hub Campus",
+  "accreditation": "AICTE Approved, Industry Consortium Backed",
+  "fees": "₹15.3 Lakhs",
+  "feeNum": 15.3,
+  "avgSalary": "₹14.5 LPA",
+  "avgSalaryNum": 14.5,
+  "highestSalary": "₹24.0 LPA",
+  "medianSalary": "₹13.8 LPA",
+  "batchSize": 120,
+  "roiScore": "8.9 / 10",
+  "examsAccepted": [
+    "CAT",
+    "XAT",
+    "GMAT",
+    "NMAT",
+    "SOIL Talent Test"
+  ],
+  "cutoffCAT": "75+ %ile",
+  "cutoffXAT": "75+ %ile",
+  "cutoffCMAT": "80+ %ile",
+  "cutoffDetails": {
+    "general": "Minimum 2 years work experience + Leadership Assessment"
+  },
+  "topRecruiters": [
+    "Infosys",
+    "Wipro",
+    "Cognizant",
+    "HCL Tech",
+    "Schneider Electric",
+    "Anand Group",
+    "Tata Steel",
+    "Grant Thornton"
+  ],
+  "domainDistribution": {
+    "consulting": "35%",
+    "analyticsTech": "30%",
+    "humanCapital": "20%",
+    "marketing": "15%"
+  },
+  "courses": [
+    {
+      "name": "Post Graduate Program in Business Leadership (PGPBL - 1 Year)",
+      "duration": "1 Year Full Time",
+      "seats": 120,
+      "fee": "₹15,30,000"
+    }
+  ],
+  "admissionCriteria": {
+    "workEx": "Minimum 2+ years of professional work experience",
+    "interview": "STAT Assessment + Design Thinking Workshop + CXO Panel Interview"
+  },
+  "facilities": [
+    "Executive Boardrooms",
+    "Design Thinking Studio",
+    "Holistic Wellness Center",
+    "Digital Library"
+  ],
+  "highlights": "Founded by a consortium of 32 global corporations. Deep focus on conscious leadership, emotional intelligence, and swift executive career acceleration."
+},
+{
+  "id": "nmims-online-mba",
+  "degreeTypes": [
+    "Online MBA"
+  ],
+  "name": "NMIMS Global Access (CDOE) - UGC Entitled Online MBA",
+  "shortName": "NMIMS Online MBA",
+  "location": "Pan India Online (HQ: Vile Parle, Mumbai)",
+  "city": "Mumbai",
+  "state": "Pan India",
+  "nirfRank": 21,
+  "rating": 4.7,
+  "reviewsCount": 320,
+  "programType": "UGC Entitled Online MBA",
+  "ownership": "Deemed University / Category 1 Autonomy",
+  "establishedYear": 1981,
+  "campusArea": "Digital Campus (State-of-the-Art Portal)",
+  "accreditation": "UGC-DEB Entitled, NAAC A+ (3.59 CGPA), AICTE",
+  "fees": "₹1.80 Lakhs Total",
+  "feeNum": 1.8,
+  "avgSalary": "₹8.5 LPA",
+  "avgSalaryNum": 8.5,
+  "highestSalary": "₹18.0 LPA",
+  "medianSalary": "₹8.0 LPA",
+  "batchSize": 5000,
+  "roiScore": "9.6 / 10",
+  "examsAccepted": [
+    "Direct Online Admission (Merit Based)"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "Graduation with 50% marks from recognized university"
+  },
+  "topRecruiters": [
+    "Accenture",
+    "TCS",
+    "HDFC Bank",
+    "Infosys",
+    "Cognizant",
+    "Genpact",
+    "Vodafone Idea",
+    "ICICI Lombard"
+  ],
+  "domainDistribution": {
+    "bankingFinance": "32%",
+    "marketingDigital": "28%",
+    "supplyChainOperations": "20%",
+    "humanResources": "20%"
+  },
+  "courses": [
+    {
+      "name": "Online Master of Business Administration (MBA - 10 Specializations)",
+      "duration": "2 Years Online",
+      "seats": 5000,
+      "fee": "₹1,80,000"
+    }
+  ],
+  "admissionCriteria": {
+    "eligibility": "Bachelor’s Degree in any discipline with minimum 50% marks (45% for reserved categories)",
+    "application": "Direct verification through NMIMS portal"
+  },
+  "facilities": [
+    "Award-Winning Student Mobile App",
+    "Live Weekend Lectures by Top Faculty",
+    "Recorded Session Archive",
+    "Digital Library with 50,000+ e-books",
+    "Job Portal with 500+ Corporate Tie-ups"
+  ],
+  "highlights": "India’s #1 rated Online MBA program. Features Harvard case studies, interactive live lectures, 100% remote proctored examinations, and monthly zero-cost EMI starting from ₹7,500/month."
+},
+{
+  "id": "manipal-online-mba",
+  "degreeTypes": [
+    "Online MBA"
+  ],
+  "name": "Manipal University Jaipur (MUJ) - UGC Entitled Online MBA",
+  "shortName": "Manipal Online MBA",
+  "location": "Pan India Online (Campus: Jaipur, Rajasthan)",
+  "city": "Jaipur",
+  "state": "Pan India",
+  "nirfRank": 64,
+  "rating": 4.6,
+  "reviewsCount": 260,
+  "programType": "UGC Entitled Online MBA",
+  "ownership": "Private University / NAAC A+ Grade",
+  "establishedYear": 2011,
+  "campusArea": "Pan India Cloud Learning Ecosystem",
+  "accreditation": "UGC-DEB Entitled, NAAC A+ (3.28 CGPA), AICTE",
+  "fees": "₹1.75 Lakhs Total",
+  "feeNum": 1.75,
+  "avgSalary": "₹7.8 LPA",
+  "avgSalaryNum": 7.8,
+  "highestSalary": "₹16.0 LPA",
+  "medianSalary": "₹7.2 LPA",
+  "batchSize": 3500,
+  "roiScore": "9.4 / 10",
+  "examsAccepted": [
+    "Direct Online Admission"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "Graduation with 50% marks in any stream"
+  },
+  "topRecruiters": [
+    "Amazon",
+    "Deloitte",
+    "EY",
+    "American Express",
+    "Tech Mahindra",
+    "Tata Communications",
+    "Axis Bank"
+  ],
+  "domainDistribution": {
+    "itFinTech": "34%",
+    "marketing": "26%",
+    "financeAnalytics": "24%",
+    "operations": "16%"
+  },
+  "courses": [
+    {
+      "name": "Online Master of Business Administration (MBA)",
+      "duration": "2 Years Online",
+      "seats": 3500,
+      "fee": "₹1,75,000"
+    }
+  ],
+  "admissionCriteria": {
+    "eligibility": "10+2+3 Bachelor’s Degree with 50% from a recognized university"
+  },
+  "facilities": [
+    "Coursera for Campus Access Free",
+    "Virtual Placement Assistance",
+    "24x7 Student Helpdesk",
+    "Interactive Live Webinars"
+  ],
+  "highlights": "Global brand value of Manipal with affordable fee of ₹1.75 Lakhs. Offers free Coursera certificates, self-paced LMS, and dedicated resume-building sessions."
+},
+{
+  "id": "amity-online-mba",
+  "degreeTypes": [
+    "Online MBA"
+  ],
+  "name": "Amity University Online - QS Ranked Global Online MBA",
+  "shortName": "Amity Online MBA",
+  "location": "Pan India Online (Campus: Noida / Delhi-NCR)",
+  "city": "Delhi-NCR",
+  "state": "Pan India",
+  "nirfRank": 35,
+  "rating": 4.6,
+  "reviewsCount": 280,
+  "programType": "QS Ranked Online MBA",
+  "ownership": "Private University / UGC Entitled",
+  "establishedYear": 2005,
+  "campusArea": "Global Online Hub",
+  "accreditation": "UGC-DEB Entitled, NAAC A+ Grade, WASC (USA), QAA (UK)",
+  "fees": "₹1.99 Lakhs Total",
+  "feeNum": 1.99,
+  "avgSalary": "₹8.0 LPA",
+  "avgSalaryNum": 8,
+  "highestSalary": "₹17.5 LPA",
+  "medianSalary": "₹7.5 LPA",
+  "batchSize": 4500,
+  "roiScore": "9.3 / 10",
+  "examsAccepted": [
+    "Direct Online Admission"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "Minimum 50% in Graduation"
+  },
+  "topRecruiters": [
+    "IBM",
+    "Accenture",
+    "Microsoft",
+    "Adobe",
+    "Genpact",
+    "HCL",
+    "Standard Chartered"
+  ],
+  "domainDistribution": {
+    "internationalBusiness": "30%",
+    "marketingSales": "28%",
+    "financeBanking": "24%",
+    "dataAnalytics": "18%"
+  },
+  "courses": [
+    {
+      "name": "Online MBA (14 In-Demand Industry Specializations)",
+      "duration": "2 Years Online",
+      "seats": 4500,
+      "fee": "₹1,99,000"
+    }
+  ],
+  "admissionCriteria": {
+    "eligibility": "Graduation in any stream with minimum 50% marks"
+  },
+  "facilities": [
+    "AI Mentor Chatbot AMI",
+    "Global Virtual Job Fairs",
+    "Guest Lectures by International Faculty",
+    "Proctored Online Exams"
+  ],
+  "highlights": "Ranked Asia’s #1 Online MBA by QS World Rankings. Offers globally valid degree accredited in USA and UK, with an AI tutor and live corporate masterclasses."
+},
+{
+  "id": "dy-patil-online-mba",
+  "degreeTypes": [
+    "Online MBA"
+  ],
+  "name": "Dr. D.Y. Patil Centre for Online Learning (DPU Online MBA, Pune)",
+  "shortName": "DY Patil Online MBA",
+  "location": "Pan India Online (Campus: Sant Tukaram Nagar, Pimpri, Pune)",
+  "city": "Pune",
+  "state": "Pan India",
+  "nirfRank": 44,
+  "rating": 4.5,
+  "reviewsCount": 195,
+  "programType": "UGC Entitled Online MBA",
+  "ownership": "Deemed University / NAAC A++ (3.64 CGPA)",
+  "establishedYear": 2003,
+  "campusArea": "Digital Campus Pune",
+  "accreditation": "UGC-DEB Entitled, NAAC A++ Grade, AICTE",
+  "fees": "₹1.40 Lakhs Total",
+  "feeNum": 1.4,
+  "avgSalary": "₹7.2 LPA",
+  "avgSalaryNum": 7.2,
+  "highestSalary": "₹14.5 LPA",
+  "medianSalary": "₹6.8 LPA",
+  "batchSize": 2500,
+  "roiScore": "9.5 / 10",
+  "examsAccepted": [
+    "Direct Online Admission"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "Graduation with 50% marks"
+  },
+  "topRecruiters": [
+    "Bajaj Finserv",
+    "Capgemini",
+    "Kotak Mahindra",
+    "Infosys",
+    "Apollo Hospitals",
+    "Cipla"
+  ],
+  "domainDistribution": {
+    "hospitalHealthcare": "30%",
+    "bankingFinance": "28%",
+    "marketingRetail": "24%",
+    "humanResources": "18%"
+  },
+  "courses": [
+    {
+      "name": "Online MBA (Specializations in Hospital Mgmt, FinTech & Marketing)",
+      "duration": "2 Years Online",
+      "seats": 2500,
+      "fee": "₹1,40,000"
+    }
+  ],
+  "admissionCriteria": {
+    "eligibility": "Bachelor’s degree from a recognized university with minimum 50% marks"
+  },
+  "facilities": [
+    "LMS Mobile App",
+    "Flexible Weekend Batch Timings",
+    "Online Placement Assistance",
+    "Easy No-Cost EMI"
+  ],
+  "highlights": "Prestigious NAAC A++ university with the lowest fee structure (₹1.40L). Specialized tracks in Hospital & Healthcare Management, FinTech, and Logistics."
+},
+{
+  "id": "nmims-online-bba",
+  "degreeTypes": [
+    "Online BBA"
+  ],
+  "name": "NMIMS Global Access - UGC Entitled Online BBA",
+  "shortName": "NMIMS Online BBA",
+  "location": "Pan India Online (HQ: Mumbai)",
+  "city": "Mumbai",
+  "state": "Pan India",
+  "nirfRank": 21,
+  "rating": 4.6,
+  "reviewsCount": 180,
+  "programType": "Online Undergraduate Degree",
+  "ownership": "Deemed University",
+  "establishedYear": 2018,
+  "campusArea": "Pan India Online",
+  "accreditation": "UGC-DEB Entitled, NAAC A+ Grade",
+  "fees": "₹1.40 Lakhs Total",
+  "feeNum": 1.4,
+  "avgSalary": "₹5.8 LPA",
+  "avgSalaryNum": 5.8,
+  "highestSalary": "₹11.0 LPA",
+  "medianSalary": "₹5.2 LPA",
+  "batchSize": 2000,
+  "roiScore": "9.2 / 10",
+  "examsAccepted": [
+    "Class 12 Merit"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "Minimum 50% in 10+2 from recognized board"
+  },
+  "topRecruiters": [
+    "ICICI Prudential",
+    "Concentrix",
+    "Wipro",
+    "Genpact",
+    "Tata AIA",
+    "Kotak Mahindra Bank"
+  ],
+  "domainDistribution": {
+    "businessOps": "35%",
+    "marketingDigital": "35%",
+    "financeAccounting": "30%"
+  },
+  "courses": [
+    {
+      "name": "Bachelor of Business Administration (Online BBA)",
+      "duration": "3 Years Online",
+      "seats": 2000,
+      "fee": "₹1,40,000"
+    }
+  ],
+  "admissionCriteria": {
+    "eligibility": "10+2 or equivalent with minimum 50% marks"
+  },
+  "facilities": [
+    "LMS Cloud Portal",
+    "Weekend Masterclasses",
+    "Digital Evaluation System",
+    "Career Advisory"
+  ],
+  "highlights": "Flexible UGC-approved online undergraduate management degree from NMIMS. Ideal for competitive exam aspirants, working students, and family business successors."
+},
+{
+  "id": "amity-online-bba",
+  "degreeTypes": [
+    "Online BBA"
+  ],
+  "name": "Amity University Online - Accredited Online BBA",
+  "shortName": "Amity Online BBA",
+  "location": "Pan India Online (Campus: Noida / Delhi-NCR)",
+  "city": "Delhi-NCR",
+  "state": "Pan India",
+  "nirfRank": 35,
+  "rating": 4.5,
+  "reviewsCount": 165,
+  "programType": "Online Undergraduate Degree",
+  "ownership": "Private University",
+  "establishedYear": 2015,
+  "campusArea": "Global Online Hub",
+  "accreditation": "UGC-DEB Entitled, NAAC A+ Grade",
+  "fees": "₹1.50 Lakhs Total",
+  "feeNum": 1.5,
+  "avgSalary": "₹5.5 LPA",
+  "avgSalaryNum": 5.5,
+  "highestSalary": "₹10.5 LPA",
+  "medianSalary": "₹5.0 LPA",
+  "batchSize": 2500,
+  "roiScore": "9.1 / 10",
+  "examsAccepted": [
+    "Class 12 Merit"
+  ],
+  "cutoffCAT": "N/A",
+  "cutoffXAT": "N/A",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "Minimum 50% in Class 12"
+  },
+  "topRecruiters": [
+    "Teleperformance",
+    "Cognizant",
+    "HCL",
+    "Byju’s",
+    "Bajaj Finance",
+    "Concentrix"
+  ],
+  "domainDistribution": {
+    "digitalMarketing": "38%",
+    "eCommerce": "32%",
+    "generalMgmt": "30%"
+  },
+  "courses": [
+    {
+      "name": "Bachelor of Business Administration (Online BBA)",
+      "duration": "3 Years Online",
+      "seats": 2500,
+      "fee": "₹1,50,000"
+    }
+  ],
+  "admissionCriteria": {
+    "eligibility": "10+2 in any stream from recognized board with 50% marks"
+  },
+  "facilities": [
+    "Virtual Classrooms",
+    "Interactive Discussion Forums",
+    "Placement Assistance Portal"
+  ],
+  "highlights": "Globally recognized online BBA with interactive simulations and industry guest lectures."
+},
+{
+  "id": "sp-jain-global-mba",
+  "degreeTypes": [
+    "Global MBA"
+  ],
+  "name": "SP Jain School of Global Management (Tri-City Global MBA)",
+  "shortName": "SP Jain Global MBA (Dubai/Singapore/Sydney)",
+  "location": "Tri-City Campuses: Dubai, Singapore, Sydney (India HQ: Lower Parel, Mumbai)",
+  "city": "Mumbai",
+  "state": "Pan India",
+  "nirfRank": 12,
+  "rating": 4.8,
+  "reviewsCount": 170,
+  "programType": "Tri-City Global MBA",
+  "ownership": "International Autonomous Business School",
+  "establishedYear": 2004,
+  "campusArea": "Multi-Country Global Campuses",
+  "accreditation": "TEQSA (Australia), AACSB Member",
+  "fees": "₹28.0 Lakhs Total",
+  "feeNum": 28,
+  "avgSalary": "₹24.5 LPA",
+  "avgSalaryNum": 24.5,
+  "highestSalary": "₹72.0 LPA",
+  "medianSalary": "₹23.0 LPA",
+  "batchSize": 180,
+  "roiScore": "9.1 / 10",
+  "examsAccepted": [
+    "GMAT",
+    "GRE",
+    "CAT",
+    "SPJAT"
+  ],
+  "cutoffCAT": "85+ %ile",
+  "cutoffXAT": "85+ %ile",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "GMAT 650+ or SPJAT 80+ %ile + 3+ years work experience"
+  },
+  "topRecruiters": [
+    "Amazon APAC",
+    "Deloitte Middle East",
+    "Kearney",
+    "Standard Chartered Singapore",
+    "Apple",
+    "Landmark Group Dubai",
+    "Emirates NBD"
+  ],
+  "domainDistribution": {
+    "consultingGlobal": "36%",
+    "productTech": "28%",
+    "financeWealth": "22%",
+    "supplyChainGlobal": "14%"
+  },
+  "courses": [
+    {
+      "name": "Global Master of Business Administration (GMBA - 1 Year)",
+      "duration": "1 Year Full Time",
+      "seats": 120,
+      "fee": "₹28,00,000"
+    },
+    {
+      "name": "Master of Global Business (MGB - For 0-3 yrs work ex)",
+      "duration": "16 Months Full Time",
+      "seats": 150,
+      "fee": "₹26,50,000"
+    }
+  ],
+  "admissionCriteria": {
+    "selection": "Aptitude Score (GMAT/GRE/CAT/SPJAT) + Essay + Professional Interview with Global Faculty"
+  },
+  "facilities": [
+    "Dubai Knowledge Park Campus",
+    "Singapore Queenstown Campus",
+    "Sydney Olympic Park Campus",
+    "Global Alumni Network"
+  ],
+  "highlights": "Study in 3 global economic capitals in 12 months: Dubai (Term 1), Singapore (Term 2), and Sydney (Term 3). Unmatched international placement opportunities across UAE, Australia, and Singapore."
+},
+{
+  "id": "imt-ghaziabad-global",
+  "degreeTypes": [
+    "Global MBA",
+    "PGDM"
+  ],
+  "name": "IMT Ghaziabad - Global Dual Degree MBA (with ESCP Europe)",
+  "shortName": "IMT Ghaziabad Global Dual Degree",
+  "location": "Raj Nagar, Ghaziabad (Delhi-NCR)",
+  "city": "Delhi-NCR",
+  "state": "Uttar Pradesh",
+  "nirfRank": 38,
+  "rating": 4.6,
+  "reviewsCount": 190,
+  "programType": "Global Dual Degree MBA",
+  "ownership": "Private Autonomous / AACSB Accredited",
+  "establishedYear": 1980,
+  "campusArea": "14 Acres Lush Green Campus",
+  "accreditation": "AACSB, SAQS, AICTE Approved",
+  "fees": "₹24.5 Lakhs Total",
+  "feeNum": 24.5,
+  "avgSalary": "₹21.0 LPA",
+  "avgSalaryNum": 21,
+  "highestSalary": "₹45.0 LPA",
+  "medianSalary": "₹19.5 LPA",
+  "batchSize": 60,
+  "roiScore": "8.9 / 10",
+  "examsAccepted": [
+    "CAT",
+    "XAT",
+    "GMAT"
+  ],
+  "cutoffCAT": "90+ %ile",
+  "cutoffXAT": "90+ %ile",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "CAT/XAT 90+ %ile with strong communication profile"
+  },
+  "topRecruiters": [
+    "L’Oreal",
+    "LVMH",
+    "PwC International",
+    "KPMG Europe",
+    "Amazon",
+    "Deloitte",
+    "Nestle",
+    "Schneider Electric"
+  ],
+  "domainDistribution": {
+    "internationalMarketing": "40%",
+    "globalConsulting": "30%",
+    "financeTreasury": "20%",
+    "operations": "10%"
+  },
+  "courses": [
+    {
+      "name": "Dual Degree Global PGDM/MBA with ESCP Europe",
+      "duration": "2 Years",
+      "seats": 60,
+      "fee": "₹24,50,000"
+    }
+  ],
+  "admissionCriteria": {
+    "exam": "CAT/XAT/GMAT Score",
+    "interview": "Joint Interview with ESCP Europe Faculty Panel"
+  },
+  "facilities": [
+    "Finance Lab",
+    "Executive Classrooms",
+    "International Student Residence",
+    "Sports Complex"
+  ],
+  "highlights": "Unique dual-degree model: Spend 1 year in India at IMT Ghaziabad and 1 year in Europe (Paris, Berlin, or London) at ESCP Europe, earning two prestigious degrees and European post-study work visa rights."
+},
+{
+  "id": "fore-delhi-global",
+  "degreeTypes": [
+    "Global MBA",
+    "PGDM"
+  ],
+  "name": "FORE School of Management - PGDM International Business",
+  "shortName": "FORE School Global IB",
+  "location": "Adhitam Kendra, B-18, Qutub Institutional Area, New Delhi",
+  "city": "Delhi-NCR",
+  "state": "Delhi",
+  "nirfRank": 63,
+  "rating": 4.5,
+  "reviewsCount": 155,
+  "programType": "PGDM International Business",
+  "ownership": "Private Autonomous / SAQS Accredited",
+  "establishedYear": 1981,
+  "campusArea": "Qutub Institutional Hub Campus",
+  "accreditation": "SAQS, AICTE Approved, AIU Equivalent",
+  "fees": "₹17.98 Lakhs",
+  "feeNum": 17.98,
+  "avgSalary": "₹16.0 LPA",
+  "avgSalaryNum": 16,
+  "highestSalary": "₹30.0 LPA",
+  "medianSalary": "₹15.2 LPA",
+  "batchSize": 120,
+  "roiScore": "8.8 / 10",
+  "examsAccepted": [
+    "CAT",
+    "XAT",
+    "GMAT"
+  ],
+  "cutoffCAT": "85+ %ile",
+  "cutoffXAT": "85+ %ile",
+  "cutoffCMAT": "N/A",
+  "cutoffDetails": {
+    "general": "CAT/XAT 85+ %ile + Extempore + Personal Interview"
+  },
+  "topRecruiters": [
+    "ITC Infotech",
+    "HSBC",
+    "KPMG Global",
+    "EY GDS",
+    "HDFC Bank",
+    "Tata Capital",
+    "Whirlpool"
+  ],
+  "domainDistribution": {
+    "internationalTradeConsulting": "36%",
+    "financeBanking": "32%",
+    "marketingAnalytics": "22%",
+    "operationsLogistics": "10%"
+  },
+  "courses": [
+    {
+      "name": "PGDM International Business (with Global Immersion Module)",
+      "duration": "2 Years Full Time",
+      "seats": 120,
+      "fee": "₹17,98,000"
+    }
+  ],
+  "admissionCriteria": {
+    "catScore": "Shortlisting based on CAT/XAT score",
+    "piWat": "Extempore, Written Ability Test & Personal Interview"
+  },
+  "facilities": [
+    "Bloomberg Lab",
+    "Air-Conditioned Auditoriums",
+    "Modern Hostels",
+    "Cafeteria"
+  ],
+  "highlights": "Prime South Delhi location in Qutub Institutional Area. Includes a compulsory international immersion module in Singapore or Hong Kong with corporate visits and international trade projects."
+}
 ];

@@ -157,6 +157,13 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
 
         <!-- Right Header Actions -->
         <div class="header-actions">
+          <!-- AI College Matcher Chatbot Trigger -->
+          <button class="nav-chatbot-cta-btn" id="openChatbotNavBtn" title="Launch FindMyColleges AI Matcher">
+            <span class="bot-btn-sparkle">🎓</span>
+            <span class="bot-btn-text">AI College Bot</span>
+            <span class="bot-pulse-pill">Match 2026</span>
+          </button>
+
           <!-- Search Button -->
           <button class="icon-btn search-trigger-btn" id="openSearchBtn" title="Search Colleges (⌘K)">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
@@ -198,6 +205,16 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
         </div>
 
         <div class="mobile-nav-content">
+          <!-- Mobile FindMyColleges Chatbot Card -->
+          <div class="mobile-bot-launch-banner" id="openChatbotMobileBtn">
+            <div class="m-bot-avatar">🎓</div>
+            <div class="m-bot-info">
+              <div class="m-bot-title">FindMyColleges Bot <span class="m-bot-pill">2-Min Match</span></div>
+              <div class="m-bot-sub">Shortlist MBA, PGDM, BBA by Budget & City</div>
+            </div>
+            <span class="m-bot-arrow">→</span>
+          </div>
+
           <a href="#home" class="mobile-nav-link ${activePage === 'home' ? 'active' : ''}" data-route="home">
             <span>🏠 Home</span>
           </a>

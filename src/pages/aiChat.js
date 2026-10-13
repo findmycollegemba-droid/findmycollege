@@ -4,6 +4,21 @@ export function renderAiChatPage() {
   return `
     <div class="page-ai-chat">
       <div class="ai-chat-wrapper">
+        <!-- FindMyColleges Counselor Smart Banner -->
+        <div class="fmc-counselor-banner-bar">
+          <div class="counselor-banner-left">
+            <span class="c-sparkle">🎓</span>
+            <div>
+              <div class="c-title">FindMyColleges Smart Admission Counselor</div>
+              <div class="c-sub">Get personalized college matches by Location, Program & Budget in 2 minutes</div>
+            </div>
+          </div>
+          <button type="button" class="btn-launch-counselor-now" onclick="window.openFindMyCollegesChatBot ? window.openFindMyCollegesChatBot() : null">
+            <span>Launch 2-Min Matcher Bot</span>
+            <span>⚡</span>
+          </button>
+        </div>
+
         <!-- AI Top Bar -->
         <div class="ai-header-bar">
           <div class="ai-brand-group">

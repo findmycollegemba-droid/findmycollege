@@ -23,6 +23,7 @@ import { renderExamsPage } from './pages/exams.js';
 import { renderBlogPage, renderArticlesGrid, getSavedArticleIds } from './pages/blog.js';
 import { renderContactPage } from './pages/contact.js';
 import { renderAiChatPage } from './pages/aiChat.js';
+import { renderChatBotWidget, initChatBot, openChatBot } from './components/chatBot.js';
 import { calculateCATScore, calculateXATScore, calculateCMATScore, calculateGoalPlan, parseResponseSheetHTML, getSampleResponseSheet } from './utils/calculators.js';
 import { getAIResponse } from './utils/aiAssistant.js';
 import { COLLEGES_DATA } from './data/collegesData.js';
@@ -48,10 +49,23 @@ function initApp() {
     <main class="main-content" id="mainContentMount"></main>
     <div id="footerMount"></div>
     <div id="modalMount"></div>
+    <div id="fmcChatbotMount"></div>
   `;
 
-  // Mount Modals
-  document.getElementById('modalMount').innerHTML = renderQuickSearchModal();
+  // Mount Modals & Detail Dialogs
+  document.getElementById('modalMount').innerHTML = `
+    ${renderQuickSearchModal()}
+    <div class="portal-modal-overlay" id="portalDetailModalOverlay" style="display:none;">
+      <div class="portal-modal-dialog" id="portalDetailModalDialog"></div>
+    </div>
+    <div class="portal-modal-overlay" id="portalBrochureModalOverlay" style="display:none;">
+      <div class="portal-modal-dialog brochure-dialog" id="portalBrochureModalDialog"></div>
+    </div>
+  `;
+
+  // Mount FindMyColleges Chatbot
+  document.getElementById('fmcChatbotMount').innerHTML = renderChatBotWidget();
+  initChatBot();
 
   // Listen to hash changes
   window.addEventListener('hashchange', handleRouteChange);
@@ -197,11 +211,130 @@ function setupNavbarEvents() {
   closeDrawerBtn?.addEventListener('click', () => toggleDrawer(false));
   drawerBackdrop?.addEventListener('click', () => toggleDrawer(false));
 
+  // Chatbot Nav & Mobile triggers
+  const navChatbotBtn = document.getElementById('openChatbotNavBtn');
+  if (navChatbotBtn) {
+    navChatbotBtn.addEventListener('click', () => {
+      openChatBot();
+    });
+  }
+
+  const mobileChatbotBtn = document.getElementById('openChatbotMobileBtn');
+  if (mobileChatbotBtn) {
+    mobileChatbotBtn.addEventListener('click', () => {
+      toggleDrawer(false);
+      openChatBot();
+    });
+  }
+
   // Close drawer on link click
   document.querySelectorAll('.mobile-nav-content a').forEach(link => {
     link.addEventListener('click', () => toggleDrawer(false));
   });
 }
+
+// Global College Detail and Brochure Modals
+window.openCollegeDetailModal = function(college, initialTab = 'overview') {
+  const detailOverlay = document.getElementById('portalDetailModalOverlay');
+  const detailDialog = document.getElementById('portalDetailModalDialog');
+  if (!detailOverlay || !detailDialog) {
+    window.location.hash = `#colleges?id=${college.id}`;
+    return;
+  }
+
+  detailDialog.innerHTML = renderCollegeDetailModalContent(college, initialTab);
+  detailOverlay.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+
+  detailDialog.querySelectorAll('.modal-tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetTab = btn.getAttribute('data-tab');
+      detailDialog.querySelectorAll('.modal-tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      detailDialog.querySelectorAll('.modal-tab-pane').forEach(pane => pane.classList.remove('active'));
+      const activePane = detailDialog.querySelector(`#tab-${targetTab}`);
+      if (activePane) activePane.classList.add('active');
+    });
+  });
+
+  const closeBtn = document.getElementById('closeDetailModalBtn');
+  if (closeBtn) closeBtn.addEventListener('click', () => {
+    detailOverlay.style.display = 'none';
+    document.body.style.overflow = '';
+  });
+
+  detailDialog.querySelectorAll('[data-brochure-college], [data-apply-college]').forEach(bBtn => {
+    bBtn.addEventListener('click', () => {
+      detailOverlay.style.display = 'none';
+      window.openCollegeBrochureModal(college);
+    });
+  });
+
+  detailDialog.querySelectorAll('[data-ask-ai]').forEach(aiBtn => {
+    aiBtn.addEventListener('click', () => {
+      detailOverlay.style.display = 'none';
+      document.body.style.overflow = '';
+      openChatBot();
+    });
+  });
+};
+
+window.openCollegeBrochureModal = function(college, prefillData) {
+  const brochureOverlay = document.getElementById('portalBrochureModalOverlay');
+  const brochureDialog = document.getElementById('portalBrochureModalDialog');
+  if (!brochureOverlay || !brochureDialog) {
+    window.location.hash = `#colleges?id=${college.id}`;
+    return;
+  }
+
+  brochureDialog.innerHTML = renderBrochureModalContent(college);
+  brochureOverlay.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+
+  const closeBtn = document.getElementById('closeBrochureModalBtn');
+  if (closeBtn) closeBtn.addEventListener('click', () => {
+    brochureOverlay.style.display = 'none';
+    document.body.style.overflow = '';
+  });
+
+  // Pre-fill student lead info if available
+  if (prefillData) {
+    const nameInp = document.getElementById('brochureNameInput');
+    const emailInp = document.getElementById('brochureEmailInput');
+    const phoneInp = document.getElementById('brochurePhoneInput');
+    const cityInp = document.getElementById('brochureCityInput');
+    if (nameInp && prefillData.name) nameInp.value = prefillData.name;
+    if (emailInp && prefillData.email) emailInp.value = prefillData.email;
+    if (phoneInp && prefillData.mobile) phoneInp.value = prefillData.mobile;
+    if (cityInp && (prefillData.preferredLocation || prefillData.currentLocation)) {
+      cityInp.value = prefillData.preferredLocation || prefillData.currentLocation;
+    }
+  }
+
+  const form = document.getElementById('brochureEnquiryForm');
+  if (form) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const successMsg = document.getElementById('brochureSuccessMessage');
+      if (successMsg) successMsg.style.display = 'flex';
+      const submitBtn = form.querySelector('.brochure-submit-btn');
+      if (submitBtn) submitBtn.style.display = 'none';
+
+      try {
+        confetti({
+          particleCount: 50,
+          spread: 60,
+          origin: { y: 0.6 }
+        });
+      } catch (err) {}
+
+      setTimeout(() => {
+        brochureOverlay.style.display = 'none';
+        document.body.style.overflow = '';
+      }, 2200);
+    });
+  }
+};
 
 function toggleSearchModal(show) {
   const modal = document.getElementById('searchModalBackdrop');
