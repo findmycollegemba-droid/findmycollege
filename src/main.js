@@ -24,6 +24,7 @@ import { renderBlogPage, renderArticlesGrid, getSavedArticleIds } from './pages/
 import { renderContactPage } from './pages/contact.js';
 import { renderAiChatPage } from './pages/aiChat.js';
 import { renderChatBotWidget, initChatBot, openChatBot } from './components/chatBot.js';
+import { renderInquiryModal, initInquiryModal, openInquiryModal } from './components/inquiryModal.js';
 import { calculateCATScore, calculateXATScore, calculateCMATScore, calculateGoalPlan, parseResponseSheetHTML, getSampleResponseSheet } from './utils/calculators.js';
 import { getAIResponse } from './utils/aiAssistant.js';
 import { COLLEGES_DATA } from './data/collegesData.js';
@@ -50,6 +51,7 @@ function initApp() {
     <div id="footerMount"></div>
     <div id="modalMount"></div>
     <div id="fmcChatbotMount"></div>
+    <div id="inquiryModalMount"></div>
   `;
 
   // Mount Modals & Detail Dialogs
@@ -66,6 +68,10 @@ function initApp() {
   // Mount FindMyColleges Chatbot
   document.getElementById('fmcChatbotMount').innerHTML = renderChatBotWidget();
   initChatBot();
+
+  // Mount Admission Inquiry Modal
+  document.getElementById('inquiryModalMount').innerHTML = renderInquiryModal();
+  initInquiryModal();
 
   // Listen to hash changes
   window.addEventListener('hashchange', handleRouteChange);
@@ -92,6 +98,10 @@ function handleRouteChange() {
 
   state.currentPage = page;
   state.currentSub = sub;
+
+  if (routePath === 'inquiry' || routePath === 'apply') {
+    setTimeout(() => openInquiryModal(), 150);
+  }
 
   // Render Navbar and Footer
   document.getElementById('navbarMount').innerHTML = renderNavbar(page, sub);
@@ -231,7 +241,18 @@ function setupNavbarEvents() {
   document.querySelectorAll('.mobile-nav-content a').forEach(link => {
     link.addEventListener('click', () => toggleDrawer(false));
   });
+
+  // Free Counseling Navbar buttons trigger Inquiry Modal
+  document.querySelectorAll('.simple-nav-cta, .btn-launch-counselor-now').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      openInquiryModal();
+    });
+  });
 }
+
+// Global Window Helpers
+window.openInquiryModal = openInquiryModal;
 
 // Global College Detail and Brochure Modals
 window.openCollegeDetailModal = function(college, initialTab = 'overview') {

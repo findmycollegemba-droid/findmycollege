@@ -15,6 +15,24 @@ export function renderContactPage() {
         </div>
       </section>
 
+      <!-- ADMISSION INQUIRY HERO BANNER -->
+      <div class="section-container" style="margin-bottom: 24px;">
+        <div class="contact-inquiry-hero-card">
+          <div class="ci-hero-badge">
+            <span class="badge-dot"></span>
+            <span>Official MBA & PGDM Admissions 2026-27</span>
+          </div>
+          <h2 class="ci-hero-title">Looking for Complete College Admission Guidance?</h2>
+          <p class="ci-hero-desc">
+            Submit your target degree, budget, preferred city, and specialization in our official inquiry form to get verified campus shortlists and scholarship evaluations.
+          </p>
+          <button type="button" class="ci-launch-btn" onclick="window.openInquiryModal()">
+            <span>📝 Open MBA Admission Inquiry Form (All 11 Questions)</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
       <div class="section-container contact-layout">
         <!-- Left: Interactive Mentorship Slot Booking -->
         <div class="contact-main-card">

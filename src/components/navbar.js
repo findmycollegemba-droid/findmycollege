@@ -157,13 +157,6 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
 
         <!-- Right Header Actions -->
         <div class="header-actions">
-          <!-- AI College Matcher Chatbot Trigger -->
-          <button class="nav-chatbot-cta-btn" id="openChatbotNavBtn" title="Launch FindMyColleges AI Matcher">
-            <span class="bot-btn-sparkle">🎓</span>
-            <span class="bot-btn-text">AI College Bot</span>
-            <span class="bot-pulse-pill">Match 2026</span>
-          </button>
-
           <!-- Search Button -->
           <button class="icon-btn search-trigger-btn" id="openSearchBtn" title="Search Colleges (⌘K)">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">

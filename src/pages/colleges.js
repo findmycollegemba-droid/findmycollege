@@ -228,6 +228,42 @@ export function renderCollegesPage() {
                     <span class="cb-label">Lucknow</span>
                     <span class="cb-badge">${COLLEGES_DATA.filter(c => c.city === 'Lucknow').length}</span>
                   </label>
+                  <label class="filter-checkbox-item">
+                    <input type="checkbox" name="cityFilter" value="Bhubaneswar" class="portal-checkbox" />
+                    <span class="cb-custom"></span>
+                    <span class="cb-label">Bhubaneswar / Odisha</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.city === 'Bhubaneswar').length}</span>
+                  </label>
+                  <label class="filter-checkbox-item">
+                    <input type="checkbox" name="cityFilter" value="Hyderabad" class="portal-checkbox" />
+                    <span class="cb-custom"></span>
+                    <span class="cb-label">Hyderabad / Telangana</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.city === 'Hyderabad').length}</span>
+                  </label>
+                  <label class="filter-checkbox-item">
+                    <input type="checkbox" name="cityFilter" value="Chennai" class="portal-checkbox" />
+                    <span class="cb-custom"></span>
+                    <span class="cb-label">Chennai / Tamil Nadu</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.city === 'Chennai').length}</span>
+                  </label>
+                  <label class="filter-checkbox-item">
+                    <input type="checkbox" name="cityFilter" value="Patna" class="portal-checkbox" />
+                    <span class="cb-custom"></span>
+                    <span class="cb-label">Patna / Bihar</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.city === 'Patna').length}</span>
+                  </label>
+                  <label class="filter-checkbox-item">
+                    <input type="checkbox" name="cityFilter" value="Bhopal" class="portal-checkbox" />
+                    <span class="cb-custom"></span>
+                    <span class="cb-label">Bhopal / MP</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.city === 'Bhopal').length}</span>
+                  </label>
+                  <label class="filter-checkbox-item">
+                    <input type="checkbox" name="cityFilter" value="Indore" class="portal-checkbox" />
+                    <span class="cb-custom"></span>
+                    <span class="cb-label">Indore / MP</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.city === 'Indore').length}</span>
+                  </label>
                 </div>
               </div>
 
