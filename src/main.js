@@ -73,8 +73,9 @@ function initApp() {
   document.getElementById('inquiryModalMount').innerHTML = renderInquiryModal();
   initInquiryModal();
 
-  // Listen to hash changes
+  // Listen to hash & history state changes
   window.addEventListener('hashchange', handleRouteChange);
+  window.addEventListener('popstate', handleRouteChange);
   
   // Initial Route Load
   handleRouteChange();
@@ -85,11 +86,25 @@ function initApp() {
 
 // Router
 function handleRouteChange() {
-  const hash = window.location.hash.slice(1) || 'home';
-  const [routePath, queryString] = hash.split('?');
+  const hash = window.location.hash.slice(1);
+  let routePath = '';
+  let queryString = '';
+
+  if (hash) {
+    [routePath, queryString] = hash.split('?');
+  } else if (window.location.search) {
+    const searchParams = new URLSearchParams(window.location.search);
+    routePath = searchParams.get('page') || 'home';
+    queryString = window.location.search.slice(1);
+  } else {
+    routePath = 'home';
+  }
   
   let page = routePath || 'home';
-  if (!['home', 'colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat'].includes(page)) {
+  if (['inquiry', 'apply'].includes(page)) {
+    page = 'home';
+    setTimeout(() => openInquiryModal(), 150);
+  } else if (!['home', 'colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat'].includes(page)) {
     page = 'home';
   }
 
