@@ -2359,12 +2359,11 @@ function initExamsInteractions() {
 // BLOG PAGE LOGIC
 // ============================================================
 function initBlogInteractions() {
-  if (state.currentSub) {
+  const article = state.currentSub ? BLOGS_DATA.find(b => b.id === state.currentSub) : null;
+  if (article) {
     // ----------------------------------------------------
     // SINGLE ARTICLE READER INTERACTIONS
     // ----------------------------------------------------
-    const article = BLOGS_DATA.find(b => b.id === state.currentSub);
-    if (!article) return;
 
     // 1. Reading Progress Bar
     const progressBar = document.getElementById('articleProgressBar');
@@ -2646,6 +2645,8 @@ function initBlogInteractions() {
         statusCountText.textContent = `Found ${filtered.length} playbook${filtered.length === 1 ? '' : 's'} for "${q}"`;
       } else if (activeCategory !== 'all') {
         statusCountText.textContent = `Showing ${filtered.length} playbook${filtered.length === 1 ? '' : 's'} in ${activeCategory}`;
+      } else if (BLOGS_DATA.length === 0) {
+        statusCountText.textContent = 'New editorial playbooks are being prepared';
       } else {
         statusCountText.textContent = `Showing all ${filtered.length} playbooks • Sorted by ${sortSelect ? sortSelect.options[sortSelect.selectedIndex].text : 'Latest'}`;
       }

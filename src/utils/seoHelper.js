@@ -164,7 +164,7 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
 
       if (specificBlog) {
         meta.title = `${specificBlog.title} | FindMyBSchool Strategy Blog`;
-        meta.description = specificBlog.excerpt || specificBlog.description || 'Actionable MBA admissions insights, interview secrets, and CAT percentile strategies.';
+        meta.description = specificBlog.summary || specificBlog.excerpt || specificBlog.description || 'Actionable MBA admissions insights, interview secrets, and CAT percentile strategies.';
         meta.canonical = `${BASE_URL}/?page=blog&sub=${encodeURIComponent(specificBlog.id)}`;
         meta.ogType = 'article';
         meta.blogData = specificBlog;

@@ -111,8 +111,8 @@ export function renderBlogOverview(articles) {
             <div class="trust-stat-item">
               <span class="trust-icon">📚</span>
               <div>
-                <strong class="trust-val">${BLOGS_DATA.length} Masterclasses</strong>
-                <span class="trust-lbl">Unrestricted Access</span>
+                <strong class="trust-val">${BLOGS_DATA.length > 0 ? `${BLOGS_DATA.length} Masterclasses` : 'Editorial Guides'}</strong>
+                <span class="trust-lbl">${BLOGS_DATA.length > 0 ? 'Unrestricted Access' : 'Updates in Progress'}</span>
               </div>
             </div>
             <div class="trust-stat-item">
@@ -173,25 +173,17 @@ export function renderBlogOverview(articles) {
               <span>All Playbooks</span>
               <span class="pill-counter">${catCounts.all}</span>
             </button>
-            <button class="blog-pill" data-blog-category="CAT Strategy">
-              <span>🎯 CAT Strategy</span>
-              <span class="pill-counter">${catCounts.cat}</span>
-            </button>
-            <button class="blog-pill" data-blog-category="Exam Strategy">
-              <span>⚡ Speed & XAT</span>
-              <span class="pill-counter">${catCounts.speed}</span>
-            </button>
-            <button class="blog-pill" data-blog-category="GD-PI-WAT">
-              <span>🎙️ GD-PI & WAT</span>
-              <span class="pill-counter">${catCounts.gdpi}</span>
-            </button>
             <button class="blog-pill" data-blog-category="B-School Guide">
-              <span>⚖️ MBA vs PGDM</span>
+              <span>🏛️ Colleges & PGDM</span>
               <span class="pill-counter">${catCounts.guide}</span>
             </button>
             <button class="blog-pill" data-blog-category="College Rankings">
-              <span>📈 High ROI</span>
+              <span>📈 Fees, ROI & Placements</span>
               <span class="pill-counter">${catCounts.roi}</span>
+            </button>
+            <button class="blog-pill" data-blog-category="Exam Strategy">
+              <span>⚡ Non-CAT / Exam Strategy</span>
+              <span class="pill-counter">${catCounts.speed}</span>
             </button>
             <button class="blog-pill bookmark-filter-pill" data-blog-category="saved">
               <span>🔖 Saved</span>
@@ -208,7 +200,7 @@ export function renderBlogOverview(articles) {
           <div class="blog-feed-status-bar" id="blogStatusBar">
             <div class="status-left">
               <span class="status-indicator"></span>
-              <span class="status-text" id="statusCountText">Showing all ${articles.length} playbooks</span>
+              <span class="status-text" id="statusCountText">${BLOGS_DATA.length > 0 ? `Showing all ${articles.length} playbooks` : 'New editorial playbooks are being prepared'}</span>
             </div>
             <button class="reset-filter-btn" id="resetFilterBtn" style="display: none;">Reset Filters</button>
           </div>
@@ -294,15 +286,15 @@ export function renderBlogOverview(articles) {
           <div class="sidebar-widget widget-tags">
             <h3 class="widget-title">Trending Search Topics</h3>
             <div class="sidebar-tags-cloud" id="sidebarTagsCloud">
-              <button class="topic-tag-pill" data-tag-query="CAT 2026">#CAT2026</button>
-              <button class="topic-tag-pill" data-tag-query="High ROI">#HighROI</button>
-              <button class="topic-tag-pill" data-tag-query="IIM Ahmedabad">#IIMAhmedabad</button>
-              <button class="topic-tag-pill" data-tag-query="DILR">#DILRHacks</button>
-              <button class="topic-tag-pill" data-tag-query="XLRI">#XLRIJamshedpur</button>
-              <button class="topic-tag-pill" data-tag-query="Working Professionals">#WorkingProfessionals</button>
-              <button class="topic-tag-pill" data-tag-query="FMS Delhi">#FMSDelhi</button>
-              <button class="topic-tag-pill" data-tag-query="SNAP">#SNAPSpeed</button>
-              <button class="topic-tag-pill" data-tag-query="GD-PI">#GDPIPrep</button>
+              <button class="topic-tag-pill" data-tag-query="jaipur">#JaipurMBA</button>
+              <button class="topic-tag-pill" data-tag-query="dehradun">#DehradunMBA</button>
+              <button class="topic-tag-pill" data-tag-query="UPES">#UPESDehradun</button>
+              <button class="topic-tag-pill" data-tag-query="Doon">#DoonBusinessSchool</button>
+              <button class="topic-tag-pill" data-tag-query="without cat">#WithoutCAT</button>
+              <button class="topic-tag-pill" data-tag-query="placement">#Placements2027</button>
+              <button class="topic-tag-pill" data-tag-query="fees">#MBAFees</button>
+              <button class="topic-tag-pill" data-tag-query="low fees">#LowFeesMBA</button>
+              <button class="topic-tag-pill" data-tag-query="pgdm">#PGDM2027</button>
             </div>
           </div>
 
@@ -410,6 +402,22 @@ export function renderArticlesGrid(articles, savedIds = null) {
   }
 
   if (articles.length === 0) {
+    if (BLOGS_DATA.length === 0) {
+      return `
+        <div class="blog-empty-state">
+          <div class="empty-icon-bubble">✍️</div>
+          <h3 class="empty-title">New Articles & Masterclasses Coming Soon</h3>
+          <p class="empty-subtitle">We are currently refreshing our editorial desk. Check back soon for brand-new MBA admissions playbooks, exam strategy breakdowns, and salary analysis.</p>
+          <div class="empty-suggestions">
+            <span>Explore our portal tools & colleges in the meantime:</span>
+            <a href="#colleges" class="empty-tag-pill" data-route="colleges">🏛️ 111+ MBA Colleges</a>
+            <a href="#tools" class="empty-tag-pill" data-route="tools">📊 Percentile Predictor</a>
+            <a href="#exams" class="empty-tag-pill" data-route="exams">🎯 Exam Guides</a>
+          </div>
+        </div>
+      `;
+    }
+
     return `
       <div class="blog-empty-state">
         <div class="empty-icon-bubble">🔍</div>
@@ -421,7 +429,7 @@ export function renderArticlesGrid(articles, savedIds = null) {
           <button class="empty-tag-pill" onclick="const input = document.getElementById('blogSearchInput'); if (input) { input.value = 'ROI'; input.dispatchEvent(new Event('input')); }">High ROI</button>
           <button class="empty-tag-pill" onclick="const input = document.getElementById('blogSearchInput'); if (input) { input.value = 'Interview'; input.dispatchEvent(new Event('input')); }">GD-PI</button>
         </div>
-        <button class="btn-reset-search" id="emptyResetBtn">View All 8 Playbooks</button>
+        <button class="btn-reset-search" id="emptyResetBtn">View All ${BLOGS_DATA.length} Playbooks</button>
       </div>
     `;
   }
@@ -504,6 +512,7 @@ export function parseMarkdown(md) {
   let inUl = false;
   let inOl = false;
   let inBlockquote = false;
+  let inTable = false;
 
   const closeLists = () => {
     if (inUl) { html.push('</ul>'); inUl = false; }
@@ -512,13 +521,19 @@ export function parseMarkdown(md) {
   const closeBlockquote = () => {
     if (inBlockquote) { html.push('</blockquote>'); inBlockquote = false; }
   };
+  const closeTable = () => {
+    if (inTable) {
+      html.push('</tbody></table></div>');
+      inTable = false;
+    }
+  };
 
   const inlineFormat = (text) => {
     return text
       .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
       .replace(/\*(.*?)\*/g, '<em>$1</em>')
       .replace(/`([^`]+)`/g, '<code class="code-inline">$1</code>')
-      .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" class="article-inline-link" target="_blank" rel="noopener">$1</a>');
+      .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" class="article-inline-link">$1</a>');
   };
 
   for (let i = 0; i < lines.length; i++) {
@@ -528,13 +543,50 @@ export function parseMarkdown(md) {
     if (!line) {
       closeLists();
       closeBlockquote();
+      closeTable();
       continue;
+    }
+
+    // Markdown Table Support (| col1 | col2 |)
+    if (line.startsWith('|') && line.endsWith('|')) {
+      closeLists();
+      closeBlockquote();
+
+      // Check if table divider row (e.g. |---|---|)
+      if (/^\|(\s*[-:]+\s*\|)+$/.test(line)) {
+        continue;
+      }
+
+      const cells = line
+        .slice(1, -1)
+        .split('|')
+        .map(c => inlineFormat(c.trim()));
+
+      if (!inTable) {
+        html.push('<div class="table-responsive blog-table-wrap"><table class="styled-compare-table"><thead><tr>');
+        cells.forEach(cell => {
+          html.push(`<th>${cell}</th>`);
+        });
+        html.push('</tr></thead><tbody>');
+        inTable = true;
+        continue;
+      } else {
+        html.push('<tr>');
+        cells.forEach(cell => {
+          html.push(`<td>${cell}</td>`);
+        });
+        html.push('</tr>');
+        continue;
+      }
+    } else {
+      closeTable();
     }
 
     // Headings
     if (line.startsWith('### ')) {
       closeLists();
       closeBlockquote();
+      closeTable();
       const text = inlineFormat(line.slice(4));
       const id = line.slice(4).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
       html.push(`<h3 id="${id}" class="article-subheading"><span class="heading-anchor-pip">#</span> ${text}</h3>`);
@@ -543,6 +595,7 @@ export function parseMarkdown(md) {
     if (line.startsWith('#### ')) {
       closeLists();
       closeBlockquote();
+      closeTable();
       const text = inlineFormat(line.slice(5));
       const id = line.slice(5).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
       html.push(`<h4 id="${id}" class="article-section-title"><span class="title-accent-pip"></span>${text}</h4>`);
@@ -552,6 +605,7 @@ export function parseMarkdown(md) {
     // Callout / Quote Box
     if (line.startsWith('> ')) {
       closeLists();
+      closeTable();
       if (!inBlockquote) {
         html.push('<blockquote class="article-callout-quote"><div class="quote-icon">“</div>');
         inBlockquote = true;
@@ -565,6 +619,7 @@ export function parseMarkdown(md) {
 
     // Unordered List
     if (line.startsWith('- ') || line.startsWith('* ')) {
+      closeTable();
       if (inOl) { html.push('</ol>'); inOl = false; }
       if (!inUl) {
         html.push('<ul class="article-bullet-list">');
@@ -577,6 +632,7 @@ export function parseMarkdown(md) {
     // Ordered List
     const olMatch = line.match(/^(\d+)\.\s+(.*)/);
     if (olMatch) {
+      closeTable();
       if (inUl) { html.push('</ul>'); inUl = false; }
       if (!inOl) {
         html.push('<ol class="article-numbered-list">');
@@ -591,11 +647,14 @@ export function parseMarkdown(md) {
     // Standard Paragraph
     closeLists();
     closeBlockquote();
+    closeTable();
     html.push(`<p class="article-paragraph">${inlineFormat(line)}</p>`);
   }
 
   closeLists();
   closeBlockquote();
+  closeTable();
+  return html.join('\n');
   return html.join('\n');
 }
 
