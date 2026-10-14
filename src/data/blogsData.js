@@ -113,7 +113,7 @@ Because PGDM institutes are autonomous, their academic boards can overhaul cours
     timestamp: 1790900000000,
     author: 'Priya Nambiar',
     authorRole: 'XLRI Jamshedpur BM • 99.7%ile in XAT',
-    authorBio: 'Specialist in Business Ethics & Organizational Behavior. Conducts the annual XAT Decision Making masterclasses on FindMyColleges.',
+    authorBio: 'Specialist in Business Ethics & Organizational Behavior. Conducts the annual XAT Decision Making masterclasses on FindMyBSchool.',
     summary: 'Decision Making is the differentiator between an XLRI call and a heartbreak. Learn the Stakeholder Alignment Matrix and ethical boundary heuristics.',
     featured: false,
     badge: 'XLRI Strategy',

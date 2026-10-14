@@ -2,7 +2,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
   return `
     <header class="site-header">
       <div class="header-container">
-        <!-- FindMyCollege Brand Logo -->
+        <!-- FindMyBSchool Brand Logo -->
         <a href="#home" class="brand-logo" data-route="home">
           <div class="fmc-logo-badge">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
@@ -11,7 +11,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
             </svg>
           </div>
           <div class="brand-text">
-            <span class="brand-title">FindMy<span class="brand-accent">Colleges</span></span>
+            <span class="brand-title">FindMy<span class="brand-accent">BSchool</span></span>
           </div>
         </a>
 
@@ -190,7 +190,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
                 <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
               </svg>
             </div>
-            <span class="brand-title">FindMy<span class="brand-accent">Colleges</span></span>
+            <span class="brand-title">FindMy<span class="brand-accent">BSchool</span></span>
           </div>
           <button class="mobile-drawer-close-btn" id="closeMobileDrawerBtn" aria-label="Close menu">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -198,11 +198,11 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
         </div>
 
         <div class="mobile-nav-content">
-          <!-- Mobile FindMyColleges Chatbot Card -->
+          <!-- Mobile FindMyBSchool Chatbot Card -->
           <div class="mobile-bot-launch-banner" id="openChatbotMobileBtn">
             <div class="m-bot-avatar">🎓</div>
             <div class="m-bot-info">
-              <div class="m-bot-title">FindMyColleges Bot <span class="m-bot-pill">2-Min Match</span></div>
+              <div class="m-bot-title">FindMyBSchool Bot <span class="m-bot-pill">2-Min Match</span></div>
               <div class="m-bot-sub">Shortlist MBA, PGDM, BBA by Budget & City</div>
             </div>
             <span class="m-bot-arrow">→</span>

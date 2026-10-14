@@ -17,7 +17,7 @@ export function renderCollegesPage() {
           <div class="portal-hero-heading-wrap">
             <div class="hero-title-badge">
               <span class="badge-dot"></span>
-              <span>FindMyColleges Edition • 2026-27 Audited Directory</span>
+              <span>FindMyBSchool Edition • 2026-27 Audited Directory</span>
             </div>
             <h1 class="portal-main-title">
               Top MBA & PGDM Colleges in India 2026: <span class="highlight-blue">Search, Compare & Cutoffs</span>

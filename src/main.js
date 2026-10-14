@@ -2448,7 +2448,7 @@ function initBlogInteractions() {
     const shareWhatsappBtn = document.getElementById('shareWhatsappBtn');
     if (shareWhatsappBtn) {
       shareWhatsappBtn.addEventListener('click', () => {
-        const text = `${article.title} - Read on FindMyColleges:\n${window.location.href}`;
+        const text = `${article.title} - Read on FindMyBSchool:\n${window.location.href}`;
         window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`, '_blank');
       });
     }

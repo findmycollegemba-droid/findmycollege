@@ -7,12 +7,12 @@ export function renderFooter() {
         <div class="footer-brand-col">
           <div class="footer-logo">
             <div class="c4s-logo-badge small">
-              <span class="c4s-logo-txt">FMC</span>
+              <span class="c4s-logo-txt">FMBS</span>
             </div>
-            <span class="footer-brand-name">FindMyColleges<span class="brand-tld">.in</span></span>
+            <span class="footer-brand-name">FindMy<span class="brand-accent">BSchool</span><span class="brand-tld">.com</span></span>
           </div>
           <p class="footer-desc">
-            India's most transparent college search & admission guidance platform. Filter 500+ verified MBA & PGDM colleges by real-time cutoffs, audited tuition fees, and verified placement reports — maintained by expert counsellors with 0% scrapers.
+            India's most transparent business school search & admission guidance platform. Filter 500+ verified MBA & PGDM colleges by real-time cutoffs, audited tuition fees, and verified placement reports — maintained by expert counsellors with 0% scrapers.
           </p>
           <div class="footer-social-row">
             <a href="#" class="social-chip" title="LinkedIn">
@@ -75,7 +75,7 @@ export function renderFooter() {
 
       <div class="footer-bottom">
         <div class="footer-bottom-container">
-          <p class="copyright-text">© 2026 FindMyColleges.in • India's Most Trusted College Search Portal • All Rights Reserved.</p>
+          <p class="copyright-text">© 2026 FindMyBSchool.com • India's Most Trusted B-School Search Portal • All Rights Reserved.</p>
           <div class="footer-bottom-links">
             <a href="#contact" data-route="contact">Privacy Policy</a>
             <span>•</span>

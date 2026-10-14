@@ -499,7 +499,7 @@ export function renderInquiryModal() {
           </div>
 
           <div class="success-action-buttons">
-            <a href="https://api.whatsapp.com/send?phone=919876543210&text=Hi%20FindMyColleges,%20I%20just%20submitted%20my%20MBA%20Admission%20Inquiry%20Form.%20Please%20share%20my%20college%20shortlist." target="_blank" class="whatsapp-connect-btn">
+            <a href="https://api.whatsapp.com/send?phone=919876543210&text=Hi%20FindMyBSchool,%20I%20just%20submitted%20my%20MBA%20Admission%20Inquiry%20Form.%20Please%20share%20my%20college%20shortlist." target="_blank" class="whatsapp-connect-btn">
               <span>💬 Connect with Senior Mentor on WhatsApp</span>
             </a>
             <button type="button" class="view-colleges-btn" id="inquiryExploreCollegesBtn">

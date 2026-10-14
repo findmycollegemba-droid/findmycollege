@@ -92,14 +92,14 @@ export function renderChatBotWidget() {
       <div class="fmc-bot-teaser-bubble" id="fmcBotTeaserBubble" style="display:none;">
         <div class="teaser-avatar">🎓</div>
         <div class="teaser-body">
-          <div class="teaser-sender">FindMyColleges Admission Counselor</div>
-          <p class="teaser-text">👋 Welcome to FindMyColleges! Click here to find your dream college in 2 minutes!</p>
+          <div class="teaser-sender">FindMyBSchool Admission Counselor</div>
+          <p class="teaser-text">👋 Welcome to FindMyBSchool! Click here to find your dream college in 2 minutes!</p>
         </div>
         <button class="teaser-close-btn" id="fmcCloseTeaserBtn" title="Dismiss">&times;</button>
       </div>
 
       <!-- Floating Launcher Button -->
-      <button class="fmc-bot-launcher" id="fmcBotLauncher" aria-label="Open FindMyColleges Admission Assistant">
+      <button class="fmc-bot-launcher" id="fmcBotLauncher" aria-label="Open FindMyBSchool Admission Assistant">
         <span class="launcher-pulse"></span>
         <div class="launcher-icon-wrapper">
           <div class="launcher-avatar">
@@ -111,7 +111,7 @@ export function renderChatBotWidget() {
           <span class="launcher-badge" id="fmcLauncherBadge">1</span>
         </div>
         <div class="launcher-caption">
-          <span class="caption-title">FindMyColleges Bot</span>
+          <span class="caption-title">FindMyBSchool Bot</span>
           <span class="caption-sub">Instant Shortlist</span>
         </div>
       </button>
@@ -129,7 +129,7 @@ export function renderChatBotWidget() {
             </div>
             <div>
               <div class="fmc-header-title-row">
-                <h3 class="fmc-header-title">FindMyColleges AI Counselor</h3>
+                <h3 class="fmc-header-title">FindMyBSchool AI Counselor</h3>
                 <span class="fmc-online-tag"><span class="fmc-dot"></span> Live</span>
               </div>
               <p class="fmc-header-subtitle">MBA • PGDM • PGPM • BBA • Online • Global</p>
@@ -183,7 +183,7 @@ export function renderChatBotWidget() {
             </div>
           </form>
           <div class="fmc-bot-footer-note">
-            FindMyColleges Verified Directory • 100% Free Admission Guidance
+            FindMyBSchool Verified Directory • 100% Free Admission Guidance
           </div>
         </div>
       </div>
@@ -271,6 +271,7 @@ export function initChatBot() {
   }
 
   // Global triggers
+  window.openFindMyBSchoolChatBot = openChatBot;
   window.openFindMyCollegesChatBot = openChatBot;
 
   // Delegated click handler for college chat cards
@@ -497,8 +498,8 @@ function startConversationFlow() {
       'bot',
       `
       <div class="fmc-welcome-card">
-        <div class="fmc-welcome-badge">🎓 FindMyColleges Admission Counselor</div>
-        <h4 class="fmc-welcome-title">Welcome to FindMyColleges! 👋</h4>
+        <div class="fmc-welcome-badge">🎓 FindMyBSchool Admission Counselor</div>
+        <h4 class="fmc-welcome-title">Welcome to FindMyBSchool! 👋</h4>
         <p class="fmc-welcome-desc">
           I am your personal AI Admission Assistant for the <strong>2026-27 admission cycle</strong>. 
           I will help you discover the perfect colleges tailored to your program, preferred city, and budget in just 2 minutes!
@@ -1006,7 +1007,7 @@ function generateCollegeRecommendations() {
         ${actionToolbarHtml}
 
         <div class="fmc-followup-prompt">
-          💬 <em>Have questions about CAT/XAT cutoffs, GD-PI interview preparation, or comparing colleges? Type below to ask FindMyColleges AI!</em>
+          💬 <em>Have questions about CAT/XAT cutoffs, GD-PI interview preparation, or comparing colleges? Type below to ask FindMyBSchool AI!</em>
         </div>
       </div>
       `,
@@ -1083,7 +1084,7 @@ function attachResultsEventHandlers(colleges) {
 function downloadShortlistAsText(student, colleges) {
   const lines = [
     `========================================`,
-    `FindMyColleges — Personalized Admission Shortlist`,
+    `FindMyBSchool — Personalized Admission Shortlist`,
     `========================================`,
     `Student Name: ${student.name}`,
     `Mobile: ${student.mobile}`,
@@ -1113,8 +1114,8 @@ function downloadShortlistAsText(student, colleges) {
 
   lines.push(
     `========================================`,
-    `FindMyColleges Admission Support: +91-9876543210`,
-    `Website: http://localhost:5173/`,
+    `FindMyBSchool Admission Support: +91-9876543210`,
+    `Website: https://findmybschool.com/`,
     `========================================`
   );
 
@@ -1122,7 +1123,7 @@ function downloadShortlistAsText(student, colleges) {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `FindMyColleges_Shortlist_${student.name.replace(/\s+/g, '_')}.txt`;
+  a.download = `FindMyBSchool_Shortlist_${student.name.replace(/\s+/g, '_')}.txt`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);

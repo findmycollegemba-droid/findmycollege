@@ -341,7 +341,7 @@ export function renderHomePage() {
           <!-- Trust Eyebrow -->
           <div class="hero-trust-tag">
             <span class="trust-live-pulse"></span>
-            <span class="tag-title">FINDMYCOLLEGES • INDIA'S VERIFIED MBA DIRECTORY</span>
+            <span class="tag-title">FINDMYBSCHOOL • INDIA'S VERIFIED MBA DIRECTORY</span>
             <span class="tag-divider">|</span>
             <span class="tag-audit">2026-27 Audited</span>
           </div>
@@ -689,7 +689,7 @@ export function renderHomePage() {
           <div class="section-title-center">
             <span class="section-tag-pill">⭐ Student Reviews</span>
             <h2 class="section-title">Aspirants Who Converted Top B-Schools</h2>
-            <p class="section-desc">Real feedback from students who used FindMyColleges transparent cutoffs, calculators and city infographics.</p>
+            <p class="section-desc">Real feedback from students who used FindMyBSchool transparent cutoffs, calculators and city infographics.</p>
           </div>
 
           <div class="testimonials-grid">

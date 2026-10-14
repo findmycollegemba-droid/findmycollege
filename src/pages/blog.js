@@ -98,7 +98,7 @@ export function renderBlogOverview(articles) {
         <div class="section-container blog-hero-inner">
           <div class="hero-badge-pill">
             <span class="badge-sparkle">✨</span>
-            <span class="badge-text">FindMyColleges Editorial & Masterclasses</span>
+            <span class="badge-text">FindMyBSchool Editorial & Masterclasses</span>
           </div>
           
           <h1 class="page-title editorial-title">MBA Admissions & Exam Playbooks</h1>
