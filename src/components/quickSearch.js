@@ -22,7 +22,10 @@ export function renderQuickSearchModal() {
         </div>
 
         <div class="search-results-list" id="searchResultsList">
-          <!-- Dynamically populated -->
+          <div class="search-empty-state">
+            <div class="search-empty-icon">🔍</div>
+            <p>Type college names, exams (CAT, XAT, SNAP, etc.), or tools to jump directly.</p>
+          </div>
         </div>
 
         <div class="search-modal-footer">
@@ -36,7 +39,7 @@ export function renderQuickSearchModal() {
 }
 
 export function handleSearchQuery(query) {
-  const q = query.trim().toLowerCase();
+  const q = (query || '').trim().toLowerCase();
   const listEl = document.getElementById('searchResultsList');
   if (!listEl) return;
 
@@ -66,7 +69,7 @@ export function handleSearchQuery(query) {
   });
 
   // Search Tools
-  if ('cat score calculator'.includes(q) || 'score'.includes(q) || 'percentile'.includes(q)) {
+  if ('cat score calculator percentile predictor response sheet'.includes(q) || 'score'.includes(q) || 'percentile'.includes(q)) {
     results.push({
       type: 'Tool',
       icon: '📊',
@@ -75,7 +78,7 @@ export function handleSearchQuery(query) {
       route: 'tools?sub=cat'
     });
   }
-  if ('xat score calculator'.includes(q) || 'xlri'.includes(q) || 'decision making'.includes(q)) {
+  if ('xat score calculator xlri decision making predictor'.includes(q) || 'xlri'.includes(q) || 'decision making'.includes(q)) {
     results.push({
       type: 'Tool',
       icon: '🎯',
@@ -84,7 +87,7 @@ export function handleSearchQuery(query) {
       route: 'tools?sub=xat'
     });
   }
-  if ('cmat score calculator'.includes(q) || 'cmat'.includes(q)) {
+  if ('cmat score calculator jbims simsree gim'.includes(q) || 'cmat'.includes(q)) {
     results.push({
       type: 'Tool',
       icon: '⚡',
@@ -95,17 +98,26 @@ export function handleSearchQuery(query) {
   }
 
   // Search Colleges
-  COLLEGES_DATA.forEach(col => {
-    if (col.name.toLowerCase().includes(q) || col.location.toLowerCase().includes(q) || col.programType.toLowerCase().includes(q)) {
+  let collegeMatches = 0;
+  for (const col of COLLEGES_DATA) {
+    const nameMatch = (col.name || '').toLowerCase().includes(q);
+    const shortMatch = (col.shortName || '').toLowerCase().includes(q);
+    const locMatch = (col.location || '').toLowerCase().includes(q) || (col.city || '').toLowerCase().includes(q);
+    const examMatch = (col.examsAccepted || []).some(ex => ex.toLowerCase().includes(q));
+
+    if (nameMatch || shortMatch || locMatch || examMatch) {
       results.push({
         type: 'B-School',
         icon: '🏛️',
         title: col.name,
-        sub: `${col.location} • Avg CTC: ${col.avgSalary} • Fees: ${col.fees} • Cutoff: ${col.cutoffCAT || col.cutoffXAT || col.cutoffCMAT}`,
-        route: `programs`
+        sub: `${col.location || col.city} • Avg CTC: ${col.avgSalary || 'N/A'} • Fees: ${col.fees || 'N/A'} • Cutoff: ${col.cutoffCAT !== 'N/A' ? 'CAT: ' + col.cutoffCAT : (col.cutoffXAT !== 'N/A' ? 'XAT: ' + col.cutoffXAT : 'Exam Mapped')}`,
+        route: `colleges?id=${col.id}`,
+        id: col.id
       });
+      collegeMatches++;
+      if (collegeMatches >= 20) break; // Keep modal crisp and performant
     }
-  });
+  }
 
   // Search Blogs
   BLOGS_DATA.forEach(blog => {
@@ -115,10 +127,30 @@ export function handleSearchQuery(query) {
         icon: '📰',
         title: blog.title,
         sub: `${blog.category} • ${blog.readTime} • by ${blog.author}`,
-        route: `blog?id=${blog.id}`
+        route: `blog?sub=${blog.id}`
       });
     }
   });
+
+  // Legal & Transparency Pages
+  if ('terms condition agreement rules disclaimer'.includes(q)) {
+    results.push({
+      type: 'Policy',
+      icon: '⚖️',
+      title: 'Terms and Conditions',
+      sub: 'Official User Agreement, Disclaimers & Portal Terms',
+      route: 'terms'
+    });
+  }
+  if ('privacy policy data protection security gdpr dpdp'.includes(q)) {
+    results.push({
+      type: 'Policy',
+      icon: '🛡️',
+      title: 'Privacy Policy',
+      sub: 'DPDP Act 2023 & Student Data Protection Standards',
+      route: 'privacy'
+    });
+  }
 
   if (results.length === 0) {
     listEl.innerHTML = `
@@ -129,9 +161,21 @@ export function handleSearchQuery(query) {
     return;
   }
 
-  listEl.innerHTML = results.map(item => `
-    <a href="#${item.route}" class="search-result-item" data-route="${item.route.split('?')[0]}" data-sub="${item.route.split('?')[1] || ''}">
-      <span class="search-item-badge ${item.type.toLowerCase()}">${item.icon} ${item.type}</span>
+  // Prepend a "View all in Directory" link if query is active
+  const viewAllHeader = `
+    <a href="#colleges?search=${encodeURIComponent(query)}" class="search-result-item search-result-highlight" data-route="colleges" data-search="${encodeURIComponent(query)}">
+      <span class="search-item-badge all">🔍 Search Directory</span>
+      <div class="search-item-info">
+        <div class="search-item-title">Search entire directory for "${query}"</div>
+        <div class="search-item-sub">View all colleges, filters, cutoffs & fee ranges matching "${query}"</div>
+      </div>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+    </a>
+  `;
+
+  listEl.innerHTML = viewAllHeader + results.map(item => `
+    <a href="#${item.route}" class="search-result-item" data-route="${item.route.split('?')[0]}" data-sub="${item.route.split('?')[1] || ''}" ${item.id ? `data-college-id="${item.id}"` : ''}>
+      <span class="search-item-badge ${item.type.toLowerCase().replace(/[^a-z]/g, '')}">${item.icon} ${item.type}</span>
       <div class="search-item-info">
         <div class="search-item-title">${item.title}</div>
         <div class="search-item-sub">${item.sub}</div>

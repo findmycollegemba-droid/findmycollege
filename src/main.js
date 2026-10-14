@@ -23,6 +23,9 @@ import { renderExamsPage } from './pages/exams.js';
 import { renderBlogPage, renderArticlesGrid, getSavedArticleIds } from './pages/blog.js';
 import { renderContactPage } from './pages/contact.js';
 import { renderAiChatPage } from './pages/aiChat.js';
+import { renderTermsPage } from './pages/terms.js';
+import { renderPrivacyPage } from './pages/privacy.js';
+import { updatePageSEO } from './utils/seoHelper.js';
 import { renderChatBotWidget, initChatBot, openChatBot } from './components/chatBot.js';
 import { renderInquiryModal, initInquiryModal, openInquiryModal } from './components/inquiryModal.js';
 import { calculateCATScore, calculateXATScore, calculateCMATScore, calculateGoalPlan, parseResponseSheetHTML, getSampleResponseSheet } from './utils/calculators.js';
@@ -104,11 +107,20 @@ function handleRouteChange() {
   if (['inquiry', 'apply'].includes(page)) {
     page = 'home';
     setTimeout(() => openInquiryModal(), 150);
-  } else if (!['home', 'colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat'].includes(page)) {
+  } else if (page === 'terms-and-conditions') {
+    page = 'terms';
+  } else if (page === 'privacy-policy') {
+    page = 'privacy';
+  } else if (page === 'search') {
+    page = 'colleges';
+  } else if (!['home', 'colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat', 'terms', 'privacy'].includes(page)) {
     page = 'home';
   }
 
   const params = new URLSearchParams(queryString || '');
+  if (page === 'home' && (params.get('search') || params.get('q'))) {
+    page = 'colleges';
+  }
   const sub = params.get('sub') || params.get('exam') || params.get('id') || params.get('type') || null;
 
   state.currentPage = page;
@@ -159,7 +171,16 @@ function handleRouteChange() {
       mainEl.innerHTML = renderAiChatPage();
       initAiChatInteractions();
       break;
+    case 'terms':
+      mainEl.innerHTML = renderTermsPage();
+      break;
+    case 'privacy':
+      mainEl.innerHTML = renderPrivacyPage();
+      break;
   }
+
+  // Update Dynamic SEO, GEO, AEO, and Schema.org Structured Data
+  updatePageSEO(page, sub, params);
 
   // Re-attach navbar handlers
   setupNavbarEvents();
@@ -184,10 +205,27 @@ function setupGlobalEvents() {
     searchInput.addEventListener('input', (e) => {
       handleSearchQuery(e.target.value);
     });
+
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const q = searchInput.value.trim();
+        if (q) {
+          e.preventDefault();
+          toggleSearchModal(false);
+          window.location.hash = `#colleges?search=${encodeURIComponent(q)}`;
+        }
+      }
+    });
   }
 
-  // Search tags click
+  // Search tags & result item clicks
   document.addEventListener('click', (e) => {
+    // If a search result item was clicked, close modal smoothly
+    const searchItem = e.target.closest('.search-result-item');
+    if (searchItem) {
+      toggleSearchModal(false);
+    }
+
     const tag = e.target.closest('.search-tag-chip');
     if (tag) {
       const q = tag.getAttribute('data-search');
@@ -393,7 +431,7 @@ function toggleSearchModal(show) {
 function initCollegesInteractions(subId, params) {
   const typeParam = params?.get('type') || (['mba', 'pgdm'].includes(subId?.toLowerCase()) ? subId : null);
   const filterState = {
-    searchQuery: params?.get('search') || '',
+    searchQuery: params?.get('search') || params?.get('q') || '',
     selectedCities: params?.get('city') ? [params.get('city')] : [],
     selectedExams: params?.get('exam') ? [params.get('exam')] : [],
     selectedDegrees: typeParam ? [typeParam.toUpperCase()] : [],

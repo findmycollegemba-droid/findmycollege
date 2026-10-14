@@ -77,11 +77,13 @@ export function renderFooter() {
         <div class="footer-bottom-container">
           <p class="copyright-text">© 2026 FindMyBSchool.com • India's Most Trusted B-School Search Portal • All Rights Reserved.</p>
           <div class="footer-bottom-links">
-            <a href="#contact" data-route="contact">Privacy Policy</a>
+            <a href="#terms" data-route="terms">Terms & Conditions</a>
             <span>•</span>
-            <a href="#contact" data-route="contact">Terms of Service</a>
+            <a href="#privacy" data-route="privacy">Privacy Policy</a>
             <span>•</span>
             <a href="#contact" data-route="contact">Counselor Directory</a>
+            <span>•</span>
+            <a href="#colleges" data-route="colleges">All Colleges</a>
           </div>
         </div>
       </div>

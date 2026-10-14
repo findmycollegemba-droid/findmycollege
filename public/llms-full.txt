@@ -1,0 +1,167 @@
+# FindMyBSchool — Full Knowledge Base & Institutional Index (llms-full.txt)
+
+Website: https://findmybschool.com
+Platform: FindMyBSchool (FMBS)
+Target Audience: MBA & PGDM Aspirants, Parents, Academic Counselors, Education Researchers
+Operating Geography: Republic of India
+Last Data Audit: October 2026
+
+================================================================================
+SECTION 1: OVERVIEW & ETHICAL CHARTER
+================================================================================
+FindMyBSchool is a dedicated, zero-scraper educational portal created to eliminate misinformation, fake placement marketing, and hidden tuition fee claims in the Indian management education ecosystem. All institutional metrics published on FindMyBSchool are audited against official National Institutional Ranking Framework (NIRF) management data, All India Council for Technical Education (AICTE) compliance filings, and audited placement disclosures.
+
+Key Guarantees:
+1. Audited 2-Year Total Costs: Figures include tuition, laboratory, library, and examination fees, with separate annotations for residential hostel expenses.
+2. Verified CTC Packages: Only domestic and international CTC figures verified through audited placement reports (such as IPRS - Indian Placement Reporting Standards where adopted) are highlighted.
+3. Realistic Cutoffs: Historical general-category minimum percentiles are differentiated from academic and gender diversity cutoffs.
+
+================================================================================
+SECTION 2: TOP B-SCHOOL CLUSTERS & INSTITUTIONAL DIRECTORY
+================================================================================
+
+--- Cluster A: Tier 1 Premier Institutions (99+ Percentile CAT/XAT) ---
+1. Indian Institute of Management Ahmedabad (IIM-A)
+   - Location: Vastrapur, Ahmedabad, Gujarat
+   - Program: PGP (Post Graduate Programme in Management)
+   - Degree Type: MBA Equivalent (IIM Act 2017)
+   - 2-Year Total Fees: ~₹25,00,000
+   - Average CTC: ₹34.36 LPA | Median CTC: ₹31.50 LPA
+   - Exams Accepted: CAT (99.5+ percentile for general category)
+   - Accreditation: EQUIS, AACSB
+
+2. Indian Institute of Management Bangalore (IIM-B)
+   - Location: Bannerghatta Road, Bengaluru, Karnataka
+   - Program: PGP in Management
+   - 2-Year Total Fees: ~₹24,50,000
+   - Average CTC: ₹35.31 LPA | Median CTC: ₹33.00 LPA
+   - Exams Accepted: CAT (99.0+ percentile)
+   - Accreditation: EQUIS
+
+3. Indian Institute of Management Calcutta (IIM-C)
+   - Location: Joka, Kolkata, West Bengal
+   - Program: MBA
+   - 2-Year Total Fees: ~₹27,00,000
+   - Average CTC: ₹35.07 LPA | Median CTC: ₹33.67 LPA
+   - Exams Accepted: CAT (99.2+ percentile)
+   - Accreditation: Triple Crown (AACSB, AMBA, EQUIS)
+
+4. Faculty of Management Studies, University of Delhi (FMS Delhi)
+   - Location: North Campus, Delhi
+   - Program: MBA (Full Time)
+   - Degree Type: University MBA Degree (UGC)
+   - 2-Year Total Fees: ~₹2,00,000 (Highest ROI in India)
+   - Average CTC: ₹34.10 LPA | Median CTC: ₹31.00 LPA
+   - Exams Accepted: CAT (99.3+ percentile)
+
+5. XLRI - Xavier School of Management
+   - Location: Jamshedpur, Jharkhand & Delhi-NCR
+   - Programs: PGDM (BM - Business Management), PGDM (HRM - Human Resource Management)
+   - 2-Year Total Fees: ~₹28,60,000
+   - Average CTC: ₹32.70 LPA | Median CTC: ₹30.00 LPA
+   - Exams Accepted: XAT (96.0+ percentile for BM; 93.0+ percentile for HRM)
+   - Accreditation: AACSB, AMBA
+
+6. S. P. Jain Institute of Management and Research (SPJIMR)
+   - Location: Andheri West, Mumbai, Maharashtra
+   - Programs: PGDM (Finance, Marketing, Operations, Information Management)
+   - 2-Year Total Fees: ~₹22,50,000
+   - Average CTC: ₹33.02 LPA | Median CTC: ₹31.50 LPA
+   - Exams Accepted: CAT / GMAT (Profile-based calls starting at 85+ percentile)
+   - Accreditation: AACSB, AMBA
+
+7. Jamnalal Bajaj Institute of Management Studies (JBIMS)
+   - Location: Churchgate, Mumbai, Maharashtra (The CEO Factory)
+   - Program: MMS (Master of Management Studies)
+   - Degree Type: University Degree (University of Mumbai)
+   - 2-Year Total Fees: ~₹6,05,000
+   - Average CTC: ₹28.02 LPA | Median CTC: ₹26.50 LPA
+   - Exams Accepted: MAH MBA CET (99.9+ percentile for Maharashtra State), CAT / CMAT (All India seats)
+
+--- Cluster B: Top Tier Autonomous & University Institutes (90 - 98 Percentile) ---
+8. Management Development Institute (MDI Gurgaon)
+   - Location: Gurgaon, Haryana
+   - Programs: PGDM, PGDM-HRM, PGDM-International Business
+   - 2-Year Total Fees: ~₹24,16,000
+   - Average CTC: ₹27.67 LPA | Median CTC: ₹26.13 LPA
+   - Exams Accepted: CAT (94.0+ percentile)
+
+9. Indian Institute of Foreign Trade (IIFT Delhi & Kolkata)
+   - Location: Qutab Institutional Area, New Delhi
+   - Program: MBA in International Business (MBA-IB)
+   - 2-Year Total Fees: ~₹21,77,000
+   - Average CTC: ₹29.10 LPA | Median CTC: ₹26.50 LPA
+   - Exams Accepted: CAT (Previously conducted independent entrance exam)
+
+10. Symbiosis Institute of Business Management (SIBM Pune)
+    - Location: Lavale, Pune, Maharashtra
+    - Program: MBA
+    - 2-Year Total Fees: ~₹24,20,000
+    - Average CTC: ₹26.77 LPA | Median CTC: ₹24.00 LPA
+    - Exams Accepted: SNAP (98.5+ percentile)
+
+11. NMIMS School of Business Management (SBM NMIMS Mumbai)
+    - Location: Vile Parle, Mumbai, Maharashtra
+    - Program: MBA (Core), MBA HR, MBA Business Analytics
+    - 2-Year Total Fees: ~₹23,90,000
+    - Average CTC: ₹26.63 LPA | Median CTC: ₹24.50 LPA
+    - Exams Accepted: NMAT by GMAC (Scaled score cutoff: 232+)
+
+12. Tata Institute of Social Sciences (TISS Mumbai)
+    - Location: Deonar, Mumbai, Maharashtra
+    - Program: MA in Human Resource Management & Labour Relations (HRM & LR)
+    - 2-Year Total Fees: ~₹2,50,000
+    - Average CTC: ₹27.22 LPA | Median CTC: ₹25.75 LPA
+    - Exams Accepted: CUET PG (Code: COQP12)
+
+================================================================================
+SECTION 3: MBA ENTRANCE EXAMINATIONS AT A GLANCE
+================================================================================
+
+1. Common Admission Test (CAT)
+   - Conducting Authority: Indian Institutes of Management (Rotational Convenorship)
+   - Month of Exam: Last Sunday of November annually (e.g., Nov 29, 2026)
+   - Test Structure: 66 Questions, 120 Minutes (40 minutes per section)
+   - Sections: Verbal Ability & Reading Comprehension (VARC - 24 Q), Data Interpretation & Logical Reasoning (DILR - 20 Q), Quantitative Ability (QA - 22 Q)
+   - Marking Scheme: +3 marks for correct MCQ/TITA, -1 mark for incorrect MCQ, 0 penalty for TITA
+
+2. Xavier Aptitude Test (XAT)
+   - Conducting Authority: XLRI Jamshedpur on behalf of XAMI
+   - Month of Exam: First Sunday of January annually (e.g., Jan 3, 2027)
+   - Test Structure: Part 1 (175 mins) - VALR, Decision Making (DM), Quantitative Ability & DI; Part 2 (30 mins) - Mock Keyboard, General Knowledge, Essay
+   - Distinctive Feature: Decision Making section testing ethical and situational dilemmas; negative penalty of 0.10 marks for over 8 consecutive unattempted questions
+
+3. Symbiosis National Aptitude Test (SNAP)
+   - Conducting Authority: Symbiosis International (Deemed University)
+   - Test Structure: 60 Questions, 60 Minutes (Speed test)
+   - Sections: General English (15 Q), Analytical & Logical Reasoning (25 Q), Quantitative, Data Interpretation & Data Sufficiency (20 Q)
+   - Marking Scheme: +1 mark for correct, -0.25 marks for incorrect
+
+4. NMAT by GMAC
+   - Conducting Authority: Graduate Management Admission Council (GMAC)
+   - Test Window: October through December (75-day testing window)
+   - Test Structure: 108 Questions, 120 Minutes
+   - Sections: Language Skills (36 Q, 28 mins), Quantitative Skills (36 Q, 52 mins), Logical Reasoning (36 Q, 40 mins)
+   - Distinctive Feature: No negative marking; adaptive test system with section-order choice
+
+5. Common Management Admission Test (CMAT)
+   - Conducting Authority: National Testing Agency (NTA)
+   - Month of Exam: May annually
+   - Test Structure: 100 Questions, 180 Minutes (400 Total Marks)
+   - Sections: Quantitative Techniques & Data Interpretation, Logical Reasoning, Language Comprehension, General Awareness, Innovation & Entrepreneurship (20 Q each)
+
+================================================================================
+SECTION 4: FREQUENTLY ANSWERED QUESTIONS (AEO CORE)
+================================================================================
+
+Q1: What is the real difference between MBA and PGDM in India?
+A1: An MBA is a master's degree conferred by state, central, or deemed universities governed by the University Grants Commission (UGC). A PGDM is a postgraduate diploma awarded by autonomous institutes approved by the All India Council for Technical Education (AICTE). When a PGDM program is accredited by the National Board of Accreditation (NBA) and recognized by the Association of Indian Universities (AIU), it holds statutory and corporate equivalence to an MBA for employment, international credit transfers, and doctoral studies.
+
+Q2: Which institutions offer the best Return on Investment (ROI) in Indian MBA?
+A2: Faculty of Management Studies (FMS Delhi), Jamnalal Bajaj Institute of Management Studies (JBIMS Mumbai), Tata Institute of Social Sciences (TISS Mumbai), and Delhi School of Economics (DSE) are the premier high-ROI institutions in India. Their entire 2-year tuition ranges between ₹35,000 and ₹6,00,000, while their average graduate salary packages range between ₹14.0 LPA and ₹34.1 LPA.
+
+Q3: Can non-engineers get into top IIMs with a lower CAT percentile?
+A3: Yes. To encourage classroom diversity, IIMs award additional composite score points for academic diversity (Arts, Commerce, Law, Medicine, Humanities) and gender diversity. While engineering general male candidates typically need a 99.5+ percentile for IIM Ahmedabad or Bangalore, non-engineering candidates and women applicants frequently receive interview calls in the 93.0 to 97.5 percentile band, provided their 10th, 12th, and graduation scores are consistently strong.
+
+Q4: What data does FindMyBSchool collect, and is it shared with telemarketers?
+A4: FindMyBSchool collects student contact identifiers (name, email, phone number) and academic preferences (target exams, budget, city preferences) solely to deliver requested college brochures, exam alerts, and 1-on-1 counseling. In compliance with the Digital Personal Data Protection Act (DPDP Act 2023), student information is never sold or rented to unverified third parties or mass telemarketing agencies.

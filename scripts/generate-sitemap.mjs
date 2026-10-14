@@ -28,6 +28,8 @@ addUrl(`${BASE_URL}/?page=programs`, 'weekly', '0.8');
 addUrl(`${BASE_URL}/?page=blog`, 'daily', '0.8');
 addUrl(`${BASE_URL}/?page=contact`, 'monthly', '0.7');
 addUrl(`${BASE_URL}/?page=ai-chat`, 'weekly', '0.7');
+addUrl(`${BASE_URL}/?page=terms`, 'monthly', '0.6');
+addUrl(`${BASE_URL}/?page=privacy`, 'monthly', '0.6');
 
 // 2. Program Comparison & Specialization Guides
 addUrl(`${BASE_URL}/?page=programs&amp;sub=mba`, 'weekly', '0.8');
