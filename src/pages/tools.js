@@ -389,62 +389,93 @@ export function renderToolsPage(activeSub = 'cat') {
             </div>
 
             <!-- Right Results Dashboard -->
+            <!-- Right Results Dashboard -->
             <div class="calc-results-card" id="catResultsCard">
-              <div class="results-header">
-                <span class="badge-tag">Normalized Projection</span>
-                <h3 class="results-title">Projected Scorecard 2026</h3>
+              <!-- Aspirant Bar (Visible when unlocked) -->
+              <div class="calc-aspirant-header-bar" id="catAspirantBar" style="display: none;">
+                <span>Candidate: <strong id="catAspirantName">Aspirant</strong> • <span id="catAspirantLocation">📍 Location</span></span>
+                <button type="button" class="btn-change-candidate-text" id="btnChangeStudentCat">Edit Details</button>
               </div>
 
-              <div class="hero-score-badge">
-                <div class="big-percentile" id="catResPercentile">98.50 %ile</div>
-                <div class="percentile-label">Projected All-India Percentile</div>
-              </div>
-
-              <div class="score-summary-grid">
-                <div class="summary-metric">
-                  <div class="s-val text-blue" id="catResTotalRaw">85</div>
-                  <div class="s-lbl">Raw Score / 198</div>
+              <!-- Locked Teaser State (Shown when student details not yet submitted) -->
+              <div class="locked-gate-teaser" id="catLockedTeaser">
+                <div class="locked-icon-shield">🔒</div>
+                <div class="results-header" style="justify-content: center; margin-bottom: 8px;">
+                  <span class="badge-tag">Normalized Scorecard</span>
                 </div>
-                <div class="summary-metric">
-                  <div class="s-val text-green" id="catResScaled">85.00</div>
-                  <div class="s-lbl">Scaled Score</div>
-                </div>
-                <div class="summary-metric">
-                  <div class="s-val text-yellow" id="catResAccuracy">82.5%</div>
-                  <div class="s-lbl">Attempt Accuracy</div>
-                </div>
-                <div class="summary-metric">
-                  <div class="s-val text-coral" id="catResAttempts">47 / 66</div>
-                  <div class="s-lbl">Total Attempts</div>
-                </div>
-              </div>
-
-              <!-- Predicted Calls & Tiers -->
-              <h4 class="breakdown-title" style="margin-top: 20px;">Eligible B-School Shortlists (2027 Admissions)</h4>
-              
-              <div class="calls-tier-tabs">
-                <button type="button" class="tier-tab-btn active" data-call-filter="all">All Calls</button>
-                <button type="button" class="tier-tab-btn" data-call-filter="tier1">Tier 1</button>
-                <button type="button" class="tier-tab-btn" data-call-filter="tier1_5">Tier 1.5</button>
-                <button type="button" class="tier-tab-btn" data-call-filter="tier2">Tier 2</button>
-                <button type="button" class="tier-tab-btn" data-call-filter="tier3">Tier 3 Direct</button>
-              </div>
-
-              <div class="calls-list-box" id="catCallsListBox">
-                <!-- Dynamically populated -->
-              </div>
-
-              <div class="result-actions-row">
-                <button class="btn-action-outline" id="printScorecardBtn">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect width="12" height="8" x="6" y="14"></rect></svg>
-                  <span>Print Scorecard</span>
+                <div class="big-percentile locked-blur">98.50 %ile</div>
+                <div class="percentile-label" style="margin-bottom: 12px;">Projected All-India Percentile</div>
+                <p class="locked-teaser-desc">
+                  Your sectional attempts and slot normalization are ready. Enter your details to calculate and reveal your verified scaled score, All-India percentile, and 50+ matching IIM & PGDM calls.
+                </p>
+                <button type="button" class="btn-gradient-pill full-width-btn" id="btnUnlockScorecardCat">
+                  <span>Enter Details to Unlock Scorecard 🚀</span>
                 </button>
-                <a href="/colleges" class="btn-action-outline">
-                  <span>Browse 600+ Colleges →</span>
-                </a>
-                <a href="/contact" class="btn-action-outline ai-outline">
-                  <span>Get Free Admission Counseling</span>
-                </a>
+                <div class="locked-teaser-perks">
+                  <span>✓ Official +3/-1/0 Marking</span>
+                  <span>✓ Slot 1/2/3 Normalization</span>
+                  <span>✓ 100% Free</span>
+                </div>
+              </div>
+
+              <!-- Unlocked Scorecard Body (Shown once details submitted) -->
+              <div id="catUnlockedResults" style="display: none;">
+                <div class="results-header">
+                  <span class="badge-tag">Normalized Projection</span>
+                  <h3 class="results-title">Projected Scorecard 2026</h3>
+                </div>
+
+                <div class="hero-score-badge">
+                  <div class="big-percentile" id="catResPercentile">98.50 %ile</div>
+                  <div class="percentile-label">Projected All-India Percentile</div>
+                </div>
+
+                <div class="score-summary-grid">
+                  <div class="summary-metric">
+                    <div class="s-val text-blue" id="catResTotalRaw">85</div>
+                    <div class="s-lbl">Raw Score / 198</div>
+                  </div>
+                  <div class="summary-metric">
+                    <div class="s-val text-green" id="catResScaled">85.00</div>
+                    <div class="s-lbl">Scaled Score</div>
+                  </div>
+                  <div class="summary-metric">
+                    <div class="s-val text-yellow" id="catResAccuracy">82.5%</div>
+                    <div class="s-lbl">Attempt Accuracy</div>
+                  </div>
+                  <div class="summary-metric">
+                    <div class="s-val text-coral" id="catResAttempts">47 / 66</div>
+                    <div class="s-lbl">Total Attempts</div>
+                  </div>
+                </div>
+
+                <!-- Predicted Calls & Tiers -->
+                <h4 class="breakdown-title" style="margin-top: 20px;">Eligible B-School Shortlists (2027 Admissions)</h4>
+                
+                <div class="calls-tier-tabs">
+                  <button type="button" class="tier-tab-btn active" data-call-filter="all">All Calls</button>
+                  <button type="button" class="tier-tab-btn" data-call-filter="tier1">Tier 1</button>
+                  <button type="button" class="tier-tab-btn" data-call-filter="tier1_5">Tier 1.5</button>
+                  <button type="button" class="tier-tab-btn" data-call-filter="tier2">Tier 2</button>
+                  <button type="button" class="tier-tab-btn" data-call-filter="tier3">Tier 3 Direct</button>
+                </div>
+
+                <div class="calls-list-box" id="catCallsListBox">
+                  <!-- Dynamically populated -->
+                </div>
+
+                <div class="result-actions-row">
+                  <button class="btn-action-outline" id="printScorecardBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect width="12" height="8" x="6" y="14"></rect></svg>
+                    <span>Print Scorecard</span>
+                  </button>
+                  <a href="/colleges" class="btn-action-outline">
+                    <span>Browse 600+ Colleges →</span>
+                  </a>
+                  <a href="/contact" class="btn-action-outline ai-outline">
+                    <span>Get Free Admission Counseling</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -739,30 +770,60 @@ export function renderToolsPage(activeSub = 'cat') {
 
             <!-- XAT Results -->
             <div class="calc-results-card" id="xatResultsCard">
-              <div class="results-header">
-                <span class="badge-tag">XAT Projection</span>
-                <h3 class="results-title">Projected XAT Scorecard</h3>
+              <!-- Aspirant Bar (Visible when unlocked) -->
+              <div class="calc-aspirant-header-bar" id="xatAspirantBar" style="display: none;">
+                <span>Candidate: <strong id="xatAspirantName">Aspirant</strong> • <span id="xatAspirantLocation">📍 Location</span></span>
+                <button type="button" class="btn-change-candidate-text" id="btnChangeStudentXat">Edit Details</button>
               </div>
 
-              <div class="hero-score-badge">
-                <div class="big-percentile" id="xatResPercentile">96.00 %ile</div>
-                <div class="percentile-label">Projected All-India Percentile</div>
-              </div>
-
-              <div class="score-summary-grid">
-                <div class="summary-metric">
-                  <div class="s-val text-blue" id="xatResTotal">36.50</div>
-                  <div class="s-lbl">Net Score</div>
+              <!-- Locked Teaser State -->
+              <div class="locked-gate-teaser" id="xatLockedTeaser">
+                <div class="locked-icon-shield">🎯</div>
+                <div class="results-header" style="justify-content: center; margin-bottom: 8px;">
+                  <span class="badge-tag">XAT Scorecard</span>
                 </div>
-                <div class="summary-metric">
-                  <div class="s-val text-coral" id="xatResPenalty">0.00</div>
-                  <div class="s-lbl">Unattempted Penalty</div>
+                <div class="big-percentile locked-blur">96.00 %ile</div>
+                <div class="percentile-label" style="margin-bottom: 12px;">Projected All-India Percentile</div>
+                <p class="locked-teaser-desc">
+                  Your VALR, DM, and QADI attempts are configured. Enter your details to calculate and reveal your verified net score, XLRI eligibility, and matching colleges.
+                </p>
+                <button type="button" class="btn-gradient-pill full-width-btn" id="btnUnlockScorecardXat">
+                  <span>Enter Details to Unlock Scorecard 🚀</span>
+                </button>
+                <div class="locked-teaser-perks">
+                  <span>✓ XLRI BM & HRM Cutoffs</span>
+                  <span>✓ Negative Marking Audit</span>
+                  <span>✓ 100% Free</span>
                 </div>
               </div>
 
-              <h4 class="breakdown-title">Eligible Institutions</h4>
-              <div class="calls-list-box" id="xatCallsListBox">
-                <!-- Dynamically populated -->
+              <!-- Unlocked Scorecard Body -->
+              <div id="xatUnlockedResults" style="display: none;">
+                <div class="results-header">
+                  <span class="badge-tag">XAT Projection</span>
+                  <h3 class="results-title">Projected XAT Scorecard</h3>
+                </div>
+
+                <div class="hero-score-badge">
+                  <div class="big-percentile" id="xatResPercentile">96.00 %ile</div>
+                  <div class="percentile-label">Projected All-India Percentile</div>
+                </div>
+
+                <div class="score-summary-grid">
+                  <div class="summary-metric">
+                    <div class="s-val text-blue" id="xatResTotal">36.50</div>
+                    <div class="s-lbl">Net Score</div>
+                  </div>
+                  <div class="summary-metric">
+                    <div class="s-val text-coral" id="xatResPenalty">0.00</div>
+                    <div class="s-lbl">Unattempted Penalty</div>
+                  </div>
+                </div>
+
+                <h4 class="breakdown-title">Eligible Institutions</h4>
+                <div class="calls-list-box" id="xatCallsListBox">
+                  <!-- Dynamically populated -->
+                </div>
               </div>
             </div>
           </div>
@@ -809,26 +870,56 @@ export function renderToolsPage(activeSub = 'cat') {
 
             <!-- CMAT Results -->
             <div class="calc-results-card" id="cmatResultsCard">
-              <div class="results-header">
-                <span class="badge-tag">CMAT Projection</span>
-                <h3 class="results-title">Projected CMAT Percentile</h3>
+              <!-- Aspirant Bar (Visible when unlocked) -->
+              <div class="calc-aspirant-header-bar" id="cmatAspirantBar" style="display: none;">
+                <span>Candidate: <strong id="cmatAspirantName">Aspirant</strong> • <span id="cmatAspirantLocation">📍 Location</span></span>
+                <button type="button" class="btn-change-candidate-text" id="btnChangeStudentCmat">Edit Details</button>
               </div>
 
-              <div class="hero-score-badge">
-                <div class="big-percentile" id="cmatResPercentile">99.50 %ile</div>
-                <div class="percentile-label">Estimated National Percentile</div>
-              </div>
-
-              <div class="score-summary-grid">
-                <div class="summary-metric">
-                  <div class="s-val text-blue" id="cmatResTotal">292</div>
-                  <div class="s-lbl">Score / 400</div>
+              <!-- Locked Teaser State -->
+              <div class="locked-gate-teaser" id="cmatLockedTeaser">
+                <div class="locked-icon-shield">⚡</div>
+                <div class="results-header" style="justify-content: center; margin-bottom: 8px;">
+                  <span class="badge-tag">CMAT Scorecard</span>
+                </div>
+                <div class="big-percentile locked-blur">99.50 %ile</div>
+                <div class="percentile-label" style="margin-bottom: 12px;">Estimated National Percentile</div>
+                <p class="locked-teaser-desc">
+                  Your 5-section CMAT responses are ready. Enter your details to calculate and reveal your total score out of 400, national percentile, and JBIMS / SIMSREE admission chances.
+                </p>
+                <button type="button" class="btn-gradient-pill full-width-btn" id="btnUnlockScorecardCmat">
+                  <span>Enter Details to Unlock Scorecard 🚀</span>
+                </button>
+                <div class="locked-teaser-perks">
+                  <span>✓ Official +4/-1 Marking</span>
+                  <span>✓ Top MMS & PGDM Cutoffs</span>
+                  <span>✓ 100% Free</span>
                 </div>
               </div>
 
-              <h4 class="breakdown-title">Top College Eligibility</h4>
-              <div class="calls-list-box" id="cmatCallsListBox">
-                <!-- Dynamically populated -->
+              <!-- Unlocked Scorecard Body -->
+              <div id="cmatUnlockedResults" style="display: none;">
+                <div class="results-header">
+                  <span class="badge-tag">CMAT Projection</span>
+                  <h3 class="results-title">Projected CMAT Percentile</h3>
+                </div>
+
+                <div class="hero-score-badge">
+                  <div class="big-percentile" id="cmatResPercentile">99.50 %ile</div>
+                  <div class="percentile-label">Estimated National Percentile</div>
+                </div>
+
+                <div class="score-summary-grid">
+                  <div class="summary-metric">
+                    <div class="s-val text-blue" id="cmatResTotal">292</div>
+                    <div class="s-lbl">Score / 400</div>
+                  </div>
+                </div>
+
+                <h4 class="breakdown-title">Top College Eligibility</h4>
+                <div class="calls-list-box" id="cmatCallsListBox">
+                  <!-- Dynamically populated -->
+                </div>
               </div>
             </div>
           </div>

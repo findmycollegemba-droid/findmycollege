@@ -28,6 +28,14 @@ import { renderPrivacyPage } from './pages/privacy.js';
 import { updatePageSEO } from './utils/seoHelper.js';
 import { renderChatBotWidget, initChatBot, openChatBot } from './components/chatBot.js';
 import { renderInquiryModal, initInquiryModal, openInquiryModal } from './components/inquiryModal.js';
+import { 
+  renderCalculatorGateModal, 
+  initCalculatorGateModal, 
+  promptCalculatorGate, 
+  openCalculatorGate, 
+  getSavedCalculatorLead,
+  clearCalculatorLead 
+} from './components/calculatorGateModal.js';
 import { sendLeadToCRM } from './utils/crm.js';
 import { calculateCATScore, calculateXATScore, calculateCMATScore, calculateGoalPlan, parseResponseSheetHTML, getSampleResponseSheet } from './utils/calculators.js';
 import { getAIResponse } from './utils/aiAssistant.js';
@@ -67,6 +75,7 @@ function initApp() {
     <div class="portal-modal-overlay" id="portalBrochureModalOverlay" style="display:none;">
       <div class="portal-modal-dialog brochure-dialog" id="portalBrochureModalDialog"></div>
     </div>
+    ${renderCalculatorGateModal()}
   `;
 
   // Mount FindMyColleges Chatbot
@@ -76,6 +85,9 @@ function initApp() {
   // Mount Admission Inquiry Modal
   document.getElementById('inquiryModalMount').innerHTML = renderInquiryModal();
   initInquiryModal();
+
+  // Mount & Initialize Calculator Lead Gate Modal
+  initCalculatorGateModal();
 
   // Listen to hash & history state changes
   window.addEventListener('hashchange', handleRouteChange);
@@ -1851,12 +1863,38 @@ function initHomeInteractions() {
 
   if (matchBtn) {
     matchBtn.addEventListener('click', () => {
-      runMatch();
-      confetti({ particleCount: 40, spread: 50, origin: { y: 0.8 } });
+      promptCalculatorGate({
+        exam: examSelect?.value || 'CAT',
+        getResult: () => {
+          const p = parseFloat(percInput?.value || 98.5);
+          return {
+            exam: examSelect?.value || 'CAT',
+            score: Math.round(p * 1.5),
+            totalRaw: Math.round(p * 1.5),
+            scaledScore: Math.round(p * 1.5),
+            percentile: p,
+            effectivePercentile: p,
+            category: 'GEN',
+            collegeCalls: [
+              { name: p >= 99 ? 'IIM Ahmedabad / Bangalore' : p >= 95 ? 'SPJIMR / MDI' : 'Tier 2 Colleges' }
+            ]
+          };
+        },
+        onUnlocked: () => {
+          runMatch();
+          try {
+            confetti({ particleCount: 50, spread: 60, origin: { y: 0.8 } });
+          } catch (e) {}
+        }
+      });
     });
   }
-  if (percInput) percInput.addEventListener('input', runMatch);
-  if (examSelect) examSelect.addEventListener('change', runMatch);
+  if (percInput) percInput.addEventListener('input', () => {
+    if (getSavedCalculatorLead()) runMatch();
+  });
+  if (examSelect) examSelect.addEventListener('change', () => {
+    if (getSavedCalculatorLead()) runMatch();
+  });
 
   // 6. Live Countdown Clocks Tickers
   updateLiveCountdowns();
@@ -2087,8 +2125,20 @@ function initToolsInteractions() {
     if (auditUnatt) auditUnatt.innerText = `${Math.max(0, 66 - res.totalAttempted)}`;
     if (penaltySpan) penaltySpan.innerText = `-${res.negativePenalty} Marks`;
 
-    if (candidateInfo && nameSub) {
+    const savedStudent = getSavedCalculatorLead();
+    if (savedStudent && nameSub) {
+      nameSub.innerText = `Candidate: ${savedStudent.name} • Location: ${savedStudent.location} • Slot ${candidateInfo?.slot || document.getElementById('catSlotSelect')?.value || '1'} (${candidateInfo?.testDate || 'CAT 2026'})`;
+    } else if (candidateInfo && nameSub) {
       nameSub.innerText = `Candidate: ${candidateInfo.candidateName || 'CAT Aspirant'} • Slot ${candidateInfo.slot || '1'} (${candidateInfo.testDate || 'CAT 2026'})`;
+    }
+
+    if (savedStudent) {
+      const aspirantBar = document.getElementById('catAspirantBar');
+      const aspirantName = document.getElementById('catAspirantName');
+      const aspirantLoc = document.getElementById('catAspirantLocation');
+      if (aspirantBar) aspirantBar.style.display = 'flex';
+      if (aspirantName) aspirantName.innerText = savedStudent.name;
+      if (aspirantLoc) aspirantLoc.innerText = `📍 ${savedStudent.location}`;
     }
 
     // Render Calls
@@ -2230,18 +2280,98 @@ function initToolsInteractions() {
     });
   });
 
+  // ============================================================
+  // LOCK STATE CONTROLLERS
+  // ============================================================
+  const updateCatLockState = (lead = null) => {
+    const student = lead || getSavedCalculatorLead();
+    const teaser = document.getElementById('catLockedTeaser');
+    const unlocked = document.getElementById('catUnlockedResults');
+    const aspirantBar = document.getElementById('catAspirantBar');
+    const aspirantName = document.getElementById('catAspirantName');
+    const aspirantLoc = document.getElementById('catAspirantLocation');
+
+    if (student) {
+      if (teaser) teaser.style.display = 'none';
+      if (unlocked) unlocked.style.display = 'block';
+      if (aspirantBar) aspirantBar.style.display = 'flex';
+      if (aspirantName) aspirantName.innerText = student.name;
+      if (aspirantLoc) aspirantLoc.innerText = `📍 ${student.location}`;
+      return true;
+    } else {
+      if (teaser) teaser.style.display = 'block';
+      if (unlocked) unlocked.style.display = 'none';
+      if (aspirantBar) aspirantBar.style.display = 'none';
+      return false;
+    }
+  };
+
+  const updateXatLockState = (lead = null) => {
+    const student = lead || getSavedCalculatorLead();
+    const teaser = document.getElementById('xatLockedTeaser');
+    const unlocked = document.getElementById('xatUnlockedResults');
+    const aspirantBar = document.getElementById('xatAspirantBar');
+    const aspirantName = document.getElementById('xatAspirantName');
+    const aspirantLoc = document.getElementById('xatAspirantLocation');
+
+    if (student) {
+      if (teaser) teaser.style.display = 'none';
+      if (unlocked) unlocked.style.display = 'block';
+      if (aspirantBar) aspirantBar.style.display = 'flex';
+      if (aspirantName) aspirantName.innerText = student.name;
+      if (aspirantLoc) aspirantLoc.innerText = `📍 ${student.location}`;
+      return true;
+    } else {
+      if (teaser) teaser.style.display = 'block';
+      if (unlocked) unlocked.style.display = 'none';
+      if (aspirantBar) aspirantBar.style.display = 'none';
+      return false;
+    }
+  };
+
+  const updateCmatLockState = (lead = null) => {
+    const student = lead || getSavedCalculatorLead();
+    const teaser = document.getElementById('cmatLockedTeaser');
+    const unlocked = document.getElementById('cmatUnlockedResults');
+    const aspirantBar = document.getElementById('cmatAspirantBar');
+    const aspirantName = document.getElementById('cmatAspirantName');
+    const aspirantLoc = document.getElementById('cmatAspirantLocation');
+
+    if (student) {
+      if (teaser) teaser.style.display = 'none';
+      if (unlocked) unlocked.style.display = 'block';
+      if (aspirantBar) aspirantBar.style.display = 'flex';
+      if (aspirantName) aspirantName.innerText = student.name;
+      if (aspirantLoc) aspirantLoc.innerText = `📍 ${student.location}`;
+      return true;
+    } else {
+      if (teaser) teaser.style.display = 'block';
+      if (unlocked) unlocked.style.display = 'none';
+      if (aspirantBar) aspirantBar.style.display = 'none';
+      return false;
+    }
+  };
+
+  // Change / Edit Details button handlers
+  document.getElementById('btnChangeStudentCat')?.addEventListener('click', () => openCalculatorGate('CAT'));
+  document.getElementById('btnChangeStudentXat')?.addEventListener('click', () => openCalculatorGate('XAT'));
+  document.getElementById('btnChangeStudentCmat')?.addEventListener('click', () => openCalculatorGate('CMAT'));
+
   // Digialm URL Scan Handler
   const btnScanUrl = document.getElementById('btnScanUrl');
   const catUrlInput = document.getElementById('catUrlInput');
 
-  const executeUrlScan = (slotNum = '1') => {
+  const executeUrlScan = (slotNum = '1', studentLead = null) => {
+    const student = studentLead || getSavedCalculatorLead();
+    const candidateName = student ? student.name : 'Rahul Sharma';
+
     if (btnScanUrl) {
       btnScanUrl.innerHTML = `<span>⚡ Analyzing 66 Questions...</span>`;
       btnScanUrl.disabled = true;
     }
 
     setTimeout(() => {
-      const sampleData = getSampleResponseSheet(slotNum, 'Rahul Sharma');
+      const sampleData = getSampleResponseSheet(slotNum, candidateName);
       const res = calculateCATScore({
         slot: sampleData.slot,
         category: document.getElementById('catCategorySelect')?.value || 'GEN',
@@ -2250,6 +2380,7 @@ function initToolsInteractions() {
         qa: sampleData.qa
       });
 
+      updateCatLockState(student);
       applyAndDisplayCatResults(res, sampleData);
 
       // Sync manual inputs as well
@@ -2262,6 +2393,18 @@ function initToolsInteractions() {
     }, 400);
   };
 
+  const getCatUrlScanResult = (slotNum = '1') => {
+    const student = getSavedCalculatorLead();
+    const sampleData = getSampleResponseSheet(slotNum, student?.name || 'Rahul Sharma');
+    return calculateCATScore({
+      slot: sampleData.slot,
+      category: document.getElementById('catCategorySelect')?.value || 'GEN',
+      varc: sampleData.varc,
+      dilr: sampleData.dilr,
+      qa: sampleData.qa
+    });
+  };
+
   btnScanUrl?.addEventListener('click', () => {
     const val = catUrlInput?.value.trim();
     if (!val) {
@@ -2269,30 +2412,67 @@ function initToolsInteractions() {
         catUrlInput.value = 'https://cdn.digialm.com//per/g01/pub/756/touchstone/AssessmentQPHTMLMode1//CAT2026/CandidateResponseSheet.html';
       }
     }
-    executeUrlScan('1');
+    promptCalculatorGate({
+      exam: 'CAT',
+      getResult: () => getCatUrlScanResult('1'),
+      onUnlocked: (lead) => {
+        updateCatLockState(lead);
+        executeUrlScan('1', lead);
+      }
+    });
   });
 
   document.getElementById('btnLoadSampleUrl')?.addEventListener('click', () => {
     if (catUrlInput) {
       catUrlInput.value = 'https://cdn.digialm.com//per/g01/pub/756/touchstone/AssessmentQPHTMLMode1//CAT2026_Slot1/CandidateResponseSheet.html';
     }
-    executeUrlScan('1');
+    promptCalculatorGate({
+      exam: 'CAT',
+      getResult: () => getCatUrlScanResult('1'),
+      onUnlocked: (lead) => {
+        updateCatLockState(lead);
+        executeUrlScan('1', lead);
+      }
+    });
   });
 
   document.getElementById('btnLoadSampleSlot2')?.addEventListener('click', () => {
     if (catUrlInput) {
       catUrlInput.value = 'https://cdn.digialm.com//per/g01/pub/756/touchstone/AssessmentQPHTMLMode1//CAT2026_Slot2/CandidateResponseSheet.html';
     }
-    executeUrlScan('2');
+    promptCalculatorGate({
+      exam: 'CAT',
+      getResult: () => getCatUrlScanResult('2'),
+      onUnlocked: (lead) => {
+        updateCatLockState(lead);
+        executeUrlScan('2', lead);
+      }
+    });
   });
 
   // HTML Source Parse Handler
   const btnParseSource = document.getElementById('btnParseSource');
   const catSourceInput = document.getElementById('catSourceInput');
 
-  const executeSourceParse = () => {
+  const getCatSourceResult = () => {
     const source = catSourceInput?.value || '';
     const parsed = parseResponseSheetHTML(source);
+    return calculateCATScore({
+      slot: parsed.slot || '1',
+      category: document.getElementById('catCategorySelect')?.value || 'GEN',
+      varc: parsed.varc,
+      dilr: parsed.dilr,
+      qa: parsed.qa
+    });
+  };
+
+  const executeSourceParse = (studentLead = null) => {
+    const student = studentLead || getSavedCalculatorLead();
+    const source = catSourceInput?.value || '';
+    const parsed = parseResponseSheetHTML(source);
+    if (student) {
+      parsed.candidateName = student.name;
+    }
     const res = calculateCATScore({
       slot: parsed.slot || '1',
       category: document.getElementById('catCategorySelect')?.value || 'GEN',
@@ -2301,16 +2481,34 @@ function initToolsInteractions() {
       qa: parsed.qa
     });
 
+    updateCatLockState(student);
     applyAndDisplayCatResults(res, parsed);
     syncInputsFromObject(parsed.varc, parsed.dilr, parsed.qa);
   };
 
-  btnParseSource?.addEventListener('click', executeSourceParse);
+  btnParseSource?.addEventListener('click', () => {
+    promptCalculatorGate({
+      exam: 'CAT',
+      getResult: () => getCatSourceResult(),
+      onUnlocked: (lead) => {
+        updateCatLockState(lead);
+        executeSourceParse(lead);
+      }
+    });
+  });
+
   document.getElementById('btnLoadSampleSource')?.addEventListener('click', () => {
     if (catSourceInput) {
       catSourceInput.value = `<!-- TCS iON Candidate Response Sheet -->\n<table class="menu-tbl"><tr><td>Candidate Name</td><td>Pooja Verma</td></tr><tr><td>Test Date</td><td>29/11/2026</td></tr><tr><td>Test Time</td><td>12:30 PM - 2:30 PM</td></tr></table>\n<!-- Section : VARC Question Type : MCQ Chosen Option : 2 class="rightAns" -->`;
     }
-    executeSourceParse();
+    promptCalculatorGate({
+      exam: 'CAT',
+      getResult: () => getCatSourceResult(),
+      onUnlocked: (lead) => {
+        updateCatLockState(lead);
+        executeSourceParse(lead);
+      }
+    });
   });
 
   // Helper to sync manual inputs
@@ -2384,7 +2582,7 @@ function initToolsInteractions() {
     document.getElementById(id)?.addEventListener('input', updateManualLiveScores);
   });
 
-  const runCatCalc = () => {
+  const getCatCalculatedResult = () => {
     const slot = document.getElementById('catSlotSelect')?.value || '1';
     const category = document.getElementById('catCategorySelect')?.value || 'GEN';
     const varc = {
@@ -2406,13 +2604,36 @@ function initToolsInteractions() {
       wrongTita: document.getElementById('catQaWrongTita')?.value
     };
 
-    const res = calculateCATScore({ slot, category, varc, dilr, qa });
-    applyAndDisplayCatResults(res);
+    return calculateCATScore({ slot, category, varc, dilr, qa });
   };
 
-  document.getElementById('btnCalculateCAT')?.addEventListener('click', runCatCalc);
-  document.getElementById('catSlotSelect')?.addEventListener('change', runCatCalc);
-  document.getElementById('catCategorySelect')?.addEventListener('change', runCatCalc);
+  const runCatCalc = () => {
+    const res = getCatCalculatedResult();
+    applyAndDisplayCatResults(res);
+    return res;
+  };
+
+  const handleCatCalculateClick = () => {
+    promptCalculatorGate({
+      exam: 'CAT',
+      getResult: () => getCatCalculatedResult(),
+      onUnlocked: (lead, res) => {
+        updateCatLockState(lead);
+        if (res) applyAndDisplayCatResults(res);
+        else runCatCalc();
+      }
+    });
+  };
+
+  document.getElementById('btnCalculateCAT')?.addEventListener('click', handleCatCalculateClick);
+  document.getElementById('btnUnlockScorecardCat')?.addEventListener('click', handleCatCalculateClick);
+
+  document.getElementById('catSlotSelect')?.addEventListener('change', () => {
+    if (getSavedCalculatorLead()) runCatCalc();
+  });
+  document.getElementById('catCategorySelect')?.addEventListener('change', () => {
+    if (getSavedCalculatorLead()) runCatCalc();
+  });
 
   // CAT Presets
   const setCatInputs = (vC, vW, vTc, dC, dW, dTc, qC, qW, qTc) => {
@@ -2427,24 +2648,38 @@ function initToolsInteractions() {
     if (el('catQaWrongMcq')) el('catQaWrongMcq').value = qW;
     if (el('catQaCorrectTita')) el('catQaCorrectTita').value = qTc;
     updateManualLiveScores();
-    runCatCalc();
   };
 
-  document.getElementById('presetCat99')?.addEventListener('click', () => setCatInputs(14, 2, 3, 10, 1, 2, 12, 1, 3));
-  document.getElementById('presetCat95')?.addEventListener('click', () => setCatInputs(10, 4, 1, 7, 3, 1, 8, 3, 1));
-  document.getElementById('presetCat90')?.addEventListener('click', () => setCatInputs(8, 5, 1, 5, 3, 1, 6, 4, 1));
-  document.getElementById('presetCat80')?.addEventListener('click', () => setCatInputs(6, 4, 1, 4, 2, 1, 4, 2, 1));
-  document.getElementById('presetCatReset')?.addEventListener('click', () => setCatInputs(0, 0, 0, 0, 0, 0, 0, 0, 0));
+  const triggerPreset = (vC, vW, vTc, dC, dW, dTc, qC, qW, qTc) => {
+    setCatInputs(vC, vW, vTc, dC, dW, dTc, qC, qW, qTc);
+    promptCalculatorGate({
+      exam: 'CAT',
+      getResult: () => getCatCalculatedResult(),
+      onUnlocked: (lead, res) => {
+        updateCatLockState(lead);
+        if (res) applyAndDisplayCatResults(res);
+        else runCatCalc();
+      }
+    });
+  };
 
-  // Initial Calculation on load
-  runCatCalc();
+  document.getElementById('presetCat99')?.addEventListener('click', () => triggerPreset(14, 2, 3, 10, 1, 2, 12, 1, 3));
+  document.getElementById('presetCat95')?.addEventListener('click', () => triggerPreset(10, 4, 1, 7, 3, 1, 8, 3, 1));
+  document.getElementById('presetCat90')?.addEventListener('click', () => triggerPreset(8, 5, 1, 5, 3, 1, 6, 4, 1));
+  document.getElementById('presetCat80')?.addEventListener('click', () => triggerPreset(6, 4, 1, 4, 2, 1, 4, 2, 1));
+  document.getElementById('presetCatReset')?.addEventListener('click', () => {
+    setCatInputs(0, 0, 0, 0, 0, 0, 0, 0, 0);
+    if (getSavedCalculatorLead()) runCatCalc();
+  });
 
   // Print Scorecard
   document.getElementById('printScorecardBtn')?.addEventListener('click', () => window.print());
 
-  // XAT Calculator
+  // ============================================================
+  // XAT CALCULATOR
+  // ============================================================
   const btnCalcXat = document.getElementById('btnCalculateXAT');
-  const runXatCalc = () => {
+  const getXatCalculatedResult = () => {
     const valr = {
       correct: document.getElementById('xatValrCorrect')?.value,
       wrong: document.getElementById('xatValrWrong')?.value
@@ -2458,7 +2693,11 @@ function initToolsInteractions() {
       wrong: document.getElementById('xatQadiWrong')?.value
     };
 
-    const res = calculateXATScore({ valr, dm, qadi });
+    return calculateXATScore({ valr, dm, qadi });
+  };
+
+  const runXatCalc = () => {
+    const res = getXatCalculatedResult();
 
     const percEl = document.getElementById('xatResPercentile');
     const rawEl = document.getElementById('xatResTotalRaw');
@@ -2511,20 +2750,40 @@ function initToolsInteractions() {
         confetti({ particleCount: 70, spread: 60, origin: { y: 0.6 } });
       } catch (e) {}
     }
+
+    return res;
   };
 
-  if (btnCalcXat) btnCalcXat.addEventListener('click', runXatCalc);
+  const handleXatCalculateClick = () => {
+    promptCalculatorGate({
+      exam: 'XAT',
+      getResult: () => getXatCalculatedResult(),
+      onUnlocked: (lead) => {
+        updateXatLockState(lead);
+        runXatCalc();
+      }
+    });
+  };
 
-  // CMAT Calculator
+  if (btnCalcXat) btnCalcXat.addEventListener('click', handleXatCalculateClick);
+  document.getElementById('btnUnlockScorecardXat')?.addEventListener('click', handleXatCalculateClick);
+
+  // ============================================================
+  // CMAT CALCULATOR
+  // ============================================================
   const btnCalcCmat = document.getElementById('btnCalculateCMAT');
-  const runCmatCalc = () => {
+  const getCmatCalculatedResult = () => {
     const quant = { correct: document.getElementById('cmatQuantCorrect')?.value, wrong: document.getElementById('cmatQuantWrong')?.value };
     const lr = { correct: document.getElementById('cmatLrCorrect')?.value, wrong: document.getElementById('cmatLrWrong')?.value };
     const lang = { correct: document.getElementById('cmatLangCorrect')?.value, wrong: document.getElementById('cmatLangWrong')?.value };
     const gk = { correct: document.getElementById('cmatGkCorrect')?.value, wrong: document.getElementById('cmatGkWrong')?.value };
     const innov = { correct: document.getElementById('cmatInnovCorrect')?.value, wrong: document.getElementById('cmatInnovWrong')?.value };
 
-    const res = calculateCMATScore({ quant, lr, lang, gk, innov });
+    return calculateCMATScore({ quant, lr, lang, gk, innov });
+  };
+
+  const runCmatCalc = () => {
+    const res = getCmatCalculatedResult();
 
     const percEl = document.getElementById('cmatResPercentile');
     const rawEl = document.getElementById('cmatResTotalRaw');
@@ -2553,9 +2812,40 @@ function initToolsInteractions() {
         confetti({ particleCount: 70, spread: 60, origin: { y: 0.6 } });
       } catch (e) {}
     }
+
+    return res;
   };
 
-  if (btnCalcCmat) btnCalcCmat.addEventListener('click', runCmatCalc);
+  const handleCmatCalculateClick = () => {
+    promptCalculatorGate({
+      exam: 'CMAT',
+      getResult: () => getCmatCalculatedResult(),
+      onUnlocked: (lead) => {
+        updateCmatLockState(lead);
+        runCmatCalc();
+      }
+    });
+  };
+
+  if (btnCalcCmat) btnCalcCmat.addEventListener('click', handleCmatCalculateClick);
+  document.getElementById('btnUnlockScorecardCmat')?.addEventListener('click', handleCmatCalculateClick);
+
+  // ============================================================
+  // INITIAL LOAD STATE (Locks scorecards if lead not yet provided)
+  // ============================================================
+  const isUnlockedCat = updateCatLockState();
+  const isUnlockedXat = updateXatLockState();
+  const isUnlockedCmat = updateCmatLockState();
+
+  if (isUnlockedCat) {
+    runCatCalc();
+  }
+  if (isUnlockedXat) {
+    runXatCalc();
+  }
+  if (isUnlockedCmat) {
+    runCmatCalc();
+  }
 }
 
 // ============================================================
