@@ -1,5 +1,9 @@
 import { defineConfig } from 'vite';
-import { resolve } from 'path';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default defineConfig({
   plugins: [
@@ -29,8 +33,8 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(import.meta.dirname, 'index.html'),
-        catCollegePredictor: resolve(import.meta.dirname, 'tools/cat-college-predictor/index.html')
+        main: resolve(__dirname, 'index.html'),
+        catCollegePredictor: resolve(__dirname, 'tools/cat-college-predictor/index.html')
       }
     }
   }

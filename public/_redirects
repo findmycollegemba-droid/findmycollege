@@ -1,0 +1,2 @@
+/admin   https://crm-admin.findmycollege-mba.workers.dev/admin   302
+/admin/* https://crm-admin.findmycollege-mba.workers.dev/admin/:splat 302

@@ -8,12 +8,20 @@ const RELATIVE_ENDPOINT = '/admin/api/leads';
 const CLOUDFLARE_WORKER_ENDPOINT = 'https://crm-admin.findmycollege-mba.workers.dev/admin/api/leads';
 const LOCAL_ENDPOINT = 'http://localhost:3000/admin/api/leads';
 
+const isLocalhost = typeof window !== 'undefined' && 
+  (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+
 // Ordered list of ingestion endpoints with automatic failover
-const ENDPOINTS = [
-  RELATIVE_ENDPOINT,
-  CLOUDFLARE_WORKER_ENDPOINT,
-  LOCAL_ENDPOINT,
-];
+const ENDPOINTS = isLocalhost
+  ? [
+      LOCAL_ENDPOINT,
+      RELATIVE_ENDPOINT,
+      CLOUDFLARE_WORKER_ENDPOINT,
+    ]
+  : [
+      CLOUDFLARE_WORKER_ENDPOINT,
+      RELATIVE_ENDPOINT,
+    ];
 
 // Cross-tab real-time event channel
 let liveBroadcastChannel = null;
