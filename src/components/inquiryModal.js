@@ -796,6 +796,38 @@ export function initInquiryModal() {
         submittedAt: new Date().toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })
       };
 
+      // Real-time Ingestion to CRM & Admin Panel
+      try {
+        fetch('http://localhost:3000/api/leads', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': 'fmc_live_89b27a3c019d44e59f2a7e',
+          },
+          body: JSON.stringify({
+            name: inquiryPayload.name,
+            email: inquiryPayload.email,
+            phone: inquiryPayload.mobile,
+            form_name: 'Admissions Inquiry Modal',
+            source: 'Website Modal Popup',
+            page_url: window.location.href,
+            referrer: document.referrer || 'Direct Website',
+            custom_fields: {
+              educationStatus: inquiryPayload.educationStatus,
+              coursePlanning: inquiryPayload.coursePlanning,
+              budget: inquiryPayload.budget,
+              location: inquiryPayload.location,
+              preferredCity: inquiryPayload.preferredCity,
+              specialization: inquiryPayload.specialization,
+              educationLoan: inquiryPayload.educationLoan,
+              scholarship: inquiryPayload.scholarship,
+            },
+          }),
+        }).catch((err) => console.warn('[CRM Lead Sync]', err));
+      } catch (crmErr) {
+        console.warn('[CRM Lead Sync Error]', crmErr);
+      }
+
       // Save to localStorage
       try {
         const stored = JSON.parse(localStorage.getItem('fmc_admissions_inquiries') || '[]');

@@ -537,6 +537,37 @@ window.openCollegeBrochureModal = function(college, prefillData) {
   if (form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+      const fullName = document.getElementById('brochureFullName')?.value || '';
+      const mobile = document.getElementById('brochureMobile')?.value || '';
+      const email = document.getElementById('brochureEmail')?.value || '';
+      const percentile = document.getElementById('brochurePercentile')?.value || '';
+      const year = document.getElementById('brochureYear')?.value || '2026';
+
+      // Send to CRM Ingestion
+      try {
+        fetch('http://localhost:3000/api/leads', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': 'fmc_live_89b27a3c019d44e59f2a7e',
+          },
+          body: JSON.stringify({
+            name: fullName,
+            email,
+            phone: mobile,
+            message: `Brochure & Cutoff Request for batch ${year} (Mock/Expected %ile: ${percentile || 'Not given'})`,
+            form_name: 'College Brochure Download Form',
+            source: 'College Profile Brochure Download',
+            page_url: window.location.href,
+            referrer: document.referrer || 'Direct Website',
+            custom_fields: {
+              targetBatch: year,
+              expectedPercentile: percentile,
+            },
+          }),
+        }).catch((err) => console.warn('[CRM Brochure Sync Notice]', err));
+      } catch (err) {}
+
       const successMsg = document.getElementById('brochureSuccessMessage');
       if (successMsg) successMsg.style.display = 'flex';
       const submitBtn = form.querySelector('.brochure-submit-btn');
@@ -2936,7 +2967,38 @@ function initContactInteractions() {
     bookingForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const name = document.getElementById('mentorName')?.value || 'Aspirant';
+      const phone = document.getElementById('mentorPhone')?.value || '';
+      const email = document.getElementById('mentorEmail')?.value || '';
       const exam = document.getElementById('mentorTargetExam')?.value || 'CAT';
+      const stream = document.getElementById('mentorStream')?.value || '';
+      const workEx = document.getElementById('mentorWorkEx')?.value || '';
+
+      // Direct Ingestion to CRM
+      try {
+        fetch('http://localhost:3000/api/leads', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'x-api-key': 'fmc_live_89b27a3c019d44e59f2a7e',
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            phone,
+            message: `1-on-1 Mentorship Booking for ${exam} (${selectedSlot}). Stream: ${stream}, WorkEx: ${workEx}`,
+            form_name: 'Mentorship 1-on-1 Strategy Call',
+            source: 'Mentorship Page Form',
+            page_url: window.location.href,
+            referrer: document.referrer || 'Direct Website',
+            custom_fields: {
+              targetExam: exam,
+              academicStream: stream,
+              workExperience: workEx,
+              bookedSlot: selectedSlot,
+            },
+          }),
+        }).catch((err) => console.warn('[CRM Mentorship Sync Notice]', err));
+      } catch (err) {}
 
       bookingForm.style.display = 'none';
       if (successBox) {
