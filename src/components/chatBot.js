@@ -1168,7 +1168,7 @@ function downloadShortlistAsText(student, colleges) {
 
   lines.push(
     `========================================`,
-    `FindMyBSchool Admission Support: +91-9876543210`,
+    `FindMyBSchool Admission Support: +91-8800126446`,
     `Website: https://findmybschool.com/`,
     `========================================`
   );

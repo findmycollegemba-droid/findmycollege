@@ -3318,6 +3318,37 @@ function initContactInteractions() {
     });
   });
 
+  // Copy Official Number Button
+  const copyBtn = document.getElementById('copyPhoneBtn');
+  const contactToast = document.getElementById('contactToast');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', async () => {
+      const copyText = copyBtn.querySelector('.copy-text');
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          await navigator.clipboard.writeText('8800126446');
+        } else {
+          const tempInput = document.createElement('input');
+          tempInput.value = '8800126446';
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand('copy');
+          document.body.removeChild(tempInput);
+        }
+        if (copyText) copyText.textContent = 'Copied!';
+        if (contactToast) {
+          contactToast.classList.add('show');
+          setTimeout(() => {
+            contactToast.classList.remove('show');
+            if (copyText) copyText.textContent = 'Copy';
+          }, 2500);
+        }
+      } catch (err) {
+        console.warn('Clipboard write failed:', err);
+      }
+    });
+  }
+
   // Mentorship Form Submit
   const bookingForm = document.getElementById('mentorshipBookingForm');
   const successBox = document.getElementById('bookingSuccessBox');
@@ -3332,20 +3363,22 @@ function initContactInteractions() {
       const exam = document.getElementById('mentorTargetExam')?.value || 'CAT';
       const stream = document.getElementById('mentorStream')?.value || '';
       const workEx = document.getElementById('mentorWorkEx')?.value || '';
+      const notes = document.getElementById('mentorNotes')?.value || '';
 
       // Direct Ingestion to CRM with real-time sync
       sendLeadToCRM({
         name,
         email,
         phone,
-        message: `1-on-1 Mentorship Booking for ${exam} (${selectedSlot}). Stream: ${stream}, WorkEx: ${workEx}`,
+        message: `1-on-1 Mentorship Booking for ${exam} (${selectedSlot}). Stream: ${stream}, WorkEx: ${workEx}. Notes: ${notes}`,
         form_name: 'Mentorship 1-on-1 Strategy Call',
-        source: 'Mentorship Page Form',
+        source: 'Contact Page Redesign',
         custom_fields: {
           targetExam: exam,
           academicStream: stream,
           workExperience: workEx,
           bookedSlot: selectedSlot,
+          aspirantNotes: notes,
         },
       }).catch((err) => console.warn('[CRM Mentorship Sync Notice]', err));
 
@@ -3360,7 +3393,9 @@ function initContactInteractions() {
       }
 
       try {
-        confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 } });
+        if (typeof confetti === 'function') {
+          confetti({ particleCount: 80, spread: 70, origin: { y: 0.6 } });
+        }
       } catch (err) {}
     });
   }

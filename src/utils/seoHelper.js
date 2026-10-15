@@ -343,6 +343,7 @@ function updateSchemaLD(meta) {
     'contactPoint': {
       '@type': 'ContactPoint',
       'contactType': 'admissions support',
+      'telephone': '+91-8800126446',
       'email': 'admissions@findmybschool.com',
       'availableLanguage': ['English', 'Hindi']
     },
