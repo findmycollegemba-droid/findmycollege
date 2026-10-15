@@ -4,8 +4,16 @@
  */
 
 const API_KEY = 'fmc_live_89b27a3c019d44e59f2a7e';
-const PRIMARY_ENDPOINT = '/admin/api/leads';
-const FALLBACK_ENDPOINT = 'http://localhost:3000/admin/api/leads';
+const RELATIVE_ENDPOINT = '/admin/api/leads';
+const CLOUDFLARE_WORKER_ENDPOINT = 'https://crm-admin.findmycollege-mba.workers.dev/admin/api/leads';
+const LOCAL_ENDPOINT = 'http://localhost:3000/admin/api/leads';
+
+// Ordered list of ingestion endpoints with automatic failover
+const ENDPOINTS = [
+  RELATIVE_ENDPOINT,
+  CLOUDFLARE_WORKER_ENDPOINT,
+  LOCAL_ENDPOINT,
+];
 
 // Cross-tab real-time event channel
 let liveBroadcastChannel = null;
@@ -78,37 +86,23 @@ export async function sendLeadToCRM(leadData) {
   let responseData = null;
   let sentSuccessfully = false;
 
-  // 1. Try Primary Relative Endpoint (/admin/api/leads)
-  try {
-    const res = await fetch(PRIMARY_ENDPOINT, {
-      method: 'POST',
-      headers,
-      body: JSON.stringify(payload),
-    });
-
-    if (res.ok) {
-      responseData = await res.json();
-      sentSuccessfully = true;
-    }
-  } catch (err) {
-    console.warn('[CRM Sync] Primary endpoint failed, attempting direct localhost:3000 fallback...', err);
-  }
-
-  // 2. Fallback to Direct Port 3000 if primary proxy failed
-  if (!sentSuccessfully) {
+  for (const endpoint of ENDPOINTS) {
     try {
-      const fallbackRes = await fetch(FALLBACK_ENDPOINT, {
+      const res = await fetch(endpoint, {
         method: 'POST',
         headers,
         body: JSON.stringify(payload),
       });
 
-      if (fallbackRes.ok) {
-        responseData = await fallbackRes.json();
+      if (res.ok) {
+        responseData = await res.json();
         sentSuccessfully = true;
+        break;
+      } else {
+        console.warn(`[CRM Sync] Endpoint ${endpoint} returned status ${res.status}`);
       }
-    } catch (fbErr) {
-      console.warn('[CRM Sync] Fallback endpoint also failed:', fbErr);
+    } catch (err) {
+      console.warn(`[CRM Sync] Endpoint ${endpoint} unreachable:`, err?.message || err);
     }
   }
 

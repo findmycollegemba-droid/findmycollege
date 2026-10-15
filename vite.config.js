@@ -20,9 +20,9 @@ export default defineConfig({
   server: {
     proxy: {
       '/admin': {
-        target: 'http://localhost:3000',
+        target: 'https://crm-admin.findmycollege-mba.workers.dev',
         changeOrigin: true,
-        ws: true,
+        secure: true,
       }
     }
   },
