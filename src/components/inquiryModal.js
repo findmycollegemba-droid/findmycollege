@@ -702,63 +702,38 @@ export function initInquiryModal() {
         });
       }
 
-      // 4. Location Check
-      const location = document.getElementById('inqLocation')?.value.trim();
-      if (!location) {
-        errors.push({ field: 'boxLocation', errId: 'errLocation', msg: 'Current city or location is mandatory' });
-      }
+      // 4. Location (Optional with default)
+      const location = document.getElementById('inqLocation')?.value.trim() || 'Pan-India / Not Specified';
 
-      // 5. Education Status Check
-      const eduStatus = document.querySelector('input[name="inqEducationStatus"]:checked')?.value;
-      if (!eduStatus) {
-        errors.push({ field: 'boxEducationStatus', errId: 'errEducationStatus', msg: 'Education status selection is mandatory' });
-      }
+      // 5. Education Status
+      const eduStatus = document.querySelector('input[name="inqEducationStatus"]:checked')?.value || 'Not Specified';
 
-      // 6. Course Planning Check
-      const course = document.querySelector('input[name="inqCoursePlanning"]:checked')?.value;
-      if (!course) {
-        errors.push({ field: 'boxCoursePlanning', errId: 'errCoursePlanning', msg: 'Target course selection is mandatory' });
-      }
+      // 6. Course Planning
+      const course = document.querySelector('input[name="inqCoursePlanning"]:checked')?.value || 'MBA / PGDM';
 
-      // 7. Budget Check
-      const budget = document.querySelector('input[name="inqBudget"]:checked')?.value;
-      if (!budget) {
-        errors.push({ field: 'boxBudget', errId: 'errBudget', msg: 'Budget range selection is mandatory' });
-      }
+      // 7. Budget
+      const budget = document.querySelector('input[name="inqBudget"]:checked')?.value || 'Flexible / Not Specified';
 
-      // 8. Preferred City Check
-      const city = document.querySelector('input[name="inqCity"]:checked')?.value;
-      if (!city) {
-        errors.push({ field: 'boxCity', errId: 'errCity', msg: 'Preferred city selection is mandatory' });
-      } else if (city === 'other city') {
+      // 8. Preferred City
+      let city = document.querySelector('input[name="inqCity"]:checked')?.value || 'Open to All Cities';
+      if (city === 'other city') {
         const otherCity = otherCityInput?.value.trim();
-        if (!otherCity) {
-          errors.push({ field: 'conditionalOtherCityBox', errId: 'errOtherCityInput', msg: 'Please type your preferred city name' });
-        }
+        city = otherCity || 'Other City';
       }
 
-      // 9. Specialization Check
-      const spec = specInput?.value.trim();
-      if (!spec) {
-        errors.push({ field: 'boxSpecialization', errId: 'errSpecialization', msg: 'Specialization name is mandatory' });
-      }
+      // 9. Specialization
+      const spec = specInput?.value.trim() || 'General / Undecided';
 
-      // 10. Education Loan Check
-      const loan = document.querySelector('input[name="inqLoan"]:checked')?.value;
-      if (!loan) {
-        errors.push({ field: 'boxLoan', errId: 'errLoan', msg: 'Please indicate if you need an education loan' });
-      }
+      // 10. Education Loan
+      const loan = document.querySelector('input[name="inqLoan"]:checked')?.value || 'Not Specified';
 
-      // 11. Scholarship Check
-      const scholarship = document.querySelector('input[name="inqScholarship"]:checked')?.value;
-      if (!scholarship) {
-        errors.push({ field: 'boxScholarship', errId: 'errScholarship', msg: 'Please indicate if you want scholarship assistance' });
-      }
+      // 11. Scholarship
+      const scholarship = document.querySelector('input[name="inqScholarship"]:checked')?.value || 'Not Specified';
 
-      // If ANY error exists, halt and show feedback
+      // If contact validation errors exist, halt and show feedback
       if (errors.length > 0) {
         errorBanner.style.display = 'flex';
-        errorText.textContent = `Please complete all mandatory fields (${errors.length} incomplete). Make sure mobile number is exactly 10 digits.`;
+        errorText.textContent = `Please provide a valid Name and 10-digit Indian Mobile number.`;
 
         // Highlight fields
         errors.forEach(err => {
