@@ -1,4 +1,5 @@
 import confetti from 'canvas-confetti';
+import { sendLeadToCRM } from '../utils/crm.js';
 
 // State management for Inquiry Modal
 export const inquiryModalState = {
@@ -796,37 +797,26 @@ export function initInquiryModal() {
         submittedAt: new Date().toLocaleString('en-IN', { dateStyle: 'medium', timeStyle: 'short' })
       };
 
-      // Real-time Ingestion to CRM & Admin Panel
-      try {
-        fetch('/admin/api/leads', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'x-api-key': 'fmc_live_89b27a3c019d44e59f2a7e',
-          },
-          body: JSON.stringify({
-            name: inquiryPayload.name,
-            email: inquiryPayload.email,
-            phone: inquiryPayload.mobile,
-            form_name: 'Admissions Inquiry Modal',
-            source: 'Website Modal Popup',
-            page_url: window.location.href,
-            referrer: document.referrer || 'Direct Website',
-            custom_fields: {
-              educationStatus: inquiryPayload.educationStatus,
-              coursePlanning: inquiryPayload.coursePlanning,
-              budget: inquiryPayload.budget,
-              location: inquiryPayload.location,
-              preferredCity: inquiryPayload.preferredCity,
-              specialization: inquiryPayload.specialization,
-              educationLoan: inquiryPayload.educationLoan,
-              scholarship: inquiryPayload.scholarship,
-            },
-          }),
-        }).catch((err) => console.warn('[CRM Lead Sync]', err));
-      } catch (crmErr) {
+      // Real-time Ingestion to CRM & Admin Panel with auto-sync
+      sendLeadToCRM({
+        name: inquiryPayload.name,
+        email: inquiryPayload.email,
+        phone: inquiryPayload.mobile,
+        form_name: 'Admissions Inquiry Modal',
+        source: 'Website Modal Popup',
+        custom_fields: {
+          educationStatus: inquiryPayload.educationStatus,
+          coursePlanning: inquiryPayload.coursePlanning,
+          budget: inquiryPayload.budget,
+          location: inquiryPayload.location,
+          preferredCity: inquiryPayload.preferredCity,
+          specialization: inquiryPayload.specialization,
+          educationLoan: inquiryPayload.educationLoan,
+          scholarship: inquiryPayload.scholarship,
+        },
+      }).catch((crmErr) => {
         console.warn('[CRM Lead Sync Error]', crmErr);
-      }
+      });
 
       // Save to localStorage
       try {

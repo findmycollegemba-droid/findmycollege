@@ -28,6 +28,7 @@ import { renderPrivacyPage } from './pages/privacy.js';
 import { updatePageSEO } from './utils/seoHelper.js';
 import { renderChatBotWidget, initChatBot, openChatBot } from './components/chatBot.js';
 import { renderInquiryModal, initInquiryModal, openInquiryModal } from './components/inquiryModal.js';
+import { sendLeadToCRM } from './utils/crm.js';
 import { calculateCATScore, calculateXATScore, calculateCMATScore, calculateGoalPlan, parseResponseSheetHTML, getSampleResponseSheet } from './utils/calculators.js';
 import { getAIResponse } from './utils/aiAssistant.js';
 import { COLLEGES_DATA } from './data/collegesData.js';
@@ -521,13 +522,13 @@ window.openCollegeBrochureModal = function(college, prefillData) {
 
   // Pre-fill student lead info if available
   if (prefillData) {
-    const nameInp = document.getElementById('brochureNameInput');
-    const emailInp = document.getElementById('brochureEmailInput');
-    const phoneInp = document.getElementById('brochurePhoneInput');
-    const cityInp = document.getElementById('brochureCityInput');
+    const nameInp = document.getElementById('brochureFullName') || document.getElementById('brochureNameInput');
+    const emailInp = document.getElementById('brochureEmail') || document.getElementById('brochureEmailInput');
+    const phoneInp = document.getElementById('brochureMobile') || document.getElementById('brochurePhoneInput');
+    const cityInp = document.getElementById('brochureCity') || document.getElementById('brochureCityInput');
     if (nameInp && prefillData.name) nameInp.value = prefillData.name;
     if (emailInp && prefillData.email) emailInp.value = prefillData.email;
-    if (phoneInp && prefillData.mobile) phoneInp.value = prefillData.mobile;
+    if (phoneInp && (prefillData.mobile || prefillData.phone)) phoneInp.value = prefillData.mobile || prefillData.phone;
     if (cityInp && (prefillData.preferredLocation || prefillData.currentLocation)) {
       cityInp.value = prefillData.preferredLocation || prefillData.currentLocation;
     }
@@ -543,30 +544,21 @@ window.openCollegeBrochureModal = function(college, prefillData) {
       const percentile = document.getElementById('brochurePercentile')?.value || '';
       const year = document.getElementById('brochureYear')?.value || '2026';
 
-      // Send to CRM Ingestion
-      try {
-        fetch('/admin/api/leads', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'x-api-key': 'fmc_live_89b27a3c019d44e59f2a7e',
-          },
-          body: JSON.stringify({
-            name: fullName,
-            email,
-            phone: mobile,
-            message: `Brochure & Cutoff Request for batch ${year} (Mock/Expected %ile: ${percentile || 'Not given'})`,
-            form_name: 'College Brochure Download Form',
-            source: 'College Profile Brochure Download',
-            page_url: window.location.href,
-            referrer: document.referrer || 'Direct Website',
-            custom_fields: {
-              targetBatch: year,
-              expectedPercentile: percentile,
-            },
-          }),
-        }).catch((err) => console.warn('[CRM Brochure Sync Notice]', err));
-      } catch (err) {}
+      // Send to CRM with real-time sync
+      sendLeadToCRM({
+        name: fullName,
+        email,
+        phone: mobile,
+        message: `Brochure & Cutoffs Request for ${college?.name || 'MBA College'} (Batch: ${year}, Mock/Expected %ile: ${percentile || 'Not given'})`,
+        form_name: `Brochure Download (${college?.shortName || college?.name || 'MBA'})`,
+        source: `College Brochure - ${college?.name || 'Profile Modal'}`,
+        custom_fields: {
+          collegeId: college?.id,
+          collegeName: college?.name,
+          targetBatch: year,
+          expectedPercentile: percentile,
+        },
+      }).catch((err) => console.warn('[CRM Brochure Sync Notice]', err));
 
       const successMsg = document.getElementById('brochureSuccessMessage');
       if (successMsg) successMsg.style.display = 'flex';
@@ -1361,6 +1353,28 @@ function initCollegesInteractions(subId, params) {
     if (form) {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
+        const fullName = document.getElementById('brochureFullName')?.value || '';
+        const mobile = document.getElementById('brochureMobile')?.value || '';
+        const email = document.getElementById('brochureEmail')?.value || '';
+        const percentile = document.getElementById('brochurePercentile')?.value || '';
+        const year = document.getElementById('brochureYear')?.value || '2026';
+
+        // Stream inquiry to CRM
+        sendLeadToCRM({
+          name: fullName,
+          email,
+          phone: mobile,
+          message: `Brochure Request for ${college?.name || 'College'} (Batch: ${year}, %ile: ${percentile || 'Not given'})`,
+          form_name: `Brochure Download (${college?.shortName || college?.name || 'College'})`,
+          source: `College Directory Brochure - ${college?.name || 'Card'}`,
+          custom_fields: {
+            collegeId: college?.id,
+            collegeName: college?.name,
+            targetBatch: year,
+            expectedPercentile: percentile,
+          },
+        }).catch(() => {});
+
         const successMsg = document.getElementById('brochureSuccessMessage');
         if (successMsg) successMsg.style.display = 'flex';
         form.querySelector('.brochure-submit-btn').style.display = 'none';
@@ -1736,10 +1750,32 @@ function initHomeInteractions() {
     const closeBtn = document.getElementById('closeBrochureModalBtn');
     if (closeBtn) closeBtn.addEventListener('click', closeBrochureModal);
 
-    const form = document.getElementById('brochureForm');
+    const form = document.getElementById('brochureEnquiryForm') || document.getElementById('brochureForm');
     if (form) {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
+        const fullName = document.getElementById('brochureFullName')?.value || '';
+        const mobile = document.getElementById('brochureMobile')?.value || '';
+        const email = document.getElementById('brochureEmail')?.value || '';
+        const percentile = document.getElementById('brochurePercentile')?.value || '';
+        const year = document.getElementById('brochureYear')?.value || '2026';
+
+        // Send to CRM in real time
+        sendLeadToCRM({
+          name: fullName,
+          email,
+          phone: mobile,
+          message: `Featured Brochure Request for ${college?.name || 'College'} (Batch: ${year}, %ile: ${percentile || 'N/A'})`,
+          form_name: `Featured College Brochure (${college?.shortName || college?.name || 'MBA'})`,
+          source: `Homepage Featured Brochure - ${college?.name || 'Card'}`,
+          custom_fields: {
+            collegeId: college?.id,
+            collegeName: college?.name,
+            targetBatch: year,
+            expectedPercentile: percentile,
+          },
+        }).catch(() => {});
+
         confetti({
           particleCount: 80,
           spread: 70,
@@ -2918,6 +2954,14 @@ function initBlogInteractions() {
       const email = newsletterEmail?.value.trim();
       if (!email) return;
 
+      sendLeadToCRM({
+        email,
+        name: email.split('@')[0],
+        message: 'Subscribed to Tuesday MBA Admissions & Strategy Digest newsletter',
+        form_name: 'Blog Newsletter Subscription',
+        source: 'Website Newsletter',
+      }).catch(() => {});
+
       if (newsletterSubmitBtn) {
         newsletterSubmitBtn.disabled = true;
         newsletterSubmitBtn.innerHTML = '<span>Subscribing...</span>';
@@ -2935,6 +2979,32 @@ function initBlogInteractions() {
           newsletterSubmitBtn.classList.add('subscribed');
         }
       }, 500);
+    });
+  }
+
+  // Footer newsletter submission
+  const footerNewsletterForm = document.getElementById('newsletterForm');
+  if (footerNewsletterForm) {
+    footerNewsletterForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = footerNewsletterForm.querySelector('input[type="email"]');
+      const email = input?.value.trim();
+      if (!email) return;
+
+      sendLeadToCRM({
+        email,
+        name: email.split('@')[0],
+        message: 'Subscribed to MBA Admission Alerts & Cutoff Digest (Footer Form)',
+        form_name: 'Footer Newsletter Subscription',
+        source: 'Footer Form',
+      }).catch(() => {});
+
+      const btn = footerNewsletterForm.querySelector('button');
+      if (btn) {
+        btn.textContent = 'Subscribed! ✓';
+        btn.disabled = true;
+      }
+      if (input) input.value = '';
     });
   }
 
@@ -2973,32 +3043,21 @@ function initContactInteractions() {
       const stream = document.getElementById('mentorStream')?.value || '';
       const workEx = document.getElementById('mentorWorkEx')?.value || '';
 
-      // Direct Ingestion to CRM
-      try {
-        fetch('/admin/api/leads', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            'x-api-key': 'fmc_live_89b27a3c019d44e59f2a7e',
-          },
-          body: JSON.stringify({
-            name,
-            email,
-            phone,
-            message: `1-on-1 Mentorship Booking for ${exam} (${selectedSlot}). Stream: ${stream}, WorkEx: ${workEx}`,
-            form_name: 'Mentorship 1-on-1 Strategy Call',
-            source: 'Mentorship Page Form',
-            page_url: window.location.href,
-            referrer: document.referrer || 'Direct Website',
-            custom_fields: {
-              targetExam: exam,
-              academicStream: stream,
-              workExperience: workEx,
-              bookedSlot: selectedSlot,
-            },
-          }),
-        }).catch((err) => console.warn('[CRM Mentorship Sync Notice]', err));
-      } catch (err) {}
+      // Direct Ingestion to CRM with real-time sync
+      sendLeadToCRM({
+        name,
+        email,
+        phone,
+        message: `1-on-1 Mentorship Booking for ${exam} (${selectedSlot}). Stream: ${stream}, WorkEx: ${workEx}`,
+        form_name: 'Mentorship 1-on-1 Strategy Call',
+        source: 'Mentorship Page Form',
+        custom_fields: {
+          targetExam: exam,
+          academicStream: stream,
+          workExperience: workEx,
+          bookedSlot: selectedSlot,
+        },
+      }).catch((err) => console.warn('[CRM Mentorship Sync Notice]', err));
 
       bookingForm.style.display = 'none';
       if (successBox) {

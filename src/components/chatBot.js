@@ -1,5 +1,6 @@
 import { COLLEGES_DATA } from '../data/collegesData.js';
 import confetti from 'canvas-confetti';
+import { sendLeadToCRM } from '../utils/crm.js';
 
 // State for ChatBot
 export const chatBotState = {
@@ -858,6 +859,26 @@ function generateCollegeRecommendations() {
       localStorage.setItem('fmc_student_lead', JSON.stringify(student));
     } catch (e) {}
 
+    // Stream student inquiry directly to CRM & Admin Panel in real time
+    if (student.name && (student.mobile || student.email)) {
+      sendLeadToCRM({
+        name: student.name,
+        email: student.email,
+        phone: student.mobile,
+        message: `AdmitIQ Bot Inquiry: ${student.name} seeking ${student.program ? student.program.toUpperCase() : 'MBA'} in ${formatLocationTitle(student.preferredLocation)}. Budget: ${student.budgetLabel || 'Not specified'}. Loan Requirement: ${student.loanPlanning || 'None'}. Current Location: ${student.currentLocation || 'N/A'}.`,
+        form_name: 'AdmitIQ AI Admissions ChatBot',
+        source: 'AdmitIQ Bot Inquiry',
+        custom_fields: {
+          currentLocation: student.currentLocation,
+          preferredLocation: student.preferredLocation,
+          program: student.program,
+          budget: student.budgetLabel,
+          loanPlanning: student.loanPlanning,
+          botProfileCompleted: true,
+        },
+      }).catch(() => {});
+    }
+
     // 1. Build Student Profile Summary
     const profileSummaryHtml = `
       <div class="fmc-profile-card">
@@ -1062,6 +1083,22 @@ function attachResultsEventHandlers(colleges) {
       try {
         confetti({ particleCount: 30, spread: 50 });
       } catch (e) {}
+
+      // Send Loan application lead to CRM
+      if (chatBotState.studentData.name) {
+        sendLeadToCRM({
+          name: chatBotState.studentData.name,
+          email: chatBotState.studentData.email,
+          phone: chatBotState.studentData.mobile,
+          message: `Requested 100% Education Loan Pre-Approval & Assistance (Estimated EMI: ₹${calculateEstimatedEMI(chatBotState.studentData.budget)}/mo for ${chatBotState.studentData.budgetLabel}).`,
+          form_name: 'Chatbot 100% Education Loan Application',
+          source: 'AdmitIQ Loan Pre-Approval',
+          custom_fields: {
+            educationLoanRequested: true,
+            budget: chatBotState.studentData.budgetLabel,
+          },
+        }).catch(() => {});
+      }
     });
   }
 
@@ -1070,6 +1107,21 @@ function attachResultsEventHandlers(colleges) {
   if (dlBtn) {
     dlBtn.addEventListener('click', () => {
       downloadShortlistAsText(chatBotState.studentData, colleges);
+
+      // Track Shortlist download in CRM
+      if (chatBotState.studentData.name) {
+        sendLeadToCRM({
+          name: chatBotState.studentData.name,
+          email: chatBotState.studentData.email,
+          phone: chatBotState.studentData.mobile,
+          message: `Downloaded shortlist of ${colleges.length} colleges: ${colleges.slice(0, 5).map(c => c.shortName || c.name).join(', ')}`,
+          form_name: 'Chatbot Shortlist Download',
+          source: 'AdmitIQ Shortlist Download',
+          custom_fields: {
+            collegesShortlisted: colleges.map(c => c.name),
+          },
+        }).catch(() => {});
+      }
     });
   }
 
@@ -1360,5 +1412,20 @@ function handleCounselorQnA(userQuestion) {
     }
 
     appendMessage('bot', reply);
+
+    // Send user query directly to CRM in real time
+    if (chatBotState.studentData.name || chatBotState.studentData.mobile || chatBotState.studentData.email) {
+      sendLeadToCRM({
+        name: chatBotState.studentData.name || 'AdmitIQ Chatbot User',
+        email: chatBotState.studentData.email || '',
+        phone: chatBotState.studentData.mobile || '',
+        message: `Chatbot Query: "${userQuestion}"`,
+        form_name: 'AdmitIQ Bot Follow-up Q&A',
+        source: 'AdmitIQ Chatbot Q&A',
+        custom_fields: {
+          userQuestion: userQuestion,
+        },
+      }).catch(() => {});
+    }
   }, 600);
 }
