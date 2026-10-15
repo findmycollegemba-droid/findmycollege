@@ -12,6 +12,21 @@
     <meta name="theme-color" content="#F4F2FF" />
     <link rel="canonical" href="https://findmybschool.com/" />
 
+    <!-- Immediate Client-Side Redirection for Legacy Hash Routes -->
+    <script>
+      (function() {
+        var hash = window.location.hash || '';
+        var search = window.location.search || '';
+        if (hash === '#tools' || hash === '#tools/' || hash.indexOf('tools?sub=cat') !== -1 || hash.indexOf('tools?tool=cat') !== -1 || (search.indexOf('page=tools') !== -1 && (search.indexOf('sub=cat') !== -1 || search.indexOf('sub=') === -1))) {
+          window.location.replace('/tools/cat-college-predictor');
+        } else if (hash.indexOf('tools?sub=xat') !== -1 || hash.indexOf('tools?tool=xat') !== -1 || (search.indexOf('page=tools') !== -1 && search.indexOf('sub=xat') !== -1)) {
+          window.location.replace('/tools/xat-percentile-calculator');
+        } else if (hash.indexOf('tools?sub=cmat') !== -1 || hash.indexOf('tools?tool=cmat') !== -1 || (search.indexOf('page=tools') !== -1 && search.indexOf('sub=cmat') !== -1)) {
+          window.location.replace('/tools/cmat-percentile-calculator');
+        }
+      })();
+    </script>
+
     <!-- GEO / Local Search Optimization Tags -->
     <meta name="geo.region" content="IN-DL" />
     <meta name="geo.placename" content="New Delhi, India" />

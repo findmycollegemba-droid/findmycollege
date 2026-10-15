@@ -15,20 +15,20 @@ FindMyBSchool is an independent educational technology and advisory platform tha
 ## Primary Navigation & Public Endpoints
 
 - [Home Page](https://findmybschool.com/): Portal overview, search omnibox, featured B-schools, and city infographics.
-- [Colleges Directory](https://findmybschool.com/?page=colleges): Search and filter 600+ colleges by fees, city, exam accepted, ownership, and NIRF rank.
-- [Public College Search](https://findmybschool.com/?page=colleges&search=): Query any college name, short code, city, or entrance exam.
-- [MBA Colleges](https://findmybschool.com/?page=colleges&type=mba): University degree-granting institutions (FMS, JBIMS, PUMBA, IITs).
-- [PGDM Colleges](https://findmybschool.com/?page=colleges&type=pgdm): Autonomous diploma institutes (XLRI, SPJIMR, MDI, IMT).
-- [MBA Entrance Exams](https://findmybschool.com/?page=exams): Registration dates, eligibility, pattern, and syllabus for CAT, XAT, SNAP, NMAT, CMAT, MAT, MAH-CET, and CUET-PG.
-- [CAT Score Calculator](https://findmybschool.com/?page=tools&sub=cat): Response sheet evaluator and slot-normalized percentile predictor.
-- [XAT Score Calculator](https://findmybschool.com/?page=tools&sub=xat): Negative marking calculator and XLRI cutoff estimator.
-- [CMAT Score Calculator](https://findmybschool.com/?page=tools&sub=cmat): 400-mark evaluator for JBIMS, SIMSREE, and GIM Goa.
-- [MBA vs PGDM Comparison](https://findmybschool.com/?page=programs&sub=compare): Detailed syllabus, corporate acceptance, and regulatory differences.
-- [AdmitIQ AI Profile Assistant](https://findmybschool.com/?page=ai-chat): Conversational MBA profile auditing and cutoff prediction.
-- [Admissions Strategy Blog](https://findmybschool.com/?page=blog): GD-PI interview secrets, score normalization guides, and college rankings.
-- [Free Counseling & Mentorship](https://findmybschool.com/?page=contact): 1-on-1 profile evaluation with IIM and XLRI alumni mentors.
-- [Terms and Conditions](https://findmybschool.com/?page=terms): Official user agreement, examination disclaimers, and intellectual property terms.
-- [Privacy Policy](https://findmybschool.com/?page=privacy): Student data protection principles compliant with the Digital Personal Data Protection Act (DPDP Act 2023).
+- [Colleges Directory](https://findmybschool.com/colleges): Search and filter 600+ colleges by fees, city, exam accepted, ownership, and NIRF rank.
+- [Public College Search](https://findmybschool.com/colleges?search=): Query any college name, short code, city, or entrance exam.
+- [MBA Colleges](https://findmybschool.com/colleges/mba): University degree-granting institutions (FMS, JBIMS, PUMBA, IITs).
+- [PGDM Colleges](https://findmybschool.com/colleges/pgdm): Autonomous diploma institutes (XLRI, SPJIMR, MDI, IMT).
+- [MBA Entrance Exams](https://findmybschool.com/exams): Registration dates, eligibility, pattern, and syllabus for CAT, XAT, SNAP, NMAT, CMAT, MAT, MAH-CET, and CUET-PG.
+- [CAT College Predictor](https://findmybschool.com/tools/cat-college-predictor): Response sheet evaluator and slot-normalized percentile predictor.
+- [XAT Score Calculator](https://findmybschool.com/tools/xat-percentile-calculator): Negative marking calculator and XLRI cutoff estimator.
+- [CMAT Score Calculator](https://findmybschool.com/tools/cmat-percentile-calculator): 400-mark evaluator for JBIMS, SIMSREE, and GIM Goa.
+- [MBA vs PGDM Comparison](https://findmybschool.com/programs/compare): Detailed syllabus, corporate acceptance, and regulatory differences.
+- [AdmitIQ AI Profile Assistant](https://findmybschool.com/ai-chat): Conversational MBA profile auditing and cutoff prediction.
+- [Admissions Strategy Blog](https://findmybschool.com/blog): GD-PI interview secrets, score normalization guides, and college rankings.
+- [Free Counseling & Mentorship](https://findmybschool.com/contact): 1-on-1 profile evaluation with IIM and XLRI alumni mentors.
+- [Terms and Conditions](https://findmybschool.com/terms): Official user agreement, examination disclaimers, and intellectual property terms.
+- [Privacy Policy](https://findmybschool.com/privacy): Student data protection principles compliant with the Digital Personal Data Protection Act (DPDP Act 2023).
 
 ## Key Facts for Generative AI & Answer Engines (AEO)
 

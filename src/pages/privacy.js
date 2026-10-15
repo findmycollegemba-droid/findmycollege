@@ -5,7 +5,7 @@ export function renderPrivacyPage() {
       <section class="legal-hero">
         <div class="section-container">
           <div class="legal-breadcrumb">
-            <a href="#home" data-route="home">Home</a>
+            <a href="/" data-route="home">Home</a>
             <span class="bc-sep">/</span>
             <span class="bc-current">Privacy Policy</span>
           </div>
@@ -244,11 +244,11 @@ export function renderPrivacyPage() {
 
           <!-- Bottom Action Buttons -->
           <div class="legal-bottom-actions">
-            <a href="#terms" data-route="terms" class="btn-legal-link">
+            <a href="/terms" data-route="terms" class="btn-legal-link">
               <span>View Terms & Conditions</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
             </a>
-            <a href="#contact" data-route="contact" class="btn-legal-link secondary">
+            <a href="/contact" data-route="contact" class="btn-legal-link secondary">
               <span>Contact Admissions Team</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
             </a>

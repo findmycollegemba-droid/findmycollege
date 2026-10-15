@@ -168,7 +168,7 @@ export function renderCityInfographicCards(filterCity = 'all') {
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
           <span>View Full Infographic</span>
         </button>
-        <a href="#colleges?city=${encodeURIComponent(city.cityName)}" class="btn-city-explore" data-route="colleges" data-city-direct="${city.cityName}">
+        <a href="/colleges/city/${encodeURIComponent(city.cityName.toLowerCase())}" class="btn-city-explore" data-route="colleges" data-city-direct="${city.cityName}">
           <span>Explore ${city.collegesCount} Colleges</span>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
         </a>
@@ -315,7 +315,7 @@ export function renderCityInfographicModalContent(cityId) {
         </div>
         <div class="footer-right-actions">
           <button class="btn-modal-cancel" id="closeCityModalCancelBtn">Close</button>
-          <a href="#colleges?city=${encodeURIComponent(city.cityName)}" class="btn-modal-primary-explore" id="modalExploreCityCollegesBtn">
+          <a href="/colleges/city/${encodeURIComponent(city.cityName.toLowerCase())}" class="btn-modal-primary-explore" id="modalExploreCityCollegesBtn">
             <span>Explore All ${city.collegesCount} ${city.cityName} Colleges</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
           </a>
@@ -492,7 +492,7 @@ export function renderHomePage() {
               <h3>Looking for more B-schools or specialized filters?</h3>
               <p>Explore our complete catalog of 110+ verified colleges with fee sliders, percentile cutoffs, and exam filters.</p>
             </div>
-            <a href="#colleges" class="btn-dock-browse" data-route="colleges">
+            <a href="/colleges" class="btn-dock-browse" data-route="colleges">
               <span>Browse All ${COLLEGES_DATA.length} Colleges with Filters</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
             </a>
@@ -562,16 +562,16 @@ export function renderHomePage() {
               </div>
 
               <div class="tqa-cards-grid">
-                <a href="#tools?sub=cat" class="tqa-card" data-route="tools" data-sub="cat">
+                <a href="/tools/cat-college-predictor" class="tqa-card" data-route="tools" data-sub="cat">
                   <span class="tqa-card-icon">🐱</span>
                   <div class="tqa-card-info">
-                    <h4>CAT Score Calculator</h4>
+                    <h4>CAT College Predictor</h4>
                     <p>Raw score & slot normalizer</p>
                   </div>
                   <span class="tqa-arrow">→</span>
                 </a>
 
-                <a href="#tools?sub=xat" class="tqa-card" data-route="tools" data-sub="xat">
+                <a href="/tools/xat-percentile-calculator" class="tqa-card" data-route="tools" data-sub="xat">
                   <span class="tqa-card-icon">🎯</span>
                   <div class="tqa-card-info">
                     <h4>XAT Percentile Calculator</h4>
@@ -580,7 +580,7 @@ export function renderHomePage() {
                   <span class="tqa-arrow">→</span>
                 </a>
 
-                <a href="#tools?sub=cmat" class="tqa-card" data-route="tools" data-sub="cmat">
+                <a href="/tools/cmat-percentile-calculator" class="tqa-card" data-route="tools" data-sub="cmat">
                   <span class="tqa-card-icon">🚀</span>
                   <div class="tqa-card-info">
                     <h4>CMAT Rank Predictor</h4>
@@ -589,7 +589,7 @@ export function renderHomePage() {
                   <span class="tqa-arrow">→</span>
                 </a>
 
-                <a href="#programs?sub=compare" class="tqa-card" data-route="programs" data-sub="compare">
+                <a href="/programs/compare" class="tqa-card" data-route="programs" data-sub="compare">
                   <span class="tqa-card-icon">⚖️</span>
                   <div class="tqa-card-info">
                     <h4>MBA vs PGDM Guide</h4>
@@ -612,7 +612,7 @@ export function renderHomePage() {
               <span class="section-tag-pill">⏳ Admission Deadlines</span>
               <h2 class="section-title-sm">Countdown to Key Entrance Exams 2026-27</h2>
             </div>
-            <a href="#exams" class="see-all-link" data-route="exams">View All Exam Dates & Syllabus →</a>
+            <a href="/exams" class="see-all-link" data-route="exams">View All Exam Dates & Syllabus →</a>
           </div>
 
           <div class="countdown-cards-grid">
@@ -629,7 +629,7 @@ export function renderHomePage() {
                 <div class="time-sep">:</div>
                 <div class="time-box"><span class="time-num" id="cat-mins">35</span><span class="time-lbl">Mins</span></div>
               </div>
-              <a href="#tools?sub=cat" class="card-action-btn" data-route="tools" data-sub="cat">CAT Calculator →</a>
+              <a href="/tools/cat-college-predictor" class="card-action-btn" data-route="tools" data-sub="cat">CAT College Predictor →</a>
             </div>
 
             <!-- XAT Card -->
@@ -645,7 +645,7 @@ export function renderHomePage() {
                 <div class="time-sep">:</div>
                 <div class="time-box"><span class="time-num" id="xat-mins">40</span><span class="time-lbl">Mins</span></div>
               </div>
-              <a href="#tools?sub=xat" class="card-action-btn" data-route="tools" data-sub="xat">XAT Calculator →</a>
+              <a href="/tools/xat-percentile-calculator" class="card-action-btn" data-route="tools" data-sub="xat">XAT Calculator →</a>
             </div>
 
             <!-- SNAP Card -->
@@ -661,7 +661,7 @@ export function renderHomePage() {
                 <div class="time-sep">:</div>
                 <div class="time-box"><span class="time-num" id="snap-mins">20</span><span class="time-lbl">Mins</span></div>
               </div>
-              <a href="#exams?exam=snap" class="card-action-btn" data-route="exams" data-sub="snap">SNAP Details →</a>
+              <a href="/exams/snap" class="card-action-btn" data-route="exams" data-sub="snap">SNAP Details →</a>
             </div>
 
             <!-- CMAT Card -->
@@ -677,7 +677,7 @@ export function renderHomePage() {
                 <div class="time-sep">:</div>
                 <div class="time-box"><span class="time-num" id="cmat-mins">12</span><span class="time-lbl">Mins</span></div>
               </div>
-              <a href="#tools?sub=cmat" class="card-action-btn" data-route="tools" data-sub="cmat">CMAT Calculator →</a>
+              <a href="/tools/cmat-percentile-calculator" class="card-action-btn" data-route="tools" data-sub="cmat">CMAT Calculator →</a>
             </div>
           </div>
         </div>
@@ -748,11 +748,11 @@ export function renderHomePage() {
               <p class="cta-banner-sub">Speak directly with an IIM, XLRI or FMS alumnus. We evaluate your profile, map your realistic calls, and craft an admission roadmap tailored to your target scores.</p>
             </div>
             <div class="cta-banner-actions">
-              <a href="#contact" class="btn-gradient-pill btn-lg" data-route="contact">
+              <a href="/contact" class="btn-gradient-pill btn-lg" data-route="contact">
                 <span>Book Free Mentorship</span>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
-              <a href="#ai-chat" class="btn-secondary-pill btn-lg" data-route="ai-chat">
+              <a href="/ai-chat" class="btn-secondary-pill btn-lg" data-route="ai-chat">
                 <span>Chat with AdmitIQ AI</span>
               </a>
             </div>

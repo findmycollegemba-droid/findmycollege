@@ -34,14 +34,14 @@ export function renderFooter() {
         <div class="footer-links-col">
           <h4 class="footer-heading">Top MBA Exams</h4>
           <ul class="footer-links-list">
-            <li><a href="#exams?exam=cat" data-route="exams" data-sub="cat">CAT 2026 (IIMs & FMS)</a></li>
-            <li><a href="#exams?exam=xat" data-route="exams" data-sub="xat">XAT 2027 (XLRI Jamshedpur)</a></li>
-            <li><a href="#exams?exam=nmat" data-route="exams" data-sub="nmat">NMAT by GMAC (NMIMS)</a></li>
-            <li><a href="#exams?exam=snap" data-route="exams" data-sub="snap">SNAP 2026 (Symbiosis SIBM)</a></li>
-            <li><a href="#exams?exam=cmat" data-route="exams" data-sub="cmat">CMAT 2026 (JBIMS & GIM)</a></li>
-            <li><a href="#exams?exam=mhcet" data-route="exams" data-sub="mhcet">MAH MBA CET 2026</a></li>
-            <li><a href="#exams?exam=cuetpg" data-route="exams" data-sub="cuetpg">CUET PG (TISS Mumbai)</a></li>
-            <li><a href="#exams?exam=mat" data-route="exams" data-sub="mat">MAT 2026 (AIMA)</a></li>
+            <li><a href="/exams/cat" data-route="exams" data-sub="cat">CAT 2026 (IIMs & FMS)</a></li>
+            <li><a href="/exams/xat" data-route="exams" data-sub="xat">XAT 2027 (XLRI Jamshedpur)</a></li>
+            <li><a href="/exams/nmat" data-route="exams" data-sub="nmat">NMAT by GMAC (NMIMS)</a></li>
+            <li><a href="/exams/snap" data-route="exams" data-sub="snap">SNAP 2026 (Symbiosis SIBM)</a></li>
+            <li><a href="/exams/cmat" data-route="exams" data-sub="cmat">CMAT 2026 (JBIMS & GIM)</a></li>
+            <li><a href="/exams/mhcet" data-route="exams" data-sub="mhcet">MAH MBA CET 2026</a></li>
+            <li><a href="/exams/cuetpg" data-route="exams" data-sub="cuetpg">CUET PG (TISS Mumbai)</a></li>
+            <li><a href="/exams/mat" data-route="exams" data-sub="mat">MAT 2026 (AIMA)</a></li>
           </ul>
         </div>
 
@@ -49,12 +49,12 @@ export function renderFooter() {
         <div class="footer-links-col">
           <h4 class="footer-heading">Calculators & Tools</h4>
           <ul class="footer-links-list">
-            <li><a href="#tools?sub=cat" data-route="tools" data-sub="cat">CAT Score & %ile Calculator</a></li>
-            <li><a href="#tools?sub=xat" data-route="tools" data-sub="xat">XAT Score Calculator</a></li>
-            <li><a href="#tools?sub=cmat" data-route="tools" data-sub="cmat">CMAT Score Calculator</a></li>
-            <li><a href="#programs?sub=compare" data-route="programs" data-sub="compare">MBA vs PGDM Matrix</a></li>
-            <li><a href="#programs" data-route="programs">Specialization ROI Calculator</a></li>
-            <li><a href="#ai-chat" data-route="ai-chat">AdmitIQ AI Profile Evaluator</a></li>
+            <li><a href="/tools/cat-college-predictor" data-route="tools" data-sub="cat">CAT College Predictor</a></li>
+            <li><a href="/tools/xat-percentile-calculator" data-route="tools" data-sub="xat">XAT Score Calculator</a></li>
+            <li><a href="/tools/cmat-percentile-calculator" data-route="tools" data-sub="cmat">CMAT Score Calculator</a></li>
+            <li><a href="/programs/compare" data-route="programs" data-sub="compare">MBA vs PGDM Matrix</a></li>
+            <li><a href="/programs/roi" data-route="programs">Specialization ROI Calculator</a></li>
+            <li><a href="/ai-chat" data-route="ai-chat">AdmitIQ AI Profile Evaluator</a></li>
           </ul>
         </div>
 
@@ -77,13 +77,13 @@ export function renderFooter() {
         <div class="footer-bottom-container">
           <p class="copyright-text">© 2026 FindMyBSchool.com • India's Most Trusted B-School Search Portal • All Rights Reserved.</p>
           <div class="footer-bottom-links">
-            <a href="#terms" data-route="terms">Terms & Conditions</a>
+            <a href="/terms" data-route="terms">Terms & Conditions</a>
             <span>•</span>
-            <a href="#privacy" data-route="privacy">Privacy Policy</a>
+            <a href="/privacy" data-route="privacy">Privacy Policy</a>
             <span>•</span>
-            <a href="#contact" data-route="contact">Counselor Directory</a>
+            <a href="/contact" data-route="contact">Counselor Directory</a>
             <span>•</span>
-            <a href="#colleges" data-route="colleges">All Colleges</a>
+            <a href="/colleges" data-route="colleges">All Colleges</a>
           </div>
         </div>
       </div>

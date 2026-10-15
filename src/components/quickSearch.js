@@ -63,19 +63,19 @@ export function handleSearchQuery(query) {
         icon: '📝',
         title: exam.fullName,
         sub: `${exam.name} • ${exam.conductingBody} • ${exam.examDate}`,
-        route: `exams?exam=${exam.id}`
+        route: `/exams/${exam.id}`
       });
     }
   });
 
   // Search Tools
-  if ('cat score calculator percentile predictor response sheet'.includes(q) || 'score'.includes(q) || 'percentile'.includes(q)) {
+  if ('cat score calculator percentile predictor response sheet'.includes(q) || 'score'.includes(q) || 'percentile'.includes(q) || 'predictor'.includes(q)) {
     results.push({
       type: 'Tool',
       icon: '📊',
-      title: 'CAT Score Calculator & Percentile Predictor',
-      sub: 'VARC, DILR, QA slot normalization and IIM call simulator',
-      route: 'tools?sub=cat'
+      title: 'CAT College Predictor 2026',
+      sub: 'VARC, DILR, QA slot normalization and 21 IIMs call simulator',
+      route: '/tools/cat-college-predictor'
     });
   }
   if ('xat score calculator xlri decision making predictor'.includes(q) || 'xlri'.includes(q) || 'decision making'.includes(q)) {
@@ -84,7 +84,7 @@ export function handleSearchQuery(query) {
       icon: '🎯',
       title: 'XAT Score Calculator & XLRI Predictor',
       sub: 'VALR, DM, QADI sectional scoring and negative penalty evaluator',
-      route: 'tools?sub=xat'
+      route: '/tools/xat-percentile-calculator'
     });
   }
   if ('cmat score calculator jbims simsree gim'.includes(q) || 'cmat'.includes(q)) {
@@ -93,7 +93,7 @@ export function handleSearchQuery(query) {
       icon: '⚡',
       title: 'CMAT Score Calculator',
       sub: '400-mark evaluator for JBIMS MMS, SIMSREE & GIM',
-      route: 'tools?sub=cmat'
+      route: '/tools/cmat-percentile-calculator'
     });
   }
 
@@ -111,7 +111,7 @@ export function handleSearchQuery(query) {
         icon: '🏛️',
         title: col.name,
         sub: `${col.location || col.city} • Avg CTC: ${col.avgSalary || 'N/A'} • Fees: ${col.fees || 'N/A'} • Cutoff: ${col.cutoffCAT !== 'N/A' ? 'CAT: ' + col.cutoffCAT : (col.cutoffXAT !== 'N/A' ? 'XAT: ' + col.cutoffXAT : 'Exam Mapped')}`,
-        route: `colleges?id=${col.id}`,
+        route: `/colleges/${col.id}`,
         id: col.id
       });
       collegeMatches++;
@@ -127,7 +127,7 @@ export function handleSearchQuery(query) {
         icon: '📰',
         title: blog.title,
         sub: `${blog.category} • ${blog.readTime} • by ${blog.author}`,
-        route: `blog?sub=${blog.id}`
+        route: `/blog/${blog.id}`
       });
     }
   });
@@ -139,7 +139,7 @@ export function handleSearchQuery(query) {
       icon: '⚖️',
       title: 'Terms and Conditions',
       sub: 'Official User Agreement, Disclaimers & Portal Terms',
-      route: 'terms'
+      route: '/terms'
     });
   }
   if ('privacy policy data protection security gdpr dpdp'.includes(q)) {
@@ -148,7 +148,7 @@ export function handleSearchQuery(query) {
       icon: '🛡️',
       title: 'Privacy Policy',
       sub: 'DPDP Act 2023 & Student Data Protection Standards',
-      route: 'privacy'
+      route: '/privacy'
     });
   }
 
@@ -163,7 +163,7 @@ export function handleSearchQuery(query) {
 
   // Prepend a "View all in Directory" link if query is active
   const viewAllHeader = `
-    <a href="#colleges?search=${encodeURIComponent(query)}" class="search-result-item search-result-highlight" data-route="colleges" data-search="${encodeURIComponent(query)}">
+    <a href="/colleges?search=${encodeURIComponent(query)}" class="search-result-item search-result-highlight" data-route="colleges" data-search="${encodeURIComponent(query)}">
       <span class="search-item-badge all">🔍 Search Directory</span>
       <div class="search-item-info">
         <div class="search-item-title">Search entire directory for "${query}"</div>
@@ -173,14 +173,17 @@ export function handleSearchQuery(query) {
     </a>
   `;
 
-  listEl.innerHTML = viewAllHeader + results.map(item => `
-    <a href="#${item.route}" class="search-result-item" data-route="${item.route.split('?')[0]}" data-sub="${item.route.split('?')[1] || ''}" ${item.id ? `data-college-id="${item.id}"` : ''}>
-      <span class="search-item-badge ${item.type.toLowerCase().replace(/[^a-z]/g, '')}">${item.icon} ${item.type}</span>
-      <div class="search-item-info">
-        <div class="search-item-title">${item.title}</div>
-        <div class="search-item-sub">${item.sub}</div>
-      </div>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
-    </a>
-  `).join('');
+  listEl.innerHTML = viewAllHeader + results.map(item => {
+    const routeHref = item.route.startsWith('/') ? item.route : '/' + item.route;
+    return `
+      <a href="${routeHref}" class="search-result-item" ${item.id ? `data-college-id="${item.id}"` : ''}>
+        <span class="search-item-badge ${item.type.toLowerCase().replace(/[^a-z]/g, '')}">${item.icon} ${item.type}</span>
+        <div class="search-item-info">
+          <div class="search-item-title">${item.title}</div>
+          <div class="search-item-sub">${item.sub}</div>
+        </div>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+      </a>
+    `;
+  }).join('');
 }

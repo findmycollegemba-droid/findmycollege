@@ -12,7 +12,7 @@ export function renderToolsPage(activeSub = 'cat') {
             <span class="pulse-indicator"></span>
             <span class="badge-text">⚡ CAT 2026 Response Sheet Scanner & Slot Normalization Engine</span>
           </div>
-          <h1 class="page-title">CAT 2026 Score Calculator & Percentile Predictor</h1>
+          <h1 class="page-title">CAT College Predictor 2026</h1>
           <p class="page-subtitle">
             Calculate your raw score, scaled score, and percentile from your official candidate response sheet URL or source. Features official +3/−1/0 marking, slot 1/2/3 normalization, and 2027 IIM call prediction.
           </p>
@@ -20,7 +20,7 @@ export function renderToolsPage(activeSub = 'cat') {
           <!-- Exam Tools Tab Bar -->
           <div class="tools-tab-bar">
             <button class="tool-tab-btn ${currentSub === 'cat' ? 'active' : ''}" data-tool-tab="cat">
-              <span class="tab-emoji">📊</span> CAT 2026 Calculator & Scanner
+              <span class="tab-emoji">📊</span> CAT College Predictor
             </button>
             <button class="tool-tab-btn ${currentSub === 'xat' ? 'active' : ''}" data-tool-tab="xat">
               <span class="tab-emoji">🎯</span> XAT 2027 Calculator
@@ -439,10 +439,10 @@ export function renderToolsPage(activeSub = 'cat') {
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect width="12" height="8" x="6" y="14"></rect></svg>
                   <span>Print Scorecard</span>
                 </button>
-                <a href="#colleges" class="btn-action-outline">
-                  <span>Browse 111 Colleges →</span>
+                <a href="/colleges" class="btn-action-outline">
+                  <span>Browse 600+ Colleges →</span>
                 </a>
-                <a href="#contact" class="btn-action-outline ai-outline">
+                <a href="/contact" class="btn-action-outline ai-outline">
                   <span>Get Free Admission Counseling</span>
                 </a>
               </div>
@@ -832,6 +832,201 @@ export function renderToolsPage(activeSub = 'cat') {
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- SEO Content Sections for CAT College Predictor -->
+        <div class="cat-seo-content-wrap">
+          <section class="cat-seo-section-block">
+            <h2 class="cat-seo-heading">How to Use CAT College Predictor 2026</h2>
+            <p class="cat-seo-intro-p">
+              Follow these simple steps to calculate your scaled score and predict matching MBA/PGDM colleges:
+            </p>
+            <div class="cat-steps-grid">
+              <div class="cat-step-card">
+                <div class="cat-step-num">1</div>
+                <h3 class="cat-step-title">Enter Score or Sheet URL</h3>
+                <p class="cat-step-desc">Paste your official Digialm response sheet URL from iimcat.ac.in, paste your raw HTML source, or enter sectional attempts manually.</p>
+              </div>
+              <div class="cat-step-card">
+                <div class="cat-step-num">2</div>
+                <h3 class="cat-step-title">Automatic Normalization</h3>
+                <p class="cat-step-desc">Our engine applies official marking (+3 correct, -1 wrong, 0 TITA) and scales scores across Slot 1, Slot 2, and Slot 3 difficulty curves.</p>
+              </div>
+              <div class="cat-step-card">
+                <div class="cat-step-num">3</div>
+                <h3 class="cat-step-title">Projected Percentile</h3>
+                <p class="cat-step-desc">View your overall and sectional percentiles (VARC, DILR, QA) calculated using historical test-taker score distributions.</p>
+              </div>
+              <div class="cat-step-card">
+                <div class="cat-step-num">4</div>
+                <h3 class="cat-step-title">Explore Matching Colleges</h3>
+                <p class="cat-step-desc">See your admission chances mapped across 21 IIMs, FMS Delhi, and top 50 AICTE-approved PGDM business schools with fees and cutoffs.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="cat-seo-section-block">
+            <h2 class="cat-seo-heading">CAT 2026 Expected Cutoffs for Top IIMs & Non-IIMs</h2>
+            <p class="cat-seo-intro-p">
+              Admission to premier management programs in India requires meeting both sectional and overall cutoff percentiles. Here are the expected CAT 2026 cutoffs, 2-year audited tuition fees, and average placement CTCs for top business schools:
+            </p>
+            <div class="table-responsive">
+              <table class="cat-cutoffs-table">
+                <thead>
+                  <tr>
+                    <th>College Name</th>
+                    <th>General Cutoff</th>
+                    <th>2-Year Tuition Fees</th>
+                    <th>Average CTC</th>
+                    <th>Tier</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>IIM Ahmedabad (PGP)</strong></td>
+                    <td>99.6+ %ile</td>
+                    <td>₹25.0 Lakhs</td>
+                    <td>₹34.4 LPA</td>
+                    <td>Tier 1</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IIM Bangalore (PGP)</strong></td>
+                    <td>99.5+ %ile</td>
+                    <td>₹24.5 Lakhs</td>
+                    <td>₹35.3 LPA</td>
+                    <td>Tier 1</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IIM Calcutta (MBA)</strong></td>
+                    <td>99.4+ %ile</td>
+                    <td>₹27.0 Lakhs</td>
+                    <td>₹35.1 LPA</td>
+                    <td>Tier 1</td>
+                  </tr>
+                  <tr>
+                    <td><strong>FMS Delhi (MBA)</strong></td>
+                    <td>99.2+ %ile</td>
+                    <td>₹2.0 Lakhs</td>
+                    <td>₹34.1 LPA</td>
+                    <td>Tier 1 (High ROI)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>SPJIMR Mumbai (PGDM)</strong></td>
+                    <td>95.0+ %ile</td>
+                    <td>₹22.5 Lakhs</td>
+                    <td>₹33.0 LPA</td>
+                    <td>Tier 1</td>
+                  </tr>
+                  <tr>
+                    <td><strong>MDI Gurgaon (PGDM)</strong></td>
+                    <td>96.0+ %ile</td>
+                    <td>₹24.0 Lakhs</td>
+                    <td>₹26.7 LPA</td>
+                    <td>Tier 1</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IIT Bombay - SJMSOM (MBA)</strong></td>
+                    <td>98.0+ %ile</td>
+                    <td>₹14.0 Lakhs</td>
+                    <td>₹28.8 LPA</td>
+                    <td>Tier 1</td>
+                  </tr>
+                  <tr>
+                    <td><strong>GIM Goa (PGDM)</strong></td>
+                    <td>88.0+ %ile</td>
+                    <td>₹18.5 Lakhs</td>
+                    <td>₹15.0 LPA</td>
+                    <td>Tier 2</td>
+                  </tr>
+                  <tr>
+                    <td><strong>FORE School of Management Delhi</strong></td>
+                    <td>85.0+ %ile</td>
+                    <td>₹17.0 Lakhs</td>
+                    <td>₹14.5 LPA</td>
+                    <td>Tier 2</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Great Lakes Chennai (PGDM)</strong></td>
+                    <td>82.0+ %ile</td>
+                    <td>₹19.0 Lakhs</td>
+                    <td>₹14.5 LPA</td>
+                    <td>Tier 2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="cat-seo-section-block">
+            <h2 class="cat-seo-heading">Beyond CAT Percentile: How B-Schools Calculate Composite Scores</h2>
+            <p class="cat-seo-intro-p">
+              Securing a 99+ percentile in CAT guarantees eligibility for shortlists, but final admission offers depend on your cumulative composite score. Leading institutions allocate weightage across the following key dimensions:
+            </p>
+            <div class="cat-steps-grid">
+              <div class="cat-step-card">
+                <h3 class="cat-step-title">CAT Scaled Score (40% - 60%)</h3>
+                <p class="cat-step-desc">Sectional performance in VARC, DILR, and QA ensures candidates demonstrate well-rounded analytical and linguistic competencies.</p>
+              </div>
+              <div class="cat-step-card">
+                <h3 class="cat-step-title">Academic Record (15% - 25%)</h3>
+                <p class="cat-step-desc">Class 10th and 12th board marks, alongside undergraduate percentage/CGPA, reflect sustained academic consistency over time.</p>
+              </div>
+              <div class="cat-step-card">
+                <h3 class="cat-step-title">Gender & Academic Diversity (5% - 10%)</h3>
+                <p class="cat-step-desc">Additional points are awarded to female/transgender applicants and non-engineering graduates (Commerce, Arts, Science, Medicine, Law).</p>
+              </div>
+              <div class="cat-step-card">
+                <h3 class="cat-step-title">Work Experience (5% - 10%)</h3>
+                <p class="cat-step-desc">Quality full-time executive experience post-graduation (optimally between 24 and 36 months) is highly rewarded across top IIMs.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="cat-seo-section-block">
+            <h2 class="cat-seo-heading">Frequently Asked Questions (FAQs)</h2>
+            
+            <details class="cat-faq-item">
+              <summary>How does the CAT College Predictor 2026 work?</summary>
+              <div class="cat-faq-answer">
+                The FindMyBSchool CAT College Predictor evaluates your sectional raw marks (VARC, DILR, QA) or official response sheet Digialm URL, applies slot normalization across Slot 1, Slot 2, and Slot 3, and generates your estimated national percentile. It then cross-references your projected percentile with verified category-wise cutoffs for 21 IIMs and over 50 top-tier MBA/PGDM colleges.
+              </div>
+            </details>
+
+            <details class="cat-faq-item">
+              <summary>What CAT percentile is required for IIM Ahmedabad, Bangalore, and Calcutta?</summary>
+              <div class="cat-faq-answer">
+                For General Category engineering candidates, top IIMs typically require a minimum 99.2 to 99.8 percentile in CAT, alongside strong sectional scores (usually 80-85+ sectional percentile). Non-engineers with exceptional academic records (90%+ in 10th/12th/Graduation) and NC-OBC/SC/ST/EWS candidates may receive interview calls between 90 and 96 percentile.
+              </div>
+            </details>
+
+            <details class="cat-faq-item">
+              <summary>Which top MBA/PGDM colleges can I convert with an 80 to 90 CAT percentile?</summary>
+              <div class="cat-faq-answer">
+                With an 80 to 90 CAT percentile, candidates have strong shortlist prospects at reputed business schools including GIM Goa, FORE School of Management Delhi, Great Lakes Institute of Management Chennai (PGDM), TAPMI Manipal, BIMTECH Greater Noida, LIBA Chennai, and KJ Somaiya Mumbai.
+              </div>
+            </details>
+
+            <details class="cat-faq-item">
+              <summary>How does slot normalization affect my raw CAT score?</summary>
+              <div class="cat-faq-answer">
+                Because CAT is conducted across 3 separate slots with varying question difficulty, IIMs employ an equipercentile statistical normalization model. If your slot was comparatively harder, your scaled score is adjusted upward; if your slot had a higher average, the score adjusts slightly downward to ensure complete fairness.
+              </div>
+            </details>
+
+            <details class="cat-faq-item">
+              <summary>Which non-IIM colleges accept CAT scores for MBA admissions?</summary>
+              <div class="cat-faq-answer">
+                Premier non-IIM institutions accepting CAT scores include FMS Delhi (Faculty of Management Studies), SPJIMR Mumbai, MDI Gurgaon, IIT Bombay (SJMSOM), IIT Delhi (DMS), IIT Kharagpur (VGSOM), IIFT Delhi, and IMI New Delhi.
+              </div>
+            </details>
+
+            <details class="cat-faq-item">
+              <summary>Does CAT percentile alone guarantee admission into top B-schools?</summary>
+              <div class="cat-faq-answer">
+                No. CAT percentile qualifies you for the shortlist (WAT-PI stage). Final admission offers depend on your Composite Score, which weights CAT percentile (40-60%), 10th and 12th marks (10-20%), graduation marks (5-15%), work experience (5-10%), and performance in the Personal Interview (30-40%).
+              </div>
+            </details>
+          </section>
         </div>
 
       </div>

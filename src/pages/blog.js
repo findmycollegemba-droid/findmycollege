@@ -1,4 +1,7 @@
 import { BLOGS_DATA } from '../data/blogsData.js';
+import { renderCatPredictorCta } from '../components/catPredictorCta.js';
+
+export { renderCatPredictorCta };
 
 // Category color mappings and icons
 export const CATEGORY_META = {
@@ -225,16 +228,16 @@ export function renderBlogOverview(articles) {
             <p class="widget-desc">Complement your reading with our live calculators and predictive score engines.</p>
             
             <div class="widget-tool-links">
-              <a href="#tools?tool=cat" class="tool-quick-link" data-route="tools" data-sub="cat">
+              <a href="/tools/cat-college-predictor" class="tool-quick-link" data-route="tools" data-sub="cat">
                 <div class="tool-icon-box">📊</div>
                 <div>
-                  <div class="tool-link-title">CAT Percentile Predictor</div>
+                  <div class="tool-link-title">CAT College Predictor</div>
                   <div class="tool-link-desc">Slot raw score to 99+%ile conversion</div>
                 </div>
                 <span class="tool-arrow">→</span>
               </a>
 
-              <a href="#programs?sub=compare" class="tool-quick-link" data-route="programs" data-sub="compare">
+              <a href="/programs/compare" class="tool-quick-link" data-route="programs" data-sub="compare">
                 <div class="tool-icon-box">⚖️</div>
                 <div>
                   <div class="tool-link-title">MBA vs PGDM Matrix</div>
@@ -243,7 +246,7 @@ export function renderBlogOverview(articles) {
                 <span class="tool-arrow">→</span>
               </a>
 
-              <a href="#colleges" class="tool-quick-link" data-route="colleges">
+              <a href="/colleges" class="tool-quick-link" data-route="colleges">
                 <div class="tool-icon-box">🏛️</div>
                 <div>
                   <div class="tool-link-title">Cutoff & Fees Explorer</div>
@@ -359,7 +362,7 @@ function renderFeaturedSpotlight(article, savedIds = []) {
           </div>
 
           <h2 class="featured-headline">
-            <a href="#blog?id=${article.id}" data-route="blog" data-sub="id=${article.id}">
+            <a href="/blog/${article.id}" data-route="blog" data-sub="${article.id}">
               ${article.title}
             </a>
           </h2>
@@ -381,7 +384,7 @@ function renderFeaturedSpotlight(article, savedIds = []) {
             </div>
 
             <div class="featured-action-group">
-              <a href="#blog?id=${article.id}" class="btn-gradient-pill" data-route="blog" data-sub="id=${article.id}">
+              <a href="/blog/${article.id}" class="btn-gradient-pill" data-route="blog" data-sub="${article.id}">
                 <span>Read Masterclass</span>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
@@ -410,9 +413,9 @@ export function renderArticlesGrid(articles, savedIds = null) {
           <p class="empty-subtitle">We are currently refreshing our editorial desk. Check back soon for brand-new MBA admissions playbooks, exam strategy breakdowns, and salary analysis.</p>
           <div class="empty-suggestions">
             <span>Explore our portal tools & colleges in the meantime:</span>
-            <a href="#colleges" class="empty-tag-pill" data-route="colleges">🏛️ 111+ MBA Colleges</a>
-            <a href="#tools" class="empty-tag-pill" data-route="tools">📊 Percentile Predictor</a>
-            <a href="#exams" class="empty-tag-pill" data-route="exams">🎯 Exam Guides</a>
+            <a href="/colleges" class="empty-tag-pill" data-route="colleges">🏛️ 111+ MBA Colleges</a>
+            <a href="/tools" class="empty-tag-pill" data-route="tools">📊 Percentile Predictor</a>
+            <a href="/exams" class="empty-tag-pill" data-route="exams">🎯 Exam Guides</a>
           </div>
         </div>
       `;
@@ -469,7 +472,7 @@ export function renderArticlesGrid(articles, savedIds = null) {
               </div>
 
               <h2 class="article-card-title">
-                <a href="#blog?id=${article.id}" data-route="blog" data-sub="id=${article.id}">
+                <a href="/blog/${article.id}" data-route="blog" data-sub="${article.id}">
                   ${article.title}
                 </a>
               </h2>
@@ -489,7 +492,7 @@ export function renderArticlesGrid(articles, savedIds = null) {
                   <div class="author-role-tiny">${article.authorRole ? article.authorRole.split('•')[0].trim() : 'MBA Mentor'}</div>
                 </div>
               </div>
-              <a href="#blog?id=${article.id}" class="read-guide-btn" data-route="blog" data-sub="id=${article.id}">
+              <a href="/blog/${article.id}" class="read-guide-btn" data-route="blog" data-sub="${article.id}">
                 <span>Read Playbook</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
@@ -710,13 +713,13 @@ export function renderFullArticleView(article) {
       <div class="section-container article-view-wrapper">
         <!-- Top Navigation / Breadcrumb Bar -->
         <nav class="article-top-nav">
-          <a href="#blog" class="article-back-pill" data-route="blog">
+          <a href="/blog" class="article-back-pill" data-route="blog">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
             <span>Back to All Playbooks</span>
           </a>
 
           <div class="article-breadcrumbs-row">
-            <a href="#blog" class="crumb-link" data-route="blog">Editorial</a>
+            <a href="/blog" class="crumb-link" data-route="blog">Editorial</a>
             <span class="crumb-sep">/</span>
             <span class="crumb-current">${article.category}</span>
           </div>
@@ -769,7 +772,7 @@ export function renderFullArticleView(article) {
               <p class="author-mini-bio">${article.authorBio}</p>
             </div>
             <div class="author-card-action">
-              <a href="#contact" class="btn-author-connect" data-route="contact">
+              <a href="/contact" class="btn-author-connect" data-route="contact">
                 <span>Ask Arjun a Question</span>
               </a>
             </div>
@@ -854,25 +857,28 @@ export function renderFullArticleView(article) {
               </div>
             </div>
 
+            <!-- Reusable CAT College Predictor CTA Component for Aspirants -->
+            ${renderCatPredictorCta()}
+
             <!-- Topic Tags Cloud -->
             <div class="article-footer-tags-row">
               <span class="tags-lead-label">Topics Covered:</span>
               <div class="tags-cluster">
-                ${article.tags.map(t => `<a href="#blog" class="article-footer-tag" data-route="blog" data-filter-tag="${t}">#${t}</a>`).join('')}
+                ${article.tags.map(t => `<a href="/blog" class="article-footer-tag" data-route="blog" data-filter-tag="${t}">#${t}</a>`).join('')}
               </div>
             </div>
 
             <!-- Previous & Next Article Navigation Bar -->
             <div class="article-pagination-bar">
               ${prevArticle ? `
-                <a href="#blog?id=${prevArticle.id}" class="pagination-card prev-card" data-route="blog" data-sub="id=${prevArticle.id}">
+                <a href="/blog/${prevArticle.id}" class="pagination-card prev-card" data-route="blog" data-sub="${prevArticle.id}">
                   <span class="nav-direction">← Previous Playbook</span>
                   <span class="nav-article-title">${prevArticle.title}</span>
                 </a>
               ` : `<div class="pagination-card empty"></div>`}
 
               ${nextArticle ? `
-                <a href="#blog?id=${nextArticle.id}" class="pagination-card next-card" data-route="blog" data-sub="id=${nextArticle.id}">
+                <a href="/blog/${nextArticle.id}" class="pagination-card next-card" data-route="blog" data-sub="${nextArticle.id}">
                   <span class="nav-direction">Next Playbook →</span>
                   <span class="nav-article-title">${nextArticle.title}</span>
                 </a>
@@ -895,14 +901,14 @@ export function renderFullArticleView(article) {
                         <span class="related-time">⏱️ ${rel.readTime}</span>
                       </div>
                       <h4 class="related-mini-title">
-                        <a href="#blog?id=${rel.id}" data-route="blog" data-sub="id=${rel.id}">
+                        <a href="/blog/${rel.id}" data-route="blog" data-sub="${rel.id}">
                           ${rel.title}
                         </a>
                       </h4>
                       <p class="related-mini-snippet">${rel.summary}</p>
                       <div class="related-mini-footer">
                         <span class="related-author">${rel.author}</span>
-                        <a href="#blog?id=${rel.id}" class="related-link-btn" data-route="blog" data-sub="id=${rel.id}">
+                        <a href="/blog/${rel.id}" class="related-link-btn" data-route="blog" data-sub="${rel.id}">
                           Read →
                         </a>
                       </div>
@@ -938,8 +944,8 @@ export function renderFullArticleView(article) {
               <p class="tool-promo-desc">
                 Input your expected section raw scores to generate your composite percentile and shortlist chances across IIMs and FMS.
               </p>
-              <a href="#tools?tool=cat" class="btn-gradient-pill btn-sm" data-route="tools" data-sub="cat">
-                <span>Launch Calculator</span>
+              <a href="/tools/cat-college-predictor" class="btn-gradient-pill btn-sm" data-route="tools" data-sub="cat">
+                <span>CAT College Predictor</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
               </a>
             </div>
@@ -949,7 +955,7 @@ export function renderFullArticleView(article) {
               <span class="mentor-side-badge">1-ON-1 GUIDANCE</span>
               <h4 class="mentor-side-title">Stuck in Mock Plateaus?</h4>
               <p class="mentor-side-desc">Get a 30-minute diagnostic session with an IIM alum to analyze your sectional accuracy bottlenecks.</p>
-              <a href="#contact" class="btn-outline-pill btn-sm" data-route="contact">
+              <a href="/contact" class="btn-outline-pill btn-sm" data-route="contact">
                 Schedule Diagnostic →
               </a>
             </div>

@@ -884,7 +884,8 @@ export function initInquiryModal() {
   // Explore colleges button from success screen
   exploreCollegesBtn?.addEventListener('click', () => {
     closeInquiryModal();
-    window.location.hash = '#colleges';
+    window.history.pushState(null, '', '/colleges');
+    window.dispatchEvent(new PopStateEvent('popstate'));
   });
 
   // AUTO POPUP ON USER VISIT

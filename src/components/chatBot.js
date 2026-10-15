@@ -966,8 +966,8 @@ function generateCollegeRecommendations() {
     // 4. Action bar below results
     const actionToolbarHtml = `
       <div class="fmc-results-toolbar">
-        <a href="#colleges" class="fmc-portal-link-btn" id="fmcExplorePortalBtn">
-          <span>Explore All 130+ Colleges on Directory</span>
+        <a href="/colleges" class="fmc-portal-link-btn" id="fmcExplorePortalBtn">
+          <span>Explore All 600+ Colleges on Directory</span>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m9 18 6-6-6-6"/></svg>
         </a>
         <button type="button" class="fmc-download-shortlist-btn" id="fmcDownloadShortlistBtn">
@@ -1032,7 +1032,8 @@ function attachResultsEventHandlers(colleges) {
       if (college && window.openCollegeDetailModal) {
         window.openCollegeDetailModal(college);
       } else {
-        window.location.hash = `#colleges?id=${colId}`;
+        window.history.pushState(null, '', `/colleges/${colId}`);
+        window.dispatchEvent(new PopStateEvent('popstate'));
       }
     });
   });
@@ -1045,7 +1046,8 @@ function attachResultsEventHandlers(colleges) {
       if (college && window.openCollegeBrochureModal) {
         window.openCollegeBrochureModal(college, chatBotState.studentData);
       } else {
-        window.location.hash = `#colleges?id=${colId}`;
+        window.history.pushState(null, '', `/colleges/${colId}`);
+        window.dispatchEvent(new PopStateEvent('popstate'));
       }
     });
   });

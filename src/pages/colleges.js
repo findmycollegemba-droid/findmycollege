@@ -9,7 +9,7 @@ export function renderCollegesPage() {
         <div class="portal-hero-container">
           <!-- Breadcrumb -->
           <nav class="portal-breadcrumb">
-            <a href="#home">Home</a>
+            <a href="/" data-route="home">Home</a>
             <span class="bc-sep">/</span>
             <span class="bc-current">MBA Colleges in India</span>
           </nav>
@@ -78,7 +78,7 @@ export function renderCollegesPage() {
                 <h4 id="bannerTitle">MBA Colleges (University Degree)</h4>
                 <p id="bannerDesc">University degrees awarded by state/central universities and Institutes of National Importance (IIMs, FMS, JBIMS, IITs). Recognized worldwide for academic and doctoral pathways.</p>
               </div>
-              <a href="#programs?sub=compare" class="banner-learn-link">MBA vs PGDM Matrix →</a>
+              <a href="/programs/compare" class="banner-learn-link" data-route="programs" data-sub="compare">MBA vs PGDM Matrix →</a>
             </div>
 
             <!-- Quick Filter Chips Row (Shiksha Trend Filters) -->

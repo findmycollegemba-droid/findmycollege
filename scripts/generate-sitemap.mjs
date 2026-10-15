@@ -21,45 +21,45 @@ function addUrl(loc, changefreq, priority, lastmod = TODAY) {
 
 // 1. Core Landing & Main Pages
 addUrl(`${BASE_URL}/`, 'daily', '1.0');
-addUrl(`${BASE_URL}/?page=colleges`, 'daily', '0.9');
-addUrl(`${BASE_URL}/?page=exams`, 'weekly', '0.9');
-addUrl(`${BASE_URL}/?page=tools`, 'weekly', '0.9');
-addUrl(`${BASE_URL}/?page=programs`, 'weekly', '0.8');
-addUrl(`${BASE_URL}/?page=blog`, 'daily', '0.8');
-addUrl(`${BASE_URL}/?page=contact`, 'monthly', '0.7');
-addUrl(`${BASE_URL}/?page=ai-chat`, 'weekly', '0.7');
-addUrl(`${BASE_URL}/?page=terms`, 'monthly', '0.6');
-addUrl(`${BASE_URL}/?page=privacy`, 'monthly', '0.6');
+addUrl(`${BASE_URL}/colleges`, 'daily', '0.9');
+addUrl(`${BASE_URL}/exams`, 'weekly', '0.9');
+addUrl(`${BASE_URL}/tools`, 'weekly', '0.9');
+addUrl(`${BASE_URL}/programs`, 'weekly', '0.8');
+addUrl(`${BASE_URL}/blog`, 'daily', '0.8');
+addUrl(`${BASE_URL}/contact`, 'monthly', '0.7');
+addUrl(`${BASE_URL}/ai-chat`, 'weekly', '0.7');
+addUrl(`${BASE_URL}/terms`, 'monthly', '0.6');
+addUrl(`${BASE_URL}/privacy`, 'monthly', '0.6');
 
 // 2. Program Comparison & Specialization Guides
-addUrl(`${BASE_URL}/?page=programs&amp;sub=mba`, 'weekly', '0.8');
-addUrl(`${BASE_URL}/?page=programs&amp;sub=pgdm`, 'weekly', '0.8');
-addUrl(`${BASE_URL}/?page=programs&amp;sub=compare`, 'weekly', '0.85');
-addUrl(`${BASE_URL}/?page=programs&amp;sub=specializations`, 'weekly', '0.8');
-addUrl(`${BASE_URL}/?page=programs&amp;sub=roi`, 'weekly', '0.8');
+addUrl(`${BASE_URL}/programs/mba`, 'weekly', '0.8');
+addUrl(`${BASE_URL}/programs/pgdm`, 'weekly', '0.8');
+addUrl(`${BASE_URL}/programs/compare`, 'weekly', '0.85');
+addUrl(`${BASE_URL}/programs/specializations`, 'weekly', '0.8');
+addUrl(`${BASE_URL}/programs/roi`, 'weekly', '0.8');
 
 // 3. Score Calculators & Tools
-addUrl(`${BASE_URL}/?page=tools&amp;sub=cat`, 'daily', '0.9');
-addUrl(`${BASE_URL}/?page=tools&amp;sub=xat`, 'weekly', '0.85');
-addUrl(`${BASE_URL}/?page=tools&amp;sub=cmat`, 'weekly', '0.85');
+addUrl(`${BASE_URL}/tools/cat-college-predictor`, 'daily', '0.9');
+addUrl(`${BASE_URL}/tools/xat-percentile-calculator`, 'weekly', '0.85');
+addUrl(`${BASE_URL}/tools/cmat-percentile-calculator`, 'weekly', '0.85');
 
 // 4. College Degree Filters
-addUrl(`${BASE_URL}/?page=colleges&amp;type=mba`, 'daily', '0.85');
-addUrl(`${BASE_URL}/?page=colleges&amp;type=pgdm`, 'daily', '0.85');
+addUrl(`${BASE_URL}/colleges/mba`, 'daily', '0.85');
+addUrl(`${BASE_URL}/colleges/pgdm`, 'daily', '0.85');
 
 // 5. City Hubs (from CITY_INFOGRAPHICS_DATA)
 CITY_INFOGRAPHICS_DATA.forEach(city => {
-  addUrl(`${BASE_URL}/?page=colleges&amp;city=${encodeURIComponent(city.cityName)}`, 'weekly', '0.8');
+  addUrl(`${BASE_URL}/colleges/city/${encodeURIComponent(city.cityName.toLowerCase())}`, 'weekly', '0.8');
 });
 
 // 6. National MBA Entrance Exams
 EXAMS_DATA.forEach(exam => {
-  addUrl(`${BASE_URL}/?page=exams&amp;exam=${encodeURIComponent(exam.id)}`, 'weekly', '0.9');
+  addUrl(`${BASE_URL}/exams/${encodeURIComponent(exam.id)}`, 'weekly', '0.9');
 });
 
 // 7. Editorial Strategy Blogs
 BLOGS_DATA.forEach(blog => {
-  addUrl(`${BASE_URL}/?page=blog&amp;sub=${encodeURIComponent(blog.id)}`, 'weekly', '0.8');
+  addUrl(`${BASE_URL}/blog/${encodeURIComponent(blog.id)}`, 'weekly', '0.8');
 });
 
 // 8. Individual Business School Profiles (All 623 Colleges)
@@ -73,7 +73,7 @@ COLLEGES_DATA.forEach(college => {
     priority = '0.8';
   }
 
-  addUrl(`${BASE_URL}/?page=colleges&amp;id=${encodeURIComponent(college.id)}`, 'weekly', priority);
+  addUrl(`${BASE_URL}/colleges/${encodeURIComponent(college.id)}`, 'weekly', priority);
 });
 
 // Build XML string

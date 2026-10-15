@@ -87,48 +87,176 @@ function initApp() {
   setupGlobalEvents();
 }
 
+// Navigation helper
+export function navigateTo(url) {
+  if (window.location.pathname + window.location.search !== url) {
+    window.history.pushState(null, '', url);
+  }
+  handleRouteChange();
+}
+
 // Router
 function handleRouteChange() {
   const hash = window.location.hash.slice(1);
-  let routePath = '';
-  let queryString = '';
+  let pathname = window.location.pathname.replace(/\/index\.html$/, '').replace(/\/$/, '') || '/';
+  let queryString = window.location.search.slice(1);
+  let page = 'home';
+  let sub = null;
+  const params = new URLSearchParams(queryString || '');
 
+  // 1. Handle Legacy Hash & Query Redirects to Clean Slugs
   if (hash) {
-    [routePath, queryString] = hash.split('?');
-  } else if (window.location.search) {
-    const searchParams = new URLSearchParams(window.location.search);
-    routePath = searchParams.get('page') || 'home';
-    queryString = window.location.search.slice(1);
-  } else {
-    routePath = 'home';
+    if (hash === 'tools' || hash === 'tools/' || hash.startsWith('tools?sub=cat') || hash.startsWith('tools?tool=cat') || hash === 'tools/cat-college-predictor') {
+      window.history.replaceState(null, '', '/tools/cat-college-predictor');
+      pathname = '/tools/cat-college-predictor';
+    } else if (hash.startsWith('tools?sub=xat') || hash.startsWith('tools?tool=xat')) {
+      window.history.replaceState(null, '', '/tools/xat-percentile-calculator');
+      pathname = '/tools/xat-percentile-calculator';
+    } else if (hash.startsWith('tools?sub=cmat') || hash.startsWith('tools?tool=cmat')) {
+      window.history.replaceState(null, '', '/tools/cmat-percentile-calculator');
+      pathname = '/tools/cmat-percentile-calculator';
+    } else if (hash.startsWith('colleges?id=')) {
+      const colId = new URLSearchParams(hash.split('?')[1]).get('id');
+      if (colId) {
+        window.history.replaceState(null, '', `/colleges/${colId}`);
+        pathname = `/colleges/${colId}`;
+      }
+    } else if (hash.startsWith('colleges?city=')) {
+      const city = new URLSearchParams(hash.split('?')[1]).get('city');
+      if (city) {
+        window.history.replaceState(null, '', `/colleges/city/${encodeURIComponent(city.toLowerCase())}`);
+        pathname = `/colleges/city/${encodeURIComponent(city.toLowerCase())}`;
+      }
+    } else if (hash.startsWith('colleges?type=')) {
+      const deg = new URLSearchParams(hash.split('?')[1]).get('type');
+      if (deg) {
+        window.history.replaceState(null, '', `/colleges/${encodeURIComponent(deg.toLowerCase())}`);
+        pathname = `/colleges/${encodeURIComponent(deg.toLowerCase())}`;
+      }
+    } else if (hash.startsWith('exams?exam=') || hash.startsWith('exams?id=')) {
+      const ex = new URLSearchParams(hash.split('?')[1]).get('exam') || new URLSearchParams(hash.split('?')[1]).get('id');
+      if (ex) {
+        window.history.replaceState(null, '', `/exams/${encodeURIComponent(ex.toLowerCase())}`);
+        pathname = `/exams/${encodeURIComponent(ex.toLowerCase())}`;
+      }
+    } else if (hash.startsWith('blog?id=')) {
+      const bId = new URLSearchParams(hash.split('?')[1]).get('id');
+      if (bId) {
+        window.history.replaceState(null, '', `/blog/${encodeURIComponent(bId)}`);
+        pathname = `/blog/${encodeURIComponent(bId)}`;
+      }
+    } else if (hash.startsWith('programs?sub=')) {
+      const pSub = new URLSearchParams(hash.split('?')[1]).get('sub');
+      if (pSub) {
+        window.history.replaceState(null, '', `/programs/${encodeURIComponent(pSub.toLowerCase())}`);
+        pathname = `/programs/${encodeURIComponent(pSub.toLowerCase())}`;
+      }
+    } else if (['colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat', 'terms', 'privacy'].includes(hash.split('?')[0])) {
+      const cleanPath = '/' + hash.split('?')[0];
+      const q = hash.includes('?') ? '?' + hash.split('?')[1] : '';
+      window.history.replaceState(null, '', cleanPath + q);
+      pathname = cleanPath;
+      if (hash.includes('?')) {
+        const hashParams = new URLSearchParams(hash.split('?')[1]);
+        hashParams.forEach((v, k) => params.set(k, v));
+      }
+    }
+  } else if (params.get('page')) {
+    const legacyPage = params.get('page');
+    const legacySub = params.get('sub') || params.get('exam') || params.get('id') || params.get('type');
+    if (legacyPage === 'tools') {
+      if (legacySub === 'xat') {
+        window.history.replaceState(null, '', '/tools/xat-percentile-calculator');
+        pathname = '/tools/xat-percentile-calculator';
+      } else if (legacySub === 'cmat') {
+        window.history.replaceState(null, '', '/tools/cmat-percentile-calculator');
+        pathname = '/tools/cmat-percentile-calculator';
+      } else {
+        window.history.replaceState(null, '', '/tools/cat-college-predictor');
+        pathname = '/tools/cat-college-predictor';
+      }
+    } else if (['colleges', 'exams', 'blog', 'programs'].includes(legacyPage) && legacySub) {
+      window.history.replaceState(null, '', `/${legacyPage}/${legacySub}`);
+      pathname = `/${legacyPage}/${legacySub}`;
+    } else {
+      window.history.replaceState(null, '', `/${legacyPage}`);
+      pathname = `/${legacyPage}`;
+    }
   }
-  
-  let page = routePath || 'home';
-  if (['inquiry', 'apply'].includes(page)) {
+
+  // 2. Parse Clean Slug from Pathname
+  if (pathname === '/tools/cat-college-predictor') {
+    page = 'tools';
+    sub = 'cat';
+  } else if (pathname === '/tools/xat-percentile-calculator' || pathname === '/tools/xat') {
+    page = 'tools';
+    sub = 'xat';
+  } else if (pathname === '/tools/cmat-percentile-calculator' || pathname === '/tools/cmat') {
+    page = 'tools';
+    sub = 'cmat';
+  } else if (pathname === '/tools') {
+    page = 'tools';
+    sub = 'cat';
+  } else if (pathname.startsWith('/colleges/city/')) {
+    page = 'colleges';
+    sub = null;
+    const city = decodeURIComponent(pathname.replace('/colleges/city/', '').trim());
+    params.set('city', city);
+  } else if (pathname === '/colleges/mba') {
+    page = 'colleges';
+    sub = 'mba';
+    params.set('type', 'mba');
+  } else if (pathname === '/colleges/pgdm') {
+    page = 'colleges';
+    sub = 'pgdm';
+    params.set('type', 'pgdm');
+  } else if (pathname.startsWith('/colleges/')) {
+    page = 'colleges';
+    sub = decodeURIComponent(pathname.replace('/colleges/', '').trim());
+  } else if (pathname === '/colleges') {
+    page = 'colleges';
+    sub = null;
+  } else if (pathname.startsWith('/exams/')) {
+    page = 'exams';
+    sub = decodeURIComponent(pathname.replace('/exams/', '').trim());
+  } else if (pathname === '/exams') {
+    page = 'exams';
+    sub = null;
+  } else if (pathname.startsWith('/programs/')) {
+    page = 'programs';
+    sub = decodeURIComponent(pathname.replace('/programs/', '').trim());
+  } else if (pathname === '/programs') {
+    page = 'programs';
+    sub = 'mba';
+  } else if (pathname.startsWith('/blog/')) {
+    page = 'blog';
+    sub = decodeURIComponent(pathname.replace('/blog/', '').trim());
+  } else if (pathname === '/blog') {
+    page = 'blog';
+    sub = null;
+  } else if (pathname === '/contact') {
+    page = 'contact';
+  } else if (pathname === '/ai-chat') {
+    page = 'ai-chat';
+  } else if (pathname === '/terms' || pathname === '/terms-and-conditions') {
+    page = 'terms';
+  } else if (pathname === '/privacy' || pathname === '/privacy-policy') {
+    page = 'privacy';
+  } else if (pathname === '/inquiry' || pathname === '/apply') {
     page = 'home';
     setTimeout(() => openInquiryModal(), 150);
-  } else if (page === 'terms-and-conditions') {
-    page = 'terms';
-  } else if (page === 'privacy-policy') {
-    page = 'privacy';
-  } else if (page === 'search') {
+  } else if (pathname === '/search') {
     page = 'colleges';
-  } else if (!['home', 'colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat', 'terms', 'privacy'].includes(page)) {
+  } else {
     page = 'home';
   }
 
-  const params = new URLSearchParams(queryString || '');
   if (page === 'home' && (params.get('search') || params.get('q'))) {
     page = 'colleges';
   }
-  const sub = params.get('sub') || params.get('exam') || params.get('id') || params.get('type') || null;
 
   state.currentPage = page;
   state.currentSub = sub;
-
-  if (routePath === 'inquiry' || routePath === 'apply') {
-    setTimeout(() => openInquiryModal(), 150);
-  }
 
   // Render Navbar and Footer
   document.getElementById('navbarMount').innerHTML = renderNavbar(page, sub);
@@ -212,11 +340,31 @@ function setupGlobalEvents() {
         if (q) {
           e.preventDefault();
           toggleSearchModal(false);
-          window.location.hash = `#colleges?search=${encodeURIComponent(q)}`;
+          navigateTo(`/colleges?search=${encodeURIComponent(q)}`);
         }
       }
     });
   }
+
+  // Intercept internal link clicks for clean SPA transitions
+  document.addEventListener('click', (e) => {
+    const anchor = e.target.closest('a');
+    if (!anchor) return;
+
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || anchor.target === '_blank') return;
+
+    const href = anchor.getAttribute('href');
+    if (!href) return;
+
+    if (href.startsWith('http://') || href.startsWith('https://') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) {
+      return;
+    }
+
+    if (href.startsWith('/')) {
+      e.preventDefault();
+      navigateTo(href);
+    }
+  });
 
   // Search tags & result item clicks
   document.addEventListener('click', (e) => {
@@ -312,7 +460,7 @@ window.openCollegeDetailModal = function(college, initialTab = 'overview') {
   const detailOverlay = document.getElementById('portalDetailModalOverlay');
   const detailDialog = document.getElementById('portalDetailModalDialog');
   if (!detailOverlay || !detailDialog) {
-    window.location.hash = `#colleges?id=${college.id}`;
+    navigateTo(`/colleges/${college.id}`);
     return;
   }
 
@@ -357,7 +505,7 @@ window.openCollegeBrochureModal = function(college, prefillData) {
   const brochureOverlay = document.getElementById('portalBrochureModalOverlay');
   const brochureDialog = document.getElementById('portalBrochureModalDialog');
   if (!brochureOverlay || !brochureDialog) {
-    window.location.hash = `#colleges?id=${college.id}`;
+    navigateTo(`/colleges/${college.id}`);
     return;
   }
 
@@ -1140,7 +1288,7 @@ function initCollegesInteractions(subId, params) {
       aiBtn.addEventListener('click', () => {
         const colName = aiBtn.getAttribute('data-ask-ai');
         closeDetailModal();
-        window.location.hash = `#ai-chat?query=${encodeURIComponent(`Tell me about ${colName} - admissions, cutoffs, and placements`)}`;
+        navigateTo(`/ai-chat?query=${encodeURIComponent(`Tell me about ${colName} - admissions, cutoffs, and placements`)}`);
       });
     });
 
@@ -1267,9 +1415,9 @@ function initHomeInteractions() {
   const executeSearch = (query) => {
     const q = (query || searchInput?.value || '').trim();
     if (q) {
-      window.location.hash = `#colleges?search=${encodeURIComponent(q)}`;
+      navigateTo(`/colleges?search=${encodeURIComponent(q)}`);
     } else {
-      window.location.hash = '#colleges';
+      navigateTo('/colleges');
     }
   };
 
@@ -1325,7 +1473,7 @@ function initHomeInteractions() {
           suggestionsBox.innerHTML = `
             <div class="suggestions-empty">
               <span>No colleges found matching "${q}".</span>
-              <a href="#colleges" class="sugg-browse-all">Browse all 110+ colleges →</a>
+              <a href="/colleges" class="sugg-browse-all">Browse all 600+ colleges →</a>
             </div>
           `;
           suggestionsBox.style.display = 'block';
@@ -1375,17 +1523,17 @@ function initHomeInteractions() {
       pill.classList.add('active');
 
       if (filter === 'all') {
-        window.location.hash = '#colleges';
+        navigateTo('/colleges');
       } else if (filter === 'mba') {
-        window.location.hash = '#colleges?type=mba';
+        navigateTo('/colleges/mba');
       } else if (filter === 'pgdm') {
-        window.location.hash = '#colleges?type=pgdm';
+        navigateTo('/colleges/pgdm');
       } else if (filter === 'top10') {
-        window.location.hash = '#colleges?filter=top10';
+        navigateTo('/colleges?filter=top10');
       } else if (filter === 'roi') {
-        window.location.hash = '#colleges?fee=under15';
+        navigateTo('/colleges?fee=under15');
       } else if (['cat', 'xat', 'cmat', 'snap'].includes(filter)) {
-        window.location.hash = `#colleges?exam=${filter.toUpperCase()}`;
+        navigateTo(`/colleges?exam=${filter.toUpperCase()}`);
       }
     });
   });
@@ -1694,8 +1842,10 @@ function initProgramsInteractions() {
       const targetPanel = document.getElementById(`panel-${targetTab}`);
       if (targetPanel) targetPanel.classList.add('active');
 
-      // Update URL hash without reload
-      window.location.hash = `#programs?sub=${targetTab}`;
+      // Update clean URL slug without reload
+      window.history.pushState(null, '', `/programs/${targetTab}`);
+      state.currentSub = targetTab;
+      updatePageSEO('programs', targetTab, new URLSearchParams());
     });
   });
 
@@ -1768,7 +1918,13 @@ function initToolsInteractions() {
       const targetPanel = document.getElementById(`panel-${tab}-calc`);
       if (targetPanel) targetPanel.classList.add('active');
 
-      window.location.hash = `#tools?sub=${tab}`;
+      let targetUrl = '/tools/cat-college-predictor';
+      if (tab === 'xat') targetUrl = '/tools/xat-percentile-calculator';
+      else if (tab === 'cmat') targetUrl = '/tools/cmat-percentile-calculator';
+
+      window.history.pushState(null, '', targetUrl);
+      state.currentSub = tab;
+      updatePageSEO('tools', tab, new URLSearchParams());
     });
   });
 
@@ -2347,9 +2503,9 @@ function initExamsInteractions() {
       pill.classList.add('active');
 
       if (filter === 'all') {
-        window.location.hash = '#exams';
+        navigateTo('/exams');
       } else {
-        window.location.hash = `#exams?exam=${filter}`;
+        navigateTo(`/exams/${filter}`);
       }
     });
   });

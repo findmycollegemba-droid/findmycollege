@@ -93,13 +93,13 @@ function renderAllExamsGrid(exams) {
           </div>
 
           <div class="exam-card-actions">
-            <a href="#exams?exam=${exam.id}" class="btn-gradient-pill btn-sm" data-route="exams" data-sub="exam=${exam.id}">
+            <a href="/exams/${exam.id}" class="btn-gradient-pill btn-sm" data-route="exams" data-sub="${exam.id}">
               <span>View Full Dossier & Syllabus</span>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
             </a>
             ${['cat', 'xat', 'cmat'].includes(exam.id) ? `
-              <a href="#tools?sub=${exam.id}" class="btn-secondary-pill btn-sm" data-route="tools" data-sub="${exam.id}">
-                <span>Score Calculator →</span>
+              <a href="${exam.id === 'cat' ? '/tools/cat-college-predictor' : (exam.id === 'xat' ? '/tools/xat-percentile-calculator' : '/tools/cmat-percentile-calculator')}" class="btn-secondary-pill btn-sm" data-route="tools" data-sub="${exam.id}">
+                <span>${exam.id === 'cat' ? 'CAT College Predictor →' : 'Score Calculator →'}</span>
               </a>
             ` : ''}
           </div>
@@ -113,7 +113,7 @@ function renderSingleExamDossier(exam) {
   return `
     <div class="single-exam-dossier">
       <div class="back-link-row">
-        <a href="#exams" class="back-btn" data-route="exams">← Back to All 8 Exams</a>
+        <a href="/exams" class="back-btn" data-route="exams">← Back to All 8 Exams</a>
       </div>
 
       <div class="dossier-hero-card">
@@ -196,6 +196,17 @@ function renderSingleExamDossier(exam) {
             </tbody>
           </table>
         </div>
+        ${exam.id === 'cat' ? `
+          <div class="exam-tool-cta-box" style="margin-top: 20px; padding: 20px 24px; background: linear-gradient(135deg, #1E1B4B 0%, #312E81 100%); border-radius: 14px; color: #fff; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+            <div>
+              <div style="font-weight: 700; font-size: 1.1rem; color: #FBBF24;">⚡ Predict Your Admission Chances Across All 21 IIMs</div>
+              <div style="font-size: 0.9rem; color: #E0E7FF; margin-top: 4px;">Enter your raw score or response sheet to evaluate scaled scores and call probability.</div>
+            </div>
+            <a href="/tools/cat-college-predictor" class="btn-gradient-pill btn-sm" data-route="tools" data-sub="cat">
+              <span>CAT College Predictor</span>
+            </a>
+          </div>
+        ` : ''}
       </div>
 
       <!-- Score vs Percentile Curve -->

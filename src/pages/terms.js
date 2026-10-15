@@ -5,7 +5,7 @@ export function renderTermsPage() {
       <section class="legal-hero">
         <div class="section-container">
           <div class="legal-breadcrumb">
-            <a href="#home" data-route="home">Home</a>
+            <a href="/" data-route="home">Home</a>
             <span class="bc-sep">/</span>
             <span class="bc-current">Terms and Conditions</span>
           </div>
@@ -52,7 +52,7 @@ export function renderTermsPage() {
               <div class="help-text">
                 <strong>Have Questions?</strong>
                 <p>Our legal and admissions support team is available to assist.</p>
-                <a href="#contact" data-route="contact" class="help-btn">Contact Support</a>
+                <a href="/contact" data-route="contact" class="help-btn">Contact Support</a>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ export function renderTermsPage() {
               By accessing, browsing, registering, or interacting with <strong>FindMyBSchool.com</strong> ("the Website", "we", "our", or "us"), 
               including our proprietary college search engines, entrance exam directories, percentile predictors, admission inquiry forms, 
               and AI-driven profile evaluation tools, you ("User", "Student", or "Visitor") agree to be bound by these Terms and Conditions ("Terms"), 
-              as well as our <a href="#privacy" data-route="privacy" class="inline-link">Privacy Policy</a>.
+              as well as our <a href="/privacy" data-route="privacy" class="inline-link">Privacy Policy</a>.
             </p>
             <p>
               If you do not agree with any provision of these Terms, you must immediately discontinue your use of the Website. 
@@ -248,11 +248,11 @@ export function renderTermsPage() {
 
           <!-- Bottom Action Buttons -->
           <div class="legal-bottom-actions">
-            <a href="#privacy" data-route="privacy" class="btn-legal-link">
+            <a href="/privacy" data-route="privacy" class="btn-legal-link">
               <span>View Privacy Policy</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
             </a>
-            <a href="#contact" data-route="contact" class="btn-legal-link secondary">
+            <a href="/contact" data-route="contact" class="btn-legal-link secondary">
               <span>Contact Admissions Team</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
             </a>
