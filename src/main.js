@@ -545,7 +545,7 @@ window.openCollegeBrochureModal = function(college, prefillData) {
 
       // Send to CRM Ingestion
       try {
-        fetch('http://localhost:3000/api/leads', {
+        fetch('/admin/api/leads', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -2975,7 +2975,7 @@ function initContactInteractions() {
 
       // Direct Ingestion to CRM
       try {
-        fetch('http://localhost:3000/api/leads', {
+        fetch('/admin/api/leads', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

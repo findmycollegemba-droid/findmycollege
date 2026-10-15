@@ -798,7 +798,7 @@ export function initInquiryModal() {
 
       // Real-time Ingestion to CRM & Admin Panel
       try {
-        fetch('http://localhost:3000/api/leads', {
+        fetch('/admin/api/leads', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
