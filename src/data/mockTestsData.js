@@ -10,6 +10,7 @@ import { CAT_68_QUESTIONS_SECTIONS } from './catMock68Data.js';
 import { NMAT_108_QUESTIONS_SECTIONS } from './nmatMock108Data.js';
 import { XAT_95_QUESTIONS_SECTIONS } from './xatMock95Data.js';
 import { SNAP_60_QUESTIONS_SECTIONS } from './snapMock60Data.js';
+import { CMAT_100_QUESTIONS_SECTIONS } from './cmatMock100Data.js';
 
 export const MOCK_TESTS = [
   {
@@ -91,118 +92,21 @@ export const MOCK_TESTS = [
   {
     id: 'cmat',
     slug: 'cmat',
-    title: 'CMAT 2026 Official Pattern Free Mock Test',
+    title: 'CMAT Official Pattern Mock Test (100 Questions)',
     shortTitle: 'CMAT 2026',
     badge: 'JBIMS, SIMSREE & GIM Goa',
-    tagline: 'Comprehensive National Test: 100 Questions, 400 Marks, +4 / -1 Marking',
+    tagline: 'Common Management Admission Test: Quant (20), Logic (20), Language (20), GK (20), Innovation (20) — 400 Marks',
     fullDurationMinutes: 180,
     quickDurationMinutes: 30,
-    totalQuestions: 15,
-    totalMarks: 60,
+    totalQuestions: 100,
+    totalMarks: 400,
     markingScheme: {
       correct: 4,
       incorrect: -1,
       unattempted: 0,
       description: '+4 marks for correct answer, -1 mark for incorrect answer'
     },
-    sections: [
-      {
-        id: 'cmat-qt',
-        name: 'Quantitative Techniques',
-        fullName: 'Quantitative Techniques & Data Interpretation',
-        durationMinutes: 36,
-        questions: [
-          {
-            id: 'cmat-q1',
-            sectionId: 'cmat-qt',
-            type: 'mcq',
-            text: 'The compound interest on a sum for 2 years at 10% per annum is ₹1050. What will be the simple interest on the same sum at the same rate for 3 years?',
-            options: [
-              { id: 'A', text: '₹1400' },
-              { id: 'B', text: '₹1500' },
-              { id: 'C', text: '₹1550' },
-              { id: 'D', text: '₹1600' }
-            ],
-            correctOption: 'B',
-            explanation: 'CI for 2 years at 10% = P * [(1.10)² - 1] = 0.21 * P = 1050.\nPrincipal P = 1050 / 0.21 = ₹5000.\nSimple Interest for 3 years at 10% = (5000 * 10 * 3) / 100 = ₹1500 (Option B).',
-            topic: 'Compound Interest',
-            difficulty: 'Easy'
-          }
-        ]
-      },
-      {
-        id: 'cmat-lr',
-        name: 'Logical Reasoning',
-        fullName: 'Logical Reasoning',
-        durationMinutes: 36,
-        questions: [
-          {
-            id: 'cmat-q2',
-            sectionId: 'cmat-lr',
-            type: 'mcq',
-            text: 'Pointing to a gentleman, Deepak said, "His only brother is the father of my daughter\'s father." How is the gentleman related to Deepak?',
-            options: [
-              { id: 'A', text: 'Grandfather' },
-              { id: 'B', text: 'Father' },
-              { id: 'C', text: 'Uncle' },
-              { id: 'D', text: 'Brother-in-law' }
-            ],
-            correctOption: 'C',
-            explanation: '"My daughter\'s father" is Deepak himself.\n"The father of Deepak" is Deepak\'s father.\n"His only brother is the father of Deepak" => The gentleman is the brother of Deepak\'s father.\nTherefore, the gentleman is Deepak\'s Paternal Uncle (Option C).',
-            topic: 'Blood Relations',
-            difficulty: 'Easy'
-          }
-        ]
-      },
-      {
-        id: 'cmat-gk',
-        name: 'General Awareness',
-        fullName: 'General Awareness & Current Affairs',
-        durationMinutes: 36,
-        questions: [
-          {
-            id: 'cmat-q3',
-            sectionId: 'cmat-gk',
-            type: 'mcq',
-            text: 'Which Indian city is famously known as the "Silicon Valley of India" and hosts the headquarters of ISRO?',
-            options: [
-              { id: 'A', text: 'Hyderabad' },
-              { id: 'B', text: 'Bengaluru' },
-              { id: 'C', text: 'Pune' },
-              { id: 'D', text: 'Chennai' }
-            ],
-            correctOption: 'B',
-            explanation: 'Bengaluru (Karnataka) is known as the Silicon Valley of India and hosts the headquarters of the Indian Space Research Organisation (ISRO).',
-            topic: 'Business & Geography GK',
-            difficulty: 'Easy'
-          }
-        ]
-      },
-      {
-        id: 'cmat-ie',
-        name: 'Innovation & Entrepreneurship',
-        fullName: 'Innovation & Entrepreneurship',
-        durationMinutes: 36,
-        questions: [
-          {
-            id: 'cmat-q4',
-            sectionId: 'cmat-ie',
-            type: 'mcq',
-            text: 'In venture capital and startup parlance, what does the acronym "CAC" stand for?',
-            options: [
-              { id: 'A', text: 'Capital Appreciation Certificate' },
-              { id: 'B', text: 'Customer Acquisition Cost' },
-              { id: 'C', text: 'Corporate Asset Concentration' },
-              { id: 'D', text: 'Cumulative Annuity Coefficient' }
-            ],
-            correctOption: 'B',
-            explanation: 'CAC stands for Customer Acquisition Cost, a fundamental metric representing the total marketing and sales expenditure divided by the number of new customers acquired.',
-            topic: 'Startup Fundamentals',
-            difficulty: 'Easy'
-          }
-        ]
-      }
-    ]
+    sections: CMAT_100_QUESTIONS_SECTIONS
   },
   {
     id: 'mat',
