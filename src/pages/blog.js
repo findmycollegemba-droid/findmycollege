@@ -65,7 +65,7 @@ export function getSavedArticleIds() {
  * Main Page Entrypoint
  */
 export function renderBlogPage(activeBlogId = null) {
-  const currentBlog = activeBlogId ? BLOGS_DATA.find(b => b.id === activeBlogId) : null;
+  const currentBlog = activeBlogId ? BLOGS_DATA.find(b => b.id === activeBlogId || b.legacyId === activeBlogId) : null;
 
   if (currentBlog) {
     return renderFullArticleView(currentBlog);
@@ -176,8 +176,12 @@ export function renderBlogOverview(articles) {
               <span>All Playbooks</span>
               <span class="pill-counter">${catCounts.all}</span>
             </button>
+            <button class="blog-pill" data-blog-category="CAT Strategy">
+              <span>🎯 CAT Percentile & Cutoffs</span>
+              <span class="pill-counter">${catCounts.cat}</span>
+            </button>
             <button class="blog-pill" data-blog-category="B-School Guide">
-              <span>🏛️ Colleges & PGDM</span>
+              <span>🏛️ Colleges & Admission</span>
               <span class="pill-counter">${catCounts.guide}</span>
             </button>
             <button class="blog-pill" data-blog-category="College Rankings">
@@ -948,6 +952,27 @@ export function renderFullArticleView(article) {
                 <span>CAT College Predictor</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
               </a>
+            </div>
+
+            <!-- Bank Loan & Financial Assistance Card -->
+            <div class="article-sidebar-card bank-loan-side-card" style="background: linear-gradient(135deg, rgba(0, 199, 149, 0.08) 0%, rgba(31, 168, 245, 0.08) 100%); border: 1.5px solid rgba(0, 199, 149, 0.25); border-radius: var(--radius-lg); padding: 20px;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                <span style="font-size: 1.25rem;">🏦</span>
+                <span style="font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; color: var(--color-success); text-transform: uppercase;">BANK FINANCING</span>
+              </div>
+              <h4 style="font-size: 1.02rem; font-weight: 700; margin: 0 0 8px 0; color: var(--text-primary); line-height: 1.35;">Need Education Loan Support?</h4>
+              <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0 0 14px 0; line-height: 1.5;">
+                Access 100% collateral-free education loans up to ₹40 Lakhs across SBI, Bank of Baroda, and Canara Bank with Section 80E tax benefits.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <button type="button" class="btn-gradient-pill btn-sm" onclick="if(window.openInquiryModal) window.openInquiryModal();" style="width: 100%; justify-content: center; font-size: 0.85rem; padding: 9px 16px;">
+                  <span>Apply Loan Assistance</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <a href="https://www.vidyalakshmi.co.in" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-size: 0.78rem; color: var(--color-primary); font-weight: 600; text-decoration: none; padding: 4px 0;">
+                  <span>Govt. Vidya Lakshmi Portal ↗</span>
+                </a>
+              </div>
             </div>
 
             <!-- Mini Mentorship Banner -->

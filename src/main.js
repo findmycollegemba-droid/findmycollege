@@ -2886,7 +2886,7 @@ function initExamsInteractions() {
 // BLOG PAGE LOGIC
 // ============================================================
 function initBlogInteractions() {
-  const article = state.currentSub ? BLOGS_DATA.find(b => b.id === state.currentSub) : null;
+  const article = state.currentSub ? BLOGS_DATA.find(b => b.id === state.currentSub || b.legacyId === state.currentSub) : null;
   if (article) {
     // ----------------------------------------------------
     // SINGLE ARTICLE READER INTERACTIONS
