@@ -9,6 +9,7 @@
 import { CAT_68_QUESTIONS_SECTIONS } from './catMock68Data.js';
 import { NMAT_108_QUESTIONS_SECTIONS } from './nmatMock108Data.js';
 import { XAT_95_QUESTIONS_SECTIONS } from './xatMock95Data.js';
+import { SNAP_60_QUESTIONS_SECTIONS } from './snapMock60Data.js';
 
 export const MOCK_TESTS = [
   {
@@ -71,94 +72,21 @@ export const MOCK_TESTS = [
   {
     id: 'snap',
     slug: 'snap',
-    title: 'SNAP 2026 Official Pattern Free Mock Test',
+    title: 'SNAP Official Pattern Mock Test (60 Questions)',
     shortTitle: 'SNAP 2026',
     badge: 'Symbiosis SIBM Pune & SCMHRD',
-    tagline: '60-Minute Fast-Paced Speed Exam with Negative Marking (+1 / -0.25)',
+    tagline: 'Symbiosis National Aptitude Test: General English (15 Qs), Quant & DI (20 Qs), Logic (25 Qs) in 60 Mins',
     fullDurationMinutes: 60,
     quickDurationMinutes: 20,
-    totalQuestions: 15,
-    totalMarks: 15,
+    totalQuestions: 60,
+    totalMarks: 60,
     markingScheme: {
       correct: 1,
       incorrect: -0.25,
       unattempted: 0,
       description: '+1 mark for correct answer, -0.25 mark for incorrect answer'
     },
-    sections: [
-      {
-        id: 'snap-eng',
-        name: 'General English',
-        fullName: 'General English (Reading, Verbal & Grammar)',
-        durationMinutes: 15,
-        questions: [
-          {
-            id: 'snap-q1',
-            sectionId: 'snap-eng',
-            type: 'mcq',
-            text: 'Choose the idiom that best fits the sentence: "The startup founder refused to admit defeat, even though it was evident to everyone that the venture was ___________."',
-            options: [
-              { id: 'A', text: 'on the rocks' },
-              { id: 'B', text: 'under the weather' },
-              { id: 'C', text: 'in the pink' },
-              { id: 'D', text: 'spilling the beans' }
-            ],
-            correctOption: 'A',
-            explanation: '"On the rocks" means experiencing severe difficulties and likely to fail completely. Hence Option A.',
-            topic: 'Idioms & Phrases',
-            difficulty: 'Easy'
-          }
-        ]
-      },
-      {
-        id: 'snap-lr',
-        name: 'Analytical & Logical',
-        fullName: 'Analytical & Logical Reasoning',
-        durationMinutes: 25,
-        questions: [
-          {
-            id: 'snap-q2',
-            sectionId: 'snap-lr',
-            type: 'mcq',
-            text: 'Find the missing number in the series: 3, 7, 16, 35, 74, ?',
-            options: [
-              { id: 'A', text: '148' },
-              { id: 'B', text: '151' },
-              { id: 'C', text: '153' },
-              { id: 'D', text: '155' }
-            ],
-            correctOption: 'C',
-            explanation: 'Pattern: (Previous number * 2) + incremental integer:\n3 * 2 + 1 = 7\n7 * 2 + 2 = 16\n16 * 2 + 3 = 35\n35 * 2 + 4 = 74\n74 * 2 + 5 = 148 + 5 = 153 (Option C).',
-            topic: 'Number Series',
-            difficulty: 'Easy'
-          }
-        ]
-      },
-      {
-        id: 'snap-qa',
-        name: 'QA & DI',
-        fullName: 'Quantitative, Data Interpretation & Data Sufficiency',
-        durationMinutes: 20,
-        questions: [
-          {
-            id: 'snap-q3',
-            sectionId: 'snap-qa',
-            type: 'mcq',
-            text: 'A merchant sells an article at a discount of 20% on the marked price and still gains 20%. If the cost price of the article is ₹600, what is its marked price?',
-            options: [
-              { id: 'A', text: '₹800' },
-              { id: 'B', text: '₹900' },
-              { id: 'C', text: '₹950' },
-              { id: 'D', text: '₹1000' }
-            ],
-            correctOption: 'B',
-            explanation: 'Selling Price (SP) = Cost Price + 20% profit = 600 * 1.20 = ₹720.\nMarked Price (MP) with 20% discount gives SP:\nMP * (1 - 0.20) = 720  =>  MP * 0.80 = 720  =>  MP = 720 / 0.80 = ₹900 (Option B).',
-            topic: 'Profit & Loss',
-            difficulty: 'Easy'
-          }
-        ]
-      }
-    ]
+    sections: SNAP_60_QUESTIONS_SECTIONS
   },
   {
     id: 'cmat',
