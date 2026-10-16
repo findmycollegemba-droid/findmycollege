@@ -139,6 +139,14 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
               </div>
             </li>
 
+            <!-- Free Mock Test -->
+            <li class="nav-item">
+              <a href="/mock-test" class="nav-link ${activePage === 'mock-test' ? 'active' : ''}" data-route="mock-test" style="display:flex;align-items:center;gap:6px;">
+                <span>Free Mock Test</span>
+                <span style="font-size:0.62rem;font-weight:900;background:#10b981;color:#fff;padding:2px 6px;border-radius:4px;letter-spacing:0.04em;">FREE</span>
+              </a>
+            </li>
+
             <!-- Blog -->
             <li class="nav-item">
               <a href="/blog" class="nav-link ${activePage === 'blog' ? 'active' : ''}" data-route="blog">
@@ -241,6 +249,10 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
             </div>
           </div>
 
+          <a href="/mock-test" class="mobile-nav-link ${activePage === 'mock-test' ? 'active' : ''}" data-route="mock-test" style="display:flex;align-items:center;justify-content:space-between;">
+            <span>📝 Free Mock Tests (CAT, XAT...)</span>
+            <span style="font-size:0.65rem;font-weight:900;background:#10b981;color:#fff;padding:2px 6px;border-radius:4px;">100% FREE</span>
+          </a>
           <a href="/blog" class="mobile-nav-link ${activePage === 'blog' ? 'active' : ''}" data-route="blog">📰 Strategy Blog</a>
           <a href="/contact" class="mobile-nav-link ${activePage === 'contact' ? 'active' : ''}" data-route="contact">📞 Contact & Free Counseling</a>
           <a href="/ai-chat" class="mobile-nav-link ai-link ${activePage === 'ai-chat' ? 'active' : ''}" data-route="ai-chat">✨ AdmitIQ AI Assistant</a>

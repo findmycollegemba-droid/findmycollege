@@ -25,6 +25,7 @@ import { renderContactPage } from './pages/contact.js';
 import { renderAiChatPage } from './pages/aiChat.js';
 import { renderTermsPage } from './pages/terms.js';
 import { renderPrivacyPage } from './pages/privacy.js';
+import { renderMockTestPage, initMockTestEvents } from './pages/mockTest.js';
 import { updatePageSEO } from './utils/seoHelper.js';
 import { renderChatBotWidget, initChatBot, openChatBot } from './components/chatBot.js';
 import { renderInquiryModal, initInquiryModal, openInquiryModal } from './components/inquiryModal.js';
@@ -164,7 +165,7 @@ function handleRouteChange() {
         window.history.replaceState(null, '', `/programs/${encodeURIComponent(pSub.toLowerCase())}`);
         pathname = `/programs/${encodeURIComponent(pSub.toLowerCase())}`;
       }
-    } else if (['colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat', 'terms', 'privacy'].includes(hash.split('?')[0])) {
+    } else if (['colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat', 'terms', 'privacy', 'mock-test', 'free-mock-test'].includes(hash.split('?')[0])) {
       const cleanPath = '/' + hash.split('?')[0];
       const q = hash.includes('?') ? '?' + hash.split('?')[1] : '';
       window.history.replaceState(null, '', cleanPath + q);
@@ -249,6 +250,15 @@ function handleRouteChange() {
     sub = null;
   } else if (pathname === '/contact') {
     page = 'contact';
+  } else if (pathname.startsWith('/mock-test/')) {
+    page = 'mock-test';
+    sub = decodeURIComponent(pathname.replace('/mock-test/', '').trim());
+  } else if (pathname === '/mock-test' || pathname === '/free-mock-test') {
+    page = 'mock-test';
+    sub = null;
+  } else if (pathname.startsWith('/free-mock-test/')) {
+    page = 'mock-test';
+    sub = decodeURIComponent(pathname.replace('/free-mock-test/', '').trim());
   } else if (pathname === '/ai-chat') {
     page = 'ai-chat';
   } else if (pathname === '/terms' || pathname === '/terms-and-conditions') {
@@ -317,6 +327,10 @@ function handleRouteChange() {
       break;
     case 'privacy':
       mainEl.innerHTML = renderPrivacyPage();
+      break;
+    case 'mock-test':
+      mainEl.innerHTML = renderMockTestPage(sub);
+      initMockTestEvents();
       break;
   }
 

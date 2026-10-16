@@ -221,6 +221,21 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
       ];
       break;
 
+    case 'mock-test':
+      meta.title = sub 
+        ? `${sub.toUpperCase().replace('-', ' ')} Free Mock Test — Real CBT Exam Simulation & Percentile | FindMyBSchool`
+        : 'All-India Free MBA Mock Tests 2026-27 (CAT, XAT, NMAT, SNAP, CMAT, MAT) | FindMyBSchool';
+      meta.description = 'Attempt 100% Free All-India MBA Mock Tests with TCS iON simulated interface, on-screen calculator, sectional timers, instant score report, and step-by-step solutions.';
+      meta.canonical = sub ? `${BASE_URL}/mock-test/${sub}` : `${BASE_URL}/mock-test`;
+      meta.breadcrumbs = [
+        { name: 'Home', url: `${BASE_URL}/` },
+        { name: 'Free Mock Tests', url: `${BASE_URL}/mock-test` }
+      ];
+      if (sub) {
+        meta.breadcrumbs.push({ name: sub.toUpperCase().replace('-', ' '), url: meta.canonical });
+      }
+      break;
+
     case 'terms':
       meta.title = 'Terms and Conditions — User Agreement & Disclaimers | FindMyBSchool';
       meta.description = 'Official Terms and Conditions for using FindMyBSchool.com services, calculators, college comparisons, and admission guidance portals.';

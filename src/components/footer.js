@@ -42,6 +42,7 @@ export function renderFooter() {
             <li><a href="/exams/mhcet" data-route="exams" data-sub="mhcet">MAH MBA CET 2026</a></li>
             <li><a href="/exams/cuetpg" data-route="exams" data-sub="cuetpg">CUET PG (TISS Mumbai)</a></li>
             <li><a href="/exams/mat" data-route="exams" data-sub="mat">MAT 2026 (AIMA)</a></li>
+            <li><a href="/mock-test" data-route="mock-test" style="color:#2563eb;font-weight:700;">📝 Free Mock Tests Series</a></li>
           </ul>
         </div>
 
@@ -49,6 +50,7 @@ export function renderFooter() {
         <div class="footer-links-col">
           <h4 class="footer-heading">Calculators & Tools</h4>
           <ul class="footer-links-list">
+            <li><a href="/mock-test" data-route="mock-test" style="color:#10b981;font-weight:700;">⚡ All India Free Mock CBT</a></li>
             <li><a href="/tools/cat-college-predictor" data-route="tools" data-sub="cat">CAT College Predictor</a></li>
             <li><a href="/tools/xat-percentile-calculator" data-route="tools" data-sub="xat">XAT Score Calculator</a></li>
             <li><a href="/tools/cmat-percentile-calculator" data-route="tools" data-sub="cmat">CMAT Score Calculator</a></li>
