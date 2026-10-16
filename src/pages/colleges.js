@@ -560,7 +560,7 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
                     <div class="table-college-info">
                       <div class="table-college-avatar">${col.shortName.substring(0, 3)}</div>
                       <div>
-                        <div class="table-college-name" data-view-college="${col.id}">${col.name}</div>
+                        <a href="/colleges/${col.id}" class="table-college-name" data-route="colleges" data-sub="${col.id}">${col.name}</a>
                         <div class="table-college-sub">${col.location} • <span class="stars">★ ${col.rating}</span> (${col.reviewsCount} reviews)</div>
                       </div>
                     </div>
@@ -572,7 +572,7 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
                   <td class="table-salary-cell font-semibold text-green">${col.avgSalary}</td>
                   <td class="table-cutoff-cell">${cutoffText}</td>
                   <td>
-                    <button class="btn-table-view" data-view-college="${col.id}">View Details</button>
+                    <a href="/colleges/${col.id}" class="btn-table-view" data-route="colleges" data-sub="${col.id}">View Details</a>
                   </td>
                 </tr>
               `;
@@ -617,7 +617,7 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
             </div>
             <div class="college-titles-wrap">
               <div class="verified-title-row">
-                <h3 class="college-card-title" data-view-college="${col.id}">${col.name}</h3>
+                <h3 class="college-card-title"><a href="/colleges/${col.id}" class="college-card-link" data-route="colleges" data-sub="${col.id}">${col.name}</a></h3>
                 <span class="verified-tick" title="100% Audited Placement & Fee Data">
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="#34A853"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
                 </span>
@@ -687,10 +687,10 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
               <span>Brochure & Fees</span>
             </button>
-            <button class="btn-primary-view-profile" data-view-college="${col.id}">
+            <a href="/colleges/${col.id}" class="btn-primary-view-profile" data-route="colleges" data-sub="${col.id}">
               <span>View 360° Profile</span>
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
-            </button>
+            </a>
           </div>
         </div>
       </article>
@@ -1242,3 +1242,745 @@ export function renderBrochureModalContent(college) {
     </div>
   `;
 }
+
+// Helper to retrieve similar/peer colleges for internal link equity
+export function getSimilarColleges(currentCol, count = 4) {
+  if (!currentCol) return [];
+  const sameCity = COLLEGES_DATA.filter(c => c.id !== currentCol.id && c.city === currentCol.city);
+  if (sameCity.length >= count) {
+    return sameCity.slice(0, count);
+  }
+  const others = COLLEGES_DATA.filter(c => c.id !== currentCol.id && !sameCity.some(sc => sc.id === c.id));
+  others.sort((a, b) => {
+    const diffA = Math.abs((a.nirfRank || 100) - (currentCol.nirfRank || 100));
+    const diffB = Math.abs((b.nirfRank || 100) - (currentCol.nirfRank || 100));
+    return diffA - diffB;
+  });
+  return [...sameCity, ...others].slice(0, count);
+}
+
+// STANDALONE CRAWLABLE FULL COLLEGE PROFILE PAGE (Optimized for Google Rank #1, AEO & GEO)
+export function renderCollegeFullPage(col) {
+  if (!col) {
+    return `
+      <div class="profile-not-found-page">
+        <div class="profile-container text-center py-16">
+          <h2>College Profile Not Found</h2>
+          <p class="text-secondary mt-2">The requested business school could not be located in our verified directory.</p>
+          <a href="/colleges" class="btn-primary-apply mt-6 inline-flex" data-route="colleges">Explore 600+ B-Schools →</a>
+        </div>
+      </div>
+    `;
+  }
+
+  const cutoffDetails = col.cutoffDetails || {};
+  const courses = col.courses || [];
+  const domainDist = col.domainDistribution || {};
+  const admissionCriteria = col.admissionCriteria || {};
+  const facilities = col.facilities || [];
+  const similarColleges = getSimilarColleges(col, 4);
+  const cutoffText = col.cutoffCAT !== 'N/A' ? `CAT: ${col.cutoffCAT}` : (col.cutoffXAT !== 'N/A' ? `XAT: ${col.cutoffXAT}` : `CMAT: ${col.cutoffCMAT}`);
+
+  return `
+    <div class="page-college-profile standalone-college-profile shiksha-portal-theme">
+      <!-- BREADCRUMB BAR -->
+      <div class="portal-breadcrumb-bar">
+        <div class="profile-container">
+          <nav class="portal-breadcrumb" aria-label="Breadcrumb">
+            <a href="/" data-route="home">Home</a>
+            <span class="bc-sep">/</span>
+            <a href="/colleges" data-route="colleges">MBA Colleges</a>
+            <span class="bc-sep">/</span>
+            <a href="/colleges/city/${encodeURIComponent(col.city.toLowerCase())}">${col.city}</a>
+            <span class="bc-sep">/</span>
+            <span class="bc-current">${col.shortName}</span>
+          </nav>
+        </div>
+      </div>
+
+      <!-- HERO HEADER -->
+      <header class="college-hero-header">
+        <div class="profile-container">
+          <div class="hero-top-badges">
+            <span class="badge-nirf">🏆 #${col.nirfRank} NIRF Management Ranking 2026</span>
+            <span class="badge-degree ${(col.degreeTypes || ['MBA']).includes('MBA') ? 'tag-mba' : 'tag-pgdm'}">${(col.degreeTypes || ['MBA']).join(' & ')}</span>
+            <span class="badge-ownership">🏛️ ${col.ownership}</span>
+            <span class="badge-verified">✓ 100% Audited Data</span>
+          </div>
+
+          <div class="hero-identity-row">
+            <div class="college-logo-badge">${col.shortName.replace(/[^A-Za-z0-9]/g, '').slice(0, 3)}</div>
+            <div class="hero-titles-wrap">
+              <h1 class="college-main-h1">
+                ${col.name} (${col.shortName}): Admission 2026-27, Fees, Cutoffs, Placements & Ranking
+              </h1>
+              <div class="college-meta-bar">
+                <span>📍 ${col.location}</span>
+                <span class="meta-dot">•</span>
+                <span>📅 Estd: ${col.establishedYear}</span>
+                <span class="meta-dot">•</span>
+                <span>🌳 Campus: ${col.campusArea}</span>
+                <span class="meta-dot">•</span>
+                <span class="star-rating-pill">★ ${col.rating} / 5 (${col.reviewsCount} Student Reviews)</span>
+                <span class="meta-dot">•</span>
+                <span class="acc-badge">Accreditation: ${col.accreditation}</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- AEO QUICK FACTSHEET (Google AI Overview & Direct Answers Target) -->
+          <div class="aeo-factsheet-grid">
+            <div class="aeo-fact-card fact-fees">
+              <span class="fact-label">2-Year Tuition Fees</span>
+              <span class="fact-value text-blue">${col.fees}</span>
+              <span class="fact-hint">Audited Academic Fees</span>
+            </div>
+            <div class="aeo-fact-card fact-salary">
+              <span class="fact-label">Average CTC</span>
+              <span class="fact-value text-green">${col.avgSalary}</span>
+              <span class="fact-hint">Highest: ${col.highestSalary}</span>
+            </div>
+            <div class="aeo-fact-card fact-cutoff">
+              <span class="fact-label">Entrance Cutoff</span>
+              <span class="fact-value text-amber">${cutoffText}</span>
+              <span class="fact-hint">Accepted: ${col.examsAccepted.join(', ')}</span>
+            </div>
+            <div class="aeo-fact-card fact-seats">
+              <span class="fact-label">Total Batch Intake</span>
+              <span class="fact-value">${col.batchSize} Seats</span>
+              <span class="fact-hint">ROI Rating: ${col.roiScore}</span>
+            </div>
+            <div class="aeo-fact-card fact-loan">
+              <span class="fact-label">SBI Scholar Loan</span>
+              <span class="fact-value text-purple">100% Eligible</span>
+              <span class="fact-hint">0% Collateral Required</span>
+            </div>
+          </div>
+
+          <!-- HERO ACTION BUTTONS -->
+          <div class="hero-cta-group">
+            <button class="btn-primary-apply" data-apply-college="${col.id}">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <span>Apply for Admission 2026</span>
+            </button>
+            <button class="btn-outline-brochure" data-brochure-college="${col.id}">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download 2026 Brochure</span>
+            </button>
+            <button class="btn-loan-help" data-loan-college="${col.id}">
+              <span>🏦 Check Bank Loan Eligibility</span>
+            </button>
+            <a href="/colleges" class="btn-back-catalog" data-route="colleges">
+              <span>← All Colleges Directory</span>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <!-- STICKY IN-PAGE JUMP NAV -->
+      <nav class="college-subnav-sticky" id="collegeSubNav">
+        <div class="profile-container subnav-flex">
+          <a href="#overview" class="subnav-link active">Overview</a>
+          <a href="#courses-fees" class="subnav-link">Courses & Fees</a>
+          <a href="#cutoffs" class="subnav-link">Cutoffs</a>
+          <a href="#placements" class="subnav-link">Placements</a>
+          <a href="#admission" class="subnav-link">Admission Criteria</a>
+          <a href="#facilities" class="subnav-link">Campus Life</a>
+          <a href="#bank-loans" class="subnav-link">Bank Loans</a>
+          <a href="#reviews" class="subnav-link">Reviews</a>
+          <a href="#faqs" class="subnav-link">FAQs</a>
+          <a href="#peer-colleges" class="subnav-link">Similar Colleges</a>
+        </div>
+      </nav>
+
+      <!-- TWO-COLUMN PROFILE BODY -->
+      <div class="profile-container college-profile-layout">
+        <!-- LEFT 70% MAIN CONTENT COLUMN -->
+        <main class="college-profile-main">
+          
+          <!-- SECTION 1: OVERVIEW -->
+          <section id="overview" class="college-detail-section">
+            <div class="section-heading-row">
+              <h2 class="section-title">About ${col.name} (${col.shortName})</h2>
+              <span class="section-tag">Institutional Profile</span>
+            </div>
+            <p class="section-text-para">${col.highlights}</p>
+
+            <div class="info-grid-2col">
+              <div class="info-card">
+                <h4>Key Institute Highlights</h4>
+                <ul class="highlight-checklist">
+                  <li><strong>NIRF Management Ranking:</strong> Ranked #${col.nirfRank} across India</li>
+                  <li><strong>Accreditation:</strong> ${col.accreditation}</li>
+                  <li><strong>Flagship Program:</strong> ${col.programType}</li>
+                  <li><strong>Campus Spread:</strong> ${col.campusArea} residential campus</li>
+                  <li><strong>Return on Investment (ROI):</strong> ${col.roiScore}</li>
+                  <li><strong>Accepted Exams:</strong> ${col.examsAccepted.join(', ')}</li>
+                </ul>
+              </div>
+
+              <div class="info-card">
+                <h4>Audited Campus Snapshot</h4>
+                <div class="facilities-tags-grid">
+                  ${facilities.map(fac => `
+                    <div class="facility-chip">
+                      <span class="fac-icon">✓</span>
+                      <span>${fac}</span>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 2: COURSES & FEES -->
+          <section id="courses-fees" class="college-detail-section">
+            <div class="section-heading-row">
+              <h2 class="section-title">${col.shortName} Courses Offered, Fees & Seat Matrix 2026-28</h2>
+              <span class="section-tag">${courses.length} Programs Mapped</span>
+            </div>
+            <p class="section-text-para">
+              Detailed program duration, seat intake, audited tuition fee structure, and basic eligibility requirements for MBA/PGDM candidates.
+            </p>
+
+            <div class="courses-table-wrap">
+              <table class="shiksha-data-table">
+                <thead>
+                  <tr>
+                    <th>Course / Specialization</th>
+                    <th>Duration</th>
+                    <th>Intake (Seats)</th>
+                    <th>Total 2-Yr Fee</th>
+                    <th>Eligibility Criteria</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${courses.map(course => `
+                    <tr>
+                      <td class="font-medium">
+                        <strong>${course.name}</strong>
+                      </td>
+                      <td>${course.duration}</td>
+                      <td><span class="seat-badge">${course.seats} Seats</span></td>
+                      <td class="font-semibold text-blue">${course.fee}</td>
+                      <td class="text-secondary">Graduation (50% min) + Valid ${col.examsAccepted[0]}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+
+            <div class="fee-disclaimer-box">
+              <span class="info-icon">ℹ️</span>
+              <span><strong>Fee Assistance:</strong> 100% need-based tuition fee waivers and merit-cum-means scholarships are available for eligible candidates from SC/ST/NC-OBC categories.</span>
+            </div>
+          </section>
+
+          <!-- SECTION 3: CUTOFFS -->
+          <section id="cutoffs" class="college-detail-section">
+            <div class="section-heading-row">
+              <h2 class="section-title">${col.shortName} Cutoffs 2026: CAT, XAT & Sectional Requirements</h2>
+              <span class="section-tag">Category-Wise Standards</span>
+            </div>
+            <p class="section-text-para">
+              Minimum percentile thresholds required to receive interview and Written Ability Test (WAT) shortlists.
+            </p>
+
+            <div class="cutoff-table-card">
+              <table class="shiksha-data-table">
+                <thead>
+                  <tr>
+                    <th>Candidate Category</th>
+                    <th>Overall Cutoff Percentile</th>
+                    <th>Sectional Minimums (VARC / DILR / QA)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>General / Open</strong></td>
+                    <td class="font-semibold text-blue">${cutoffDetails.general || col.cutoffCAT}</td>
+                    <td>${cutoffDetails.sectional || 'VARC 80, DILR 75, QA 75'}</td>
+                  </tr>
+                  <tr>
+                    <td><strong>NC-OBC / EWS</strong></td>
+                    <td class="font-semibold">${cutoffDetails.ncObc || '90-94%ile'}</td>
+                    <td>Sectionals relaxed by ~5 to 10 percentile</td>
+                  </tr>
+                  <tr>
+                    <td><strong>SC (Scheduled Caste)</strong></td>
+                    <td class="font-semibold">${cutoffDetails.sc || '80-84%ile'}</td>
+                    <td>Minimum 65 percentile across sections</td>
+                  </tr>
+                  <tr>
+                    <td><strong>ST / PwD</strong></td>
+                    <td class="font-semibold">${cutoffDetails.st || '70-75%ile'}</td>
+                    <td>Minimum 55-60 percentile across sections</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="cutoff-tips-box">
+              <h4>🎯 How to Convert Your Shortlist at ${col.shortName}?</h4>
+              <p>While clearing the entrance percentile gets you into the interview pool, final offers heavily weigh your PI performance, WAT writing clarity, and academic consistency across 10th, 12th, and undergraduate degrees.</p>
+            </div>
+          </section>
+
+          <!-- SECTION 4: PLACEMENTS -->
+          <section id="placements" class="college-detail-section">
+            <div class="section-heading-row">
+              <h2 class="section-title">${col.shortName} Placements 2025-26: Highest & Average Packages</h2>
+              <span class="section-tag">100% Audited Placement Record</span>
+            </div>
+            <p class="section-text-para">
+              Audited compensation figures for the outgoing batch across key sectors and functional domains.
+            </p>
+
+            <div class="placement-stats-row">
+              <div class="pl-stat-box">
+                <span class="pl-val text-green">${col.avgSalary}</span>
+                <span class="pl-lbl">Average CTC</span>
+              </div>
+              <div class="pl-stat-box">
+                <span class="pl-val">${col.medianSalary}</span>
+                <span class="pl-lbl">Median CTC</span>
+              </div>
+              <div class="pl-stat-box">
+                <span class="pl-val text-blue">${col.highestSalary}</span>
+                <span class="pl-lbl">Highest Domestic CTC</span>
+              </div>
+              <div class="pl-stat-box">
+                <span class="pl-val">${col.batchSize}</span>
+                <span class="pl-lbl">Placed Candidates</span>
+              </div>
+            </div>
+
+            <!-- Domain Breakdown -->
+            <div class="domain-bars-card">
+              <h4>Sector-wise Hiring Breakdown</h4>
+              <div class="domain-progress-bars">
+                ${Object.entries(domainDist).map(([domainKey, percentage]) => {
+                  const label = domainKey.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+                  return `
+                    <div class="domain-bar-item">
+                      <div class="domain-bar-label">
+                        <span>${label}</span>
+                        <strong>${percentage}</strong>
+                      </div>
+                      <div class="domain-bar-track">
+                        <div class="domain-bar-fill" style="width: ${percentage};"></div>
+                      </div>
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+            </div>
+
+            <!-- Marquee Recruiters -->
+            <div class="recruiters-card">
+              <h4>Marquee Recruiters at ${col.shortName}</h4>
+              <div class="recruiters-badges-cloud">
+                ${(col.topRecruiters || []).map(r => `
+                  <span class="recruiter-badge">${r}</span>
+                `).join('')}
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 5: ADMISSION PROCESS -->
+          <section id="admission" class="college-detail-section">
+            <div class="section-heading-row">
+              <h2 class="section-title">${col.shortName} Admission Process 2026: Selection Criteria & Weightage</h2>
+              <span class="section-tag">Step-by-Step Roadmap</span>
+            </div>
+            <p class="section-text-para">
+              Final merit lists are constructed using normalized composite scores with the following institutional weightage:
+            </p>
+
+            <div class="criteria-cards-grid">
+              ${Object.entries(admissionCriteria).map(([key, val]) => {
+                const title = key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
+                return `
+                  <div class="criteria-card">
+                    <div class="crit-icon">⚖️</div>
+                    <div class="crit-title">${title}</div>
+                    <div class="crit-val">${val}</div>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+
+            <div class="admission-steps-timeline">
+              <h4>Three-Stage Admission Process</h4>
+              <div class="timeline-step">
+                <div class="step-num">1</div>
+                <div>
+                  <strong>Entrance Exam Gate:</strong> Register and appear for ${col.examsAccepted.join('/')}. Meet overall and sectional minimum percentiles.
+                </div>
+              </div>
+              <div class="timeline-step">
+                <div class="step-num">2</div>
+                <div>
+                  <strong>Shortlisting for WAT & PI:</strong> Qualified aspirants receive shortlist invitations based on entrance percentile plus graduation academics and diversity points.
+                </div>
+              </div>
+              <div class="timeline-step">
+                <div class="step-num">3</div>
+                <div>
+                  <strong>Final Selection & Seat Offer:</strong> Personal Interview (PI) performance combined with WAT score and work experience determines final admissions.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 6: FACILITIES -->
+          <section id="facilities" class="college-detail-section">
+            <div class="section-heading-row">
+              <h2 class="section-title">Campus Infrastructure & Student Amenities</h2>
+              <span class="section-tag">Campus Spread: ${col.campusArea}</span>
+            </div>
+            <p class="section-text-para">
+              ${col.name} provides a fully residential learning environment designed to support round-the-clock case studies, corporate competitions, and sports.
+            </p>
+
+            <div class="facilities-tags-grid">
+              ${facilities.map(fac => `
+                <div class="facility-chip-large">
+                  <span class="fac-icon-large">🏛️</span>
+                  <div>
+                    <strong>${fac}</strong>
+                    <p class="text-xs text-muted">Modern infrastructure maintained to global standards.</p>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </section>
+
+          <!-- SECTION 7: BANK LOANS & FINANCING -->
+          <section id="bank-loans" class="college-detail-section">
+            <div class="section-heading-row">
+              <h2 class="section-title">Education Loan & Bank Financing for ${col.shortName}</h2>
+              <span class="section-tag">Collateral-Free Aid</span>
+            </div>
+            <p class="section-text-para">
+              As a premier management institute, students admitted to ${col.name} qualify for top-tier national education loan schemes with zero collateral and 100% course fee coverage.
+            </p>
+
+            <div class="loan-cards-grid">
+              <div class="loan-card-item">
+                <div class="loan-card-top">
+                  <span class="bank-emblem">🏦</span>
+                  <div>
+                    <h4>SBI Scholar Loan Scheme</h4>
+                    <span class="loan-rate">Concessional Rates (from 8.15% p.a.)</span>
+                  </div>
+                </div>
+                <ul class="loan-bullets">
+                  <li>Up to ₹30-40 Lakhs with <strong>0% collateral</strong> required.</li>
+                  <li>100% coverage of tuition fees, books, computer, and hostel expenses.</li>
+                  <li>Repayment tenure up to 15 years after course completion + 1-year moratorium.</li>
+                </ul>
+                <button class="btn-loan-inquire" data-loan-college="${col.id}">Inquire SBI Scholar Loan →</button>
+              </div>
+
+              <div class="loan-card-item">
+                <div class="loan-card-top">
+                  <span class="bank-emblem">💳</span>
+                  <div>
+                    <h4>Private Banks & NBFCs (Axis / HDFC Credila)</h4>
+                    <span class="loan-rate">Fast-Track Digital Approval</span>
+                  </div>
+                </div>
+                <ul class="loan-bullets">
+                  <li>Pre-sanction letters issued upon admission call letter.</li>
+                  <li>Direct disbursement to college accounts within 48-72 hours.</li>
+                  <li>Income tax rebate under Section 80E on full interest paid.</li>
+                </ul>
+                <button class="btn-loan-inquire" data-loan-college="${col.id}">Inquire Private Education Loan →</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 8: REVIEWS -->
+          <section id="reviews" class="college-detail-section">
+            <div class="section-heading-row">
+              <h2 class="section-title">${col.shortName} Student Reviews & Verified Sentiment</h2>
+              <span class="section-tag">Rated ${col.rating} / 5</span>
+            </div>
+
+            <div class="rating-overview-card">
+              <div class="rating-score-box">
+                <div class="big-rating-num">${col.rating}</div>
+                <div class="stars-gold">★★★★★</div>
+                <div class="rating-caption">Based on ${col.reviewsCount} verified reviews</div>
+              </div>
+              <div class="sentiment-summary">
+                <h4>What Aspirants & Alumni Say</h4>
+                <div class="pros-cons-grid">
+                  <div class="pro-box">
+                    <strong class="text-green">✓ Notable Strengths:</strong>
+                    <ul>
+                      <li>Stellar peer group with high diversity across consulting, analytics, and tech.</li>
+                      <li>Unmatched corporate access and placement packages.</li>
+                      <li>Distinguished faculty and global case-study pedagogical methodology.</li>
+                    </ul>
+                  </div>
+                  <div class="con-box">
+                    <strong class="text-amber">⚠️ Key Considerations:</strong>
+                    <ul>
+                      <li>High academic pressure and continuous evaluation quizzes.</li>
+                      <li>Strict attendance policy and intensive project deadlines.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 9: FAQs (Matches Schema.org FAQPage) -->
+          <section id="faqs" class="college-detail-section">
+            <div class="section-heading-row">
+              <h2 class="section-title">Frequently Asked Questions About ${col.name} (${col.shortName})</h2>
+              <span class="section-tag">Direct Answers</span>
+            </div>
+
+            <div class="college-faqs-accordion">
+              <div class="college-faq-item open">
+                <button class="college-faq-question">
+                  <span>What is the total fee for MBA/PGDM at ${col.name}?</span>
+                  <span class="faq-toggle-icon">−</span>
+                </button>
+                <div class="college-faq-answer">
+                  <p>The audited 2-year total tuition and academic fees for the flagship management program at ${col.name} (${col.shortName}) is <strong>${col.fees}</strong>. Living, hostel, and mess expenses may vary depending on student accommodation choices.</p>
+                </div>
+              </div>
+
+              <div class="college-faq-item">
+                <button class="college-faq-question">
+                  <span>What is the entrance exam cutoff for admission to ${col.name}?</span>
+                  <span class="faq-toggle-icon">+</span>
+                </button>
+                <div class="college-faq-answer">
+                  <p>For general category candidates, the expected minimum cutoff for ${col.name} is <strong>${col.cutoffCAT !== 'N/A' ? 'CAT ' + col.cutoffCAT : (col.cutoffXAT !== 'N/A' ? 'XAT ' + col.cutoffXAT : 'CMAT ' + col.cutoffCMAT)}</strong>. Reserved category candidates (NC-OBC, SC, ST, EWS) receive relaxed cutoff percentiles as per institutional norms.</p>
+                </div>
+              </div>
+
+              <div class="college-faq-item">
+                <button class="college-faq-question">
+                  <span>What is the average and highest placement salary at ${col.name}?</span>
+                  <span class="faq-toggle-icon">+</span>
+                </button>
+                <div class="college-faq-answer">
+                  <p>In the latest audited placement report, ${col.name} recorded an average CTC package of <strong>${col.avgSalary}</strong> and a highest domestic CTC of <strong>${col.highestSalary}</strong>. Median salary stood at <strong>${col.medianSalary || col.avgSalary}</strong>.</p>
+                </div>
+              </div>
+
+              <div class="college-faq-item">
+                <button class="college-faq-question">
+                  <span>Which entrance exams are accepted by ${col.name}?</span>
+                  <span class="faq-toggle-icon">+</span>
+                </button>
+                <div class="college-faq-answer">
+                  <p>${col.name} accepts scores from <strong>${col.examsAccepted.join(', ')}</strong> for shortlisting candidates for the Personal Interview (PI) and Written Ability Test (WAT) admission rounds.</p>
+                </div>
+              </div>
+
+              <div class="college-faq-item">
+                <button class="college-faq-question">
+                  <span>Can I get an education loan without collateral for ${col.name}?</span>
+                  <span class="faq-toggle-icon">+</span>
+                </button>
+                <div class="college-faq-answer">
+                  <p>Yes. Students admitted to ${col.name} are eligible for 100% collateral-free education loans up to ₹30-40 Lakhs under premier student loan schemes including the SBI Scholar Scheme, Axis Bank Education Loan, and HDFC Credila with zero margin money and expedited approvals.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 10: SIMILAR COLLEGES TO COMPARE -->
+          <section id="peer-colleges" class="college-detail-section">
+            <div class="section-heading-row">
+              <h2 class="section-title">Similar MBA & PGDM Colleges to Compare With ${col.shortName}</h2>
+              <span class="section-tag">Peer Institutes</span>
+            </div>
+            <p class="section-text-para">
+              Compare other top-rated business schools in ${col.city} or within the same NIRF ranking band:
+            </p>
+
+            <div class="peer-colleges-grid">
+              ${similarColleges.map(peer => `
+                <div class="peer-college-card">
+                  <div class="peer-card-top">
+                    <span class="peer-rank">#${peer.nirfRank} NIRF</span>
+                    <span class="peer-city">📍 ${peer.city}</span>
+                  </div>
+                  <h4 class="peer-title">
+                    <a href="/colleges/${peer.id}" class="peer-link" data-route="colleges" data-sub="${peer.id}">${peer.name}</a>
+                  </h4>
+                  <div class="peer-metrics">
+                    <div class="pm-item">
+                      <span class="pm-lbl">Fees:</span>
+                      <strong class="text-blue">${peer.fees}</strong>
+                    </div>
+                    <div class="pm-item">
+                      <span class="pm-lbl">Avg CTC:</span>
+                      <strong class="text-green">${peer.avgSalary}</strong>
+                    </div>
+                  </div>
+                  <div class="peer-card-actions">
+                    <a href="/colleges/${peer.id}" class="btn-peer-view" data-route="colleges" data-sub="${peer.id}">View Profile →</a>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </section>
+
+        </main>
+
+        <!-- RIGHT 30% STICKY SIDEBAR -->
+        <aside class="college-profile-sidebar">
+          
+          <!-- SIDEBAR CARD 1: ADMISSION DESK -->
+          <div class="sidebar-sticky-card admission-lead-card">
+            <div class="slc-badge">⚡ Admission 2026-27 Active</div>
+            <h3 class="slc-title">Connect with ${col.shortName} Counselors</h3>
+            <p class="slc-desc">Get personalized cutoff evaluation, shortlist probability, and direct guidance from alumni & admission advisors.</p>
+            
+            <button class="btn-sidebar-apply" data-apply-college="${col.id}">
+              <span>Apply / Speak to Counselor</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+
+            <button class="btn-sidebar-brochure" data-brochure-college="${col.id}">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download 2026 Brochure (PDF)</span>
+            </button>
+
+            <div class="slc-stats">
+              <div class="slc-stat-row">
+                <span>Tuition Fees:</span>
+                <strong>${col.fees}</strong>
+              </div>
+              <div class="slc-stat-row">
+                <span>Avg Placement:</span>
+                <strong class="text-green">${col.avgSalary}</strong>
+              </div>
+              <div class="slc-stat-row">
+                <span>Shortlist Cutoff:</span>
+                <strong class="text-amber">${col.cutoffCAT !== 'N/A' ? 'CAT ' + col.cutoffCAT : col.cutoffXAT}</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- SIDEBAR CARD 2: BANK FINANCING -->
+          <div class="sidebar-sticky-card bank-loan-sidebar-card">
+            <div class="bank-loan-head">
+              <span class="loan-icon-round">🏦</span>
+              <div>
+                <h4>SBI Scholar Loan Aid</h4>
+                <p>100% Collateral-Free Scheme</p>
+              </div>
+            </div>
+            <p class="loan-sidebar-body">Eligible students can secure up to ₹40 Lakhs loan covering 100% of ${col.shortName} tuition fees with fast digital processing.</p>
+            <button class="btn-sidebar-loan" data-loan-college="${col.id}">Check 0% Collateral Loan</button>
+          </div>
+
+          <!-- SIDEBAR CARD 3: CAT PREDICTOR SHORTCUT -->
+          <div class="sidebar-sticky-card predictor-sidebar-card">
+            <span class="pred-icon">🎯</span>
+            <h4>CAT 2026 Predictor</h4>
+            <p>Know your chances of getting interview calls from ${col.shortName} and other top B-schools.</p>
+            <a href="/tools/cat-college-predictor" class="btn-sidebar-predictor" data-route="tools" data-sub="cat">Launch Predictor Free →</a>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  `;
+}
+
+// Interactive handlers for Standalone College Page
+export function initCollegeFullPageInteractions(col) {
+  if (!col) return;
+
+  // 1. FAQ Accordion Toggle Listeners
+  const faqItems = document.querySelectorAll('.college-faq-item');
+  faqItems.forEach(item => {
+    const questionBtn = item.querySelector('.college-faq-question');
+    if (questionBtn) {
+      questionBtn.addEventListener('click', () => {
+        const isOpen = item.classList.contains('open');
+        if (isOpen) {
+          item.classList.remove('open');
+          const toggle = item.querySelector('.faq-toggle-icon');
+          if (toggle) toggle.textContent = '+';
+        } else {
+          item.classList.add('open');
+          const toggle = item.querySelector('.faq-toggle-icon');
+          if (toggle) toggle.textContent = '−';
+        }
+      });
+    }
+  });
+
+  // 2. Action buttons event delegation
+  document.querySelectorAll('[data-apply-college]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (typeof window.openInquiryModal === 'function') {
+        window.openInquiryModal();
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-brochure-college]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (typeof window.openCollegeBrochureModal === 'function') {
+        window.openCollegeBrochureModal(col);
+      }
+    });
+  });
+
+  document.querySelectorAll('[data-loan-college]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (typeof window.openInquiryModal === 'function') {
+        window.openInquiryModal();
+      }
+    });
+  });
+
+  // 3. Smooth Sticky Subnav Scrollspy
+  const subnavLinks = document.querySelectorAll('.college-subnav-sticky .subnav-link');
+  const sections = Array.from(subnavLinks).map(link => {
+    const targetId = link.getAttribute('href')?.replace('#', '');
+    return targetId ? document.getElementById(targetId) : null;
+  }).filter(Boolean);
+
+  function onScroll() {
+    const scrollPos = window.scrollY + 130;
+    let currentId = '';
+
+    for (let i = sections.length - 1; i >= 0; i--) {
+      const sec = sections[i];
+      if (sec && sec.offsetTop <= scrollPos) {
+        currentId = sec.id;
+        break;
+      }
+    }
+
+    if (currentId) {
+      subnavLinks.forEach(link => {
+        if (link.getAttribute('href') === `#${currentId}`) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+}
+

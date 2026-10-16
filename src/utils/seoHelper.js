@@ -39,14 +39,15 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
       }
 
       if (specificCollege) {
-        meta.title = `${specificCollege.name} (${specificCollege.shortName}) — Fees, Cutoffs, Placements & Admission 2026 | FindMyBSchool`;
-        meta.description = `Get complete 2026-27 admission details for ${specificCollege.name}, ${specificCollege.location}. Audited 2-year fee: ${specificCollege.fees}, Avg CTC: ${specificCollege.avgSalary}, Cutoffs: CAT ${specificCollege.cutoffCAT || 'N/A'}.`;
+        meta.title = `${specificCollege.name} (${specificCollege.shortName}) Admission 2026: Fees, Cutoffs, Placements & Ranking | FindMyBSchool`;
+        meta.description = `Get verified 2026-27 admission details for ${specificCollege.name} (${specificCollege.shortName}), ${specificCollege.location}. 2-Year Total Fees: ${specificCollege.fees}, Average CTC: ${specificCollege.avgSalary}, Cutoff: ${specificCollege.cutoffCAT !== 'N/A' ? 'CAT ' + specificCollege.cutoffCAT : (specificCollege.cutoffXAT !== 'N/A' ? 'XAT ' + specificCollege.cutoffXAT : 'CMAT ' + specificCollege.cutoffCMAT)}. 100% audited placement statistics & bank loan schemes.`;
         meta.canonical = `${BASE_URL}/colleges/${encodeURIComponent(specificCollege.id)}`;
         meta.ogType = 'article';
         meta.collegeData = specificCollege;
         meta.breadcrumbs = [
           { name: 'Home', url: `${BASE_URL}/` },
           { name: 'Colleges', url: `${BASE_URL}/colleges` },
+          { name: specificCollege.city || 'MBA Colleges', url: `${BASE_URL}/colleges/city/${encodeURIComponent((specificCollege.city || '').toLowerCase())}` },
           { name: specificCollege.shortName || specificCollege.name, url: meta.canonical }
         ];
       } else if (searchQuery) {
@@ -385,72 +386,155 @@ function updateSchemaLD(meta) {
 
   // 4. AEO & Voice Search: Authoritative FAQ Schema
   // Optimized for direct answer engines (Google AI Overviews, Perplexity, ChatGPT, Gemini)
-  graph.push({
-    '@type': 'FAQPage',
-    '@id': `${BASE_URL}/#faq`,
-    'mainEntity': [
-      {
-        '@type': 'Question',
-        'name': 'What is FindMyBSchool?',
-        'acceptedAnswer': {
-          '@type': 'Answer',
-          'text': 'FindMyBSchool (findmybschool.com) is India’s premier verified business school search and admission guidance portal. It provides 100% human-verified data on 600+ MBA and PGDM colleges, audited 2-year tuition fees, real CAT/XAT cutoffs, and slot-normalized percentile calculators.'
+  if (meta.collegeData) {
+    const col = meta.collegeData;
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${meta.canonical}#faq`,
+      'mainEntity': [
+        {
+          '@type': 'Question',
+          'name': `What are the total fees for MBA/PGDM at ${col.name}?`,
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': `The audited 2-year total tuition and academic fees for the flagship management program at ${col.name} (${col.shortName}) is ${col.fees}. Living, hostel, and mess expenses may vary depending on student accommodation choices.`
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': `What is the entrance exam cutoff for admission to ${col.name}?`,
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': `For general category candidates, the expected minimum cutoff for ${col.name} is ${col.cutoffCAT !== 'N/A' ? 'CAT ' + col.cutoffCAT : (col.cutoffXAT !== 'N/A' ? 'XAT ' + col.cutoffXAT : 'CMAT ' + col.cutoffCMAT)}. Reserved category candidates (NC-OBC, SC, ST, EWS) receive relaxed cutoff percentiles as per institutional norms.`
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': `What is the average and highest placement package at ${col.name}?`,
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': `In the latest audited placement report, ${col.name} recorded an average CTC package of ${col.avgSalary} and a highest domestic CTC of ${col.highestSalary}. Median salary stood at ${col.medianSalary || col.avgSalary}.`
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': `Which entrance exams are accepted by ${col.name}?`,
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': `${col.name} accepts scores from ${col.examsAccepted.join(', ')} for shortlisting candidates for the Personal Interview (PI) and Written Ability Test (WAT) admission rounds.`
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': `Can I get an education loan without collateral for ${col.name}?`,
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': `Yes. Students admitted to ${col.name} are eligible for 100% collateral-free education loans up to ₹30-40 Lakhs under premier student loan schemes including the SBI Scholar Scheme, Axis Bank Education Loan, and HDFC Credila with zero margin money and expedited approvals.`
+          }
         }
-      },
-      {
-        '@type': 'Question',
-        'name': 'What is the main difference between an MBA and a PGDM degree in India?',
-        'acceptedAnswer': {
-          '@type': 'Answer',
-          'text': 'An MBA (Master of Business Administration) is an academic degree awarded by university-affiliated institutions (such as FMS Delhi, JBIMS Mumbai, and PUMBA) under UGC regulations. A PGDM (Post Graduate Diploma in Management) is an industry-focused diploma offered by autonomous B-schools (such as IIMs, XLRI Jamshedpur, SPJIMR Mumbai, and MDI Gurgaon) approved by AICTE. Both are treated as equivalent in corporate hiring and government recruitments when AIU accredited.'
+      ]
+    });
+  } else {
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${BASE_URL}/#faq`,
+      'mainEntity': [
+        {
+          '@type': 'Question',
+          'name': 'What is FindMyBSchool?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'FindMyBSchool (findmybschool.com) is India’s premier verified business school search and admission guidance portal. It provides 100% human-verified data on 600+ MBA and PGDM colleges, audited 2-year tuition fees, real CAT/XAT cutoffs, and slot-normalized percentile calculators.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'What is the main difference between an MBA and a PGDM degree in India?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'An MBA (Master of Business Administration) is an academic degree awarded by university-affiliated institutions (such as FMS Delhi, JBIMS Mumbai, and PUMBA) under UGC regulations. A PGDM (Post Graduate Diploma in Management) is an industry-focused diploma offered by autonomous B-schools (such as IIMs, XLRI Jamshedpur, SPJIMR Mumbai, and MDI Gurgaon) approved by AICTE. Both are treated as equivalent in corporate hiring and government recruitments when AIU accredited.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Which MBA colleges offer the highest Return on Investment (ROI) in India?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'The top MBA colleges with the highest ROI in India are FMS Delhi (Tuition fee ~₹2 Lakhs with average CTC of ₹34.1 LPA), JBIMS Mumbai (Tuition fee ~₹6 Lakhs with average CTC of ₹28 LPA), TISS Mumbai (Tuition fee ~₹2.5 Lakhs with average CTC of ₹27.2 LPA), and Delhi School of Economics (DSE Delhi, Tuition fee ~₹35,000 with average CTC of ₹14 LPA).'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'What minimum percentile is required in CAT for top IIMs?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'For general category candidates, top IIMs (IIM Ahmedabad, IIM Bangalore, IIM Calcutta) typically require a minimum 99.0 to 99.8 percentile in CAT, alongside strong 10th/12th/graduation academics and gender/academic diversity points. Non-engineers and reserved category candidates may receive interview calls at 90 to 96 percentile.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How does the CAT Score and Percentile Calculator on FindMyBSchool work?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'The FindMyBSchool CAT calculator parses the candidate’s official response sheet HTML, computes positive and negative marking (+3 for correct, -1 for wrong MCQ, 0 for TITA), applies sectional slot normalization across Slot 1, Slot 2, and Slot 3, and generates estimated percentiles based on historical test-taker distribution.'
+          }
         }
-      },
-      {
-        '@type': 'Question',
-        'name': 'Which MBA colleges offer the highest Return on Investment (ROI) in India?',
-        'acceptedAnswer': {
-          '@type': 'Answer',
-          'text': 'The top MBA colleges with the highest ROI in India are FMS Delhi (Tuition fee ~₹2 Lakhs with average CTC of ₹34.1 LPA), JBIMS Mumbai (Tuition fee ~₹6 Lakhs with average CTC of ₹28 LPA), TISS Mumbai (Tuition fee ~₹2.5 Lakhs with average CTC of ₹27.2 LPA), and Delhi School of Economics (DSE Delhi, Tuition fee ~₹35,000 with average CTC of ₹14 LPA).'
-        }
-      },
-      {
-        '@type': 'Question',
-        'name': 'What minimum percentile is required in CAT for top IIMs?',
-        'acceptedAnswer': {
-          '@type': 'Answer',
-          'text': 'For general category candidates, top IIMs (IIM Ahmedabad, IIM Bangalore, IIM Calcutta) typically require a minimum 99.0 to 99.8 percentile in CAT, alongside strong 10th/12th/graduation academics and gender/academic diversity points. Non-engineers and reserved category candidates may receive interview calls at 90 to 96 percentile.'
-        }
-      },
-      {
-        '@type': 'Question',
-        'name': 'How does the CAT Score and Percentile Calculator on FindMyBSchool work?',
-        'acceptedAnswer': {
-          '@type': 'Answer',
-          'text': 'The FindMyBSchool CAT calculator parses the candidate’s official response sheet HTML, computes positive and negative marking (+3 for correct, -1 for wrong MCQ, 0 for TITA), applies sectional slot normalization across Slot 1, Slot 2, and Slot 3, and generates estimated percentiles based on historical test-taker distribution.'
-        }
-      }
-    ]
-  });
+      ]
+    });
+  }
 
   // 5. Specific College Schema (if college profile)
   if (meta.collegeData) {
     const col = meta.collegeData;
-    graph.push({
+    const collegeSchema = {
       '@type': 'CollegeOrUniversity',
       '@id': `${meta.canonical}#college`,
       'name': col.name,
-      'alternateName': col.shortName,
-      'description': `${col.name} in ${col.location} offering ${col.programType} programs. Audited fees: ${col.fees}, Average placement CTC: ${col.avgSalary}.`,
+      'alternateName': [col.shortName, col.name],
+      'url': meta.canonical,
+      'logo': `${BASE_URL}/favicon.svg`,
+      'description': `${col.name} (${col.shortName}) is a premier management institute in ${col.location} offering ${col.programType}. Total 2-year fees: ${col.fees}, Average placement CTC: ${col.avgSalary}, Cutoff: ${col.cutoffCAT !== 'N/A' ? 'CAT ' + col.cutoffCAT : (col.cutoffXAT !== 'N/A' ? 'XAT ' + col.cutoffXAT : 'CMAT ' + col.cutoffCMAT)}.`,
       'address': {
         '@type': 'PostalAddress',
-        'addressLocality': col.city || col.location,
+        'addressLocality': col.city,
+        'addressRegion': col.state || col.location,
         'addressCountry': 'IN'
+      },
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': String(col.rating || 4.5),
+        'bestRating': '5',
+        'worstRating': '1',
+        'ratingCount': String(col.reviewsCount || 50)
       },
       'hasCredential': {
         '@type': 'EducationalOccupationalCredential',
         'credentialCategory': col.programType || 'MBA'
       }
-    });
+    };
+
+    if (col.courses && col.courses.length > 0) {
+      collegeSchema.hasOfferCatalog = {
+        '@type': 'OfferCatalog',
+        'name': `${col.shortName} MBA & Management Programs`,
+        'itemListElement': col.courses.map(course => ({
+          '@type': 'Offer',
+          'itemOffered': {
+            '@type': 'Course',
+            'name': course.name,
+            'description': `${course.name} at ${col.shortName}. Duration: ${course.duration}, Intake: ${course.seats} seats.`,
+            'provider': {
+              '@type': 'CollegeOrUniversity',
+              'name': col.name
+            }
+          },
+          'price': course.fee?.replace(/[^0-9.]/g, '') ? course.fee : col.fees,
+          'priceCurrency': 'INR',
+          'category': 'TuitionFees'
+        }))
+      };
+    }
+    graph.push(collegeSchema);
   }
 
   // 6. Specific Exam Schema (if exam guide)

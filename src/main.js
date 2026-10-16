@@ -15,7 +15,9 @@ import {
   renderCollegesCards, 
   renderCollegeDetailModalContent, 
   renderComparisonModalContent, 
-  renderBrochureModalContent 
+  renderBrochureModalContent,
+  renderCollegeFullPage,
+  initCollegeFullPageInteractions
 } from './pages/colleges.js';
 import { renderProgramsPage } from './pages/programs.js';
 import { renderToolsPage } from './pages/tools.js';
@@ -294,10 +296,18 @@ function handleRouteChange() {
       mainEl.innerHTML = renderHomePage();
       initHomeInteractions();
       break;
-    case 'colleges':
-      mainEl.innerHTML = renderCollegesPage();
-      initCollegesInteractions(sub, params);
+    case 'colleges': {
+      const isSpecificCollege = sub && !['mba', 'pgdm'].includes(sub.toLowerCase()) && COLLEGES_DATA.some(c => c.id === sub || c.slug === sub);
+      if (isSpecificCollege) {
+        const matchedCol = COLLEGES_DATA.find(c => c.id === sub || c.slug === sub);
+        mainEl.innerHTML = renderCollegeFullPage(matchedCol);
+        initCollegeFullPageInteractions(matchedCol);
+      } else {
+        mainEl.innerHTML = renderCollegesPage();
+        initCollegesInteractions(sub, params);
+      }
       break;
+    }
     case 'programs':
       mainEl.innerHTML = renderProgramsPage(sub || 'mba');
       initProgramsInteractions();
@@ -1432,8 +1442,7 @@ function initCollegesInteractions(subId, params) {
     if (viewTrigger) {
       e.preventDefault();
       const colId = viewTrigger.getAttribute('data-view-college');
-      const college = COLLEGES_DATA.find(c => c.id === colId);
-      if (college) openDetailModal(college, 'overview');
+      if (colId) navigateTo(`/colleges/${colId}`);
       return;
     }
 
