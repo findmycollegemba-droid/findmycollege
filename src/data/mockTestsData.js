@@ -8,6 +8,7 @@
 
 import { CAT_68_QUESTIONS_SECTIONS } from './catMock68Data.js';
 import { NMAT_108_QUESTIONS_SECTIONS } from './nmatMock108Data.js';
+import { XAT_95_QUESTIONS_SECTIONS } from './xatMock95Data.js';
 
 export const MOCK_TESTS = [
   {
@@ -32,128 +33,21 @@ export const MOCK_TESTS = [
   {
     id: 'xat-2027',
     slug: 'xat-2027',
-    title: 'XAT 2027 Official Pattern All-India Free Mock Test',
+    title: 'XAT Official Full Mock Test (95 Questions)',
     shortTitle: 'XAT 2027',
     badge: 'XLRI Jamshedpur & Top Associates',
-    tagline: 'Authentic Decision Making (DM), VALR, and Quantitative Ability with Negative Marking',
+    tagline: 'Complete Practice Test: VALR (26), Decision Making (21), QADI (28), GK (20) with 5 Options & Negative Marking',
     fullDurationMinutes: 180,
     quickDurationMinutes: 30,
-    totalQuestions: 21,
-    totalMarks: 21,
+    totalQuestions: 95,
+    totalMarks: 95,
     markingScheme: {
       correct: 1,
       incorrect: -0.25,
-      unattempted: -0.10,
-      description: '+1 mark for correct, -0.25 for incorrect, -0.10 per question for unattempted beyond 8 questions'
+      unattempted: 0,
+      description: '+1 mark for correct, -0.25 for incorrect (MCQs)'
     },
-    sections: [
-      {
-        id: 'valr',
-        name: 'VALR',
-        fullName: 'Verbal Ability & Logical Reasoning',
-        durationMinutes: 60,
-        questions: [
-          {
-            id: 'xat-q1',
-            sectionId: 'valr',
-            type: 'mcq',
-            text: 'Read the poem excerpt and answer the question:\n\n"Between the desire and the spasm,\nBetween the potency and the existence,\nBetween the essence and the descent\nFalls the Shadow."\n\nThe phrase "Falls the Shadow" most symbolically captures:',
-            options: [
-              { id: 'A', text: 'The inevitable triumph of physical darkness over human enlightenment.' },
-              { id: 'B', text: 'The paralyzing chasm between human aspiration and its actualization.' },
-              { id: 'C', text: 'The natural cosmic boundary between mortality and divine existence.' },
-              { id: 'D', text: 'The psychological relief experienced when leaving an unresolved conflict.' }
-            ],
-            correctOption: 'B',
-            explanation: 'The excerpt from T.S. Eliot\'s "The Hollow Men" contrasts intentionality/desire/potency with execution/existence/descent. The Shadow represents the debilitating barrier or hesitation that prevents ideal thought from transforming into completed action. Hence Option B.',
-            topic: 'Poem & Literary Comprehension',
-            difficulty: 'Hard'
-          },
-          {
-            id: 'xat-q2',
-            sectionId: 'valr',
-            type: 'mcq',
-            text: 'Choose the option that logically completes the following philosophical argument:\n\n"If moral values were entirely subjective products of cultural consensus, then moral disagreement between cultures would be meaningless, as neither culture could appeal to an external standard. However, we consistently argue that historical atrocities such as slavery were objectively abhorrent, not merely culturally unfashionable. Therefore, ____________."',
-            options: [
-              { id: 'A', text: 'cultural consensus is the ultimate metric of ethical validity.' },
-              { id: 'B', text: 'moral discourse is fundamentally an illusion engineered for social order.' },
-              { id: 'C', text: 'our moral convictions presuppose the reality of objective ethical standards.' },
-              { id: 'D', text: 'historical slavery was justified under its contemporary consensus.' }
-            ],
-            correctOption: 'C',
-            explanation: 'The argument sets up a modus tollens structure: If subjective -> moral disagreement is meaningless. But our practice proves we treat moral judgments as objectively binding. Thus, moral convictions presuppose objective ethical truths (Option C).',
-            topic: 'Critical Reasoning',
-            difficulty: 'Moderate'
-          }
-        ]
-      },
-      {
-        id: 'dm',
-        name: 'Decision Making',
-        fullName: 'Decision Making & Business Ethics',
-        durationMinutes: 60,
-        questions: [
-          {
-            id: 'xat-q3',
-            sectionId: 'dm',
-            type: 'mcq',
-            passage: `You are the Plant Manager at Zenith Pharmaceuticals. Your facility produces an essential pediatric asthma syrup. During a routine internal audit, a senior chemical technician discovers that a recently commissioned digital filtration unit had a microscopic calibration variance over the past 14 days. \n\nLaboratory tests reveal that the active therapeutic efficacy of the syrup is 96.5% rather than the statutory 98.0%, but it is completely non-toxic and causes zero adverse health effects. Recalling the 45,000 distributed bottles would cause immediate nationwide shortages in rural clinics and incur a financial loss of ₹6.2 Crores, jeopardizing the plant's annual performance bonus for 600 blue-collar workers.`,
-            text: 'As Plant Manager, which course of action represents the most ethically sound and professionally defensible decision?',
-            options: [
-              { id: 'A', text: 'Immediately conceal the audit findings, as the batch is non-toxic and saving blue-collar bonuses is a paramount humanitarian responsibility.' },
-              { id: 'B', text: 'Disclose the audit findings immediately to the Drug Controller Authority, request an expedited emergency review for the batch, and initiate a phased quarantine protocol.' },
-              { id: 'C', text: 'Quietly compensate rural clinics with free future batches while allowing the current inventory to be consumed naturally.' },
-              { id: 'D', text: 'Blame the external supplier of the filtration unit to deflect corporate liability from your local plant employees.' }
-            ],
-            correctOption: 'B',
-            explanation: 'In XLRI Decision Making, transparency, statutory compliance, and public health ethics supersede short-term financial considerations or bonus preservation. Concealment (A/C) violates pharma regulations and medical ethics. Blaming others (D) lacks leadership accountability. Option B is transparent, consults the regulatory authority, and balances safety with emergency supply realities.',
-            topic: 'Ethical Dilemma',
-            difficulty: 'Hard'
-          },
-          {
-            id: 'xat-q4',
-            sectionId: 'dm',
-            type: 'mcq',
-            passage: `Nova FinServe, a tier-2 microfinance firm, has seen loan default rates rise by 18% among rural self-help groups. Field agents report that a competing regional lender is offering aggressive cash-back incentives that lure borrowers away into unserviceable debt. The Nova sales head proposes matching the competitor's high-risk cash-backs immediately.`,
-            text: 'Which of the following actions by Nova\'s leadership would be the most sustainable strategic response?',
-            options: [
-              { id: 'A', text: 'Match the competitor\'s cash-back incentives dollar-for-dollar to prevent immediate loss of market share.' },
-              { id: 'B', text: 'File a defamation lawsuit against the rival firm while refusing loans to all existing self-help groups.' },
-              { id: 'C', text: 'Conduct borrower financial literacy workshops, restructure existing loan tenures with flexible repayments, and report predatory lending practices to the microfinance ombudsman.' },
-              { id: 'D', text: 'Terminate all field agents whose portfolios experienced defaults over 10%.' }
-            ],
-            correctOption: 'C',
-            explanation: 'Matching reckless competitor incentives (A) accelerates systemic default. Suing without basis (B) or firing staff (D) punishes symptoms rather than root causes. Option C addresses borrower capability, builds long-term loyalty, mitigates credit risk, and uses legal regulatory channels.',
-            topic: 'Strategic Management',
-            difficulty: 'Moderate'
-          }
-        ]
-      },
-      {
-        id: 'qadi',
-        name: 'QA & DI',
-        fullName: 'Quantitative Ability & Data Interpretation',
-        durationMinutes: 60,
-        questions: [
-          {
-            id: 'xat-q5',
-            sectionId: 'qadi',
-            type: 'mcq',
-            text: 'A spherical solid iron ball of radius 6 cm is melted and recast into three smaller solid spherical balls. If the radii of two of the smaller balls are 3 cm and 4 cm, what is the radius of the third ball?',
-            options: [
-              { id: 'A', text: '5 cm' },
-              { id: 'B', text: '4.5 cm' },
-              { id: 'C', text: '5.2 cm' },
-              { id: 'D', text: '3.8 cm' }
-            ],
-            correctOption: 'A',
-            explanation: 'Volume is conserved:\n(4/3) * π * R³ = (4/3) * π * (r1³ + r2³ + r3³)\n6³ = 3³ + 4³ + r3³\n216 = 27 + 64 + r3³\n216 = 91 + r3³\nr3³ = 216 - 91 = 125\nr3 = ∛125 = 5 cm (Option A).',
-            topic: 'Mensuration & Geometry',
-            difficulty: 'Easy'
-          }
-        ]
-      }
-    ]
+    sections: XAT_95_QUESTIONS_SECTIONS
   },
   {
     id: 'nmat',
