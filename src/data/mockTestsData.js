@@ -7,6 +7,7 @@
  */
 
 import { CAT_68_QUESTIONS_SECTIONS } from './catMock68Data.js';
+import { NMAT_108_QUESTIONS_SECTIONS } from './nmatMock108Data.js';
 
 export const MOCK_TESTS = [
   {
@@ -157,110 +158,21 @@ export const MOCK_TESTS = [
   {
     id: 'nmat',
     slug: 'nmat',
-    title: 'NMAT by GMAC Free Mock Test',
+    title: 'NMAT by GMAC Official Pattern Mock Test (108 Questions)',
     shortTitle: 'NMAT 2026',
     badge: 'NMIMS Mumbai & Top Global B-Schools',
-    tagline: 'Adaptive Speed & Accuracy Test with Sectional Time Limits and No Negative Marking',
+    tagline: 'Comprehensive Practice Set: Language (36 Qs | 28m), Quant (36 Qs | 52m), Logic (36 Qs | 40m) with No Negative Marking',
     fullDurationMinutes: 120,
     quickDurationMinutes: 25,
-    totalQuestions: 18,
-    totalMarks: 54,
+    totalQuestions: 108,
+    totalMarks: 324,
     markingScheme: {
       correct: 3,
       incorrect: 0,
       unattempted: 0,
       description: '+3 marks for correct answer, 0 marks for incorrect or unattempted (NO negative marking)'
     },
-    sections: [
-      {
-        id: 'lang',
-        name: 'Language Skills',
-        fullName: 'Language Skills (Verbal)',
-        durationMinutes: 28,
-        questions: [
-          {
-            id: 'nmat-q1',
-            sectionId: 'lang',
-            type: 'mcq',
-            text: 'Choose the word that is most nearly OPPOSITE in meaning to the capitalized word: EPHEMERAL',
-            options: [
-              { id: 'A', text: 'Transient' },
-              { id: 'B', text: 'Perpetual' },
-              { id: 'C', text: 'Furtive' },
-              { id: 'D', text: 'Nebulous' }
-            ],
-            correctOption: 'B',
-            explanation: 'Ephemeral means lasting for a very short time (transient). Its antonym is perpetual (everlasting, permanent). Hence Option B.',
-            topic: 'Antonyms & Vocabulary',
-            difficulty: 'Easy'
-          },
-          {
-            id: 'nmat-q2',
-            sectionId: 'lang',
-            type: 'mcq',
-            text: 'Fill in the blanks with the appropriate pair of words:\n"The diplomat\'s remarks were intentionally ___________, designed to ___________ controversy while committing to no specific policy stance."',
-            options: [
-              { id: 'A', text: 'ambiguous ... deflect' },
-              { id: 'B', text: 'strident ... provoke' },
-              { id: 'C', text: 'pedantic ... exacerbate' },
-              { id: 'D', text: 'laconic ... incite' }
-            ],
-            correctOption: 'A',
-            explanation: '"Ambiguous" (open to more than one interpretation) and "deflect" (turn aside from a straight course) seamlessly fit the context of committing to no specific policy stance.',
-            topic: 'Sentence Completion',
-            difficulty: 'Moderate'
-          }
-        ]
-      },
-      {
-        id: 'quant',
-        name: 'Quantitative Skills',
-        fullName: 'Quantitative Skills & DI',
-        durationMinutes: 52,
-        questions: [
-          {
-            id: 'nmat-q3',
-            sectionId: 'quant',
-            type: 'mcq',
-            text: 'What is the units digit of the expression (7⁹⁵ - 3⁵⁸)?',
-            options: [
-              { id: 'A', text: '0' },
-              { id: 'B', text: '4' },
-              { id: 'C', text: '6' },
-              { id: 'D', text: '8' }
-            ],
-            correctOption: 'B',
-            explanation: 'Cyclicity of 7 is 4: 7¹=7, 7²=9, 7³=3, 7⁴=1.\n95 mod 4 = 3, so unit digit of 7⁹⁵ is 3.\nCyclicity of 3 is 4: 3¹=3, 3²=9, 3³=7, 3⁴=1.\n58 mod 4 = 2, so unit digit of 3⁵⁸ is 9.\nUnits digit calculation: (13 - 9) = 4 (borrowing 1 from the tens place). Hence Option B.',
-            topic: 'Number Systems',
-            difficulty: 'Moderate'
-          }
-        ]
-      },
-      {
-        id: 'logical',
-        name: 'Logical Reasoning',
-        fullName: 'Logical & Analytical Reasoning',
-        durationMinutes: 40,
-        questions: [
-          {
-            id: 'nmat-q4',
-            sectionId: 'logical',
-            type: 'mcq',
-            text: 'In a certain code language, "CAMPUS" is coded as "EDORWU". How will "LEADER" be coded in the same language?',
-            options: [
-              { id: 'A', text: 'NGCFHT' },
-              { id: 'B', text: 'NGCGHT' },
-              { id: 'C', text: 'MGDFHT' },
-              { id: 'D', text: 'NFCFHT' }
-            ],
-            correctOption: 'A',
-            explanation: 'Shift pattern:\nL(+2) = N, E(+2) = G, A(+2) = C, D(+2) = F, E(+3) = H, R(+2) = T.\nResult = NGCFHT (Option A).',
-            topic: 'Coding & Decoding',
-            difficulty: 'Easy'
-          }
-        ]
-      }
-    ]
+    sections: NMAT_108_QUESTIONS_SECTIONS
   },
   {
     id: 'snap',
