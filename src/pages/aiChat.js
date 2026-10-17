@@ -52,7 +52,7 @@ export function renderAiChatPage() {
             <div class="msg-bubble">
               <div class="msg-author-tag">AdmitIQ AI Mentor</div>
               <div class="msg-text-content">
-                <p>Hey there! 👋 I'm <strong>AdmitIQ</strong>, your AI mentor for the 2026-27 MBA admission season.</p>
+                <p>Hey there! 👋 I'm <strong>AdmitIQ</strong>, your AI mentor for the 2027-29 MBA admission session.</p>
                 <p>I analyze real percentile cutoffs, IIM selection composite criteria, MBA vs PGDM tradeoffs, and mock interview frameworks without coaching jargon.</p>
                 <p>Pick a quick question below or ask me anything directly!</p>
               </div>

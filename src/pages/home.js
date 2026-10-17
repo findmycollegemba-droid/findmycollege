@@ -36,7 +36,7 @@ export function renderFeaturedCollegesCards(category = 'nirf') {
         <div class="fcard-avatar">${c.shortName ? c.shortName.substring(0, 3) : 'MBA'}</div>
         <div class="fcard-meta">
           <div class="fcard-rank-row">
-            ${c.nirfRank ? `<span class="fcard-badge-nirf">#${c.nirfRank} NIRF 2026</span>` : ''}
+            ${c.nirfRank ? `<span class="fcard-badge-nirf">#${c.nirfRank} NIRF</span>` : ''}
             <span class="fcard-badge-type">${c.degreeTypes ? c.degreeTypes[0] : 'MBA'}</span>
             <span class="fcard-city">📍 ${c.city}</span>
           </div>
@@ -46,15 +46,15 @@ export function renderFeaturedCollegesCards(category = 'nirf') {
 
       <div class="fcard-kpi-grid">
         <div class="fcard-kpi-item">
-          <span class="kpi-label">Course Fee (2-Yr)</span>
+          <span class="kpi-label">Course Fee (2-Yr 2027-29)</span>
           <span class="kpi-val fee-val">${c.fees || 'N/A'}</span>
         </div>
         <div class="fcard-kpi-item">
-          <span class="kpi-label">Avg CTC / Salary</span>
+          <span class="kpi-label">Recent Avg CTC</span>
           <span class="kpi-val salary-val">${c.avgSalary || 'N/A'}</span>
         </div>
         <div class="fcard-kpi-item">
-          <span class="kpi-label">Cutoff (General)</span>
+          <span class="kpi-label">Cutoff (2027-29)</span>
           <span class="kpi-val cutoff-val">${c.cutoffCAT !== 'N/A' ? 'CAT: ' + c.cutoffCAT : (c.cutoffXAT !== 'N/A' ? 'XAT: ' + c.cutoffXAT : 'Exam Mapped')}</span>
         </div>
         <div class="fcard-kpi-item">
@@ -343,7 +343,7 @@ export function renderHomePage() {
             <span class="trust-live-pulse"></span>
             <span class="tag-title">FINDMYBSCHOOL • INDIA'S VERIFIED MBA DIRECTORY</span>
             <span class="tag-divider">|</span>
-            <span class="tag-audit">2026-27 Audited</span>
+            <span class="tag-audit">2027-29 Admission Session • Recent Placements Audited</span>
           </div>
 
           <!-- Hero Main Heading -->
@@ -351,7 +351,7 @@ export function renderHomePage() {
             Find Your Dream <span class="highlight-title">MBA College</span> in India
           </h1>
           <p class="hero-subtitle">
-            Compare 110+ verified B-schools with transparent tuition fees, audited CTC averages, real CAT/XAT cutoffs, and city infographics. 0% scrapers, 100% human-verified data.
+            Compare 600+ verified B-schools with transparent tuition fees for 2027-29 session, recent audited CTC averages, real CAT/XAT cutoffs, and city infographics. 0% scrapers, 100% human-verified data.
           </p>
 
           <!-- CENTRAL COLLEGE SEARCH OMNIBOX -->
@@ -469,9 +469,9 @@ export function renderHomePage() {
         <div class="section-container">
           <div class="section-header-compact">
             <div>
-              <span class="section-tag-pill">🏆 Top Picks 2026</span>
+              <span class="section-tag-pill">🏆 Top Picks (2027-29 Session)</span>
               <h2 class="section-title-sm">Featured Management Institutes</h2>
-              <p class="section-desc-sm">India’s highest-ranked business schools categorized by NIRF stature, return on investment, and corporate placements.</p>
+              <p class="section-desc-sm">India’s highest-ranked business schools categorized by NIRF stature, return on investment, and recent corporate placements.</p>
             </div>
             <div class="featured-category-tabs" id="featuredTabsContainer">
               <button class="f-tab-btn active" data-featured-tab="nirf">🏆 Top NIRF Tier</button>
@@ -490,7 +490,7 @@ export function renderHomePage() {
           <div class="explore-all-colleges-dock">
             <div class="dock-text">
               <h3>Looking for more B-schools or specialized filters?</h3>
-              <p>Explore our complete catalog of 110+ verified colleges with fee sliders, percentile cutoffs, and exam filters.</p>
+              <p>Explore our complete catalog of 600+ verified colleges with fee sliders, percentile cutoffs, and exam filters for the 2027-29 session.</p>
             </div>
             <a href="/colleges" class="btn-dock-browse" data-route="colleges">
               <span>Browse All ${COLLEGES_DATA.length} Colleges with Filters</span>
@@ -610,7 +610,7 @@ export function renderHomePage() {
           <div class="section-header-compact">
             <div>
               <span class="section-tag-pill">⏳ Admission Deadlines</span>
-              <h2 class="section-title-sm">Countdown to Key Entrance Exams 2026-27</h2>
+              <h2 class="section-title-sm">Countdown to Key Entrance Exams for 2027-29 Admissions</h2>
             </div>
             <a href="/exams" class="see-all-link" data-route="exams">View All Exam Dates & Syllabus →</a>
           </div>
@@ -702,7 +702,7 @@ export function renderHomePage() {
                 <div class="user-avatar-circle">AK</div>
                 <div>
                   <div class="user-name">Ananya Kulkarni</div>
-                  <div class="user-sub">Converted IIM Bangalore • Batch of 2026-28 • CAT 99.4%ile</div>
+                  <div class="user-sub">Converted IIM Bangalore • Batch of 2027-29 • CAT 99.4%ile</div>
                 </div>
               </div>
             </div>

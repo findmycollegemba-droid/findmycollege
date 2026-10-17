@@ -17,13 +17,13 @@ export function renderCollegesPage() {
           <div class="portal-hero-heading-wrap">
             <div class="hero-title-badge">
               <span class="badge-dot"></span>
-              <span>FindMyBSchool Edition • 2026-27 Audited Directory</span>
+              <span>FindMyBSchool Edition • 2027-29 Admission Session Directory</span>
             </div>
             <h1 class="portal-main-title">
-              Top MBA & PGDM Colleges in India 2026: <span class="highlight-blue">Search, Compare & Cutoffs</span>
+              Top MBA & PGDM Colleges in India 2027-29: <span class="highlight-blue">Search, Compare & Cutoffs</span>
             </h1>
             <p class="portal-main-desc">
-              Explore India's top 500+ management institutes. Filter by real-time CAT/XAT/CMAT cutoffs, audited tuition fees, placement averages, and NIRF rankings.
+              Explore India's top 600+ management institutes for the 2027-29 session. Filter by real-time CAT/XAT/CMAT cutoffs, audited tuition fees, recent placement averages, and NIRF rankings.
             </p>
           </div>
 
@@ -428,7 +428,7 @@ export function renderCollegesPage() {
                 <h2 class="feed-results-title">
                   <span id="resultsCountSpan">${COLLEGES_DATA.length}</span> <span id="resultsLabelSpan">Colleges</span> Found
                 </h2>
-                <span class="feed-subtitle">Sorted by NIRF & Verified 2026 Metrics</span>
+                <span class="feed-subtitle">Sorted by NIRF & Audited Recent Placement Metrics (2027-29 Session)</span>
               </div>
 
               <div class="feed-actions-group">
@@ -595,10 +595,10 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
         <!-- Top Status Bar -->
         <div class="shiksha-card-topbar">
           <div class="topbar-left">
-            <span class="nirf-tag">#${col.nirfRank} in NIRF 2026</span>
+            <span class="nirf-tag">#${col.nirfRank} NIRF Ranking</span>
             <span class="degree-tag ${col.degreeTypes?.includes('MBA') ? 'tag-mba' : 'tag-pgdm'}">${(col.degreeTypes || ['MBA']).join(' & ')}</span>
             <span class="ownership-tag">${col.ownership.split('/')[0]}</span>
-            <span class="accreditation-tag">${col.accreditation.split(',')[0]}</span>
+            <span class="session-tag" style="background:#ecfdf5;color:#059669;font-weight:700;font-size:0.75rem;padding:2px 8px;border-radius:6px;border:1px solid #a7f3d0;">Session 2027-29 Open</span>
           </div>
           
           <label class="compare-checkbox-container" title="Select to compare">
@@ -640,13 +640,13 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
           <!-- Shiksha Metrics 4-Box Grid -->
           <div class="shiksha-metrics-grid">
             <div class="metric-block">
-              <span class="metric-label">Total Course Fees</span>
+              <span class="metric-label">Course Fees (2027-29)</span>
               <span class="metric-value font-semibold">${col.fees}</span>
               <span class="metric-hint">2-Year Full Tuition</span>
             </div>
 
             <div class="metric-block">
-              <span class="metric-label">Average CTC</span>
+              <span class="metric-label">Recent Avg CTC</span>
               <span class="metric-value text-green font-semibold">${col.avgSalary}</span>
               <span class="metric-hint">Highest: ${col.highestSalary}</span>
             </div>
@@ -658,9 +658,9 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
             </div>
 
             <div class="metric-block">
-              <span class="metric-label">ROI Rating</span>
+              <span class="metric-label">ROI & Intake</span>
               <span class="metric-value text-amber font-semibold">${col.roiScore}</span>
-              <span class="metric-hint">Batch Size: ${col.batchSize}</span>
+              <span class="metric-hint">Batch Size: ${col.batchSize} Seats</span>
             </div>
           </div>
 
@@ -685,7 +685,7 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
           <div class="footer-cta-buttons">
             <button class="btn-outline-brochure" data-brochure-college="${col.id}">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              <span>Brochure & Fees</span>
+              <span>Brochure 2027-29</span>
             </button>
             <a href="/colleges/${col.id}" class="btn-primary-view-profile" data-route="colleges" data-sub="${col.id}">
               <span>View 360° Profile</span>
@@ -714,6 +714,7 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
       <div class="modal-top-nav">
         <div class="modal-nav-left">
           <span class="modal-nirf-tag">#${col.nirfRank} NIRF Ranking</span>
+          <span class="modal-session-pill" style="background:#ecfdf5;color:#047857;font-weight:700;font-size:0.8rem;padding:3px 10px;border-radius:20px;border:1px solid #6ee7b7;margin-left:8px;">🎓 Admission Session 2027-29</span>
           <span class="modal-loc-text">${col.location}</span>
         </div>
         <button class="modal-close-icon-btn" id="closeDetailModalBtn" title="Close Profile (Esc)">
@@ -746,15 +747,15 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
         <div class="modal-stats-strip">
           <div class="mstat-item">
             <div class="mstat-val text-blue">${col.fees}</div>
-            <div class="mstat-lbl">2-Year Tuition Fees</div>
+            <div class="mstat-lbl">2-Year Tuition (2027-29)</div>
           </div>
           <div class="mstat-item">
             <div class="mstat-val text-green">${col.avgSalary}</div>
-            <div class="mstat-lbl">Average CTC</div>
+            <div class="mstat-lbl">Recent Average CTC</div>
           </div>
           <div class="mstat-item">
             <div class="mstat-val">${col.highestSalary}</div>
-            <div class="mstat-lbl">Highest CTC</div>
+            <div class="mstat-lbl">Recent Highest CTC</div>
           </div>
           <div class="mstat-item">
             <div class="mstat-val text-amber">${col.cutoffCAT !== 'N/A' ? col.cutoffCAT : (col.cutoffXAT !== 'N/A' ? col.cutoffXAT : col.cutoffCMAT)}</div>
@@ -762,7 +763,7 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
           </div>
           <div class="mstat-item">
             <div class="mstat-val">${col.batchSize}</div>
-            <div class="mstat-lbl">Batch Size</div>
+            <div class="mstat-lbl">Batch Intake (Seats)</div>
           </div>
         </div>
       </div>
@@ -829,8 +830,8 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
         <!-- TAB 2: COURSES & FEES -->
         <div class="modal-tab-pane ${activeTab === 'courses' ? 'active' : ''}" id="tab-courses">
           <div class="courses-section">
-            <h3 class="tab-section-title">Programs Offered, Fees & Seat Matrix 2026-28</h3>
-            <p class="tab-text-para">Tuition fees include academic materials, library access, and computer cluster amenities. Living/hostel expenses may vary.</p>
+            <h3 class="tab-section-title">Programs Offered, Fees & Seat Matrix (2027-29 Session)</h3>
+            <p class="tab-text-para">Audited tuition fee structure for the 2027-29 admission cohort. Tuition fees include academic materials, library access, and computer cluster amenities. Living/hostel expenses may vary.</p>
             
             <div class="courses-table-wrap">
               <table class="shiksha-data-table">
@@ -870,7 +871,7 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
         <div class="modal-tab-pane ${activeTab === 'cutoffs' ? 'active' : ''}" id="tab-cutoffs">
           <div class="cutoffs-section">
             <h3 class="tab-section-title">Category-wise Cutoff Percentiles & Sectional Standards</h3>
-            <p class="tab-text-para">Based on official admission shortlisting data for the 2026-2028 batch.</p>
+            <p class="tab-text-para">Based on official admission shortlisting thresholds for the 2027-2029 batch (Session 2027-29).</p>
 
             <div class="cutoff-table-card">
               <table class="shiksha-data-table">
@@ -916,8 +917,8 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
         <!-- TAB 4: PLACEMENTS -->
         <div class="modal-tab-pane ${activeTab === 'placements' ? 'active' : ''}" id="tab-placements">
           <div class="placements-section">
-            <h3 class="tab-section-title">Audited Placement Statistics & Sector Distribution</h3>
-            <p class="tab-text-para">Official audited figures for the graduating cohort. 100% placement record.</p>
+            <h3 class="tab-section-title">Audited Placement Statistics & Recent Salary Trends</h3>
+            <p class="tab-text-para">Official audited figures for the latest recent graduating cohort (${col.placementSession || '2025-2026 Audited'}). 100% placement record.</p>
 
             <!-- Placements Top Stats -->
             <div class="placement-stats-row">
@@ -975,8 +976,8 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
         <!-- TAB 5: ADMISSION PROCESS -->
         <div class="modal-tab-pane ${activeTab === 'admission' ? 'active' : ''}" id="tab-admission">
           <div class="admission-section">
-            <h3 class="tab-section-title">Admission Process & Selection Weightages</h3>
-            <p class="tab-text-para">How ${col.shortName} calculates your final composite score for MBA / PGDM admissions.</p>
+            <h3 class="tab-section-title">Admission Process & Selection Weightages (2027-29 Session)</h3>
+            <p class="tab-text-para">How ${col.shortName} calculates your final composite score for MBA / PGDM 2027-29 admissions.</p>
 
             <div class="criteria-cards-grid">
               ${Object.entries(admissionCriteria).map(([key, val]) => {
@@ -1056,7 +1057,7 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
       <div class="modal-footer-action-bar">
         <button class="btn-outline-modal" data-brochure-college="${col.id}">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-          <span>Download 2026 Brochure</span>
+          <span>Download 2027-29 Brochure</span>
         </button>
         <button class="btn-ask-ai-modal" data-ask-ai="${col.name}">
           <span>Ask AdmitIQ About Eligibility</span>
@@ -1105,27 +1106,35 @@ export function renderComparisonModalContent(selectedColleges = []) {
           </thead>
           <tbody>
             <tr>
-              <td class="prop-label">NIRF 2026 Rank</td>
+              <td class="prop-label">NIRF Rank</td>
               ${selectedColleges.map(c => `<td><span class="table-rank-pill">#${c.nirfRank}</span></td>`).join('')}
+            </tr>
+            <tr>
+              <td class="prop-label">Admission Session</td>
+              ${selectedColleges.map(() => `<td><span class="font-semibold text-blue">2027-2029</span></td>`).join('')}
+            </tr>
+            <tr>
+              <td class="prop-label">Placement Record</td>
+              ${selectedColleges.map(() => `<td><span class="font-semibold text-green">Recent Audited</span></td>`).join('')}
             </tr>
             <tr>
               <td class="prop-label">Student Rating</td>
               ${selectedColleges.map(c => `<td><strong class="text-amber">★ ${c.rating}</strong> (${c.reviewsCount} reviews)</td>`).join('')}
             </tr>
             <tr>
-              <td class="prop-label">Total 2-Yr Fees</td>
+              <td class="prop-label">Total 2-Yr Fees (2027-29)</td>
               ${selectedColleges.map(c => `<td class="font-semibold text-blue">${c.fees}</td>`).join('')}
             </tr>
             <tr>
-              <td class="prop-label">Average CTC</td>
+              <td class="prop-label">Recent Average CTC</td>
               ${selectedColleges.map(c => `<td class="font-semibold text-green">${c.avgSalary}</td>`).join('')}
             </tr>
             <tr>
-              <td class="prop-label">Highest CTC</td>
+              <td class="prop-label">Recent Highest CTC</td>
               ${selectedColleges.map(c => `<td><strong>${c.highestSalary}</strong></td>`).join('')}
             </tr>
             <tr>
-              <td class="prop-label">Median CTC</td>
+              <td class="prop-label">Recent Median CTC</td>
               ${selectedColleges.map(c => `<td>${c.medianSalary}</td>`).join('')}
             </tr>
             <tr>
@@ -1183,8 +1192,8 @@ export function renderBrochureModalContent(college) {
     <div class="brochure-modal-container">
       <div class="brochure-modal-header">
         <div>
-          <span class="brochure-sub-pill">Instant PDF & Fee Breakdown</span>
-          <h3>${college ? college.name : 'MBA Admissions 2026'}</h3>
+          <span class="brochure-sub-pill">Instant PDF & 2027-29 Fee Breakdown</span>
+          <h3>${college ? college.name : 'MBA Admissions 2027-29'}</h3>
         </div>
         <button class="modal-close-icon-btn" id="closeBrochureModalBtn">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -1218,10 +1227,10 @@ export function renderBrochureModalContent(college) {
             <input type="number" id="brochurePercentile" min="40" max="100" step="0.5" placeholder="e.g. 98.0" class="modal-text-input" />
           </div>
           <div class="form-group-item">
-            <label>Target Year</label>
+            <label>Target Admission Session</label>
             <select id="brochureYear" class="modal-select">
-              <option value="2026">2026 Batch</option>
-              <option value="2027">2027 Batch</option>
+              <option value="2027-29" selected>2027-29 Session (Upcoming Intake)</option>
+              <option value="2028-30">2028-30 Session (Next Year)</option>
             </select>
           </div>
         </div>
@@ -1302,17 +1311,18 @@ export function renderCollegeFullPage(col) {
       <header class="college-hero-header">
         <div class="profile-container">
           <div class="hero-top-badges">
-            <span class="badge-nirf">🏆 #${col.nirfRank} NIRF Management Ranking 2026</span>
+            <span class="badge-nirf">🏆 #${col.nirfRank} NIRF Management Ranking</span>
             <span class="badge-degree ${(col.degreeTypes || ['MBA']).includes('MBA') ? 'tag-mba' : 'tag-pgdm'}">${(col.degreeTypes || ['MBA']).join(' & ')}</span>
             <span class="badge-ownership">🏛️ ${col.ownership}</span>
-            <span class="badge-verified">✓ 100% Audited Data</span>
+            <span class="badge-session" style="background:#ecfdf5;color:#047857;padding:4px 10px;border-radius:20px;font-weight:700;font-size:0.8rem;border:1px solid #6ee7b7;">🎓 Admission Session 2027-29 Open</span>
+            <span class="badge-verified">✓ Recent Placement Audited</span>
           </div>
 
           <div class="hero-identity-row">
             <div class="college-logo-badge">${col.shortName.replace(/[^A-Za-z0-9]/g, '').slice(0, 3)}</div>
             <div class="hero-titles-wrap">
               <h1 class="college-main-h1">
-                ${col.name} (${col.shortName}): Admission 2026-27, Fees, Cutoffs, Placements & Ranking
+                ${col.name} (${col.shortName}): Admission 2027-29, Fees, Cutoffs, Recent Placements & NIRF Ranking
               </h1>
               <div class="college-meta-bar">
                 <span>📍 ${col.location}</span>
@@ -1331,17 +1341,17 @@ export function renderCollegeFullPage(col) {
           <!-- AEO QUICK FACTSHEET (Google AI Overview & Direct Answers Target) -->
           <div class="aeo-factsheet-grid">
             <div class="aeo-fact-card fact-fees">
-              <span class="fact-label">2-Year Tuition Fees</span>
+              <span class="fact-label">2-Year Tuition Fees (2027-29)</span>
               <span class="fact-value text-blue">${col.fees}</span>
               <span class="fact-hint">Audited Academic Fees</span>
             </div>
             <div class="aeo-fact-card fact-salary">
-              <span class="fact-label">Average CTC</span>
+              <span class="fact-label">Recent Average CTC</span>
               <span class="fact-value text-green">${col.avgSalary}</span>
               <span class="fact-hint">Highest: ${col.highestSalary}</span>
             </div>
             <div class="aeo-fact-card fact-cutoff">
-              <span class="fact-label">Entrance Cutoff</span>
+              <span class="fact-label">Entrance Cutoff (2027-29)</span>
               <span class="fact-value text-amber">${cutoffText}</span>
               <span class="fact-hint">Accepted: ${col.examsAccepted.join(', ')}</span>
             </div>
@@ -1361,11 +1371,11 @@ export function renderCollegeFullPage(col) {
           <div class="hero-cta-group">
             <button class="btn-primary-apply" data-apply-college="${col.id}">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-              <span>Apply for Admission 2026</span>
+              <span>Apply for Admission 2027-29</span>
             </button>
             <button class="btn-outline-brochure" data-brochure-college="${col.id}">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              <span>Download 2026 Brochure</span>
+              <span>Download 2027-29 Brochure</span>
             </button>
             <button class="btn-loan-help" data-loan-college="${col.id}">
               <span>🏦 Check Bank Loan Eligibility</span>
@@ -1436,7 +1446,7 @@ export function renderCollegeFullPage(col) {
           <!-- SECTION 2: COURSES & FEES -->
           <section id="courses-fees" class="college-detail-section">
             <div class="section-heading-row">
-              <h2 class="section-title">${col.shortName} Courses Offered, Fees & Seat Matrix 2026-28</h2>
+              <h2 class="section-title">${col.shortName} Courses Offered, Fees & Seat Matrix (2027-29 Session)</h2>
               <span class="section-tag">${courses.length} Programs Mapped</span>
             </div>
             <p class="section-text-para">
@@ -1479,7 +1489,7 @@ export function renderCollegeFullPage(col) {
           <!-- SECTION 3: CUTOFFS -->
           <section id="cutoffs" class="college-detail-section">
             <div class="section-heading-row">
-              <h2 class="section-title">${col.shortName} Cutoffs 2026: CAT, XAT & Sectional Requirements</h2>
+              <h2 class="section-title">${col.shortName} Cutoffs: CAT, XAT & Sectional Requirements (2027-29 Batch)</h2>
               <span class="section-tag">Category-Wise Standards</span>
             </div>
             <p class="section-text-para">
@@ -1529,21 +1539,21 @@ export function renderCollegeFullPage(col) {
           <!-- SECTION 4: PLACEMENTS -->
           <section id="placements" class="college-detail-section">
             <div class="section-heading-row">
-              <h2 class="section-title">${col.shortName} Placements 2025-26: Highest & Average Packages</h2>
+              <h2 class="section-title">${col.shortName} Placements: Recent Audited Highest & Average Packages</h2>
               <span class="section-tag">100% Audited Placement Record</span>
             </div>
             <p class="section-text-para">
-              Audited compensation figures for the outgoing batch across key sectors and functional domains.
+              Audited compensation figures for the recent outgoing batch across key sectors and functional domains.
             </p>
 
             <div class="placement-stats-row">
               <div class="pl-stat-box">
                 <span class="pl-val text-green">${col.avgSalary}</span>
-                <span class="pl-lbl">Average CTC</span>
+                <span class="pl-lbl">Recent Average CTC</span>
               </div>
               <div class="pl-stat-box">
                 <span class="pl-val">${col.medianSalary}</span>
-                <span class="pl-lbl">Median CTC</span>
+                <span class="pl-lbl">Recent Median CTC</span>
               </div>
               <div class="pl-stat-box">
                 <span class="pl-val text-blue">${col.highestSalary}</span>
@@ -1590,7 +1600,7 @@ export function renderCollegeFullPage(col) {
           <!-- SECTION 5: ADMISSION PROCESS -->
           <section id="admission" class="college-detail-section">
             <div class="section-heading-row">
-              <h2 class="section-title">${col.shortName} Admission Process 2026: Selection Criteria & Weightage</h2>
+              <h2 class="section-title">${col.shortName} Admission Process 2027-29: Selection Criteria & Weightage</h2>
               <span class="section-tag">Step-by-Step Roadmap</span>
             </div>
             <p class="section-text-para">
@@ -1747,11 +1757,11 @@ export function renderCollegeFullPage(col) {
             <div class="college-faqs-accordion">
               <div class="college-faq-item open">
                 <button class="college-faq-question">
-                  <span>What is the total fee for MBA/PGDM at ${col.name}?</span>
+                  <span>What is the total fee for MBA/PGDM at ${col.name} for the 2027-29 session?</span>
                   <span class="faq-toggle-icon">−</span>
                 </button>
                 <div class="college-faq-answer">
-                  <p>The audited 2-year total tuition and academic fees for the flagship management program at ${col.name} (${col.shortName}) is <strong>${col.fees}</strong>. Living, hostel, and mess expenses may vary depending on student accommodation choices.</p>
+                  <p>The audited 2-year total tuition and academic fees for the 2027-29 admission cohort at ${col.name} (${col.shortName}) is <strong>${col.fees}</strong>. Living, hostel, and mess expenses may vary depending on student accommodation choices.</p>
                 </div>
               </div>
 
@@ -1761,17 +1771,17 @@ export function renderCollegeFullPage(col) {
                   <span class="faq-toggle-icon">+</span>
                 </button>
                 <div class="college-faq-answer">
-                  <p>For general category candidates, the expected minimum cutoff for ${col.name} is <strong>${col.cutoffCAT !== 'N/A' ? 'CAT ' + col.cutoffCAT : (col.cutoffXAT !== 'N/A' ? 'XAT ' + col.cutoffXAT : 'CMAT ' + col.cutoffCMAT)}</strong>. Reserved category candidates (NC-OBC, SC, ST, EWS) receive relaxed cutoff percentiles as per institutional norms.</p>
+                  <p>For general category candidates, the expected minimum cutoff for ${col.name} (2027-29 session) is <strong>${col.cutoffCAT !== 'N/A' ? 'CAT ' + col.cutoffCAT : (col.cutoffXAT !== 'N/A' ? 'XAT ' + col.cutoffXAT : 'CMAT ' + col.cutoffCMAT)}</strong>. Reserved category candidates (NC-OBC, SC, ST, EWS) receive relaxed cutoff percentiles as per institutional norms.</p>
                 </div>
               </div>
 
               <div class="college-faq-item">
                 <button class="college-faq-question">
-                  <span>What is the average and highest placement salary at ${col.name}?</span>
+                  <span>What was the recent placement average and highest salary at ${col.name}?</span>
                   <span class="faq-toggle-icon">+</span>
                 </button>
                 <div class="college-faq-answer">
-                  <p>In the latest audited placement report, ${col.name} recorded an average CTC package of <strong>${col.avgSalary}</strong> and a highest domestic CTC of <strong>${col.highestSalary}</strong>. Median salary stood at <strong>${col.medianSalary || col.avgSalary}</strong>.</p>
+                  <p>In the latest audited placement report (${col.placementSession || '2025-2026 Audited'}), ${col.name} recorded an average CTC package of <strong>${col.avgSalary}</strong> and a highest domestic CTC of <strong>${col.highestSalary}</strong>. Median salary stood at <strong>${col.medianSalary || col.avgSalary}</strong> with marquee recruiters across consulting, BFSI, technology, and marketing.</p>
                 </div>
               </div>
 
@@ -1823,7 +1833,7 @@ export function renderCollegeFullPage(col) {
                       <strong class="text-blue">${peer.fees}</strong>
                     </div>
                     <div class="pm-item">
-                      <span class="pm-lbl">Avg CTC:</span>
+                      <span class="pm-lbl">Recent Avg:</span>
                       <strong class="text-green">${peer.avgSalary}</strong>
                     </div>
                   </div>
@@ -1842,18 +1852,18 @@ export function renderCollegeFullPage(col) {
           
           <!-- SIDEBAR CARD 1: ADMISSION DESK -->
           <div class="sidebar-sticky-card admission-lead-card">
-            <div class="slc-badge">⚡ Admission 2026-27 Active</div>
+            <div class="slc-badge">⚡ Admission Session 2027-29 Open</div>
             <h3 class="slc-title">Connect with ${col.shortName} Counselors</h3>
-            <p class="slc-desc">Get personalized cutoff evaluation, shortlist probability, and direct guidance from alumni & admission advisors.</p>
+            <p class="slc-desc">Get personalized cutoff evaluation, shortlist probability, and direct guidance for the 2027-29 session from alumni & admission advisors.</p>
             
             <button class="btn-sidebar-apply" data-apply-college="${col.id}">
-              <span>Apply / Speak to Counselor</span>
+              <span>Apply for 2027-29 Admission</span>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
             </button>
 
             <button class="btn-sidebar-brochure" data-brochure-college="${col.id}">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-              <span>Download 2026 Brochure (PDF)</span>
+              <span>Download 2027-29 Brochure (PDF)</span>
             </button>
 
             <div class="slc-stats">
@@ -1862,7 +1872,7 @@ export function renderCollegeFullPage(col) {
                 <strong>${col.fees}</strong>
               </div>
               <div class="slc-stat-row">
-                <span>Avg Placement:</span>
+                <span>Recent Avg CTC:</span>
                 <strong class="text-green">${col.avgSalary}</strong>
               </div>
               <div class="slc-stat-row">
@@ -1888,8 +1898,8 @@ export function renderCollegeFullPage(col) {
           <!-- SIDEBAR CARD 3: CAT PREDICTOR SHORTCUT -->
           <div class="sidebar-sticky-card predictor-sidebar-card">
             <span class="pred-icon">🎯</span>
-            <h4>CAT 2026 Predictor</h4>
-            <p>Know your chances of getting interview calls from ${col.shortName} and other top B-schools.</p>
+            <h4>CAT Score & Call Predictor</h4>
+            <p>Know your chances of getting interview calls from ${col.shortName} and other top B-schools for the 2027-29 session.</p>
             <a href="/tools/cat-college-predictor" class="btn-sidebar-predictor" data-route="tools" data-sub="cat">Launch Predictor Free →</a>
           </div>
 

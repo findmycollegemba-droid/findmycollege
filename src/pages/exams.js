@@ -11,7 +11,7 @@ export function renderExamsPage(selectedExamId = null) {
           <div class="hero-badge-pill">
             <span class="badge-text">📝 8 National & State MBA Entrance Exams</span>
           </div>
-          <h1 class="page-title">MBA Entrance Exams Guide 2026-27</h1>
+          <h1 class="page-title">MBA Entrance Exams Guide (2027-29 Admission Session)</h1>
           <p class="page-subtitle">
             Complete dossiers on test patterns, sectional weightage, official negative marking rules, score vs percentile benchmarks, and top college cutoffs.
           </p>

@@ -450,7 +450,7 @@ export function renderToolsPage(activeSub = 'cat') {
                 </div>
 
                 <!-- Predicted Calls & Tiers -->
-                <h4 class="breakdown-title" style="margin-top: 20px;">Eligible B-School Shortlists (2027 Admissions)</h4>
+                <h4 class="breakdown-title" style="margin-top: 20px;">Eligible B-School Shortlists (2027-29 Admission Session)</h4>
                 
                 <div class="calls-tier-tabs">
                   <button type="button" class="tier-tab-btn active" data-call-filter="all">All Calls</button>
@@ -957,9 +957,9 @@ export function renderToolsPage(activeSub = 'cat') {
           </section>
 
           <section class="cat-seo-section-block">
-            <h2 class="cat-seo-heading">CAT 2026 Expected Cutoffs for Top IIMs & Non-IIMs</h2>
+            <h2 class="cat-seo-heading">Expected Entrance Cutoffs & Recent Placements for 2027-29 Admissions (IIMs & Top Non-IIMs)</h2>
             <p class="cat-seo-intro-p">
-              Admission to premier management programs in India requires meeting both sectional and overall cutoff percentiles. Here are the expected CAT 2026 cutoffs, 2-year audited tuition fees, and average placement CTCs for top business schools:
+              Admission to premier management programs in India requires meeting both sectional and overall cutoff percentiles. Here are the expected cutoffs for the 2027-29 admission session, 2-year audited tuition fees, and recent average placement CTCs for top business schools:
             </p>
             <div class="table-responsive">
               <table class="cat-cutoffs-table">
@@ -967,8 +967,8 @@ export function renderToolsPage(activeSub = 'cat') {
                   <tr>
                     <th>College Name</th>
                     <th>General Cutoff</th>
-                    <th>2-Year Tuition Fees</th>
-                    <th>Average CTC</th>
+                    <th>2-Year Tuition Fees (2027-29)</th>
+                    <th>Recent Average CTC</th>
                     <th>Tier</th>
                   </tr>
                 </thead>

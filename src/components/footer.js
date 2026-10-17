@@ -12,7 +12,7 @@ export function renderFooter() {
             <span class="footer-brand-name">FindMy<span class="brand-accent">BSchool</span><span class="brand-tld">.com</span></span>
           </div>
           <p class="footer-desc">
-            India's most transparent business school search & admission guidance platform. Filter 500+ verified MBA & PGDM colleges by real-time cutoffs, audited tuition fees, and verified placement reports — maintained by expert counsellors with 0% scrapers.
+            India's most transparent business school search & admission guidance platform. Filter 600+ verified MBA & PGDM colleges for the 2027-29 admission session by real-time cutoffs, audited tuition fees, and recent audited placement reports — maintained by expert counsellors with 0% scrapers.
           </p>
           <div class="footer-social-row">
             <a href="#" class="social-chip" title="LinkedIn">
@@ -38,10 +38,10 @@ export function renderFooter() {
             <li><a href="/exams/xat" data-route="exams" data-sub="xat">XAT 2027 (XLRI Jamshedpur)</a></li>
             <li><a href="/exams/nmat" data-route="exams" data-sub="nmat">NMAT by GMAC (NMIMS)</a></li>
             <li><a href="/exams/snap" data-route="exams" data-sub="snap">SNAP 2026 (Symbiosis SIBM)</a></li>
-            <li><a href="/exams/cmat" data-route="exams" data-sub="cmat">CMAT 2026 (JBIMS & GIM)</a></li>
-            <li><a href="/exams/mhcet" data-route="exams" data-sub="mhcet">MAH MBA CET 2026</a></li>
+            <li><a href="/exams/cmat" data-route="exams" data-sub="cmat">CMAT 2027 (JBIMS & GIM)</a></li>
+            <li><a href="/exams/mhcet" data-route="exams" data-sub="mhcet">MAH MBA CET 2027</a></li>
             <li><a href="/exams/cuetpg" data-route="exams" data-sub="cuetpg">CUET PG (TISS Mumbai)</a></li>
-            <li><a href="/exams/mat" data-route="exams" data-sub="mat">MAT 2026 (AIMA)</a></li>
+            <li><a href="/exams/mat" data-route="exams" data-sub="mat">MAT 2026-27 (AIMA)</a></li>
             <li><a href="/mock-test" data-route="mock-test" style="color:#2563eb;font-weight:700;">📝 Free Mock Tests Series</a></li>
           </ul>
         </div>

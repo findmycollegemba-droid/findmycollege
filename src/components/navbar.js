@@ -74,7 +74,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
                   <span class="dropdown-icon">📝</span>
                   <div>
                     <div class="dropdown-title">All Entrance Exams</div>
-                    <div class="dropdown-desc">Syllabus, cutoffs & calendar 2026-27</div>
+                    <div class="dropdown-desc">Syllabus, cutoffs & calendar 2027-29</div>
                   </div>
                 </a>
                 <a href="/exams/cat" class="dropdown-item" data-route="exams" data-sub="exam=cat">
@@ -101,7 +101,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
                 <a href="/exams/cmat" class="dropdown-item" data-route="exams" data-sub="exam=cmat">
                   <span class="dropdown-icon">⚡</span>
                   <div>
-                    <div class="dropdown-title">CMAT 2026</div>
+                    <div class="dropdown-title">CMAT 2027</div>
                     <div class="dropdown-desc">JBIMS, SIMSREE & GIM Goa</div>
                   </div>
                 </a>
@@ -236,7 +236,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
           </div>
 
           <div class="mobile-nav-group">
-            <div class="mobile-group-title">MBA Entrance Exams 2026-27</div>
+            <div class="mobile-group-title">MBA Entrance Exams (Session 2027-29)</div>
             <div class="mobile-chips-grid">
               <a href="/exams/cat" class="mobile-chip" data-route="exams" data-sub="cat">CAT</a>
               <a href="/exams/xat" class="mobile-chip" data-route="exams" data-sub="xat">XAT</a>

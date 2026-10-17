@@ -6,7 +6,7 @@ export function renderContactPage() {
         <div class="section-container">
           <div class="contact-hero-badge">
             <span class="pulse-dot"></span>
-            <span>Official MBA & PGDM Admissions Helpline 2026-27</span>
+            <span>Official MBA & PGDM Admissions Helpline 2027-29</span>
           </div>
           <h1 class="contact-hero-title">Speak Directly with MBA Admission Advisors</h1>
           <p class="contact-hero-subtitle">
@@ -93,13 +93,13 @@ export function renderContactPage() {
             <div class="channel-content">
               <h2 class="channel-title">WhatsApp Counseling Desk</h2>
               <div class="channel-number-row">
-                <a href="https://wa.me/918800126446?text=Hi%20FindMyBSchool%20Team%2C%20I%20need%20expert%20guidance%20for%20MBA%20Admissions%202026-27" target="_blank" rel="noopener noreferrer" class="channel-phone-link">
+                <a href="https://wa.me/918800126446?text=Hi%20FindMyBSchool%20Team%2C%20I%20need%20expert%20guidance%20for%20MBA%20Admissions%202027-29" target="_blank" rel="noopener noreferrer" class="channel-phone-link">
                   +91 88001 26446
                 </a>
               </div>
               <p class="channel-sub">Fastest response for cutoff queries, fee breakdown & brochure requests.</p>
               <div class="channel-actions">
-                <a href="https://wa.me/918800126446?text=Hi%20FindMyBSchool%20Team%2C%20I%20need%20expert%20guidance%20for%20MBA%20Admissions%202026-27" target="_blank" rel="noopener noreferrer" class="btn-channel btn-whatsapp">
+                <a href="https://wa.me/918800126446?text=Hi%20FindMyBSchool%20Team%2C%20I%20need%20expert%20guidance%20for%20MBA%20Admissions%202027-29" target="_blank" rel="noopener noreferrer" class="btn-channel btn-whatsapp">
                   <span>Chat on WhatsApp</span>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
@@ -139,7 +139,7 @@ export function renderContactPage() {
         <div class="contact-inquiry-hero-card">
           <div class="ci-hero-badge">
             <span class="badge-dot"></span>
-            <span>Comprehensive B-School Profile Evaluation 2026-27</span>
+            <span>Comprehensive B-School Profile Evaluation 2027-29</span>
           </div>
           <h2 class="ci-hero-title">Need a Tailored College Shortlist Across Top 500+ B-Schools?</h2>
           <p class="ci-hero-desc">
@@ -217,14 +217,14 @@ export function renderContactPage() {
                   <div class="input-icon-wrap">
                     <svg class="input-svg-icon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
                     <select id="mentorTargetExam" class="form-select" required>
-                      <option value="CAT">CAT 2026 (IIMs / FMS / SPJIMR)</option>
-                      <option value="XAT">XAT 2027 (XLRI Jamshedpur)</option>
-                      <option value="SNAP">SNAP 2026 (SIBM / SCMHRD)</option>
+                      <option value="CAT">CAT 2026 (IIMs / FMS / SPJIMR • Session 2027-29)</option>
+                      <option value="XAT">XAT 2027 (XLRI Jamshedpur • Session 2027-29)</option>
+                      <option value="SNAP">SNAP 2026 (SIBM / SCMHRD • Session 2027-29)</option>
                       <option value="NMAT">NMAT by GMAC (NMIMS Mumbai)</option>
-                      <option value="CMAT">CMAT 2026 (JBIMS / GIM)</option>
-                      <option value="MHCET">MAH MBA CET 2026</option>
+                      <option value="CMAT">CMAT 2027 (JBIMS / GIM • Session 2027-29)</option>
+                      <option value="MHCET">MAH MBA CET 2027 (Mumbai / Pune)</option>
                       <option value="CUETPG">CUET PG (TISS Mumbai)</option>
-                      <option value="MAT">MAT / ATMA 2026</option>
+                      <option value="MAT">MAT / ATMA 2026-27</option>
                     </select>
                   </div>
                 </div>

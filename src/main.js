@@ -578,7 +578,7 @@ window.openCollegeBrochureModal = function(college, prefillData) {
       const mobile = document.getElementById('brochureMobile')?.value || '';
       const email = document.getElementById('brochureEmail')?.value || '';
       const percentile = document.getElementById('brochurePercentile')?.value || '';
-      const year = document.getElementById('brochureYear')?.value || '2026';
+      const year = document.getElementById('brochureYear')?.value || '2027-29';
 
       // Send to CRM with real-time sync
       sendLeadToCRM({
@@ -1393,7 +1393,7 @@ function initCollegesInteractions(subId, params) {
         const mobile = document.getElementById('brochureMobile')?.value || '';
         const email = document.getElementById('brochureEmail')?.value || '';
         const percentile = document.getElementById('brochurePercentile')?.value || '';
-        const year = document.getElementById('brochureYear')?.value || '2026';
+        const year = document.getElementById('brochureYear')?.value || '2027-29';
 
         // Stream inquiry to CRM
         sendLeadToCRM({
@@ -1793,7 +1793,7 @@ function initHomeInteractions() {
         const mobile = document.getElementById('brochureMobile')?.value || '';
         const email = document.getElementById('brochureEmail')?.value || '';
         const percentile = document.getElementById('brochurePercentile')?.value || '';
-        const year = document.getElementById('brochureYear')?.value || '2026';
+        const year = document.getElementById('brochureYear')?.value || '2027-29';
 
         // Send to CRM in real time
         sendLeadToCRM({
@@ -1821,7 +1821,7 @@ function initHomeInteractions() {
           container.innerHTML = `
             <div class="brochure-success-state">
               <div class="success-icon">🎉</div>
-              <h3>Official 2026 Brochure Dispatched!</h3>
+              <h3>Official 2027-29 Brochure Dispatched!</h3>
               <p>We've sent the complete fee breakdown, syllabus, and placement audited report of <strong>${college.shortName || college.name}</strong> to your email.</p>
               <button class="btn-primary-pill" id="closeSuccessBrochureBtn">Done</button>
             </div>

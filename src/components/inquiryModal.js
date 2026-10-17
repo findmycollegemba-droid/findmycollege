@@ -36,7 +36,7 @@ export function renderInquiryModal() {
           
           <div class="inquiry-header-badge">
             <span class="badge-pulsing-dot"></span>
-            <span>🎓 Admissions 2026-27 • Official Inquiry</span>
+            <span>🎓 Admissions 2027-29 • Official Inquiry</span>
           </div>
 
           <h2 class="inquiry-header-title" id="inquiryModalTitle">
@@ -157,7 +157,7 @@ export function renderInquiryModal() {
                       <div class="card-icon-wrap">🎓</div>
                       <div class="card-text-wrap">
                         <span class="card-main-title">Pursuing Graduation</span>
-                        <span class="card-sub-title">Currently in Final or Pre-Final Year (Expected 2026/27)</span>
+                        <span class="card-sub-title">Currently in Final or Pre-Final Year (Expected 2027/28)</span>
                       </div>
                       <div class="card-check-bubble"></div>
                     </div>
@@ -477,7 +477,7 @@ export function renderInquiryModal() {
             <!-- SUBMIT BUTTON -->
             <div class="inquiry-submit-row">
               <button type="submit" class="inquiry-submit-btn" id="inquirySubmitBtn">
-                <span class="btn-text">Submit Admission Inquiry 2026</span>
+                <span class="btn-text">Submit Admission Inquiry 2027-29</span>
                 <span class="btn-sparkle">🚀</span>
               </button>
             </div>
@@ -516,7 +516,7 @@ export function renderInquiryModal() {
     <div class="inquiry-floating-trigger" id="inquiryFloatingTrigger" title="Click to open MBA Admission Inquiry Form">
       <div class="floating-trigger-inner">
         <span class="trigger-sparkle">📝</span>
-        <span class="trigger-text">Admission Inquiry 2026</span>
+        <span class="trigger-text">Admission Inquiry 2027-29</span>
         <span class="trigger-pulse">Free</span>
       </div>
     </div>

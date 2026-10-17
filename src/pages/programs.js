@@ -10,7 +10,7 @@ export function renderProgramsPage(activeSub = 'mba') {
       <section class="programs-hero">
         <div class="section-container">
           <div class="hero-badge-pill">
-            <span class="badge-text">🎓 MBA vs PGDM Dossier 2026</span>
+            <span class="badge-text">🎓 MBA vs PGDM Dossier 2027-29</span>
           </div>
           <h1 class="page-title">Management Programs & Specializations</h1>
           <p class="page-subtitle">

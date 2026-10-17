@@ -502,7 +502,7 @@ function startConversationFlow() {
         <div class="fmc-welcome-badge">🎓 FindMyBSchool Admission Counselor</div>
         <h4 class="fmc-welcome-title">Welcome to FindMyBSchool! 👋</h4>
         <p class="fmc-welcome-desc">
-          I am your personal AI Admission Assistant for the <strong>2026-27 admission cycle</strong>. 
+          I am your personal AI Admission Assistant for the <strong>2027-29 admission session</strong>. 
           I will help you discover the perfect colleges tailored to your program, preferred city, and budget in just 2 minutes!
         </p>
         <div class="fmc-highlight-prompt">
@@ -884,7 +884,7 @@ function generateCollegeRecommendations() {
       <div class="fmc-profile-card">
         <div class="profile-card-header">
           <span class="profile-badge">✓ Profile Verified</span>
-          <span class="profile-date">Season 2026-27</span>
+          <span class="profile-date">Session 2027-29</span>
         </div>
         <div class="profile-grid">
           <div class="profile-item"><strong>Student:</strong> ${student.name}</div>
@@ -1406,7 +1406,7 @@ function handleCounselorQnA(userQuestion) {
     } else {
       reply = `
         <p>Thank you for asking, <strong>${chatBotState.studentData.name || 'Student'}</strong>!</p>
-        <p>Regarding your query: <em>"${userQuestion}"</em> — our senior admission counselor has logged this and can provide official 2026 cutoff brochures and fee concession updates directly to your registered number <strong>(${chatBotState.studentData.mobile || 'on file'})</strong>.</p>
+        <p>Regarding your query: <em>"${userQuestion}"</em> — our senior admission counselor has logged this and can provide official 2027-29 cutoff brochures and fee concession updates directly to your registered number <strong>(${chatBotState.studentData.mobile || 'on file'})</strong>.</p>
         <p>Feel free to click any college card above to view full placement reports or download brochures!</p>
       `;
     }

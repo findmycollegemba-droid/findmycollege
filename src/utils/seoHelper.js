@@ -39,8 +39,8 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
       }
 
       if (specificCollege) {
-        meta.title = `${specificCollege.name} (${specificCollege.shortName}) Admission 2026: Fees, Cutoffs, Placements & Ranking | FindMyBSchool`;
-        meta.description = `Get verified 2026-27 admission details for ${specificCollege.name} (${specificCollege.shortName}), ${specificCollege.location}. 2-Year Total Fees: ${specificCollege.fees}, Average CTC: ${specificCollege.avgSalary}, Cutoff: ${specificCollege.cutoffCAT !== 'N/A' ? 'CAT ' + specificCollege.cutoffCAT : (specificCollege.cutoffXAT !== 'N/A' ? 'XAT ' + specificCollege.cutoffXAT : 'CMAT ' + specificCollege.cutoffCMAT)}. 100% audited placement statistics & bank loan schemes.`;
+        meta.title = `${specificCollege.name} (${specificCollege.shortName}) Admission 2027-29: Fees, Cutoffs, Recent Placements & NIRF Ranking | FindMyBSchool`;
+        meta.description = `Get verified 2027-29 admission session details for ${specificCollege.name} (${specificCollege.shortName}), ${specificCollege.location}. 2-Year Total Fees: ${specificCollege.fees}, Recent Average CTC: ${specificCollege.avgSalary}, Cutoff: ${specificCollege.cutoffCAT !== 'N/A' ? 'CAT ' + specificCollege.cutoffCAT : (specificCollege.cutoffXAT !== 'N/A' ? 'XAT ' + specificCollege.cutoffXAT : 'CMAT ' + specificCollege.cutoffCMAT)}. 100% audited recent placement statistics & bank loan schemes.`;
         meta.canonical = `${BASE_URL}/colleges/${encodeURIComponent(specificCollege.id)}`;
         meta.ogType = 'article';
         meta.collegeData = specificCollege;
@@ -60,8 +60,8 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
           { name: `Search: ${searchQuery}`, url: meta.canonical }
         ];
       } else if (cityParam) {
-        meta.title = `Top MBA & PGDM Colleges in ${cityParam} — Fees, Placements & Cutoffs 2026 | FindMyBSchool`;
-        meta.description = `Explore top management institutes in ${cityParam}. Compare AICTE & UGC approved MBA/PGDM colleges, audited fees, average salaries, and exam cutoffs.`;
+        meta.title = `Top MBA & PGDM Colleges in ${cityParam} — Fees, Recent Placements & Cutoffs (2027-29 Session) | FindMyBSchool`;
+        meta.description = `Explore top management institutes in ${cityParam} for 2027-29 admissions. Compare AICTE & UGC approved MBA/PGDM colleges, audited fees, recent average salaries, and exam cutoffs.`;
         meta.canonical = `${BASE_URL}/colleges/city/${encodeURIComponent(cityParam.toLowerCase())}`;
         meta.breadcrumbs = [
           { name: 'Home', url: `${BASE_URL}/` },
@@ -70,8 +70,8 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
         ];
       } else if (typeParam) {
         const typeName = typeParam.toUpperCase();
-        meta.title = `Top ${typeName} Colleges in India — Fees, NIRF Rankings & Cutoffs 2026 | FindMyBSchool`;
-        meta.description = `Find the best ${typeName} colleges in India. Comprehensive comparison of university MBA vs autonomous PGDM institutes, audited fees, and placements.`;
+        meta.title = `Top ${typeName} Colleges in India — Fees, NIRF Rankings & Cutoffs (2027-29 Session) | FindMyBSchool`;
+        meta.description = `Find the best ${typeName} colleges in India for the 2027-29 session. Comprehensive comparison of university MBA vs autonomous PGDM institutes, audited fees, and recent audited placements.`;
         meta.canonical = `${BASE_URL}/colleges/${encodeURIComponent(typeParam.toLowerCase())}`;
         meta.breadcrumbs = [
           { name: 'Home', url: `${BASE_URL}/` },
@@ -79,8 +79,8 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
           { name: typeName, url: meta.canonical }
         ];
       } else {
-        meta.title = 'Explore 600+ Verified MBA & PGDM Colleges in India | FindMyBSchool';
-        meta.description = 'Filter and compare 600+ top Indian business schools by fees, NIRF rank, average CTC package, CAT/XAT/CMAT cutoffs, and city location with 0% scrapers.';
+        meta.title = 'Explore 600+ Verified MBA & PGDM Colleges in India (2027-29 Admission) | FindMyBSchool';
+        meta.description = 'Filter and compare 600+ top Indian business schools for 2027-29 admission by fees, NIRF rank, recent average CTC packages, CAT/XAT/CMAT cutoffs, and city locations with 0% scrapers.';
         meta.canonical = `${BASE_URL}/colleges`;
         meta.breadcrumbs = [
           { name: 'Home', url: `${BASE_URL}/` },
@@ -162,7 +162,7 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
 
     case 'programs': {
       const progSub = sub || params?.get('sub');
-      meta.title = 'MBA vs PGDM Comparison Guide 2026 — Differences, Fees & Placement ROI | FindMyBSchool';
+      meta.title = 'MBA vs PGDM Comparison Guide (2027-29 Session) — Differences, Fees & Placement ROI | FindMyBSchool';
       meta.description = 'Understand the crucial differences between University MBA degrees and Autonomous PGDM diplomas. Compare AICTE accreditation, syllabus flexibility, and corporate ROI.';
       meta.canonical = progSub ? `${BASE_URL}/programs/${encodeURIComponent(progSub)}` : `${BASE_URL}/programs`;
       meta.breadcrumbs = [
