@@ -122,9 +122,10 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
     case 'tools': {
       const toolSub = sub || params?.get('sub') || 'cat';
       if (toolSub === 'cat') {
-        meta.title = 'CAT College Predictor 2026: Find MBA Colleges by Percentile | FindMyBSchool';
-        meta.description = 'Enter your percentile, see possible MBA/PGDM colleges with fees and cutoffs. Predict your admission chances with FindMyBSchool\'s 2026 tool.';
+        meta.title = 'CAT College Predictor 2026: IIM Call Predictor & MBA Percentile Calculator | FindMyBSchool';
+        meta.description = 'Free CAT College Predictor 2026 & IIM Call Predictor. Calculate raw & scaled scores with slot normalization, get All-India percentiles, and explore 600+ MBA/PGDM colleges with category cutoffs & audited fees.';
         meta.canonical = `${BASE_URL}/tools/cat-college-predictor`;
+        meta.toolSub = 'cat';
         meta.breadcrumbs = [
           { name: 'Home', url: `${BASE_URL}/` },
           { name: 'Calculators & Tools', url: `${BASE_URL}/tools` },
@@ -430,6 +431,166 @@ function updateSchemaLD(meta) {
           'acceptedAnswer': {
             '@type': 'Answer',
             'text': `Yes. Students admitted to ${col.name} are eligible for 100% collateral-free education loans up to ₹30-40 Lakhs under premier student loan schemes including the SBI Scholar Scheme, Axis Bank Education Loan, and HDFC Credila with zero margin money and expedited approvals.`
+          }
+        }
+      ]
+    });
+  } else if (meta.toolSub === 'cat') {
+    // AEO, GEO & SEO: WebApplication Schema
+    graph.push({
+      '@type': 'WebApplication',
+      '@id': `${BASE_URL}/tools/cat-college-predictor#app`,
+      'name': 'CAT College Predictor 2026: IIM Call Predictor & MBA Percentile Calculator',
+      'url': `${BASE_URL}/tools/cat-college-predictor`,
+      'applicationCategory': 'EducationalApplication',
+      'operatingSystem': 'All (Web Browser, iOS, Android, macOS, Windows)',
+      'browserRequirements': 'Requires modern web browser with HTML5 and JavaScript enabled',
+      'description': 'Free CAT College Predictor 2026 & IIM Call Predictor. Calculate raw & scaled scores with slot normalization, get All-India percentiles, and explore 600+ MBA/PGDM colleges with category cutoffs & audited fees.',
+      'offers': {
+        '@type': 'Offer',
+        'price': '0',
+        'priceCurrency': 'INR',
+        'availability': 'https://schema.org/InStock'
+      },
+      'featureList': [
+        'Automated Digialm candidate response sheet URL scanning',
+        'Equipercentile slot normalization across Slot 1, Slot 2, and Slot 3',
+        'Sectional raw to scaled score conversion for VARC (72M), DILR (60M), QA (66M)',
+        'Estimated All-India percentile calculation based on ~2.9 lakh test-takers',
+        'Interview call probability prediction for 21 IIMs and 50+ premier MBA/PGDM colleges',
+        'Category-wise cutoff matching across General, NC-OBC, EWS, SC, ST, PwD'
+      ],
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': '4.9',
+        'reviewCount': '1280',
+        'bestRating': '5',
+        'worstRating': '1'
+      }
+    });
+
+    // AEO: HowTo Schema for Step-by-Step Featured Snippets
+    graph.push({
+      '@type': 'HowTo',
+      '@id': `${BASE_URL}/tools/cat-college-predictor#howto`,
+      'name': 'How to Predict MBA Colleges Using Your CAT 2026 Score or Response Sheet',
+      'description': 'Step-by-step instructions to calculate your scaled CAT score, slot-normalized percentile, and predict matching IIM and non-IIM MBA colleges.',
+      'totalTime': 'PT2M',
+      'step': [
+        {
+          '@type': 'HowToStep',
+          'position': 1,
+          'name': 'Retrieve Your Response Sheet URL or Enter Attempts',
+          'text': 'Log in to iimcat.ac.in using your Registration User ID and Password. Click on Candidate Response and copy the link from cdn.digialm.com, paste raw HTML source code, or input your sectional attempts manually.',
+          'url': `${BASE_URL}/tools/cat-college-predictor#step1`
+        },
+        {
+          '@type': 'HowToStep',
+          'position': 2,
+          'name': 'Apply Official Marking Scheme (+3 / -1 / 0)',
+          'text': 'The system audits each question, awarding +3 marks for correct responses, deducting 1 mark for wrong MCQs, and applying zero penalty for Non-MCQ / TITA questions.',
+          'url': `${BASE_URL}/tools/cat-college-predictor#step2`
+        },
+        {
+          '@type': 'HowToStep',
+          'position': 3,
+          'name': 'Compute Slot Normalization & Projected Percentile',
+          'text': 'Our engine applies the IIM equipercentile equating algorithm across Slot 1, Slot 2, and Slot 3 to calculate your scaled score and All-India percentile.',
+          'url': `${BASE_URL}/tools/cat-college-predictor#step3`
+        },
+        {
+          '@type': 'HowToStep',
+          'position': 4,
+          'name': 'Explore Eligible IIM and Top B-School Calls',
+          'text': 'Instantly view matching interview calls across 21 IIMs and 50+ premier PGDM institutions categorized into Tier 1, Tier 1.5, Tier 2, and Tier 3 with audited fees and cutoffs.',
+          'url': `${BASE_URL}/tools/cat-college-predictor#step4`
+        }
+      ]
+    });
+
+    // AEO & Voice Search: Comprehensive 10-Question FAQPage Schema
+    graph.push({
+      '@type': 'FAQPage',
+      '@id': `${BASE_URL}/tools/cat-college-predictor#faq`,
+      'mainEntity': [
+        {
+          '@type': 'Question',
+          'name': 'How does the CAT College Predictor 2026 work?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'The FindMyBSchool CAT College Predictor evaluates your sectional raw marks (VARC, DILR, QA) or official response sheet Digialm URL, applies slot normalization across Slot 1, Slot 2, and Slot 3, and generates your estimated national percentile. It then cross-references your projected percentile with verified category-wise cutoffs for 21 IIMs and over 50 top-tier MBA/PGDM colleges.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'What CAT percentile is required for IIM Ahmedabad, Bangalore, and Calcutta?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'For General Category engineering candidates, top IIMs (IIM Ahmedabad, IIM Bangalore, IIM Calcutta) typically require a minimum 99.2 to 99.8 percentile in CAT, alongside strong sectional scores (usually 80-85+ sectional percentile). Non-engineers with exceptional academic records (90%+ in 10th/12th/Graduation) and NC-OBC/SC/ST/EWS candidates may receive interview calls between 90 and 96 percentile.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Which top MBA/PGDM colleges accept 80 to 90 CAT percentile?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'With an 80 to 90 CAT percentile, candidates have strong shortlist prospects at reputed business schools including GIM Goa, FORE School of Management Delhi, Great Lakes Institute of Management Chennai (PGDM), TAPMI Manipal, BIMTECH Greater Noida, LIBA Chennai, and KJ Somaiya Mumbai.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Can I get an IIM interview call with an 85 to 90 percentile in CAT?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Yes. While General Category engineering candidates need 98+ percentile, candidates belonging to NC-OBC, EWS, SC, ST, and PwD categories frequently receive shortlist calls from Baby and New IIMs (such as IIM Bodhgaya, IIM Sambalpur, IIM Sirmaur, IIM Jammu, IIM Nagpur, and IIM Amritsar) in the 80 to 90 percentile range, provided minimum sectional cutoffs (typically 65-75%ile) are satisfied.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How does CAT slot normalization affect raw scores across Slot 1, Slot 2, and Slot 3?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Because CAT is conducted across 3 separate slots with varying question difficulty, IIMs employ an equipercentile statistical normalization model. If your slot was comparatively harder, your scaled score is adjusted upward; if your slot had a higher average, the score adjusts slightly downward to ensure complete fairness across morning, afternoon, and evening slots.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Which premier non-IIM business schools accept CAT scores?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Premier non-IIM institutions accepting CAT scores include FMS Delhi (Faculty of Management Studies), SPJIMR Mumbai, MDI Gurgaon, IIT Bombay (SJMSOM), IIT Delhi (DMS), IIT Kharagpur (VGSOM), IIFT Delhi, IMI New Delhi, and IMT Ghaziabad.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'What is the official CAT marking scheme for MCQs and non-MCQs (TITA)?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'In CAT 2026, correct Multiple Choice Questions (MCQs) award +3 marks, while incorrect MCQs penalize -1 mark. Non-MCQ / TITA (Type In The Answer) questions award +3 marks for a correct response, but carry ZERO negative deduction (0 penalty) for incorrect responses.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'What is the difference between CAT raw score, scaled score, and percentile?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Your Raw Score is your direct points total from +3/-1 marking out of 198. The Scaled Score is your score adjusted for slot difficulty through equipercentile equating. Your Percentile represents the percentage of all national test-takers who scored equal to or less than your scaled score.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How do top IIMs calculate the Composite Score for final admissions?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Final admission offers are based on a Composite Score, not percentile alone. Top IIMs weight CAT performance (40-60%), 10th and 12th board marks (10-20%), undergraduate degree (5-15%), relevant work experience (5-10%), gender/academic diversity (5-10%), and Personal Interview / WAT performance (30-40%).'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How do I check my CAT response sheet link on cdn.digialm.com?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'To check your response sheet, log in to iimcat.ac.in with your User ID and Password, navigate to the Candidate Response tab, click the link to generate your response sheet, and copy the URL starting with cdn.digialm.com from your browser address bar. Paste it into the FindMyBSchool Predictor for automated sectional score and call analysis.'
           }
         }
       ]

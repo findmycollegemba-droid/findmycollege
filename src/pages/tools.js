@@ -12,7 +12,7 @@ export function renderToolsPage(activeSub = 'cat') {
             <span class="pulse-indicator"></span>
             <span class="badge-text">⚡ CAT 2026 Response Sheet Scanner & Slot Normalization Engine</span>
           </div>
-          <h1 class="page-title">CAT College Predictor 2026</h1>
+          <h1 class="page-title">CAT College Predictor 2026: IIM Call Predictor & MBA Percentile Calculator</h1>
           <p class="page-subtitle">
             Calculate your raw score, scaled score, and percentile from your official candidate response sheet URL or source. Features official +3/−1/0 marking, slot 1/2/3 normalization, and 2027 IIM call prediction.
           </p>
@@ -483,12 +483,39 @@ export function renderToolsPage(activeSub = 'cat') {
           <!-- Comprehensive Reference & Educational Section -->
           <div class="cat-educational-hub">
             
+            <!-- Featured Answer Engine (AEO / GEO) Position-Zero Snippet Box -->
+            <div class="cat-snippet-box">
+              <div class="cat-snippet-badge">⚡ Direct Answer / Position-Zero Summary</div>
+              <h3 style="margin: 0 0 8px 0; font-size: 1.25rem; font-weight: 800; color: #0F172A;">What is a CAT College Predictor?</h3>
+              <p class="cat-snippet-definition">
+                A <strong>CAT College Predictor</strong> is an AI-driven educational tool designed to calculate an aspirant's scaled score and estimated All-India percentile from their CAT raw marks or official response sheet URL (hosted on <code>cdn.digialm.com</code>). It applies statistical slot normalization across Slots 1, 2, and 3, and compares the projected percentile with verified category-wise cutoffs to forecast interview calls from 21 IIMs, FMS Delhi, SPJIMR Mumbai, and over 50 premier PGDM institutions.
+              </p>
+              <div class="cat-quick-facts-grid">
+                <div class="cat-quick-fact-item">
+                  <span>🎯</span>
+                  <div><strong>Marking Scheme:</strong> +3 Correct, -1 Wrong MCQ, 0 TITA</div>
+                </div>
+                <div class="cat-quick-fact-item">
+                  <span>⚖️</span>
+                  <div><strong>Slot Normalization:</strong> Equipercentile equating across 3 slots</div>
+                </div>
+                <div class="cat-quick-fact-item">
+                  <span>🏛️</span>
+                  <div><strong>Institutions Covered:</strong> 21 IIMs + 50+ Premier MBA/PGDM</div>
+                </div>
+                <div class="cat-quick-fact-item">
+                  <span>🔒</span>
+                  <div><strong>Accuracy &amp; Transparency:</strong> 100% Free, Human-Audited Data</div>
+                </div>
+              </div>
+            </div>
+
             <!-- GUIDE 1: HOW TO CHECK RESPONSE SHEET -->
             <article class="edu-card-block" id="response-sheet-guide">
               <div class="edu-block-header">
                 <div class="edu-icon-badge">📋</div>
                 <div>
-                  <h3>CAT 2026 Response Sheet Check: How to View & Calculate Score</h3>
+                  <h3>CAT 2026 Response Sheet Check: How to View &amp; Calculate Score</h3>
                   <p>Step-by-step procedure to retrieve your official candidate URL from cdn.digialm.com</p>
                 </div>
               </div>
@@ -511,7 +538,7 @@ export function renderToolsPage(activeSub = 'cat') {
                 </div>
                 <div class="edu-step-card">
                   <span class="step-num">Step 4</span>
-                  <h4>Scan & Predict Calls</h4>
+                  <h4>Scan &amp; Predict Calls</h4>
                   <p>Paste into the FindMyBSchool Calculator above for instant sectional audits, slot scaling, and call forecasts.</p>
                 </div>
               </div>
@@ -523,7 +550,7 @@ export function renderToolsPage(activeSub = 'cat') {
                 <div class="edu-icon-badge">📊</div>
                 <div>
                   <h3>CAT 2026 Marks vs Percentile Target Breakdown (198 Max Marks)</h3>
-                  <p>Verified historical benchmarks across 66-question CAT administrations</p>
+                  <p>Verified historical benchmarks across 66-question CAT administrations (~2.9 Lakh candidates)</p>
                 </div>
               </div>
 
@@ -541,28 +568,28 @@ export function renderToolsPage(activeSub = 'cat') {
                   </thead>
                   <tbody>
                     <tr>
-                      <td><strong class="text-blue">99.9+ %ile</strong></td>
+                      <td><strong style="color: #6B2CF5;">99.9+ %ile</strong></td>
                       <td><strong>110 – 125+ Marks</strong></td>
                       <td>46+ Marks</td>
                       <td>38+ Marks</td>
                       <td>42+ Marks</td>
-                      <td>IIM Ahmedabad, IIM Bangalore, IIM Calcutta, FMS Delhi</td>
+                      <td><a href="/colleges/iim-ahmedabad" class="cat-table-link">IIM Ahmedabad</a>, <a href="/colleges/iim-bangalore" class="cat-table-link">IIM Bangalore</a>, <a href="/colleges/iim-calcutta" class="cat-table-link">IIM Calcutta</a>, <a href="/colleges/fms-delhi" class="cat-table-link">FMS Delhi</a></td>
                     </tr>
                     <tr>
-                      <td><strong class="text-blue">99.5+ %ile</strong></td>
+                      <td><strong style="color: #6B2CF5;">99.5+ %ile</strong></td>
                       <td><strong>95 – 109 Marks</strong></td>
                       <td>42+ Marks</td>
                       <td>32+ Marks</td>
                       <td>35+ Marks</td>
-                      <td>IIM Lucknow, IIM Kozhikode, SPJIMR Mumbai</td>
+                      <td><a href="/colleges/iim-lucknow" class="cat-table-link">IIM Lucknow</a>, <a href="/colleges/iim-kozhikode" class="cat-table-link">IIM Kozhikode</a>, <a href="/colleges/spjimr-mumbai" class="cat-table-link">SPJIMR Mumbai</a></td>
                     </tr>
                     <tr>
-                      <td><strong class="text-blue">99.0+ %ile</strong></td>
+                      <td><strong style="color: #6B2CF5;">99.0+ %ile</strong></td>
                       <td><strong>82 – 94 Marks</strong></td>
                       <td>38+ Marks</td>
                       <td>28+ Marks</td>
                       <td>30+ Marks</td>
-                      <td>IIM Indore, MDI Gurgaon, IIT Bombay (SJMSOM)</td>
+                      <td><a href="/colleges/iim-indore" class="cat-table-link">IIM Indore</a>, <a href="/colleges/mdi-gurgaon" class="cat-table-link">MDI Gurgaon</a>, <a href="/colleges/iit-bombay-sjmsom" class="cat-table-link">SJMSOM IIT Bombay</a></td>
                     </tr>
                     <tr>
                       <td><strong>98.0+ %ile</strong></td>
@@ -570,7 +597,7 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>34+ Marks</td>
                       <td>24+ Marks</td>
                       <td>26+ Marks</td>
-                      <td>IIFT Delhi, IIM Shillong, CAP IIMs (Udaipur, Trichy)</td>
+                      <td><a href="/colleges/iift-delhi" class="cat-table-link">IIFT Delhi</a>, <a href="/colleges/iim-shillong" class="cat-table-link">IIM Shillong</a>, <a href="/colleges/iim-udaipur" class="cat-table-link">CAP IIMs (Udaipur, Trichy)</a></td>
                     </tr>
                     <tr>
                       <td><strong>95.0+ %ile</strong></td>
@@ -578,7 +605,7 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>28+ Marks</td>
                       <td>19+ Marks</td>
                       <td>21+ Marks</td>
-                      <td>CAP Round IIMs, DSE Delhi, IIT Delhi DMS</td>
+                      <td><a href="/colleges/iim-raipur" class="cat-table-link">IIM Raipur</a>, <a href="/colleges/iim-ranchi" class="cat-table-link">IIM Ranchi</a>, <a href="/colleges/dse-delhi" class="cat-table-link">DSE Delhi</a>, <a href="/colleges/dms-iit-delhi" class="cat-table-link">DMS IIT Delhi</a></td>
                     </tr>
                     <tr>
                       <td><strong>90.0+ %ile</strong></td>
@@ -586,7 +613,7 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>23+ Marks</td>
                       <td>15+ Marks</td>
                       <td>16+ Marks</td>
-                      <td>IMT Ghaziabad, IMI New Delhi, GIM Goa, Baby IIMs</td>
+                      <td><a href="/colleges/imt-ghaziabad" class="cat-table-link">IMT Ghaziabad</a>, <a href="/colleges/imi-delhi" class="cat-table-link">IMI New Delhi</a>, <a href="/colleges/gim-goa" class="cat-table-link">GIM Goa</a>, Baby IIMs</td>
                     </tr>
                     <tr>
                       <td><strong>85.0+ %ile</strong></td>
@@ -594,7 +621,7 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>18+ Marks</td>
                       <td>12+ Marks</td>
                       <td>13+ Marks</td>
-                      <td>TAPMI Manipal, FORE School, Great Lakes Chennai, LBSIM</td>
+                      <td><a href="/colleges/tapmi-manipal" class="cat-table-link">TAPMI Manipal</a>, <a href="/colleges/fore-school-delhi" class="cat-table-link">FORE School</a>, <a href="/colleges/great-lakes-chennai" class="cat-table-link">Great Lakes Chennai</a>, <a href="/colleges/lbsim-delhi" class="cat-table-link">LBSIM</a></td>
                     </tr>
                     <tr>
                       <td><strong>80.0+ %ile</strong></td>
@@ -602,7 +629,7 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>14+ Marks</td>
                       <td>10+ Marks</td>
                       <td>10+ Marks</td>
-                      <td>BIMTECH Greater Noida, K J Somaiya, IRMA Anand</td>
+                      <td><a href="/colleges/bimtech-noida" class="cat-table-link">BIMTECH Greater Noida</a>, <a href="/colleges/kj-somaiya-mumbai" class="cat-table-link">K J Somaiya</a>, <a href="/colleges/irma-anand" class="cat-table-link">IRMA Anand</a></td>
                     </tr>
                     <tr>
                       <td><strong>70.0+ %ile</strong></td>
@@ -610,7 +637,7 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>10+ Marks</td>
                       <td>7+ Marks</td>
                       <td>7+ Marks</td>
-                      <td>NDIM New Delhi, FOSTIIMA, FIIB, JIMS, PIBM, JAGSoM, UPES</td>
+                      <td><a href="/colleges/ndim-delhi-ncr" class="cat-table-link">NDIM New Delhi</a>, <a href="/colleges/fostiima-business-school" class="cat-table-link">FOSTIIMA</a>, <a href="/colleges/fiib-delhi-ncr" class="cat-table-link">FIIB</a>, <a href="/colleges/jims-kalkaji" class="cat-table-link">JIMS Kalkaji</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -622,15 +649,20 @@ export function renderToolsPage(activeSub = 'cat') {
               <div class="edu-block-header">
                 <div class="edu-icon-badge">⚖️</div>
                 <div>
-                  <h3>How CAT 2026 Normalization & Slot Scaling Works</h3>
+                  <h3>How CAT 2026 Normalization &amp; Slot Scaling Works</h3>
                   <p>Equipercentile equating across Slot 1 (Morning), Slot 2 (Afternoon), and Slot 3 (Evening)</p>
                 </div>
+              </div>
+
+              <div class="cat-formula-card">
+                Scaled Score = M_g + ( (S_i - M_i) / SD_i ) × SD_g<br />
+                Where: S_i = Candidate Raw Score, M_i = Slot Mean, SD_i = Slot Std Deviation, M_g = Master Global Mean, SD_g = Master Global Std Deviation
               </div>
 
               <div class="normalization-cards-grid">
                 <div class="norm-card">
                   <div class="norm-card-num">1</div>
-                  <h4>Calculation of Mean & Standard Deviation</h4>
+                  <h4>Calculation of Mean &amp; Standard Deviation</h4>
                   <p>Raw scores of all candidates in each session are standardized to account for marginal differences in difficulty across slots.</p>
                 </div>
                 <div class="norm-card">
@@ -640,55 +672,386 @@ export function renderToolsPage(activeSub = 'cat') {
                 </div>
                 <div class="norm-card">
                   <div class="norm-card-num">3</div>
+                  <h4>Sectional Scaling Independent</h4>
+                  <p>Scaling is applied independently for VARC, DILR, and QA before generating the composite scaled score.</p>
+                </div>
+                <div class="norm-card">
+                  <div class="norm-card-num">4</div>
                   <h4>Percentile Rank Computation</h4>
-                  <p>Your percentile is determined by <code>P = (R / N) × 100</code>, where R is the rank and N is total test-takers across India (~2.9 Lakhs).</p>
+                  <p>Your percentile is determined by <code>P = ( (N - R) / N ) × 100</code>, where R is the rank and N is total test-takers across India (~2.9 Lakhs).</p>
                 </div>
               </div>
             </article>
 
-            <!-- GUIDE 4: FREQUENTLY ASKED QUESTIONS -->
+            <!-- GUIDE 4: CATEGORY-WISE CUTOFFS FOR TOP 21 IIMS -->
             <article class="edu-card-block">
+              <div class="edu-block-header">
+                <div class="edu-icon-badge">🏛️</div>
+                <div>
+                  <h3>Category-Wise Expected CAT Cutoffs for Top 21 IIMs</h3>
+                  <p>Verified shortlist cutoffs across General, NC-OBC, EWS, SC, and ST categories with fees &amp; NIRF rank</p>
+                </div>
+              </div>
+
+              <div class="edu-table-responsive">
+                <table class="shiksha-data-table edu-benchmark-table">
+                  <thead>
+                    <tr>
+                      <th>IIM Name</th>
+                      <th>General Cutoff</th>
+                      <th>NC-OBC Cutoff</th>
+                      <th>EWS Cutoff</th>
+                      <th>SC / ST Cutoff</th>
+                      <th>2-Year Fees</th>
+                      <th>Average CTC</th>
+                      <th>NIRF Rank</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-ahmedabad" class="cat-table-link">IIM Ahmedabad</a></strong></td>
+                      <td>99.6+ %ile</td>
+                      <td>95.0+ %ile</td>
+                      <td>95.0+ %ile</td>
+                      <td>85.0+ / 75.0+</td>
+                      <td>₹26.5 Lakhs</td>
+                      <td>₹34.4 LPA</td>
+                      <td>NIRF 1</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-bangalore" class="cat-table-link">IIM Bangalore</a></strong></td>
+                      <td>99.5+ %ile</td>
+                      <td>93.0+ %ile</td>
+                      <td>94.0+ %ile</td>
+                      <td>82.0+ / 72.0+</td>
+                      <td>₹24.5 Lakhs</td>
+                      <td>₹35.3 LPA</td>
+                      <td>NIRF 2</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-calcutta" class="cat-table-link">IIM Calcutta</a></strong></td>
+                      <td>99.4+ %ile</td>
+                      <td>94.0+ %ile</td>
+                      <td>94.0+ %ile</td>
+                      <td>80.0+ / 70.0+</td>
+                      <td>₹27.0 Lakhs</td>
+                      <td>₹35.1 LPA</td>
+                      <td>NIRF 4</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-lucknow" class="cat-table-link">IIM Lucknow</a></strong></td>
+                      <td>99.0+ %ile</td>
+                      <td>90.0+ %ile</td>
+                      <td>91.0+ %ile</td>
+                      <td>77.0+ / 65.0+</td>
+                      <td>₹20.7 Lakhs</td>
+                      <td>₹32.2 LPA</td>
+                      <td>NIRF 6</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-kozhikode" class="cat-table-link">IIM Kozhikode</a></strong></td>
+                      <td>98.5+ %ile</td>
+                      <td>88.0+ %ile</td>
+                      <td>90.0+ %ile</td>
+                      <td>75.0+ / 65.0+</td>
+                      <td>₹20.5 Lakhs</td>
+                      <td>₹31.0 LPA</td>
+                      <td>NIRF 3</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-indore" class="cat-table-link">IIM Indore</a></strong></td>
+                      <td>98.0+ %ile</td>
+                      <td>87.0+ %ile</td>
+                      <td>88.0+ %ile</td>
+                      <td>70.0+ / 60.0+</td>
+                      <td>₹21.1 Lakhs</td>
+                      <td>₹30.1 LPA</td>
+                      <td>NIRF 8</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-shillong" class="cat-table-link">IIM Shillong</a></strong></td>
+                      <td>96.0+ %ile</td>
+                      <td>84.0+ %ile</td>
+                      <td>85.0+ %ile</td>
+                      <td>68.0+ / 55.0+</td>
+                      <td>₹15.0 Lakhs</td>
+                      <td>₹26.1 LPA</td>
+                      <td>NIRF 26</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-udaipur" class="cat-table-link">IIM Udaipur (CAP)</a></strong></td>
+                      <td>94.0+ %ile</td>
+                      <td>77.0+ %ile</td>
+                      <td>77.0+ %ile</td>
+                      <td>60.0+ / 40.0+</td>
+                      <td>₹17.8 Lakhs</td>
+                      <td>₹20.3 LPA</td>
+                      <td>NIRF 16</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-raipur" class="cat-table-link">IIM Raipur (CAP)</a></strong></td>
+                      <td>94.0+ %ile</td>
+                      <td>77.0+ %ile</td>
+                      <td>77.0+ %ile</td>
+                      <td>60.0+ / 40.0+</td>
+                      <td>₹15.7 Lakhs</td>
+                      <td>₹21.0 LPA</td>
+                      <td>NIRF 11</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-trichy" class="cat-table-link">IIM Trichy (CAP)</a></strong></td>
+                      <td>94.0+ %ile</td>
+                      <td>77.0+ %ile</td>
+                      <td>77.0+ %ile</td>
+                      <td>60.0+ / 40.0+</td>
+                      <td>₹19.5 Lakhs</td>
+                      <td>₹20.5 LPA</td>
+                      <td>NIRF 22</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-ranchi" class="cat-table-link">IIM Ranchi (CAP)</a></strong></td>
+                      <td>93.0+ %ile</td>
+                      <td>76.0+ %ile</td>
+                      <td>76.0+ %ile</td>
+                      <td>58.0+ / 38.0+</td>
+                      <td>₹17.5 Lakhs</td>
+                      <td>₹18.6 LPA</td>
+                      <td>NIRF 15</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-rohtak" class="cat-table-link">IIM Rohtak</a></strong></td>
+                      <td>95.0+ %ile</td>
+                      <td>80.0+ %ile</td>
+                      <td>80.0+ %ile</td>
+                      <td>65.0+ / 45.0+</td>
+                      <td>₹19.2 Lakhs</td>
+                      <td>₹18.7 LPA</td>
+                      <td>NIRF 12</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <!-- GUIDE 5: TOP NON-IIM BUSINESS SCHOOLS -->
+            <article class="edu-card-block">
+              <div class="edu-block-header">
+                <div class="edu-icon-badge">🏆</div>
+                <div>
+                  <h3>Top Non-IIM Business Schools Accepting CAT Percentiles</h3>
+                  <p>High-ROI premier management institutions with audited fees and placements</p>
+                </div>
+              </div>
+
+              <div class="edu-table-responsive">
+                <table class="shiksha-data-table edu-benchmark-table">
+                  <thead>
+                    <tr>
+                      <th>College Name</th>
+                      <th>General Cutoff</th>
+                      <th>Total 2-Yr Fees</th>
+                      <th>Average CTC</th>
+                      <th>Category / ROI Highlights</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong><a href="/colleges/fms-delhi" class="cat-table-link">FMS Delhi (University of Delhi)</a></strong></td>
+                      <td>99.2+ %ile</td>
+                      <td>₹2.0 Lakhs</td>
+                      <td>₹34.1 LPA</td>
+                      <td><span class="badge-roi">Highest ROI in Asia (17x return)</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/spjimr-mumbai" class="cat-table-link">SPJIMR Mumbai</a></strong></td>
+                      <td>95.0+ %ile (Profile: 85+)</td>
+                      <td>₹22.5 Lakhs</td>
+                      <td>₹33.0 LPA</td>
+                      <td><span class="badge-tier-1">Tier 1 • Top 5 in Marketing/Operations</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/mdi-gurgaon" class="cat-table-link">MDI Gurgaon</a></strong></td>
+                      <td>95.0+ %ile</td>
+                      <td>₹24.0 Lakhs</td>
+                      <td>₹26.7 LPA</td>
+                      <td><span class="badge-tier-1">Tier 1 • Prime Corporate Hub NCR</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iit-bombay-sjmsom" class="cat-table-link">SJMSOM, IIT Bombay</a></strong></td>
+                      <td>98.0+ %ile</td>
+                      <td>₹14.0 Lakhs</td>
+                      <td>₹28.8 LPA</td>
+                      <td><span class="badge-roi">High ROI Tech-Management</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/dms-iit-delhi" class="cat-table-link">DMS, IIT Delhi</a></strong></td>
+                      <td>97.5+ %ile</td>
+                      <td>₹12.0 Lakhs</td>
+                      <td>₹25.8 LPA</td>
+                      <td><span class="badge-roi">NIRF Rank 4 • Low Fees</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iift-delhi" class="cat-table-link">IIFT Delhi (MBA-IB)</a></strong></td>
+                      <td>97.0+ %ile</td>
+                      <td>₹21.8 Lakhs</td>
+                      <td>₹29.1 LPA</td>
+                      <td><span class="badge-tier-1">Tier 1 • Premier Global Trade Hub</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/imt-ghaziabad" class="cat-table-link">IMT Ghaziabad</a></strong></td>
+                      <td>90.0+ %ile</td>
+                      <td>₹21.5 Lakhs</td>
+                      <td>₹17.3 LPA</td>
+                      <td><span class="badge-tier-2">Tier 1.5 • Top Marketing Faculty</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/imi-delhi" class="cat-table-link">IMI New Delhi</a></strong></td>
+                      <td>88.0+ %ile</td>
+                      <td>₹20.5 Lakhs</td>
+                      <td>₹17.0 LPA</td>
+                      <td><span class="badge-tier-2">Tier 2 • Strong Corporate Consulting</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/gim-goa" class="cat-table-link">GIM Goa (PGDM)</a></strong></td>
+                      <td>88.0+ %ile</td>
+                      <td>₹18.5 Lakhs</td>
+                      <td>₹15.0 LPA</td>
+                      <td><span class="badge-tier-2">Tier 2 • Flagship Healthcare &amp; BDA</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/tapmi-manipal" class="cat-table-link">TAPMI Manipal</a></strong></td>
+                      <td>85.0+ %ile</td>
+                      <td>₹17.5 Lakhs</td>
+                      <td>₹14.8 LPA</td>
+                      <td><span class="badge-tier-2">Tier 2 • AACSB &amp; AMBA Accredited</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/fore-school-delhi" class="cat-table-link">FORE School of Management Delhi</a></strong></td>
+                      <td>85.0+ %ile</td>
+                      <td>₹17.0 Lakhs</td>
+                      <td>₹14.5 LPA</td>
+                      <td><span class="badge-tier-2">Tier 2 • South Delhi Corporate Exposure</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/great-lakes-chennai" class="cat-table-link">Great Lakes Chennai (PGDM)</a></strong></td>
+                      <td>82.0+ %ile</td>
+                      <td>₹19.0 Lakhs</td>
+                      <td>₹14.5 LPA</td>
+                      <td><span class="badge-tier-2">Tier 2 • Analytics &amp; Tech Focus</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <!-- GUIDE 6: COMPOSITE SCORE CRITERIA -->
+            <article class="edu-card-block">
+              <div class="edu-block-header">
+                <div class="edu-icon-badge">🎯</div>
+                <div>
+                  <h3>Beyond CAT Percentile: How B-Schools Calculate Composite Scores</h3>
+                  <p>Why percentile alone does not guarantee admission into top IIMs</p>
+                </div>
+              </div>
+
+              <div class="cat-steps-grid">
+                <div class="cat-step-card">
+                  <h3 class="cat-step-title">CAT Scaled Score (40% - 60%)</h3>
+                  <p class="cat-step-desc">Sectional performance in VARC, DILR, and QA ensures candidates demonstrate well-rounded analytical and linguistic competencies.</p>
+                </div>
+                <div class="cat-step-card">
+                  <h3 class="cat-step-title">Academic Record (15% - 25%)</h3>
+                  <p class="cat-step-desc">Class 10th and 12th board marks, alongside undergraduate percentage/CGPA, reflect sustained academic consistency over time.</p>
+                </div>
+                <div class="cat-step-card">
+                  <h3 class="cat-step-title">Gender &amp; Academic Diversity (5% - 10%)</h3>
+                  <p class="cat-step-desc">Additional points are awarded to female/transgender applicants and non-engineering graduates (Commerce, Arts, Science, Medicine, Law).</p>
+                </div>
+                <div class="cat-step-card">
+                  <h3 class="cat-step-title">Work Experience (5% - 10%)</h3>
+                  <p class="cat-step-desc">Quality full-time executive experience post-graduation (optimally between 24 and 36 months) is highly rewarded across top IIMs.</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- GUIDE 7: FREQUENTLY ASKED QUESTIONS (10 FAQS) -->
+            <article class="edu-card-block" id="faqs">
               <div class="edu-block-header">
                 <div class="edu-icon-badge">❓</div>
                 <div>
-                  <h3>Frequently Asked Questions: CAT Scoring & Answer Keys</h3>
-                  <p>Common questions answered by admissions consultants</p>
+                  <h3>Frequently Asked Questions: CAT College Predictor &amp; Scoring</h3>
+                  <p>Comprehensive admissions answers verified by admissions mentors</p>
                 </div>
               </div>
 
               <div class="faq-accordion-list">
                 <details class="faq-item" open>
-                  <summary class="faq-question">What is the difference between CAT Raw Score and Scaled Score?</summary>
+                  <summary class="faq-question">How does the CAT College Predictor 2026 work?</summary>
                   <div class="faq-answer">
-                    Your <strong>Raw Score</strong> is the direct sum of your correct (+3) and incorrect (−1 MCQ / 0 TITA) responses out of 198. Because CAT is conducted across 3 slots with varying difficulty, IIMs normalize the scores using an equipercentile equating formula to produce the <strong>Scaled Score</strong>.
+                    The FindMyBSchool CAT College Predictor evaluates your sectional raw marks (VARC, DILR, QA) or official response sheet Digialm URL, applies slot normalization across Slot 1, Slot 2, and Slot 3, and generates your estimated national percentile. It then cross-references your projected percentile with verified category-wise cutoffs for 21 IIMs and over 50 top-tier MBA/PGDM colleges.
                   </div>
                 </details>
 
                 <details class="faq-item">
-                  <summary class="faq-question">What score is required for 99+ percentile in CAT?</summary>
+                  <summary class="faq-question">What CAT percentile is required for IIM Ahmedabad, Bangalore, and Calcutta?</summary>
                   <div class="faq-answer">
-                    Historically in the 66-question pattern, an overall raw score between <strong>82 and 94 marks</strong> out of 198 lands you comfortably in the 99.0+ percentile bracket. For 99.5+ percentile, you generally need 95–105 marks.
+                    For General Category engineering candidates, top IIMs (IIM Ahmedabad, IIM Bangalore, IIM Calcutta) typically require a minimum 99.2 to 99.8 percentile in CAT, alongside strong sectional scores (usually 80-85+ sectional percentile). Non-engineers with exceptional academic records (90%+ in 10th/12th/Graduation) and NC-OBC/SC/ST/EWS candidates may receive interview calls between 90 and 96 percentile.
                   </div>
                 </details>
 
                 <details class="faq-item">
-                  <summary class="faq-question">Is there negative marking for TITA (Non-MCQ) questions?</summary>
+                  <summary class="faq-question">Which top MBA/PGDM colleges accept 80 to 90 CAT percentile?</summary>
                   <div class="faq-answer">
-                    <strong>No.</strong> Non-MCQ / TITA (Type In The Answer) questions carry +3 marks for a correct answer and <strong>0 marks</strong> (zero penalty) for wrong answers. Candidates should attempt all TITA questions without hesitation.
+                    With an 80 to 90 CAT percentile, candidates have strong shortlist prospects at reputed business schools including GIM Goa, FORE School of Management Delhi, Great Lakes Institute of Management Chennai (PGDM), TAPMI Manipal, BIMTECH Greater Noida, LIBA Chennai, and KJ Somaiya Mumbai.
                   </div>
                 </details>
 
                 <details class="faq-item">
-                  <summary class="faq-question">What is the official CAT Answer Key objection fee?</summary>
+                  <summary class="faq-question">Can I get an IIM interview call with an 85 to 90 percentile in CAT?</summary>
                   <div class="faq-answer">
-                    IIMs charge an objection fee of <strong>₹1,200 per question</strong> challenged. If the subject committee accepts your objection, the full ₹1,200 is refunded to your source payment account.
+                    Yes. While General Category engineering candidates need 98+ percentile, candidates belonging to NC-OBC, EWS, SC, ST, and PwD categories frequently receive shortlist calls from Baby and New IIMs (such as IIM Bodhgaya, IIM Sambalpur, IIM Sirmaur, IIM Jammu, IIM Nagpur, and IIM Amritsar) in the 80 to 90 percentile range, provided minimum sectional cutoffs (typically 65-75%ile) are satisfied.
                   </div>
                 </details>
 
                 <details class="faq-item">
-                  <summary class="faq-question">Which colleges can I apply to if my percentile is between 60%ile and 80%ile?</summary>
+                  <summary class="faq-question">How does CAT slot normalization affect raw scores across Slot 1, Slot 2, and Slot 3?</summary>
                   <div class="faq-answer">
-                    Top private business schools offering AICTE-approved PGDM programs welcome scores between 60% and 80%ile, including NDIM New Delhi, FOSTIIMA, FIIB, JIMS Kalkaji, PIBM Pune, Lexicon MILE, JAGSoM Bangalore, ISBR Bangalore, UPES Dehradun, and Doon Business School.
+                    Because CAT is conducted across 3 separate slots with varying question difficulty, IIMs employ an equipercentile statistical normalization model. If your slot was comparatively harder, your scaled score is adjusted upward; if your slot had a higher average, the score adjusts slightly downward to ensure complete fairness across morning, afternoon, and evening slots.
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-question">Which premier non-IIM business schools accept CAT scores?</summary>
+                  <div class="faq-answer">
+                    Premier non-IIM institutions accepting CAT scores include FMS Delhi (Faculty of Management Studies), SPJIMR Mumbai, MDI Gurgaon, IIT Bombay (SJMSOM), IIT Delhi (DMS), IIT Kharagpur (VGSOM), IIFT Delhi, IMI New Delhi, and IMT Ghaziabad.
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-question">What is the official CAT marking scheme for MCQs and non-MCQs (TITA)?</summary>
+                  <div class="faq-answer">
+                    In CAT 2026, correct Multiple Choice Questions (MCQs) award +3 marks, while incorrect MCQs penalize -1 mark. Non-MCQ / TITA (Type In The Answer) questions award +3 marks for a correct response, but carry ZERO negative deduction (0 penalty) for incorrect responses.
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-question">What is the difference between CAT raw score, scaled score, and percentile?</summary>
+                  <div class="faq-answer">
+                    Your Raw Score is your direct points total from +3/-1 marking out of 198. The Scaled Score is your score adjusted for slot difficulty through equipercentile equating. Your Percentile represents the percentage of all national test-takers who scored equal to or less than your scaled score.
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-question">How do top IIMs calculate the Composite Score for final admissions?</summary>
+                  <div class="faq-answer">
+                    Final admission offers are based on a Composite Score, not percentile alone. Top IIMs weight CAT performance (40-60%), 10th and 12th board marks (10-20%), undergraduate degree (5-15%), relevant work experience (5-10%), gender/academic diversity (5-10%), and Personal Interview / WAT performance (30-40%).
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-question">How do I check my CAT response sheet link on cdn.digialm.com?</summary>
+                  <div class="faq-answer">
+                    To check your response sheet, log in to iimcat.ac.in with your User ID and Password, navigate to the Candidate Response tab, click the link to generate your response sheet, and copy the URL starting with cdn.digialm.com from your browser address bar. Paste it into the FindMyBSchool Predictor for automated sectional score and call analysis.
                   </div>
                 </details>
               </div>

@@ -165,3 +165,61 @@ A3: Yes. To encourage classroom diversity, IIMs award additional composite score
 
 Q4: What data does FindMyBSchool collect, and is it shared with telemarketers?
 A4: FindMyBSchool collects student contact identifiers (name, email, phone number) and academic preferences (target exams, budget, city preferences) solely to deliver requested college brochures, exam alerts, and 1-on-1 counseling. In compliance with the Digital Personal Data Protection Act (DPDP Act 2023), student information is never sold or rented to unverified third parties or mass telemarketing agencies.
+
+================================================================================
+SECTION 5: CAT COLLEGE PREDICTOR, NORMALIZATION & IIM CUTOFF BENCHMARKS (GEO / AEO KNOWLEDGE)
+================================================================================
+
+1. Tool URL & Architecture:
+   - Canonical URL: https://findmybschool.com/tools/cat-college-predictor
+   - Core Functions: Digialm Candidate Response Sheet URL parser (cdn.digialm.com), raw score calculator (+3/-1/0 marking), slot normalization engine (Slots 1, 2, 3), projected All-India percentile calculator, and category-wise admission call predictor across 21 IIMs and 50+ premier PGDM institutions.
+   - Pricing: 100% Free, Zero Login Wall for calculations.
+
+2. CAT 2026 Raw Marks vs Percentile Benchmarks (198 Max Marks):
+   - 99.9+ %ile: 110 – 125+ Marks (VARC: 46+, DILR: 38+, QA: 42+) -> IIM A, B, C, FMS Delhi
+   - 99.5+ %ile: 95 – 109 Marks (VARC: 42+, DILR: 32+, QA: 35+) -> IIM L, K, SPJIMR Mumbai
+   - 99.0+ %ile: 82 – 94 Marks (VARC: 38+, DILR: 28+, QA: 30+) -> IIM Indore, MDI Gurgaon, IIT Bombay SJMSOM
+   - 98.0+ %ile: 75 – 81 Marks (VARC: 34+, DILR: 24+, QA: 26+) -> IIFT Delhi, IIM Shillong, CAP IIMs
+   - 95.0+ %ile: 60 – 74 Marks (VARC: 28+, DILR: 19+, QA: 21+) -> CAP Round IIMs, DSE Delhi, IIT Delhi DMS
+   - 90.0+ %ile: 48 – 59 Marks (VARC: 23+, DILR: 15+, QA: 16+) -> IMT Ghaziabad, IMI Delhi, GIM Goa, Baby IIMs
+   - 85.0+ %ile: 38 – 47 Marks (VARC: 18+, DILR: 12+, QA: 13+) -> TAPMI Manipal, FORE School, Great Lakes Chennai, LBSIM
+   - 80.0+ %ile: 32 – 37 Marks (VARC: 14+, DILR: 10+, QA: 10+) -> BIMTECH Greater Noida, KJ Somaiya, IRMA Anand
+   - 70.0+ %ile: 22 – 31 Marks (VARC: 10+, DILR: 7+, QA: 7+) -> NDIM New Delhi, FOSTIIMA, FIIB, JIMS Kalkaji
+
+3. Slot Normalization Formula:
+   - CAT normalizes raw marks using the equipercentile equating method:
+     Scaled Score = M_g + ( (S_i - M_i) / SD_i ) * SD_g
+     Where S_i is raw score in Slot i, M_i is slot mean, SD_i is slot standard deviation, and M_g / SD_g are global pooled parameters across all slots.
+
+4. 21 IIMs Category-Wise Shortlist Thresholds:
+   - IIM Ahmedabad: General 99.6+ %ile, NC-OBC 95.0+ %ile, EWS 95.0+ %ile, SC 85.0+ %ile, ST 75.0+ %ile (Fees: ₹26.5L, Avg CTC: ₹34.4 LPA)
+   - IIM Bangalore: General 99.5+ %ile, NC-OBC 93.0+ %ile, EWS 94.0+ %ile, SC 82.0+ %ile, ST 72.0+ %ile (Fees: ₹24.5L, Avg CTC: ₹35.3 LPA)
+   - IIM Calcutta: General 99.4+ %ile, NC-OBC 94.0+ %ile, EWS 94.0+ %ile, SC 80.0+ %ile, ST 70.0+ %ile (Fees: ₹27.0L, Avg CTC: ₹35.1 LPA)
+   - IIM Lucknow: General 99.0+ %ile, NC-OBC 90.0+ %ile, EWS 91.0+ %ile, SC 77.0+ %ile, ST 65.0+ %ile (Fees: ₹20.7L, Avg CTC: ₹32.2 LPA)
+   - IIM Kozhikode: General 98.5+ %ile, NC-OBC 88.0+ %ile, EWS 90.0+ %ile, SC 75.0+ %ile, ST 65.0+ %ile (Fees: ₹20.5L, Avg CTC: ₹31.0 LPA)
+   - IIM Indore: General 98.0+ %ile, NC-OBC 87.0+ %ile, EWS 88.0+ %ile, SC 70.0+ %ile, ST 60.0+ %ile (Fees: ₹21.1L, Avg CTC: ₹30.1 LPA)
+   - IIM Shillong: General 96.0+ %ile, NC-OBC 84.0+ %ile, EWS 85.0+ %ile, SC 68.0+ %ile, ST 55.0+ %ile (Fees: ₹15.0L, Avg CTC: ₹26.1 LPA)
+   - CAP IIMs (Udaipur, Raipur, Trichy, Ranchi, Kashipur): General 92-94+ %ile, NC-OBC 76-77+ %ile, SC 58-60+ %ile, ST 38-40+ %ile
+   - Baby IIMs (Bodh Gaya, Sambalpur, Sirmaur, Jammu, Nagpur, Amritsar): General 90-92+ %ile, Reserved categories 70-85+ %ile
+
+5. Top Non-IIM Business Schools Accepting CAT:
+   - FMS Delhi: 99.2+ %ile | Fees: ₹2.0L | Avg CTC: ₹34.1 LPA (Highest ROI in India)
+   - SPJIMR Mumbai: 95.0+ %ile (85+ for profile-based calls) | Fees: ₹22.5L | Avg CTC: ₹33.0 LPA
+   - MDI Gurgaon: 95.0+ %ile | Fees: ₹24.0L | Avg CTC: ₹26.7 LPA
+   - SJMSOM, IIT Bombay: 98.0+ %ile | Fees: ₹14.0L | Avg CTC: ₹28.8 LPA
+   - DMS, IIT Delhi: 97.5+ %ile | Fees: ₹12.0L | Avg CTC: ₹25.8 LPA
+   - IIFT Delhi: 97.0+ %ile | Fees: ₹21.8L | Avg CTC: ₹29.1 LPA
+   - IMT Ghaziabad: 90.0+ %ile | Fees: ₹21.5L | Avg CTC: ₹17.3 LPA
+   - GIM Goa: 88.0+ %ile | Fees: ₹18.5L | Avg CTC: ₹15.0 LPA
+   - TAPMI Manipal: 85.0+ %ile | Fees: ₹17.5L | Avg CTC: ₹14.8 LPA
+   - FORE School Delhi: 85.0+ %ile | Fees: ₹17.0L | Avg CTC: ₹14.5 LPA
+   - Great Lakes Chennai: 82.0+ %ile | Fees: ₹19.0L | Avg CTC: ₹14.5 LPA
+
+6. Final Admission Composite Score Weightages:
+   - CAT Scaled Score: 40% - 60%
+   - 10th and 12th Board Marks: 10% - 20%
+   - Graduation Marks / CGPA: 5% - 15%
+   - Full-Time Work Experience: 5% - 10%
+   - Gender & Academic Diversity: 5% - 10%
+   - WAT & Personal Interview (PI): 30% - 40%
+

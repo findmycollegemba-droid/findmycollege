@@ -39,7 +39,7 @@ addUrl(`${BASE_URL}/programs/specializations`, 'weekly', '0.8');
 addUrl(`${BASE_URL}/programs/roi`, 'weekly', '0.8');
 
 // 3. Score Calculators & Tools
-addUrl(`${BASE_URL}/tools/cat-college-predictor`, 'daily', '0.9');
+addUrl(`${BASE_URL}/tools/cat-college-predictor`, 'daily', '1.0');
 addUrl(`${BASE_URL}/tools/xat-percentile-calculator`, 'weekly', '0.85');
 addUrl(`${BASE_URL}/tools/cmat-percentile-calculator`, 'weekly', '0.85');
 
