@@ -715,8 +715,8 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>95.0+ %ile</td>
                       <td>85.0+ / 75.0+</td>
                       <td>₹26.5 Lakhs</td>
-                      <td>₹34.4 LPA</td>
-                      <td>NIRF 1</td>
+                      <td>₹36.98 LPA</td>
+                      <td>NIRF #1</td>
                     </tr>
                     <tr>
                       <td><strong><a href="/colleges/iim-bangalore" class="cat-table-link">IIM Bangalore</a></strong></td>
@@ -724,9 +724,19 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>93.0+ %ile</td>
                       <td>94.0+ %ile</td>
                       <td>82.0+ / 72.0+</td>
-                      <td>₹24.5 Lakhs</td>
-                      <td>₹35.3 LPA</td>
-                      <td>NIRF 2</td>
+                      <td>₹26.0 Lakhs</td>
+                      <td>₹35.35 LPA</td>
+                      <td>NIRF #2</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-kozhikode" class="cat-table-link">IIM Kozhikode</a></strong></td>
+                      <td>98.5+ %ile</td>
+                      <td>88.0+ %ile</td>
+                      <td>90.0+ %ile</td>
+                      <td>75.0+ / 65.0+</td>
+                      <td>₹21.5 Lakhs</td>
+                      <td>₹28.18 LPA</td>
+                      <td>NIRF #3</td>
                     </tr>
                     <tr>
                       <td><strong><a href="/colleges/iim-calcutta" class="cat-table-link">IIM Calcutta</a></strong></td>
@@ -735,8 +745,18 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>94.0+ %ile</td>
                       <td>80.0+ / 70.0+</td>
                       <td>₹27.0 Lakhs</td>
-                      <td>₹35.1 LPA</td>
-                      <td>NIRF 4</td>
+                      <td>₹36.00 LPA</td>
+                      <td>NIRF #5</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-mumbai" class="cat-table-link">IIM Mumbai</a></strong></td>
+                      <td>98.0+ %ile</td>
+                      <td>88.0+ %ile</td>
+                      <td>90.0+ %ile</td>
+                      <td>75.0+ / 65.0+</td>
+                      <td>₹21.0 Lakhs</td>
+                      <td>₹31.50 LPA</td>
+                      <td>NIRF #6</td>
                     </tr>
                     <tr>
                       <td><strong><a href="/colleges/iim-lucknow" class="cat-table-link">IIM Lucknow</a></strong></td>
@@ -744,19 +764,9 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>90.0+ %ile</td>
                       <td>91.0+ %ile</td>
                       <td>77.0+ / 65.0+</td>
-                      <td>₹20.7 Lakhs</td>
-                      <td>₹32.2 LPA</td>
-                      <td>NIRF 6</td>
-                    </tr>
-                    <tr>
-                      <td><strong><a href="/colleges/iim-kozhikode" class="cat-table-link">IIM Kozhikode</a></strong></td>
-                      <td>98.5+ %ile</td>
-                      <td>88.0+ %ile</td>
-                      <td>90.0+ %ile</td>
-                      <td>75.0+ / 65.0+</td>
-                      <td>₹20.5 Lakhs</td>
-                      <td>₹31.0 LPA</td>
-                      <td>NIRF 3</td>
+                      <td>₹20.8 Lakhs</td>
+                      <td>₹33.20 LPA</td>
+                      <td>NIRF #7</td>
                     </tr>
                     <tr>
                       <td><strong><a href="/colleges/iim-indore" class="cat-table-link">IIM Indore</a></strong></td>
@@ -764,59 +774,9 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>87.0+ %ile</td>
                       <td>88.0+ %ile</td>
                       <td>70.0+ / 60.0+</td>
-                      <td>₹21.1 Lakhs</td>
-                      <td>₹30.1 LPA</td>
-                      <td>NIRF 8</td>
-                    </tr>
-                    <tr>
-                      <td><strong><a href="/colleges/iim-shillong" class="cat-table-link">IIM Shillong</a></strong></td>
-                      <td>96.0+ %ile</td>
-                      <td>84.0+ %ile</td>
-                      <td>85.0+ %ile</td>
-                      <td>68.0+ / 55.0+</td>
-                      <td>₹15.0 Lakhs</td>
-                      <td>₹26.1 LPA</td>
-                      <td>NIRF 26</td>
-                    </tr>
-                    <tr>
-                      <td><strong><a href="/colleges/iim-udaipur" class="cat-table-link">IIM Udaipur (CAP)</a></strong></td>
-                      <td>94.0+ %ile</td>
-                      <td>77.0+ %ile</td>
-                      <td>77.0+ %ile</td>
-                      <td>60.0+ / 40.0+</td>
-                      <td>₹17.8 Lakhs</td>
-                      <td>₹20.3 LPA</td>
-                      <td>NIRF 16</td>
-                    </tr>
-                    <tr>
-                      <td><strong><a href="/colleges/iim-raipur" class="cat-table-link">IIM Raipur (CAP)</a></strong></td>
-                      <td>94.0+ %ile</td>
-                      <td>77.0+ %ile</td>
-                      <td>77.0+ %ile</td>
-                      <td>60.0+ / 40.0+</td>
-                      <td>₹15.7 Lakhs</td>
-                      <td>₹21.0 LPA</td>
-                      <td>NIRF 11</td>
-                    </tr>
-                    <tr>
-                      <td><strong><a href="/colleges/iim-trichy" class="cat-table-link">IIM Trichy (CAP)</a></strong></td>
-                      <td>94.0+ %ile</td>
-                      <td>77.0+ %ile</td>
-                      <td>77.0+ %ile</td>
-                      <td>60.0+ / 40.0+</td>
-                      <td>₹19.5 Lakhs</td>
-                      <td>₹20.5 LPA</td>
-                      <td>NIRF 22</td>
-                    </tr>
-                    <tr>
-                      <td><strong><a href="/colleges/iim-ranchi" class="cat-table-link">IIM Ranchi (CAP)</a></strong></td>
-                      <td>93.0+ %ile</td>
-                      <td>76.0+ %ile</td>
-                      <td>76.0+ %ile</td>
-                      <td>58.0+ / 38.0+</td>
-                      <td>₹17.5 Lakhs</td>
-                      <td>₹18.6 LPA</td>
-                      <td>NIRF 15</td>
+                      <td>₹21.0 Lakhs</td>
+                      <td>₹27.27 LPA</td>
+                      <td>NIRF #8</td>
                     </tr>
                     <tr>
                       <td><strong><a href="/colleges/iim-rohtak" class="cat-table-link">IIM Rohtak</a></strong></td>
@@ -824,9 +784,139 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>80.0+ %ile</td>
                       <td>80.0+ %ile</td>
                       <td>65.0+ / 45.0+</td>
-                      <td>₹19.2 Lakhs</td>
-                      <td>₹18.7 LPA</td>
-                      <td>NIRF 12</td>
+                      <td>₹17.90 Lakhs</td>
+                      <td>₹19.27 LPA</td>
+                      <td>NIRF #12</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-raipur" class="cat-table-link">IIM Raipur (CAP)</a></strong></td>
+                      <td>94.0+ %ile</td>
+                      <td>77.0+ %ile</td>
+                      <td>77.0+ %ile</td>
+                      <td>60.0+ / 40.0+</td>
+                      <td>₹20.08 Lakhs</td>
+                      <td>₹20.70 LPA</td>
+                      <td>NIRF #14</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-ranchi" class="cat-table-link">IIM Ranchi (CAP)</a></strong></td>
+                      <td>93.0+ %ile</td>
+                      <td>76.0+ %ile</td>
+                      <td>76.0+ %ile</td>
+                      <td>58.0+ / 38.0+</td>
+                      <td>₹19.20 Lakhs</td>
+                      <td>₹19.26 LPA</td>
+                      <td>NIRF #17</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-udaipur" class="cat-table-link">IIM Udaipur (CAP)</a></strong></td>
+                      <td>94.0+ %ile</td>
+                      <td>77.0+ %ile</td>
+                      <td>77.0+ %ile</td>
+                      <td>60.0+ / 40.0+</td>
+                      <td>₹20.50 Lakhs</td>
+                      <td>₹18.80 LPA</td>
+                      <td>NIRF #22</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-kashipur" class="cat-table-link">IIM Kashipur (CAP)</a></strong></td>
+                      <td>93.0+ %ile</td>
+                      <td>76.0+ %ile</td>
+                      <td>76.0+ %ile</td>
+                      <td>58.0+ / 38.0+</td>
+                      <td>₹20.46 Lakhs</td>
+                      <td>₹14.95 LPA</td>
+                      <td>NIRF #23</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-shillong" class="cat-table-link">IIM Shillong</a></strong></td>
+                      <td>96.0+ %ile</td>
+                      <td>84.0+ %ile</td>
+                      <td>85.0+ %ile</td>
+                      <td>68.0+ / 55.0+</td>
+                      <td>₹26.00 Lakhs</td>
+                      <td>₹27.03 LPA</td>
+                      <td>NIRF #24</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-visakhapatnam" class="cat-table-link">IIM Visakhapatnam</a></strong></td>
+                      <td>92.0+ %ile</td>
+                      <td>75.0+ %ile</td>
+                      <td>75.0+ %ile</td>
+                      <td>55.0+ / 35.0+</td>
+                      <td>₹18.50 Lakhs</td>
+                      <td>₹15.61 LPA</td>
+                      <td>NIRF #26</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-trichy" class="cat-table-link">IIM Trichy (CAP)</a></strong></td>
+                      <td>94.0+ %ile</td>
+                      <td>77.0+ %ile</td>
+                      <td>77.0+ %ile</td>
+                      <td>60.0+ / 40.0+</td>
+                      <td>₹19.50 Lakhs</td>
+                      <td>₹20.55 LPA</td>
+                      <td>NIRF #27</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-nagpur" class="cat-table-link">IIM Nagpur</a></strong></td>
+                      <td>92.0+ %ile</td>
+                      <td>75.0+ %ile</td>
+                      <td>75.0+ %ile</td>
+                      <td>55.0+ / 35.0+</td>
+                      <td>₹18.90 Lakhs</td>
+                      <td>₹16.74 LPA</td>
+                      <td>NIRF #31</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-bodh-gaya" class="cat-table-link">IIM Bodh Gaya (CAP)</a></strong></td>
+                      <td>90.0+ %ile</td>
+                      <td>74.0+ %ile</td>
+                      <td>74.0+ %ile</td>
+                      <td>54.0+ / 35.0+</td>
+                      <td>₹17.00 Lakhs</td>
+                      <td>₹14.96 LPA</td>
+                      <td>NIRF #33</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-jammu" class="cat-table-link">IIM Jammu (CAP)</a></strong></td>
+                      <td>90.0+ %ile</td>
+                      <td>74.0+ %ile</td>
+                      <td>74.0+ %ile</td>
+                      <td>54.0+ / 35.0+</td>
+                      <td>₹18.85 Lakhs</td>
+                      <td>₹15.48 LPA</td>
+                      <td>NIRF #42</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-amritsar" class="cat-table-link">IIM Amritsar (CAP)</a></strong></td>
+                      <td>90.0+ %ile</td>
+                      <td>74.0+ %ile</td>
+                      <td>74.0+ %ile</td>
+                      <td>54.0+ / 35.0+</td>
+                      <td>₹17.30 Lakhs</td>
+                      <td>₹16.51 LPA</td>
+                      <td>NIRF #47</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-sambalpur" class="cat-table-link">IIM Sambalpur (CAP)</a></strong></td>
+                      <td>90.0+ %ile</td>
+                      <td>74.0+ %ile</td>
+                      <td>74.0+ %ile</td>
+                      <td>54.0+ / 35.0+</td>
+                      <td>₹18.00 Lakhs</td>
+                      <td>₹14.21 LPA</td>
+                      <td>NIRF #50</td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/iim-sirmaur" class="cat-table-link">IIM Sirmaur (CAP)</a></strong></td>
+                      <td>90.0+ %ile</td>
+                      <td>74.0+ %ile</td>
+                      <td>74.0+ %ile</td>
+                      <td>54.0+ / 35.0+</td>
+                      <td>₹17.50 Lakhs</td>
+                      <td>₹14.45 LPA</td>
+                      <td>NIRF #57</td>
                     </tr>
                   </tbody>
                 </table>
@@ -858,86 +948,107 @@ export function renderToolsPage(activeSub = 'cat') {
                     <tr>
                       <td><strong><a href="/colleges/fms-delhi" class="cat-table-link">FMS Delhi (University of Delhi)</a></strong></td>
                       <td>99.2+ %ile</td>
-                      <td>₹2.0 Lakhs</td>
-                      <td>₹34.1 LPA</td>
+                      <td>₹2.00 Lakhs</td>
+                      <td>₹34.10 LPA</td>
                       <td><span class="badge-roi">Highest ROI in Asia (17x return)</span></td>
                     </tr>
                     <tr>
                       <td><strong><a href="/colleges/spjimr-mumbai" class="cat-table-link">SPJIMR Mumbai</a></strong></td>
                       <td>95.0+ %ile (Profile: 85+)</td>
-                      <td>₹22.5 Lakhs</td>
-                      <td>₹33.0 LPA</td>
-                      <td><span class="badge-tier-1">Tier 1 • Top 5 in Marketing/Operations</span></td>
+                      <td>₹24.50 Lakhs</td>
+                      <td>₹33.75 LPA</td>
+                      <td><span class="badge-tier-1">NIRF #20 • Top 5 in Marketing/Operations</span></td>
                     </tr>
                     <tr>
                       <td><strong><a href="/colleges/mdi-gurgaon" class="cat-table-link">MDI Gurgaon</a></strong></td>
                       <td>95.0+ %ile</td>
-                      <td>₹24.0 Lakhs</td>
-                      <td>₹26.7 LPA</td>
-                      <td><span class="badge-tier-1">Tier 1 • Prime Corporate Hub NCR</span></td>
+                      <td>₹26.55 Lakhs</td>
+                      <td>₹29.50 LPA</td>
+                      <td><span class="badge-tier-1">NIRF #11 • Prime Corporate Hub NCR</span></td>
                     </tr>
                     <tr>
-                      <td><strong><a href="/colleges/iit-bombay-sjmsom" class="cat-table-link">SJMSOM, IIT Bombay</a></strong></td>
+                      <td><strong><a href="/colleges/sjmsom-iit-bombay" class="cat-table-link">SJMSOM, IIT Bombay</a></strong></td>
                       <td>98.0+ %ile</td>
-                      <td>₹14.0 Lakhs</td>
-                      <td>₹28.8 LPA</td>
-                      <td><span class="badge-roi">High ROI Tech-Management</span></td>
+                      <td>₹15.16 Lakhs</td>
+                      <td>₹28.16 LPA</td>
+                      <td><span class="badge-roi">NIRF #10 • High ROI Tech-Management</span></td>
                     </tr>
                     <tr>
                       <td><strong><a href="/colleges/dms-iit-delhi" class="cat-table-link">DMS, IIT Delhi</a></strong></td>
                       <td>97.5+ %ile</td>
-                      <td>₹12.0 Lakhs</td>
-                      <td>₹25.8 LPA</td>
-                      <td><span class="badge-roi">NIRF Rank 4 • Low Fees</span></td>
+                      <td>₹12.00 Lakhs</td>
+                      <td>₹25.82 LPA</td>
+                      <td><span class="badge-roi">NIRF #4 • Premier IIT Business School</span></td>
                     </tr>
                     <tr>
-                      <td><strong><a href="/colleges/iift-delhi" class="cat-table-link">IIFT Delhi (MBA-IB)</a></strong></td>
+                      <td><strong><a href="/colleges/iift-new-delhi" class="cat-table-link">IIFT Delhi (MBA-IB)</a></strong></td>
                       <td>97.0+ %ile</td>
-                      <td>₹21.8 Lakhs</td>
-                      <td>₹29.1 LPA</td>
-                      <td><span class="badge-tier-1">Tier 1 • Premier Global Trade Hub</span></td>
+                      <td>₹21.82 Lakhs</td>
+                      <td>₹31.30 LPA</td>
+                      <td><span class="badge-tier-1">NIRF #15 • Premier Global Trade Hub</span></td>
                     </tr>
                     <tr>
-                      <td><strong><a href="/colleges/imt-ghaziabad" class="cat-table-link">IMT Ghaziabad</a></strong></td>
-                      <td>90.0+ %ile</td>
-                      <td>₹21.5 Lakhs</td>
-                      <td>₹17.3 LPA</td>
-                      <td><span class="badge-tier-2">Tier 1.5 • Top Marketing Faculty</span></td>
-                    </tr>
-                    <tr>
-                      <td><strong><a href="/colleges/imi-delhi" class="cat-table-link">IMI New Delhi</a></strong></td>
-                      <td>88.0+ %ile</td>
-                      <td>₹20.5 Lakhs</td>
-                      <td>₹17.0 LPA</td>
-                      <td><span class="badge-tier-2">Tier 2 • Strong Corporate Consulting</span></td>
-                    </tr>
-                    <tr>
-                      <td><strong><a href="/colleges/gim-goa" class="cat-table-link">GIM Goa (PGDM)</a></strong></td>
-                      <td>88.0+ %ile</td>
-                      <td>₹18.5 Lakhs</td>
-                      <td>₹15.0 LPA</td>
-                      <td><span class="badge-tier-2">Tier 2 • Flagship Healthcare &amp; BDA</span></td>
-                    </tr>
-                    <tr>
-                      <td><strong><a href="/colleges/tapmi-manipal" class="cat-table-link">TAPMI Manipal</a></strong></td>
-                      <td>85.0+ %ile</td>
-                      <td>₹17.5 Lakhs</td>
-                      <td>₹14.8 LPA</td>
-                      <td><span class="badge-tier-2">Tier 2 • AACSB &amp; AMBA Accredited</span></td>
-                    </tr>
-                    <tr>
-                      <td><strong><a href="/colleges/fore-school-delhi" class="cat-table-link">FORE School of Management Delhi</a></strong></td>
-                      <td>85.0+ %ile</td>
-                      <td>₹17.0 Lakhs</td>
-                      <td>₹14.5 LPA</td>
-                      <td><span class="badge-tier-2">Tier 2 • South Delhi Corporate Exposure</span></td>
+                      <td><strong><a href="/colleges/ime-iit-kanpur" class="cat-table-link">IME, IIT Kanpur</a></strong></td>
+                      <td>93.0+ %ile</td>
+                      <td>₹3.80 Lakhs</td>
+                      <td>₹18.14 LPA</td>
+                      <td><span class="badge-roi">NIRF #29 • Stellar 4.7x ROI</span></td>
                     </tr>
                     <tr>
                       <td><strong><a href="/colleges/great-lakes-chennai" class="cat-table-link">Great Lakes Chennai (PGDM)</a></strong></td>
                       <td>82.0+ %ile</td>
-                      <td>₹19.0 Lakhs</td>
-                      <td>₹14.5 LPA</td>
-                      <td><span class="badge-tier-2">Tier 2 • Analytics &amp; Tech Focus</span></td>
+                      <td>₹20.75 Lakhs</td>
+                      <td>₹15.10 LPA</td>
+                      <td><span class="badge-tier-2">NIRF #34 • Analytics &amp; Tech Focus</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/imt-ghaziabad" class="cat-table-link">IMT Ghaziabad</a></strong></td>
+                      <td>90.0+ %ile</td>
+                      <td>₹21.53 Lakhs</td>
+                      <td>₹17.35 LPA</td>
+                      <td><span class="badge-tier-2">NIRF #35 • Top Marketing Faculty</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/gim-goa" class="cat-table-link">GIM Goa (PGDM)</a></strong></td>
+                      <td>88.0+ %ile</td>
+                      <td>₹19.50 Lakhs</td>
+                      <td>₹15.00 LPA</td>
+                      <td><span class="badge-tier-2">NIRF #37 • Flagship Healthcare &amp; BDA</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/imi-new-delhi" class="cat-table-link">IMI New Delhi</a></strong></td>
+                      <td>88.0+ %ile</td>
+                      <td>₹20.95 Lakhs</td>
+                      <td>₹16.88 LPA</td>
+                      <td><span class="badge-tier-2">NIRF #40 • Strong Corporate Consulting</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/ximb-bhubaneswar" class="cat-table-link">XIMB Bhubaneswar</a></strong></td>
+                      <td>91.0+ %ile</td>
+                      <td>₹22.10 Lakhs</td>
+                      <td>₹19.53 LPA</td>
+                      <td><span class="badge-tier-1">NIRF #43 • Finance &amp; Strategy Leader</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/fore-school-of-management-delhi" class="cat-table-link">FORE School of Management Delhi</a></strong></td>
+                      <td>85.0+ %ile</td>
+                      <td>₹18.98 Lakhs</td>
+                      <td>₹16.01 LPA</td>
+                      <td><span class="badge-tier-2">NIRF #53 • South Delhi Exposure</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/imnu-nirma-ahmedabad" class="cat-table-link">Institute of Management, Nirma University</a></strong></td>
+                      <td>80.0+ %ile</td>
+                      <td>₹12.90 Lakhs</td>
+                      <td>₹13.00 LPA</td>
+                      <td><span class="badge-tier-2">NIRF #55 • AACSB Accredited</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong><a href="/colleges/tapmi-manipal" class="cat-table-link">TAPMI Manipal</a></strong></td>
+                      <td>85.0+ %ile</td>
+                      <td>₹18.50 Lakhs</td>
+                      <td>₹14.80 LPA</td>
+                      <td><span class="badge-tier-2">NIRF #58 • AACSB &amp; AMBA Accredited</span></td>
                     </tr>
                   </tbody>
                 </table>
@@ -1339,72 +1450,100 @@ export function renderToolsPage(activeSub = 'cat') {
                   <tr>
                     <td><strong>IIM Ahmedabad (PGP)</strong></td>
                     <td>99.6+ %ile</td>
-                    <td>₹25.0 Lakhs</td>
-                    <td>₹34.4 LPA</td>
-                    <td>Tier 1</td>
+                    <td>₹26.5 Lakhs</td>
+                    <td>₹36.98 LPA</td>
+                    <td>NIRF #1 • Tier 1</td>
                   </tr>
                   <tr>
                     <td><strong>IIM Bangalore (PGP)</strong></td>
                     <td>99.5+ %ile</td>
-                    <td>₹24.5 Lakhs</td>
-                    <td>₹35.3 LPA</td>
-                    <td>Tier 1</td>
+                    <td>₹26.0 Lakhs</td>
+                    <td>₹35.35 LPA</td>
+                    <td>NIRF #2 • Tier 1</td>
                   </tr>
                   <tr>
                     <td><strong>IIM Calcutta (MBA)</strong></td>
                     <td>99.4+ %ile</td>
                     <td>₹27.0 Lakhs</td>
-                    <td>₹35.1 LPA</td>
-                    <td>Tier 1</td>
+                    <td>₹36.00 LPA</td>
+                    <td>NIRF #5 • Tier 1</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IIM Mumbai (MBA)</strong></td>
+                    <td>98.0+ %ile</td>
+                    <td>₹21.0 Lakhs</td>
+                    <td>₹31.50 LPA</td>
+                    <td>NIRF #6 • Tier 1</td>
                   </tr>
                   <tr>
                     <td><strong>FMS Delhi (MBA)</strong></td>
                     <td>99.2+ %ile</td>
-                    <td>₹2.0 Lakhs</td>
-                    <td>₹34.1 LPA</td>
-                    <td>Tier 1 (High ROI)</td>
+                    <td>₹2.00 Lakhs</td>
+                    <td>₹34.10 LPA</td>
+                    <td>Tier 1 (High ROI Leader)</td>
                   </tr>
                   <tr>
                     <td><strong>SPJIMR Mumbai (PGDM)</strong></td>
                     <td>95.0+ %ile</td>
-                    <td>₹22.5 Lakhs</td>
-                    <td>₹33.0 LPA</td>
-                    <td>Tier 1</td>
+                    <td>₹24.50 Lakhs</td>
+                    <td>₹33.75 LPA</td>
+                    <td>NIRF #20 • Tier 1</td>
                   </tr>
                   <tr>
                     <td><strong>MDI Gurgaon (PGDM)</strong></td>
-                    <td>96.0+ %ile</td>
-                    <td>₹24.0 Lakhs</td>
-                    <td>₹26.7 LPA</td>
-                    <td>Tier 1</td>
+                    <td>95.0+ %ile</td>
+                    <td>₹26.55 Lakhs</td>
+                    <td>₹29.50 LPA</td>
+                    <td>NIRF #11 • Tier 1</td>
                   </tr>
                   <tr>
-                    <td><strong>IIT Bombay - SJMSOM (MBA)</strong></td>
+                    <td><strong>SJMSOM, IIT Bombay (MBA)</strong></td>
                     <td>98.0+ %ile</td>
-                    <td>₹14.0 Lakhs</td>
-                    <td>₹28.8 LPA</td>
-                    <td>Tier 1</td>
+                    <td>₹15.16 Lakhs</td>
+                    <td>₹28.16 LPA</td>
+                    <td>NIRF #10 • High ROI</td>
+                  </tr>
+                  <tr>
+                    <td><strong>DMS, IIT Delhi (MBA)</strong></td>
+                    <td>97.5+ %ile</td>
+                    <td>₹12.00 Lakhs</td>
+                    <td>₹25.82 LPA</td>
+                    <td>NIRF #4 • High ROI</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IIFT New Delhi (MBA-IB)</strong></td>
+                    <td>97.0+ %ile</td>
+                    <td>₹21.82 Lakhs</td>
+                    <td>₹31.30 LPA</td>
+                    <td>NIRF #15 • Tier 1</td>
+                  </tr>
+                  <tr>
+                    <td><strong>IMT Ghaziabad (PGDM)</strong></td>
+                    <td>90.0+ %ile</td>
+                    <td>₹21.53 Lakhs</td>
+                    <td>₹17.35 LPA</td>
+                    <td>NIRF #35 • Tier 2</td>
                   </tr>
                   <tr>
                     <td><strong>GIM Goa (PGDM)</strong></td>
                     <td>88.0+ %ile</td>
-                    <td>₹18.5 Lakhs</td>
-                    <td>₹15.0 LPA</td>
-                    <td>Tier 2</td>
+                    <td>₹19.50 Lakhs</td>
+                    <td>₹15.00 LPA</td>
+                    <td>NIRF #37 • Tier 2</td>
                   </tr>
                   <tr>
                     <td><strong>FORE School of Management Delhi</strong></td>
                     <td>85.0+ %ile</td>
-                    <td>₹17.0 Lakhs</td>
-                    <td>₹14.5 LPA</td>
-                    <td>Tier 2</td>
+                    <td>₹18.98 Lakhs</td>
+                    <td>₹16.01 LPA</td>
+                    <td>NIRF #53 • Tier 2</td>
                   </tr>
                   <tr>
                     <td><strong>Great Lakes Chennai (PGDM)</strong></td>
                     <td>82.0+ %ile</td>
-                    <td>₹19.0 Lakhs</td>
-                    <td>₹14.5 LPA</td>
-                    <td>Tier 2</td>
+                    <td>₹20.75 Lakhs</td>
+                    <td>₹15.10 LPA</td>
+                    <td>NIRF #34 • Tier 2</td>
                   </tr>
                 </tbody>
               </table>

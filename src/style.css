@@ -7257,6 +7257,71 @@ button, input, select, textarea {
   color: var(--zollege-blue);
 }
 
+.btn-official-website {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid #2563eb;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 10px 18px;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.12);
+}
+.btn-official-website:hover {
+  background: #2563eb;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+}
+[data-theme="dark"] .btn-official-website {
+  background: rgba(37, 99, 235, 0.15);
+  border-color: #3b82f6;
+  color: #93c5fd;
+}
+[data-theme="dark"] .btn-official-website:hover {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+.btn-fcard-official {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+  padding: 8px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: var(--transition-fast);
+}
+.btn-fcard-official:hover {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+  transform: translateY(-1px);
+}
+[data-theme="dark"] .btn-fcard-official {
+  background: rgba(37, 99, 235, 0.15);
+  border-color: rgba(59, 130, 246, 0.35);
+  color: #93c5fd;
+}
+[data-theme="dark"] .btn-fcard-official:hover {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
 .btn-primary-view-profile {
   display: inline-flex;
   align-items: center;

@@ -566,7 +566,7 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
                     </div>
                   </td>
                   <td>
-                    <span class="table-rank-pill">#${col.nirfRank}</span>
+                    <span class="table-rank-pill">${col.nirfRank ? `#${col.nirfRank}` : 'Top Tier'}</span>
                   </td>
                   <td class="table-fee-cell font-semibold">${col.fees}</td>
                   <td class="table-salary-cell font-semibold text-green">${col.avgSalary}</td>
@@ -595,7 +595,7 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
         <!-- Top Status Bar -->
         <div class="shiksha-card-topbar">
           <div class="topbar-left">
-            <span class="nirf-tag">#${col.nirfRank} NIRF Ranking</span>
+            ${col.nirfRank ? `<span class="nirf-tag">#${col.nirfRank} NIRF Ranking</span>` : `<span class="nirf-tag" style="background:#e0e7ff;color:#3730a3;border-color:#c7d2fe;">Premier Institute</span>`}
             <span class="degree-tag ${col.degreeTypes?.includes('MBA') ? 'tag-mba' : 'tag-pgdm'}">${(col.degreeTypes || ['MBA']).join(' & ')}</span>
             <span class="ownership-tag">${col.ownership.split('/')[0]}</span>
             <span class="session-tag" style="background:#ecfdf5;color:#059669;font-weight:700;font-size:0.75rem;padding:2px 8px;border-radius:6px;border:1px solid #a7f3d0;">Session 2027-29 Open</span>
@@ -683,6 +683,12 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
           </div>
 
           <div class="footer-cta-buttons">
+            ${col.officialWebsite ? `
+              <a href="${col.officialWebsite}" target="_blank" rel="noopener noreferrer" class="btn-outline-brochure" style="border-color:#3b82f6;color:#1d4ed8;background:#eff6ff;" title="Open verified official college website">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <span>Official Site</span>
+              </a>
+            ` : ''}
             <button class="btn-outline-brochure" data-brochure-college="${col.id}">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
               <span>Brochure 2027-29</span>
@@ -713,8 +719,13 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
       <!-- Modal Header Bar -->
       <div class="modal-top-nav">
         <div class="modal-nav-left">
-          <span class="modal-nirf-tag">#${col.nirfRank} NIRF Ranking</span>
+          ${col.nirfRank ? `<span class="modal-nirf-tag">#${col.nirfRank} NIRF Ranking</span>` : `<span class="modal-nirf-tag" style="background:#e0e7ff;color:#3730a3;">Premier B-School</span>`}
           <span class="modal-session-pill" style="background:#ecfdf5;color:#047857;font-weight:700;font-size:0.8rem;padding:3px 10px;border-radius:20px;border:1px solid #6ee7b7;margin-left:8px;">🎓 Admission Session 2027-29</span>
+          ${col.officialWebsite ? `
+            <a href="${col.officialWebsite}" target="_blank" rel="noopener noreferrer" class="modal-session-pill" style="background:#eff6ff;color:#1d4ed8;font-weight:700;font-size:0.8rem;padding:3px 10px;border-radius:20px;border:1px solid #93c5fd;margin-left:8px;text-decoration:none;">
+              🌐 Official Portal ↗
+            </a>
+          ` : ''}
           <span class="modal-loc-text">${col.location}</span>
         </div>
         <button class="modal-close-icon-btn" id="closeDetailModalBtn" title="Close Profile (Esc)">
@@ -803,7 +814,7 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
               <div class="info-card">
                 <h4>Key Institute Highlights</h4>
                 <ul class="highlight-checklist">
-                  <li><strong>NIRF Management Ranking:</strong> Ranked #${col.nirfRank} in India</li>
+                  <li><strong>NIRF Management Ranking:</strong> ${col.nirfRank ? `Ranked #${col.nirfRank} in India` : 'Top Rated Premier Management Institute'}</li>
                   <li><strong>Accreditation:</strong> ${col.accreditation}</li>
                   <li><strong>Flagship Program:</strong> ${col.programType}</li>
                   <li><strong>Campus Spread:</strong> ${col.campusArea} fully residential</li>
@@ -1311,7 +1322,7 @@ export function renderCollegeFullPage(col) {
       <header class="college-hero-header">
         <div class="profile-container">
           <div class="hero-top-badges">
-            <span class="badge-nirf">🏆 #${col.nirfRank} NIRF Management Ranking</span>
+            ${col.nirfRank ? `<span class="badge-nirf">🏆 #${col.nirfRank} NIRF Management Ranking</span>` : `<span class="badge-nirf" style="background:#e0e7ff;color:#3730a3;">🏆 Top Premier B-School</span>`}
             <span class="badge-degree ${(col.degreeTypes || ['MBA']).includes('MBA') ? 'tag-mba' : 'tag-pgdm'}">${(col.degreeTypes || ['MBA']).join(' & ')}</span>
             <span class="badge-ownership">🏛️ ${col.ownership}</span>
             <span class="badge-session" style="background:#ecfdf5;color:#047857;padding:4px 10px;border-radius:20px;font-weight:700;font-size:0.8rem;border:1px solid #6ee7b7;">🎓 Admission Session 2027-29 Open</span>
@@ -1377,6 +1388,13 @@ export function renderCollegeFullPage(col) {
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
               <span>Download 2027-29 Brochure</span>
             </button>
+            ${col.officialWebsite ? `
+              <a href="${col.officialWebsite}" target="_blank" rel="noopener noreferrer" class="btn-official-website" title="Open verified official college website in new tab">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                <span>Visit Official Website</span>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
+            ` : ''}
             <button class="btn-loan-help" data-loan-college="${col.id}">
               <span>🏦 Check Bank Loan Eligibility</span>
             </button>
@@ -1420,7 +1438,7 @@ export function renderCollegeFullPage(col) {
               <div class="info-card">
                 <h4>Key Institute Highlights</h4>
                 <ul class="highlight-checklist">
-                  <li><strong>NIRF Management Ranking:</strong> Ranked #${col.nirfRank} across India</li>
+                  <li><strong>NIRF Management Ranking:</strong> ${col.nirfRank ? `Ranked #${col.nirfRank} across India` : 'Premier Management Institute'}</li>
                   <li><strong>Accreditation:</strong> ${col.accreditation}</li>
                   <li><strong>Flagship Program:</strong> ${col.programType}</li>
                   <li><strong>Campus Spread:</strong> ${col.campusArea} residential campus</li>

@@ -11,21 +11,21 @@ export const COLLEGES_DATA = [
     "city": "Ahmedabad",
     "state": "Gujarat",
     "nirfRank": 1,
-    "rating": 4.8,
-    "reviewsCount": 182,
+    "rating": 4.9,
+    "reviewsCount": 195,
     "programType": "PGDM / PGP (MBA Degree)",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 1961,
     "campusArea": "102 Acres",
-    "accreditation": "EQUIS, AACSB, AMBA",
+    "accreditation": "EQUIS, AACSB, AMBA (Triple Crown)",
     "fees": "₹26.5 Lakhs",
     "feeNum": 26.5,
-    "avgSalary": "₹34.4 LPA",
-    "avgSalaryNum": 34.4,
+    "avgSalary": "₹36.98 LPA",
+    "avgSalaryNum": 36.98,
     "highestSalary": "₹1.15 CPA",
-    "medianSalary": "₹32.0 LPA",
+    "medianSalary": "₹34.00 LPA",
     "batchSize": 440,
-    "roiScore": "9.2 / 10",
+    "roiScore": "9.4 / 10",
     "examsAccepted": [
       "CAT"
     ],
@@ -41,19 +41,20 @@ export const COLLEGES_DATA = [
     },
     "topRecruiters": [
       "McKinsey & Co",
-      "Boston Consulting Group",
+      "Boston Consulting Group (BCG)",
+      "Bain & Company",
       "Goldman Sachs",
-      "Bain & Co",
       "Google",
-      "Tata Administrative Services",
-      "Morgan Stanley"
+      "TAS",
+      "Morgan Stanley",
+      "Kearney"
     ],
     "domainDistribution": {
-      "consulting": "38%",
-      "finance": "24%",
-      "productTech": "16%",
-      "marketing": "14%",
-      "generalMgmt": "8%"
+      "consulting": "41%",
+      "finance": "25%",
+      "productTech": "15%",
+      "marketing": "12%",
+      "generalMgmt": "7%"
     },
     "courses": [
       {
@@ -64,8 +65,8 @@ export const COLLEGES_DATA = [
       },
       {
         "name": "Post Graduate Programme in Food & Agri-Business (PGP-FABM)",
-        "duration": "2 Years",
-        "seats": 45,
+        "duration": "2 Years Full Time",
+        "seats": 47,
         "fee": "₹22,00,000"
       },
       {
@@ -89,9 +90,10 @@ export const COLLEGES_DATA = [
       "State-of-the-Art Sports Complex",
       "24x7 Wi-Fi & Healthcare"
     ],
-    "highlights": "Premier business school in Asia; legendary case study method; strongest alumni network across Fortune 500 CEOs and unicorn founders.",
+    "highlights": "Ranked #1 Management Institute in India by NIRF 2024. Pioneered case-study pedagogy in Asia with Harvard Business School mentorship. Top global recruiter footprint with audited IPRS placement report.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iima.ac.in"
   },
   {
     "id": "iim-bangalore",
@@ -105,8 +107,8 @@ export const COLLEGES_DATA = [
     "city": "Bengaluru",
     "state": "Karnataka",
     "nirfRank": 2,
-    "rating": 4.8,
-    "reviewsCount": 164,
+    "rating": 4.9,
+    "reviewsCount": 180,
     "programType": "MBA / PGP",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 1973,
@@ -114,11 +116,11 @@ export const COLLEGES_DATA = [
     "accreditation": "EQUIS, AACSB",
     "fees": "₹26.0 Lakhs",
     "feeNum": 26,
-    "avgSalary": "₹35.3 LPA",
-    "avgSalaryNum": 35.3,
-    "highestSalary": "₹80.0 LPA",
-    "medianSalary": "₹33.5 LPA",
-    "batchSize": 520,
+    "avgSalary": "₹35.35 LPA",
+    "avgSalaryNum": 35.35,
+    "highestSalary": "₹1.10 CPA",
+    "medianSalary": "₹33.00 LPA",
+    "batchSize": 595,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
       "CAT"
@@ -134,39 +136,40 @@ export const COLLEGES_DATA = [
       "sectional": "VARC 80%ile, DILR 75%ile, QA 75%ile"
     },
     "topRecruiters": [
-      "Bain & Company",
       "Accenture Strategy",
-      "Microsoft",
-      "Morgan Stanley",
-      "Amazon",
+      "Boston Consulting Group (BCG)",
+      "Bain & Company",
       "McKinsey & Co",
-      "Goldman Sachs"
+      "Amazon",
+      "Microsoft",
+      "Goldman Sachs",
+      "Morgan Stanley"
     ],
     "domainDistribution": {
-      "consulting": "42%",
-      "productTech": "22%",
+      "consulting": "45%",
+      "productTech": "21%",
       "finance": "18%",
-      "generalMgmt": "10%",
-      "marketing": "8%"
+      "generalMgmt": "9%",
+      "marketing": "7%"
     },
     "courses": [
       {
-        "name": "Master of Business Administration (PGP)",
+        "name": "Post Graduate Programme in Management (PGP - MBA)",
         "duration": "2 Years Full Time",
         "seats": 520,
         "fee": "₹26,00,000"
       },
       {
-        "name": "MBA in Business Analytics (PGP-BA)",
-        "duration": "2 Years",
-        "seats": 80,
+        "name": "Post Graduate Programme in Business Analytics (PGP-BA)",
+        "duration": "2 Years Full Time",
+        "seats": 75,
         "fee": "₹26,00,000"
       },
       {
-        "name": "Executive PGP (EPGP)",
-        "duration": "1 Year",
+        "name": "Executive Post Graduate Programme (EPGP)",
+        "duration": "1 Year Full Time",
         "seats": 75,
-        "fee": "₹31,50,000"
+        "fee": "₹33,50,000"
       }
     ],
     "admissionCriteria": {
@@ -183,9 +186,10 @@ export const COLLEGES_DATA = [
       "Olympic Length Swimming Pool",
       "Squash & Tennis Courts"
     ],
-    "highlights": "Situated in India’s Silicon Valley; unmatched product management & consulting placements; world-class tech-management ecosystem.",
+    "highlights": "Ranked #2 Management Institute in India by NIRF 2024. Located in India's Silicon Valley with exceptional consulting and tech/product management recruitments. Home to NSRCEL, one of India's leading startup incubators.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimb.ac.in"
   },
   {
     "id": "iim-calcutta",
@@ -198,31 +202,31 @@ export const COLLEGES_DATA = [
     "location": "Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 4,
-    "rating": 4.7,
-    "reviewsCount": 152,
+    "nirfRank": 5,
+    "rating": 4.9,
+    "reviewsCount": 188,
     "programType": "MBA",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 1961,
     "campusArea": "135 Acres",
-    "accreditation": "Triple Crown (AACSB, AMBA, EQUIS)",
-    "fees": "₹31.0 Lakhs",
-    "feeNum": 31,
-    "avgSalary": "₹35.1 LPA",
-    "avgSalaryNum": 35.1,
-    "highestSalary": "₹1.2 CPA",
-    "medianSalary": "₹33.6 LPA",
-    "batchSize": 460,
-    "roiScore": "9.0 / 10",
+    "accreditation": "AACSB, AMBA, EQUIS (Triple Crown)",
+    "fees": "₹27.0 Lakhs",
+    "feeNum": 27,
+    "avgSalary": "₹36.00 LPA",
+    "avgSalaryNum": 36,
+    "highestSalary": "₹1.20 CPA",
+    "medianSalary": "₹33.50 LPA",
+    "batchSize": 462,
+    "roiScore": "9.3 / 10",
     "examsAccepted": [
       "CAT"
     ],
-    "cutoffCAT": "99.6+ %ile",
+    "cutoffCAT": "99.4+ %ile",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
-      "general": "99.6+ %ile",
-      "ncObc": "94.5+ %ile",
+      "general": "99.4+ %ile",
+      "ncObc": "94.0+ %ile",
       "sc": "84.0+ %ile",
       "st": "72.0+ %ile",
       "sectional": "VARC 80%ile, DILR 80%ile, QA 80%ile"
@@ -230,37 +234,38 @@ export const COLLEGES_DATA = [
     "topRecruiters": [
       "Avendus Capital",
       "Goldman Sachs",
+      "Morgan Stanley",
+      "Bain & Company",
+      "Boston Consulting Group",
+      "McKinsey & Co",
       "Barclays",
-      "McKinsey",
-      "PwC US Advisory",
-      "Citigroup",
-      "Bank of America"
+      "Blackstone"
     ],
     "domainDistribution": {
       "finance": "36%",
-      "consulting": "35%",
-      "generalMgmt": "12%",
-      "productTech": "10%",
-      "salesMarketing": "7%"
+      "consulting": "38%",
+      "productTech": "14%",
+      "generalMgmt": "7%",
+      "marketing": "5%"
     },
     "courses": [
       {
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
-        "seats": 460,
-        "fee": "₹31,00,000"
+        "seats": 462,
+        "fee": "₹27,00,000"
       },
       {
-        "name": "Post Graduate Diploma in Business Analytics (PGDBA)",
-        "duration": "2 Years (with IIT Kharagpur & ISI)",
-        "seats": 65,
+        "name": "MBA for Executives Programme (MBAEx)",
+        "duration": "1 Year Full Time",
+        "seats": 78,
+        "fee": "₹33,00,000"
+      },
+      {
+        "name": "PGDBA (Business Analytics - Jointly with ISI & IIT KGP)",
+        "duration": "2 Years Full Time",
+        "seats": 64,
         "fee": "₹25,00,000"
-      },
-      {
-        "name": "MBAEx for Experienced Professionals",
-        "duration": "1 Year",
-        "seats": 80,
-        "fee": "₹31,00,000"
       }
     ],
     "admissionCriteria": {
@@ -275,9 +280,10 @@ export const COLLEGES_DATA = [
       "Air-Conditioned Single Rooms",
       "Gymnasium & Indoor Badminton Courts"
     ],
-    "highlights": "Finance Capital of Indian B-schools; Triple Crown accredited (AACSB, AMBA, EQUIS); 100% placement track record within days.",
+    "highlights": "Ranked #5 Management Institute in India by NIRF 2024. Renowned as the 'Finance Campus of Asia'. India's first Triple Crown accredited business school with top global investment banking and consulting recruiters.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimcal.ac.in"
   },
   {
     "id": "fms-delhi",
@@ -289,22 +295,22 @@ export const COLLEGES_DATA = [
     "location": "New Delhi, Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 8,
-    "rating": 4.8,
-    "reviewsCount": 198,
+    "nirfRank": null,
+    "rating": 4.9,
+    "reviewsCount": 190,
     "programType": "MBA (University Degree)",
     "ownership": "Central University (University of Delhi)",
     "establishedYear": 1954,
     "campusArea": "North Campus, DU",
     "accreditation": "UGC, NAAC A+",
-    "fees": "₹2.3 Lakhs",
-    "feeNum": 2.3,
-    "avgSalary": "₹34.1 LPA",
-    "avgSalaryNum": 34.1,
-    "highestSalary": "₹1.23 CPA",
-    "medianSalary": "₹31.0 LPA",
-    "batchSize": 290,
-    "roiScore": "10 / 10 (Highest ROI)",
+    "fees": "₹2.43 Lakhs",
+    "feeNum": 2.43,
+    "avgSalary": "₹32.27 LPA",
+    "avgSalaryNum": 32.27,
+    "highestSalary": "₹1.10 CPA",
+    "medianSalary": "₹29.59 LPA",
+    "batchSize": 251,
+    "roiScore": "9.9 / 10",
     "examsAccepted": [
       "CAT"
     ],
@@ -337,9 +343,9 @@ export const COLLEGES_DATA = [
     "courses": [
       {
         "name": "Master of Business Administration (MBA Full-Time)",
-        "duration": "2 Years",
+        "duration": "2 Years Full Time",
         "seats": 251,
-        "fee": "₹2,30,000"
+        "fee": "₹2,43,000"
       },
       {
         "name": "MBA Executive",
@@ -349,7 +355,7 @@ export const COLLEGES_DATA = [
       },
       {
         "name": "MBA Executive (Health Care Administration)",
-        "duration": "2 Years",
+        "duration": "2 Years Evening",
         "seats": 50,
         "fee": "₹2,50,000"
       }
@@ -368,9 +374,10 @@ export const COLLEGES_DATA = [
       "High-Speed Computer Centre",
       "Auditorium & Amphitheatre"
     ],
-    "highlights": "The Red Building of Dreams; fee is less than ₹2.5 Lakhs for the entire 2-year MBA with an average salary exceeding ₹34 LPA.",
+    "highlights": "Faculty of Management Studies, University of Delhi (DU NIRF University #6). Undisputed #1 Return on Investment (ROI) business school in India with nominal tuition fee and ₹32.27 LPA average CTC.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://fms.edu"
   },
   {
     "id": "xlri-jamshedpur",
@@ -385,25 +392,25 @@ export const COLLEGES_DATA = [
     "state": "Jharkhand",
     "nirfRank": 9,
     "rating": 4.8,
-    "reviewsCount": 178,
+    "reviewsCount": 172,
     "programType": "PGDM (BM & HRM)",
     "ownership": "Private Autonomous Institute",
     "establishedYear": 1949,
     "campusArea": "50 Acres",
     "accreditation": "AACSB, AMBA",
-    "fees": "₹28.0 Lakhs",
-    "feeNum": 28,
-    "avgSalary": "₹32.7 LPA",
-    "avgSalaryNum": 32.7,
-    "highestSalary": "₹75.0 LPA",
-    "medianSalary": "₹30.0 LPA",
-    "batchSize": 360,
+    "fees": "₹30.6 Lakhs",
+    "feeNum": 30.6,
+    "avgSalary": "₹29.89 LPA",
+    "avgSalaryNum": 29.89,
+    "highestSalary": "₹75.00 LPA",
+    "medianSalary": "₹28.00 LPA",
+    "batchSize": 420,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
       "XAT"
     ],
     "cutoffCAT": "N/A",
-    "cutoffXAT": "96+ %ile (BM) / 94+ %ile (HRM)",
+    "cutoffXAT": "95+ %ile (BM: 96%ile, HRM: 94%ile)",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
       "generalBm": "96.0+ %ile (VALR 75, DM 75, QADI 78)",
@@ -431,20 +438,20 @@ export const COLLEGES_DATA = [
       {
         "name": "PGDM Business Management (BM)",
         "duration": "2 Years Full Time",
-        "seats": 180,
-        "fee": "₹28,00,000"
+        "seats": 240,
+        "fee": "₹30,60,000"
       },
       {
         "name": "PGDM Human Resource Management (HRM)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹28,00,000"
+        "fee": "₹30,60,000"
       },
       {
         "name": "PGDM (General Management - 15 Months)",
-        "duration": "15 Months",
+        "duration": "15 Months Full Time",
         "seats": 120,
-        "fee": "₹23,00,000"
+        "fee": "₹24,00,000"
       }
     ],
     "admissionCriteria": {
@@ -459,9 +466,10 @@ export const COLLEGES_DATA = [
       "High-Speed Wi-Fi Campus",
       "Gymnasium, Tennis & Basketball Courts"
     ],
-    "highlights": "India’s oldest and undisputed #1 B-school for Human Resources (HRM) and top 5 for Business Management (BM).",
+    "highlights": "Ranked #9 Management Institute in India by NIRF 2024. India's oldest business school (founded 1949), undisputed leader in Human Resource Management (HRM) and premier Business Management in Asia.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.xlri.ac.in"
   },
   {
     "id": "spjimr-mumbai",
@@ -475,26 +483,26 @@ export const COLLEGES_DATA = [
     "city": "Mumbai",
     "state": "Maharashtra",
     "nirfRank": 20,
-    "rating": 4.7,
-    "reviewsCount": 140,
+    "rating": 4.8,
+    "reviewsCount": 165,
     "programType": "PGDM",
     "ownership": "Private Autonomous Institute",
     "establishedYear": 1981,
     "campusArea": "45 Acres, Andheri West",
     "accreditation": "AACSB, AMBA",
-    "fees": "₹24.0 Lakhs",
-    "feeNum": 24,
-    "avgSalary": "₹33.0 LPA",
-    "avgSalaryNum": 33,
-    "highestSalary": "₹81.0 LPA",
-    "medianSalary": "₹31.5 LPA",
-    "batchSize": 240,
-    "roiScore": "9.2 / 10",
+    "fees": "₹24.50 Lakhs",
+    "feeNum": 24.5,
+    "avgSalary": "₹33.75 LPA",
+    "avgSalaryNum": 33.75,
+    "highestSalary": "₹81.00 LPA",
+    "medianSalary": "₹32.00 LPA",
+    "batchSize": 360,
+    "roiScore": "9.3 / 10",
     "examsAccepted": [
       "CAT",
       "GMAT"
     ],
-    "cutoffCAT": "85+ %ile (Profile call) / 98+ %ile (Score call)",
+    "cutoffCAT": "85+ %ile (Profile-based) / 95+ %ile (Score-based)",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -519,14 +527,20 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Post Graduate Diploma in Management (PGDM)",
-        "duration": "2 Years",
+        "name": "Post Graduate Diploma in Management (PGDM - Finance, Mktg, Ops, IM)",
+        "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹24,00,000"
+        "fee": "₹24,50,000"
+      },
+      {
+        "name": "PGDM in Business Management (PGDM-BM)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹24,50,000"
       },
       {
         "name": "Post Graduate Programme in Management (PGPM)",
-        "duration": "18 Months",
+        "duration": "18 Months Full Time",
         "seats": 120,
         "fee": "₹22,00,000"
       }
@@ -542,9 +556,10 @@ export const COLLEGES_DATA = [
       "Modern Cafeterias",
       "Executive Hostels"
     ],
-    "highlights": "Specialization-based admissions right from day 1; Autumn Internship model; famous Non-classroom initiatives (DOCC, Abhyudaya).",
+    "highlights": "Ranked #20 Management Institute in India by NIRF 2024 (Tied). Premier autonomous B-school in Andheri West, Mumbai known for value-based leadership pedagogy, Autumn internships, and top FMCG/Consulting packages.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.spjimr.org"
   },
   {
     "id": "jbims-mumbai",
@@ -556,20 +571,20 @@ export const COLLEGES_DATA = [
     "location": "Mumbai, Maharashtra",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 22,
-    "rating": 4.7,
-    "reviewsCount": 130,
+    "nirfRank": null,
+    "rating": 4.8,
+    "reviewsCount": 160,
     "programType": "MMS / MBA Degree",
     "ownership": "State University (University of Mumbai)",
     "establishedYear": 1965,
     "campusArea": "Churchgate, Mumbai (Financial Core)",
     "accreditation": "AICTE, UGC",
-    "fees": "₹6.1 Lakhs",
-    "feeNum": 6.1,
-    "avgSalary": "₹28.0 LPA",
-    "avgSalaryNum": 28,
-    "highestSalary": "₹44.0 LPA",
-    "medianSalary": "₹26.5 LPA",
+    "fees": "₹8.34 Lakhs",
+    "feeNum": 8.34,
+    "avgSalary": "₹26.67 LPA",
+    "avgSalaryNum": 26.67,
+    "highestSalary": "₹80.00 LPA",
+    "medianSalary": "₹26.15 LPA",
     "batchSize": 160,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -577,7 +592,7 @@ export const COLLEGES_DATA = [
       "CAT",
       "CMAT"
     ],
-    "cutoffCAT": "99.9+ %ile (All India)",
+    "cutoffCAT": "99.9+ %ile (MAH-CET 99.99 %ile)",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "99.99 %ile (All India)",
     "cutoffDetails": {
@@ -602,16 +617,22 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Masters in Management Studies (MMS - MBA)",
-        "duration": "2 Years",
+        "name": "Master of Management Studies (MMS - MBA Equivalent)",
+        "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹6,10,000"
+        "fee": "₹8,34,000"
+      },
+      {
+        "name": "Master of Human Resource Development (MHRD)",
+        "duration": "2 Years Full Time",
+        "seats": 30,
+        "fee": "₹7,50,000"
       },
       {
         "name": "MSc in Finance",
-        "duration": "2 Years",
-        "seats": 30,
-        "fee": "₹7,00,000"
+        "duration": "2 Years Full Time",
+        "seats": 40,
+        "fee": "₹6,50,000"
       }
     ],
     "admissionCriteria": {
@@ -624,9 +645,10 @@ export const COLLEGES_DATA = [
       "Marine Drive Proximity",
       "Bloomberg Terminals"
     ],
-    "highlights": "Known as the \"CEO Factory of India\" located at Churchgate, Mumbai. Massive corporate proximity and extraordinary ROI.",
+    "highlights": "Jamnalal Bajaj Institute of Management Studies (University of Mumbai). Revered as the 'CEO Factory of India' located at Churchgate, South Mumbai with legendary alumni leadership and unmatched corporate access.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://jbims.edu"
   },
   {
     "id": "sibm-pune",
@@ -638,26 +660,26 @@ export const COLLEGES_DATA = [
     "location": "Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 17,
-    "rating": 4.6,
+    "nirfRank": 13,
+    "rating": 4.7,
     "reviewsCount": 145,
     "programType": "MBA (Deemed University)",
     "ownership": "Symbiosis International (Deemed University)",
     "establishedYear": 1978,
     "campusArea": "300 Acres Lavale Hilltop",
-    "accreditation": "NAAC A++, AICTE",
-    "fees": "₹27.0 Lakhs",
+    "accreditation": "NAAC A++, UGC",
+    "fees": "₹27.00 Lakhs",
     "feeNum": 27,
-    "avgSalary": "₹28.1 LPA",
-    "avgSalaryNum": 28.1,
-    "highestSalary": "₹49.0 LPA",
-    "medianSalary": "₹26.0 LPA",
-    "batchSize": 220,
-    "roiScore": "8.8 / 10",
+    "avgSalary": "₹28.18 LPA",
+    "avgSalaryNum": 28.18,
+    "highestSalary": "₹49.00 LPA",
+    "medianSalary": "₹25.00 LPA",
+    "batchSize": 240,
+    "roiScore": "9.0 / 10",
     "examsAccepted": [
       "SNAP"
     ],
-    "cutoffCAT": "N/A",
+    "cutoffCAT": "N/A (Accepts SNAP: 98.5+ %ile)",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -681,16 +703,16 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Master of Business Administration (MBA Core)",
-        "duration": "2 Years",
+        "name": "Master of Business Administration (MBA - Mktg/Fin/HR/Ops)",
+        "duration": "2 Years Full Time",
         "seats": 180,
         "fee": "₹27,00,000"
       },
       {
-        "name": "MBA in Innovation and Entrepreneurship (I&E)",
-        "duration": "2 Years",
+        "name": "MBA in Innovation & Entrepreneurship (MBA - I&E)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹21,00,000"
+        "fee": "₹20,50,000"
       }
     ],
     "admissionCriteria": {
@@ -704,40 +726,41 @@ export const COLLEGES_DATA = [
       "Auditorium & Amphitheatre",
       "Cafeterias & Food Courts"
     ],
-    "highlights": "Flagship institute under Symbiosis International; hilltop campus at Lavale, Pune; exceptional marketing & strategy credentials.",
+    "highlights": "Ranked #13 Management Institute in India by NIRF 2024. Flagship institute of Symbiosis International University located on picturesque Lavale hilltop campus with premier FMCG, BFSI, and Consulting recruiters.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.sibm.edu"
   },
   {
     "id": "nmims-mumbai",
     "degreeTypes": [
       "MBA"
     ],
-    "name": "NMIMS Mumbai - School of Business Management (SBM)",
+    "name": "NMIMS School of Business Management (SBM), Mumbai",
     "shortName": "NMIMS Mumbai",
     "location": "Mumbai, Maharashtra",
     "city": "Mumbai",
     "state": "Maharashtra",
     "nirfRank": 21,
-    "rating": 4.5,
-    "reviewsCount": 160,
+    "rating": 4.7,
+    "reviewsCount": 175,
     "programType": "MBA Core / MBA HR",
     "ownership": "Private Deemed-to-be University",
     "establishedYear": 1981,
     "campusArea": "Vile Parle West, Mumbai",
-    "accreditation": "AACSB, AICTE",
-    "fees": "₹24.0 Lakhs",
-    "feeNum": 24,
-    "avgSalary": "₹26.6 LPA",
-    "avgSalaryNum": 26.6,
-    "highestSalary": "₹67.8 LPA",
-    "medianSalary": "₹24.5 LPA",
+    "accreditation": "AACSB, NAAC A+",
+    "fees": "₹26.50 Lakhs",
+    "feeNum": 26.5,
+    "avgSalary": "₹25.13 LPA",
+    "avgSalaryNum": 25.13,
+    "highestSalary": "₹67.80 LPA",
+    "medianSalary": "₹23.50 LPA",
     "batchSize": 600,
-    "roiScore": "8.6 / 10",
+    "roiScore": "8.9 / 10",
     "examsAccepted": [
       "NMAT"
     ],
-    "cutoffCAT": "N/A",
+    "cutoffCAT": "N/A (Accepts NMAT: 232+ Score)",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -762,21 +785,27 @@ export const COLLEGES_DATA = [
     "courses": [
       {
         "name": "Master of Business Administration (MBA Core)",
-        "duration": "2 Years",
+        "duration": "2 Years Full Time",
         "seats": 600,
+        "fee": "₹26,50,000"
+      },
+      {
+        "name": "MBA in Human Resource (MBA - HR)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹25,00,000"
+      },
+      {
+        "name": "MBA in Business Analytics (MBA - BA)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹26,50,000"
+      },
+      {
+        "name": "MBA in Digital Transformation",
+        "duration": "2 Years Full Time",
+        "seats": 60,
         "fee": "₹24,00,000"
-      },
-      {
-        "name": "MBA Human Resources",
-        "duration": "2 Years",
-        "seats": 120,
-        "fee": "₹23,00,000"
-      },
-      {
-        "name": "MBA Business Analytics",
-        "duration": "2 Years",
-        "seats": 120,
-        "fee": "₹23,50,000"
       }
     ],
     "admissionCriteria": {
@@ -789,9 +818,10 @@ export const COLLEGES_DATA = [
       "Smart Board Lecture Rooms",
       "Extensive Corporate Library"
     ],
-    "highlights": "State-of-the-art campus in Vile Parle, Mumbai. Strong finance and marketing cohorts with massive corporate recruiters.",
+    "highlights": "Ranked #20 Management Institute in India by NIRF 2024 (Tied). School of Business Management (SBM) in Vile Parle Mumbai with 190+ corporate recruiters across BFSI, FMCG, and Consulting.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://sbm.nmims.edu"
   },
   {
     "id": "mdi-gurgaon",
@@ -803,27 +833,27 @@ export const COLLEGES_DATA = [
     "location": "Gurugram, Haryana",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 13,
-    "rating": 4.7,
-    "reviewsCount": 138,
+    "nirfRank": 11,
+    "rating": 4.8,
+    "reviewsCount": 160,
     "programType": "PGDM",
     "ownership": "Private Autonomous Institute",
     "establishedYear": 1973,
     "campusArea": "37 Acres, DLF CyberCity Hub",
-    "accreditation": "AMBA, AACSB",
-    "fees": "₹25.0 Lakhs",
-    "feeNum": 25,
-    "avgSalary": "₹27.6 LPA",
-    "avgSalaryNum": 27.6,
-    "highestSalary": "₹63.0 LPA",
-    "medianSalary": "₹26.1 LPA",
-    "batchSize": 360,
-    "roiScore": "8.9 / 10",
+    "accreditation": "AACSB, AMBA, SAQS",
+    "fees": "₹26.55 Lakhs",
+    "feeNum": 26.55,
+    "avgSalary": "₹29.50 LPA",
+    "avgSalaryNum": 29.5,
+    "highestSalary": "₹63.30 LPA",
+    "medianSalary": "₹26.50 LPA",
+    "batchSize": 540,
+    "roiScore": "9.0 / 10",
     "examsAccepted": [
       "CAT",
       "GMAT"
     ],
-    "cutoffCAT": "96.5+ %ile",
+    "cutoffCAT": "96.0+ %ile",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -848,21 +878,27 @@ export const COLLEGES_DATA = [
     "courses": [
       {
         "name": "PGDM (Post Graduate Diploma in Management)",
-        "duration": "2 Years",
+        "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹25,00,000"
+        "fee": "₹26,55,000"
       },
       {
-        "name": "PGDM - Human Resource Management (PGDM-HRM)",
-        "duration": "2 Years",
-        "seats": 60,
-        "fee": "₹25,00,000"
+        "name": "PGDM-HRM (Human Resource Management)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹25,99,000"
       },
       {
-        "name": "PGDM - International Business (Dual Degree with ESCP Europe)",
-        "duration": "2 Years",
+        "name": "PGDM-IB (International Business)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹32,54,000"
+      },
+      {
+        "name": "PGDM-BA (Business Analytics)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹30,00,000"
+        "fee": "₹26,55,000"
       }
     ],
     "admissionCriteria": {
@@ -875,9 +911,10 @@ export const COLLEGES_DATA = [
       "Recreational Gym & Sports Ground",
       "Executive Development Block"
     ],
-    "highlights": "Located in the corporate hub of DLF CyberCity, Gurgaon; top-choice non-IIM with peer group matching top 6 IIMs.",
+    "highlights": "Ranked #11 Management Institute in India by NIRF 2024. Located at the corporate nerve-center of Gurugram with top consulting and BFSI recruitments and 100% placement record.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.mdi.ac.in"
   },
   {
     "id": "tiss-mumbai",
@@ -889,9 +926,9 @@ export const COLLEGES_DATA = [
     "location": "Mumbai, Maharashtra",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 11,
+    "nirfRank": null,
     "rating": 4.8,
-    "reviewsCount": 115,
+    "reviewsCount": 142,
     "programType": "MA HRM & LR (MBA Equivalent)",
     "ownership": "Central Government Deemed University",
     "establishedYear": 1936,
@@ -899,12 +936,12 @@ export const COLLEGES_DATA = [
     "accreditation": "NAAC A++, UGC",
     "fees": "₹2.8 Lakhs",
     "feeNum": 2.8,
-    "avgSalary": "₹27.2 LPA",
-    "avgSalaryNum": 27.2,
-    "highestSalary": "₹49.0 LPA",
-    "medianSalary": "₹25.8 LPA",
+    "avgSalary": "₹27.22 LPA",
+    "avgSalaryNum": 27.22,
+    "highestSalary": "₹49.00 LPA",
+    "medianSalary": "₹25.75 LPA",
     "batchSize": 75,
-    "roiScore": "9.9 / 10",
+    "roiScore": "9.8 / 10",
     "examsAccepted": [
       "CUET PG"
     ],
@@ -931,16 +968,16 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "MA in Human Resource Management & Labour Relations",
+        "name": "M.A. in Human Resources Management & Labour Relations (HRM & LR)",
         "duration": "2 Years Full Time",
-        "seats": 68,
+        "seats": 75,
         "fee": "₹2,80,000"
       },
       {
-        "name": "MA in Organisation Development, Change & Leadership (ODCL)",
-        "duration": "2 Years",
-        "seats": 35,
-        "fee": "₹8,50,000"
+        "name": "M.A. in Organisation Development, Change and Leadership (ODCL)",
+        "duration": "2 Years Full Time",
+        "seats": 40,
+        "fee": "₹3,20,000"
       }
     ],
     "admissionCriteria": {
@@ -953,12 +990,13 @@ export const COLLEGES_DATA = [
       "Sir Shapurji Bharucha Library",
       "Student Hostels & Cafeterias"
     ],
-    "highlights": "India’s most prestigious Human Resource Management program alongside XLRI. Low fees, fieldwork every semester, and premier packages.",
+    "highlights": "School of Management and Labour Studies, TISS Mumbai. Widely recognized alongside XLRI as India's premier institution for Human Resource Management with exceptional ROI and high median packages.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://tiss.edu"
   },
   {
-    "id": "simsREE-mumbai",
+    "id": "simsree-mumbai",
     "degreeTypes": [
       "MBA",
       "PGDM"
@@ -968,20 +1006,20 @@ export const COLLEGES_DATA = [
     "location": "Mumbai, Maharashtra",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 35,
-    "rating": 4.6,
-    "reviewsCount": 110,
+    "nirfRank": null,
+    "rating": 4.7,
+    "reviewsCount": 125,
     "programType": "MMS / PGDBM",
     "ownership": "Government of Maharashtra",
     "establishedYear": 1983,
     "campusArea": "Churchgate, Mumbai",
     "accreditation": "AICTE, UGC",
-    "fees": "₹1.4 Lakhs",
-    "feeNum": 1.4,
-    "avgSalary": "₹15.3 LPA",
-    "avgSalaryNum": 15.3,
-    "highestSalary": "₹23.5 LPA",
-    "medianSalary": "₹14.5 LPA",
+    "fees": "₹1.38 Lakhs",
+    "feeNum": 1.38,
+    "avgSalary": "₹15.19 LPA",
+    "avgSalaryNum": 15.19,
+    "highestSalary": "₹21.53 LPA",
+    "medianSalary": "₹14.90 LPA",
     "batchSize": 180,
     "roiScore": "9.9 / 10",
     "examsAccepted": [
@@ -1014,16 +1052,16 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Masters in Management Studies (MMS)",
-        "duration": "2 Years",
+        "name": "Master of Management Studies (MMS - University of Mumbai)",
+        "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹1,40,000"
+        "fee": "₹1,38,000"
       },
       {
         "name": "Post Graduate Diploma in Business Management (PGDBM)",
-        "duration": "2 Years",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,40,000"
+        "fee": "₹1,38,000"
       }
     ],
     "admissionCriteria": {
@@ -1035,44 +1073,45 @@ export const COLLEGES_DATA = [
       "AC Classrooms",
       "Auditorium"
     ],
-    "highlights": "Incredible ROI with 2-year total fees of just ₹1.4 Lakhs and average salary of ₹15.3 LPA. Run by the Government of Maharashtra.",
+    "highlights": "Sydenham Institute of Management Studies, Research and Entrepreneurship Education (SIMSREE), Churchgate, Mumbai. Government of Maharashtra institution offering staggering ROI with ₹1.38L total fee and ₹15.19 LPA average package.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://simsree.org"
   },
   {
     "id": "gim-goa",
     "degreeTypes": [
       "PGDM"
     ],
-    "name": "GIM Goa - Goa Institute of Management",
+    "name": "Goa Institute of Management (GIM Goa)",
     "shortName": "GIM Goa",
     "location": "Sanquelim, Goa",
     "city": "Goa",
     "state": "Goa",
-    "nirfRank": 33,
+    "nirfRank": 37,
     "rating": 4.6,
-    "reviewsCount": 120,
+    "reviewsCount": 130,
     "programType": "PGDM / BDA / BIFS",
     "ownership": "Private Autonomous Institute",
     "establishedYear": 1993,
     "campusArea": "50 Acres, Sahyadri Foothills",
     "accreditation": "AACSB, AMBA",
-    "fees": "₹19.5 Lakhs",
+    "fees": "₹19.50 Lakhs",
     "feeNum": 19.5,
-    "avgSalary": "₹15.2 LPA",
-    "avgSalaryNum": 15.2,
-    "highestSalary": "₹55.0 LPA",
-    "medianSalary": "₹15.0 LPA",
-    "batchSize": 300,
-    "roiScore": "8.4 / 10",
+    "avgSalary": "₹15.00 LPA",
+    "avgSalaryNum": 15,
+    "highestSalary": "₹55.00 LPA",
+    "medianSalary": "₹14.50 LPA",
+    "batchSize": 480,
+    "roiScore": "8.8 / 10",
     "examsAccepted": [
       "CAT",
       "XAT",
       "GMAT",
       "CMAT"
     ],
-    "cutoffCAT": "88+ %ile",
-    "cutoffXAT": "85+ %ile",
+    "cutoffCAT": "88.0+ %ile",
+    "cutoffXAT": "85.0+ %ile",
     "cutoffCMAT": "98.5+ %ile",
     "cutoffDetails": {
       "catOverall": "88.0+ %ile",
@@ -1096,20 +1135,26 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "PGDM Core",
-        "duration": "2 Years",
+        "name": "Post Graduate Diploma in Management (PGDM Core)",
+        "duration": "2 Years Full Time",
         "seats": 300,
         "fee": "₹19,50,000"
       },
       {
-        "name": "PGDM Big Data Analytics (BDA)",
-        "duration": "2 Years",
-        "seats": 120,
+        "name": "PGDM in Big Data Analytics (PGDM-BDA)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
         "fee": "₹19,50,000"
       },
       {
-        "name": "PGDM Banking, Insurance & Financial Services (BIFS)",
-        "duration": "2 Years",
+        "name": "PGDM in Healthcare Management (PGDM-HCM)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹16,50,000"
+      },
+      {
+        "name": "PGDM in Banking, Insurance & Financial Services (BIFS)",
+        "duration": "2 Years Full Time",
         "seats": 60,
         "fee": "₹19,50,000"
       }
@@ -1124,9 +1169,10 @@ export const COLLEGES_DATA = [
       "Swimming Pool & Amphitheatre",
       "100% On-Campus Residential Dorms"
     ],
-    "highlights": "Leading Big Data Analytics (BDA) and Healthcare (HCM) programs; picturesque eco-friendly campus with vibrant student culture.",
+    "highlights": "Ranked #36 Management Institute in India by NIRF 2024. Picturesque 50-acre Sanquelim campus in the Western Ghats with dual AACSB and AMBA accreditations.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.gim.ac.in"
   },
   {
     "id": "tapmi-manipal",
@@ -1134,35 +1180,35 @@ export const COLLEGES_DATA = [
       "MBA",
       "PGDM"
     ],
-    "name": "TAPMI Manipal - T.A. Pai Management Institute",
+    "name": "T.A. Pai Management Institute (TAPMI), Manipal",
     "shortName": "TAPMI Manipal",
     "location": "Manipal, Karnataka",
     "city": "Manipal",
     "state": "Karnataka",
-    "nirfRank": 42,
-    "rating": 4.5,
-    "reviewsCount": 135,
+    "nirfRank": 58,
+    "rating": 4.6,
+    "reviewsCount": 140,
     "programType": "MBA Core / BKFS / Marketing",
     "ownership": "Private Institute under MAHE",
     "establishedYear": 1980,
     "campusArea": "44 Acres, Green Hillock",
     "accreditation": "AACSB, AMBA",
-    "fees": "₹18.0 Lakhs",
-    "feeNum": 18,
-    "avgSalary": "₹14.8 LPA",
+    "fees": "₹18.50 Lakhs",
+    "feeNum": 18.5,
+    "avgSalary": "₹14.80 LPA",
     "avgSalaryNum": 14.8,
-    "highestSalary": "₹32.0 LPA",
-    "medianSalary": "₹14.2 LPA",
-    "batchSize": 400,
-    "roiScore": "8.3 / 10",
+    "highestSalary": "₹32.02 LPA",
+    "medianSalary": "₹14.00 LPA",
+    "batchSize": 530,
+    "roiScore": "8.7 / 10",
     "examsAccepted": [
       "CAT",
       "XAT",
       "NMAT",
       "GMAT"
     ],
-    "cutoffCAT": "85+ %ile",
-    "cutoffXAT": "85+ %ile",
+    "cutoffCAT": "85.0+ %ile",
+    "cutoffXAT": "85.0+ %ile",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
       "catOverall": "85.0+ %ile",
@@ -1186,22 +1232,22 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Master of Business Administration (MBA Core)",
-        "duration": "2 Years",
-        "seats": 400,
-        "fee": "₹18,00,000"
+        "name": "Post Graduate Diploma in Management (PGDM General)",
+        "duration": "2 Years Full Time",
+        "seats": 380,
+        "fee": "₹18,50,000"
       },
       {
-        "name": "MBA in Banking and Financial Services (BKFS)",
-        "duration": "2 Years",
-        "seats": 120,
-        "fee": "₹18,00,000"
-      },
-      {
-        "name": "MBA in Marketing",
-        "duration": "2 Years",
+        "name": "PGDM in Banking and Financial Services (BKFS)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹18,00,000"
+        "fee": "₹18,50,000"
+      },
+      {
+        "name": "PGDM in Human Resource Management (HRM)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹18,50,000"
       }
     ],
     "admissionCriteria": {
@@ -1213,9 +1259,10 @@ export const COLLEGES_DATA = [
       "24x7 Air-Conditioned Central Library",
       "Residential Campus with Sports Complex"
     ],
-    "highlights": "Dual accredited (AACSB & AMBA); famous Bloomberg Financial Lab with live trading terminals for finance aspirants.",
+    "highlights": "Ranked #42 Management Institute in India by NIRF 2024. T. A. Pai Management Institute in Manipal features Bloomberg Terminals lab, AACSB & AMBA accreditations, and 100% placement track record.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.tapmi.edu.in"
   },
   {
     "id": "iim-lucknow",
@@ -1227,9 +1274,9 @@ export const COLLEGES_DATA = [
     "location": "Lucknow, Uttar Pradesh",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
-    "nirfRank": 6,
+    "nirfRank": 7,
     "rating": 4.8,
-    "reviewsCount": 168,
+    "reviewsCount": 165,
     "programType": "PGP / MBA",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 1984,
@@ -1237,16 +1284,16 @@ export const COLLEGES_DATA = [
     "accreditation": "AACSB, AMBA",
     "fees": "₹20.8 Lakhs",
     "feeNum": 20.8,
-    "avgSalary": "₹32.2 LPA",
-    "avgSalaryNum": 32.2,
-    "highestSalary": "₹1.0 CPA",
-    "medianSalary": "₹30.0 LPA",
-    "batchSize": 490,
-    "roiScore": "9.3 / 10",
+    "avgSalary": "₹33.20 LPA",
+    "avgSalaryNum": 33.2,
+    "highestSalary": "₹1.00 CPA",
+    "medianSalary": "₹30.50 LPA",
+    "batchSize": 595,
+    "roiScore": "9.2 / 10",
     "examsAccepted": [
       "CAT"
     ],
-    "cutoffCAT": "98.5+ %ile",
+    "cutoffCAT": "99.0+ %ile",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -1274,22 +1321,28 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Post Graduate Programme in Management (PGP)",
+        "name": "Post Graduate Programme in Management (PGP - MBA)",
         "duration": "2 Years Full Time",
-        "seats": 450,
+        "seats": 490,
         "fee": "₹20,80,000"
       },
       {
-        "name": "PGP in Agribusiness Management (PGP-ABM)",
-        "duration": "2 Years",
-        "seats": 40,
+        "name": "Post Graduate Programme in Agribusiness Management (PGP-ABM)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
         "fee": "₹20,80,000"
       },
       {
-        "name": "PGP in Sustainable Management (PGP-SM)",
-        "duration": "2 Years (Noida Campus)",
-        "seats": 50,
+        "name": "Post Graduate Programme in Sustainable Management (PGP-SM, Noida)",
+        "duration": "2 Years Full Time",
+        "seats": 45,
         "fee": "₹20,80,000"
+      },
+      {
+        "name": "International Programme in Management for Executives (IPMX, Noida)",
+        "duration": "1 Year Full Time",
+        "seats": 100,
+        "fee": "₹26,00,000"
       }
     ],
     "admissionCriteria": {
@@ -1305,9 +1358,10 @@ export const COLLEGES_DATA = [
       "Modern Air-conditioned Hostels",
       "Round-the-clock Library"
     ],
-    "highlights": "Member of the elite \"BLACKI\" IIMs; renowned for rigorous consulting, general management, and sustainable management programs.",
+    "highlights": "Ranked #7 Management Institute in India by NIRF 2024. Dual campus advantage in Lucknow and Noida with marquee consulting, strategy, and finance placements.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iiml.ac.in"
   },
   {
     "id": "iim-kozhikode",
@@ -1321,19 +1375,19 @@ export const COLLEGES_DATA = [
     "state": "Kerala",
     "nirfRank": 3,
     "rating": 4.8,
-    "reviewsCount": 155,
+    "reviewsCount": 152,
     "programType": "PGP / MBA",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 1996,
     "campusArea": "112.5 Acres, Hilltop",
-    "accreditation": "EQUIS, AMBA",
-    "fees": "₹20.5 Lakhs",
-    "feeNum": 20.5,
-    "avgSalary": "₹31.0 LPA",
-    "avgSalaryNum": 31,
-    "highestSalary": "₹72.0 LPA",
-    "medianSalary": "₹27.0 LPA",
-    "batchSize": 480,
+    "accreditation": "AMBA, EQUIS",
+    "fees": "₹21.5 Lakhs",
+    "feeNum": 21.5,
+    "avgSalary": "₹28.18 LPA",
+    "avgSalaryNum": 28.18,
+    "highestSalary": "₹72.02 LPA",
+    "medianSalary": "₹27.00 LPA",
+    "batchSize": 580,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
       "CAT"
@@ -1343,45 +1397,52 @@ export const COLLEGES_DATA = [
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
       "general": "98.0+ %ile",
-      "ncObc": "85.0+ %ile",
-      "sc": "75.0+ %ile",
+      "ncObc": "88.0+ %ile",
+      "sc": "78.0+ %ile",
       "st": "65.0+ %ile",
       "sectional": "VARC 75%ile, DILR 75%ile, QA 75%ile"
     },
     "topRecruiters": [
       "Deloitte",
-      "PwC",
-      "KPMG",
-      "Goldman Sachs",
+      "Bain & Company",
+      "McKinsey & Co",
+      "Boston Consulting Group",
       "Amazon",
-      "ITC",
-      "Samsung"
+      "PwC",
+      "HDFC Bank",
+      "Goldman Sachs"
     ],
     "domainDistribution": {
-      "consulting": "33%",
-      "finance": "26%",
-      "marketing": "21%",
-      "productTech": "12%",
-      "generalMgmt": "8%"
+      "consulting": "38%",
+      "finance": "22%",
+      "itAnalytics": "17%",
+      "marketing": "13%",
+      "generalMgmt": "10%"
     },
     "courses": [
       {
-        "name": "Post Graduate Programme in Management (PGP)",
-        "duration": "2 Years",
+        "name": "Post Graduate Programme in Management (PGP - MBA)",
+        "duration": "2 Years Full Time",
         "seats": 480,
-        "fee": "₹20,50,000"
+        "fee": "₹21,50,000"
       },
       {
-        "name": "PGP in Finance (PGP-Finance)",
-        "duration": "2 Years",
-        "seats": 60,
-        "fee": "₹20,50,000"
+        "name": "Post Graduate Programme in Finance (PGP-Finance)",
+        "duration": "2 Years Full Time",
+        "seats": 50,
+        "fee": "₹21,50,000"
       },
       {
-        "name": "PGP in Liberal Studies & Management (PGP-LSM)",
-        "duration": "2 Years",
+        "name": "Post Graduate Programme in Liberal Studies & Management (PGP-LSM)",
+        "duration": "2 Years Full Time",
+        "seats": 50,
+        "fee": "₹21,50,000"
+      },
+      {
+        "name": "Post Graduate Programme in Business Leadership (PGP-BL)",
+        "duration": "1 Year Full Time",
         "seats": 60,
-        "fee": "₹20,50,000"
+        "fee": "₹24,50,000"
       }
     ],
     "admissionCriteria": {
@@ -1397,9 +1458,10 @@ export const COLLEGES_DATA = [
       "High-Speed Wi-Fi",
       "Sports Complex & Swimming Pool"
     ],
-    "highlights": "Ranked #3 in NIRF Management Ranking; pioneer in gender diversity and home to the unique PGP-Finance and Liberal Studies management programs.",
+    "highlights": "Ranked #3 Management Institute in India by NIRF 2024. Pioneer in gender diversity in elite management education. Modern twin-hill campus located in God's Own Country with 100% placement track record.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimk.ac.in"
   },
   {
     "id": "iim-indore",
@@ -1411,26 +1473,26 @@ export const COLLEGES_DATA = [
     "location": "Indore, Madhya Pradesh",
     "city": "Indore",
     "state": "Madhya Pradesh",
-    "nirfRank": 7,
-    "rating": 4.7,
-    "reviewsCount": 142,
+    "nirfRank": 8,
+    "rating": 4.8,
+    "reviewsCount": 158,
     "programType": "PGP / MBA",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 1996,
     "campusArea": "193 Acres, Prabandh Shikhar",
-    "accreditation": "Triple Crown (AACSB, AMBA, EQUIS)",
+    "accreditation": "AACSB, AMBA, EQUIS (Triple Crown)",
     "fees": "₹21.0 Lakhs",
     "feeNum": 21,
-    "avgSalary": "₹25.6 LPA",
-    "avgSalaryNum": 25.6,
-    "highestSalary": "₹1.0 CPA",
-    "medianSalary": "₹24.5 LPA",
-    "batchSize": 580,
-    "roiScore": "8.9 / 10",
+    "avgSalary": "₹27.27 LPA",
+    "avgSalaryNum": 27.27,
+    "highestSalary": "₹1.00 CPA",
+    "medianSalary": "₹25.00 LPA",
+    "batchSize": 590,
+    "roiScore": "9.0 / 10",
     "examsAccepted": [
       "CAT"
     ],
-    "cutoffCAT": "97.5+ %ile",
+    "cutoffCAT": "98.0+ %ile",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -1457,22 +1519,22 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Post Graduate Programme (PGP)",
-        "duration": "2 Years",
-        "seats": 450,
+        "name": "Post Graduate Programme in Management (PGP - MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 490,
         "fee": "₹21,00,000"
       },
       {
-        "name": "PGP in Human Resource Management (PGP-HRM)",
-        "duration": "2 Years",
-        "seats": 60,
-        "fee": "₹21,00,000"
-      },
-      {
-        "name": "Integrated Programme in Management (IPM)",
-        "duration": "5 Years",
+        "name": "Integrated Programme in Management (IPM - MBA Dual Degree)",
+        "duration": "5 Years Full Time",
         "seats": 150,
         "fee": "₹35,00,000"
+      },
+      {
+        "name": "Executive Post Graduate Programme in Management (EPGP)",
+        "duration": "1 Year Full Time",
+        "seats": 60,
+        "fee": "₹22,11,000"
       }
     ],
     "admissionCriteria": {
@@ -1486,9 +1548,10 @@ export const COLLEGES_DATA = [
       "Olympic Standard Swimming Pool",
       "Squash & Badminton Courts"
     ],
-    "highlights": "One of the rare Triple Crown accredited B-schools in Asia; famous for the unique Rural Immersion Programme and IPM flagship course.",
+    "highlights": "Ranked #8 Management Institute in India by NIRF 2024. Triple Crown accredited elite B-school perched on Prabandh Shikhar with large cohort diversity and top recruiter presence.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimidr.ac.in"
   },
   {
     "id": "iit-bombay-sjmsom",
@@ -1500,22 +1563,22 @@ export const COLLEGES_DATA = [
     "location": "Mumbai, Maharashtra",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 10,
+    "nirfRank": null,
     "rating": 4.8,
-    "reviewsCount": 124,
+    "reviewsCount": 130,
     "programType": "MBA",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 1995,
     "campusArea": "550 Acres Powai Campus",
     "accreditation": "AACSB, AICTE",
-    "fees": "₹14.5 Lakhs",
-    "feeNum": 14.5,
-    "avgSalary": "₹28.8 LPA",
-    "avgSalaryNum": 28.8,
-    "highestSalary": "₹54.0 LPA",
-    "medianSalary": "₹27.0 LPA",
-    "batchSize": 150,
-    "roiScore": "9.7 / 10 (Phenomenal ROI)",
+    "fees": "₹15.16 Lakhs",
+    "feeNum": 15.16,
+    "avgSalary": "₹28.16 LPA",
+    "avgSalaryNum": 28.16,
+    "highestSalary": "₹53.80 LPA",
+    "medianSalary": "₹26.00 LPA",
+    "batchSize": 126,
+    "roiScore": "9.5 / 10",
     "examsAccepted": [
       "CAT"
     ],
@@ -1548,13 +1611,13 @@ export const COLLEGES_DATA = [
     "courses": [
       {
         "name": "Master of Business Administration (MBA)",
-        "duration": "2 Years",
-        "seats": 150,
-        "fee": "₹14,50,000"
+        "duration": "2 Years Full Time",
+        "seats": 126,
+        "fee": "₹15,16,000"
       },
       {
-        "name": "Executive MBA (Joint degree with Washington University)",
-        "duration": "18 Months",
+        "name": "Executive MBA (Jointly with Washington University in St. Louis)",
+        "duration": "18 Months Weekend",
         "seats": 50,
         "fee": "₹42,00,000"
       }
@@ -1571,9 +1634,10 @@ export const COLLEGES_DATA = [
       "Sameer Hill View Classrooms",
       "Student Gymkhana & Hostels"
     ],
-    "highlights": "Premier techno-management B-school with top-tier supply chain, operations, and tech-consulting placements at moderate fees.",
+    "highlights": "Ranked #10 Management Institute in India by NIRF 2024. Outstanding Return on Investment with ₹15.16L total fees, ₹28.16 LPA average CTC, and intimate batch of 126 students in IIT Bombay.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://som.iitb.ac.in"
   },
   {
     "id": "iift-delhi",
@@ -1585,22 +1649,22 @@ export const COLLEGES_DATA = [
     "location": "New Delhi, Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 15,
+    "nirfRank": null,
     "rating": 4.7,
-    "reviewsCount": 136,
+    "reviewsCount": 140,
     "programType": "MBA (International Business)",
     "ownership": "Autonomous Public Institute under Ministry of Commerce",
     "establishedYear": 1963,
     "campusArea": "6 Acres, Qutab Institutional Area",
     "accreditation": "AACSB, NAAC A+",
-    "fees": "₹21.7 Lakhs",
-    "feeNum": 21.7,
-    "avgSalary": "₹29.1 LPA",
-    "avgSalaryNum": 29.1,
-    "highestSalary": "₹85.4 LPA",
-    "medianSalary": "₹26.5 LPA",
-    "batchSize": 380,
-    "roiScore": "9.0 / 10",
+    "fees": "₹21.82 Lakhs",
+    "feeNum": 21.82,
+    "avgSalary": "₹31.30 LPA",
+    "avgSalaryNum": 31.3,
+    "highestSalary": "₹72.00 LPA",
+    "medianSalary": "₹26.00 LPA",
+    "batchSize": 320,
+    "roiScore": "9.2 / 10",
     "examsAccepted": [
       "CAT"
     ],
@@ -1633,16 +1697,16 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "MBA in International Business (MBA-IB)",
-        "duration": "2 Years",
-        "seats": 300,
-        "fee": "₹21,70,000"
+        "name": "MBA in International Business (MBA - IB)",
+        "duration": "2 Years Full Time",
+        "seats": 260,
+        "fee": "₹21,82,000"
       },
       {
-        "name": "MBA in Business Analytics (MBA-BA)",
-        "duration": "2 Years",
-        "seats": 80,
-        "fee": "₹21,70,000"
+        "name": "MBA in Business Analytics (MBA - BA)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹21,82,000"
       }
     ],
     "admissionCriteria": {
@@ -1657,42 +1721,43 @@ export const COLLEGES_DATA = [
       "AC Executive Classrooms",
       "Residential Hostels"
     ],
-    "highlights": "India’s premier institute for International Business and Global Trade; backed by the Ministry of Commerce & Industry with stellar finance and trade roles.",
+    "highlights": "Ranked #15 Management Institute in India by NIRF 2024. Autonomous institution under Ministry of Commerce & Industry, renowned as India's premier B-school for International Trade, Finance, and Consulting.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iift.ac.in"
   },
   {
     "id": "mica-ahmedabad",
     "degreeTypes": [
       "PGDM"
     ],
-    "name": "MICA Ahmedabad - The School of Ideas",
+    "name": "MICA Ahmedabad - Mudra Institute of Communications",
     "shortName": "MICA Ahmedabad",
     "location": "Ahmedabad, Gujarat",
     "city": "Ahmedabad",
     "state": "Gujarat",
     "nirfRank": 32,
-    "rating": 4.6,
-    "reviewsCount": 110,
+    "rating": 4.8,
+    "reviewsCount": 128,
     "programType": "PGDM (Communications)",
     "ownership": "Private Autonomous Institute",
     "establishedYear": 1991,
     "campusArea": "19 Acres Eco-Campus",
-    "accreditation": "AICTE, AIU Equivalence",
-    "fees": "₹23.0 Lakhs",
+    "accreditation": "AICTE, AIU",
+    "fees": "₹23.00 Lakhs",
     "feeNum": 23,
-    "avgSalary": "₹20.1 LPA",
-    "avgSalaryNum": 20.1,
-    "highestSalary": "₹57.5 LPA",
-    "medianSalary": "₹19.0 LPA",
-    "batchSize": 215,
-    "roiScore": "8.6 / 10",
+    "avgSalary": "₹20.09 LPA",
+    "avgSalaryNum": 20.09,
+    "highestSalary": "₹36.00 LPA",
+    "medianSalary": "₹19.00 LPA",
+    "batchSize": 216,
+    "roiScore": "9.1 / 10",
     "examsAccepted": [
       "CAT",
       "XAT"
     ],
-    "cutoffCAT": "80+ %ile (Requires MICAT Exam)",
-    "cutoffXAT": "80+ %ile (Requires MICAT Exam)",
+    "cutoffCAT": "80+ %ile + MICAT",
+    "cutoffXAT": "80+ %ile + MICAT",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
       "catXatGmat": "Minimum 80.0 %ile eligibility gate",
@@ -1717,22 +1782,16 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "PGDM - Communications (Strategic Marketing, Media & Digital)",
-        "duration": "2 Years",
+        "name": "PGDM - Communications (PGDM-C)",
+        "duration": "2 Years Full Time",
         "seats": 180,
         "fee": "₹23,00,000"
       },
       {
-        "name": "PGDM Core",
-        "duration": "2 Years",
-        "seats": 35,
+        "name": "PGDM (General Management)",
+        "duration": "2 Years Full Time",
+        "seats": 36,
         "fee": "₹23,00,000"
-      },
-      {
-        "name": "Crafting Creative Communications (CCC)",
-        "duration": "1 Year Certificate",
-        "seats": 40,
-        "fee": "₹11,00,000"
       }
     ],
     "admissionCriteria": {
@@ -1747,9 +1806,10 @@ export const COLLEGES_DATA = [
       "Creativity & Design Innovation Studios",
       "Hostels named after artistic colors"
     ],
-    "highlights": "Undisputed \"Mecca of Marketing, Advertising & Brand Management\" in Asia; distinct culture with focus on creativity, strategy, and digital trends.",
+    "highlights": "Ranked #32 Management Institute in India by NIRF 2024. Renowned as the 'School of Ideas' and India's undisputed leader for Strategic Marketing, Advertising, and Digital Communications.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.mica.ac.in"
   },
   {
     "id": "dms-iit-delhi",
@@ -1763,7 +1823,7 @@ export const COLLEGES_DATA = [
     "state": "Delhi",
     "nirfRank": 4,
     "rating": 4.7,
-    "reviewsCount": 135,
+    "reviewsCount": 118,
     "programType": "MBA (Full Time)",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 1993,
@@ -1771,12 +1831,12 @@ export const COLLEGES_DATA = [
     "accreditation": "AACSB, AICTE",
     "fees": "₹12.0 Lakhs",
     "feeNum": 12,
-    "avgSalary": "₹25.8 LPA",
-    "avgSalaryNum": 25.8,
-    "highestSalary": "₹41.1 LPA",
-    "medianSalary": "₹24.4 LPA",
-    "batchSize": 115,
-    "roiScore": "9.4 / 10",
+    "avgSalary": "₹25.82 LPA",
+    "avgSalaryNum": 25.82,
+    "highestSalary": "₹41.13 LPA",
+    "medianSalary": "₹24.45 LPA",
+    "batchSize": 197,
+    "roiScore": "9.6 / 10",
     "examsAccepted": [
       "CAT"
     ],
@@ -1788,42 +1848,42 @@ export const COLLEGES_DATA = [
       "ncObc": "90.0+ %ile",
       "sc": "80.0+ %ile",
       "st": "70.0+ %ile",
-      "sectional": "Minimum 80%ile in each section"
+      "sectional": "VARC 80%ile, DILR 80%ile, QA 80%ile"
     },
     "topRecruiters": [
       "McKinsey & Co",
-      "Bain & Co",
-      "Barclays",
+      "Bain & Company",
       "Accenture Strategy",
-      "Google",
-      "Amazon",
       "Deloitte",
-      "PwC"
+      "Amazon",
+      "Google",
+      "Microsoft",
+      "Tata Consumer Products"
     ],
     "domainDistribution": {
-      "consulting": "36%",
-      "productTech": "24%",
-      "finance": "20%",
+      "consulting": "35%",
+      "itAnalytics": "26%",
+      "finance": "18%",
       "operations": "12%",
-      "marketing": "8%"
+      "marketing": "9%"
     },
     "courses": [
       {
-        "name": "Master of Business Administration (MBA)",
+        "name": "Master of Business Administration (MBA Full-Time)",
         "duration": "2 Years Full Time",
-        "seats": 91,
+        "seats": 125,
         "fee": "₹12,00,000"
       },
       {
-        "name": "MBA in Telecom Systems Management",
-        "duration": "2 Years",
-        "seats": 24,
+        "name": "MBA in Telecommunication Systems Management",
+        "duration": "2 Years Full Time",
+        "seats": 72,
         "fee": "₹12,00,000"
       },
       {
         "name": "Executive MBA (Technology Management)",
         "duration": "3 Years Evening",
-        "seats": 45,
+        "seats": 40,
         "fee": "₹10,50,000"
       }
     ],
@@ -1840,9 +1900,10 @@ export const COLLEGES_DATA = [
       "State-of-the-Art Sports Complex",
       "AC Single Hostels"
     ],
-    "highlights": "Ranked #4 in India by NIRF; world-class tech-management pedagogy with exceptional ROI and high consulting/product-tech placement share.",
+    "highlights": "Ranked #4 Management Institute in India by NIRF 2024. Exceptional Return on Investment (ROI) with ₹12 Lakhs total tuition fee and ₹25.82 LPA average CTC. Highly prestigious IIT Delhi ecosystem.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://dms.iitd.ac.in"
   },
   {
     "id": "vgsom-iit-kharagpur",
@@ -1854,26 +1915,26 @@ export const COLLEGES_DATA = [
     "location": "Kharagpur, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 14,
-    "rating": 4.6,
-    "reviewsCount": 120,
+    "nirfRank": 19,
+    "rating": 4.7,
+    "reviewsCount": 110,
     "programType": "MBA",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 1993,
     "campusArea": "2100 Acres (IIT Kharagpur)",
-    "accreditation": "AACSB, AICTE",
-    "fees": "₹11.5 Lakhs",
-    "feeNum": 11.5,
-    "avgSalary": "₹22.1 LPA",
-    "avgSalaryNum": 22.1,
-    "highestSalary": "₹43.4 LPA",
-    "medianSalary": "₹21.0 LPA",
-    "batchSize": 130,
-    "roiScore": "9.2 / 10",
+    "accreditation": "AICTE, NBA",
+    "fees": "₹12.85 Lakhs",
+    "feeNum": 12.85,
+    "avgSalary": "₹22.75 LPA",
+    "avgSalaryNum": 22.75,
+    "highestSalary": "₹43.37 LPA",
+    "medianSalary": "₹21.50 LPA",
+    "batchSize": 200,
+    "roiScore": "9.5 / 10",
     "examsAccepted": [
       "CAT"
     ],
-    "cutoffCAT": "90.0+ %ile",
+    "cutoffCAT": "97.5+ %ile",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -1904,8 +1965,8 @@ export const COLLEGES_DATA = [
       {
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
-        "seats": 130,
-        "fee": "₹11,50,000"
+        "seats": 200,
+        "fee": "₹12,85,000"
       }
     ],
     "admissionCriteria": {
@@ -1919,9 +1980,10 @@ export const COLLEGES_DATA = [
       "Central Digital Library",
       "Olympic Size Pool & Stadiums"
     ],
-    "highlights": "First business school in the IIT system; unchallenged leader in Operations, Supply Chain, and IT consulting.",
+    "highlights": "Ranked #19 Management Institute in India by NIRF 2024. India's first business school established within an IIT, celebrated for exceptional ROI and stellar consulting and supply chain placements.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://som.iitkgp.ac.in"
   },
   {
     "id": "doms-iit-madras",
@@ -1933,26 +1995,26 @@ export const COLLEGES_DATA = [
     "location": "Chennai, Tamil Nadu",
     "city": "Chennai",
     "state": "Tamil Nadu",
-    "nirfRank": 15,
-    "rating": 4.6,
-    "reviewsCount": 95,
+    "nirfRank": 16,
+    "rating": 4.7,
+    "reviewsCount": 98,
     "programType": "MBA",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 2004,
     "campusArea": "630 Acres (IIT Madras)",
-    "accreditation": "AACSB, AICTE",
-    "fees": "₹11.0 Lakhs",
-    "feeNum": 11,
-    "avgSalary": "₹20.5 LPA",
-    "avgSalaryNum": 20.5,
-    "highestSalary": "₹39.0 LPA",
-    "medianSalary": "₹19.5 LPA",
+    "accreditation": "AICTE, NBA",
+    "fees": "₹11.50 Lakhs",
+    "feeNum": 11.5,
+    "avgSalary": "₹18.30 LPA",
+    "avgSalaryNum": 18.3,
+    "highestSalary": "₹32.00 LPA",
+    "medianSalary": "₹17.00 LPA",
     "batchSize": 75,
-    "roiScore": "9.1 / 10",
+    "roiScore": "9.5 / 10",
     "examsAccepted": [
       "CAT"
     ],
-    "cutoffCAT": "90.0+ %ile",
+    "cutoffCAT": "97.0+ %ile",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -1981,7 +2043,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 75,
-        "fee": "₹11,00,000"
+        "fee": "₹11,50,000"
+      },
+      {
+        "name": "TechMBA Dual Degree",
+        "duration": "5 Years Integrated",
+        "seats": 30,
+        "fee": "₹12,00,000"
       }
     ],
     "admissionCriteria": {
@@ -1995,9 +2063,10 @@ export const COLLEGES_DATA = [
       "Eco-Deer Campus Hostels",
       "Sports Quadrangle"
     ],
-    "highlights": "Boutique cohort of 75 students enjoying 100% faculty mentorship, rich research integration, and IIT Madras startup ecosystem.",
+    "highlights": "Ranked #16 Management Institute in India by NIRF 2024. High ROI program embedded in IIT Madras research park ecosystem with 100% placements and intimate cohort size.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://doms.iitm.ac.in"
   },
   {
     "id": "iim-shillong",
@@ -2010,25 +2079,25 @@ export const COLLEGES_DATA = [
     "city": "Shillong",
     "state": "Meghalaya",
     "nirfRank": 24,
-    "rating": 4.6,
-    "reviewsCount": 104,
+    "rating": 4.7,
+    "reviewsCount": 110,
     "programType": "MBA / PGP",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 2007,
     "campusArea": "120 Acres Umsawli Campus",
-    "accreditation": "AACSB",
-    "fees": "₹16.5 Lakhs",
-    "feeNum": 16.5,
-    "avgSalary": "₹26.1 LPA",
-    "avgSalaryNum": 26.1,
-    "highestSalary": "₹71.3 LPA",
-    "medianSalary": "₹25.0 LPA",
-    "batchSize": 280,
+    "accreditation": "AMBA",
+    "fees": "₹26.00 Lakhs",
+    "feeNum": 26,
+    "avgSalary": "₹27.03 LPA",
+    "avgSalaryNum": 27.03,
+    "highestSalary": "₹71.50 LPA",
+    "medianSalary": "₹26.10 LPA",
+    "batchSize": 393,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
       "CAT"
     ],
-    "cutoffCAT": "92.0+ %ile",
+    "cutoffCAT": "95.0+ %ile",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -2057,15 +2126,15 @@ export const COLLEGES_DATA = [
     "courses": [
       {
         "name": "Post Graduate Programme in Management (PGP - MBA)",
-        "duration": "2 Years",
-        "seats": 280,
-        "fee": "₹16,50,000"
+        "duration": "2 Years Full Time",
+        "seats": 393,
+        "fee": "₹26,00,000"
       },
       {
-        "name": "PGP for Working Executives (MBA-WE)",
-        "duration": "2 Years",
-        "seats": 60,
-        "fee": "₹14,00,000"
+        "name": "PGP for Executives (1 Year)",
+        "duration": "1 Year Full Time",
+        "seats": 50,
+        "fee": "₹24,00,000"
       }
     ],
     "admissionCriteria": {
@@ -2079,9 +2148,10 @@ export const COLLEGES_DATA = [
       "Bloomberg Labs",
       "Heated Modern Hostels"
     ],
-    "highlights": "Known as the \"Campus in the Clouds\"; fastest-growing second-tier IIM with massive investment banking & management consulting recruitment.",
+    "highlights": "Ranked #24 Management Institute in India by NIRF 2024. Situated in the scenic hills of Umsawli, Meghalaya with audited IPRS placement report and high average CTC of ₹27.03 LPA.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimshillong.ac.in"
   },
   {
     "id": "iim-udaipur",
@@ -2093,26 +2163,26 @@ export const COLLEGES_DATA = [
     "location": "Udaipur, Rajasthan",
     "city": "Udaipur",
     "state": "Rajasthan",
-    "nirfRank": 16,
+    "nirfRank": 22,
     "rating": 4.7,
-    "reviewsCount": 112,
+    "reviewsCount": 120,
     "programType": "MBA",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 2011,
     "campusArea": "300 Acres Balicha Campus",
     "accreditation": "AACSB",
-    "fees": "₹20.5 Lakhs",
+    "fees": "₹20.50 Lakhs",
     "feeNum": 20.5,
-    "avgSalary": "₹20.3 LPA",
-    "avgSalaryNum": 20.3,
-    "highestSalary": "₹36.0 LPA",
-    "medianSalary": "₹19.0 LPA",
-    "batchSize": 330,
+    "avgSalary": "₹18.80 LPA",
+    "avgSalaryNum": 18.8,
+    "highestSalary": "₹45.00 LPA",
+    "medianSalary": "₹18.00 LPA",
+    "batchSize": 340,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
       "CAT"
     ],
-    "cutoffCAT": "94.0+ %ile",
+    "cutoffCAT": "93.0+ %ile",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -2139,22 +2209,22 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Two-Year MBA (Flagship)",
-        "duration": "2 Years",
-        "seats": 330,
+        "name": "Two-Year Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 340,
         "fee": "₹20,50,000"
       },
       {
-        "name": "One-Year MBA in Digital Enterprise Management (DEM)",
-        "duration": "1 Year",
-        "seats": 60,
-        "fee": "₹22,00,000"
+        "name": "One-Year MBA in Global Supply Chain Management (GSCM)",
+        "duration": "1 Year Full Time",
+        "seats": 40,
+        "fee": "₹22,50,000"
       },
       {
-        "name": "One-Year MBA in Global Supply Chain Management (GSCM)",
-        "duration": "1 Year",
-        "seats": 45,
-        "fee": "₹21,50,000"
+        "name": "One-Year MBA in Digital Enterprise Management (DEM)",
+        "duration": "1 Year Full Time",
+        "seats": 40,
+        "fee": "₹22,50,000"
       }
     ],
     "admissionCriteria": {
@@ -2168,9 +2238,10 @@ export const COLLEGES_DATA = [
       "Incubation Center",
       "Single AC Lakeview Rooms"
     ],
-    "highlights": "Ranked #1 among second-generation IIMs in global research; pioneer of 1-year Digital Enterprise Management MBA.",
+    "highlights": "Ranked #22 Management Institute in India by NIRF 2024. Youngest AACSB accredited B-school in India with sprawling 300-acre Aravalli range campus and premier research ranking.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimu.ac.in"
   },
   {
     "id": "iim-raipur",
@@ -2182,21 +2253,21 @@ export const COLLEGES_DATA = [
     "location": "Atal Nagar, Raipur, Chhattisgarh",
     "city": "Raipur",
     "state": "Chhattisgarh",
-    "nirfRank": 11,
-    "rating": 4.6,
-    "reviewsCount": 98,
+    "nirfRank": 14,
+    "rating": 4.7,
+    "reviewsCount": 122,
     "programType": "MBA",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 2010,
     "campusArea": "200 Acres Naya Raipur",
-    "accreditation": "AACSB, AMBA",
-    "fees": "₹18.0 Lakhs",
-    "feeNum": 18,
-    "avgSalary": "₹21.0 LPA",
-    "avgSalaryNum": 21,
-    "highestSalary": "₹67.6 LPA",
-    "medianSalary": "₹20.0 LPA",
-    "batchSize": 310,
+    "accreditation": "AACSB, AICTE",
+    "fees": "₹20.08 Lakhs",
+    "feeNum": 20.08,
+    "avgSalary": "₹20.70 LPA",
+    "avgSalaryNum": 20.7,
+    "highestSalary": "₹43.43 LPA",
+    "medianSalary": "₹20.00 LPA",
+    "batchSize": 325,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
       "CAT"
@@ -2228,10 +2299,16 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Post Graduate Programme in Management (MBA)",
-        "duration": "2 Years",
-        "seats": 310,
-        "fee": "₹18,00,000"
+        "name": "Post Graduate Programme in Management (PGP - MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 325,
+        "fee": "₹20,08,000"
+      },
+      {
+        "name": "Executive Post Graduate Programme in Management (ePGP)",
+        "duration": "2 Years Hybrid",
+        "seats": 80,
+        "fee": "₹13,25,000"
       }
     ],
     "admissionCriteria": {
@@ -2245,9 +2322,10 @@ export const COLLEGES_DATA = [
       "Sports Complex",
       "Modern Executive Hostels"
     ],
-    "highlights": "Consistently ranks in NIRF Top 15 management institutes in India; exceptional general management and analytics placements.",
+    "highlights": "Ranked #14 Management Institute in India by NIRF 2024. State-of-the-art 200-acre smart campus in Naya Raipur with strong corporate leadership development programs.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimraipur.ac.in"
   },
   {
     "id": "iim-trichy",
@@ -2260,21 +2338,21 @@ export const COLLEGES_DATA = [
     "city": "Tiruchirappalli",
     "state": "Tamil Nadu",
     "nirfRank": 27,
-    "rating": 4.6,
-    "reviewsCount": 92,
+    "rating": 4.7,
+    "reviewsCount": 130,
     "programType": "MBA",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 2011,
     "campusArea": "175 Acres",
-    "accreditation": "AMBA, AACSB",
-    "fees": "₹19.5 Lakhs",
+    "accreditation": "AACSB, AMBA",
+    "fees": "₹19.50 Lakhs",
     "feeNum": 19.5,
-    "avgSalary": "₹20.5 LPA",
-    "avgSalaryNum": 20.5,
-    "highestSalary": "₹41.6 LPA",
-    "medianSalary": "₹19.5 LPA",
-    "batchSize": 240,
-    "roiScore": "8.8 / 10",
+    "avgSalary": "₹20.55 LPA",
+    "avgSalaryNum": 20.55,
+    "highestSalary": "₹41.61 LPA",
+    "medianSalary": "₹19.50 LPA",
+    "batchSize": 300,
+    "roiScore": "9.0 / 10",
     "examsAccepted": [
       "CAT"
     ],
@@ -2305,15 +2383,15 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Post Graduate Programme in Management (MBA)",
-        "duration": "2 Years",
+        "name": "Post Graduate Programme in Management (PGPM - MBA)",
+        "duration": "2 Years Full Time",
         "seats": 240,
         "fee": "₹19,50,000"
       },
       {
-        "name": "PGP in Human Resources (MBA-HR)",
-        "duration": "2 Years",
-        "seats": 30,
+        "name": "Post Graduate Programme in Management - Human Resources (PGPM-HR)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
         "fee": "₹19,50,000"
       }
     ],
@@ -2328,9 +2406,10 @@ export const COLLEGES_DATA = [
       "Learning Resource Center",
       "International Standard Sports Ground"
     ],
-    "highlights": "Premier southern IIM with AMBA accreditation and unmatched finance & BFSI hiring benchmarks.",
+    "highlights": "Ranked #27 Management Institute in India by NIRF 2024. Sprawling 175-acre smart campus on Trichy-Pudukkottai Highway with AACSB and AMBA international accreditations.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimtrichy.ac.in"
   },
   {
     "id": "iim-ranchi",
@@ -2343,25 +2422,25 @@ export const COLLEGES_DATA = [
     "city": "Ranchi",
     "state": "Jharkhand",
     "nirfRank": 17,
-    "rating": 4.5,
-    "reviewsCount": 88,
+    "rating": 4.7,
+    "reviewsCount": 115,
     "programType": "MBA / MBA-HR",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 2009,
     "campusArea": "60 Acres Kanke Permanent Campus",
-    "accreditation": "EQUIS, AACSB",
-    "fees": "₹17.5 Lakhs",
-    "feeNum": 17.5,
-    "avgSalary": "₹18.7 LPA",
-    "avgSalaryNum": 18.7,
-    "highestSalary": "₹35.5 LPA",
-    "medianSalary": "₹17.5 LPA",
-    "batchSize": 290,
-    "roiScore": "8.7 / 10",
+    "accreditation": "AICTE, AIU",
+    "fees": "₹19.20 Lakhs",
+    "feeNum": 19.2,
+    "avgSalary": "₹19.26 LPA",
+    "avgSalaryNum": 19.26,
+    "highestSalary": "₹37.80 LPA",
+    "medianSalary": "₹18.50 LPA",
+    "batchSize": 370,
+    "roiScore": "8.9 / 10",
     "examsAccepted": [
       "CAT"
     ],
-    "cutoffCAT": "93.0+ %ile",
+    "cutoffCAT": "94.0+ %ile",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -2388,22 +2467,28 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "MBA Core",
-        "duration": "2 Years",
-        "seats": 210,
-        "fee": "₹17,50,000"
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 240,
+        "fee": "₹19,20,000"
       },
       {
-        "name": "MBA - Human Resource Management (MBA-HR)",
-        "duration": "2 Years",
+        "name": "MBA in Human Resource Management (MBA-HRM)",
+        "duration": "2 Years Full Time",
         "seats": 65,
-        "fee": "₹17,50,000"
+        "fee": "₹19,20,000"
       },
       {
-        "name": "MBA - Business Analytics (MBA-BA)",
-        "duration": "2 Years",
-        "seats": 45,
-        "fee": "₹17,50,000"
+        "name": "MBA in Business Analytics (MBA-BA)",
+        "duration": "2 Years Full Time",
+        "seats": 65,
+        "fee": "₹19,20,000"
+      },
+      {
+        "name": "Integrated Programme in Management (IPM)",
+        "duration": "5 Years Full Time",
+        "seats": 120,
+        "fee": "₹34,00,000"
       }
     ],
     "admissionCriteria": {
@@ -2417,9 +2502,10 @@ export const COLLEGES_DATA = [
       "Central Digital Library",
       "Modern Auditoriums"
     ],
-    "highlights": "Nationally acclaimed for its specialized MBA in Human Resources, in addition to its flagship General MBA.",
+    "highlights": "Ranked #17 Management Institute in India by NIRF 2024. New permanent campus in Dhurwa, Ranchi with specialized HR and Analytics faculties and audited IPRS placement report.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimranchi.ac.in"
   },
   {
     "id": "iim-rohtak",
@@ -2432,21 +2518,21 @@ export const COLLEGES_DATA = [
     "city": "Delhi-NCR",
     "state": "Haryana",
     "nirfRank": 12,
-    "rating": 4.5,
-    "reviewsCount": 95,
+    "rating": 4.7,
+    "reviewsCount": 135,
     "programType": "MBA",
     "ownership": "Government / Institute of National Importance",
     "establishedYear": 2009,
     "campusArea": "200 Acres Sunaria Campus",
-    "accreditation": "AMBA, AACSB",
-    "fees": "₹18.5 Lakhs",
-    "feeNum": 18.5,
-    "avgSalary": "₹19.3 LPA",
-    "avgSalaryNum": 19.3,
-    "highestSalary": "₹36.0 LPA",
-    "medianSalary": "₹18.0 LPA",
+    "accreditation": "AMBA, AICTE",
+    "fees": "₹17.90 Lakhs",
+    "feeNum": 17.9,
+    "avgSalary": "₹19.27 LPA",
+    "avgSalaryNum": 19.27,
+    "highestSalary": "₹48.25 LPA",
+    "medianSalary": "₹18.00 LPA",
     "batchSize": 320,
-    "roiScore": "8.7 / 10",
+    "roiScore": "8.9 / 10",
     "examsAccepted": [
       "CAT"
     ],
@@ -2478,16 +2564,16 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Post Graduate Programme in Management (MBA)",
-        "duration": "2 Years",
+        "name": "Post Graduate Programme in Management (PGP - MBA)",
+        "duration": "2 Years Full Time",
         "seats": 320,
-        "fee": "₹18,50,000"
+        "fee": "₹17,90,000"
       },
       {
-        "name": "Integrated Programme in Management (IPM)",
-        "duration": "5 Years",
-        "seats": 180,
-        "fee": "₹33,00,000"
+        "name": "Five-Year Integrated Programme in Management (IPM)",
+        "duration": "5 Years Full Time",
+        "seats": 160,
+        "fee": "₹33,50,000"
       }
     ],
     "admissionCriteria": {
@@ -2501,9 +2587,10 @@ export const COLLEGES_DATA = [
       "Student Activity Center",
       "High-Speed Wi-Fi Hostels"
     ],
-    "highlights": "Strategically located within the National Capital Region; boasts the highest female gender diversity ratio across top business schools in Asia.",
+    "highlights": "Ranked #12 Management Institute in India by NIRF 2024. Top B-school in Delhi-NCR region with massive campus, industry consulting engagements, and strong 100% placement record.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimrohtak.ac.in"
   },
   {
     "id": "scmhrd-pune",
@@ -2516,25 +2603,25 @@ export const COLLEGES_DATA = [
     "city": "Pune",
     "state": "Maharashtra",
     "nirfRank": 30,
-    "rating": 4.6,
-    "reviewsCount": 130,
+    "rating": 4.7,
+    "reviewsCount": 140,
     "programType": "MBA (HR, Marketing, Finance, Ops, BA)",
     "ownership": "Private / Symbiosis International University",
     "establishedYear": 1993,
     "campusArea": "Hinjawadi Infotech Park Campus",
     "accreditation": "AACSB, NAAC A++",
-    "fees": "₹23.5 Lakhs",
-    "feeNum": 23.5,
-    "avgSalary": "₹23.7 LPA",
-    "avgSalaryNum": 23.7,
-    "highestSalary": "₹67.6 LPA",
-    "medianSalary": "₹22.0 LPA",
-    "batchSize": 180,
-    "roiScore": "8.8 / 10",
+    "fees": "₹24.00 Lakhs",
+    "feeNum": 24,
+    "avgSalary": "₹23.71 LPA",
+    "avgSalaryNum": 23.71,
+    "highestSalary": "₹38.00 LPA",
+    "medianSalary": "₹22.00 LPA",
+    "batchSize": 270,
+    "roiScore": "8.9 / 10",
     "examsAccepted": [
       "SNAP"
     ],
-    "cutoffCAT": "N/A",
+    "cutoffCAT": "N/A (Accepts SNAP: 97.0+ %ile)",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -2560,22 +2647,22 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Master of Business Administration (Core - HR/Mkt/Fin/Ops)",
-        "duration": "2 Years",
+        "name": "Master of Business Administration (MBA - HR/Marketing/Finance/Ops)",
+        "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹23,50,000"
+        "fee": "₹24,00,000"
       },
       {
-        "name": "MBA in Infrastructure Development & Management (IDM)",
-        "duration": "2 Years",
+        "name": "MBA in Business Analytics (MBA - BA)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹14,50,000"
+        "fee": "₹22,50,000"
       },
       {
-        "name": "MBA in Business Analytics (BA)",
-        "duration": "2 Years",
-        "seats": 90,
-        "fee": "₹17,00,000"
+        "name": "MBA in Infrastructure Development & Management (MBA - IDM)",
+        "duration": "2 Years Full Time",
+        "seats": 30,
+        "fee": "₹18,50,000"
       }
     ],
     "admissionCriteria": {
@@ -2590,9 +2677,10 @@ export const COLLEGES_DATA = [
       "Bloomberg Terminals",
       "Auditorium & Gymnasium"
     ],
-    "highlights": "India premier institute for HR and Business Analytics; direct campus hiring presence of all Fortune 500 conglomerates.",
+    "highlights": "Ranked #30 Management Institute in India by NIRF 2024. Symbiosis Centre for Management and Human Resource Development is among India's elite HR, Analytics, and Infrastructure leadership hubs.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.scmhrd.edu"
   },
   {
     "id": "dse-delhi",
@@ -2604,9 +2692,9 @@ export const COLLEGES_DATA = [
     "location": "North Campus, Delhi University, New Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 38,
+    "nirfRank": null,
     "rating": 4.7,
-    "reviewsCount": 140,
+    "reviewsCount": 110,
     "programType": "MBA (International Business & Human Resources)",
     "ownership": "Central University (University of Delhi)",
     "establishedYear": 1949,
@@ -2614,16 +2702,16 @@ export const COLLEGES_DATA = [
     "accreditation": "UGC, NAAC A+",
     "fees": "₹0.32 Lakhs",
     "feeNum": 0.32,
-    "avgSalary": "₹14.5 LPA",
+    "avgSalary": "₹14.50 LPA",
     "avgSalaryNum": 14.5,
-    "highestSalary": "₹26.5 LPA",
-    "medianSalary": "₹13.8 LPA",
+    "highestSalary": "₹28.00 LPA",
+    "medianSalary": "₹13.80 LPA",
     "batchSize": 90,
-    "roiScore": "10 / 10 (Phenomenal ROI)",
+    "roiScore": "9.9 / 10",
     "examsAccepted": [
       "CAT"
     ],
-    "cutoffCAT": "94.0+ %ile",
+    "cutoffCAT": "95.0+ %ile",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
@@ -2653,14 +2741,14 @@ export const COLLEGES_DATA = [
       {
         "name": "MBA in International Business (MBA-IB)",
         "duration": "2 Years Full Time",
-        "seats": 52,
-        "fee": "₹32,000 Total"
+        "seats": 45,
+        "fee": "₹32,000"
       },
       {
         "name": "MBA in Human Resource Development (MBA-HRD)",
         "duration": "2 Years Full Time",
-        "seats": 52,
-        "fee": "₹32,000 Total"
+        "seats": 45,
+        "fee": "₹32,000"
       }
     ],
     "admissionCriteria": {
@@ -2674,9 +2762,10 @@ export const COLLEGES_DATA = [
       "Computer Labs",
       "University Hostels"
     ],
-    "highlights": "The ROI marvel of Indian MBA education: 2-year total tuition is only ₹32,000 with average placement CTC of ₹14.5 LPA and iconic North Campus academic heritage.",
+    "highlights": "Department of Commerce, Delhi School of Economics (University of Delhi). Legendary ROI business school with nominal total 2-year fee of ₹32,000 and ₹14.50 LPA average placement.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://commercedu.com"
   },
   {
     "id": "dfs-delhi",
@@ -2688,8 +2777,8 @@ export const COLLEGES_DATA = [
     "location": "Benito Juarez Road, South Campus, New Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 42,
-    "rating": 4.7,
+    "nirfRank": null,
+    "rating": 4.8,
     "reviewsCount": 95,
     "programType": "MBA (Financial Management)",
     "ownership": "Central University (University of Delhi)",
@@ -2698,12 +2787,12 @@ export const COLLEGES_DATA = [
     "accreditation": "UGC",
     "fees": "₹0.30 Lakhs",
     "feeNum": 0.3,
-    "avgSalary": "₹17.2 LPA",
+    "avgSalary": "₹17.20 LPA",
     "avgSalaryNum": 17.2,
-    "highestSalary": "₹32.0 LPA",
-    "medianSalary": "₹16.5 LPA",
+    "highestSalary": "₹32.00 LPA",
+    "medianSalary": "₹16.50 LPA",
     "batchSize": 45,
-    "roiScore": "10 / 10 (Phenomenal ROI)",
+    "roiScore": "9.9 / 10",
     "examsAccepted": [
       "CAT"
     ],
@@ -2734,10 +2823,10 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "MBA in Financial Management (MBA-FM)",
-        "duration": "2 Years",
+        "name": "Master of Business Administration (Financial Studies - MBA-FS)",
+        "duration": "2 Years Full Time",
         "seats": 45,
-        "fee": "₹30,000 Total"
+        "fee": "₹30,000"
       }
     ],
     "admissionCriteria": {
@@ -2750,9 +2839,10 @@ export const COLLEGES_DATA = [
       "South Campus Central Library",
       "Hostel Accommodations"
     ],
-    "highlights": "Premier Dalal Street & Wall Street talent incubator; ₹30,000 two-year fee yielding average salary over ₹17 LPA in core finance & equity research.",
+    "highlights": "Department of Financial Studies (University of Delhi South Campus). Undisputed ROI leader in specialized finance education with nominal fee and ₹17.20 LPA average salary across bulge-bracket investment banks.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://mfc.edu"
   },
   {
     "id": "pumba-pune",
@@ -2764,28 +2854,28 @@ export const COLLEGES_DATA = [
     "location": "Ganeshkhind, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 55,
-    "rating": 4.4,
-    "reviewsCount": 110,
+    "nirfRank": null,
+    "rating": 4.6,
+    "reviewsCount": 120,
     "programType": "MBA",
     "ownership": "State University (Savitribai Phule Pune University)",
     "establishedYear": 1971,
     "campusArea": "411 Acres (SPPU Campus)",
-    "accreditation": "UGC, NAAC A+",
-    "fees": "₹2.5 Lakhs",
-    "feeNum": 2.5,
-    "avgSalary": "₹8.8 LPA",
-    "avgSalaryNum": 8.8,
-    "highestSalary": "₹18.9 LPA",
-    "medianSalary": "₹8.2 LPA",
+    "accreditation": "NAAC A+, UGC",
+    "fees": "₹2.45 Lakhs",
+    "feeNum": 2.45,
+    "avgSalary": "₹11.23 LPA",
+    "avgSalaryNum": 11.23,
+    "highestSalary": "₹19.00 LPA",
+    "medianSalary": "₹10.80 LPA",
     "batchSize": 180,
-    "roiScore": "9.3 / 10",
+    "roiScore": "9.8 / 10",
     "examsAccepted": [
       "MH-CET",
       "CAT",
       "CMAT"
     ],
-    "cutoffCAT": "85.0+ %ile",
+    "cutoffCAT": "95.0+ %ile (MAH-CET: 99.2+ %ile)",
     "cutoffXAT": "N/A",
     "cutoffCMAT": "95.0+ %ile",
     "cutoffDetails": {
@@ -2811,16 +2901,16 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Master of Business Administration (MBA)",
+        "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹2,50,000"
+        "fee": "₹2,45,000"
       },
       {
-        "name": "MBA in Pharma-Biotechnology (PBT)",
-        "duration": "2 Years",
+        "name": "MBA in Pharma-Biotechnology (MBA-PBT)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹2,50,000"
+        "fee": "₹2,45,000"
       }
     ],
     "admissionCriteria": {
@@ -2831,9 +2921,10 @@ export const COLLEGES_DATA = [
       "Jayakar Knowledge Resource Centre",
       "University Sports Complex"
     ],
-    "highlights": "Premier public university MBA institute in Maharashtra; unmatched affordability under ₹2.5 Lakhs with strong alumni network across Pune corporate hub.",
+    "highlights": "Department of Management Sciences, Savitribai Phule Pune University. One of India's earliest university business departments offering premier ROI with ₹2.45L fees and ₹11.23 LPA average CTC.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.pumba.in"
   },
   {
     "id": "imt-ghaziabad",
@@ -2846,21 +2937,21 @@ export const COLLEGES_DATA = [
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
     "nirfRank": 35,
-    "rating": 4.7,
-    "reviewsCount": 220,
+    "rating": 4.6,
+    "reviewsCount": 160,
     "programType": "PGDM (Core, Marketing, Finance, BFS, DCP)",
     "ownership": "Private Autonomous Institute",
     "establishedYear": 1980,
     "campusArea": "14 Acres Raj Nagar Campus",
-    "accreditation": "AACSB, SAQS, AICTE, AIU",
-    "fees": "₹21.5 Lakhs",
-    "feeNum": 21.5,
-    "avgSalary": "₹17.3 LPA",
-    "avgSalaryNum": 17.3,
-    "highestSalary": "₹65.6 LPA",
-    "medianSalary": "₹16.0 LPA",
-    "batchSize": 480,
-    "roiScore": "8.7 / 10",
+    "accreditation": "AACSB, SAQS",
+    "fees": "₹21.53 Lakhs",
+    "feeNum": 21.53,
+    "avgSalary": "₹17.35 LPA",
+    "avgSalaryNum": 17.35,
+    "highestSalary": "₹65.60 LPA",
+    "medianSalary": "₹16.00 LPA",
+    "batchSize": 600,
+    "roiScore": "8.8 / 10",
     "examsAccepted": [
       "CAT",
       "XAT"
@@ -2892,28 +2983,22 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Post Graduate Diploma in Management (PGDM Flagship)",
+        "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
-        "seats": 360,
-        "fee": "₹21,50,000"
+        "seats": 480,
+        "fee": "₹21,53,000"
       },
       {
         "name": "PGDM Marketing",
-        "duration": "2 Years",
+        "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹21,50,000"
+        "fee": "₹21,53,000"
       },
       {
-        "name": "PGDM Banking and Financial Services (BFS)",
-        "duration": "2 Years",
+        "name": "PGDM Finance",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹21,50,000"
-      },
-      {
-        "name": "PGDM Dual Country Programme (DCP - UAE & India)",
-        "duration": "2 Years",
-        "seats": 120,
-        "fee": "₹24,00,000"
+        "fee": "₹21,53,000"
       }
     ],
     "admissionCriteria": {
@@ -2928,9 +3013,10 @@ export const COLLEGES_DATA = [
       "Amphitheatre Classrooms",
       "Floodlit Sports Courts"
     ],
-    "highlights": "Widely recognized as India #1 Marketing Powerhouse; prestigious AACSB accreditation with legendary alumni steering global consumer goods giants.",
+    "highlights": "Ranked #35 Management Institute in India by NIRF 2024. Regarded as India's top marketing powerhouse with AACSB accreditation and extensive alumni presence in FMCG and Consulting leadership.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.imt.edu"
   },
   {
     "id": "imi-new-delhi",
@@ -2942,22 +3028,22 @@ export const COLLEGES_DATA = [
     "location": "Qutab Institutional Area, New Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 34,
+    "nirfRank": 40,
     "rating": 4.6,
-    "reviewsCount": 165,
+    "reviewsCount": 135,
     "programType": "PGDM (General, HRM, B&FS)",
     "ownership": "Private Autonomous Institute",
     "establishedYear": 1981,
     "campusArea": "Qutab Institutional Area, South Delhi",
-    "accreditation": "AMBA, AACSB, AICTE, AIU",
-    "fees": "₹20.8 Lakhs",
-    "feeNum": 20.8,
-    "avgSalary": "₹17.0 LPA",
-    "avgSalaryNum": 17,
-    "highestSalary": "₹50.0 LPA",
-    "medianSalary": "₹16.2 LPA",
-    "batchSize": 340,
-    "roiScore": "8.6 / 10",
+    "accreditation": "AMBA, AACSB",
+    "fees": "₹20.95 Lakhs",
+    "feeNum": 20.95,
+    "avgSalary": "₹16.88 LPA",
+    "avgSalaryNum": 16.88,
+    "highestSalary": "₹50.00 LPA",
+    "medianSalary": "₹16.00 LPA",
+    "batchSize": 360,
+    "roiScore": "8.7 / 10",
     "examsAccepted": [
       "CAT",
       "XAT"
@@ -2988,22 +3074,22 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "PGDM Core",
-        "duration": "2 Years",
-        "seats": 240,
-        "fee": "₹20,80,000"
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 360,
+        "fee": "₹21,00,000"
       },
       {
-        "name": "PGDM Human Resource Management (PGDM-HRM)",
-        "duration": "2 Years",
+        "name": "PGDM in Human Resource Management (PGDM-HRM)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹20,80,000"
+        "fee": "₹21,00,000"
       },
       {
-        "name": "PGDM Banking & Financial Services (PGDM-B&FS)",
-        "duration": "2 Years",
+        "name": "PGDM in Banking and Financial Services (PGDM-BFS)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹20,80,000"
+        "fee": "₹21,00,000"
       }
     ],
     "admissionCriteria": {
@@ -3018,9 +3104,10 @@ export const COLLEGES_DATA = [
       "Air-Conditioned Hostels",
       "Smart Amphitheatres"
     ],
-    "highlights": "India first corporate-sponsored business school; double crown AMBA & AACSB accredited with stellar finance & consulting placements.",
+    "highlights": "Ranked #34 Management Institute in India by NIRF 2024. Located in Qutab Institutional Area New Delhi with dual AACSB/AMBA international accreditations and premier corporate recruitments.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.imi.edu"
   },
   {
     "id": "fore-school-delhi",
@@ -3032,22 +3119,22 @@ export const COLLEGES_DATA = [
     "location": "Adhitam Kendra, Qutab Institutional Area, New Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 53,
+    "nirfRank": null,
     "rating": 4.5,
-    "reviewsCount": 145,
+    "reviewsCount": 130,
     "programType": "PGDM (Core, IB, FM, BDA)",
     "ownership": "Private Autonomous Institute",
     "establishedYear": 1992,
     "campusArea": "Qutab Institutional Area",
-    "accreditation": "SAQS, AICTE, AIU Equivalence",
-    "fees": "₹18.5 Lakhs",
-    "feeNum": 18.5,
-    "avgSalary": "₹14.5 LPA",
+    "accreditation": "SAQS, AICTE",
+    "fees": "₹18.25 Lakhs",
+    "feeNum": 18.25,
+    "avgSalary": "₹14.50 LPA",
     "avgSalaryNum": 14.5,
-    "highestSalary": "₹30.0 LPA",
-    "medianSalary": "₹14.0 LPA",
+    "highestSalary": "₹30.00 LPA",
+    "medianSalary": "₹14.00 LPA",
     "batchSize": 420,
-    "roiScore": "8.5 / 10",
+    "roiScore": "8.6 / 10",
     "examsAccepted": [
       "CAT",
       "XAT",
@@ -3079,28 +3166,28 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "PGDM Core",
-        "duration": "2 Years",
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹18,50,000"
+        "fee": "₹18,25,000"
       },
       {
-        "name": "PGDM International Business (IB)",
-        "duration": "2 Years",
+        "name": "PGDM in International Business (PGDM-IB)",
+        "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹18,50,000"
+        "fee": "₹18,25,000"
       },
       {
-        "name": "PGDM Financial Management (FM)",
-        "duration": "2 Years",
+        "name": "PGDM in Financial Management (PGDM-FM)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹18,50,000"
+        "fee": "₹18,25,000"
       },
       {
-        "name": "PGDM Big Data Analytics (BDA)",
-        "duration": "2 Years",
+        "name": "PGDM in Big Data Analytics (PGDM-BDA)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹18,50,000"
+        "fee": "₹18,25,000"
       }
     ],
     "admissionCriteria": {
@@ -3115,9 +3202,10 @@ export const COLLEGES_DATA = [
       "Decision Sciences Simulation Lab",
       "Viraj Central Library"
     ],
-    "highlights": "Premier autonomous institute in South Delhi corporate district; pioneer in Big Data Analytics and International Business PGDM.",
+    "highlights": "Ranked #53 Management Institute in India by NIRF 2024. Located in Qutab Institutional Area, South Delhi with strong faculty and industry leadership recruitment.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.fsm.ac.in"
   },
   {
     "id": "great-lakes-chennai",
@@ -3126,25 +3214,25 @@ export const COLLEGES_DATA = [
       "PGPM",
       "Global MBA"
     ],
-    "name": "Great Lakes Institute of Management, Chennai (GLIM)",
+    "name": "Great Lakes Institute of Management, Chennai",
     "shortName": "Great Lakes Chennai",
     "location": "East Coast Road, Chennai, Tamil Nadu",
     "city": "Chennai",
     "state": "Tamil Nadu",
-    "nirfRank": 31,
-    "rating": 4.7,
-    "reviewsCount": 178,
+    "nirfRank": 34,
+    "rating": 4.6,
+    "reviewsCount": 145,
     "programType": "PGDM (2-Year) & PGPM (1-Year Flagship)",
     "ownership": "Private Autonomous Institute",
     "establishedYear": 2004,
     "campusArea": "27.5 Acres LEED Platinum Green Campus",
-    "accreditation": "AMBA, SAQS, AICTE, AIU",
-    "fees": "₹20.5 Lakhs",
-    "feeNum": 20.5,
-    "avgSalary": "₹18.1 LPA",
-    "avgSalaryNum": 18.1,
-    "highestSalary": "₹46.0 LPA",
-    "medianSalary": "₹17.5 LPA",
+    "accreditation": "AMBA, SAQS",
+    "fees": "₹20.75 Lakhs",
+    "feeNum": 20.75,
+    "avgSalary": "₹15.10 LPA",
+    "avgSalaryNum": 15.1,
+    "highestSalary": "₹46.00 LPA",
+    "medianSalary": "₹14.50 LPA",
     "batchSize": 300,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -3177,16 +3265,16 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Post Graduate Diploma in Management (PGDM - 2 Year)",
+        "name": "Post Graduate Diploma in Management (PGDM - 2 Years)",
         "duration": "2 Years Full Time",
-        "seats": 180,
-        "fee": "₹20,50,000"
+        "seats": 300,
+        "fee": "₹20,75,000"
       },
       {
-        "name": "Post Graduate Program in Management (PGPM - 1 Year Flagship)",
+        "name": "Post Graduate Program in Management (PGPM - 1 Year)",
         "duration": "1 Year Full Time",
-        "seats": 420,
-        "fee": "₹21,80,000"
+        "seats": 400,
+        "fee": "₹19,90,000"
       }
     ],
     "admissionCriteria": {
@@ -3201,9 +3289,10 @@ export const COLLEGES_DATA = [
       "Amphitheatre Classrooms",
       "Resort-Style Residential Blocks"
     ],
-    "highlights": "Founded by Management Guru Prof. Bala V Balachandran; global faculty ties with Kellogg & Stanford; pioneer in AI, FinTech & Analytics management.",
+    "highlights": "Ranked #29 Management Institute in India by NIRF 2024. Founded by management guru Dr. Bala V. Balachandran with LEED Platinum rated green campus on East Coast Road Chennai.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.greatlakes.edu.in/chennai"
   },
   {
     "id": "lbsim-delhi",
@@ -3215,21 +3304,21 @@ export const COLLEGES_DATA = [
     "location": "Sector 11, Dwarka, New Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 60,
+    "nirfRank": null,
     "rating": 4.5,
-    "reviewsCount": 115,
+    "reviewsCount": 125,
     "programType": "PGDM (General, Financial Management, R&BA, E-Business)",
     "ownership": "Private Autonomous Institute",
     "establishedYear": 1995,
     "campusArea": "Dwarka Metro Hub Campus",
-    "accreditation": "AICTE, AIU, NBA",
-    "fees": "₹15.5 Lakhs",
-    "feeNum": 15.5,
-    "avgSalary": "₹12.5 LPA",
-    "avgSalaryNum": 12.5,
-    "highestSalary": "₹24.8 LPA",
-    "medianSalary": "₹12.0 LPA",
-    "batchSize": 300,
+    "accreditation": "NBA, AIU",
+    "fees": "₹17.25 Lakhs",
+    "feeNum": 17.25,
+    "avgSalary": "₹12.32 LPA",
+    "avgSalaryNum": 12.32,
+    "highestSalary": "₹24.00 LPA",
+    "medianSalary": "₹11.80 LPA",
+    "batchSize": 360,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
       "CAT",
@@ -3260,22 +3349,28 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "PGDM General",
-        "duration": "2 Years",
+        "name": "Post Graduate Diploma in Management (PGDM General)",
+        "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹15,50,000"
+        "fee": "₹17,25,000"
       },
       {
-        "name": "PGDM Financial Management",
-        "duration": "2 Years",
+        "name": "PGDM in Financial Management (PGDM-FM)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹15,50,000"
+        "fee": "₹17,25,000"
       },
       {
-        "name": "PGDM Research & Business Analytics",
-        "duration": "2 Years",
+        "name": "PGDM in Research and Business Analytics (PGDM-RBA)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹15,50,000"
+        "fee": "₹17,25,000"
+      },
+      {
+        "name": "PGDM in Artificial Intelligence & Data Science",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹17,25,000"
       }
     ],
     "admissionCriteria": {
@@ -3290,9 +3385,10 @@ export const COLLEGES_DATA = [
       "Modern Computer Centre",
       "Hostels in Dwarka"
     ],
-    "highlights": "Premier value-driven management institute in the capital; celebrated for corporate finance, investment research, and treasury management careers.",
+    "highlights": "Ranked #60 Management Institute in India by NIRF 2024. Lal Bahadur Shastri Institute of Management, Dwarka, New Delhi is renowned for values-driven education and top BFSI recruitment.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.lbsim.ac.in"
   },
   {
     "id": "kj-somaiya-mumbai",
@@ -3300,25 +3396,25 @@ export const COLLEGES_DATA = [
       "MBA",
       "PGDM"
     ],
-    "name": "K J Somaiya Institute of Management (SIMSR), Mumbai",
+    "name": "K J Somaiya Institute of Management, Somaiya Vidyavihar University, Mumbai",
     "shortName": "KJ Somaiya Mumbai",
     "location": "Vidyavihar East, Mumbai, Maharashtra",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 45,
-    "rating": 4.6,
-    "reviewsCount": 190,
+    "nirfRank": 63,
+    "rating": 4.5,
+    "reviewsCount": 155,
     "programType": "MBA / PGDM",
     "ownership": "Private Autonomous / Somaiya Vidyavihar University",
     "establishedYear": 1981,
     "campusArea": "60 Acres Green Vidyavihar Campus",
-    "accreditation": "AACSB, AIU, NBA",
-    "fees": "₹20.0 Lakhs",
-    "feeNum": 20,
-    "avgSalary": "₹12.3 LPA",
-    "avgSalaryNum": 12.3,
-    "highestSalary": "₹28.3 LPA",
-    "medianSalary": "₹11.8 LPA",
+    "accreditation": "AACSB",
+    "fees": "₹20.87 Lakhs",
+    "feeNum": 20.87,
+    "avgSalary": "₹12.32 LPA",
+    "avgSalaryNum": 12.32,
+    "highestSalary": "₹28.25 LPA",
+    "medianSalary": "₹11.75 LPA",
     "batchSize": 600,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -3327,8 +3423,8 @@ export const COLLEGES_DATA = [
       "CMAT",
       "NMAT"
     ],
-    "cutoffCAT": "84.0+ %ile",
-    "cutoffXAT": "84.0+ %ile",
+    "cutoffCAT": "83.0+ %ile",
+    "cutoffXAT": "83.0+ %ile",
     "cutoffCMAT": "95.0+ %ile",
     "cutoffDetails": {
       "catXatCutoff": "84.0+ %ile",
@@ -3355,22 +3451,10 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Master of Business Administration (MBA Core)",
-        "duration": "2 Years",
+        "name": "Master of Business Administration (MBA General)",
+        "duration": "2 Years Full Time",
         "seats": 600,
-        "fee": "₹20,00,000"
-      },
-      {
-        "name": "MBA in Healthcare Management",
-        "duration": "2 Years",
-        "seats": 30,
-        "fee": "₹18,00,000"
-      },
-      {
-        "name": "MBA in Sports Management",
-        "duration": "2 Years",
-        "seats": 30,
-        "fee": "₹18,00,000"
+        "fee": "₹20,87,000"
       }
     ],
     "admissionCriteria": {
@@ -3386,9 +3470,10 @@ export const COLLEGES_DATA = [
       "Amphitheatre Classrooms",
       "Bloomberg Terminals Lab"
     ],
-    "highlights": "AACSB-accredited sprawling 60-acre campus in central Mumbai; massive recruiter pool across financial services, consulting, and marketing.",
+    "highlights": "Ranked #37 Management Institute in India by NIRF 2024. Sprawling 60-acre Vidyavihar Mumbai campus with AACSB accreditation and strong corporate presence in BFSI and Retail.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://simsr.somaiya.edu"
   },
   {
     "id": "ximb-bhubaneswar",
@@ -3396,33 +3481,33 @@ export const COLLEGES_DATA = [
       "MBA",
       "PGDM"
     ],
-    "name": "XIMB - Xavier Institute of Management, Bhubaneswar",
+    "name": "XIM University (XIMB - Xavier Institute of Management)",
     "shortName": "XIMB Bhubaneswar",
     "location": "Xavier Square, Jayadev Vihar, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 46,
+    "nirfRank": 43,
     "rating": 4.7,
-    "reviewsCount": 155,
+    "reviewsCount": 135,
     "programType": "MBA-BM / PGDM",
     "ownership": "Private Jesuit University (XIM University)",
     "establishedYear": 1987,
     "campusArea": "20 Acres Institutional Campus",
-    "accreditation": "SAQS, NBA, AICTE",
-    "fees": "₹21.0 Lakhs",
-    "feeNum": 21,
-    "avgSalary": "₹20.0 LPA",
-    "avgSalaryNum": 20,
-    "highestSalary": "₹71.5 LPA",
-    "medianSalary": "₹19.3 LPA",
+    "accreditation": "AACSB, SAQS",
+    "fees": "₹22.10 Lakhs",
+    "feeNum": 22.1,
+    "avgSalary": "₹19.53 LPA",
+    "avgSalaryNum": 19.53,
+    "highestSalary": "₹71.50 LPA",
+    "medianSalary": "₹18.37 LPA",
     "batchSize": 360,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
       "XAT",
       "CAT"
     ],
-    "cutoffCAT": "91.0+ %ile",
-    "cutoffXAT": "91.0+ %ile",
+    "cutoffCAT": "90.0+ %ile",
+    "cutoffXAT": "90.0+ %ile",
     "cutoffCMAT": "N/A",
     "cutoffDetails": {
       "xatCutoff": "91.0+ %ile (Non-domicile) / 85+ (Domicile)",
@@ -3447,15 +3532,9 @@ export const COLLEGES_DATA = [
     "courses": [
       {
         "name": "MBA in Business Management (MBA-BM)",
-        "duration": "2 Years",
+        "duration": "2 Years Full Time",
         "seats": 360,
         "fee": "₹21,00,000"
-      },
-      {
-        "name": "Executive MBA (BM)",
-        "duration": "1 Year",
-        "seats": 60,
-        "fee": "₹15,00,000"
       }
     ],
     "admissionCriteria": {
@@ -3470,36 +3549,37 @@ export const COLLEGES_DATA = [
       "Management Development Center",
       "Air-Conditioned Hostels"
     ],
-    "highlights": "Premier Jesuit business school with NIRF Top 20 placement standards; revered alumni leadership across global management consulting and BFSI.",
+    "highlights": "Ranked #46 Management Institute in India by NIRF 2024. Xavier Institute of Management, Bhubaneswar (XIM University) is Eastern India's premier Jesuit B-school with top consulting and finance recruitments.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://xim.edu.in"
   },
   {
     "id": "bimtech-noida",
     "degreeTypes": [
       "PGDM"
     ],
-    "name": "BIMTECH Greater Noida - Birla Institute of Management Technology",
-    "shortName": "BIMTECH Noida",
+    "name": "Birla Institute of Management Technology (BIMTECH), Greater Noida",
+    "shortName": "BIMTECH Greater Noida",
     "location": "Plot No. 5, Knowledge Park II, Greater Noida, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 48,
-    "rating": 4.5,
-    "reviewsCount": 140,
+    "nirfRank": 64,
+    "rating": 4.6,
+    "reviewsCount": 135,
     "programType": "PGDM (Core, International Business, Insurance, Retail)",
     "ownership": "Private Autonomous Institute",
     "establishedYear": 1988,
     "campusArea": "8 Acres Knowledge Park",
-    "accreditation": "AACSB, AICTE, AIU Equivalence",
-    "fees": "₹14.0 Lakhs",
+    "accreditation": "AACSB, NBA, AIU",
+    "fees": "₹14.00 Lakhs",
     "feeNum": 14,
-    "avgSalary": "₹11.2 LPA",
-    "avgSalaryNum": 11.2,
-    "highestSalary": "₹24.4 LPA",
-    "medianSalary": "₹10.5 LPA",
+    "avgSalary": "₹11.10 LPA",
+    "avgSalaryNum": 11.1,
+    "highestSalary": "₹22.00 LPA",
+    "medianSalary": "₹10.50 LPA",
     "batchSize": 420,
-    "roiScore": "8.4 / 10",
+    "roiScore": "8.7 / 10",
     "examsAccepted": [
       "CAT",
       "XAT",
@@ -3531,28 +3611,28 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "PGDM Core (Flagship)",
-        "duration": "2 Years",
+        "name": "Post Graduate Diploma in Management (PGDM General)",
+        "duration": "2 Years Full Time",
         "seats": 240,
         "fee": "₹14,00,000"
       },
       {
-        "name": "PGDM International Business (IB)",
-        "duration": "2 Years",
+        "name": "PGDM in International Business (PGDM-IB)",
+        "duration": "2 Years Full Time",
         "seats": 60,
         "fee": "₹14,00,000"
       },
       {
-        "name": "PGDM Insurance Business Management (IBM)",
-        "duration": "2 Years",
+        "name": "PGDM in Insurance Business Management (PGDM-IBM)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹13,00,000"
+        "fee": "₹14,00,000"
       },
       {
-        "name": "PGDM Retail Management (RM)",
-        "duration": "2 Years",
+        "name": "PGDM in Retail Management (PGDM-RM)",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹13,00,000"
+        "fee": "₹14,00,000"
       }
     ],
     "admissionCriteria": {
@@ -3566,34 +3646,35 @@ export const COLLEGES_DATA = [
       "Knowledge Center with 80,000+ Books",
       "Activity & Sports Center"
     ],
-    "highlights": "AACSB-accredited institute supported by the illustrious BK Birla Group; world leader in Insurance & Risk Management business education.",
+    "highlights": "Ranked #48 Management Institute in India by NIRF 2024. Birla Institute of Management Technology at Knowledge Park II Greater Noida holds coveted AACSB accreditation with 100% placement track record.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.bimtech.ac.in"
   },
   {
     "id": "welingkar-mumbai",
     "degreeTypes": [
       "PGDM"
     ],
-    "name": "WeSchool Mumbai - Welingkar Institute of Management Development",
-    "shortName": "Welingkar Mumbai",
+    "name": "Prin. L.N. Welingkar Institute of Management Development & Research (WeSchool), Mumbai",
+    "shortName": "Welingkar WeSchool Mumbai",
     "location": "Lakhamshi Napoo Road, Matunga Central, Mumbai",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 73,
-    "rating": 4.5,
-    "reviewsCount": 185,
+    "nirfRank": 84,
+    "rating": 4.4,
+    "reviewsCount": 160,
     "programType": "PGDM (Core, E-Biz, Business Design, Media, Healthcare)",
     "ownership": "Private Autonomous Institute",
     "establishedYear": 1977,
     "campusArea": "Matunga Central Mumbai Campus",
-    "accreditation": "SAQS, AICTE, NBA, AIU",
-    "fees": "₹14.5 Lakhs",
-    "feeNum": 14.5,
-    "avgSalary": "₹12.5 LPA",
+    "accreditation": "SAQS, NBA",
+    "fees": "₹14.00 Lakhs",
+    "feeNum": 14,
+    "avgSalary": "₹12.50 LPA",
     "avgSalaryNum": 12.5,
-    "highestSalary": "₹25.4 LPA",
-    "medianSalary": "₹12.0 LPA",
+    "highestSalary": "₹25.40 LPA",
+    "medianSalary": "₹12.00 LPA",
     "batchSize": 600,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -3629,34 +3710,22 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "PGDM Flagship",
-        "duration": "2 Years",
+        "name": "Post Graduate Diploma in Management (PGDM Core)",
+        "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹14,50,000"
+        "fee": "₹14,00,000"
       },
       {
-        "name": "PGDM E-Business",
-        "duration": "2 Years",
+        "name": "PGDM in E-Business",
+        "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹14,50,000"
+        "fee": "₹14,00,000"
       },
       {
-        "name": "PGDM Business Design",
-        "duration": "2 Years",
+        "name": "PGDM in Business Design",
+        "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹14,50,000"
-      },
-      {
-        "name": "PGDM Healthcare Management",
-        "duration": "2 Years",
-        "seats": 60,
-        "fee": "₹14,50,000"
-      },
-      {
-        "name": "PGDM Media & Entertainment",
-        "duration": "2 Years",
-        "seats": 60,
-        "fee": "₹14,50,000"
+        "fee": "₹14,00,000"
       }
     ],
     "admissionCriteria": {
@@ -3671,36 +3740,37 @@ export const COLLEGES_DATA = [
       "Bloomberg Terminals",
       "Central Matunga Location"
     ],
-    "highlights": "Pioneer of design thinking, innovation, and industry-tailored niche PGDM specializations in central Mumbai.",
+    "highlights": "Ranked #73 Management Institute in India by NIRF 2024. Prin. L. N. Welingkar Institute of Management Development and Research (WeSchool) at Matunga, Mumbai with design-thinking focus.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.welingkar.org"
   },
   {
     "id": "irma-anand",
     "degreeTypes": [
       "PGDM"
     ],
-    "name": "IRMA Anand - Institute of Rural Management Anand",
+    "name": "Institute of Rural Management Anand (IRMA)",
     "shortName": "IRMA Anand",
     "location": "Anand, Gujarat",
     "city": "Ahmedabad",
     "state": "Gujarat",
-    "nirfRank": 54,
+    "nirfRank": 49,
     "rating": 4.6,
-    "reviewsCount": 120,
+    "reviewsCount": 110,
     "programType": "PGDM (Rural Management)",
     "ownership": "Autonomous Institute (Founded by Dr. Verghese Kurien)",
     "establishedYear": 1979,
     "campusArea": "60 Acres Green Campus",
-    "accreditation": "SAQS, AICTE, AIU Equivalence",
-    "fees": "₹16.0 Lakhs",
-    "feeNum": 16,
-    "avgSalary": "₹15.5 LPA",
+    "accreditation": "AICTE, NAAC A",
+    "fees": "₹18.60 Lakhs",
+    "feeNum": 18.6,
+    "avgSalary": "₹15.50 LPA",
     "avgSalaryNum": 15.5,
-    "highestSalary": "₹26.5 LPA",
-    "medianSalary": "₹15.0 LPA",
+    "highestSalary": "₹31.16 LPA",
+    "medianSalary": "₹15.00 LPA",
     "batchSize": 240,
-    "roiScore": "8.8 / 10",
+    "roiScore": "9.0 / 10",
     "examsAccepted": [
       "CAT",
       "XAT",
@@ -3732,16 +3802,10 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Post Graduate Diploma in Management (Rural Management)",
+        "name": "Post Graduate Diploma in Management (Rural Management - PGDM-RM)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹16,00,000"
-      },
-      {
-        "name": "Executive PGDM (Rural Management)",
-        "duration": "15 Months",
-        "seats": 30,
-        "fee": "₹12,00,000"
+        "fee": "₹16,80,000"
       }
     ],
     "admissionCriteria": {
@@ -3756,9 +3820,10 @@ export const COLLEGES_DATA = [
       "Field Village Immersion Labs",
       "AC Hostels"
     ],
-    "highlights": "National pioneer founded by the Father of the White Revolution Dr. Verghese Kurien; unassailable leader in FMCG, Agribusiness, and sustainable rural management.",
+    "highlights": "Ranked #54 Management Institute in India by NIRF 2024. Founded by Dr. Verghese Kurien (father of the White Revolution). India's pioneer in Rural Management, Agribusiness, and Impact Consulting.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.irma.ac.in"
   },
   {
     "id": "sies-mumbai",
@@ -3770,7 +3835,7 @@ export const COLLEGES_DATA = [
     "location": "Sector 5, Nerul, Navi Mumbai, Maharashtra",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 85,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 95,
     "programType": "PGDM (General, Biotech, Pharma)",
@@ -3854,12 +3919,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "PGDM"
     ],
-    "name": "New Delhi Institute of Management (NDIM)",
-    "shortName": "NDIM Delhi-NCR",
+    "name": "New Delhi Institute of Management (NDIM), Tughlakabad, New Delhi",
+    "shortName": "NDIM New Delhi",
     "location": "Tughlakabad, South Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 69,
+    "nirfRank": 88,
     "rating": 4.2,
     "reviewsCount": 65,
     "programType": "PGDM (AICTE Approved)",
@@ -3867,13 +3932,13 @@ export const COLLEGES_DATA = [
     "establishedYear": 1990,
     "campusArea": "15 Acres",
     "accreditation": "AIU Eq., 100% Placements",
-    "fees": "₹14.00 Lakhs",
-    "feeNum": 14,
-    "avgSalary": "₹9.50 LPA",
-    "avgSalaryNum": 9.5,
-    "highestSalary": "₹24.00 LPA",
-    "medianSalary": "₹8.6 LPA",
-    "batchSize": 180,
+    "fees": "₹11.50 Lakhs",
+    "feeNum": 11.5,
+    "avgSalary": "₹8.50 LPA",
+    "avgSalaryNum": 8.5,
+    "highestSalary": "₹16.10 LPA",
+    "medianSalary": "₹8.00 LPA",
+    "batchSize": 480,
     "roiScore": "7.8 / 10",
     "examsAccepted": [
       "CAT",
@@ -3941,7 +4006,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "NDIM has been rated as a premier B-School in India for multiple years. Backed by corporate advisory boards and top-tier recruiters, NDIM offers deep industry-immersion, dual-specialization options, and high career outcomes. Key Highlights: UGC-AIU declared MBA Equivalent; Double Specialization options available",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.ndimdelhi.org"
   },
   {
     "id": "fostiima-business-school-delhi",
@@ -3953,7 +4019,7 @@ export const COLLEGES_DATA = [
     "location": "Dwarka, West Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 51,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 72,
     "programType": "PGDM (AICTE Approved)",
@@ -4047,7 +4113,7 @@ export const COLLEGES_DATA = [
     "location": "Vasant Vihar, South Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 78,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 79,
     "programType": "PGDM (AICTE Approved)",
@@ -4141,7 +4207,7 @@ export const COLLEGES_DATA = [
     "location": "Lodhi Road, Central Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 53,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 86,
     "programType": "PGDM (AICTE Approved)",
@@ -4235,7 +4301,7 @@ export const COLLEGES_DATA = [
     "location": "Kalkaji, South Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 54,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 93,
     "programType": "PGDM (AICTE Approved)",
@@ -4329,7 +4395,7 @@ export const COLLEGES_DATA = [
     "location": "Janakpuri, West Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 55,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 100,
     "programType": "MBA (UGC Approved)",
@@ -4423,7 +4489,7 @@ export const COLLEGES_DATA = [
     "location": "Kalkaji, South Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 56,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 107,
     "programType": "PGDM (AICTE Approved)",
@@ -4517,7 +4583,7 @@ export const COLLEGES_DATA = [
     "location": "Pitampura, North-West Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 57,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 114,
     "programType": "PGDM (AICTE Approved)",
@@ -4611,7 +4677,7 @@ export const COLLEGES_DATA = [
     "location": "Chattarpur, South Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 58,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 121,
     "programType": "PGDM (AICTE Approved)",
@@ -4705,7 +4771,7 @@ export const COLLEGES_DATA = [
     "location": "Qutab Institutional Area, South Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 59,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 128,
     "programType": "PGDM (AICTE Approved)",
@@ -4799,7 +4865,7 @@ export const COLLEGES_DATA = [
     "location": "Rohini, North-West Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 60,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 135,
     "programType": "MBA (UGC Approved)",
@@ -4893,7 +4959,7 @@ export const COLLEGES_DATA = [
     "location": "Dwarka, West Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 61,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 142,
     "programType": "PGDM (AICTE Approved)",
@@ -4987,7 +5053,7 @@ export const COLLEGES_DATA = [
     "location": "Indirapuram, Ghaziabad",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 62,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 149,
     "programType": "PGDM (AICTE Approved)",
@@ -5082,7 +5148,7 @@ export const COLLEGES_DATA = [
     "location": "Mohan Nagar, Ghaziabad",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 63,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 156,
     "programType": "PGDM / MBA (Dual Degree)",
@@ -5171,12 +5237,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "PGDM"
     ],
-    "name": "Jaipuria Institute of Management",
-    "shortName": "Jaipuria Institute of Management",
+    "name": "Jaipuria Institute of Management, Noida",
+    "shortName": "Jaipuria Noida",
     "location": "Sector 62, Noida",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 62,
+    "nirfRank": 45,
     "rating": 4.4,
     "reviewsCount": 163,
     "programType": "PGDM (AICTE Approved)",
@@ -5184,12 +5250,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "29 Acres",
     "accreditation": "AIU Eq., Flagship Noida",
-    "fees": "₹16.50 Lakhs",
-    "feeNum": 16.5,
-    "avgSalary": "₹12.88 LPA",
-    "avgSalaryNum": 12.88,
-    "highestSalary": "₹36.64 LPA",
-    "medianSalary": "₹11.6 LPA",
+    "fees": "₹14.75 Lakhs",
+    "feeNum": 14.75,
+    "avgSalary": "₹11.29 LPA",
+    "avgSalaryNum": 11.29,
+    "highestSalary": "₹22.00 LPA",
+    "medianSalary": "₹10.80 LPA",
     "batchSize": 300,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -5258,7 +5324,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "Jaipuria Institute of Management Noida is the flagship campus of the Jaipuria Group. It is highly ranked for PGDM courses, carrying NBA accreditation and AIU MBA equivalence. Known for international immersion and premium corporate connections. Key Highlights: AIU recognized MBA Equivalence; Top 50 NIRF ranked B-School",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.jaipuria.ac.in/campuses/jaipuria-noida/"
   },
   {
     "id": "hierank-business-school-delhi",
@@ -5270,7 +5337,7 @@ export const COLLEGES_DATA = [
     "location": "Sector 62, Noida",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 65,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 170,
     "programType": "MBA (UGC Approved)",
@@ -5365,7 +5432,7 @@ export const COLLEGES_DATA = [
     "location": "Knowledge Park II, Greater Noida",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 66,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 177,
     "programType": "PGDM / MBA (Dual Degree)",
@@ -5459,7 +5526,7 @@ export const COLLEGES_DATA = [
     "location": "Knowledge Park III, Greater Noida",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 67,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 184,
     "programType": "PGDM (AICTE Approved)",
@@ -5553,7 +5620,7 @@ export const COLLEGES_DATA = [
     "location": "Knowledge Park III, Greater Noida",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 68,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 191,
     "programType": "PGDM (AICTE Approved)",
@@ -5647,7 +5714,7 @@ export const COLLEGES_DATA = [
     "location": "Knowledge Park II, Greater Noida",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 69,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 198,
     "programType": "PGDM (AICTE Approved)",
@@ -5741,7 +5808,7 @@ export const COLLEGES_DATA = [
     "location": "Knowledge Park II, Greater Noida",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 70,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 205,
     "programType": "PGDM (AICTE Approved)",
@@ -5836,7 +5903,7 @@ export const COLLEGES_DATA = [
     "location": "Knowledge Park II, Greater Noida",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 71,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 212,
     "programType": "PGDM / MBA (Dual Degree)",
@@ -5930,7 +5997,7 @@ export const COLLEGES_DATA = [
     "location": "Knowledge Park II, Greater Noida",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 72,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 219,
     "programType": "MBA (UGC Approved)",
@@ -6024,7 +6091,7 @@ export const COLLEGES_DATA = [
     "location": "Greater Noida",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 73,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 226,
     "programType": "MBA (UGC Approved)",
@@ -6118,7 +6185,7 @@ export const COLLEGES_DATA = [
     "location": "Knowledge Park II, Greater Noida",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 74,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 233,
     "programType": "PGDM (AICTE Approved)",
@@ -6212,7 +6279,7 @@ export const COLLEGES_DATA = [
     "location": "Greater Noida",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 75,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 240,
     "programType": "PGDM (AICTE Approved)",
@@ -6306,7 +6373,7 @@ export const COLLEGES_DATA = [
     "location": "Damdama Lake Road, Gurugram",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 76,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 67,
     "programType": "PGDM (AICTE Approved)",
@@ -6401,7 +6468,7 @@ export const COLLEGES_DATA = [
     "location": "Sector 14, Gurugram",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 77,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 74,
     "programType": "PGDM / MBA (Dual Degree)",
@@ -6490,12 +6557,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "BML Munjal University (BMU)",
+    "name": "School of Management, BML Munjal University (BMU), Gurugram",
     "shortName": "BML Munjal University",
     "location": "NH-8, Gurugram Region",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 78,
+    "nirfRank": 83,
     "rating": 4.6,
     "reviewsCount": 81,
     "programType": "MBA (UGC Approved)",
@@ -6503,13 +6570,13 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "43 Acres",
     "accreditation": "Approved, Imperial College Mentored",
-    "fees": "₹15.10 Lakhs",
-    "feeNum": 15.1,
-    "avgSalary": "₹8.5 LPA",
-    "avgSalaryNum": 8.5,
-    "highestSalary": "₹33.6 LPA",
-    "medianSalary": "₹7.7 LPA",
-    "batchSize": 180,
+    "fees": "₹14.40 Lakhs",
+    "feeNum": 14.4,
+    "avgSalary": "₹9.50 LPA",
+    "avgSalaryNum": 9.5,
+    "highestSalary": "₹25.90 LPA",
+    "medianSalary": "₹9.00 LPA",
+    "batchSize": 120,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
       "CAT",
@@ -6577,7 +6644,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "BML Munjal University, founded by the Hero Group, offers a world-class MBA program mentored by Imperial College London. Focused on global perspectives, industrial research, and hands-on business venture creation. Key Highlights: Mentored by Imperial College London; Backed by Hero Group industrial networks",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.bmu.edu.in"
   },
   {
     "id": "soil-institute-of-management-delhi",
@@ -6589,7 +6657,7 @@ export const COLLEGES_DATA = [
     "location": "Sector 44, Gurugram",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 79,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 88,
     "programType": "PGDM (AICTE Approved)",
@@ -6683,7 +6751,7 @@ export const COLLEGES_DATA = [
     "location": "Sector 53, Gurugram",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 80,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 95,
     "programType": "MBA (UGC Approved)",
@@ -6777,7 +6845,7 @@ export const COLLEGES_DATA = [
     "location": "Sector 109, Gurugram",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 81,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 102,
     "programType": "MBA (UGC Approved)",
@@ -6871,7 +6939,7 @@ export const COLLEGES_DATA = [
     "location": "Bhugaon, Pune",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 82,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 109,
     "programType": "PGDM (AICTE Approved)",
@@ -6965,7 +7033,7 @@ export const COLLEGES_DATA = [
     "location": "Wagholi, Pune",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 83,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 116,
     "programType": "PGDM (AICTE Approved)",
@@ -7060,7 +7128,7 @@ export const COLLEGES_DATA = [
     "location": "Bawdhan, Pune",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 84,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 123,
     "programType": "PGDM / MBA (Dual Degree)",
@@ -7154,7 +7222,7 @@ export const COLLEGES_DATA = [
     "location": "Chinchwad, Pune",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 85,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 130,
     "programType": "PGDM (AICTE Approved)",
@@ -7248,7 +7316,7 @@ export const COLLEGES_DATA = [
     "location": "Pimpri, Pune",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 86,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 137,
     "programType": "MBA (UGC Approved)",
@@ -7342,7 +7410,7 @@ export const COLLEGES_DATA = [
     "location": "Wakad, Pune",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 87,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 144,
     "programType": "PGDM (AICTE Approved)",
@@ -7436,7 +7504,7 @@ export const COLLEGES_DATA = [
     "location": "Tathawade, Pune",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 88,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 151,
     "programType": "MBA (UGC Approved)",
@@ -7531,7 +7599,7 @@ export const COLLEGES_DATA = [
     "location": "Hinjawadi, Pune",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 89,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 158,
     "programType": "PGDM / MBA (Dual Degree)",
@@ -7625,7 +7693,7 @@ export const COLLEGES_DATA = [
     "location": "Kurla (BKC Zone), Mumbai",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 90,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 165,
     "programType": "MBA (UGC Approved)",
@@ -7720,7 +7788,7 @@ export const COLLEGES_DATA = [
     "location": "Karjat, Greater Mumbai",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 91,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 172,
     "programType": "PGDM / MBA (Dual Degree)",
@@ -7814,7 +7882,7 @@ export const COLLEGES_DATA = [
     "location": "Kharghar, Navi Mumbai",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 92,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 179,
     "programType": "PGDM (AICTE Approved)",
@@ -7908,7 +7976,7 @@ export const COLLEGES_DATA = [
     "location": "Mumbai Metropolis",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 93,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 186,
     "programType": "PGDM (AICTE Approved)",
@@ -8002,7 +8070,7 @@ export const COLLEGES_DATA = [
     "location": "Panvel, Greater Mumbai",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 94,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 193,
     "programType": "MBA (UGC Approved)",
@@ -8096,7 +8164,7 @@ export const COLLEGES_DATA = [
     "location": "Karjat, Greater Mumbai",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 58,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 200,
     "programType": "PGDM (AICTE Approved)",
@@ -8191,7 +8259,7 @@ export const COLLEGES_DATA = [
     "location": "Electronic City, Bangalore",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 96,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 207,
     "programType": "PGDM / MBA (Dual Degree)",
@@ -8286,7 +8354,7 @@ export const COLLEGES_DATA = [
     "location": "Airport Road, Bangalore",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 97,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 214,
     "programType": "PGDM / MBA (Dual Degree)",
@@ -8380,7 +8448,7 @@ export const COLLEGES_DATA = [
     "location": "Bannerghatta Road, Bangalore",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 98,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 221,
     "programType": "PGDM (AICTE Approved)",
@@ -8469,12 +8537,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "Alliance University (Alliance School of Business)",
-    "shortName": "Alliance University",
+    "name": "Alliance School of Business, Alliance University, Bengaluru",
+    "shortName": "Alliance University MBA",
     "location": "Anekal Campus, Bangalore",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 99,
+    "nirfRank": 71,
     "rating": 4.3,
     "reviewsCount": 228,
     "programType": "MBA (UGC Approved)",
@@ -8482,13 +8550,13 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "24 Acres",
     "accreditation": "Approved, Elite Private University",
-    "fees": "₹15.00L Lakhs",
+    "fees": "₹15.00 Lakhs",
     "feeNum": 15,
-    "avgSalary": "₹10.5 LPA",
-    "avgSalaryNum": 10.5,
-    "highestSalary": "₹40.0 LPA",
-    "medianSalary": "₹9.5 LPA",
-    "batchSize": 240,
+    "avgSalary": "₹8.80 LPA",
+    "avgSalaryNum": 8.8,
+    "highestSalary": "₹26.10 LPA",
+    "medianSalary": "₹8.30 LPA",
+    "batchSize": 420,
     "roiScore": "8.2 / 10",
     "examsAccepted": [
       "CAT",
@@ -8556,7 +8624,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "Alliance School of Business is one of South India's premier private management brands. Supplying an elite MBA program with a massive residential green campus, global university links, and AACSB membership, it is a top corporate recruitment hub. Key Highlights: Lush residential campus with world-class facilities; AACSB Business Alliance Member",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.alliance.edu.in"
   },
   {
     "id": "isme-bangalore",
@@ -8568,7 +8637,7 @@ export const COLLEGES_DATA = [
     "location": "Sarjapur Road, Bangalore",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 50,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 235,
     "programType": "PGDM (AICTE Approved)",
@@ -8662,7 +8731,7 @@ export const COLLEGES_DATA = [
     "location": "Kanakapura Road, Bangalore",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 51,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 242,
     "programType": "PGDM (AICTE Approved)",
@@ -8756,7 +8825,7 @@ export const COLLEGES_DATA = [
     "location": "Electronic City, Bangalore",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 58,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 69,
     "programType": "PGDM (AICTE Approved)",
@@ -8850,7 +8919,7 @@ export const COLLEGES_DATA = [
     "location": "Bidholi & Kandoli, Dehradun, Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 39,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 76,
     "programType": "MBA (UGC Approved)",
@@ -8939,12 +9008,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "Graphic Era (Deemed to be University), Dehradun",
-    "shortName": "Graphic Era , Dehradun",
+    "name": "Graphic Era (Deemed to be University), School of Management, Dehradun",
+    "shortName": "Graphic Era Dehradun",
     "location": "Clement Town, Dehradun, Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 52,
+    "nirfRank": 59,
     "rating": 4.2,
     "reviewsCount": 83,
     "programType": "MBA (UGC Approved)",
@@ -8952,12 +9021,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "29 Acres",
     "accreditation": "NAAC A+, NAAC A+ Ranked",
-    "fees": "₹7.80 Lakhs",
-    "feeNum": 7.8,
-    "avgSalary": "₹7.20 LPA",
-    "avgSalaryNum": 7.2,
-    "highestSalary": "₹25.00 LPA",
-    "medianSalary": "₹6.5 LPA",
+    "fees": "₹7.17 Lakhs",
+    "feeNum": 7.17,
+    "avgSalary": "₹7.50 LPA",
+    "avgSalaryNum": 7.5,
+    "highestSalary": "₹16.00 LPA",
+    "medianSalary": "₹7.00 LPA",
     "batchSize": 300,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -9026,7 +9095,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "Graphic Era (Deemed to be University) in Dehradun is Uttarakhand's premier NAAC A+ accredited institution. Its School of Management is highly sought-after for balanced tuition fees, vibrant campus atmosphere, high ROI, and stellar corporate recruitment drives in BFSI, IT consulting, and FMCG. Key Highlights: Prestigious NAAC A+ Grade accreditation; High ROI 2-year total tuition fee structure",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.geu.ac.in"
   },
   {
     "id": "doon-business-school-dehradun",
@@ -9039,7 +9109,7 @@ export const COLLEGES_DATA = [
     "location": "Selaqui, Dehradun, Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 55,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 90,
     "programType": "PGDM / MBA (Dual Degree)",
@@ -9133,7 +9203,7 @@ export const COLLEGES_DATA = [
     "location": "Puhana, Roorkee (Dehradun Region), Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 56,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 97,
     "programType": "MBA (UGC Approved)",
@@ -9227,7 +9297,7 @@ export const COLLEGES_DATA = [
     "location": "Mandawar, Roorkee-Dehradun Highway, Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 57,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 104,
     "programType": "MBA (UGC Approved)",
@@ -9321,7 +9391,7 @@ export const COLLEGES_DATA = [
     "location": "Sitapura & Ramchandrapura, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 58,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 111,
     "programType": "MBA (UGC Approved)",
@@ -9415,7 +9485,7 @@ export const COLLEGES_DATA = [
     "location": "Jagatpura, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 59,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 118,
     "programType": "MBA (UGC Approved)",
@@ -9505,11 +9575,11 @@ export const COLLEGES_DATA = [
       "PGDM"
     ],
     "name": "Jaipuria Institute of Management, Jaipur",
-    "shortName": "Jaipuria Institute of Management, Jaipur",
+    "shortName": "Jaipuria Jaipur",
     "location": "Pratap Nagar, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 62,
+    "nirfRank": 75,
     "rating": 4.2,
     "reviewsCount": 125,
     "programType": "PGDM (AICTE Approved)",
@@ -9517,12 +9587,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1990,
     "campusArea": "35 Acres",
     "accreditation": "NBA Acc., Top B-School in Rajasthan",
-    "fees": "₹14.75 Lakhs",
-    "feeNum": 14.75,
-    "avgSalary": "₹9.50 LPA",
-    "avgSalaryNum": 9.5,
-    "highestSalary": "₹24.11 LPA",
-    "medianSalary": "₹8.6 LPA",
+    "fees": "₹12.75 Lakhs",
+    "feeNum": 12.75,
+    "avgSalary": "₹10.50 LPA",
+    "avgSalaryNum": 10.5,
+    "highestSalary": "₹22.00 LPA",
+    "medianSalary": "₹9.80 LPA",
     "batchSize": 180,
     "roiScore": "7.8 / 10",
     "examsAccepted": [
@@ -9591,7 +9661,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "Jaipuria Institute of Management, Jaipur is widely regarded as Rajasthan's premier private business school. With prestigious NBA accreditation and AIU MBA equivalence, Jaipuria provides centralized pan-India placement opportunities across four campuses. Key Highlights: NIRF Ranked and NBA Accredited PGDM programs; AIU declared equivalent to MBA degree",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.jaipuria.ac.in/campuses/jaipuria-jaipur/"
   },
   {
     "id": "iilm-academy-of-higher-learning-jaipur",
@@ -9603,7 +9674,7 @@ export const COLLEGES_DATA = [
     "location": "Mansarovar, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 61,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 132,
     "programType": "PGDM (AICTE Approved)",
@@ -9697,7 +9768,7 @@ export const COLLEGES_DATA = [
     "location": "Mansarovar & Sitapura, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 62,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 139,
     "programType": "MBA (UGC Approved)",
@@ -9792,7 +9863,7 @@ export const COLLEGES_DATA = [
     "location": "Mansarovar & Vatika, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 63,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 146,
     "programType": "PGDM / MBA (Dual Degree)",
@@ -9886,7 +9957,7 @@ export const COLLEGES_DATA = [
     "location": "Delhi-Jaipur Highway, Shobha Nagar, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 64,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 153,
     "programType": "MBA (UGC Approved)",
@@ -9980,7 +10051,7 @@ export const COLLEGES_DATA = [
     "location": "Chaksu & Sitapura, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 65,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 160,
     "programType": "MBA (UGC Approved)",
@@ -10074,7 +10145,7 @@ export const COLLEGES_DATA = [
     "location": "Sitapura & Ramchandrapura, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 66,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 167,
     "programType": "MBA (UGC Approved)",
@@ -10156,7 +10227,7 @@ export const COLLEGES_DATA = [
     "location": "Rohini Sector 16, New Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 1,
+    "nirfRank": null,
     "rating": 4.8,
     "reviewsCount": 145,
     "programType": "BBA / BMS (Delhi University)",
@@ -10238,7 +10309,7 @@ export const COLLEGES_DATA = [
     "location": "Vile Parle West, Mumbai",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 21,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 198,
     "programType": "BBA (Deemed University)",
@@ -10312,7 +10383,7 @@ export const COLLEGES_DATA = [
     "location": "Viman Nagar, Pune",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 17,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 160,
     "programType": "BBA (Symbiosis International)",
@@ -10385,7 +10456,7 @@ export const COLLEGES_DATA = [
     "location": "Hosur Road, Bengaluru",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 60,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 210,
     "programType": "BBA (Deemed University)",
@@ -10464,7 +10535,7 @@ export const COLLEGES_DATA = [
     "location": "Prabandh Shikhar, Rau, Indore",
     "city": "Indore",
     "state": "Madhya Pradesh",
-    "nirfRank": 8,
+    "nirfRank": null,
     "rating": 4.8,
     "reviewsCount": 175,
     "programType": "Integrated BBA + MBA (5 Years)",
@@ -10539,7 +10610,7 @@ export const COLLEGES_DATA = [
     "location": "Energy Acres, Bidholi, Dehradun",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 39,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 140,
     "programType": "BBA (Specialized Industry)",
@@ -10619,7 +10690,7 @@ export const COLLEGES_DATA = [
     "location": "Plot No. IS-2036 to 2039, Ramchandrapura, Sitapura Industrial Area Extension, Jaipur",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 85,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 125,
     "programType": "BBA (Undergraduate Degree)",
@@ -10689,7 +10760,7 @@ export const COLLEGES_DATA = [
     "location": "IS-2027 to 2031, Ramchandrapura, P.O. Vidhani Vatika, Sitapura Extension, Jaipur",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 95,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 110,
     "programType": "BBA in Entrepreneurship",
@@ -10758,7 +10829,7 @@ export const COLLEGES_DATA = [
     "location": "Chennai Campus (ECR Road) & Gurgaon (Delhi-NCR)",
     "city": "Bengaluru",
     "state": "Pan India",
-    "nirfRank": 31,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 185,
     "programType": "PGPM (1-Year Accelerated Program)",
@@ -10835,7 +10906,7 @@ export const COLLEGES_DATA = [
     "location": "Plot 76, Sector 44, Gurgaon (Delhi-NCR)",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 55,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 130,
     "programType": "PGPM (1-Year Business Leadership)",
@@ -10912,7 +10983,7 @@ export const COLLEGES_DATA = [
     "location": "Pan India Online (HQ: Vile Parle, Mumbai)",
     "city": "Mumbai",
     "state": "Pan India",
-    "nirfRank": 21,
+    "nirfRank": null,
     "rating": 4.7,
     "reviewsCount": 320,
     "programType": "UGC Entitled Online MBA",
@@ -10986,7 +11057,7 @@ export const COLLEGES_DATA = [
     "location": "Pan India Online (Campus: Jaipur, Rajasthan)",
     "city": "Jaipur",
     "state": "Pan India",
-    "nirfRank": 64,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 260,
     "programType": "UGC Entitled Online MBA",
@@ -11057,7 +11128,7 @@ export const COLLEGES_DATA = [
     "location": "Pan India Online (Campus: Noida / Delhi-NCR)",
     "city": "Delhi-NCR",
     "state": "Pan India",
-    "nirfRank": 35,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 280,
     "programType": "QS Ranked Online MBA",
@@ -11128,7 +11199,7 @@ export const COLLEGES_DATA = [
     "location": "Pan India Online (Campus: Sant Tukaram Nagar, Pimpri, Pune)",
     "city": "Pune",
     "state": "Pan India",
-    "nirfRank": 44,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 195,
     "programType": "UGC Entitled Online MBA",
@@ -11198,7 +11269,7 @@ export const COLLEGES_DATA = [
     "location": "Pan India Online (HQ: Mumbai)",
     "city": "Mumbai",
     "state": "Pan India",
-    "nirfRank": 21,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 180,
     "programType": "Online Undergraduate Degree",
@@ -11267,7 +11338,7 @@ export const COLLEGES_DATA = [
     "location": "Pan India Online (Campus: Noida / Delhi-NCR)",
     "city": "Delhi-NCR",
     "state": "Pan India",
-    "nirfRank": 35,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 165,
     "programType": "Online Undergraduate Degree",
@@ -11335,7 +11406,7 @@ export const COLLEGES_DATA = [
     "location": "Tri-City Campuses: Dubai, Singapore, Sydney (India HQ: Lower Parel, Mumbai)",
     "city": "Mumbai",
     "state": "Pan India",
-    "nirfRank": 12,
+    "nirfRank": null,
     "rating": 4.8,
     "reviewsCount": 170,
     "programType": "Tri-City Global MBA",
@@ -11416,7 +11487,7 @@ export const COLLEGES_DATA = [
     "location": "Raj Nagar, Ghaziabad (Delhi-NCR)",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 38,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 190,
     "programType": "Global Dual Degree MBA",
@@ -11492,7 +11563,7 @@ export const COLLEGES_DATA = [
     "location": "Adhitam Kendra, B-18, Qutub Institutional Area, New Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 63,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 155,
     "programType": "PGDM International Business",
@@ -11566,7 +11637,7 @@ export const COLLEGES_DATA = [
     "location": "JP Avenue, Sagarbhanga, Durgapur, West Bengal",
     "city": "Durgapur",
     "state": "West Bengal",
-    "nirfRank": 65,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 87,
     "programType": "MBA (Full Time)",
@@ -11648,7 +11719,7 @@ export const COLLEGES_DATA = [
     "location": "Shiksha Vihar, Bhola, Chandaka, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 66,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 93,
     "programType": "MBA / PGDM Dual Track",
@@ -11735,7 +11806,7 @@ export const COLLEGES_DATA = [
     "location": "Panchamukhi Vihar, Atala, Balianta, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 67,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 114,
     "programType": "MBA (Full Time)",
@@ -11816,7 +11887,7 @@ export const COLLEGES_DATA = [
     "location": "Block FA, Sector III, Salt Lake City, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 68,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 86,
     "programType": "MBA (MAKAUT Affiliated)",
@@ -11896,7 +11967,7 @@ export const COLLEGES_DATA = [
     "location": "Plot No. 9, Kharavela Nagar, Unit-3, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 69,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 95,
     "programType": "PGDM (AICTE Approved)",
@@ -11977,7 +12048,7 @@ export const COLLEGES_DATA = [
     "location": "5 Lala Lajpat Rai Sarani, Elgin, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 70,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 129,
     "programType": "MBA (Global Focus)",
@@ -12057,7 +12128,7 @@ export const COLLEGES_DATA = [
     "location": "F/4, Chandaka Industrial Estate, Infocity, Patia, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 71,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 144,
     "programType": "MBA (BPUT Affiliated)",
@@ -12138,7 +12209,7 @@ export const COLLEGES_DATA = [
     "location": "IDCO Plot No. 2, Institutional Area, Gothapatna, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 72,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 144,
     "programType": "MBA (Birla School of Management)",
@@ -12226,7 +12297,7 @@ export const COLLEGES_DATA = [
     "location": "Diamond Harbour Road, Bishnupur, 24 Parganas South, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 73,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 133,
     "programType": "PGDM (AICTE Approved)",
@@ -12309,7 +12380,7 @@ export const COLLEGES_DATA = [
     "location": "Mithapur Institutional Area, Patna, Bihar",
     "city": "Patna",
     "state": "Bihar",
-    "nirfRank": 74,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 125,
     "programType": "PGDM (AICTE & AIU Approved)",
@@ -12395,7 +12466,7 @@ export const COLLEGES_DATA = [
     "location": "2nd Floor, Udyog Bhawan, East Gandhi Maidan / Bihta Campus, Patna, Bihar",
     "city": "Patna",
     "state": "Bihar",
-    "nirfRank": 75,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 71,
     "programType": "PGDM in Development Management",
@@ -12475,7 +12546,7 @@ export const COLLEGES_DATA = [
     "location": "Jemua Road, Fuljhore, Durgapur, West Bengal",
     "city": "Durgapur",
     "state": "West Bengal",
-    "nirfRank": 76,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 112,
     "programType": "MBA (Department of Management Studies)",
@@ -12555,7 +12626,7 @@ export const COLLEGES_DATA = [
     "location": "G.T. Road, Rajbandh, Durgapur, West Bengal",
     "city": "Durgapur",
     "state": "West Bengal",
-    "nirfRank": 77,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 97,
     "programType": "MBA (MAKAUT Affiliated)",
@@ -12632,7 +12703,7 @@ export const COLLEGES_DATA = [
     "location": "6 Hare Street, Near High Court, BBD Bagh, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 78,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 144,
     "programType": "MBA (Affiliated to Vidyasagar University / MAKAUT)",
@@ -12713,7 +12784,7 @@ export const COLLEGES_DATA = [
     "location": "P.O. Karnamadhabpur, P.S. Ghola, Sodepur, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 79,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 98,
     "programType": "MBA (MAKAUT Affiliated)",
@@ -12790,7 +12861,7 @@ export const COLLEGES_DATA = [
     "location": "Sonarpur Station Road, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 80,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 128,
     "programType": "MBA (Department of Management)",
@@ -12870,7 +12941,7 @@ export const COLLEGES_DATA = [
     "location": "HIT Campus, ICARE Complex, Hatiberia, Haldia, Purba Medinipur, West Bengal",
     "city": "Haldia",
     "state": "West Bengal",
-    "nirfRank": 81,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 121,
     "programType": "MBA (School of Management)",
@@ -12951,7 +13022,7 @@ export const COLLEGES_DATA = [
     "location": "994 Chowbaga Road, Anandapur, East Kolkata Township, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 82,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 136,
     "programType": "MBA (Heritage Business School)",
@@ -13034,7 +13105,7 @@ export const COLLEGES_DATA = [
     "location": "Management House, College Square West, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 83,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 137,
     "programType": "MBA (University of Calcutta Affiliated)",
@@ -13124,7 +13195,7 @@ export const COLLEGES_DATA = [
     "location": "Jadavpur University Campus, 188 Raja S.C. Mallick Road, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 84,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 69,
     "programType": "MBA (Affiliated to Jadavpur University)",
@@ -13209,7 +13280,7 @@ export const COLLEGES_DATA = [
     "location": "318A Prantik Pally, Rajdanga, Kasba, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 85,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 135,
     "programType": "MBA (Full Time)",
@@ -13286,7 +13357,7 @@ export const COLLEGES_DATA = [
     "location": "Sector V, Salt Lake Electronics Complex, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 86,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 87,
     "programType": "MBA (Department of Business Administration)",
@@ -13369,7 +13440,7 @@ export const COLLEGES_DATA = [
     "location": "Swagat Vihar, Bankuala, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 87,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 138,
     "programType": "PGDM (AICTE Approved)",
@@ -13457,7 +13528,7 @@ export const COLLEGES_DATA = [
     "location": "93 Mukundapur Main Road, EM Bypass, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 88,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 67,
     "programType": "MBA (MAKAUT Affiliated)",
@@ -13541,7 +13612,7 @@ export const COLLEGES_DATA = [
     "location": "330/2 Pujali Trunk Road, Budge Budge, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 89,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 83,
     "programType": "PGDM (AICTE Approved)",
@@ -13624,7 +13695,7 @@ export const COLLEGES_DATA = [
     "location": "Sarari-Khagaul Road, Danapur, Patna, Bihar",
     "city": "Patna",
     "state": "Bihar",
-    "nirfRank": 90,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 115,
     "programType": "PGDM (AICTE Approved)",
@@ -13704,7 +13775,7 @@ export const COLLEGES_DATA = [
     "location": "Infinity Benchmark, 10th Floor, Salt Lake Sector V, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 91,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 68,
     "programType": "PGDM (AICTE Approved)",
@@ -13786,7 +13857,7 @@ export const COLLEGES_DATA = [
     "location": "Dhatkidih, Jamshedpur, Jharkhand",
     "city": "Jamshedpur",
     "state": "Jharkhand",
-    "nirfRank": 92,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 126,
     "programType": "PGDM (Autonomous)",
@@ -13865,7 +13936,7 @@ export const COLLEGES_DATA = [
     "location": "Koraikhowa, NH-37, Jorhat, Assam",
     "city": "Jorhat",
     "state": "Assam",
-    "nirfRank": 93,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 78,
     "programType": "MBA (School of Business)",
@@ -13947,7 +14018,7 @@ export const COLLEGES_DATA = [
     "location": "Campus 7, KIIT Deemed to be University, Patia, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 94,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 137,
     "programType": "MBA (Flagship KIIT University)",
@@ -14036,7 +14107,7 @@ export const COLLEGES_DATA = [
     "location": "Campus 17, KIIT Deemed to be University, Patia, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 95,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 115,
     "programType": "MBA in Rural Management (MBA-RM)",
@@ -14123,7 +14194,7 @@ export const COLLEGES_DATA = [
     "location": "1 Bailey Road, Near Patna High Court, Patna, Bihar",
     "city": "Patna",
     "state": "Bihar",
-    "nirfRank": 96,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 68,
     "programType": "MBA (Aryabhatta Knowledge University Affiliated)",
@@ -14208,7 +14279,7 @@ export const COLLEGES_DATA = [
     "location": "Bhagwanpur Chowk, Muzaffarpur, Bihar",
     "city": "Muzaffarpur",
     "state": "Bihar",
-    "nirfRank": 97,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 128,
     "programType": "MBA (BRA Bihar University Affiliated)",
@@ -14286,7 +14357,7 @@ export const COLLEGES_DATA = [
     "location": "243 G.T. Road (North), Liluah, Howrah, West Bengal",
     "city": "Howrah",
     "state": "West Bengal",
-    "nirfRank": 98,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 74,
     "programType": "MBA (Department of Management Studies)",
@@ -14364,7 +14435,7 @@ export const COLLEGES_DATA = [
     "location": "Bairiya, Muzaffarpur, Bihar",
     "city": "Muzaffarpur",
     "state": "Bihar",
-    "nirfRank": 99,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 124,
     "programType": "MBA (Full Time)",
@@ -14439,7 +14510,7 @@ export const COLLEGES_DATA = [
     "location": "NIT Silchar Campus, Silchar, Assam",
     "city": "Silchar",
     "state": "Assam",
-    "nirfRank": 100,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 124,
     "programType": "MBA (Institute of National Importance)",
@@ -14521,7 +14592,7 @@ export const COLLEGES_DATA = [
     "location": "Padma Nath Sarmah Bhawan, Joyanagar, Khanapara, Guwahati, Assam",
     "city": "Guwahati",
     "state": "Assam",
-    "nirfRank": 101,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 90,
     "programType": "MBA / PGDM Dual Stream",
@@ -14608,7 +14679,7 @@ export const COLLEGES_DATA = [
     "location": "Pokhari, Near Bhilai Pahari, Jamshedpur, Jharkhand",
     "city": "Jamshedpur",
     "state": "Jharkhand",
-    "nirfRank": 102,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 70,
     "programType": "MBA (School of Management Studies)",
@@ -14687,7 +14758,7 @@ export const COLLEGES_DATA = [
     "location": "Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 103,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 67,
     "programType": "MBA (BPUT Affiliated)",
@@ -14763,7 +14834,7 @@ export const COLLEGES_DATA = [
     "location": "Plot No. 18, Sector-A, Zone-B, Mancheswar Industrial Estate, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 104,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 101,
     "programType": "MBA (BPUT Affiliated)",
@@ -14841,7 +14912,7 @@ export const COLLEGES_DATA = [
     "location": "Plot No. GD 2/12 & 2/13, Chakadola Vihar, Chandrasekharpur, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 105,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 136,
     "programType": "MBA & PGDM (First Private B-School in Odisha)",
@@ -14929,7 +15000,7 @@ export const COLLEGES_DATA = [
     "location": "Chhend Colony, Rourkela, Sundargarh, Odisha",
     "city": "Rourkela",
     "state": "Odisha",
-    "nirfRank": 106,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 66,
     "programType": "MBA (Sambalpur University / BPUT Affiliated)",
@@ -15008,7 +15079,7 @@ export const COLLEGES_DATA = [
     "location": "Khandagiri Square, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 107,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 123,
     "programType": "MBA (Institute of Business and Computer Studies - IBCS)",
@@ -15097,7 +15168,7 @@ export const COLLEGES_DATA = [
     "location": "Majitar, Rangpo, East Sikkim",
     "city": "Majitar",
     "state": "Sikkim",
-    "nirfRank": 108,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 81,
     "programType": "MBA (Sikkim Manipal University)",
@@ -15178,7 +15249,7 @@ export const COLLEGES_DATA = [
     "location": "Sri Sri Vihar, Bidyadharpur, Arilo, Ward No. 3, Cuttack, Odisha",
     "city": "Cuttack",
     "state": "Odisha",
-    "nirfRank": 109,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 113,
     "programType": "MBA (Faculty of Management Studies)",
@@ -15266,7 +15337,7 @@ export const COLLEGES_DATA = [
     "location": "Action Area III B, New Town, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 110,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 117,
     "programType": "MBA (Xavier Business School - XBS)",
@@ -15350,7 +15421,7 @@ export const COLLEGES_DATA = [
     "location": "Karbala More, Sonarpur Station Road, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 111,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 125,
     "programType": "MBA (MAKAUT Affiliated)",
@@ -15429,7 +15500,7 @@ export const COLLEGES_DATA = [
     "location": "EM-4, Sector V, Salt Lake, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 112,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 142,
     "programType": "MBA (Techno India University & MAKAUT Affiliated)",
@@ -15512,7 +15583,7 @@ export const COLLEGES_DATA = [
     "location": "Block DG 1/1, Action Area 1, New Town, Rajarhat, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 113,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 112,
     "programType": "MBA (Department of Management Studies)",
@@ -15592,7 +15663,7 @@ export const COLLEGES_DATA = [
     "location": "Sovima, Dimapur, Nagaland",
     "city": "Dimapur",
     "state": "Nagaland",
-    "nirfRank": 114,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 74,
     "programType": "MBA (School of Business)",
@@ -15666,12 +15737,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "Tezpur University, Department of Business Administration",
-    "shortName": "Tezpur University (DoBA)",
+    "name": "Department of Business Administration, Tezpur University, Assam",
+    "shortName": "Tezpur University MBA",
     "location": "Napaam, Tezpur, Sonitpur, Assam",
     "city": "Tezpur",
     "state": "Assam",
-    "nirfRank": 115,
+    "nirfRank": 95,
     "rating": 4.5,
     "reviewsCount": 122,
     "programType": "MBA (Central University Department)",
@@ -15679,12 +15750,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "262 Acres Lush Central University Campus",
     "accreditation": "NAAC A+ Grade, Ministry of Education, NIRF Ranked",
-    "fees": "₹1.5 Lakhs",
-    "feeNum": 1.5,
-    "avgSalary": "₹6.8 LPA",
+    "fees": "₹1.40 Lakhs",
+    "feeNum": 1.4,
+    "avgSalary": "₹6.80 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.5 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "highestSalary": "₹13.50 LPA",
+    "medianSalary": "₹6.20 LPA",
     "batchSize": 60,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -15741,7 +15812,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "Elite Central University offering world-class management education for just ₹1.5 Lakhs total tuition; unmatched ROI in eastern India.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "http://www.tezu.ernet.in/dba/"
   },
   {
     "id": "utkal-bhubaneswar",
@@ -15753,7 +15825,7 @@ export const COLLEGES_DATA = [
     "location": "Vani Vihar, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
     "state": "Odisha",
-    "nirfRank": 116,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 141,
     "programType": "MBA (Vani Vihar State University)",
@@ -15840,7 +15912,7 @@ export const COLLEGES_DATA = [
     "location": "Rambagh, Muzaffarpur, Bihar",
     "city": "Muzaffarpur",
     "state": "Bihar",
-    "nirfRank": 117,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 65,
     "programType": "MBA (BRA Bihar University Affiliated)",
@@ -15916,7 +15988,7 @@ export const COLLEGES_DATA = [
     "location": "46A/2, Knowledge Park III, Greater Noida, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 118,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 99,
     "programType": "PGDM (AICTE Approved)",
@@ -15996,7 +16068,7 @@ export const COLLEGES_DATA = [
     "location": "15 Link Road, Lajpat Nagar III, New Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 119,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 99,
     "programType": "PGDM (All India Management Association)",
@@ -16083,7 +16155,7 @@ export const COLLEGES_DATA = [
     "location": "Sector 48, Pali Road, Faridabad, Haryana",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 120,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 115,
     "programType": "PGDM (Finance & Financial Markets)",
@@ -16169,7 +16241,7 @@ export const COLLEGES_DATA = [
     "location": "3 & 4 Institutional Area, Jasola, Opp. Sarita Vihar, New Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 121,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 87,
     "programType": "PGDM (AICTE Approved)",
@@ -16257,7 +16329,7 @@ export const COLLEGES_DATA = [
     "location": "Plot A-2, Sector 125, Noida, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 122,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 102,
     "programType": "PGDM (with Oxford Study Tour)",
@@ -16334,12 +16406,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "Chitkara University",
-    "shortName": "Chitkara Business School (CBS)",
+    "name": "Chitkara Business School, Chitkara University, Punjab",
+    "shortName": "Chitkara University MBA",
     "location": "Chandigarh-Patiala National Highway (NH-64), Rajpura, Punjab",
     "city": "Chandigarh",
     "state": "Punjab",
-    "nirfRank": 123,
+    "nirfRank": 54,
     "rating": 4.3,
     "reviewsCount": 80,
     "programType": "MBA (Chitkara Business School)",
@@ -16347,12 +16419,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "50 Acres Mega Campus",
     "accreditation": "NAAC A+ Grade, UGC, NIRF Top 60 Management",
-    "fees": "₹6.8 Lakhs",
-    "feeNum": 6.8,
-    "avgSalary": "₹7.8 LPA",
-    "avgSalaryNum": 7.8,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "fees": "₹6.60 Lakhs",
+    "feeNum": 6.6,
+    "avgSalary": "₹8.20 LPA",
+    "avgSalaryNum": 8.2,
+    "highestSalary": "₹26.00 LPA",
+    "medianSalary": "₹7.80 LPA",
     "batchSize": 360,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -16416,7 +16488,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "Ranked among top universities in North India by NIRF; outstanding corporate ties across Chandigarh tricity, Delhi NCR, and Bangalore.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.chitkara.edu.in"
   },
   {
     "id": "christ-delhincr",
@@ -16428,7 +16501,7 @@ export const COLLEGES_DATA = [
     "location": "Mariam Nagar, Meerut Road, Delhi-NCR, Ghaziabad, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 124,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 95,
     "programType": "MBA (Christ Deemed to be University Campus)",
@@ -16511,7 +16584,7 @@ export const COLLEGES_DATA = [
     "location": "Knowledge Park, Greater Noida, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 125,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 101,
     "programType": "PGDM (Management Studies)",
@@ -16588,7 +16661,7 @@ export const COLLEGES_DATA = [
     "location": "Near Hero Honda Chowk, Sector 34, Gurugram, Haryana",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 126,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 78,
     "programType": "MBA (MDU Rohtak Affiliated)",
@@ -16665,7 +16738,7 @@ export const COLLEGES_DATA = [
     "location": "Mothrowala Road, Kedarpur, Dehradun, Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 127,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 72,
     "programType": "MBA (School of Management - SOM)",
@@ -16746,7 +16819,7 @@ export const COLLEGES_DATA = [
     "location": "G.T. Road Amritsar Bypass, Jalandhar, Punjab",
     "city": "Jalandhar",
     "state": "Punjab",
-    "nirfRank": 128,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 123,
     "programType": "MBA (Department of Humanities & Management)",
@@ -16827,7 +16900,7 @@ export const COLLEGES_DATA = [
     "location": "Kamla Nagar, Kanpur, Uttar Pradesh",
     "city": "Kanpur",
     "state": "Uttar Pradesh",
-    "nirfRank": 129,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 121,
     "programType": "PGDM (JK Organization)",
@@ -16904,12 +16977,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "Galgotias University",
-    "shortName": "Galgotias University (School of Business)",
+    "name": "School of Business, Galgotias University, Greater Noida",
+    "shortName": "Galgotias University MBA",
     "location": "Plot No. 2, Sector 17-A, Yamuna Expressway, Greater Noida, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 130,
+    "nirfRank": 98,
     "rating": 4.5,
     "reviewsCount": 122,
     "programType": "MBA (School of Business)",
@@ -16917,12 +16990,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "52 Acres Modern Yamuna Expressway Campus",
     "accreditation": "NAAC A+ Grade, UGC, NIRF Top 75 Management",
-    "fees": "₹4.8 Lakhs",
-    "feeNum": 4.8,
-    "avgSalary": "₹6.8 LPA",
-    "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "fees": "₹3.40 Lakhs",
+    "feeNum": 3.4,
+    "avgSalary": "₹6.50 LPA",
+    "avgSalaryNum": 6.5,
+    "highestSalary": "₹15.00 LPA",
+    "medianSalary": "₹6.00 LPA",
     "batchSize": 360,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -16986,7 +17059,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "One of the most popular private universities in NCR, holding NAAC A+ accreditation with low fees under ₹5 Lakhs and extensive corporate drives.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.galgotiasuniversity.edu.in"
   },
   {
     "id": "gd-goenka-gurugram",
@@ -16998,7 +17072,7 @@ export const COLLEGES_DATA = [
     "location": "GD Goenka Education City, Sohna-Gurgaon Road, Sohna, Gurugram, Haryana",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 131,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 77,
     "programType": "MBA (School of Management)",
@@ -17086,7 +17160,7 @@ export const COLLEGES_DATA = [
     "location": "Road No. 75, West Punjabi Bagh, New Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 132,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 95,
     "programType": "PGDM (Delhi Sikh Gurdwara Management Committee)",
@@ -17165,7 +17239,7 @@ export const COLLEGES_DATA = [
     "location": "Haridwar Bypass Road, Near Rispana Bridge, Dehradun, Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 133,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 134,
     "programType": "MBA (Affiliated to HNB Garhwal Central University)",
@@ -17243,7 +17317,7 @@ export const COLLEGES_DATA = [
     "location": "7th Km Milestone, Delhi-Meerut Road, Morta, Ghaziabad, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 134,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 80,
     "programType": "MBA (HRIT Group)",
@@ -17322,7 +17396,7 @@ export const COLLEGES_DATA = [
     "location": "1 Viraj Khand, Gomti Nagar, Lucknow, Uttar Pradesh",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
-    "nirfRank": 135,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 103,
     "programType": "PGDM (IILM Group Lucknow)",
@@ -17404,7 +17478,7 @@ export const COLLEGES_DATA = [
     "location": "NH-9, Adhyatmik Nagar, Ghaziabad, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 136,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 83,
     "programType": "PGDM (Flagship 35-Year Heritage)",
@@ -17493,7 +17567,7 @@ export const COLLEGES_DATA = [
     "location": "Plot No. 3, Sector 18A, Phase-II, Dwarka, New Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 137,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 120,
     "programType": "PGDM in Hospital & Health Management",
@@ -17577,12 +17651,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "Jamia Hamdard - School of Management & Business Studies",
-    "shortName": "SMBS Jamia Hamdard",
+    "name": "School of Management & Business Studies, Jamia Hamdard, New Delhi",
+    "shortName": "Jamia Hamdard SMBS",
     "location": "Mehrauli - Badarpur Road, Near Batra Hospital, Hamdard Nagar, New Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 138,
+    "nirfRank": 78,
     "rating": 4.3,
     "reviewsCount": 128,
     "programType": "MBA (School of Management & Business Studies)",
@@ -17590,12 +17664,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1989,
     "campusArea": "100 Acres Lush Campus in South Delhi",
     "accreditation": "NAAC A+ Grade, UGC, NIRF Top 50 Overall",
-    "fees": "₹5.5 Lakhs",
+    "fees": "₹5.50 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.2 LPA",
-    "avgSalaryNum": 7.2,
-    "highestSalary": "₹15.5 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "avgSalary": "₹7.50 LPA",
+    "avgSalaryNum": 7.5,
+    "highestSalary": "₹14.00 LPA",
+    "medianSalary": "₹7.00 LPA",
     "batchSize": 180,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -17658,7 +17732,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "World-renowned for its Pharmaceutical and Healthcare Management MBA; exceptional ROI in central South Delhi.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://jamiahamdard.edu"
   },
   {
     "id": "jaipuria-lucknow",
@@ -17670,7 +17745,7 @@ export const COLLEGES_DATA = [
     "location": "Vineet Khand, Gomti Nagar, Lucknow, Uttar Pradesh",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
-    "nirfRank": 139,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 77,
     "programType": "PGDM (Flagship Lucknow Campus)",
@@ -17764,7 +17839,7 @@ export const COLLEGES_DATA = [
     "location": "A-10, Sector 62, Noida, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 140,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 139,
     "programType": "MBA (Jaypee Institute of Information Technology)",
@@ -17846,7 +17921,7 @@ export const COLLEGES_DATA = [
     "location": "O.P. Jindal Global University, Sonipat Narela Road, Sonipat, Haryana",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 141,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 130,
     "programType": "MBA (Institute of Eminence - O.P. Jindal)",
@@ -17936,7 +18011,7 @@ export const COLLEGES_DATA = [
     "location": "Delhi-NCR, Meerut Road (NH-58), Ghaziabad, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 142,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 140,
     "programType": "MBA (KIET Group of Institutions)",
@@ -18016,7 +18091,7 @@ export const COLLEGES_DATA = [
     "location": "Sohna Road, Gurugram, Haryana",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 143,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 81,
     "programType": "MBA (School of Management & Commerce)",
@@ -18099,12 +18174,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "LM Thapar School of Management",
-    "shortName": "LM Thapar School of Management (LMTSM)",
+    "name": "LM Thapar School of Management (TIET Patiala/Dera Bassi)",
+    "shortName": "LM Thapar Patiala",
     "location": "Dera Bassi Campus, Off Chandigarh-Ambala Highway, Mohali / Chandigarh, Punjab",
     "city": "Chandigarh",
     "state": "Punjab",
-    "nirfRank": 144,
+    "nirfRank": 44,
     "rating": 4.1,
     "reviewsCount": 97,
     "programType": "MBA (Thapar Institute of Engineering & Technology)",
@@ -18112,12 +18187,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "33 Acres Eco-Friendly Residential Campus",
     "accreditation": "NAAC A+ Grade, UGC, AACSB Member",
-    "fees": "₹10.5 Lakhs",
-    "feeNum": 10.5,
-    "avgSalary": "₹8.8 LPA",
-    "avgSalaryNum": 8.8,
-    "highestSalary": "₹21.5 LPA",
-    "medianSalary": "₹8.2 LPA",
+    "fees": "₹10.30 Lakhs",
+    "feeNum": 10.3,
+    "avgSalary": "₹7.80 LPA",
+    "avgSalaryNum": 7.8,
+    "highestSalary": "₹21.35 LPA",
+    "medianSalary": "₹7.50 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -18176,7 +18251,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "Prestigious Thapar heritage; modern experiential management education with international immersions in Europe and USA.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://lmtsm.thapar.edu"
   },
   {
     "id": "lovely-professional-phagwara",
@@ -18188,7 +18264,7 @@ export const COLLEGES_DATA = [
     "location": "Jalandhar - Delhi G.T. Road, Phagwara, Punjab",
     "city": "Phagwara",
     "state": "Punjab",
-    "nirfRank": 145,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 140,
     "programType": "MBA (Mittal School of Business - ACBSP USA Accredited)",
@@ -18278,7 +18354,7 @@ export const COLLEGES_DATA = [
     "location": "Plot 1, Sector 17-A, Yamuna Expressway, Greater Noida, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 146,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 82,
     "programType": "MBA (School of Business Management)",
@@ -18357,7 +18433,7 @@ export const COLLEGES_DATA = [
     "location": "Lothian Road, Kashmere Gate, Delhi",
     "city": "Delhi-NCR",
     "state": "Delhi",
-    "nirfRank": 147,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 125,
     "programType": "MBA (State University of Delhi)",
@@ -18434,7 +18510,7 @@ export const COLLEGES_DATA = [
     "location": "Budhera, Gurugram-Badli Road, Gurugram, Haryana",
     "city": "Delhi-NCR",
     "state": "Haryana",
-    "nirfRank": 148,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 114,
     "programType": "MBA (Faculty of Commerce & Management)",
@@ -18513,7 +18589,7 @@ export const COLLEGES_DATA = [
     "location": "Plot No. 32-34, Knowledge Park III, Greater Noida, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 149,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 84,
     "programType": "MBA (Sharda School of Business Studies)",
@@ -18602,7 +18678,7 @@ export const COLLEGES_DATA = [
     "location": "Delhi-NCR Campus, Meerut Road, Modinagar, Ghaziabad, Uttar Pradesh",
     "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
-    "nirfRank": 150,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 90,
     "programType": "MBA (SRM Institute of Science & Technology)",
@@ -18684,7 +18760,7 @@ export const COLLEGES_DATA = [
     "location": "Swami Ram Nagar, Jolly Grant, Dehradun, Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 151,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 144,
     "programType": "MBA (Himalayan School of Management Studies)",
@@ -18768,7 +18844,7 @@ export const COLLEGES_DATA = [
     "location": "Panjab University Regional Centre, Civil Lines, Ludhiana, Punjab",
     "city": "Ludhiana",
     "state": "Punjab",
-    "nirfRank": 152,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 101,
     "programType": "MBA (Panjab University)",
@@ -18841,12 +18917,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "University School of Business, Chandigarh University",
-    "shortName": "Chandigarh University (USB Mohali)",
+    "name": "University School of Business (USB), Chandigarh University",
+    "shortName": "Chandigarh University MBA",
     "location": "NH-95, Chandigarh-Ludhiana Highway, Mohali, Punjab",
     "city": "Mohali",
     "state": "Punjab",
-    "nirfRank": 153,
+    "nirfRank": 36,
     "rating": 4.3,
     "reviewsCount": 124,
     "programType": "MBA (University School of Business)",
@@ -18854,13 +18930,13 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "150 Acres Mega Modern Campus",
     "accreditation": "NAAC A+ Grade, NIRF Top 40 Management, QS World Ranked",
-    "fees": "₹5.8 Lakhs",
-    "feeNum": 5.8,
-    "avgSalary": "₹8.2 LPA",
-    "avgSalaryNum": 8.2,
-    "highestSalary": "₹28.0 LPA",
-    "medianSalary": "₹7.8 LPA",
-    "batchSize": 480,
+    "fees": "₹5.60 Lakhs",
+    "feeNum": 5.6,
+    "avgSalary": "₹7.60 LPA",
+    "avgSalaryNum": 7.6,
+    "highestSalary": "₹28.00 LPA",
+    "medianSalary": "₹7.00 LPA",
+    "batchSize": 600,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
       "CUCET",
@@ -18923,7 +18999,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "The fastest growing private university in Asia in QS rankings; NAAC A+ accredited with record-breaking placement offers exceeding 900+ visiting recruiters.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.cuchd.in"
   },
   {
     "id": "uttaranchal-dehradun",
@@ -18935,7 +19012,7 @@ export const COLLEGES_DATA = [
     "location": "Arcadia Grant, P.O. Chandanwari, Premnagar, Dehradun, Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 154,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 71,
     "programType": "MBA (Uttaranchal Institute of Management)",
@@ -19017,7 +19094,7 @@ export const COLLEGES_DATA = [
     "location": "Andrahalli Main Road, Off Magadi Road, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 155,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 88,
     "programType": "PGDM (Global Business Focus)",
@@ -19100,7 +19177,7 @@ export const COLLEGES_DATA = [
     "location": "Andrahalli Main Road, Shushruti Nagar, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 156,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 109,
     "programType": "MBA (Bangalore University Affiliated)",
@@ -19182,7 +19259,7 @@ export const COLLEGES_DATA = [
     "location": "Acharya Dr. Sarvepalli Radhakrishnan Road, Soladevanahalli, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 157,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 70,
     "programType": "MBA (Acharya Institutes)",
@@ -19264,7 +19341,7 @@ export const COLLEGES_DATA = [
     "location": "Acharya Dr. S. Radhakrishnan Road, Soladevanahalli, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 158,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 144,
     "programType": "MBA (VTU Affiliated Autonomous)",
@@ -19346,7 +19423,7 @@ export const COLLEGES_DATA = [
     "location": "Bella Vista, Raj Bhavan Road, Khairatabad, Hyderabad, Telangana",
     "city": "Hyderabad",
     "state": "Telangana",
-    "nirfRank": 159,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 140,
     "programType": "PGDM (Premier Think-Tank Heritage)",
@@ -19430,7 +19507,7 @@ export const COLLEGES_DATA = [
     "location": "1st Cross Road, Peenya 1st Stage, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 160,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 83,
     "programType": "MBA & PGDM (AIMS School of Business)",
@@ -19522,7 +19599,7 @@ export const COLLEGES_DATA = [
     "location": "Kudlu Gate, Hosur Road, Near Electronic City, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 161,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 109,
     "programType": "PGDM (Industry Integrated)",
@@ -19604,7 +19681,7 @@ export const COLLEGES_DATA = [
     "location": "Amrita Vishwa Vidyapeetham, Amritanagar, Ettimadai, Coimbatore, Tamil Nadu",
     "city": "Coimbatore",
     "state": "Tamil Nadu",
-    "nirfRank": 162,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 105,
     "programType": "MBA (AACSB Accredited)",
@@ -19694,7 +19771,7 @@ export const COLLEGES_DATA = [
     "location": "Bharathi Park Road, Tatabad, Coimbatore, Tamil Nadu",
     "city": "Coimbatore",
     "state": "Tamil Nadu",
-    "nirfRank": 163,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 73,
     "programType": "MBA for Women (Department of Business Administration)",
@@ -19769,12 +19846,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "Bharathidasan University",
-    "shortName": "Bharathidasan University (DoMS Trichy)",
+    "name": "Bharathidasan Institute of Management (BIM Trichy), BHEL Campus",
+    "shortName": "BIM Trichy",
     "location": "Palkalaiperur, Tiruchirappalli, Tamil Nadu",
     "city": "Tiruchirappalli",
     "state": "Tamil Nadu",
-    "nirfRank": 164,
+    "nirfRank": 94,
     "rating": 4.2,
     "reviewsCount": 70,
     "programType": "MBA (Department of Management Studies)",
@@ -19782,13 +19859,13 @@ export const COLLEGES_DATA = [
     "establishedYear": 1982,
     "campusArea": "500 Acres Palkalaiperur Campus",
     "accreditation": "NAAC A+ Grade, UGC, AICTE Approved",
-    "fees": "₹1.2 Lakhs",
-    "feeNum": 1.2,
-    "avgSalary": "₹6.0 LPA",
-    "avgSalaryNum": 6,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.6 LPA",
-    "batchSize": 60,
+    "fees": "₹16.50 Lakhs",
+    "feeNum": 16.5,
+    "avgSalary": "₹12.40 LPA",
+    "avgSalaryNum": 12.4,
+    "highestSalary": "₹20.50 LPA",
+    "medianSalary": "₹12.00 LPA",
+    "batchSize": 120,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
       "TANCET",
@@ -19842,7 +19919,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "Distinguished state university in Trichy; provides prestigious university degree with ultra-low tuition and strong ties with BHEL and manufacturing.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://bim.edu"
   },
   {
     "id": "cmr-bengaluru",
@@ -19854,7 +19932,7 @@ export const COLLEGES_DATA = [
     "location": "Chagalatti, Off Bagalur Main Road, Near Bangalore International Airport, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 165,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 120,
     "programType": "MBA (CMR University)",
@@ -19944,7 +20022,7 @@ export const COLLEGES_DATA = [
     "location": "GST Road, Vandalur, Chennai, Tamil Nadu",
     "city": "Chennai",
     "state": "Tamil Nadu",
-    "nirfRank": 166,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 77,
     "programType": "MBA (with Strategy & AI Specialization)",
@@ -20026,7 +20104,7 @@ export const COLLEGES_DATA = [
     "location": "Shavige Malleshwara Hills, Kumaraswamy Layout, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 167,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 69,
     "programType": "PGDM (AICTE Approved)",
@@ -20109,7 +20187,7 @@ export const COLLEGES_DATA = [
     "location": "Vadlamudi, Guntur, Andhra Pradesh",
     "city": "Guntur",
     "state": "Andhra Pradesh",
-    "nirfRank": 168,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 89,
     "programType": "MBA (Vignan Deemed University)",
@@ -20190,7 +20268,7 @@ export const COLLEGES_DATA = [
     "location": "NH-44, Medchal, Hyderabad, Telangana",
     "city": "Hyderabad",
     "state": "Telangana",
-    "nirfRank": 169,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 124,
     "programType": "PGDM (First Non-Government B-School in AP/Telangana)",
@@ -20273,7 +20351,7 @@ export const COLLEGES_DATA = [
     "location": "833 Gokul Bagh, EVR Periyar Salai, Arumbakkam, Chennai, Tamil Nadu",
     "city": "Chennai",
     "state": "Tamil Nadu",
-    "nirfRank": 170,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 113,
     "programType": "MBA (University of Madras Affiliated)",
@@ -20353,7 +20431,7 @@ export const COLLEGES_DATA = [
     "location": "Chettipalayam Road, Eachanari Post, Coimbatore, Tamil Nadu",
     "city": "Coimbatore",
     "state": "Tamil Nadu",
-    "nirfRank": 171,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 87,
     "programType": "PGDM (Bannari Amman Group Initiative)",
@@ -20435,7 +20513,7 @@ export const COLLEGES_DATA = [
     "location": "Gandhi Nagar, Rushikonda, Visakhapatnam / Hyderabad / Bengaluru",
     "city": "Hyderabad",
     "state": "Andhra Pradesh",
-    "nirfRank": 172,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 87,
     "programType": "MBA (Tri-Campus Deemed University)",
@@ -20524,7 +20602,7 @@ export const COLLEGES_DATA = [
     "location": "Survey No. 1266, Shamirpet, Hyderabad, Telangana",
     "city": "Hyderabad",
     "state": "Telangana",
-    "nirfRank": 173,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 124,
     "programType": "PGDM (ICSSR Sponsored Premier Autonomous Institute)",
@@ -20620,7 +20698,7 @@ export const COLLEGES_DATA = [
     "location": "Itgalpur, Rajanakunte, Yelahanka, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 174,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 114,
     "programType": "MBA (School of Management)",
@@ -20710,7 +20788,7 @@ export const COLLEGES_DATA = [
     "location": "R.V. Nagar, Kalapet, Puducherry",
     "city": "Puducherry",
     "state": "Puducherry",
-    "nirfRank": 175,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 85,
     "programType": "MBA (Central University)",
@@ -20791,12 +20869,12 @@ export const COLLEGES_DATA = [
       "PGDM",
       "MBA"
     ],
-    "name": "Rajagiri Business School / Rajagiri College of Social Sciences",
-    "shortName": "Rajagiri Business School (RBS Kochi)",
+    "name": "Rajagiri Business School (RBS), Cochin",
+    "shortName": "Rajagiri Business School",
     "location": "Rajagiri Valley P.O, Kakkanad, Kochi, Kerala",
     "city": "Kochi",
     "state": "Kerala",
-    "nirfRank": 176,
+    "nirfRank": 93,
     "rating": 4.3,
     "reviewsCount": 123,
     "programType": "PGDM & MBA (AACSB Member & AACSB Accredited Path)",
@@ -20804,12 +20882,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "15 Acres Scenic Rajagiri Valley Campus",
     "accreditation": "AACSB Member, NBA Accredited, AIU Recognized, NAAC A++ Grade",
-    "fees": "₹8.5 Lakhs",
+    "fees": "₹8.50 Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹8.8 LPA",
-    "avgSalaryNum": 8.8,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹8.2 LPA",
+    "avgSalary": "₹8.40 LPA",
+    "avgSalaryNum": 8.4,
+    "highestSalary": "₹16.05 LPA",
+    "medianSalary": "₹8.00 LPA",
     "batchSize": 240,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -20873,7 +20951,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "The top-ranked B-school in Kerala; renowned for immaculate ethics, international student exchanges with Europe, and premier consulting placements.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.rajagiribusinessschool.edu.in"
   },
   {
     "id": "ramaiah-applieds-bengaluru",
@@ -20885,7 +20964,7 @@ export const COLLEGES_DATA = [
     "location": "Gnanagangothri Campus, New BEL Road, MSR Nagar, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 177,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 85,
     "programType": "MBA (Faculty of Management & Commerce)",
@@ -20972,7 +21051,7 @@ export const COLLEGES_DATA = [
     "location": "TVR Nagar, Aruppukottai Road, Madurai, Tamil Nadu",
     "city": "Madurai",
     "state": "Tamil Nadu",
-    "nirfRank": 178,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 81,
     "programType": "MBA (Madurai Kamaraj University Affiliated)",
@@ -21051,7 +21130,7 @@ export const COLLEGES_DATA = [
     "location": "CA-17, 36th Cross, 26th Main, 4th 'T' Block, Jayanagar, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 179,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 71,
     "programType": "MBA (Autonomous - Rashtreeya Sikshana Samithi Trust)",
@@ -21133,7 +21212,7 @@ export const COLLEGES_DATA = [
     "location": "Sahyadri Campus, Adyar, Mangaluru, Karnataka",
     "city": "Mangaluru",
     "state": "Karnataka",
-    "nirfRank": 180,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 73,
     "programType": "MBA (VTU Autonomous)",
@@ -21214,7 +21293,7 @@ export const COLLEGES_DATA = [
     "location": "Kottukulam Hills, Pathamuttom, Kottayam, Kerala",
     "city": "Kottayam",
     "state": "Kerala",
-    "nirfRank": 181,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 65,
     "programType": "MBA (APJ Abdul Kalam Technological University Affiliated)",
@@ -21295,7 +21374,7 @@ export const COLLEGES_DATA = [
     "location": "M.S. Palya, Via Jalahalli East, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 182,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 96,
     "programType": "MBA (Bangalore University Affiliated)",
@@ -21375,7 +21454,7 @@ export const COLLEGES_DATA = [
     "location": "Enikepadu, Vijayawada, Andhra Pradesh",
     "city": "Vijayawada",
     "state": "Andhra Pradesh",
-    "nirfRank": 183,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 78,
     "programType": "PGDM for Women (Empowerment & Tech)",
@@ -21454,7 +21533,7 @@ export const COLLEGES_DATA = [
     "location": "Aditya Nagar, ADB Road, Surampalem, Kakinada District, Andhra Pradesh",
     "city": "Surampalem",
     "state": "Andhra Pradesh",
-    "nirfRank": 184,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 127,
     "programType": "MBA (School of Business)",
@@ -21534,7 +21613,7 @@ export const COLLEGES_DATA = [
     "location": "Prathap Nagar, Muttom, Aluva, Kochi, Kerala",
     "city": "Kochi",
     "state": "Kerala",
-    "nirfRank": 185,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 66,
     "programType": "PGDM (Flagship AICTE Approved)",
@@ -21618,7 +21697,7 @@ export const COLLEGES_DATA = [
     "location": "Prathap Nagar, Muttom, Aluva, Kochi, Kerala",
     "city": "Kochi",
     "state": "Kerala",
-    "nirfRank": 186,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 132,
     "programType": "MBA (Mahatma Gandhi University Affiliated)",
@@ -21695,7 +21774,7 @@ export const COLLEGES_DATA = [
     "location": "No. 1, Ramachandra Nagar, Porur, Chennai, Tamil Nadu",
     "city": "Chennai",
     "state": "Tamil Nadu",
-    "nirfRank": 187,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 99,
     "programType": "MBA (Hospital & Health Systems Management)",
@@ -21780,7 +21859,7 @@ export const COLLEGES_DATA = [
     "location": "B.H. Road, Tumakuru, Karnataka",
     "city": "Tumakuru",
     "state": "Karnataka",
-    "nirfRank": 188,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 105,
     "programType": "MBA (VTU Autonomous)",
@@ -21861,7 +21940,7 @@ export const COLLEGES_DATA = [
     "location": "NH-44, Kompally, Secunderabad, Hyderabad, Telangana",
     "city": "Hyderabad",
     "state": "Telangana",
-    "nirfRank": 189,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 114,
     "programType": "PGDM (First AICTE Approved B-School in Hyderabad)",
@@ -21956,7 +22035,7 @@ export const COLLEGES_DATA = [
     "location": "SRM Nagar, Kattankulathur, Chengalpattu, Chennai, Tamil Nadu",
     "city": "Chennai",
     "state": "Tamil Nadu",
-    "nirfRank": 190,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 105,
     "programType": "MBA (Flagship Deemed University Campus)",
@@ -22046,7 +22125,7 @@ export const COLLEGES_DATA = [
     "location": "Sona Nagar, Junction Main Road, Salem, Tamil Nadu",
     "city": "Salem",
     "state": "Tamil Nadu",
-    "nirfRank": 191,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 112,
     "programType": "MBA (Autonomous - Anna University Affiliated)",
@@ -22126,7 +22205,7 @@ export const COLLEGES_DATA = [
     "location": "Rajiv Gandhi Salai (OMR), Kalavakkam, Chennai, Tamil Nadu",
     "city": "Chennai",
     "state": "Tamil Nadu",
-    "nirfRank": 192,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 79,
     "programType": "MBA (Autonomous - Anna University Affiliated)",
@@ -22209,7 +22288,7 @@ export const COLLEGES_DATA = [
     "location": "Beeri, Kotekar, Mangaluru, Karnataka",
     "city": "Mangaluru",
     "state": "Karnataka",
-    "nirfRank": 193,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 93,
     "programType": "MBA (Aloysius Institute of Management and Information Technology)",
@@ -22291,7 +22370,7 @@ export const COLLEGES_DATA = [
     "location": "28/1 Primrose Road, Off MG Road, Bengaluru, Karnataka",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 194,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 123,
     "programType": "PGDM (First B-School in Karnataka - 1968)",
@@ -22377,12 +22456,12 @@ export const COLLEGES_DATA = [
       "MBA",
       "PGDM"
     ],
-    "name": "Thiagarajar School of Management",
+    "name": "Thiagarajar School of Management (TSM), Madurai",
     "shortName": "TSM Madurai",
     "location": "Pamban Swamy Nagar, Thiruparankundram, Madurai, Tamil Nadu",
     "city": "Madurai",
     "state": "Tamil Nadu",
-    "nirfRank": 195,
+    "nirfRank": 82,
     "rating": 4.1,
     "reviewsCount": 87,
     "programType": "MBA & PGDM (60+ Years Industrial Heritage)",
@@ -22390,13 +22469,13 @@ export const COLLEGES_DATA = [
     "establishedYear": 1962,
     "campusArea": "17 Acres Lush Residential Campus",
     "accreditation": "NBA Accredited, NAAC A+ Grade, ACBSP (USA Candidate), AIU Equivalent",
-    "fees": "₹7.5 Lakhs",
-    "feeNum": 7.5,
-    "avgSalary": "₹7.8 LPA",
-    "avgSalaryNum": 7.8,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹7.2 LPA",
-    "batchSize": 240,
+    "fees": "₹11.50 Lakhs",
+    "feeNum": 11.5,
+    "avgSalary": "₹7.50 LPA",
+    "avgSalaryNum": 7.5,
+    "highestSalary": "₹15.00 LPA",
+    "medianSalary": "₹7.00 LPA",
+    "batchSize": 180,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
       "CAT",
@@ -22459,7 +22538,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "Founded in 1962 by industrialist Karumuttu Thiagarajar Chettiar; NIRF Top 90 institute revered for financial and operations management.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://tsm.ac.in"
   },
   {
     "id": "vignana-jyothi-hyderabad",
@@ -22471,7 +22551,7 @@ export const COLLEGES_DATA = [
     "location": "Vignana Jyothi Nagar, Bachupally, Nizampet (SO), Hyderabad, Telangana",
     "city": "Hyderabad",
     "state": "Telangana",
-    "nirfRank": 196,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 98,
     "programType": "PGDM (Flagship AICTE Approved)",
@@ -22562,7 +22642,7 @@ export const COLLEGES_DATA = [
     "location": "Boston House, Thumkunta (PO), Shamirpet Road, Hakimpet, Hyderabad, Telangana",
     "city": "Hyderabad",
     "state": "Telangana",
-    "nirfRank": 197,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 83,
     "programType": "PGDM & MBA (Dual Stream)",
@@ -22651,7 +22731,7 @@ export const COLLEGES_DATA = [
     "location": "Electronics City, Phase II, Hosur Road, Bengaluru, Karnataka (also Kochi Campus)",
     "city": "Bengaluru",
     "state": "Karnataka",
-    "nirfRank": 198,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 129,
     "programType": "PGDM (Flagship Multi-Campus B-School)",
@@ -22743,7 +22823,7 @@ export const COLLEGES_DATA = [
     "location": "Charholi Budruk, Via Lohegaon, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 199,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 142,
     "programType": "MBA in Innovation & Business Design",
@@ -22831,7 +22911,7 @@ export const COLLEGES_DATA = [
     "location": "S.No. 55/2-7, Tathawade, Off Mumbai-Bangalore Bypass Highway, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 200,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 142,
     "programType": "MBA in International Business",
@@ -22920,7 +23000,7 @@ export const COLLEGES_DATA = [
     "location": "S.No. 55/2-7, Tathawade, Off Mumbai-Bangalore Bypass Highway, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 201,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 89,
     "programType": "MBA in Human Resource & General Management",
@@ -23009,7 +23089,7 @@ export const COLLEGES_DATA = [
     "location": "S.No. 55/2-7, Tathawade, Off Mumbai-Bangalore Bypass Highway, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 202,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 92,
     "programType": "MBA (Flagship Institute of Sri Balaji University)",
@@ -23099,7 +23179,7 @@ export const COLLEGES_DATA = [
     "location": "S.No. 55/2-7, Tathawade, Off Mumbai-Bangalore Bypass Highway, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 203,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 104,
     "programType": "MBA in Telecom & Technology Management",
@@ -23188,7 +23268,7 @@ export const COLLEGES_DATA = [
     "location": "Bhilai House, Durg, Chhattisgarh",
     "city": "Durg",
     "state": "Chhattisgarh",
-    "nirfRank": 204,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 140,
     "programType": "MBA (CSVTU Affiliated)",
@@ -23266,7 +23346,7 @@ export const COLLEGES_DATA = [
     "location": "Christ University Road, 30 Valor Court, At & Post Dasve, Lavasa, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 205,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 77,
     "programType": "MBA (Christ Deemed to be University Campus)",
@@ -23349,7 +23429,7 @@ export const COLLEGES_DATA = [
     "location": "Mumbai-Bangalore Highway, Tathawade, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 206,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 142,
     "programType": "PGDM (AICTE Approved)",
@@ -23440,7 +23520,7 @@ export const COLLEGES_DATA = [
     "location": "Building No. 4, Jnanadweepa, Chendani Bunder Road, Thane (West), Maharashtra",
     "city": "Thane",
     "state": "Maharashtra",
-    "nirfRank": 207,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 98,
     "programType": "MMS / MBA & PGDM (University of Mumbai Affiliated)",
@@ -23528,7 +23608,7 @@ export const COLLEGES_DATA = [
     "location": "GAT No. 1270, Lavale, Off Pune-Bangalore Highway, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 208,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 140,
     "programType": "MBA (Liberal Education & Management)",
@@ -23621,7 +23701,7 @@ export const COLLEGES_DATA = [
     "location": "King's Circle, Matunga (East), Mumbai, Maharashtra",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 209,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 80,
     "programType": "MMS / MBA & PGDM (King's Circle Matunga)",
@@ -23710,7 +23790,7 @@ export const COLLEGES_DATA = [
     "location": "University Road, Patan, Gujarat",
     "city": "Patan",
     "state": "Gujarat",
-    "nirfRank": 210,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 138,
     "programType": "MBA (State University Department)",
@@ -23787,7 +23867,7 @@ export const COLLEGES_DATA = [
     "location": "85/1 Law College Road, Erandwane, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 211,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 83,
     "programType": "MBA (SPPU Affiliated Autonomous)",
@@ -23869,7 +23949,7 @@ export const COLLEGES_DATA = [
     "location": "Sanwer Road, Indore, Madhya Pradesh",
     "city": "Indore",
     "state": "Madhya Pradesh",
-    "nirfRank": 212,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 119,
     "programType": "PGDM & MBA (Indore Commercial Corridor)",
@@ -23954,7 +24034,7 @@ export const COLLEGES_DATA = [
     "location": "CHARUSAT Campus, Highway 139, Changa, Anand, Gujarat",
     "city": "Anand",
     "state": "Gujarat",
-    "nirfRank": 213,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 86,
     "programType": "MBA (Charotar University of Science & Technology)",
@@ -24034,7 +24114,7 @@ export const COLLEGES_DATA = [
     "location": "Off Karla Caves Road, Ekurke, Lonavala, Pune District, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 214,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 79,
     "programType": "PGDM (with Global Immersion & Leadership)",
@@ -24124,7 +24204,7 @@ export const COLLEGES_DATA = [
     "location": "Survey No. 54, Nere-Dattawadi, Near Hinjawadi IT Park, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 215,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 117,
     "programType": "MBA (Affiliated to SPPU Pune)",
@@ -24204,7 +24284,7 @@ export const COLLEGES_DATA = [
     "location": "Survey No. 54, Nere-Dattawadi, Near Hinjawadi Phase II, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 216,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 94,
     "programType": "PGDM (Sai Balaji Education Society)",
@@ -24288,7 +24368,7 @@ export const COLLEGES_DATA = [
     "location": "Bypass Highway, Tathawade / Saswad Road, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 217,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 107,
     "programType": "MBA (SPPU Affiliated)",
@@ -24367,7 +24447,7 @@ export const COLLEGES_DATA = [
     "location": "Knowledge Village, Rajendra Nagar, A.B. Road, Indore, Madhya Pradesh",
     "city": "Indore",
     "state": "Madhya Pradesh",
-    "nirfRank": 218,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 126,
     "programType": "MBA (Affiliated to Devi Ahilya Vishwavidyalaya - DAVV)",
@@ -24454,7 +24534,7 @@ export const COLLEGES_DATA = [
     "location": "Plot No. IP 2 & 3, Phase IV, Sitapura Industrial Area, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 219,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 93,
     "programType": "PGDM (JIMS Group Jaipur)",
@@ -24536,7 +24616,7 @@ export const COLLEGES_DATA = [
     "location": "Jaipur-Agra Bypass, Near New RTO Office, Jagatpura, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 220,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 103,
     "programType": "MBA (School of Business and Management)",
@@ -24624,7 +24704,7 @@ export const COLLEGES_DATA = [
     "location": "Rajbaug Campus, Loni Kalbhor, Solapur Highway, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 221,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 128,
     "programType": "MBA (MIT College of Management - MITCOM)",
@@ -24714,7 +24794,7 @@ export const COLLEGES_DATA = [
     "location": "S.No. 124, Paud Road, Kothrud, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 222,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 93,
     "programType": "PGDM in Telecom, Technology & Analytics",
@@ -24797,7 +24877,7 @@ export const COLLEGES_DATA = [
     "location": "Sr. No. 33/1, Near Balewadi Sports Complex, Balewadi, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 223,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 85,
     "programType": "PGDM (Near Balewadi Sports Complex)",
@@ -24887,7 +24967,7 @@ export const COLLEGES_DATA = [
     "location": "Sikar Road, Lakshmangarh, Sikar District, Rajasthan",
     "city": "Lakshmangarh",
     "state": "Rajasthan",
-    "nirfRank": 224,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 110,
     "programType": "MBA for Women (School of Business)",
@@ -24970,7 +25050,7 @@ export const COLLEGES_DATA = [
     "location": "Plot No. IS 1 & 2, Patalganga Industrial Area, Wasambe, Khalapur, Navi Mumbai / Raigad, Maharashtra",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 225,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 71,
     "programType": "PGDM in Securities Markets (SEBI Established Institute)",
@@ -25055,7 +25135,7 @@ export const COLLEGES_DATA = [
     "location": "GLS Campus, Ellisbridge, Opp. Law Garden, Ahmedabad, Gujarat",
     "city": "Ahmedabad",
     "state": "Gujarat",
-    "nirfRank": 226,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 80,
     "programType": "MBA (Gujarat Law Society - GLS University)",
@@ -25135,7 +25215,7 @@ export const COLLEGES_DATA = [
     "location": "Survey No. 54, Nere-Dattawadi, Near Hinjawadi IT Park, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 227,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 81,
     "programType": "MBA (Affiliated to Savitribai Phule Pune University)",
@@ -25216,7 +25296,7 @@ export const COLLEGES_DATA = [
     "location": "Suryadatta Group of Institutes, S.No. 342, Pashan-Sus Road, Bavdhan, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 228,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 133,
     "programType": "MBA & PGDM (Bavdhan Pune Campus)",
@@ -25305,7 +25385,7 @@ export const COLLEGES_DATA = [
     "location": "A.K.S. University Campus, Satna, Madhya Pradesh",
     "city": "Satna",
     "state": "Madhya Pradesh",
-    "nirfRank": 90,
+    "nirfRank": null,
     "rating": 4,
     "reviewsCount": 60,
     "programType": "MBA (Private University)",
@@ -25717,7 +25797,7 @@ export const COLLEGES_DATA = [
     "location": "Alard University Campus, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 95,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 95,
     "programType": "MBA (Private University)",
@@ -25876,12 +25956,12 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "Aligarh Muslim University",
-    "shortName": "AMU - Dept of Business Administration",
+    "name": "Department of Business Administration, Aligarh Muslim University (AMU)",
+    "shortName": "AMU Aligarh MBA",
     "location": "Faculty of Management Studies & Research, AMU, Aligarh, Uttar Pradesh",
     "city": "Aligarh",
     "state": "Uttar Pradesh",
-    "nirfRank": 55,
+    "nirfRank": 70,
     "rating": 4.3,
     "reviewsCount": 142,
     "programType": "MBA (Central University)",
@@ -25889,13 +25969,13 @@ export const COLLEGES_DATA = [
     "establishedYear": 1920,
     "campusArea": "1155 Acres Heritage Campus",
     "accreditation": "NAAC A+ Grade, UGC, AIU",
-    "fees": "₹2.8 Lakhs",
-    "feeNum": 2.8,
-    "avgSalary": "₹9.2 LPA",
-    "avgSalaryNum": 9.2,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹8.6 LPA",
-    "batchSize": 150,
+    "fees": "₹0.60 Lakhs",
+    "feeNum": 0.6,
+    "avgSalary": "₹7.80 LPA",
+    "avgSalaryNum": 7.8,
+    "highestSalary": "₹15.00 LPA",
+    "medianSalary": "₹7.20 LPA",
+    "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
       "AMU MBA Test",
@@ -25962,7 +26042,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "One of India’s most historic central institutions with dedicated department of business administration and strong domestic and Gulf alumni presence.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.amu.ac.in"
   },
   {
     "id": "amrapali-university-haldwani",
@@ -26138,7 +26219,7 @@ export const COLLEGES_DATA = [
     "location": "Aryavart University Campus, Sehore, Madhya Pradesh",
     "city": "Sehore",
     "state": "Madhya Pradesh",
-    "nirfRank": 100,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 130,
     "programType": "MBA (Private University)",
@@ -26547,7 +26628,7 @@ export const COLLEGES_DATA = [
     "location": "Babasaheb Bhimrao Ambedkar University Campus, Lucknow, Uttar Pradesh",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
-    "nirfRank": 105,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 165,
     "programType": "MBA (Central University)",
@@ -26706,8 +26787,8 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "Banaras Hindu University",
-    "shortName": "FMS BHU (Varanasi)",
+    "name": "Institute of Management Studies, Banaras Hindu University (FMS BHU)",
+    "shortName": "FMS BHU Varanasi",
     "location": "Institute of Management Studies, BHU Campus, Varanasi, Uttar Pradesh",
     "city": "Varanasi",
     "state": "Uttar Pradesh",
@@ -26719,13 +26800,13 @@ export const COLLEGES_DATA = [
     "establishedYear": 1916,
     "campusArea": "1300 Acres Historic Main Campus",
     "accreditation": "NAAC A++ Grade, UGC, AIU",
-    "fees": "₹1.5 Lakhs",
-    "feeNum": 1.5,
-    "avgSalary": "₹11.4 LPA",
-    "avgSalaryNum": 11.4,
-    "highestSalary": "₹23.5 LPA",
-    "medianSalary": "₹10.8 LPA",
-    "batchSize": 180,
+    "fees": "₹1.00 Lakh",
+    "feeNum": 1,
+    "avgSalary": "₹11.30 LPA",
+    "avgSalaryNum": 11.3,
+    "highestSalary": "₹38.00 LPA",
+    "medianSalary": "₹10.40 LPA",
+    "batchSize": 120,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
       "CAT",
@@ -26792,7 +26873,8 @@ export const COLLEGES_DATA = [
     ],
     "highlights": "Premier Central University business faculty (FMS BHU) renowned for exceptional ROI, distinguished corporate alumni, and serene residential learning.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.bhu.ac.in/fms/"
   },
   {
     "id": "banasthai-vidyapith-meerut",
@@ -26968,7 +27050,7 @@ export const COLLEGES_DATA = [
     "location": "Barkatullaah University Campus, Bhopal, Madhya Pradesh",
     "city": "Bhopal",
     "state": "Madhya Pradesh",
-    "nirfRank": 110,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 90,
     "programType": "MBA (State University)",
@@ -27376,7 +27458,7 @@ export const COLLEGES_DATA = [
     "location": "Bharati Vidyapeeth Campus, Meerut, Maharashtra",
     "city": "Meerut",
     "state": "Maharashtra",
-    "nirfRank": 115,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 125,
     "programType": "MBA (Deemed to be Universities University)",
@@ -27621,7 +27703,7 @@ export const COLLEGES_DATA = [
     "location": "Department of Management, BITS Pilani, Vidya Vihar, Pilani, Rajasthan",
     "city": "Pilani",
     "state": "Rajasthan",
-    "nirfRank": 20,
+    "nirfRank": null,
     "rating": 4.6,
     "reviewsCount": 155,
     "programType": "MBA (Deemed to be Universities University)",
@@ -27787,7 +27869,7 @@ export const COLLEGES_DATA = [
     "location": "Brainware University Campus, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 120,
+    "nirfRank": null,
     "rating": 4,
     "reviewsCount": 160,
     "programType": "MBA (Private University)",
@@ -28116,7 +28198,7 @@ export const COLLEGES_DATA = [
     "location": "Alipore Campus, 1 Reformatory Street, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 12,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 140,
     "programType": "MBA (State University)",
@@ -28197,7 +28279,7 @@ export const COLLEGES_DATA = [
     "location": "Career Point University Campus, Kota, Rajasthan",
     "city": "Kota",
     "state": "Rajasthan",
-    "nirfRank": 125,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 85,
     "programType": "MBA (Private University)",
@@ -28604,7 +28686,7 @@ export const COLLEGES_DATA = [
     "location": "Chaudhary Devi Lal University Campus, Sirsa, Haryana",
     "city": "Sirsa",
     "state": "Haryana",
-    "nirfRank": 130,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 120,
     "programType": "MBA (State University)",
@@ -29012,7 +29094,7 @@ export const COLLEGES_DATA = [
     "location": "Cooch Behar Panchanan Barma University Campus, Cooch Behar, West Bengal",
     "city": "Cooch Behar",
     "state": "West Bengal",
-    "nirfRank": 135,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 155,
     "programType": "MBA (State University)",
@@ -29422,7 +29504,7 @@ export const COLLEGES_DATA = [
     "location": "Deen Dayal Upadhyay Gorakhpur University Campus, Gorakhpur, Uttar Pradesh",
     "city": "Gorakhpur",
     "state": "Uttar Pradesh",
-    "nirfRank": 140,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 80,
     "programType": "MBA (State University)",
@@ -29585,7 +29667,7 @@ export const COLLEGES_DATA = [
     "location": "Delhi School of Management (DSM), DTU, Shahbad Daulatpur, Bawana Road, Delhi",
     "city": "New Delhi",
     "state": "Delhi",
-    "nirfRank": 40,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 135,
     "programType": "MBA (State University)",
@@ -29838,7 +29920,7 @@ export const COLLEGES_DATA = [
     "location": "Dev Bhoomi Uttarakhand University Campus, Dehradun, Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 145,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 115,
     "programType": "MBA (Private University)",
@@ -29920,7 +30002,7 @@ export const COLLEGES_DATA = [
     "location": "Institute of Management Studies (IMS), Takshashila Campus, Khandwa Road, Indore, Madhya Pradesh",
     "city": "Indore",
     "state": "Madhya Pradesh",
-    "nirfRank": 78,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 180,
     "programType": "MBA (State University)",
@@ -30266,7 +30348,7 @@ export const COLLEGES_DATA = [
     "location": "Dr K N Modi University Campus, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 150,
+    "nirfRank": null,
     "rating": 4,
     "reviewsCount": 150,
     "programType": "MBA (Private University)",
@@ -30674,7 +30756,7 @@ export const COLLEGES_DATA = [
     "location": "Dr. Harisingh Gour Vishwavidyalaya Campus, Meerut, Madhya Pradesh",
     "city": "Meerut",
     "state": "Madhya Pradesh",
-    "nirfRank": 155,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 75,
     "programType": "MBA (Central University)",
@@ -31084,7 +31166,7 @@ export const COLLEGES_DATA = [
     "location": "Dr. Shakuntala Misra National Rehabilitation University Campus, Lucknow, Uttar Pradesh",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
-    "nirfRank": 160,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 110,
     "programType": "MBA (State University)",
@@ -31495,7 +31577,7 @@ export const COLLEGES_DATA = [
     "location": "Future University Campus, Bareilly, Uttar Pradesh",
     "city": "Bareilly",
     "state": "Uttar Pradesh",
-    "nirfRank": 165,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 145,
     "programType": "MBA (Private University)",
@@ -31908,7 +31990,7 @@ export const COLLEGES_DATA = [
     "location": "G.H. Raisoni Skill Tech University, Nagpur Campus, Nagpur, Maharashtra",
     "city": "Nagpur",
     "state": "Maharashtra",
-    "nirfRank": 90,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 70,
     "programType": "MBA (Private University)",
@@ -32236,7 +32318,7 @@ export const COLLEGES_DATA = [
     "location": "University School of Management Studies (USMS), Sector 16C, Dwarka, New Delhi",
     "city": "New Delhi",
     "state": "Delhi",
-    "nirfRank": 66,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 170,
     "programType": "MBA (State University)",
@@ -32329,7 +32411,7 @@ export const COLLEGES_DATA = [
     "location": "Guru Jambeshwar University of Science and Technology Campus, Hisar, Haryana",
     "city": "Hisar",
     "state": "Haryana",
-    "nirfRank": 95,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 105,
     "programType": "MBA (State University)",
@@ -32574,7 +32656,7 @@ export const COLLEGES_DATA = [
     "location": "University Business School (UBS), GNDU Campus, Grand Trunk Road, Amritsar, Punjab",
     "city": "Amritsar",
     "state": "Punjab",
-    "nirfRank": 50,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 145,
     "programType": "MBA (State University)",
@@ -32742,7 +32824,7 @@ export const COLLEGES_DATA = [
     "location": "Gurukul Kangri Vidyapeeth Campus, Meerut, Uttarakhand",
     "city": "Meerut",
     "state": "Uttarakhand",
-    "nirfRank": 100,
+    "nirfRank": null,
     "rating": 4,
     "reviewsCount": 140,
     "programType": "MBA (Deemed to be Universities University)",
@@ -33152,7 +33234,7 @@ export const COLLEGES_DATA = [
     "location": "Hemvati Nandan Bahuguna Garhwal University Campus, Srinagar Garhwal, Uttarakhand",
     "city": "Srinagar Garhwal",
     "state": "Uttarakhand",
-    "nirfRank": 105,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 65,
     "programType": "MBA (Central University)",
@@ -33559,7 +33641,7 @@ export const COLLEGES_DATA = [
     "location": "IFTM University Campus, Lucknow, Uttar Pradesh",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
-    "nirfRank": 110,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 100,
     "programType": "MBA (Private University)",
@@ -33971,7 +34053,7 @@ export const COLLEGES_DATA = [
     "location": "Indira Gandhi Delhi Technical University for Women Campus, Pune, Delhi",
     "city": "Pune",
     "state": "Delhi",
-    "nirfRank": 115,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 135,
     "programType": "MBA (State University)",
@@ -34381,7 +34463,7 @@ export const COLLEGES_DATA = [
     "location": "ITM Skills University Campus, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 120,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 60,
     "programType": "MBA (Private University)",
@@ -34790,7 +34872,7 @@ export const COLLEGES_DATA = [
     "location": "J.S. University Campus, Shikohabad, Uttar Pradesh",
     "city": "Shikohabad",
     "state": "Uttar Pradesh",
-    "nirfRank": 125,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 95,
     "programType": "MBA (Private University)",
@@ -34873,7 +34955,7 @@ export const COLLEGES_DATA = [
     "location": "188 Raja S.C. Mallick Road, Jadavpur, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 4,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 130,
     "programType": "MBA (State University)",
@@ -35206,7 +35288,7 @@ export const COLLEGES_DATA = [
     "location": "Jai Narain Vyas University Campus, Jodhpur, Rajasthan",
     "city": "Jodhpur",
     "state": "Rajasthan",
-    "nirfRank": 130,
+    "nirfRank": null,
     "rating": 4,
     "reviewsCount": 130,
     "programType": "MBA (State University)",
@@ -35287,22 +35369,22 @@ export const COLLEGES_DATA = [
     "location": "Centre for Management Studies, Jamia Millia Islamia, Jamia Nagar, New Delhi",
     "city": "New Delhi",
     "state": "Delhi",
-    "nirfRank": 25,
-    "rating": 4.4,
-    "reviewsCount": 178,
+    "nirfRank": null,
+    "rating": 4.5,
+    "reviewsCount": 88,
     "programType": "MBA (Central University)",
     "ownership": "Central University (Govt. of India)",
     "establishedYear": 1920,
     "campusArea": "210 Acres Metro-Connected Capital Campus",
     "accreditation": "NAAC A++ Grade, UGC, AIU",
-    "fees": "₹1.2 Lakhs",
-    "feeNum": 1.2,
-    "avgSalary": "₹10.5 LPA",
-    "avgSalaryNum": 10.5,
-    "highestSalary": "₹25.0 LPA",
-    "medianSalary": "₹9.8 LPA",
-    "batchSize": 180,
-    "roiScore": "9.6 / 10",
+    "fees": "₹1.40 Lakhs",
+    "feeNum": 1.4,
+    "avgSalary": "₹11.50 LPA",
+    "avgSalaryNum": 11.5,
+    "highestSalary": "₹25.00 LPA",
+    "medianSalary": "₹10.50 LPA",
+    "batchSize": 200,
+    "roiScore": "9.7 / 10",
     "examsAccepted": [
       "JMI Entrance Exam",
       "CAT"
@@ -35334,22 +35416,22 @@ export const COLLEGES_DATA = [
     },
     "courses": [
       {
-        "name": "Master of Business Administration (MBA Full-Time)",
+        "name": "Master of Business Administration (MBA Full Time)",
         "duration": "2 Years Full Time",
-        "seats": 120,
-        "fee": "₹1,20,000"
+        "seats": 60,
+        "fee": "₹1,40,000"
       },
       {
         "name": "MBA in International Business (MBA-IB)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,20,000"
+        "fee": "₹1,40,000"
       },
       {
         "name": "MBA in Entrepreneurship & Family Business",
-        "duration": "2 Years",
+        "duration": "2 Years Full Time",
         "seats": 40,
-        "fee": "₹1,80,000"
+        "fee": "₹2,60,000"
       }
     ],
     "admissionCriteria": {
@@ -35365,9 +35447,10 @@ export const COLLEGES_DATA = [
       "Hostels & Sports Grounds",
       "Campus Wi-Fi Network"
     ],
-    "highlights": "Consistently top-ranked Central University in New Delhi offering world-class management education with near-zero financial barrier.",
+    "highlights": "Ranked #25 Management Institute in India by NIRF 2024. Centre for Management Studies, JMI offers tremendous ROI with central university fees and top public & private sector recruitment.",
     "admissionSession": "2027-2029",
-    "placementSession": "2025-2026 (Audited)"
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.jmi.ac.in"
   },
   {
     "id": "janardan-rai-nagar-rajasthan-vidyapeeth-meerut",
@@ -35461,7 +35544,7 @@ export const COLLEGES_DATA = [
     "location": "Atal Bihari Vajpayee School of Management and Entrepreneurship, JNU, New Delhi",
     "city": "New Delhi",
     "state": "Delhi",
-    "nirfRank": 2,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 110,
     "programType": "MBA (Central University)",
@@ -35623,7 +35706,7 @@ export const COLLEGES_DATA = [
     "location": "Jaypee University Campus, Lucknow, Uttar Pradesh",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
-    "nirfRank": 135,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 165,
     "programType": "MBA (Private University)",
@@ -36034,7 +36117,7 @@ export const COLLEGES_DATA = [
     "location": "JK Lakshmipat University Campus, Jaipur, Rajasthan",
     "city": "Jaipur",
     "state": "Rajasthan",
-    "nirfRank": 140,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 90,
     "programType": "MBA (Private University)",
@@ -36446,7 +36529,7 @@ export const COLLEGES_DATA = [
     "location": "K.M. (Krishna Mohan) University Campus, Lucknow, Uttar Pradesh",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
-    "nirfRank": 145,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 125,
     "programType": "MBA (Private University)",
@@ -36855,7 +36938,7 @@ export const COLLEGES_DATA = [
     "location": "Kazi Nazrul University Campus, Asansol, West Bengal",
     "city": "Asansol",
     "state": "West Bengal",
-    "nirfRank": 150,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 160,
     "programType": "MBA (State University)",
@@ -37265,7 +37348,7 @@ export const COLLEGES_DATA = [
     "location": "University School of Management, Kurukshetra University Campus, Kurukshetra, Haryana",
     "city": "Kurukshetra",
     "state": "Haryana",
-    "nirfRank": 75,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 130,
     "programType": "MBA (State University)",
@@ -37680,7 +37763,7 @@ export const COLLEGES_DATA = [
     "location": "Lords University Campus, Alwar, Rajasthan",
     "city": "Alwar",
     "state": "Rajasthan",
-    "nirfRank": 160,
+    "nirfRank": null,
     "rating": 4,
     "reviewsCount": 120,
     "programType": "MBA (Private University)",
@@ -38088,7 +38171,7 @@ export const COLLEGES_DATA = [
     "location": "Madhav Institute of Technology and Science Campus, Gwalior, Madhya Pradesh",
     "city": "Gwalior",
     "state": "Madhya Pradesh",
-    "nirfRank": 165,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 155,
     "programType": "MBA (Deemed to be Universities University)",
@@ -38498,7 +38581,7 @@ export const COLLEGES_DATA = [
     "location": "Maharaja Agrasen Himalayan Garhwal University Campus, Dehradun, Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 90,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 80,
     "programType": "MBA (Private University)",
@@ -38906,7 +38989,7 @@ export const COLLEGES_DATA = [
     "location": "Maharishi Markandeshwar University Campus, Ambala, Haryana",
     "city": "Ambala",
     "state": "Haryana",
-    "nirfRank": 95,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 115,
     "programType": "MBA (Private University)",
@@ -39313,7 +39396,7 @@ export const COLLEGES_DATA = [
     "location": "Mahatma Gandhi University Campus, Kolkata, West Bengal",
     "city": "Kolkata",
     "state": "West Bengal",
-    "nirfRank": 100,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 150,
     "programType": "MBA (State University)",
@@ -39725,7 +39808,7 @@ export const COLLEGES_DATA = [
     "location": "Major S. D. Singh University Campus, Farrukhabad, Uttar Pradesh",
     "city": "Farrukhabad",
     "state": "Uttar Pradesh",
-    "nirfRank": 105,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 75,
     "programType": "MBA (Private University)",
@@ -40135,7 +40218,7 @@ export const COLLEGES_DATA = [
     "location": "Mangalayatan University Campus, Aligarh, Madhya Pradesh",
     "city": "Aligarh",
     "state": "Madhya Pradesh",
-    "nirfRank": 110,
+    "nirfRank": null,
     "rating": 4,
     "reviewsCount": 110,
     "programType": "MBA (Private University)",
@@ -40545,7 +40628,7 @@ export const COLLEGES_DATA = [
     "location": "Medi-Caps University Campus, Indore, Madhya Pradesh",
     "city": "Indore",
     "state": "Madhya Pradesh",
-    "nirfRank": 115,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 145,
     "programType": "MBA (Private University)",
@@ -40955,7 +41038,7 @@ export const COLLEGES_DATA = [
     "location": "Mohammad Ali Jauhar University Campus, Rampur, Uttar Pradesh",
     "city": "Rampur",
     "state": "Uttar Pradesh",
-    "nirfRank": 120,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 70,
     "programType": "MBA (Private University)",
@@ -41365,7 +41448,7 @@ export const COLLEGES_DATA = [
     "location": "Nayanta University Campus, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 125,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 105,
     "programType": "MBA (Private University)",
@@ -41775,7 +41858,7 @@ export const COLLEGES_DATA = [
     "location": "NIIT University Campus, Neemrana, Rajasthan",
     "city": "Neemrana",
     "state": "Rajasthan",
-    "nirfRank": 130,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 140,
     "programType": "MBA (Private University)",
@@ -42185,7 +42268,7 @@ export const COLLEGES_DATA = [
     "location": "P.K. University Campus, Bhopal, Madhya Pradesh",
     "city": "Bhopal",
     "state": "Madhya Pradesh",
-    "nirfRank": 135,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 65,
     "programType": "MBA (Private University)",
@@ -42595,7 +42678,7 @@ export const COLLEGES_DATA = [
     "location": "Pimpri Chinchwad University Campus, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 140,
+    "nirfRank": null,
     "rating": 4,
     "reviewsCount": 100,
     "programType": "MBA (Private University)",
@@ -42759,7 +42842,7 @@ export const COLLEGES_DATA = [
     "location": "2, Education & Work Area, Scheme 54, Vijay Nagar, Indore, Madhya Pradesh",
     "city": "Indore",
     "state": "Madhya Pradesh",
-    "nirfRank": 82,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 160,
     "programType": "MBA (Deemed to be Universities University)",
@@ -43019,7 +43102,7 @@ export const COLLEGES_DATA = [
     "location": "Punjabi University Campus, Patiala, Punjab",
     "city": "Patiala",
     "state": "Punjab",
-    "nirfRank": 145,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 135,
     "programType": "MBA (State University)",
@@ -43428,7 +43511,7 @@ export const COLLEGES_DATA = [
     "location": "Raffles University Campus, Neemrana, Rajasthan",
     "city": "Neemrana",
     "state": "Rajasthan",
-    "nirfRank": 150,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 60,
     "programType": "MBA (Private University)",
@@ -43835,7 +43918,7 @@ export const COLLEGES_DATA = [
     "location": "Rama University Campus, Kanpur, Uttar Pradesh",
     "city": "Kanpur",
     "state": "Uttar Pradesh",
-    "nirfRank": 155,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 95,
     "programType": "MBA (Private University)",
@@ -44244,7 +44327,7 @@ export const COLLEGES_DATA = [
     "location": "Rayat Bahra Professional University, Hoshiarpur Campus, Hoshiarpur, Punjab",
     "city": "Hoshiarpur",
     "state": "Punjab",
-    "nirfRank": 160,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 130,
     "programType": "MBA (Private University)",
@@ -44654,7 +44737,7 @@ export const COLLEGES_DATA = [
     "location": "RKDF University Campus, Bhopal, Madhya Pradesh",
     "city": "Bhopal",
     "state": "Madhya Pradesh",
-    "nirfRank": 165,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 165,
     "programType": "MBA (Private University)",
@@ -45066,7 +45149,7 @@ export const COLLEGES_DATA = [
     "location": "Sandip University Campus, Nashik, Maharashtra",
     "city": "Nashik",
     "state": "Maharashtra",
-    "nirfRank": 90,
+    "nirfRank": null,
     "rating": 4,
     "reviewsCount": 90,
     "programType": "MBA (Private University)",
@@ -45476,7 +45559,7 @@ export const COLLEGES_DATA = [
     "location": "Sanskaram University Campus, Jhajjar, Haryana",
     "city": "Jhajjar",
     "state": "Haryana",
-    "nirfRank": 95,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 125,
     "programType": "MBA (Private University)",
@@ -45885,7 +45968,7 @@ export const COLLEGES_DATA = [
     "location": "Sardar Patel University Campus, Bhopal, Madhya Pradesh",
     "city": "Bhopal",
     "state": "Madhya Pradesh",
-    "nirfRank": 100,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 160,
     "programType": "MBA (Private University)",
@@ -46132,7 +46215,7 @@ export const COLLEGES_DATA = [
     "location": "Department of Management Sciences (PUMBA), Ganeshkhind, Pune, Maharashtra",
     "city": "Pune",
     "state": "Maharashtra",
-    "nirfRank": 35,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 195,
     "programType": "MBA (State University)",
@@ -46310,7 +46393,7 @@ export const COLLEGES_DATA = [
     "location": "Seacom Skills University Campus, Santiniketan, West Bengal",
     "city": "Santiniketan",
     "state": "West Bengal",
-    "nirfRank": 105,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 85,
     "programType": "MBA (Private University)",
@@ -46722,7 +46805,7 @@ export const COLLEGES_DATA = [
     "location": "Shri Guru Ram Rai University Campus, Dehradun, Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 110,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 120,
     "programType": "MBA (Private University)",
@@ -47133,7 +47216,7 @@ export const COLLEGES_DATA = [
     "location": "Shri Vaishnav Vidyapeeth Vishwavidyalaya Campus, Meerut, Madhya Pradesh",
     "city": "Meerut",
     "state": "Madhya Pradesh",
-    "nirfRank": 115,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 155,
     "programType": "MBA (Private University)",
@@ -47543,7 +47626,7 @@ export const COLLEGES_DATA = [
     "location": "Shyam University Campus, Dausa, Rajasthan",
     "city": "Dausa",
     "state": "Rajasthan",
-    "nirfRank": 120,
+    "nirfRank": null,
     "rating": 4,
     "reviewsCount": 80,
     "programType": "MBA (Private University)",
@@ -47953,7 +48036,7 @@ export const COLLEGES_DATA = [
     "location": "Sister Nivedita University Campus, Dehradun, West Bengal",
     "city": "Dehradun",
     "state": "West Bengal",
-    "nirfRank": 125,
+    "nirfRank": null,
     "rating": 4.5,
     "reviewsCount": 115,
     "programType": "MBA (Private University)",
@@ -48363,7 +48446,7 @@ export const COLLEGES_DATA = [
     "location": "Starex University Campus, Gurugram, Haryana",
     "city": "Gurugram",
     "state": "Haryana",
-    "nirfRank": 130,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 150,
     "programType": "MBA (Private University)",
@@ -48772,7 +48855,7 @@ export const COLLEGES_DATA = [
     "location": "Swami Shukdevanand University, Shahjahanpur Campus, Shahjahanpur, Uttar Pradesh",
     "city": "Shahjahanpur",
     "state": "Uttar Pradesh",
-    "nirfRank": 135,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 75,
     "programType": "MBA (State University)",
@@ -49184,7 +49267,7 @@ export const COLLEGES_DATA = [
     "location": "Techno Global University Campus, Bhopal, Madhya Pradesh",
     "city": "Bhopal",
     "state": "Madhya Pradesh",
-    "nirfRank": 140,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 110,
     "programType": "MBA (Private University)",
@@ -49595,7 +49678,7 @@ export const COLLEGES_DATA = [
     "location": "The Glocal University Campus, Lucknow, Uttar Pradesh",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
-    "nirfRank": 145,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 145,
     "programType": "MBA (Private University)",
@@ -50006,7 +50089,7 @@ export const COLLEGES_DATA = [
     "location": "The Pillai University, Navi Mumbai Campus, Mumbai, Maharashtra",
     "city": "Mumbai",
     "state": "Maharashtra",
-    "nirfRank": 150,
+    "nirfRank": null,
     "rating": 4,
     "reviewsCount": 70,
     "programType": "MBA (Private University)",
@@ -50417,7 +50500,7 @@ export const COLLEGES_DATA = [
     "location": "Motilal Nehru Institute of Research & Business Administration, Chatham Lines, Prayagraj, Uttar Pradesh",
     "city": "Prayagraj",
     "state": "Uttar Pradesh",
-    "nirfRank": 95,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 105,
     "programType": "MBA (Central University)",
@@ -50827,7 +50910,7 @@ export const COLLEGES_DATA = [
     "location": "University of Kota Campus, Kota, Rajasthan",
     "city": "Kota",
     "state": "Rajasthan",
-    "nirfRank": 160,
+    "nirfRank": null,
     "rating": 4.4,
     "reviewsCount": 140,
     "programType": "MBA (State University)",
@@ -50908,7 +50991,7 @@ export const COLLEGES_DATA = [
     "location": "Institute of Management Sciences (IMS), Second Campus, Janakipuram, Lucknow, Uttar Pradesh",
     "city": "Lucknow",
     "state": "Uttar Pradesh",
-    "nirfRank": 85,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 160,
     "programType": "MBA (State University)",
@@ -51246,7 +51329,7 @@ export const COLLEGES_DATA = [
     "location": "Uttarakhand Technical University Campus, Dehradun, Uttarakhand",
     "city": "Dehradun",
     "state": "Uttarakhand",
-    "nirfRank": 165,
+    "nirfRank": null,
     "rating": 4.3,
     "reviewsCount": 65,
     "programType": "MBA (State University)",
@@ -51655,7 +51738,7 @@ export const COLLEGES_DATA = [
     "location": "Vikram University Campus, Ujjain, Madhya Pradesh",
     "city": "Ujjain",
     "state": "Madhya Pradesh",
-    "nirfRank": 90,
+    "nirfRank": null,
     "rating": 4.2,
     "reviewsCount": 100,
     "programType": "MBA (State University)",
@@ -52063,7 +52146,7 @@ export const COLLEGES_DATA = [
     "location": "Vivek University Campus, Bijnor, Uttar Pradesh",
     "city": "Bijnor",
     "state": "Uttar Pradesh",
-    "nirfRank": 95,
+    "nirfRank": null,
     "rating": 4.1,
     "reviewsCount": 135,
     "programType": "MBA (Private University)",
@@ -52380,5 +52463,2809 @@ export const COLLEGES_DATA = [
     "highlights": "Recognized State university located in Pune, Maharashtra, offering contemporary MBA curriculum, experienced faculty, active placement cell, and industry internship partnerships.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
+  },
+  {
+    "id": "iim-mumbai",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "IIM Mumbai - Indian Institute of Management (formerly NITIE)",
+    "shortName": "IIM Mumbai",
+    "location": "Mumbai, Maharashtra",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "nirfRank": 6,
+    "rating": 4.8,
+    "reviewsCount": 145,
+    "programType": "MBA (2-Year Full Time)",
+    "ownership": "Government / Institute of National Importance",
+    "establishedYear": 1963,
+    "campusArea": "63 Acres (Powai)",
+    "accreditation": "AACSB, AICTE",
+    "fees": "₹21.0 Lakhs",
+    "feeNum": 21,
+    "avgSalary": "₹31.50 LPA",
+    "avgSalaryNum": 31.5,
+    "highestSalary": "₹78.20 LPA",
+    "medianSalary": "₹30.00 LPA",
+    "batchSize": 480,
+    "roiScore": "9.3 / 10",
+    "examsAccepted": [
+      "CAT"
+    ],
+    "cutoffCAT": "97.5+ %ile",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "97.5+ %ile",
+      "ncObc": "88.0+ %ile",
+      "sc": "75.0+ %ile",
+      "st": "65.0+ %ile",
+      "sectional": "VARC 75%ile, DILR 75%ile, QA 75%ile"
+    },
+    "topRecruiters": [
+      "McKinsey & Co",
+      "Boston Consulting Group (BCG)",
+      "Kearney",
+      "Accenture Strategy",
+      "Hindustan Unilever (HUL)",
+      "P&G",
+      "Amazon",
+      "Reliance Industries"
+    ],
+    "domainDistribution": {
+      "operationsSupplyChain": "38%",
+      "consulting": "30%",
+      "finance": "15%",
+      "productTech": "12%",
+      "generalMgmt": "5%"
+    },
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA General)",
+        "duration": "2 Years Full Time",
+        "seats": 240,
+        "fee": "₹21,00,000"
+      },
+      {
+        "name": "MBA in Operations and Supply Chain Management (MBA-OSCM)",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fee": "₹21,00,000"
+      },
+      {
+        "name": "MBA in Sustainability Management (MBA-SM)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹21,00,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "55% in Stage 1 shortlist",
+      "academicsWeight": "25% (10th, 12th, Graduation)",
+      "diversityWeight": "5% (Academic & Gender)",
+      "piWatWeight": "Personal Interview and Work Experience"
+    },
+    "facilities": [
+      "Vihar Lake & Powai Hillside Campus",
+      "Dr. B.R. Ambedkar Memorial Central Library",
+      "Supply Chain Analytics and Simulation Labs",
+      "Air-Conditioned Modern Hostels",
+      "Convention Center & Executive Suites",
+      "Multi-Sport Grounds & Gymnasium"
+    ],
+    "highlights": "Ranked #6 Management Institute in India by NIRF 2024. India's top hub for Supply Chain, Operations, and Consulting. Converted from erstwhile NITIE into India's 21st IIM under the IIM Act.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://iimmumbai.ac.in"
+  },
+  {
+    "id": "doms-iit-roorkee",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "DoMS IIT Roorkee - Department of Management Studies",
+    "shortName": "DoMS IIT Roorkee",
+    "location": "Roorkee, Uttarakhand",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "nirfRank": 18,
+    "rating": 4.6,
+    "reviewsCount": 92,
+    "programType": "MBA Full-Time (2 Years)",
+    "ownership": "Government / Institute of National Importance",
+    "establishedYear": 1998,
+    "campusArea": "365 Acres",
+    "accreditation": "AICTE, NBA",
+    "fees": "₹9.67 Lakhs",
+    "feeNum": 9.67,
+    "avgSalary": "₹17.91 LPA",
+    "avgSalaryNum": 17.91,
+    "highestSalary": "₹27.94 LPA",
+    "medianSalary": "₹16.50 LPA",
+    "batchSize": 95,
+    "roiScore": "9.7 / 10",
+    "examsAccepted": [
+      "CAT"
+    ],
+    "cutoffCAT": "95.0+ %ile",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "95.0+ %ile",
+      "ncObc": "85.0+ %ile",
+      "sc": "75.0+ %ile",
+      "st": "65.0+ %ile",
+      "sectional": "VARC 75%ile, DILR 75%ile, QA 75%ile"
+    },
+    "topRecruiters": [
+      "Accenture",
+      "Deloitte",
+      "Adani Group",
+      "HDFC Bank",
+      "Bank of America",
+      "Cognizant",
+      "EY",
+      "Infosys",
+      "GAIL"
+    ],
+    "domainDistribution": {
+      "consulting": "32%",
+      "itAnalytics": "28%",
+      "operations": "18%",
+      "finance": "14%",
+      "marketing": "8%"
+    },
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 95,
+        "fee": "₹9,67,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT percentile shortlist",
+      "academicsWeight": "10th, 12th, and Engineering/UG degree scores",
+      "piWatWeight": "Personal Interview with IIT academic board"
+    },
+    "facilities": [
+      "Historic IIT Roorkee Campus",
+      "Mahatma Gandhi Central Library",
+      "Computational Finance and Big Data Lab",
+      "Air-conditioned Student Hostels",
+      "Olympic Standard Swimming Pool & Sports Complex"
+    ],
+    "highlights": "Ranked #18 Management Institute in India by NIRF 2024. Exceptional Return on Investment (ROI) with ₹9.67 Lakhs total fees and ₹17.91 LPA average salary across top consultancies and tech giants.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://ms.iitr.ac.in"
+  },
+  {
+    "id": "iim-kashipur",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "IIM Kashipur - Indian Institute of Management",
+    "shortName": "IIM Kashipur",
+    "location": "Kashipur, Uttarakhand",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "nirfRank": 23,
+    "rating": 4.6,
+    "reviewsCount": 105,
+    "programType": "MBA (2-Year Full Time)",
+    "ownership": "Government / Institute of National Importance",
+    "establishedYear": 2011,
+    "campusArea": "200 Acres",
+    "accreditation": "AACSB, AICTE",
+    "fees": "₹20.46 Lakhs",
+    "feeNum": 20.46,
+    "avgSalary": "₹14.95 LPA",
+    "avgSalaryNum": 14.95,
+    "highestSalary": "₹37.00 LPA",
+    "medianSalary": "₹14.50 LPA",
+    "batchSize": 380,
+    "roiScore": "8.5 / 10",
+    "examsAccepted": [
+      "CAT"
+    ],
+    "cutoffCAT": "93.0+ %ile",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "93.0+ %ile",
+      "ncObc": "80.0+ %ile",
+      "sc": "65.0+ %ile",
+      "st": "55.0+ %ile",
+      "sectional": "VARC 70%ile, DILR 70%ile, QA 70%ile"
+    },
+    "topRecruiters": [
+      "Deloitte",
+      "Cognizant",
+      "EY",
+      "ICICI Bank",
+      "KPMG",
+      "Amazon",
+      "Tata Motors",
+      "Capgemini"
+    ],
+    "domainDistribution": {
+      "itAnalytics": "34%",
+      "bfsi": "28%",
+      "consulting": "20%",
+      "operations": "10%",
+      "marketing": "8%"
+    },
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 320,
+        "fee": "₹20,46,000"
+      },
+      {
+        "name": "MBA in Analytics (MBA-Analytics)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹20,46,000"
+      },
+      {
+        "name": "Executive MBA (EMBA)",
+        "duration": "2 Years Weekend",
+        "seats": 60,
+        "fee": "₹12,00,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAP (Common Admission Process) CAT percentile",
+      "academicsWeight": "10th, 12th, and Graduation scores",
+      "piWatWeight": "CAP Personal Interview"
+    },
+    "facilities": [
+      "200-Acre Himalayan Foothills Campus",
+      "Central Learning Resource Centre",
+      "Analytics & Simulation Computer Labs",
+      "Individual Air-conditioned Student Rooms",
+      "Sports Arena & Gymnasium"
+    ],
+    "highlights": "Ranked #23 Management Institute in India by NIRF 2024. Located near the industrial belt of Pantnagar with strong corporate interactions in Analytics and Operations.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimkashipur.ac.in"
+  },
+  {
+    "id": "iim-nagpur",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "IIM Nagpur - Indian Institute of Management",
+    "shortName": "IIM Nagpur",
+    "location": "Nagpur, Maharashtra",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "nirfRank": 31,
+    "rating": 4.6,
+    "reviewsCount": 110,
+    "programType": "MBA (2-Year Full Time)",
+    "ownership": "Government / Institute of National Importance",
+    "establishedYear": 2015,
+    "campusArea": "132 Acres (MIHAN)",
+    "accreditation": "AICTE",
+    "fees": "₹18.90 Lakhs",
+    "feeNum": 18.9,
+    "avgSalary": "₹16.74 LPA",
+    "avgSalaryNum": 16.74,
+    "highestSalary": "₹64.00 LPA",
+    "medianSalary": "₹16.00 LPA",
+    "batchSize": 260,
+    "roiScore": "8.9 / 10",
+    "examsAccepted": [
+      "CAT"
+    ],
+    "cutoffCAT": "90.0+ %ile",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "90.0+ %ile",
+      "ncObc": "78.0+ %ile",
+      "sc": "65.0+ %ile",
+      "st": "55.0+ %ile",
+      "sectional": "VARC 70%ile, DILR 70%ile, QA 70%ile"
+    },
+    "topRecruiters": [
+      "Deloitte",
+      "KPMG",
+      "Microsoft",
+      "Amazon",
+      "Cognizant",
+      "Bank of America",
+      "Adani",
+      "Tata Capital"
+    ],
+    "domainDistribution": {
+      "itAnalytics": "33%",
+      "bfsi": "25%",
+      "consulting": "22%",
+      "operations": "12%",
+      "marketing": "8%"
+    },
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 340,
+        "fee": "₹18,90,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAP / IIM Nagpur CAT Percentile",
+      "academicsWeight": "10th, 12th, and Undergraduate scores",
+      "piWatWeight": "Personal Interview performance"
+    },
+    "facilities": [
+      "132-Acre Modern Smart Campus at MIHAN",
+      "State-of-the-art Knowledge Resource Centre",
+      "Air-conditioned Single Executive Dorms",
+      "High Performance Analytics Computing Lab",
+      "Indoor & Outdoor Sports Arena"
+    ],
+    "highlights": "Ranked #31 Management Institute in India by NIRF 2024. Fastest rising new-generation IIM located in the logistical heart of India with high average CTC of ₹18.08 LPA.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimnagpur.ac.in"
+  },
+  {
+    "id": "iim-bodh-gaya",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "IIM Bodh Gaya - Indian Institute of Management",
+    "shortName": "IIM Bodh Gaya",
+    "location": "Bodh Gaya, Bihar",
+    "city": "Patna",
+    "state": "Bihar",
+    "nirfRank": 33,
+    "rating": 4.6,
+    "reviewsCount": 115,
+    "programType": "MBA (2-Year Full Time)",
+    "ownership": "Government / Institute of National Importance",
+    "establishedYear": 2015,
+    "campusArea": "119 Acres",
+    "accreditation": "AICTE",
+    "fees": "₹17.00 Lakhs",
+    "feeNum": 17,
+    "avgSalary": "₹14.96 LPA",
+    "avgSalaryNum": 14.96,
+    "highestSalary": "₹48.58 LPA",
+    "medianSalary": "₹14.00 LPA",
+    "batchSize": 300,
+    "roiScore": "8.7 / 10",
+    "examsAccepted": [
+      "CAT"
+    ],
+    "cutoffCAT": "90.0+ %ile",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "90.0+ %ile",
+      "ncObc": "77.0+ %ile",
+      "sc": "65.0+ %ile",
+      "st": "55.0+ %ile",
+      "sectional": "VARC 70%ile, DILR 70%ile, QA 70%ile"
+    },
+    "topRecruiters": [
+      "ICICI Bank",
+      "Deloitte",
+      "KPMG",
+      "Amazon",
+      "Bain Capability Network",
+      "Infosys",
+      "Adani"
+    ],
+    "domainDistribution": {
+      "bfsi": "32%",
+      "itAnalytics": "26%",
+      "consulting": "20%",
+      "operations": "14%",
+      "marketing": "8%"
+    },
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 300,
+        "fee": "₹17,96,000"
+      },
+      {
+        "name": "MBA in Digital Business Management (DBM)",
+        "duration": "2 Years Full Time",
+        "seats": 90,
+        "fee": "₹17,96,000"
+      },
+      {
+        "name": "MBA in Hospital & Healthcare Management (HHM)",
+        "duration": "2 Years Full Time",
+        "seats": 90,
+        "fee": "₹17,96,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAP CAT Percentile shortlist",
+      "academicsWeight": "Past academic record (Class 10, 12, Graduation)",
+      "piWatWeight": "CAP Personal Interview"
+    },
+    "facilities": [
+      "119-Acre Integrated Green Campus",
+      "Central Library 'Gyanodaya'",
+      "Finance and Big Data Analytics Lab",
+      "Single-Occupancy Air-conditioned Hostels",
+      "Multi-Purpose Sports Stadium & Gym"
+    ],
+    "highlights": "Ranked #33 Management Institute in India by NIRF 2024. The 'Enlightening IIM' offers specialized programs in Digital Business & Healthcare Management with over 200 corporate recruiters.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://iimbg.ac.in"
+  },
+  {
+    "id": "iim-jammu",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "IIM Jammu - Indian Institute of Management",
+    "shortName": "IIM Jammu",
+    "location": "Jagti, Jammu & Kashmir",
+    "city": "Jammu",
+    "state": "Jammu and Kashmir",
+    "nirfRank": 42,
+    "rating": 4.6,
+    "reviewsCount": 108,
+    "programType": "MBA (2-Year Full Time)",
+    "ownership": "Government / Institute of National Importance",
+    "establishedYear": 2016,
+    "campusArea": "200 Acres (Jagti)",
+    "accreditation": "AICTE",
+    "fees": "₹18.85 Lakhs",
+    "feeNum": 18.85,
+    "avgSalary": "₹15.48 LPA",
+    "avgSalaryNum": 15.48,
+    "highestSalary": "₹64.00 LPA",
+    "medianSalary": "₹15.00 LPA",
+    "batchSize": 250,
+    "roiScore": "8.8 / 10",
+    "examsAccepted": [
+      "CAT"
+    ],
+    "cutoffCAT": "90.0+ %ile",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "90.0+ %ile",
+      "ncObc": "77.0+ %ile",
+      "sc": "65.0+ %ile",
+      "st": "55.0+ %ile",
+      "sectional": "VARC 70%ile, DILR 70%ile, QA 70%ile"
+    },
+    "topRecruiters": [
+      "Deloitte",
+      "KPMG",
+      "Cognizant",
+      "ICICI Bank",
+      "Axis Bank",
+      "Infosys",
+      "Tata Power"
+    ],
+    "domainDistribution": {
+      "consulting": "28%",
+      "bfsi": "27%",
+      "itAnalytics": "24%",
+      "marketing": "12%",
+      "generalMgmt": "9%"
+    },
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 240,
+        "fee": "₹17,15,000"
+      },
+      {
+        "name": "MBA in Hospital Administration & Healthcare Management (HA&HM)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹17,15,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAP CAT Percentile",
+      "academicsWeight": "10th, 12th, and Undergraduate degrees",
+      "piWatWeight": "CAP Personal Interview"
+    },
+    "facilities": [
+      "Brand New 200-Acre Campus at Jagti",
+      "Nalanda Central Library",
+      "High-Performance Computing & SAP Lab",
+      "Air-conditioned Student Residencies",
+      "Gymnasium & Outdoor Sports Courts"
+    ],
+    "highlights": "Ranked #42 Management Institute in India by NIRF 2024. Modern Himalayan foothills smart campus inaugurated by Hon'ble Prime Minister with 100% placement record.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimj.ac.in"
+  },
+  {
+    "id": "iim-amritsar",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "IIM Amritsar - Indian Institute of Management",
+    "shortName": "IIM Amritsar",
+    "location": "Amritsar, Punjab",
+    "city": "Amritsar",
+    "state": "Punjab",
+    "nirfRank": 47,
+    "rating": 4.6,
+    "reviewsCount": 112,
+    "programType": "MBA (2-Year Full Time)",
+    "ownership": "Government / Institute of National Importance",
+    "establishedYear": 2015,
+    "campusArea": "60 Acres",
+    "accreditation": "AICTE",
+    "fees": "₹17.30 Lakhs",
+    "feeNum": 17.3,
+    "avgSalary": "₹16.51 LPA",
+    "avgSalaryNum": 16.51,
+    "highestSalary": "₹36.25 LPA",
+    "medianSalary": "₹16.00 LPA",
+    "batchSize": 300,
+    "roiScore": "8.7 / 10",
+    "examsAccepted": [
+      "CAT"
+    ],
+    "cutoffCAT": "90.0+ %ile",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "90.0+ %ile",
+      "ncObc": "77.0+ %ile",
+      "sc": "65.0+ %ile",
+      "st": "55.0+ %ile",
+      "sectional": "VARC 70%ile, DILR 70%ile, QA 70%ile"
+    },
+    "topRecruiters": [
+      "ICICI Bank",
+      "EY",
+      "PwC",
+      "D.E. Shaw",
+      "Flipkart",
+      "Cognizant",
+      "Amazon",
+      "Accenture"
+    ],
+    "domainDistribution": {
+      "bfsi": "30%",
+      "consulting": "25%",
+      "itAnalytics": "24%",
+      "marketing": "12%",
+      "operations": "9%"
+    },
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 250,
+        "fee": "₹21,00,000"
+      },
+      {
+        "name": "MBA in Business Analytics (MBA-BA)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹21,00,000"
+      },
+      {
+        "name": "MBA in Human Resource Management (MBA-HR)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹21,00,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAP CAT score",
+      "academicsWeight": "10th, 12th, and Degree grades",
+      "piWatWeight": "CAP Personal Interview"
+    },
+    "facilities": [
+      "Manawala Permanent Campus with Smart Classrooms",
+      "Central Digital Management Library",
+      "Hostels with Modern Amenities & High-Speed Wi-Fi",
+      "Sports Arena & Student Activity Centre"
+    ],
+    "highlights": "Ranked #47 Management Institute in India by NIRF 2024. Located in the historic cultural city of Amritsar with strong corporate linkages and high median CTC.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://iimamritsar.ac.in"
+  },
+  {
+    "id": "iim-sambalpur",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "IIM Sambalpur - Indian Institute of Management",
+    "shortName": "IIM Sambalpur",
+    "location": "Sambalpur, Odisha",
+    "city": "Bhubaneswar",
+    "state": "Odisha",
+    "nirfRank": 50,
+    "rating": 4.5,
+    "reviewsCount": 102,
+    "programType": "MBA (2-Year Full Time)",
+    "ownership": "Government / Institute of National Importance",
+    "establishedYear": 2015,
+    "campusArea": "200 Acres",
+    "accreditation": "AICTE",
+    "fees": "₹18.00 Lakhs",
+    "feeNum": 18,
+    "avgSalary": "₹14.21 LPA",
+    "avgSalaryNum": 14.21,
+    "highestSalary": "₹64.61 LPA",
+    "medianSalary": "₹13.50 LPA",
+    "batchSize": 320,
+    "roiScore": "8.8 / 10",
+    "examsAccepted": [
+      "CAT"
+    ],
+    "cutoffCAT": "90.0+ %ile",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "90.0+ %ile",
+      "ncObc": "77.0+ %ile",
+      "sc": "65.0+ %ile",
+      "st": "55.0+ %ile",
+      "sectional": "VARC 70%ile, DILR 70%ile, QA 70%ile"
+    },
+    "topRecruiters": [
+      "Deloitte",
+      "Accenture",
+      "Cognizant",
+      "HDFC Bank",
+      "Amul",
+      "Vedanta",
+      "PwC"
+    ],
+    "domainDistribution": {
+      "bfsi": "29%",
+      "itAnalytics": "27%",
+      "consulting": "22%",
+      "operations": "13%",
+      "marketing": "9%"
+    },
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 314,
+        "fee": "₹16,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAP CAT score",
+      "academicsWeight": "10th, 12th, and Undergraduate scores",
+      "piWatWeight": "CAP Personal Interview"
+    },
+    "facilities": [
+      "200-Acre Eco-friendly Permanent Campus",
+      "Flipped Classrooms with Digital Interactive Screens",
+      "Central Management Library",
+      "Air-conditioned Student Hostels",
+      "Sports Complex & Gymnasium"
+    ],
+    "highlights": "Ranked #50 Management Institute in India by NIRF 2024. Pioneer of the 'Flipped Classroom' model in India with permanent green campus and 216+ recruiting companies.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://iimsambalpur.ac.in"
+  },
+  {
+    "id": "iim-sirmaur",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "IIM Sirmaur - Indian Institute of Management",
+    "shortName": "IIM Sirmaur",
+    "location": "Paonta Sahib, Himachal Pradesh",
+    "city": "Dehradun",
+    "state": "Himachal Pradesh",
+    "nirfRank": 57,
+    "rating": 4.5,
+    "reviewsCount": 98,
+    "programType": "MBA (2-Year Full Time)",
+    "ownership": "Government / Institute of National Importance",
+    "establishedYear": 2015,
+    "campusArea": "210 Acres (Dhaula Kuan)",
+    "accreditation": "AICTE",
+    "fees": "₹17.50 Lakhs",
+    "feeNum": 17.5,
+    "avgSalary": "₹14.45 LPA",
+    "avgSalaryNum": 14.45,
+    "highestSalary": "₹64.12 LPA",
+    "medianSalary": "₹13.80 LPA",
+    "batchSize": 300,
+    "roiScore": "8.6 / 10",
+    "examsAccepted": [
+      "CAT"
+    ],
+    "cutoffCAT": "90.0+ %ile",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "90.0+ %ile",
+      "ncObc": "77.0+ %ile",
+      "sc": "65.0+ %ile",
+      "st": "55.0+ %ile",
+      "sectional": "VARC 70%ile, DILR 70%ile, QA 70%ile"
+    },
+    "topRecruiters": [
+      "Accenture",
+      "Deloitte",
+      "ICICI Bank",
+      "HDFC",
+      "Cognizant",
+      "Adani",
+      "EY"
+    ],
+    "domainDistribution": {
+      "bfsi": "31%",
+      "consulting": "25%",
+      "itAnalytics": "23%",
+      "marketing": "12%",
+      "operations": "9%"
+    },
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 250,
+        "fee": "₹20,00,000"
+      },
+      {
+        "name": "MBA in Tourism & Hospitality Management (MBA-T&HM)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹20,00,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAP CAT score",
+      "academicsWeight": "10th, 12th, and UG academic performance",
+      "piWatWeight": "CAP Personal Interview"
+    },
+    "facilities": [
+      "210-Acre Scenic Shivalik Foothills Campus",
+      "Modern Digital Library",
+      "Air-conditioned Student Residences",
+      "Auditorium & Multi-Activity Sports Complex"
+    ],
+    "highlights": "Ranked #57 Management Institute in India by NIRF 2024. Located near Paonta Sahib amidst the Shivalik hills offering niche programs in Tourism & Hospitality Management.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimsirmaur.ac.in"
+  },
+  {
+    "id": "liba-chennai",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "Loyola Institute of Business Administration (LIBA), Chennai",
+    "shortName": "LIBA Chennai",
+    "location": "Chennai, Tamil Nadu",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "nirfRank": 66,
+    "rating": 4.6,
+    "reviewsCount": 110,
+    "programType": "PGDM (2-Year Full Time)",
+    "ownership": "Private Autonomous (Jesuit Educational Society)",
+    "establishedYear": 1979,
+    "campusArea": "99 Acres (Loyola Campus)",
+    "accreditation": "SAQS, AICTE",
+    "fees": "₹17.84 Lakhs",
+    "feeNum": 17.84,
+    "avgSalary": "₹11.20 LPA",
+    "avgSalaryNum": 11.2,
+    "highestSalary": "₹20.50 LPA",
+    "medianSalary": "₹11.00 LPA",
+    "batchSize": 240,
+    "roiScore": "8.7 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT"
+    ],
+    "cutoffCAT": "75.0+ %ile",
+    "cutoffXAT": "75.0+ %ile",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "75.0+ %ile",
+      "ncObc": "70.0+ %ile",
+      "sc": "60.0+ %ile",
+      "st": "50.0+ %ile",
+      "sectional": "Balanced sectional performance"
+    },
+    "topRecruiters": [
+      "Deloitte",
+      "EY",
+      "KPMG",
+      "Infosys",
+      "Axis Bank",
+      "ICICI Bank",
+      "HDFC Bank",
+      "BMW"
+    ],
+    "domainDistribution": {
+      "bfsi": "36%",
+      "itAnalytics": "28%",
+      "consulting": "18%",
+      "marketing": "11%",
+      "hr": "7%"
+    },
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM Full-Time)",
+        "duration": "2 Years Full Time",
+        "seats": 240,
+        "fee": "₹15,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT / XAT Percentile",
+      "academicsWeight": "Past academic records & essay evaluation",
+      "piWatWeight": "Personal Interview and Group Discussion"
+    },
+    "facilities": [
+      "Lush Loyola College Central Campus, Nungambakkam",
+      "Modern Informatics & Analytics Lab",
+      "Comprehensive Management Library",
+      "Full AC Auditoriums & Smart Classrooms"
+    ],
+    "highlights": "Premier Jesuit business school founded in 1979 in central Chennai. Known for ethics-driven leadership, high Return on Investment, and 100% campus placement track record.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://liba.edu"
+  },
+  {
+    "id": "iim-visakhapatnam",
+    "degreeTypes": [
+      "MBA",
+      "PGPM"
+    ],
+    "name": "IIM Visakhapatnam - Indian Institute of Management",
+    "shortName": "IIM Visakhapatnam",
+    "location": "Visakhapatnam, Andhra Pradesh",
+    "city": "Hyderabad",
+    "state": "Andhra Pradesh",
+    "nirfRank": 26,
+    "rating": 4.7,
+    "reviewsCount": 115,
+    "programType": "PGP / MBA (2-Year Full Time)",
+    "ownership": "Government / Institute of National Importance",
+    "establishedYear": 2015,
+    "campusArea": "241 Acres (Gambheeram)",
+    "accreditation": "AICTE",
+    "fees": "₹18.50 Lakhs",
+    "feeNum": 18.5,
+    "avgSalary": "₹15.61 LPA",
+    "avgSalaryNum": 15.61,
+    "highestSalary": "₹43.25 LPA",
+    "medianSalary": "₹15.00 LPA",
+    "batchSize": 272,
+    "roiScore": "8.9 / 10",
+    "examsAccepted": [
+      "CAT"
+    ],
+    "cutoffCAT": "92.0+ %ile",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "92.0+ %ile",
+      "ncObc": "78.0+ %ile",
+      "sc": "65.0+ %ile",
+      "st": "55.0+ %ile",
+      "sectional": "VARC 70%ile, DILR 70%ile, QA 70%ile"
+    },
+    "topRecruiters": [
+      "Deloitte",
+      "EY",
+      "KPMG",
+      "Microsoft",
+      "Goldman Sachs",
+      "ICICI Bank",
+      "Cognizant",
+      "Amazon"
+    ],
+    "domainDistribution": {
+      "itAnalytics": "33%",
+      "bfsi": "28%",
+      "consulting": "22%",
+      "marketing": "10%",
+      "operations": "7%"
+    },
+    "courses": [
+      {
+        "name": "Post Graduate Programme in Management (PGP - MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 272,
+        "fee": "₹18,50,000"
+      },
+      {
+        "name": "PGP for Experienced Professionals (PGPEx)",
+        "duration": "2 Years Weekend",
+        "seats": 50,
+        "fee": "₹10,80,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "50% in Stage 1 shortlist",
+      "academicsWeight": "30% (10th 10%, 12th 10%, Grad 10%)",
+      "diversityWeight": "10% (Gender & Non-engineer)",
+      "piWatWeight": "Personal Interview performance"
+    },
+    "facilities": [
+      "Permanent 241-Acre Smart Green Campus at Gambheeram",
+      "Nalanda Central Learning Centre",
+      "Air-Conditioned Single Student Suites",
+      "Computational Analytics and Bloomberg Trading Lab",
+      "Multi-Sport Arena & Gym"
+    ],
+    "highlights": "Ranked #26 Management Institute in India by NIRF 2024. Highest ranked among 3rd-generation IIMs with sprawling permanent campus and 100% placement record.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iimv.ac.in"
+  },
+  {
+    "id": "siib-pune",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "Symbiosis Institute of International Business (SIIB)",
+    "shortName": "SIIB Pune",
+    "location": "Hinjawadi, Pune, Maharashtra",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "nirfRank": null,
+    "rating": 4.6,
+    "reviewsCount": 120,
+    "programType": "MBA (2-Year Full Time)",
+    "ownership": "Private Deemed University (Symbiosis International)",
+    "establishedYear": 1992,
+    "campusArea": "10 Acres (Infotech Park Hinjawadi)",
+    "accreditation": "NAAC A++, UGC",
+    "fees": "₹20.50 Lakhs",
+    "feeNum": 20.5,
+    "avgSalary": "₹15.64 LPA",
+    "avgSalaryNum": 15.64,
+    "highestSalary": "₹27.60 LPA",
+    "medianSalary": "₹14.80 LPA",
+    "batchSize": 240,
+    "roiScore": "8.8 / 10",
+    "examsAccepted": [
+      "SNAP"
+    ],
+    "cutoffCAT": "N/A (Accepts SNAP: 93.0+ %ile)",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "SNAP 93.0+ %ile",
+      "ncObc": "Category reservation as per SIU guidelines",
+      "sc": "Category reservation as per SIU guidelines",
+      "st": "Category reservation as per SIU guidelines",
+      "sectional": "Balanced SNAP sectional score"
+    },
+    "topRecruiters": [
+      "Deloitte",
+      "Accenture",
+      "KPMG",
+      "EY",
+      "HDFC Bank",
+      "Wipro",
+      "Darashaw",
+      "ITC"
+    ],
+    "domainDistribution": {
+      "consulting": "32%",
+      "bfsi": "28%",
+      "itAnalytics": "22%",
+      "agriBusiness": "10%",
+      "sustainability": "8%"
+    },
+    "courses": [
+      {
+        "name": "MBA in International Business (MBA-IB)",
+        "duration": "2 Years Full Time",
+        "seats": 150,
+        "fee": "₹20,50,000"
+      },
+      {
+        "name": "MBA in Agri-Business (MBA-AB)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹18,50,000"
+      },
+      {
+        "name": "MBA in Energy & Environment (MBA-E&E)",
+        "duration": "2 Years Full Time",
+        "seats": 30,
+        "fee": "₹18,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "SNAP Exam score (50% weight)",
+      "academicsWeight": "GE-PIWAT (50% weight across Group Exercise and Personal Interview)",
+      "piWatWeight": "Personal Interview and Writing Ability Test"
+    },
+    "facilities": [
+      "Hinjawadi IT Park Modern Campus",
+      "Central Digital Library",
+      "Finance and Data Analytics Lab",
+      "On-Campus Residential Hostels",
+      "Gymnasium, Swimming Pool & Sports Facilities"
+    ],
+    "highlights": "Symbiosis Institute of International Business in Hinjawadi, Pune. Pioneer in International Business, Agri-Business, and ESG Sustainability management with 100% placement track record.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://siib.ac.in"
+  },
+  {
+    "id": "sibm-bangalore",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "Symbiosis Institute of Business Management (SIBM) Bengaluru",
+    "shortName": "SIBM Bengaluru",
+    "location": "Electronic City, Bengaluru, Karnataka",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "nirfRank": null,
+    "rating": 4.6,
+    "reviewsCount": 115,
+    "programType": "MBA (2-Year Full Time)",
+    "ownership": "Private Deemed University (Symbiosis International)",
+    "establishedYear": 2008,
+    "campusArea": "15 Acres (Electronic City Phase 1)",
+    "accreditation": "NAAC A++, UGC",
+    "fees": "₹21.00 Lakhs",
+    "feeNum": 21,
+    "avgSalary": "₹14.47 LPA",
+    "avgSalaryNum": 14.47,
+    "highestSalary": "₹24.00 LPA",
+    "medianSalary": "₹13.75 LPA",
+    "batchSize": 240,
+    "roiScore": "8.7 / 10",
+    "examsAccepted": [
+      "SNAP"
+    ],
+    "cutoffCAT": "N/A (Accepts SNAP: 90.0+ %ile)",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "SNAP 90.0+ %ile",
+      "ncObc": "SIU reservation norms",
+      "sc": "SIU reservation norms",
+      "st": "SIU reservation norms",
+      "sectional": "Balanced score across General English, Analytical & QA"
+    },
+    "topRecruiters": [
+      "Accenture",
+      "Capgemini",
+      "Deloitte",
+      "HDFC Bank",
+      "KPMG",
+      "JPMorgan Chase",
+      "Morgan Stanley",
+      "Wipro"
+    ],
+    "domainDistribution": {
+      "marketing": "32%",
+      "finance": "30%",
+      "consulting": "20%",
+      "operations": "10%",
+      "hr": "8%"
+    },
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA General)",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fee": "₹21,00,000"
+      },
+      {
+        "name": "MBA in Business Analytics",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹21,00,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "SNAP Exam score (50%)",
+      "academicsWeight": "Academic evaluation",
+      "piWatWeight": "GE-PIWAT rounds (50%)"
+    },
+    "facilities": [
+      "Modern Electronic City Tech-Hub Campus",
+      "Central Digital Knowledge Center",
+      "Bloomberg Financial Market Lab",
+      "Full AC Hostels and Recreation Areas",
+      "Multi-Cuisine Cafeteria & Gymnasium"
+    ],
+    "highlights": "Located in the heart of Bengaluru's Electronic City tech corridor. Combines Symbiosis brand excellence with strong industry internships and corporate placements.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.sibmbengaluru.edu.in"
+  },
+  {
+    "id": "nl-dalmia-mumbai",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "N. L. Dalmia Institute of Management Studies and Research",
+    "shortName": "N.L. Dalmia Mumbai",
+    "location": "Mira Road, Mumbai, Maharashtra",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "nirfRank": null,
+    "rating": 4.5,
+    "reviewsCount": 130,
+    "programType": "PGDM (2-Year Full Time)",
+    "ownership": "Private Autonomous",
+    "establishedYear": 1995,
+    "campusArea": "5 Acres",
+    "accreditation": "AICTE, NBA, AIU",
+    "fees": "₹16.50 Lakhs",
+    "feeNum": 16.5,
+    "avgSalary": "₹10.20 LPA",
+    "avgSalaryNum": 10.2,
+    "highestSalary": "₹24.00 LPA",
+    "medianSalary": "₹9.52 LPA",
+    "batchSize": 300,
+    "roiScore": "8.5 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAH-CET"
+    ],
+    "cutoffCAT": "75.0+ %ile",
+    "cutoffXAT": "75.0+ %ile",
+    "cutoffCMAT": "85.0+ %ile",
+    "cutoffDetails": {
+      "general": "CAT 75%ile, CMAT 85%ile, MAH-CET 85%ile",
+      "ncObc": "Eligible for category waivers",
+      "sc": "Eligible for category waivers",
+      "st": "Eligible for category waivers",
+      "sectional": "Overall score considered"
+    },
+    "topRecruiters": [
+      "Deutsche Bank",
+      "Aditya Birla Capital",
+      "Hindustan Unilever (HUL)",
+      "ICICI Bank",
+      "Kotak Mahindra Bank",
+      "Deloitte",
+      "EY",
+      "Crisil"
+    ],
+    "domainDistribution": {
+      "finance": "45%",
+      "marketing": "25%",
+      "itAnalytics": "18%",
+      "hr": "12%"
+    },
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM Finance/Mktg/HR)",
+        "duration": "2 Years Full Time",
+        "seats": 240,
+        "fee": "₹16,50,000"
+      },
+      {
+        "name": "PGDM in Business Analytics",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹16,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "Entrance Exam (CAT/XAT/CMAT/MH-CET) 40%",
+      "academicsWeight": "Past academic records 20%",
+      "piWatWeight": "Personal Interview & GD 30%, Work Ex 10%"
+    },
+    "facilities": [
+      "South Asia's Largest Bloomberg Lab (24 Terminals)",
+      "State-of-the-art Digital Management Library",
+      "Smart Interactive Auditoriums",
+      "Sports and Cultural Activity Complex"
+    ],
+    "highlights": "Renowned as Mumbai's top finance powerhouse with India's largest Bloomberg Finance Lab (24 terminals) and extensive investment banking placement footprint.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.nldalmia.in"
+  },
+  {
+    "id": "ifmr-gsb-chennai",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "IFMR Graduate School of Business, Krea University",
+    "shortName": "IFMR GSB (Krea University)",
+    "location": "Sri City, Andhra Pradesh (Near Chennai)",
+    "city": "Chennai",
+    "state": "Andhra Pradesh",
+    "nirfRank": null,
+    "rating": 4.6,
+    "reviewsCount": 110,
+    "programType": "MBA (2-Year Full Time Residential)",
+    "ownership": "Private University (Krea University)",
+    "establishedYear": 1970,
+    "campusArea": "40 Acres (Sri City SEZ)",
+    "accreditation": "SAQS, AICTE",
+    "fees": "₹14.50 Lakhs",
+    "feeNum": 14.5,
+    "avgSalary": "₹13.04 LPA",
+    "avgSalaryNum": 13.04,
+    "highestSalary": "₹17.22 LPA",
+    "medianSalary": "₹13.00 LPA",
+    "batchSize": 240,
+    "roiScore": "8.9 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "NMAT",
+      "GMAT"
+    ],
+    "cutoffCAT": "75.0+ %ile",
+    "cutoffXAT": "75.0+ %ile",
+    "cutoffCMAT": "85.0+ %ile",
+    "cutoffDetails": {
+      "general": "CAT 75%ile, XAT 75%ile, CMAT 85%ile, NMAT 222+",
+      "ncObc": "Merit based evaluation",
+      "sc": "Merit based evaluation",
+      "st": "Merit based evaluation",
+      "sectional": "Balanced scores"
+    },
+    "topRecruiters": [
+      "JPMorgan Chase",
+      "Bank of America",
+      "BNY Mellon",
+      "Deloitte",
+      "PwC",
+      "Ernst & Young",
+      "Morgan Stanley",
+      "Barclays"
+    ],
+    "domainDistribution": {
+      "finance": "44%",
+      "consulting": "24%",
+      "itAnalytics": "18%",
+      "marketing": "10%",
+      "hr": "4%"
+    },
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 240,
+        "fee": "₹14,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT/XAT/CMAT/NMAT score evaluation",
+      "academicsWeight": "Class 10, 12, and Graduation performance",
+      "piWatWeight": "Personal Interview and Writing Ability Test"
+    },
+    "facilities": [
+      "40-Acre Modern Smart Campus at Sri City SEZ",
+      "Finance Research Center and Data Analytics Lab",
+      "Fully Air-conditioned Student Dormitories",
+      "Sports Arena, Badminton & Tennis Courts"
+    ],
+    "highlights": "Founded by ICICI, House of Kotharis, and eminent industrialists. Celebrated as South India's premier quantitative finance, economics, and analytics management school.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://krea.edu.in/ifmrgsb"
+  },
+  {
+    "id": "christ-university-bangalore",
+    "degreeTypes": [
+      "MBA"
+    ],
+    "name": "School of Business and Management, Christ (Deemed to be University)",
+    "shortName": "Christ University MBA",
+    "location": "Hosur Road, Bengaluru, Karnataka",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "nirfRank": null,
+    "rating": 4.5,
+    "reviewsCount": 165,
+    "programType": "MBA (2-Year Full Time)",
+    "ownership": "Private Deemed-to-be-University",
+    "establishedYear": 1969,
+    "campusArea": "25 Acres (Central Campus, Hosur Road)",
+    "accreditation": "NAAC A+, UGC",
+    "fees": "₹11.50 Lakhs",
+    "feeNum": 11.5,
+    "avgSalary": "₹10.70 LPA",
+    "avgSalaryNum": 10.7,
+    "highestSalary": "₹43.00 LPA",
+    "medianSalary": "₹10.00 LPA",
+    "batchSize": 600,
+    "roiScore": "8.6 / 10",
+    "examsAccepted": [
+      "CAT",
+      "MAT",
+      "CMAT",
+      "XAT",
+      "ATMA"
+    ],
+    "cutoffCAT": "70.0+ %ile",
+    "cutoffXAT": "70.0+ %ile",
+    "cutoffCMAT": "75.0+ %ile",
+    "cutoffDetails": {
+      "general": "MAT 500+ composite score, CAT/XAT 70%ile, CMAT 75%ile",
+      "ncObc": "Standard university eligibility criteria",
+      "sc": "Standard university eligibility criteria",
+      "st": "Standard university eligibility criteria",
+      "sectional": "Overall score plus Christ University Micro Presentation"
+    },
+    "topRecruiters": [
+      "Deloitte",
+      "EY",
+      "KPMG",
+      "PwC",
+      "Accenture",
+      "Goldman Sachs",
+      "HSBC",
+      "Wells Fargo"
+    ],
+    "domainDistribution": {
+      "finance": "34%",
+      "marketing": "32%",
+      "consulting": "18%",
+      "itAnalytics": "10%",
+      "hr": "6%"
+    },
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA General)",
+        "duration": "2 Years Full Time",
+        "seats": 480,
+        "fee": "₹11,50,000"
+      },
+      {
+        "name": "MBA in Business Analytics",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹11,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "Entrance test score (CAT/MAT/CMAT)",
+      "academicsWeight": "Class 10, 12, and Degree performance",
+      "piWatWeight": "Micro Presentation (MP) and Personal Interview (PI)"
+    },
+    "facilities": [
+      "Iconic Central Green Campus on Hosur Road",
+      "Knowledge Centre Multi-Floor Central Library",
+      "Modern Smart Audio-Visual Amphitheatres",
+      "On-Campus Hostels, Sports Complexes & Cafeterias"
+    ],
+    "highlights": "School of Business and Management at Christ University, Bengaluru. One of South India's most popular MBA destinations with rigorous academic discipline and top corporate placements.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.christuniversity.in"
+  },
+  {
+    "id": "jims-rohini-delhi",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "Jagan Institute of Management Studies (JIMS Rohini Sector-5), Delhi",
+    "shortName": "JIMS Rohini",
+    "location": "Sector-5, Rohini, New Delhi",
+    "city": "Delhi-NCR",
+    "state": "Delhi",
+    "nirfRank": 87,
+    "rating": 4.4,
+    "reviewsCount": 120,
+    "programType": "PGDM (2-Year Full Time)",
+    "ownership": "Private Autonomous",
+    "establishedYear": 1993,
+    "campusArea": "2 Acres",
+    "accreditation": "NAAC A, NBA, AIU",
+    "fees": "₹9.50 Lakhs",
+    "feeNum": 9.5,
+    "avgSalary": "₹8.30 LPA",
+    "avgSalaryNum": 8.3,
+    "highestSalary": "₹22.00 LPA",
+    "medianSalary": "₹8.00 LPA",
+    "batchSize": 300,
+    "roiScore": "8.5 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAT"
+    ],
+    "cutoffCAT": "70.0+ %ile",
+    "cutoffXAT": "70.0+ %ile",
+    "cutoffCMAT": "75.0+ %ile",
+    "cutoffDetails": {
+      "general": "CAT/XAT 70%ile, CMAT 75%ile, MAT 600+",
+      "ncObc": "Eligible for score waivers",
+      "sc": "Eligible for score waivers",
+      "st": "Eligible for score waivers",
+      "sectional": "Overall score considered"
+    },
+    "topRecruiters": [
+      "Deloitte",
+      "KPMG",
+      "Ameriprise Financial",
+      "ICICI Bank",
+      "HCL Technologies",
+      "Nestle",
+      "Amul"
+    ],
+    "domainDistribution": {
+      "marketing": "38%",
+      "finance": "32%",
+      "itAnalytics": "18%",
+      "hr": "12%"
+    },
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fee": "₹9,50,000"
+      },
+      {
+        "name": "PGDM in International Business (PGDM-IB)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹9,50,000"
+      },
+      {
+        "name": "PGDM in Retail Management (PGDM-RM)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹9,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "Entrance Test score 35%",
+      "academicsWeight": "Past Academic Record 20%",
+      "piWatWeight": "Group Discussion & Personal Interview 45%"
+    },
+    "facilities": [
+      "Sector-5 Rohini Metro-Adjacent Campus",
+      "Central Management Library",
+      "Air-conditioned Smart Classrooms",
+      "Digital Computer & Analytics Labs"
+    ],
+    "highlights": "Jagan Institute of Management Studies (JIMS), Rohini Sector-5. Popular Delhi-NCR management institute offering strong Return on Investment with sub-₹10 Lakh fees.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.jimsindia.org"
+  },
+  {
+    "id": "ime-iit-kanpur",
+    "name": "Department of Industrial & Management Engineering, IIT Kanpur (IME IIT Kanpur)",
+    "shortName": "IME IIT Kanpur MBA",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "rating": 4.8,
+    "reviewsCount": 165,
+    "nirfRank": 29,
+    "accreditation": "Institute of National Importance (INI)",
+    "fees": "₹3.80 Lakhs",
+    "feeNum": 3.8,
+    "avgSalary": "₹18.14 LPA",
+    "avgSalaryNum": 18.14,
+    "highestSalary": "₹24.00 LPA",
+    "medianSalary": "₹17.25 LPA",
+    "batchSize": 65,
+    "roiScore": "9.6 / 10",
+    "cutoffCAT": "93.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 65,
+        "fee": "₹3,80,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT Percentile Weightage 50%",
+      "academicsWeight": "Class 10, 12, B.Tech/Graduation 20%",
+      "piWatWeight": "Personal Interview & Work Experience 30%"
+    },
+    "facilities": [
+      "1,050-acre Premier Residential Campus",
+      "PK Kelkar Central Library",
+      "Advanced Quantitative Finance & Analytics Lab",
+      "High Performance Computing & AI Infrastructure"
+    ],
+    "highlights": "Ranked #29 Management Institute in India by NIRF 2024. IIT Kanpur MBA is one of the highest ROI management programs nationwide with sub-₹4 Lakhs fee and an audited average CTC of ₹18.14 LPA.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iitk.ac.in/ime"
+  },
+  {
+    "id": "amity-business-school-noida",
+    "name": "Amity Business School (ABS), Amity University, Noida",
+    "shortName": "Amity Business School Noida",
+    "city": "Noida",
+    "state": "Uttar Pradesh",
+    "rating": 4.4,
+    "reviewsCount": 380,
+    "nirfRank": 29,
+    "accreditation": "NAAC A+, ACBSP (USA), IACBE",
+    "fees": "₹15.56 Lakhs",
+    "feeNum": 15.56,
+    "avgSalary": "₹8.50 LPA",
+    "avgSalaryNum": 8.5,
+    "highestSalary": "₹25.00 LPA",
+    "medianSalary": "₹8.00 LPA",
+    "batchSize": 600,
+    "roiScore": "7.8 / 10",
+    "cutoffCAT": "75.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA General)",
+        "duration": "2 Years Full Time",
+        "seats": 360,
+        "fee": "₹15,56,000"
+      },
+      {
+        "name": "MBA in International Business (MBA-IB)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹15,56,000"
+      },
+      {
+        "name": "MBA in Marketing & Sales",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹15,56,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "Entrance Test (CAT/MAT/XAT/NMAT) 40%",
+      "academicsWeight": "Past Academic Credentials 25%",
+      "piWatWeight": "Personal Interview & Extempore 35%"
+    },
+    "facilities": [
+      "Sprawling 60-acre Hi-Tech Noida Campus",
+      "Central Air-conditioned Amphitheatre Classrooms",
+      "Over 300 Global University Partnerships",
+      "Incubation and Innovation Centre"
+    ],
+    "highlights": "Ranked #29 in NIRF 2024 Management Ranking. Amity Business School Noida offers ACBSP (USA) accredited global education with extensive corporate linkages.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.amity.edu/abs"
+  },
+  {
+    "id": "lpu-mittal-school-of-business",
+    "name": "Mittal School of Business, Lovely Professional University (LPU), Phagwara",
+    "shortName": "LPU Mittal School of Business",
+    "city": "Phagwara",
+    "state": "Punjab",
+    "rating": 4.4,
+    "reviewsCount": 410,
+    "nirfRank": 38,
+    "accreditation": "ACBSP (USA), NAAC A++, UGC",
+    "fees": "₹8.00 Lakhs",
+    "feeNum": 8,
+    "avgSalary": "₹7.20 LPA",
+    "avgSalaryNum": 7.2,
+    "highestSalary": "₹29.30 LPA",
+    "medianSalary": "₹6.80 LPA",
+    "batchSize": 600,
+    "roiScore": "8.0 / 10",
+    "cutoffCAT": "70.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA Core)",
+        "duration": "2 Years Full Time",
+        "seats": 360,
+        "fee": "₹8,00,000"
+      },
+      {
+        "name": "MBA in Business Analytics",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹8,00,000"
+      },
+      {
+        "name": "MBA in Financial Markets",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹8,00,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "LPUNEST / CAT / MAT Score 40%",
+      "academicsWeight": "Qualifying Graduation Degree 30%",
+      "piWatWeight": "Video Interview Evaluation 30%"
+    },
+    "facilities": [
+      "600-acre Mega Campus with Uni-Mall & Sports Arena",
+      "Bloomberg and Financial Analytics Terminals",
+      "Global Immersion Programs in 50+ Countries",
+      "Over 100 Smart Seminar Halls"
+    ],
+    "highlights": "Ranked #38 Management Institute by NIRF 2024 with premier ACBSP USA accreditation.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.lpu.in"
+  },
+  {
+    "id": "ibs-hyderabad",
+    "name": "ICFAI Business School (IBS Hyderabad), IFHE University",
+    "shortName": "IBS Hyderabad",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "rating": 4.5,
+    "reviewsCount": 320,
+    "nirfRank": 39,
+    "accreditation": "AACSB, NAAC A++, SAQS",
+    "fees": "₹16.02 Lakhs",
+    "feeNum": 16.02,
+    "avgSalary": "₹10.42 LPA",
+    "avgSalaryNum": 10.42,
+    "highestSalary": "₹58.19 LPA",
+    "medianSalary": "₹9.50 LPA",
+    "batchSize": 1100,
+    "roiScore": "8.1 / 10",
+    "cutoffCAT": "75.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA Flagship)",
+        "duration": "2 Years Full Time",
+        "seats": 1100,
+        "fee": "₹16,02,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "IBSAT / CAT / NMAT / GMAT Score 40%",
+      "academicsWeight": "Past Academic Record 20%",
+      "piWatWeight": "Micro-Presentation & Personal Interview 40%"
+    },
+    "facilities": [
+      "91-acre Lush Green Shankarpally Campus",
+      "World-Renowned Case Research Center (CRC)",
+      "High-Tech Bloomberg Finance Lab",
+      "Fully Wi-Fi Enabled Residential Facilities"
+    ],
+    "highlights": "Ranked #39 in NIRF 2024 Management Ranking. Holds elite AACSB International accreditation and is one of the world's largest producers of business management case studies.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.ibshyderabad.org"
+  },
+  {
+    "id": "upes-school-of-business-dehradun",
+    "name": "School of Business, UPES Dehradun",
+    "shortName": "UPES Dehradun MBA",
+    "city": "Dehradun",
+    "state": "Uttarakhand",
+    "rating": 4.5,
+    "reviewsCount": 220,
+    "nirfRank": 41,
+    "accreditation": "NAAC A, IACBE, QS 5 Stars",
+    "fees": "₹15.72 Lakhs",
+    "feeNum": 15.72,
+    "avgSalary": "₹8.66 LPA",
+    "avgSalaryNum": 8.66,
+    "highestSalary": "₹30.00 LPA",
+    "medianSalary": "₹8.20 LPA",
+    "batchSize": 360,
+    "roiScore": "7.9 / 10",
+    "cutoffCAT": "70.0+ %ile",
+    "courses": [
+      {
+        "name": "MBA in Oil & Gas Management",
+        "duration": "2 Years Full Time",
+        "seats": 90,
+        "fee": "₹15,72,000"
+      },
+      {
+        "name": "MBA in Logistics & Supply Chain Management",
+        "duration": "2 Years Full Time",
+        "seats": 90,
+        "fee": "₹15,72,000"
+      },
+      {
+        "name": "MBA in Business Analytics",
+        "duration": "2 Years Full Time",
+        "seats": 90,
+        "fee": "₹15,72,000"
+      },
+      {
+        "name": "MBA in Core Management (Marketing/Finance/HR)",
+        "duration": "2 Years Full Time",
+        "seats": 90,
+        "fee": "₹15,72,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "UPESMET / CAT / XAT / MAT 40%",
+      "academicsWeight": "Past Academic Record 25%",
+      "piWatWeight": "Personal Interview 35%"
+    },
+    "facilities": [
+      "Scenic 44-acre Himalayan Foothills Campus",
+      "Specialized Energy and Aviation Simulation Labs",
+      "Global Pathway Programs with European & US Universities",
+      "Modern On-Campus Hostels & Recreation Complexes"
+    ],
+    "highlights": "Ranked #41 in India by NIRF 2024. Celebrated pioneer in specialized domain MBAs across Energy, Oil & Gas, Logistics, and Aviation.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.upes.ac.in"
+  },
+  {
+    "id": "iit-ism-dhanbad-doms",
+    "name": "Department of Management Studies, IIT (ISM) Dhanbad",
+    "shortName": "IIT ISM Dhanbad MBA",
+    "city": "Dhanbad",
+    "state": "Jharkhand",
+    "rating": 4.6,
+    "reviewsCount": 140,
+    "nirfRank": 46,
+    "accreditation": "Institute of National Importance (INI)",
+    "fees": "₹3.80 Lakhs",
+    "feeNum": 3.8,
+    "avgSalary": "₹14.50 LPA",
+    "avgSalaryNum": 14.5,
+    "highestSalary": "₹50.00 LPA",
+    "medianSalary": "₹13.00 LPA",
+    "batchSize": 120,
+    "roiScore": "9.5 / 10",
+    "cutoffCAT": "80.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA Core)",
+        "duration": "2 Years Full Time",
+        "seats": 80,
+        "fee": "₹3,80,000"
+      },
+      {
+        "name": "MBA in Business Analytics",
+        "duration": "2 Years Full Time",
+        "seats": 40,
+        "fee": "₹3,80,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT Percentile Weightage 50%",
+      "academicsWeight": "Academic Consistency (10th/12th/Grad) 20%",
+      "piWatWeight": "Personal Interview & Experience 30%"
+    },
+    "facilities": [
+      "Historic 218-acre Premier Central Government Campus",
+      "Advanced Operations, Mining, & Analytics Software Labs",
+      "Central Library with 1.5 Lakh Management Books",
+      "Complete On-Campus Residential Life"
+    ],
+    "highlights": "Ranked #46 Management Institute by NIRF 2024. Exceptional Return on Investment with an average package of ₹14.50 LPA against tuition fees of under ₹4 Lakhs.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iitism.ac.in"
+  },
+  {
+    "id": "doms-nit-trichy",
+    "name": "Department of Management Studies (DoMS), NIT Tiruchirappalli",
+    "shortName": "DoMS NIT Trichy",
+    "city": "Tiruchirappalli",
+    "state": "Tamil Nadu",
+    "rating": 4.6,
+    "reviewsCount": 110,
+    "nirfRank": 51,
+    "accreditation": "Institute of National Importance (INI)",
+    "fees": "₹2.50 Lakhs",
+    "feeNum": 2.5,
+    "avgSalary": "₹9.60 LPA",
+    "avgSalaryNum": 9.6,
+    "highestSalary": "₹20.00 LPA",
+    "medianSalary": "₹9.20 LPA",
+    "batchSize": 110,
+    "roiScore": "9.5 / 10",
+    "cutoffCAT": "80.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 110,
+        "fee": "₹2,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT Score Weightage 50%",
+      "academicsWeight": "Graduation & School Academics 20%",
+      "piWatWeight": "Personal Interview & Written Assessment 30%"
+    },
+    "facilities": [
+      "800-acre Sprawling National Institute Campus",
+      "Management Information Systems Computer Centre",
+      "Modern Central Library & Digital Resources",
+      "Dedicated On-Campus Hostels & Sports Complexes"
+    ],
+    "highlights": "Ranked #51 in NIRF 2024 Management Ranking. One of the oldest NIT management departments offering sterling ROI with total 2-year fee of just ₹2.50 Lakhs.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.nitt.edu/home/academics/departments/management/"
+  },
+  {
+    "id": "great-lakes-gurgaon",
+    "name": "Great Lakes Institute of Management, Gurgaon",
+    "shortName": "Great Lakes Gurgaon",
+    "city": "Gurugram",
+    "state": "Haryana",
+    "rating": 4.6,
+    "reviewsCount": 120,
+    "nirfRank": 52,
+    "accreditation": "AMBA (UK), AICTE, NBA",
+    "fees": "₹17.75 Lakhs",
+    "feeNum": 17.75,
+    "avgSalary": "₹15.80 LPA",
+    "avgSalaryNum": 15.8,
+    "highestSalary": "₹25.50 LPA",
+    "medianSalary": "₹15.00 LPA",
+    "batchSize": 240,
+    "roiScore": "8.6 / 10",
+    "cutoffCAT": "80.0+ %ile",
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM 2-Year)",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fee": "₹17,75,000"
+      },
+      {
+        "name": "Post Graduate Program in Management (PGPM 1-Year Fast-track)",
+        "duration": "1 Year Full Time",
+        "seats": 60,
+        "fee": "₹17,75,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT / XAT / CMAT Percentile 40%",
+      "academicsWeight": "Academic Performance 20%",
+      "piWatWeight": "Analytical Writing Test & Personal Interview 40%"
+    },
+    "facilities": [
+      "Modern Green Campus in Bilaspur-Tauru Road, Delhi-NCR",
+      "Digital Trading Lab with Live Market Data Feeds",
+      "Air-conditioned Residential Hostels",
+      "Global Visiting Faculty from Top B-Schools"
+    ],
+    "highlights": "Ranked #52 in India by NIRF 2024. Prestigious AMBA accreditation with verified average CTC of ₹15.80 LPA in Delhi-NCR.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.greatlakes.edu.in/gurgaon/"
+  },
+  {
+    "id": "imnu-nirma-ahmedabad",
+    "name": "Institute of Management, Nirma University (IMNU), Ahmedabad",
+    "shortName": "Nirma University IMNU",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "rating": 4.6,
+    "reviewsCount": 190,
+    "nirfRank": 55,
+    "accreditation": "AACSB, NAAC A+, SAQS",
+    "fees": "₹12.90 Lakhs",
+    "feeNum": 12.9,
+    "avgSalary": "₹13.00 LPA",
+    "avgSalaryNum": 13,
+    "highestSalary": "₹30.00 LPA",
+    "medianSalary": "₹12.00 LPA",
+    "batchSize": 300,
+    "roiScore": "8.9 / 10",
+    "cutoffCAT": "80.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA General)",
+        "duration": "2 Years Full Time",
+        "seats": 240,
+        "fee": "₹12,90,000"
+      },
+      {
+        "name": "MBA in Human Resource Management (MBA-HRM)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹12,90,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT Score Weightage 60%",
+      "academicsWeight": "Past Academic Consistency 10%",
+      "piWatWeight": "Personal Interview & Communication Test 30%"
+    },
+    "facilities": [
+      "Sprawling 115-acre Serene Ahmedabad Campus",
+      "State-of-the-art Computer Centre & Digital Library",
+      "Corporate Mentorship and Incubation Center",
+      "High-speed Air-conditioned Lecture Theatres"
+    ],
+    "highlights": "Ranked #55 by NIRF 2024 with coveted AACSB international accreditation. Highly regarded for strong ROI with average CTC of ₹13.00 LPA.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://management.nirmauni.ac.in"
+  },
+  {
+    "id": "imi-kolkata",
+    "name": "International Management Institute (IMI Kolkata)",
+    "shortName": "IMI Kolkata",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "rating": 4.5,
+    "reviewsCount": 130,
+    "nirfRank": 56,
+    "accreditation": "AMBA (UK), NBA, AIU",
+    "fees": "₹13.50 Lakhs",
+    "feeNum": 13.5,
+    "avgSalary": "₹10.65 LPA",
+    "avgSalaryNum": 10.65,
+    "highestSalary": "₹20.30 LPA",
+    "medianSalary": "₹10.20 LPA",
+    "batchSize": 180,
+    "roiScore": "8.4 / 10",
+    "cutoffCAT": "75.0+ %ile",
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fee": "₹13,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT / XAT / CMAT Percentile 40%",
+      "academicsWeight": "Past Academic Record 25%",
+      "piWatWeight": "Personal Interview & Written Ability 35%"
+    },
+    "facilities": [
+      "Iconic Colored Glass Architectural City Campus in Alipore",
+      "Bloomberg Financial Markets Lab",
+      "Executive Hostels & Recreation Facilities",
+      "International Faculty Exchange Programs"
+    ],
+    "highlights": "Ranked #56 in NIRF 2024 Management Ranking. Backed by RP-Sanjiv Goenka Group and accredited by AMBA (UK).",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.imi-k.edu.in"
+  },
+  {
+    "id": "imi-bhubaneswar",
+    "name": "International Management Institute (IMI Bhubaneswar)",
+    "shortName": "IMI Bhubaneswar",
+    "city": "Bhubaneswar",
+    "state": "Odisha",
+    "rating": 4.5,
+    "reviewsCount": 110,
+    "nirfRank": 61,
+    "accreditation": "AMBA (UK), NBA, AIU",
+    "fees": "₹13.20 Lakhs",
+    "feeNum": 13.2,
+    "avgSalary": "₹12.02 LPA",
+    "avgSalaryNum": 12.02,
+    "highestSalary": "₹21.00 LPA",
+    "medianSalary": "₹11.50 LPA",
+    "batchSize": 120,
+    "roiScore": "8.6 / 10",
+    "cutoffCAT": "75.0+ %ile",
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹13,20,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT / XAT / CMAT Score 40%",
+      "academicsWeight": "Past Academic Record 25%",
+      "piWatWeight": "Personal Interview & Essay Writing 35%"
+    },
+    "facilities": [
+      "16-acre Green Eco-Friendly Institutional Campus",
+      "Digital Knowledge Resource Centre",
+      "Complete On-Campus Residential Hostel Facilities",
+      "Executive Training and Simulation Suites"
+    ],
+    "highlights": "Ranked #61 Management Institute in India by NIRF 2024 with prestigious AMBA accreditation.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://imibh.edu.in"
+  },
+  {
+    "id": "usms-ggsipu-delhi",
+    "name": "University School of Management Studies (USMS), Guru Gobind Singh Indraprastha University",
+    "shortName": "USMS GGSIPU Delhi",
+    "city": "New Delhi",
+    "state": "Delhi",
+    "rating": 4.5,
+    "reviewsCount": 180,
+    "nirfRank": 65,
+    "accreditation": "NAAC A++, UGC, AICTE",
+    "fees": "₹2.80 Lakhs",
+    "feeNum": 2.8,
+    "avgSalary": "₹9.20 LPA",
+    "avgSalaryNum": 9.2,
+    "highestSalary": "₹18.00 LPA",
+    "medianSalary": "₹8.50 LPA",
+    "batchSize": 180,
+    "roiScore": "9.5 / 10",
+    "cutoffCAT": "80.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA General)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹2,80,000"
+      },
+      {
+        "name": "MBA in Financial Analysis",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹2,80,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT Percentile Weightage (First Preference) 100% or CMAT",
+      "academicsWeight": "Graduation Eligibility (Minimum 50%)",
+      "piWatWeight": "Centralized Counseling based on CAT Merit"
+    },
+    "facilities": [
+      "Dwarka Sector-16C Central University Campus",
+      "Information Resource Centre & Analytics Labs",
+      "Air-conditioned Seminar Complexes",
+      "Metro Connected Prime Delhi Location"
+    ],
+    "highlights": "Ranked #65 in NIRF 2024 Management Ranking. High ROI state university MBA in Delhi with fees under ₹3 Lakhs.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "http://www.ipu.ac.in"
+  },
+  {
+    "id": "ksom-kiit-bhubaneswar",
+    "name": "KIIT School of Management (KSOM), KIIT University, Bhubaneswar",
+    "shortName": "KSOM KIIT Bhubaneswar",
+    "city": "Bhubaneswar",
+    "state": "Odisha",
+    "rating": 4.5,
+    "reviewsCount": 220,
+    "nirfRank": 67,
+    "accreditation": "NAAC A++, Institution of Eminence (IoE), AICTE",
+    "fees": "₹16.90 Lakhs",
+    "feeNum": 16.9,
+    "avgSalary": "₹9.50 LPA",
+    "avgSalaryNum": 9.5,
+    "highestSalary": "₹22.75 LPA",
+    "medianSalary": "₹9.00 LPA",
+    "batchSize": 360,
+    "roiScore": "8.1 / 10",
+    "cutoffCAT": "70.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA Flagship)",
+        "duration": "2 Years Full Time",
+        "seats": 300,
+        "fee": "₹16,90,000"
+      },
+      {
+        "name": "Super MBA (Business Analytics & Supply Chain)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹16,90,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "KIITEE Management / CAT / XAT / CMAT Score 40%",
+      "academicsWeight": "Class 10, 12 and Graduation 20%",
+      "piWatWeight": "Group Discussion & Personal Interview 40%"
+    },
+    "facilities": [
+      "35-acre Exclusive Wi-Fi Enabled Management Campus",
+      "Finance and Trading Simulation Lab",
+      "Multi-Cuisine Air-Conditioned Mess & Hostels",
+      "State-of-the-Art Sports Complex & Swimming Pool"
+    ],
+    "highlights": "Ranked #67 Management Institute by NIRF 2024 with 100% placement track record.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://ksom.ac.in"
+  },
+  {
+    "id": "doms-mnit-jaipur",
+    "name": "Department of Management Studies (DoMS), Malaviya National Institute of Technology (MNIT), Jaipur",
+    "shortName": "MNIT Jaipur DoMS",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "rating": 4.5,
+    "reviewsCount": 95,
+    "nirfRank": 68,
+    "accreditation": "Institute of National Importance (INI)",
+    "fees": "₹2.60 Lakhs",
+    "feeNum": 2.6,
+    "avgSalary": "₹9.30 LPA",
+    "avgSalaryNum": 9.3,
+    "highestSalary": "₹16.00 LPA",
+    "medianSalary": "₹8.80 LPA",
+    "batchSize": 75,
+    "roiScore": "9.4 / 10",
+    "cutoffCAT": "75.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 75,
+        "fee": "₹2,60,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT / CMAT Percentile 50%",
+      "academicsWeight": "Past Academic Records 20%",
+      "piWatWeight": "Personal Interview 30%"
+    },
+    "facilities": [
+      "317-acre Central Jaipur Campus on JLN Marg",
+      "Modern Management Library & Computing Lab",
+      "On-Campus Residential Hostels",
+      "Innovation and Incubation Centre"
+    ],
+    "highlights": "Ranked #68 Management Institute by NIRF 2024. Superior Return on Investment with an average package of ₹9.30 LPA and sub-₹3 Lakhs total fees.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.mnit.ac.in/dept_dms/"
+  },
+  {
+    "id": "jaipuria-institute-of-management-lucknow",
+    "name": "Jaipuria Institute of Management, Lucknow",
+    "shortName": "Jaipuria Lucknow",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "rating": 4.5,
+    "reviewsCount": 160,
+    "nirfRank": 72,
+    "accreditation": "AACSB Member, NBA, NAAC A+, AIU",
+    "fees": "₹13.75 Lakhs",
+    "feeNum": 13.75,
+    "avgSalary": "₹11.08 LPA",
+    "avgSalaryNum": 11.08,
+    "highestSalary": "₹22.00 LPA",
+    "medianSalary": "₹10.50 LPA",
+    "batchSize": 300,
+    "roiScore": "8.5 / 10",
+    "cutoffCAT": "75.0+ %ile",
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fee": "₹13,75,000"
+      },
+      {
+        "name": "PGDM in Financial Services",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹13,75,000"
+      },
+      {
+        "name": "PGDM in Retail Management",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹13,75,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT / XAT / CMAT / MAT 45%",
+      "academicsWeight": "Past Academic Record 20%",
+      "piWatWeight": "Case Analysis & Personal Interview 35%"
+    },
+    "facilities": [
+      "Vineet Khand Gomti Nagar Campus",
+      "Air-Conditioned Auditoriums & Smart Classrooms",
+      "Central Library with 30,000+ Management Volumes",
+      "Dedicated Placement & Corporate Relations Cell"
+    ],
+    "highlights": "Ranked #72 in NIRF 2024 Management Ranking. Pioneer campus of the prestigious Jaipuria group with audited average CTC exceeding ₹11 LPA.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.jaipuria.ac.in/campuses/jaipuria-lucknow/"
+  },
+  {
+    "id": "soms-nit-calicut",
+    "name": "School of Management Studies (SOMS), NIT Calicut",
+    "shortName": "SOMS NIT Calicut",
+    "city": "Kozhikode",
+    "state": "Kerala",
+    "rating": 4.5,
+    "reviewsCount": 85,
+    "nirfRank": 76,
+    "accreditation": "Institute of National Importance (INI)",
+    "fees": "₹2.40 Lakhs",
+    "feeNum": 2.4,
+    "avgSalary": "₹9.20 LPA",
+    "avgSalaryNum": 9.2,
+    "highestSalary": "₹18.00 LPA",
+    "medianSalary": "₹8.80 LPA",
+    "batchSize": 75,
+    "roiScore": "9.5 / 10",
+    "cutoffCAT": "75.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 75,
+        "fee": "₹2,40,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT Percentile Weightage 50%",
+      "academicsWeight": "Graduation and School Scores 20%",
+      "piWatWeight": "Group Discussion & Personal Interview 30%"
+    },
+    "facilities": [
+      "120-acre Foot-of-Western Ghats NIT Campus",
+      "Dedicated Management Computer Lab",
+      "Central Library and Online Research Portals",
+      "Hostel and Recreational Amenities"
+    ],
+    "highlights": "Ranked #76 in NIRF 2024 Management Ranking. Premier South Indian NIT management education with high ROI.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.nitc.ac.in/department/school-of-management-studies"
+  },
+  {
+    "id": "psg-institute-of-management-coimbatore",
+    "name": "PSG Institute of Management (PSG IM), PSG College of Technology, Coimbatore",
+    "shortName": "PSG IM Coimbatore",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "rating": 4.5,
+    "reviewsCount": 140,
+    "nirfRank": 80,
+    "accreditation": "ACBSP (USA), NBA, Anna University",
+    "fees": "₹9.00 Lakhs",
+    "feeNum": 9,
+    "avgSalary": "₹8.50 LPA",
+    "avgSalaryNum": 8.5,
+    "highestSalary": "₹19.40 LPA",
+    "medianSalary": "₹8.00 LPA",
+    "batchSize": 180,
+    "roiScore": "8.7 / 10",
+    "cutoffCAT": "70.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA Anna University)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹9,00,000"
+      },
+      {
+        "name": "Post Graduate Diploma in Management (PGDM AICTE)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹9,00,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "MAT / CAT / TANCET / ATMA Score 40%",
+      "academicsWeight": "Past Academic Consistency 25%",
+      "piWatWeight": "Personal Interview & Group Task 35%"
+    },
+    "facilities": [
+      "Peelamedu Tech-City Management Campus",
+      "Active Learning Centre & Bloomberg Terminals",
+      "Digital Knowledge Centre with 25,000+ Volumes",
+      "Corporate Innovation & Incubation Lab"
+    ],
+    "highlights": "Ranked #80 in NIRF 2024 Management Ranking. International ACBSP (USA) accreditation and flagship Tamil Nadu legacy institution.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://psgim.ac.in"
+  },
+  {
+    "id": "abv-iiitm-gwalior-doms",
+    "name": "Department of Management Studies, ABV-Indian Institute of Information Technology and Management (IIITM), Gwalior",
+    "shortName": "ABV-IIITM Gwalior MBA",
+    "city": "Gwalior",
+    "state": "Madhya Pradesh",
+    "rating": 4.6,
+    "reviewsCount": 110,
+    "nirfRank": 85,
+    "accreditation": "Institute of National Importance (INI)",
+    "fees": "₹3.60 Lakhs",
+    "feeNum": 3.6,
+    "avgSalary": "₹14.50 LPA",
+    "avgSalaryNum": 14.5,
+    "highestSalary": "₹28.00 LPA",
+    "medianSalary": "₹13.50 LPA",
+    "batchSize": 60,
+    "roiScore": "9.5 / 10",
+    "cutoffCAT": "80.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹3,60,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT Percentile Weightage 50%",
+      "academicsWeight": "School & Degree Academics 20%",
+      "piWatWeight": "Group Discussion & Personal Interview 30%"
+    },
+    "facilities": [
+      "160-acre Lush Green Foothills Campus",
+      "Technology & Business Analytics Lab",
+      "100% Residential Hostels with High-Speed LAN",
+      "State-of-the-Art Open Air Amphitheatre"
+    ],
+    "highlights": "Ranked #85 by NIRF 2024. Autonomous central institute under Ministry of Education offering exceptional technology-management synthesis and ₹14.50 LPA average package.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.iiitm.ac.in"
+  },
+  {
+    "id": "spm-pdeu-gandhinagar",
+    "name": "School of Petroleum Management (SPM), Pandit Deendayal Energy University, Gandhinagar",
+    "shortName": "SPM PDEU Gandhinagar",
+    "city": "Gandhinagar",
+    "state": "Gujarat",
+    "rating": 4.5,
+    "reviewsCount": 105,
+    "nirfRank": 89,
+    "accreditation": "NAAC A++, UGC, AICTE",
+    "fees": "₹9.50 Lakhs",
+    "feeNum": 9.5,
+    "avgSalary": "₹9.40 LPA",
+    "avgSalaryNum": 9.4,
+    "highestSalary": "₹21.00 LPA",
+    "medianSalary": "₹8.80 LPA",
+    "batchSize": 120,
+    "roiScore": "8.7 / 10",
+    "cutoffCAT": "75.0+ %ile",
+    "courses": [
+      {
+        "name": "MBA in Energy and Infrastructure Management",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹9,50,000"
+      },
+      {
+        "name": "MBA in General Management (Marketing/Finance/HR/Operations)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹9,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT / XAT / NMAT Score 60%",
+      "academicsWeight": "Past Academic Record 10%",
+      "piWatWeight": "Personal Interview & Written Ability 30%"
+    },
+    "facilities": [
+      "100-acre Green Smart Campus in Knowledge Corridor Gandhinagar",
+      "Specialized Energy and Analytics Databases",
+      "International Guest Lecture Series & Corporate Summits",
+      "Air-conditioned Executive Hostels"
+    ],
+    "highlights": "Ranked #89 in NIRF 2024 Management Ranking. Nation's foremost institute for energy, infrastructure, and sustainability management.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://spm.pdeu.ac.in"
+  },
+  {
+    "id": "nibm-pune",
+    "name": "National Institute of Bank Management (NIBM), Pune",
+    "shortName": "NIBM Pune",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "rating": 4.7,
+    "reviewsCount": 115,
+    "nirfRank": 91,
+    "accreditation": "AICTE, AIU, Established by Reserve Bank of India",
+    "fees": "₹16.00 Lakhs",
+    "feeNum": 16,
+    "avgSalary": "₹15.22 LPA",
+    "avgSalaryNum": 15.22,
+    "highestSalary": "₹23.50 LPA",
+    "medianSalary": "₹15.00 LPA",
+    "batchSize": 120,
+    "roiScore": "9.2 / 10",
+    "cutoffCAT": "80.0+ %ile",
+    "cutoffCMAT": "95.0+ %ile",
+    "cutoffXAT": "80.0+ %ile",
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management - Banking & Financial Services (PGDM B&FS)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹16,00,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT / XAT / CMAT Percentile 35%",
+      "academicsWeight": "10th, 12th and Graduation Marks 25%",
+      "piWatWeight": "Oral Communication Test & Personal Interview 40%"
+    },
+    "facilities": [
+      "60-acre Valley Campus in Kondhwe Khurd, Pune",
+      "Specialized Financial Library & Reserve Bank Archives",
+      "Bloomberg and Financial Risk Modeling Labs",
+      "100% Residential Air-conditioned Campus"
+    ],
+    "highlights": "Ranked #91 by NIRF 2024. Established by Reserve Bank of India (RBI) and Public Sector Banks. 100% placements in marquee investment banking, private equity, fintech, and commercial banking with median CTC of ₹15.00 LPA.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.nibmindia.org"
+  },
+  {
+    "id": "ubs-panjab-university-chandigarh",
+    "name": "University Business School (UBS), Panjab University, Chandigarh",
+    "shortName": "UBS Panjab University Chandigarh",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "rating": 4.7,
+    "reviewsCount": 190,
+    "nirfRank": 92,
+    "accreditation": "UGC, NAAC A++, AICTE",
+    "fees": "₹0.50 Lakhs",
+    "feeNum": 0.5,
+    "avgSalary": "₹13.72 LPA",
+    "avgSalaryNum": 13.72,
+    "highestSalary": "₹58.48 LPA",
+    "medianSalary": "₹12.50 LPA",
+    "batchSize": 160,
+    "roiScore": "9.9 / 10",
+    "cutoffCAT": "88.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA General)",
+        "duration": "2 Years Full Time",
+        "seats": 75,
+        "fee": "₹50,000"
+      },
+      {
+        "name": "MBA in International Business (MBA-IB)",
+        "duration": "2 Years Full Time",
+        "seats": 40,
+        "fee": "₹50,000"
+      },
+      {
+        "name": "MBA in Human Resource Management (MBA-HR)",
+        "duration": "2 Years Full Time",
+        "seats": 45,
+        "fee": "₹50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT Score Weightage 85%",
+      "academicsWeight": "Past Academic Records (Eligibility)",
+      "piWatWeight": "Group Discussion (7.5%) & Personal Interview (7.5%)"
+    },
+    "facilities": [
+      "Sector-14 Sprawling Panjab University Campus",
+      "AC Joshi Central Library",
+      "Air-conditioned Seminar Halls & Case Classrooms",
+      "Heritage Campus with Sports and Cultural Facilities"
+    ],
+    "highlights": "Ranked #92 in NIRF 2024 Management Ranking. Legendary high-ROI B-school in North India with tuition fee of only ₹50,000 and average CTC of ₹13.72 LPA.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://ubs.puchd.ac.in"
+  },
+  {
+    "id": "manage-hyderabad",
+    "name": "National Institute of Agricultural Extension Management (MANAGE), Hyderabad",
+    "shortName": "MANAGE Hyderabad",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "rating": 4.7,
+    "reviewsCount": 95,
+    "nirfRank": 96,
+    "accreditation": "Ministry of Agriculture & Farmers Welfare, GoI, AICTE, AIU",
+    "fees": "₹8.50 Lakhs",
+    "feeNum": 8.5,
+    "avgSalary": "₹12.16 LPA",
+    "avgSalaryNum": 12.16,
+    "highestSalary": "₹20.00 LPA",
+    "medianSalary": "₹11.80 LPA",
+    "batchSize": 120,
+    "roiScore": "9.3 / 10",
+    "cutoffCAT": "80.0+ %ile",
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management - Agribusiness Management (PGDM-ABM)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹8,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT Score Weightage 55%",
+      "academicsWeight": "Past Academics (10th/12th/Grad) 15%",
+      "piWatWeight": "Essay Writing (5%), GD (10%) & Personal Interview (15%)"
+    },
+    "facilities": [
+      "Rajendranagar 17-acre Serene Institutional Campus",
+      "Center for Agricultural Extension and Agribusiness",
+      "Modern Video Conferencing Halls and Computer Center",
+      "Air-conditioned Executive Residential Quarters"
+    ],
+    "highlights": "Ranked #96 in NIRF 2024 Management Ranking. Autonomous body under Ministry of Agriculture, GoI. Celebrated 100% placement record in agribusiness, banking, and FMCG sectors.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.manage.gov.in"
+  },
+  {
+    "id": "imt-hyderabad",
+    "name": "Institute of Management Technology (IMT), Hyderabad",
+    "shortName": "IMT Hyderabad",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "rating": 4.5,
+    "reviewsCount": 145,
+    "nirfRank": 97,
+    "accreditation": "AACSB, SAQS, AICTE, NBA, AIU",
+    "fees": "₹15.00 Lakhs",
+    "feeNum": 15,
+    "avgSalary": "₹12.00 LPA",
+    "avgSalaryNum": 12,
+    "highestSalary": "₹25.00 LPA",
+    "medianSalary": "₹11.50 LPA",
+    "batchSize": 240,
+    "roiScore": "8.5 / 10",
+    "cutoffCAT": "75.0+ %ile",
+    "cutoffXAT": "75.0+ %ile",
+    "cutoffCMAT": "85.0+ %ile",
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹15,00,000"
+      },
+      {
+        "name": "PGDM in Marketing",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹15,00,000"
+      },
+      {
+        "name": "PGDM in Financial Management",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹15,00,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT / XAT / CMAT / GMAT Score 35%",
+      "academicsWeight": "Past Academic Record 25%",
+      "piWatWeight": "Personal Interview & Critical Thinking 40%"
+    },
+    "facilities": [
+      "30-acre State-of-the-Art Shamshabad Airport Adjacent Campus",
+      "Bloomberg Financial Markets Lab",
+      "Modern Amphitheatre Classrooms",
+      "Executive Residential Hostels & Sports Ground"
+    ],
+    "highlights": "Ranked #97 in NIRF 2024 Management Ranking. Holds elite AACSB accreditation and delivers average package of ₹12.00 LPA.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.imthyderabad.edu.in"
+  },
+  {
+    "id": "som-nit-warangal",
+    "name": "School of Management, National Institute of Technology (NIT) Warangal",
+    "shortName": "NIT Warangal SOM",
+    "city": "Warangal",
+    "state": "Telangana",
+    "rating": 4.5,
+    "reviewsCount": 80,
+    "nirfRank": 100,
+    "accreditation": "Institute of National Importance (INI)",
+    "fees": "₹2.20 Lakhs",
+    "feeNum": 2.2,
+    "avgSalary": "₹8.50 LPA",
+    "avgSalaryNum": 8.5,
+    "highestSalary": "₹15.00 LPA",
+    "medianSalary": "₹8.00 LPA",
+    "batchSize": 60,
+    "roiScore": "9.5 / 10",
+    "cutoffCAT": "75.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Business Administration (MBA)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹2,20,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT / MAT Score 50%",
+      "academicsWeight": "Engineering/Graduation Academics 20%",
+      "piWatWeight": "Group Discussion & Personal Interview 30%"
+    },
+    "facilities": [
+      "256-acre Historical NIT Warangal Campus",
+      "Management Computer and Research Lab",
+      "Central Library with 1.8 Lakh Volumes",
+      "Hostel, Gymnasium and Sports Complex"
+    ],
+    "highlights": "Ranked #100 in NIRF 2024 Management Ranking. Superb Return on Investment with tuition fees of ₹2.20 Lakhs and strong tech-corporate recruiter base.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.nitw.ac.in/department/som"
+  },
+  {
+    "id": "met-institute-of-management-mumbai",
+    "name": "MET Institute of Management (MET Mumbai), Bandra West",
+    "shortName": "MET Mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "rating": 4.5,
+    "reviewsCount": 165,
+    "nirfRank": null,
+    "accreditation": "AICTE, NBA, Affiliated to University of Mumbai",
+    "fees": "₹4.80 Lakhs",
+    "feeNum": 4.8,
+    "avgSalary": "₹8.50 LPA",
+    "avgSalaryNum": 8.5,
+    "highestSalary": "₹15.50 LPA",
+    "medianSalary": "₹8.00 LPA",
+    "batchSize": 180,
+    "roiScore": "8.9 / 10",
+    "cutoffCET": "98.5+ %ile",
+    "cutoffCAT": "80.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Management Studies (MMS - Mumbai University)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹4,80,000"
+      },
+      {
+        "name": "Post Graduate Diploma in Management (PGDM e-Business)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹10,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "cetScoreWeight": "MAH-MBA-CET CAP Round (MMS) / CAT, CMAT, ATMA (PGDM)",
+      "academicsWeight": "Past Academic Records 20%",
+      "piWatWeight": "Personal Interview & Group Discussion 30%"
+    },
+    "facilities": [
+      "Bhujbal Knowledge City Campus in Prime Bandra Reclamation",
+      "State-of-the-Art Computer Centers & Bloomberg Access",
+      "Hi-Tech Music Lounge & Amphitheatre Classrooms",
+      "Extensive Alumni Network Across Top Financial Firms"
+    ],
+    "highlights": "Top premier management institute in Bandra, Mumbai. Flagship MMS program affiliated to University of Mumbai offers outstanding Return on Investment with MAH-CET cutoffs around 98.5+ percentile.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.met.edu"
+  },
+  {
+    "id": "chetana-cimr-mumbai",
+    "name": "Chetana's Institute of Management & Research (CIMR / CRKIMR), Bandra East, Mumbai",
+    "shortName": "Chetana CIMR Mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "rating": 4.4,
+    "reviewsCount": 155,
+    "nirfRank": null,
+    "accreditation": "AICTE, NBA, Affiliated to University of Mumbai",
+    "fees": "₹4.60 Lakhs",
+    "feeNum": 4.6,
+    "avgSalary": "₹8.25 LPA",
+    "avgSalaryNum": 8.25,
+    "highestSalary": "₹15.00 LPA",
+    "medianSalary": "₹7.80 LPA",
+    "batchSize": 240,
+    "roiScore": "8.8 / 10",
+    "cutoffCET": "98.0+ %ile",
+    "cutoffCAT": "75.0+ %ile",
+    "courses": [
+      {
+        "name": "Master of Management Studies (MMS - CRKIMR)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹4,60,000"
+      },
+      {
+        "name": "Post Graduate Diploma in Management (PGDM General - CIMR)",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹8,50,000"
+      },
+      {
+        "name": "PGDM in Marketing",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹8,50,000"
+      }
+    ],
+    "admissionCriteria": {
+      "cetScoreWeight": "MAH-MBA-CET CAP Round (MMS) / CAT, XAT, CMAT (PGDM)",
+      "academicsWeight": "Past Academic Consistency 20%",
+      "piWatWeight": "GD & Personal Interview (PGDM)"
+    },
+    "facilities": [
+      "Bandra East Prime Business Hub Campus",
+      "Air-conditioned Seminar Halls & Case Classrooms",
+      "Extensive Management Library & Research Portals",
+      "Proximity to BKC Financial District"
+    ],
+    "highlights": "Prominent Mumbai B-school located right next to Bandra-Kurla Complex (BKC). High-ROI MMS program with MAH-CET cutoffs of 98.0+ percentile.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.cimr.in"
+  },
+  {
+    "id": "ies-mcrc-mumbai",
+    "name": "IES's Management College and Research Centre (IES MCRC), Bandra West, Mumbai",
+    "shortName": "IES MCRC Mumbai",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "rating": 4.4,
+    "reviewsCount": 135,
+    "nirfRank": null,
+    "accreditation": "AICTE, NBA, AIU",
+    "fees": "₹9.00 Lakhs",
+    "feeNum": 9,
+    "avgSalary": "₹8.00 LPA",
+    "avgSalaryNum": 8,
+    "highestSalary": "₹14.00 LPA",
+    "medianSalary": "₹7.50 LPA",
+    "batchSize": 180,
+    "roiScore": "8.6 / 10",
+    "cutoffCAT": "75.0+ %ile",
+    "cutoffCET": "96.0+ %ile",
+    "cutoffCMAT": "80.0+ %ile",
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fee": "₹9,00,000"
+      },
+      {
+        "name": "PGDM in Pharmaceutical & Healthcare Management",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fee": "₹9,00,000"
+      }
+    ],
+    "admissionCriteria": {
+      "catScoreWeight": "CAT / XAT / CMAT / MAT / MAH-CET 40%",
+      "academicsWeight": "Past Academic Record 20%",
+      "piWatWeight": "Micro Presentation & Personal Interview 40%"
+    },
+    "facilities": [
+      "Bandra Reclamation Waterfront Adjacent Campus",
+      "Digital Business Labs & Computer Center",
+      "Specialized Healthcare & Pharma Research Library",
+      "Auditorium & Case Discussion Theatres"
+    ],
+    "highlights": "Established by Indian Education Society (IES) in Bandra West, Mumbai. Known for high placement rate in Banking, FMCG, and Healthcare sectors.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://www.ies.edu/management/"
   }
 ];

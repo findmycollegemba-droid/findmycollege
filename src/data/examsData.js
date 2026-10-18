@@ -47,12 +47,12 @@ export const EXAMS_DATA = [
       'No upper age limit for appearing in CAT.'
     ],
     topColleges: [
-      { name: 'IIM Ahmedabad (PGP)', cutoff: '99.5+ %ile', avgSalary: '₹34.4 LPA', fees: '₹26.5 Lakhs' },
-      { name: 'IIM Bangalore (PGP)', cutoff: '99.4+ %ile', avgSalary: '₹35.3 LPA', fees: '₹26.0 Lakhs' },
-      { name: 'IIM Calcutta (MBA)', cutoff: '99.6+ %ile', avgSalary: '₹35.1 LPA', fees: '₹31.0 Lakhs' },
-      { name: 'FMS Delhi (MBA)', cutoff: '99.0+ %ile', avgSalary: '₹34.1 LPA', fees: '₹2.3 Lakhs (Ultra High ROI)' },
-      { name: 'SPJIMR Mumbai (PGDM)', cutoff: '85+ %ile (Profile-based) / 98+ %ile', avgSalary: '₹33.0 LPA', fees: '₹24.0 Lakhs' },
-      { name: 'MDI Gurgaon (PGDM)', cutoff: '96.5+ %ile', avgSalary: '₹27.6 LPA', fees: '₹25.0 Lakhs' }
+      { name: 'IIM Ahmedabad (PGP)', cutoff: '99.5+ %ile', avgSalary: '₹36.98 LPA', fees: '₹26.5 Lakhs' },
+      { name: 'IIM Bangalore (PGP)', cutoff: '99.4+ %ile', avgSalary: '₹35.35 LPA', fees: '₹26.0 Lakhs' },
+      { name: 'IIM Calcutta (MBA)', cutoff: '99.6+ %ile', avgSalary: '₹36.00 LPA', fees: '₹27.0 Lakhs' },
+      { name: 'FMS Delhi (MBA)', cutoff: '99.0+ %ile', avgSalary: '₹34.10 LPA', fees: '₹2.00 Lakhs (Ultra High ROI)' },
+      { name: 'SPJIMR Mumbai (PGDM)', cutoff: '85+ %ile (Profile-based) / 98+ %ile', avgSalary: '₹33.75 LPA', fees: '₹24.50 Lakhs' },
+      { name: 'MDI Gurgaon (PGDM)', cutoff: '96.5+ %ile', avgSalary: '₹29.50 LPA', fees: '₹26.55 Lakhs' }
     ],
     scoreVsPercentile: [
       { percentile: '99.9%ile', score: '95 - 105 / 198' },
@@ -123,12 +123,12 @@ export const EXAMS_DATA = [
       'No minimum graduation percentage restriction.'
     ],
     topColleges: [
-      { name: 'XLRI Jamshedpur (BM / HRM)', cutoff: '96+ %ile (BM) / 94+ %ile (HRM)', avgSalary: '₹32.7 LPA', fees: '₹28.0 Lakhs' },
-      { name: 'XLRI Delhi-NCR (BM)', cutoff: '93+ %ile', avgSalary: '₹29.8 LPA', fees: '₹28.0 Lakhs' },
-      { name: 'XIM University Bhubaneswar (BM)', cutoff: '91+ %ile', avgSalary: '₹20.0 LPA', fees: '₹21.0 Lakhs' },
-      { name: 'IMT Ghaziabad (PGDM)', cutoff: '90+ %ile', avgSalary: '₹17.3 LPA', fees: '₹21.5 Lakhs' },
-      { name: 'GIM Goa (PGDM)', cutoff: '85+ %ile', avgSalary: '₹15.2 LPA', fees: '₹19.5 Lakhs' },
-      { name: 'TAPMI Manipal (MBA)', cutoff: '85+ %ile', avgSalary: '₹14.8 LPA', fees: '₹18.0 Lakhs' }
+      { name: 'XLRI Jamshedpur (BM / HRM)', cutoff: '96+ %ile (BM) / 94+ %ile (HRM)', avgSalary: '₹29.89 LPA', fees: '₹30.6 Lakhs' },
+      { name: 'XLRI Delhi-NCR (BM)', cutoff: '93+ %ile', avgSalary: '₹29.89 LPA', fees: '₹30.6 Lakhs' },
+      { name: 'XIM University Bhubaneswar (BM)', cutoff: '91+ %ile', avgSalary: '₹19.53 LPA', fees: '₹22.10 Lakhs' },
+      { name: 'IMT Ghaziabad (PGDM)', cutoff: '90+ %ile', avgSalary: '₹17.35 LPA', fees: '₹21.53 Lakhs' },
+      { name: 'GIM Goa (PGDM)', cutoff: '85+ %ile', avgSalary: '₹15.00 LPA', fees: '₹19.50 Lakhs' },
+      { name: 'TAPMI Manipal (MBA)', cutoff: '85+ %ile', avgSalary: '₹14.80 LPA', fees: '₹18.50 Lakhs' }
     ],
     scoreVsPercentile: [
       { percentile: '99.0%ile', score: '42 - 45 / 76 (Part 1)' },
@@ -191,12 +191,12 @@ export const EXAMS_DATA = [
       'Only the FIRST attempt is considered by NMIMS Mumbai core campus.'
     ],
     topColleges: [
-      { name: 'NMIMS Mumbai (MBA Core)', cutoff: '235+ Score', avgSalary: '₹26.6 LPA', fees: '₹24.0 Lakhs' },
-      { name: 'NMIMS Mumbai (MBA HR)', cutoff: '228+ Score', avgSalary: '₹19.5 LPA', fees: '₹23.0 Lakhs' },
-      { name: 'NMIMS Bangalore / Hyderabad', cutoff: '215+ Score', avgSalary: '₹14.0 LPA', fees: '₹20.0 Lakhs' },
-      { name: 'K J Somaiya Mumbai', cutoff: '225+ Score', avgSalary: '₹13.5 LPA', fees: '₹20.5 Lakhs' },
-      { name: 'XIM University Bhubaneswar (HRM)', cutoff: '220+ Score', avgSalary: '₹16.5 LPA', fees: '₹21.0 Lakhs' },
-      { name: 'SDA Bocconi Asia Center', cutoff: '200+ Score', avgSalary: '₹15.0 LPA', fees: '₹21.0 Lakhs' }
+      { name: 'NMIMS Mumbai (MBA Core)', cutoff: '235+ Score', avgSalary: '₹25.13 LPA', fees: '₹26.50 Lakhs' },
+      { name: 'NMIMS Mumbai (MBA HR)', cutoff: '228+ Score', avgSalary: '₹19.50 LPA', fees: '₹24.00 Lakhs' },
+      { name: 'NMIMS Bangalore / Hyderabad', cutoff: '215+ Score', avgSalary: '₹14.00 LPA', fees: '₹21.00 Lakhs' },
+      { name: 'K J Somaiya Mumbai', cutoff: '225+ Score', avgSalary: '₹12.32 LPA', fees: '₹20.87 Lakhs' },
+      { name: 'XIM University Bhubaneswar (HRM)', cutoff: '220+ Score', avgSalary: '₹16.50 LPA', fees: '₹21.00 Lakhs' },
+      { name: 'SDA Bocconi Asia Center', cutoff: '200+ Score', avgSalary: '₹15.00 LPA', fees: '₹21.00 Lakhs' }
     ],
     scoreVsPercentile: [
       { percentile: '99%ile', score: '250+ / 360' },
@@ -258,12 +258,12 @@ export const EXAMS_DATA = [
       'Best score among all 3 attempts is selected.'
     ],
     topColleges: [
-      { name: 'SIBM Pune (MBA Core)', cutoff: '98.5+ %ile', avgSalary: '₹28.1 LPA', fees: '₹27.0 Lakhs' },
-      { name: 'SCMHRD Pune (MBA Core / BA / IDM)', cutoff: '97.0+ %ile', avgSalary: '₹23.7 LPA', fees: '₹26.0 Lakhs' },
-      { name: 'SIIB Pune (International Business)', cutoff: '93.0+ %ile', avgSalary: '₹14.5 LPA', fees: '₹19.5 Lakhs' },
-      { name: 'SIBM Bangalore', cutoff: '90.0+ %ile', avgSalary: '₹13.5 LPA', fees: '₹20.0 Lakhs' },
-      { name: 'SIOM Nashik (Operations)', cutoff: '87.0+ %ile', avgSalary: '₹14.3 LPA', fees: '₹17.0 Lakhs' },
-      { name: 'SICSR Pune (IT & Digital)', cutoff: '82.0+ %ile', avgSalary: '₹10.5 LPA', fees: '₹12.0 Lakhs' }
+      { name: 'SIBM Pune (MBA Core)', cutoff: '98.5+ %ile', avgSalary: '₹28.18 LPA', fees: '₹27.00 Lakhs' },
+      { name: 'SCMHRD Pune (MBA Core / BA / IDM)', cutoff: '97.0+ %ile', avgSalary: '₹23.71 LPA', fees: '₹24.00 Lakhs' },
+      { name: 'SIIB Pune (International Business)', cutoff: '93.0+ %ile', avgSalary: '₹13.12 LPA', fees: '₹21.50 Lakhs' },
+      { name: 'SIBM Bangalore', cutoff: '90.0+ %ile', avgSalary: '₹14.47 LPA', fees: '₹21.00 Lakhs' },
+      { name: 'SIOM Nashik (Operations)', cutoff: '87.0+ %ile', avgSalary: '₹14.30 LPA', fees: '₹17.00 Lakhs' },
+      { name: 'SICSR Pune (IT & Digital)', cutoff: '82.0+ %ile', avgSalary: '₹10.50 LPA', fees: '₹12.00 Lakhs' }
     ],
     scoreVsPercentile: [
       { percentile: '99.5%ile', score: '44 - 46 / 60' },
@@ -339,12 +339,12 @@ export const EXAMS_DATA = [
       'No age bar.'
     ],
     topColleges: [
-      { name: 'JBIMS Mumbai (MMS)', cutoff: '99.9+ %ile (All India)', avgSalary: '₹28.0 LPA', fees: '₹6.1 Lakhs (Top ROI)' },
-      { name: 'SIMSREE Mumbai (MMS)', cutoff: '99.8+ %ile', avgSalary: '₹15.3 LPA', fees: '₹1.4 Lakhs (Highest ROI in India)' },
-      { name: 'GIM Goa (PGDM)', cutoff: '98.5+ %ile', avgSalary: '₹15.2 LPA', fees: '₹19.5 Lakhs' },
-      { name: 'Great Lakes Chennai (PGDM)', cutoff: '95.0+ %ile', avgSalary: '₹15.1 LPA', fees: '₹19.8 Lakhs' },
-      { name: 'K J Somaiya Mumbai (MBA)', cutoff: '98.0+ %ile', avgSalary: '₹13.5 LPA', fees: '₹20.5 Lakhs' },
-      { name: 'Welingkar Mumbai (WeSchool)', cutoff: '85.0+ %ile', avgSalary: '₹12.5 LPA', fees: '₹14.0 Lakhs' }
+      { name: 'JBIMS Mumbai (MMS)', cutoff: '99.9+ %ile (All India)', avgSalary: '₹28.02 LPA', fees: '₹6.10 Lakhs (Top ROI)' },
+      { name: 'SIMSREE Mumbai (MMS)', cutoff: '99.8+ %ile', avgSalary: '₹15.19 LPA', fees: '₹1.36 Lakhs (Highest ROI in India)' },
+      { name: 'GIM Goa (PGDM)', cutoff: '98.5+ %ile', avgSalary: '₹15.00 LPA', fees: '₹19.50 Lakhs' },
+      { name: 'Great Lakes Chennai (PGDM)', cutoff: '95.0+ %ile', avgSalary: '₹15.10 LPA', fees: '₹20.75 Lakhs' },
+      { name: 'K J Somaiya Mumbai (MBA)', cutoff: '98.0+ %ile', avgSalary: '₹12.32 LPA', fees: '₹20.87 Lakhs' },
+      { name: 'Welingkar Mumbai (WeSchool)', cutoff: '85.0+ %ile', avgSalary: '₹12.50 LPA', fees: '₹14.00 Lakhs' }
     ],
     scoreVsPercentile: [
       { percentile: '99.9%ile', score: '345 - 360 / 400' },
@@ -494,12 +494,12 @@ export const EXAMS_DATA = [
       'All India seats are allotted via CET, CAT, and CMAT scores through CAP rounds.'
     ],
     topColleges: [
-      { name: 'JBIMS Mumbai (MMS)', cutoff: '99.99 %ile (OMS) / 99.90 %ile (MS)', avgSalary: '₹28.0 LPA', fees: '₹6.1 Lakhs' },
-      { name: 'SIMSREE Mumbai (MMS)', cutoff: '99.95 %ile (OMS) / 99.70 %ile (MS)', avgSalary: '₹15.3 LPA', fees: '₹1.4 Lakhs' },
-      { name: 'PUMBA Pune (MBA)', cutoff: '99.40 %ile (OMS) / 98.60 %ile (MS)', avgSalary: '₹9.5 LPA', fees: '₹1.3 Lakhs' },
-      { name: 'Welingkar Mumbai (MMS)', cutoff: '99.70 %ile (OMS) / 99.20 %ile (MS)', avgSalary: '₹12.5 LPA', fees: '₹7.0 Lakhs' },
-      { name: 'SIES Navi Mumbai (MMS)', cutoff: '99.00 %ile (OMS) / 98.00 %ile (MS)', avgSalary: '₹10.0 LPA', fees: '₹6.5 Lakhs' },
-      { name: 'Chetana’s Mumbai (MMS)', cutoff: '98.50 %ile (OMS) / 97.20 %ile (MS)', avgSalary: '₹9.0 LPA', fees: '₹5.5 Lakhs' }
+      { name: 'JBIMS Mumbai (MMS)', cutoff: '99.99 %ile (OMS) / 99.90 %ile (MS)', avgSalary: '₹28.02 LPA', fees: '₹6.10 Lakhs' },
+      { name: 'SIMSREE Mumbai (MMS)', cutoff: '99.95 %ile (OMS) / 99.70 %ile (MS)', avgSalary: '₹15.19 LPA', fees: '₹1.36 Lakhs' },
+      { name: 'PUMBA Pune (MBA)', cutoff: '99.40 %ile (OMS) / 98.60 %ile (MS)', avgSalary: '₹8.85 LPA', fees: '₹1.30 Lakhs' },
+      { name: 'Welingkar Mumbai (MMS)', cutoff: '99.70 %ile (OMS) / 99.20 %ile (MS)', avgSalary: '₹12.50 LPA', fees: '₹6.82 Lakhs' },
+      { name: 'SIES Navi Mumbai (MMS)', cutoff: '99.00 %ile (OMS) / 98.00 %ile (MS)', avgSalary: '₹9.10 LPA', fees: '₹9.50 Lakhs' },
+      { name: 'Chetana’s Mumbai (MMS)', cutoff: '98.50 %ile (OMS) / 97.20 %ile (MS)', avgSalary: '₹8.25 LPA', fees: '₹4.60 Lakhs' }
     ],
     scoreVsPercentile: [
       { percentile: '99.99%ile (JBIMS OMS)', score: '145 - 152 / 200' },
