@@ -58,16 +58,16 @@ The following institutions accept CAT 2026 scores in the 70-79 percentile range 
 
 | College Name | Flagship Program | 2-Yr Total Fees | Avg CTC | Highest CTC | CAT Cutoff | Location |
 | --- | --- | --- | --- | --- | --- | --- |
-| **[BIMTECH Greater Noida](/colleges/bimtech-noida)** | PGDM (Retail / Insurance) | ₹14.00 Lakhs | ₹10.50 LPA | ₹18.00 LPA | 70-75 %ile | Delhi NCR |
-| **[Jaipuria Institute of Management](/colleges/jaipuria-institute-of-management-jaipur)** | PGDM (Core / SM / RM) | ₹14.75 Lakhs | ₹9.50 LPA | ₹22.00 LPA | 70-75 %ile | Noida / LKO / JPR |
-| **[WeSchool (Welingkar Mumbai)](/colleges/welingkar-mumbai)** | PGDM (Rural / Healthcare / Media) | ₹14.50 Lakhs | ₹10.20 LPA | ₹18.50 LPA | 75-80 %ile | Mumbai, MH |
+| **[BIMTECH Greater Noida](/colleges/bimtech-noida)** | PGDM (Retail / Insurance) | ₹14.00 Lakhs | ₹11.10 LPA | ₹22.00 LPA | 70-75 %ile | Delhi NCR |
+| **[Jaipuria Institute of Management](/colleges/jaipuria-institute-of-management)** | PGDM (Core / SM / RM) | ₹14.75 Lakhs | ₹11.29 LPA | ₹22.00 LPA | 70-75 %ile | Noida / LKO / JPR |
+| **[WeSchool (Welingkar Mumbai)](/colleges/welingkar-mumbai)** | PGDM (Rural / Healthcare / Media) | ₹14.50 Lakhs | ₹12.50 LPA | ₹25.40 LPA | 75-80 %ile | Mumbai, MH |
 | **[Christ University](/colleges/christ-university-bangalore)** | MBA (Dual Specialization) | ₹9.50 Lakhs | ₹8.50 LPA | ₹16.00 LPA | 70-75 %ile | Bengaluru, KA |
-| **[NDIM New Delhi](/colleges/new-delhi-institute-of-management)** | PGDM (Dual Specialization) | ₹11.50 Lakhs | ₹8.80 LPA | ₹16.50 LPA | 70-75 %ile | New Delhi |
-| **[JIMS Rohini (Sector-5)](/colleges/jims-kalkaji-delhi)** | PGDM (Core / IB / Retail) | ₹8.70 Lakhs | ₹8.10 LPA | ₹15.00 LPA | 72-75 %ile | New Delhi |
-| **[Balaji University Pune (BIMHRD/BIIB)](/colleges/sibm-pune)** | MBA (PM & HRD / Telecom) | ₹12.60 Lakhs | ₹8.60 LPA | ₹20.50 LPA | 70-75 %ile | Pune, MH |
+| **[NDIM New Delhi](/colleges/new-delhi-institute-of-management)** | PGDM (Dual Specialization) | ₹11.50 Lakhs | ₹8.50 LPA | ₹16.10 LPA | 70-75 %ile | New Delhi |
+| **[JIMS Rohini (Sector-5)](/colleges/jims-rohini-delhi)** | PGDM (Core / IB / Retail) | ₹9.50 Lakhs | ₹8.30 LPA | ₹22.00 LPA | 70-75 %ile | New Delhi |
+| **[Balaji University Pune (BIMM/BIIB)](/colleges/balaji-modern-bimm-pune)** | MBA (PM & HRD / Telecom) | ₹11.80 Lakhs | ₹8.80 LPA | ₹21.50 LPA | 70-75 %ile | Pune, MH |
 | **[FOSTIIMA Business School](/colleges/fostiima-business-school-delhi)** | PGDM (IIM Alum Faculty) | ₹9.50 Lakhs | ₹8.50 LPA | ₹15.50 LPA | 70-75 %ile | Delhi NCR |
-| **[ITM Business School](/colleges/welingkar-mumbai)** | PGDM iConnect | ₹11.95 Lakhs | ₹8.20 LPA | ₹15.00 LPA | 70-75 %ile | Navi Mumbai, MH |
-| **[IMS Ghaziabad](/colleges/imt-ghaziabad)** | PGDM (AICTE / NBA) | ₹9.50 Lakhs | ₹8.25 LPA | ₹16.00 LPA | 70-75 %ile | Delhi NCR |
+| **[ITM Business School](/colleges/itm-business-school-mumbai)** | PGDM iConnect | ₹12.45 Lakhs | ₹10.50 LPA | ₹25.00 LPA | 70-75 %ile | Navi Mumbai, MH |
+| **[IMS Ghaziabad](/colleges/institute-studies-ghaziabad)** | PGDM (AICTE / NBA) | ₹9.50 Lakhs | ₹8.80 LPA | ₹28.00 LPA | 70-75 %ile | Delhi NCR |
 | **[Poddar Business School](/colleges/poddar-business-school-jaipur)** | PGDM (Global Immersion) | ₹5.50 Lakhs | ₹8.50 LPA | ₹16.00 LPA | 68-72 %ile | Jaipur, RJ |
 
 ---
@@ -174,24 +174,24 @@ Many candidates in this bracket mistakenly believe they must retake CAT. In real
 
 | Institute Name | Degree / Program | 2-Yr Fees | Average CTC | Highest CTC | CAT Cutoff | Key Strength |
 | --- | --- | --- | --- | --- | --- | --- |
-| **[TAPMI Manipal](/colleges/tapmi-manipal)** | MBA (Core / BKFS / HR / Mktg) | ₹18.50 Lakhs | ₹14.80 LPA | ₹24.80 LPA | 85-88 %ile | AACSB Accredited, Banking & Finance |
-| **[FORE School of Mgmt, New Delhi](/colleges/fore-school-delhi)** | PGDM (Core / IB / FM / BDA) | ₹18.25 Lakhs | ₹14.50 LPA | ₹30.00 LPA | 84-86 %ile | Prime South Delhi location, Consulting |
-| **[Great Lakes (GLIM Chennai/Gurgaon)](/colleges/great-lakes-chennai)** | PGPM / PGDM | ₹18.90 Lakhs | ₹15.10 LPA | ₹34.00 LPA | 80-85 %ile | Analytics, AI, 1-Year Fast Track |
-| **[GIM Goa (Goa Institute of Mgmt)](/colleges/gim-goa)** | PGDM (Core / BDA / BIFS) | ₹19.40 Lakhs | ₹14.80 LPA | ₹55.00 LPA | 85-88 %ile | Data Analytics, Healthcare, Finance |
-| **[LBSIM New Delhi](/colleges/lbsim-delhi)** | PGDM (Core / FM / R&BA) | ₹16.50 Lakhs | ₹12.80 LPA | ₹24.75 LPA | 82-85 %ile | Financial Management, Value Pedagogy |
-| **[K J Somaiya Institute of Mgmt, Mumbai](/colleges/kj-somaiya-mumbai)** | MBA (Core & Specializations) | ₹20.80 Lakhs | ₹12.50 LPA | ₹25.96 LPA | 83-86 %ile | Massive Mumbai corporate network |
-| **[BIMTECH Greater Noida](/colleges/bimtech-noida)** | PGDM (Core Flagship) | ₹14.00 Lakhs | ₹11.25 LPA | ₹23.40 LPA | 80-82 %ile | Established alumni, Birla conglomerate |
-| **[LIBA Chennai](/colleges/great-lakes-chennai)** | PGDM | ₹17.50 Lakhs | ₹11.60 LPA | ₹20.50 LPA | 80-82 %ile | Jesuit ethics, BFSI, South India hub |
-| **[NIBM Pune](/colleges/sibm-pune)** | PGDM (Banking & Fin. Services) | ₹14.50 Lakhs | ₹15.20 LPA | ₹23.50 LPA | 80-85 %ile | Established by RBI, 100% BFSI |
-| **[IRMA Anand](/colleges/irma-anand)** | PGDM (Rural Management) | ₹18.60 Lakhs | ₹15.50 LPA | ₹26.50 LPA | 80-83 %ile | FMCG, Agribusiness, Social Impact |
-| **[UBS Chandigarh (Panjab Univ.)](/colleges/dse-delhi)** | MBA | ₹0.45 Lakhs | ₹13.70 LPA | ₹58.48 LPA | 85-88 %ile | **Highest ROI in India (Fees < ₹50k)** |
+| **[FORE School of Mgmt, New Delhi](/colleges/fore-school-delhi)** | PGDM (Core / IB / FM / BDA) | ₹18.98 Lakhs | ₹16.01 LPA | ₹70.00 LPA | 84-86 %ile | NIRF #53, Consulting & BFSI Hub |
+| **[Great Lakes (GLIM Chennai/Gurgaon)](/colleges/great-lakes-chennai)** | PGPM / PGDM | ₹19.65 Lakhs | ₹15.10 LPA | ₹37.00 LPA | 80-85 %ile | Analytics, AI, 1-Year Fast Track |
+| **[GIM Goa (Goa Institute of Mgmt)](/colleges/gim-goa)** | PGDM (Core / BDA / BIFS) | ₹19.40 Lakhs | ₹15.12 LPA | ₹60.40 LPA | 85-88 %ile | Data Analytics, Healthcare, Finance |
+| **[TAPMI Manipal](/colleges/tapmi-manipal)** | MBA (Core / BKFS / HR / Mktg) | ₹17.34 Lakhs | ₹13.84 LPA | ₹32.02 LPA | 85-88 %ile | AACSB & AMBA Accredited, Banking |
+| **[LBSIM New Delhi](/colleges/lbsim-delhi)** | PGDM (Core / FM / R&BA) | ₹17.25 Lakhs | ₹12.32 LPA | ₹24.00 LPA | 82-85 %ile | Financial Management, Value Pedagogy |
+| **[K J Somaiya Institute of Mgmt, Mumbai](/colleges/kj-somaiya-mumbai)** | MBA (Core & Specializations) | ₹20.87 Lakhs | ₹12.28 LPA | ₹28.25 LPA | 83-86 %ile | Massive Mumbai corporate network |
+| **[BIMTECH Greater Noida](/colleges/bimtech-noida)** | PGDM (Core Flagship) | ₹14.00 Lakhs | ₹11.10 LPA | ₹22.00 LPA | 80-82 %ile | NIRF #64, Birla conglomerate |
+| **[LIBA Chennai](/colleges/liba-chennai)** | PGDM | ₹17.84 Lakhs | ₹11.20 LPA | ₹20.50 LPA | 80-82 %ile | NIRF #66, Jesuit ethics, BFSI |
+| **[NIBM Pune](/colleges/nibm-pune)** | PGDM (Banking & Fin. Services) | ₹16.00 Lakhs | ₹15.22 LPA | ₹23.50 LPA | 80-85 %ile | NIRF #91, Established by RBI, 100% BFSI |
+| **[IRMA Anand](/colleges/irma-anand)** | PGDM (Rural Management) | ₹18.60 Lakhs | ₹14.14 LPA | ₹31.16 LPA | 80-83 %ile | FMCG, Agribusiness, Social Impact |
+| **[UBS Chandigarh (Panjab Univ.)](/colleges/ubs-panjab-university-chandigarh)** | MBA | ₹0.50 Lakhs | ₹13.72 LPA | ₹58.48 LPA | 85-88 %ile | NIRF #92, **Highest ROI (Fees ₹50k)** |
 
 ---
 
 ### In-Depth Analysis: The Flagship 80-89 Percentile Powerhouses
 
 #### 1. [TAPMI Manipal (T.A. Pai Management Institute)](/colleges/tapmi-manipal)
-TAPMI holds the prestigious **dual AACSB and AMBA accreditations**, placing it in the top 5% of business schools globally.
+TAPMI holds prestigious **AACSB and AMBA accreditations** (Fees ₹17.34 Lakhs, Avg CTC ₹13.84 LPA), placing it in the top 5% of business schools globally.
 - **Flagship Programs:** While its Core MBA requires around 85-88 percentile, its specialized programs—**Banking & Financial Services (BKFS)**, **Human Resources (HRM)**, and **Marketing**—issue profile-based calls from **80-83 percentile**.
 - **Trading Room:** TAPMI hosts India's largest Bloomberg lab with 16 terminals, making it an elite destination for equity research and treasury roles.
 
@@ -293,16 +293,16 @@ For candidates aiming for the 2027-29 cohort, scoring 90+ percentile in CAT 2026
 | Business School | Degree / Program | 2-Yr Fees | Average CTC | Median CTC | CAT Cutoff | Key Recruiter Portfolios |
 | --- | --- | --- | --- | --- | --- | --- |
 | **[SPJIMR Mumbai](/colleges/spjimr-mumbai)** | PGDM (Finance / Mktg / IM / Ops) | ₹22.50 Lakhs | ₹33.00 LPA | ₹31.50 LPA | 85-93 %ile (Profile/Score) | Consulting, IB, FMCG |
-| **[MDI Gurgaon](/colleges/mdi-gurgaon)** | PGDM / PGP-HRM / PGP-IB | ₹24.50 Lakhs | ₹25.50 LPA | ₹24.20 LPA | 94-96 %ile | Strategy Consulting, BFSI |
-| **[SJMSoM, IIT Bombay](/colleges/iit-bombay-sjmsom)** | MBA | ₹14.50 Lakhs | ₹28.88 LPA | ₹26.64 LPA | 96-98 %ile | Tech Consulting, Supply Chain, PE |
-| **[DMS, IIT Delhi](/colleges/dms-iit-delhi)** | MBA (General / Telecom) | ₹12.00 Lakhs | ₹24.45 LPA | ₹23.50 LPA | 95-97 %ile | Operations, Analytics, Strategy |
-| **[VGSoM, IIT Kharagpur](/colleges/vgsom-iit-kharagpur)** | MBA | ₹11.50 Lakhs | ₹20.80 LPA | ₹19.50 LPA | 90-93 %ile | Supply Chain, Manufacturing, IT |
-| **[DoMS, IIT Madras](/colleges/doms-iit-madras)** | MBA | ₹10.50 Lakhs | ₹20.19 LPA | ₹18.00 LPA | 90-92 %ile | Analytics, FinTech, Consulting |
-| **[IMT Ghaziabad](/colleges/imt-ghaziabad)** | PGDM (Core Marketing Flagship) | ₹21.50 Lakhs | ₹17.35 LPA | ₹16.00 LPA | 90-93 %ile | FMCG, Retail, Digital Marketing |
-| **[XIM University (XIMB)](/colleges/ximb-bhubaneswar)** | MBA-BM (Business Management) | ₹20.50 Lakhs | ₹19.53 LPA | ₹18.50 LPA | 91-93 %ile | BFSI, Consulting, General Mgmt |
-| **[IMI New Delhi](/colleges/imi-new-delhi)** | PGDM (Core / BFS / HRM) | ₹20.50 Lakhs | ₹17.01 LPA | ₹16.50 LPA | 88-90 %ile | BFSI, IT Services, Analytics |
-| **[DSE (Delhi School of Economics)](/colleges/dse-delhi)** | MBA (IB & HRD) | ₹0.40 Lakhs | ₹14.50 LPA | ₹13.80 LPA | 92-94 %ile | **Ultra-High ROI (Fee ₹40k)** |
-| **[DFS (Univ. of Delhi)](/colleges/dfs-delhi)** | MBA (Financial Management) | ₹0.45 Lakhs | ₹16.80 LPA | ₹15.50 LPA | 94-96 %ile | **Premier Equity Research & IB** |
+| **[MDI Gurgaon](/colleges/mdi-gurgaon)** | PGDM / PGP-HRM / PGP-IB | ₹26.55 Lakhs | ₹29.50 LPA | ₹26.50 LPA | 94-96 %ile | Strategy Consulting, BFSI |
+| **[SJMSoM, IIT Bombay](/colleges/iit-bombay-sjmsom)** | MBA | ₹14.20 Lakhs | ₹28.01 LPA | ₹26.64 LPA | 96-98 %ile | Tech Consulting, Supply Chain, PE |
+| **[DMS, IIT Delhi](/colleges/dms-iit-delhi)** | MBA (General / Telecom) | ₹12.00 Lakhs | ₹25.82 LPA | ₹24.45 LPA | 95-97 %ile | Operations, Analytics, Strategy |
+| **[VGSoM, IIT Kharagpur](/colleges/vgsom-iit-kharagpur)** | MBA | ₹13.00 Lakhs | ₹20.83 LPA | ₹19.50 LPA | 90-93 %ile | Supply Chain, Manufacturing, IT |
+| **[DoMS, IIT Madras](/colleges/doms-iit-madras)** | MBA | ₹11.50 Lakhs | ₹18.30 LPA | ₹17.00 LPA | 90-92 %ile | Analytics, FinTech, Consulting |
+| **[IMT Ghaziabad](/colleges/imt-ghaziabad)** | PGDM (Core Marketing Flagship) | ₹21.53 Lakhs | ₹17.35 LPA | ₹16.00 LPA | 90-93 %ile | FMCG, Retail, Digital Marketing |
+| **[XIM University (XIMB)](/colleges/ximb-bhubaneswar)** | MBA-BM (Business Management) | ₹20.90 Lakhs | ₹19.53 LPA | ₹18.50 LPA | 91-93 %ile | BFSI, Consulting, General Mgmt |
+| **[IMI New Delhi](/colleges/imi-new-delhi)** | PGDM (Core / BFS / HRM) | ₹20.95 Lakhs | ₹16.88 LPA | ₹16.00 LPA | 88-90 %ile | BFSI, IT Services, Analytics |
+| **[DSE (Delhi School of Economics)](/colleges/dse-delhi)** | MBA (IB & HRD) | ₹0.32 Lakhs | ₹14.50 LPA | ₹13.80 LPA | 92-94 %ile | **Ultra-High ROI (Fee ₹32k)** |
+| **[DFS (Univ. of Delhi)](/colleges/dfs-delhi)** | MBA (Financial Management) | ₹0.30 Lakhs | ₹17.20 LPA | ₹16.00 LPA | 94-96 %ile | **Premier Equity Research & IB** |
 
 ---
 
@@ -322,12 +322,12 @@ Situated in the heart of Gurgaon's corporate corridor, MDI Gurgaon is widely reg
 
 #### 3. [IIT Bombay (SJMSoM)](/colleges/iit-bombay-sjmsom) & [IIT Delhi (DMS)](/colleges/dms-iit-delhi): Tech-Operations Powerhouses
 Management departments in premier IITs represent exceptional educational value.
-- **SJMSoM IIT Bombay:** With fees capped at ₹14.50 Lakhs and average packages reaching **₹28.88 LPA**, IIT Bombay delivers high ROI and placements across operations, supply chain, tech consulting, and corporate finance.
-- **DMS IIT Delhi:** Offers rigorous analytics, telecom, and general management curricula with an average CTC of **₹24.45 LPA** and fees of ₹12.00 Lakhs.
+- **SJMSoM IIT Bombay:** With fees capped at ₹14.20 Lakhs and average packages reaching **₹28.01 LPA**, IIT Bombay delivers high ROI and placements across operations, supply chain, tech consulting, and corporate finance.
+- **DMS IIT Delhi:** Offers rigorous analytics, telecom, and general management curricula with an average CTC of **₹25.82 LPA** and fees of ₹12.00 Lakhs.
 
 #### 4. Delhi University Powerhouses: [DSE](/colleges/dse-delhi) & [DFS](/colleges/dfs-delhi) (Return on Investment Outliers)
-- **Delhi School of Economics (DSE - Department of Commerce):** Total 2-year tuition fee is **under ₹40,000**. Offers MBA in International Business (IB) and Human Resource Development (HRD) with an average CTC of **₹14.50 LPA**.
-- **Department of Financial Studies (DFS, South Campus):** Total fee is **under ₹45,000**. Known as a feeder campus for equity research, investment banking, and treasury desks with an average CTC of **₹16.80 LPA**.
+- **Delhi School of Economics (DSE - Department of Commerce):** Total 2-year tuition fee is **under ₹35,000** (₹32,000 total). Offers MBA in International Business (IB) and Human Resource Development (HRD) with an average CTC of **₹14.50 LPA**.
+- **Department of Financial Studies (DFS, South Campus):** Total fee is **under ₹35,000** (₹30,000 total). Known as a feeder campus for equity research, investment banking, and treasury desks with an average CTC of **₹17.20 LPA**.
 
 ---
 

@@ -47,8 +47,8 @@ For candidates targeting the **top mba colleges in jaipur** in 2027, the city of
 
 | College Name | Degree Type | 2-Yr Fees | Avg CTC | Highest CTC | Key Exams Accepted |
 | --- | --- | --- | --- | --- | --- |
-| **MNIT Jaipur (DMS)** | MBA | ₹3.60 Lakhs | ₹10.50 LPA | ₹18.00 LPA | CAT, CMAT |
-| **Jaipuria Institute of Management** | PGDM (AIU) | ₹14.75 Lakhs | ₹9.50 LPA | ₹22.00 LPA | CAT, CMAT, MAT, XAT |
+| **MNIT Jaipur (DMS)** | MBA | ₹2.60 Lakhs | ₹9.30 LPA | ₹16.00 LPA | CAT, CMAT |
+| **Jaipuria Institute of Management** | PGDM (AIU) | ₹12.75 Lakhs | ₹10.50 LPA | ₹22.00 LPA | CAT, CMAT, MAT, XAT |
 | **IIHMR University, Jaipur** | MBA (Health/Pharma) | ₹11.50 Lakhs | ₹8.80 LPA | ₹17.20 LPA | CAT, CMAT, MAT, GPAT |
 | **IILM Academy of Higher Learning** | PGDM | ₹7.00 Lakhs | ₹8.20 LPA | ₹15.00 LPA | CAT, MAT, CMAT, XAT |
 | **Poddar Business School** | PGDM / MBA | ₹5.50 Lakhs | ₹8.50 LPA | ₹16.00 LPA | CAT, CMAT, MAT, ATMA |
@@ -144,14 +144,14 @@ Understanding the fee structure upfront ensures you avoid unexpected out-of-pock
 | --- | --- | --- | --- | --- |
 | **Univ. of Rajasthan (PIM)** | MBA | ₹1.80 Lakhs | ₹45,000 | ~₹2.70 Lakhs |
 | **Apex University, Jaipur** | MBA | ₹3.60 Lakhs | ₹75,000 | ~₹5.10 Lakhs |
-| **MNIT Jaipur (DMS)** | MBA | ₹3.60 Lakhs | ₹65,000 | ~₹4.90 Lakhs |
+| **MNIT Jaipur (DMS)** | MBA | ₹2.60 Lakhs | ₹65,000 | ~₹3.90 Lakhs |
 | **Jagannath University** | MBA | ₹3.98 Lakhs | ₹80,000 | ~₹5.58 Lakhs |
 | **Vivekananda Global Univ. (VGU)** | MBA | ₹5.00 Lakhs | ₹85,000 | ~₹6.70 Lakhs |
 | **Poornima University (GCEC)** | MBA | ₹5.25 Lakhs | ₹85,000 | ~₹6.95 Lakhs |
 | **Poddar Business School** | PGDM | ₹5.50 Lakhs | ₹80,000 | ~₹7.10 Lakhs |
 | **IILM Academy of Higher Learning** | PGDM | ₹7.00 Lakhs | ₹90,000 | ~₹8.80 Lakhs |
 | **IIHMR University** | MBA (Health) | ₹11.50 Lakhs | ₹1,00,000 | ~₹13.50 Lakhs |
-| **Jaipuria Institute of Management** | PGDM | ₹14.75 Lakhs | ₹1,20,000 | ~₹17.15 Lakhs |
+| **Jaipuria Institute of Management** | PGDM | ₹12.75 Lakhs | ₹1,20,000 | ~₹15.15 Lakhs |
 | **Manipal University Jaipur (MUJ)** | MBA | ₹16.50 Lakhs | ₹1,40,000 | ~₹19.30 Lakhs |
 
 ---
@@ -206,8 +206,8 @@ Over the last three placement cycles, Jaipur has proven itself as a competitive 
 
 | College Name | Highest Package | Average CTC | Median Package | Placement % |
 | --- | --- | --- | --- | --- |
-| **Jaipuria Institute of Management** | ₹22.00 LPA | ₹9.50 LPA | ₹8.80 LPA | 98.4% |
-| **MNIT Jaipur (DMS)** | ₹18.00 LPA | ₹10.50 LPA | ₹9.80 LPA | 95.0% |
+| **Jaipuria Institute of Management** | ₹22.00 LPA | ₹10.50 LPA | ₹9.50 LPA | 98.4% |
+| **MNIT Jaipur (DMS)** | ₹16.00 LPA | ₹9.30 LPA | ₹8.80 LPA | 95.0% |
 | **IIHMR University** | ₹17.20 LPA | ₹8.80 LPA | ₹8.20 LPA | 99.0% |
 | **Poddar Business School** | ₹16.00 LPA | ₹8.50 LPA | ₹7.80 LPA | 92.5% |
 | **IILM Academy of Higher Learning** | ₹15.00 LPA | ₹8.20 LPA | ₹7.50 LPA | 93.0% |
@@ -347,13 +347,13 @@ Nestled in the tranquil Doon Valley between the Himalayas and the Shivalik hills
 
 | College Name | Degree Type | 2-Yr Fees | Avg CTC | Highest CTC | Key Entrance Exams |
 | --- | --- | --- | --- | --- | --- |
-| **UPES Dehradun (School of Business)** | MBA (Specialized) | ₹19.11 Lakhs | ₹10.50 LPA | ₹30.00 LPA | UPESMET, CAT, MAT, CMAT |
-| **Graphic Era University (GEU)** | MBA | ₹7.80 Lakhs | ₹7.20 LPA | ₹16.00 LPA | CAT, MAT, CMAT, XAT |
-| **Doon Business School (DBS)** | PGDM / MBA | ₹8.90 Lakhs | ₹8.70 LPA | ₹24.00 LPA | CAT, MAT, CMAT, XAT, ATMA |
+| **UPES Dehradun (School of Business)** | MBA (Specialized) | ₹19.11 Lakhs | ₹10.50 LPA | ₹29.00 LPA | UPESMET, CAT, MAT, CMAT |
+| **Graphic Era University (GEU)** | MBA | ₹7.17 Lakhs | ₹7.50 LPA | ₹16.00 LPA | CAT, MAT, CMAT, XAT |
+| **Doon Business School (DBS)** | PGDM / MBA | ₹8.90 Lakhs | ₹8.70 LPA | ₹40.00 LPA | CAT, MAT, CMAT, XAT, ATMA |
 | **Doon University (School of Mgmt)** | MBA | ₹1.80 Lakhs | ₹6.00 LPA | ₹10.50 LPA | State Entrance, CMAT, CAT |
 | **Uttaranchal University (UIM)** | MBA | ₹5.50 Lakhs | ₹6.50 LPA | ₹14.00 LPA | CAT, MAT, CMAT, Merit |
-| **IMS Unison University** | MBA | ₹5.80 Lakhs | ₹6.80 LPA | ₹15.00 LPA | CAT, MAT, CMAT, XAT |
-| **DIT University (School of Mgmt)** | MBA | ₹5.50 Lakhs | ₹6.80 LPA | ₹13.50 LPA | CAT, MAT, CMAT, DIT Test |
+| **IMS Unison University** | MBA | ₹4.80 Lakhs | ₹6.20 LPA | ₹13.60 LPA | CAT, MAT, CMAT, XAT |
+| **DIT University (School of Mgmt)** | MBA | ₹4.80 Lakhs | ₹6.20 LPA | ₹13.60 LPA | CAT, MAT, CMAT, DIT Test |
 | **SRHU Dehradun (Himalayan Mgmt)** | MBA (Hospital/Gen) | ₹4.20 Lakhs | ₹5.80 LPA | ₹12.00 LPA | MAT, CMAT, Merit |
 `
   },
@@ -402,10 +402,10 @@ Planning your management education requires a clear appraisal of **mba colleges 
 | **SRHU Dehradun (HSMS)** | MBA | ₹4.20 Lakhs | ₹85,000 | ~₹5.90 Lakhs |
 | **Quantum University** | MBA | ₹4.35 Lakhs | ₹80,000 | ~₹5.95 Lakhs |
 | **Dev Bhoomi Uttarakhand Univ.** | MBA | ₹4.80 Lakhs | ₹80,000 | ~₹6.40 Lakhs |
-| **DIT University** | MBA | ₹5.50 Lakhs | ₹1,10,000 | ~₹7.70 Lakhs |
+| **DIT University** | MBA | ₹4.80 Lakhs | ₹1,10,000 | ~₹7.00 Lakhs |
 | **Uttaranchal University (UIM)** | MBA | ₹5.50 Lakhs | ₹95,000 | ~₹7.40 Lakhs |
-| **IMS Unison University** | MBA | ₹5.80 Lakhs | ₹1,05,000 | ~₹7.90 Lakhs |
-| **Graphic Era University (GEU)** | MBA | ₹7.80 Lakhs | ₹1,20,000 | ~₹10.20 Lakhs |
+| **IMS Unison University** | MBA | ₹4.80 Lakhs | ₹1,05,000 | ~₹6.90 Lakhs |
+| **Graphic Era University (GEU)** | MBA | ₹7.17 Lakhs | ₹1,20,000 | ~₹9.57 Lakhs |
 | **Doon Business School (DBS)** | PGDM | ₹8.90 Lakhs | ₹1,10,000 | ~₹11.10 Lakhs |
 | **UPES Dehradun** | MBA (Core/Spec) | ₹19.11 Lakhs | ₹1,65,000 | ~₹22.41 Lakhs |
 `
@@ -449,8 +449,8 @@ When evaluating **mba colleges in dehradun with placement**, aspirants will find
 
 | College Name | Highest Package | Average CTC | Median Package | Placement Record % |
 | --- | --- | --- | --- | --- |
-| **UPES Dehradun (School of Business)** | ₹30.00 LPA | ₹10.50 LPA | ₹9.20 LPA | 96.5% |
-| **Doon Business School (DBS)** | ₹24.00 LPA | ₹8.70 LPA | ₹8.00 LPA | 95.0% |
+| **UPES Dehradun (School of Business)** | ₹29.00 LPA | ₹10.50 LPA | ₹9.20 LPA | 96.5% |
+| **Doon Business School (DBS)** | ₹40.00 LPA | ₹8.70 LPA | ₹8.00 LPA | 95.0% |
 | **Roorkee Inst. of Tech. (RIT)** | ₹15.00 LPA | ₹8.00 LPA | ₹7.20 LPA | 91.0% |
 | **Graphic Era University (GEU)** | ₹16.00 LPA | ₹7.20 LPA | ₹6.80 LPA | 92.5% |
 | **IMS Unison University** | ₹15.00 LPA | ₹6.80 LPA | ₹6.20 LPA | 88.0% |

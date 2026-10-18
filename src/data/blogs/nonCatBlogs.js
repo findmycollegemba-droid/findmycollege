@@ -58,18 +58,18 @@ For the **2027-29 admissions cycle**, candidates can strategically map non-CAT t
 
 | Institute Name | Primary Non-CAT Exams | Non-CAT Cutoff | 2-Yr Fees | Average CTC | Highest CTC |
 | --- | --- | --- | --- | --- | --- |
-| **[XLRI Jamshedpur](/colleges/xlri-jamshedpur)** | [XAT](/exams/xat) | 95-96 %ile | ₹28.50 Lakhs | ₹32.70 LPA | ₹75.00 LPA |
-| **[JBIMS Mumbai](/colleges/jbims-mumbai)** | MAH MBA CET / [CMAT](/exams/cmat) | 99.9+ %ile (All-India) | ₹6.10 Lakhs | ₹27.60 LPA | ₹42.00 LPA |
-| **[XIMB Bhubaneswar](/colleges/ximb-bhubaneswar)** | [XAT](/exams/xat) / XGMT | 91-93 %ile | ₹20.50 Lakhs | ₹19.53 LPA | ₹71.50 LPA |
-| **[SIMSREE Mumbai](/colleges/simsREE-mumbai)** | MAH MBA CET / [CMAT](/exams/cmat) | 99.7+ %ile | ₹1.50 Lakhs | ₹15.20 LPA | ₹21.50 LPA |
-| **[Great Lakes (GLIM Chennai)](/colleges/great-lakes-chennai)** | [XAT](/exams/xat) / [CMAT](/exams/cmat) | XAT 85% / CMAT 95% | ₹18.90 Lakhs | ₹15.10 LPA | ₹34.00 LPA |
-| **[GIM Goa](/colleges/gim-goa)** | [XAT](/exams/xat) / [CMAT](/exams/cmat) | XAT 85% / CMAT 95% | ₹19.40 Lakhs | ₹14.80 LPA | ₹55.00 LPA |
-| **[IMT Ghaziabad](/colleges/imt-ghaziabad)** | [XAT](/exams/xat) | 90-92 %ile | ₹21.50 Lakhs | ₹17.35 LPA | ₹65.60 LPA |
-| **[TAPMI Manipal](/colleges/tapmi-manipal)** | [XAT](/exams/xat) | 85-88 %ile | ₹18.50 Lakhs | ₹14.80 LPA | ₹24.80 LPA |
+| **[XLRI Jamshedpur](/colleges/xlri-jamshedpur)** | [XAT](/exams/xat) | 95-96 %ile | ₹28.60 Lakhs | ₹29.89 LPA | ₹75.00 LPA |
+| **[JBIMS Mumbai](/colleges/jbims-mumbai)** | MAH MBA CET / [CMAT](/exams/cmat) | 99.9+ %ile (All-India) | ₹6.10 Lakhs | ₹26.12 LPA | ₹44.00 LPA |
+| **[XIMB Bhubaneswar](/colleges/ximb-bhubaneswar)** | [XAT](/exams/xat) / XGMT | 91-93 %ile | ₹20.90 Lakhs | ₹19.53 LPA | ₹71.50 LPA |
+| **[SIMSREE Mumbai](/colleges/simsree-mumbai)** | MAH MBA CET / [CMAT](/exams/cmat) | 99.7+ %ile | ₹1.38 Lakhs | ₹15.19 LPA | ₹21.53 LPA |
+| **[Great Lakes (GLIM Chennai)](/colleges/great-lakes-chennai)** | [XAT](/exams/xat) / [CMAT](/exams/cmat) | XAT 85% / CMAT 95% | ₹19.65 Lakhs | ₹15.10 LPA | ₹37.00 LPA |
+| **[GIM Goa](/colleges/gim-goa)** | [XAT](/exams/xat) / [CMAT](/exams/cmat) | XAT 85% / CMAT 95% | ₹19.40 Lakhs | ₹15.12 LPA | ₹60.40 LPA |
+| **[IMT Ghaziabad](/colleges/imt-ghaziabad)** | [XAT](/exams/xat) | 90-92 %ile | ₹21.53 Lakhs | ₹17.35 LPA | ₹65.60 LPA |
+| **[TAPMI Manipal](/colleges/tapmi-manipal)** | [XAT](/exams/xat) | 85-88 %ile | ₹17.34 Lakhs | ₹13.84 LPA | ₹32.02 LPA |
 | **[WeSchool (Welingkar Mumbai)](/colleges/welingkar-mumbai)** | [CMAT](/exams/cmat) / [XAT](/exams/xat) / ATMA | CMAT 85% / CET 90% | ₹14.50 Lakhs | ₹12.50 LPA | ₹25.40 LPA |
-| **[Jaipuria Institute of Mgmt](/colleges/jaipuria-institute-of-management-jaipur)** | [CMAT](/exams/cmat) / [MAT](/exams/mat) / [XAT](/exams/xat) | CMAT 75% / MAT 80% | ₹14.75 Lakhs | ₹9.50 LPA | ₹22.00 LPA |
+| **[Jaipuria Institute of Mgmt (Jaipur)](/colleges/jaipuria-institute-of-management-jaipur)** | [CMAT](/exams/cmat) / [MAT](/exams/mat) / [XAT](/exams/xat) | CMAT 75% / MAT 80% | ₹12.75 Lakhs | ₹10.50 LPA | ₹22.00 LPA |
 | **[Christ University Bengaluru](/colleges/christ-university-bangalore)** | [MAT](/exams/mat) / [CMAT](/exams/cmat) / [XAT](/exams/xat) | MAT 75% / CMAT 70% | ₹9.50 Lakhs | ₹8.50 LPA | ₹16.00 LPA |
-| **[NDIM New Delhi](/colleges/new-delhi-institute-of-management)** | [MAT](/exams/mat) / [CMAT](/exams/cmat) / [XAT](/exams/xat) | MAT 70% / CMAT 65% | ₹11.50 Lakhs | ₹8.80 LPA | ₹16.50 LPA |
+| **[NDIM New Delhi](/colleges/new-delhi-institute-of-management)** | [MAT](/exams/mat) / [CMAT](/exams/cmat) / [XAT](/exams/xat) | MAT 70% / CMAT 65% | ₹11.50 Lakhs | ₹8.50 LPA | ₹16.10 LPA |
 
 ---
 
@@ -82,7 +82,7 @@ For the **2027-29 admissions cycle**, candidates can strategically map non-CAT t
 
 #### 2. The CMAT Route ([Common Management Admission Test](/exams/cmat))
 - **Exam Window:** Conducted annually by the National Testing Agency (NTA) in April/May.
-- **Top Acceptors:** [JBIMS Mumbai](/colleges/jbims-mumbai) & [SIMSREE](/colleges/simsREE-mumbai) (via Maharashtra CAP rounds for All-India candidates), Great Lakes (PGDM), [Welingkar](/colleges/welingkar-mumbai), NIBM Pune, and [PUMBA Pune](/colleges/pumba-pune).
+- **Top Acceptors:** [JBIMS Mumbai](/colleges/jbims-mumbai) & [SIMSREE](/colleges/simsree-mumbai) (via Maharashtra CAP rounds for All-India candidates), Great Lakes (PGDM), [Welingkar](/colleges/welingkar-mumbai), NIBM Pune, and [PUMBA Pune](/colleges/pumba-pune).
 - **Why Take It:** No sectional time limits. You can freely navigate between sections and manage your 180 minutes to maximize composite accuracy.
 
 #### 3. The MAT Route ([Management Aptitude Test](/exams/mat))
@@ -169,11 +169,11 @@ If you did not appear for [CAT 2026](/exams/cat) or did not achieve your expecte
 
 | College Name | Non-CAT Exams Accepted | Target Cutoff Score | 2-Yr Total Fees | Avg CTC | Highest CTC |
 | --- | --- | --- | --- | --- | --- |
-| **[Jaipuria Institute of Management](/colleges/jaipuria-institute-of-management-jaipur)** | [CMAT](/exams/cmat), [MAT](/exams/mat), [XAT](/exams/xat) | CMAT 75% / MAT 80% | ₹14.75 Lakhs | ₹9.50 LPA | ₹22.00 LPA |
-| **[MNIT Jaipur (DMS)](/colleges/dms-iit-delhi)** | [CMAT](/exams/cmat) | CMAT 85%ile+ | ₹3.60 Lakhs | ₹10.50 LPA | ₹18.00 LPA |
+| **[Jaipuria Institute of Management](/colleges/jaipuria-institute-of-management-jaipur)** | [CMAT](/exams/cmat), [MAT](/exams/mat), [XAT](/exams/xat) | CMAT 75% / MAT 80% | ₹12.75 Lakhs | ₹10.50 LPA | ₹22.00 LPA |
+| **[MNIT Jaipur (DMS)](/colleges/doms-mnit-jaipur)** | [CMAT](/exams/cmat) | CMAT 85%ile+ | ₹2.60 Lakhs | ₹9.30 LPA | ₹16.00 LPA |
 | **[IIHMR University, Jaipur](/colleges/poornima-university-jaipur)** | [CMAT](/exams/cmat), [MAT](/exams/mat), GPAT | MAT/CMAT 65%ile+ | ₹11.50 Lakhs | ₹8.80 LPA | ₹17.20 LPA |
 | **[Poddar Business School](/colleges/poddar-business-school-jaipur)** | [MAT](/exams/mat), [CMAT](/exams/cmat), ATMA | MAT 60% / CMAT 55% | ₹5.50 Lakhs | ₹8.50 LPA | ₹16.00 LPA |
-| **[IILM Academy of Higher Learning](/colleges/new-delhi-institute-of-management)** | [MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat) | MAT 65% / CMAT 60% | ₹7.00 Lakhs | ₹8.20 LPA | ₹15.00 LPA |
+| **[IILM Academy of Higher Learning](/colleges/iilm-academy-of-higher-learning-jaipur)** | [MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat) | MAT 65% / CMAT 60% | ₹7.00 Lakhs | ₹8.20 LPA | ₹26.00 LPA |
 | **[Vivekananda Global University (VGU)](/colleges/vivekananda-global-university-jaipur)** | CUET PG, [MAT](/exams/mat), [CMAT](/exams/cmat) | 50% in Entrance | ₹5.00 Lakhs | ₹6.70 LPA | ₹14.00 LPA |
 | **[Poornima University (GCEC)](/colleges/poornima-university-jaipur)** | [MAT](/exams/mat), [CMAT](/exams/cmat), Direct Merit | Merit & Interview | ₹5.25 Lakhs | ₹6.50 LPA | ₹12.50 LPA |
 
@@ -252,7 +252,7 @@ Students admitted to approved Jaipur institutions can easily secure education lo
 
 Nestled in the foothills of the Himalayas, Dehradun has evolved into one of North India's foremost educational capitals. Beyond its scenic and serene environment, Dehradun provides management students with state-of-the-art campus infrastructure, strong recruiter connections across Delhi NCR and Northern industrial corridors (SIDCUL Haridwar and Pantnagar), and a safe residential student life.
 
-For candidates targeting the **2027-29 batch**, CAT is by no means mandatory. Nearly all major institutions in Dehradun—including **[UPES School of Business](/colleges/upes-school-of-business-dehradun), [Doon Business School (DBS)](/colleges/doon-business-school-dehradun), and [Graphic Era University](/colleges/graphic-era-university-dehradun)**—admit students based on **[MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat), ATMA, UPESMET, or UKSEE state counseling**.
+For candidates targeting the **2027-29 batch**, CAT is by no means mandatory. Nearly all major institutions in Dehradun—including **[UPES School of Business](/colleges/upes-school-of-business-dehradun), [Doon Business School (DBS)](/colleges/doon-business-school-dehradun), and [Graphic Era University](/colleges/graphic-era-dehradun)**—admit students based on **[MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat), ATMA, UPESMET, or UKSEE state counseling**.
 
 ---
 
@@ -260,10 +260,10 @@ For candidates targeting the **2027-29 batch**, CAT is by no means mandatory. Ne
 
 | Business School | Non-CAT Tests Accepted | Expected Cutoff | 2-Yr Total Fees | Average CTC | Highest CTC |
 | --- | --- | --- | --- | --- | --- |
-| **[UPES School of Business](/colleges/upes-school-of-business-dehradun)** | UPESMET, [MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat) | UPESMET 50% / MAT 70% | ₹16.80 Lakhs | ₹8.66 LPA | ₹29.00 LPA |
-| **[Doon Business School (DBS)](/colleges/doon-business-school-dehradun)** | [MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat) | MAT 65% / CMAT 60% | ₹8.90 Lakhs | ₹8.70 LPA | ₹24.00 LPA |
-| **[Graphic Era University (GEU)](/colleges/graphic-era-university-dehradun)** | [MAT](/exams/mat), [CMAT](/exams/cmat), CUET PG | MAT 60% / CMAT 55% | ₹7.60 Lakhs | ₹7.50 LPA | ₹16.00 LPA |
-| **[IMS Unison University](/colleges/new-delhi-institute-of-management)** | [MAT](/exams/mat), [CMAT](/exams/cmat), UKSEE | MAT 55% / Merit | ₹5.80 Lakhs | ₹6.20 LPA | ₹14.00 LPA |
+| **[UPES School of Business](/colleges/upes-dehradun)** | UPESMET, [MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat) | UPESMET 50% / MAT 70% | ₹19.11 Lakhs | ₹10.50 LPA | ₹29.00 LPA |
+| **[Doon Business School (DBS)](/colleges/doon-business-school-dehradun)** | [MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat) | MAT 65% / CMAT 60% | ₹8.90 Lakhs | ₹8.70 LPA | ₹40.00 LPA |
+| **[Graphic Era University (GEU)](/colleges/graphic-era-dehradun)** | [MAT](/exams/mat), [CMAT](/exams/cmat), CUET PG | MAT 60% / CMAT 55% | ₹7.17 Lakhs | ₹7.50 LPA | ₹16.00 LPA |
+| **[IMS Unison University](/colleges/ims-unison-university-dehradun)** | [MAT](/exams/mat), [CMAT](/exams/cmat), UKSEE | MAT 55% / Merit | ₹4.80 Lakhs | ₹6.20 LPA | ₹13.60 LPA |
 | **[DBS Global](/colleges/doon-business-school-dehradun)** | [MAT](/exams/mat), [CMAT](/exams/cmat), ATMA | MAT 60% / CMAT 55% | ₹7.50 Lakhs | ₹7.80 LPA | ₹18.00 LPA |
 
 ---
@@ -349,12 +349,12 @@ Importantly for the **2027-29 cohort**, you do not need a CAT score to build an 
 
 | Institute Name | Accepted Non-CAT Exams | Non-CAT Cutoff | 2-Yr Total Fees | Average CTC | Highest CTC |
 | --- | --- | --- | --- | --- | --- |
-| **[PUMBA (Pune University DMS)](/colleges/pumba-pune)** | MAH MBA CET, [CMAT](/exams/cmat) | CET 99.2% / CMAT 98% | ₹1.35 Lakhs | ₹8.90 LPA | ₹18.00 LPA |
-| **[NIBM Pune](/colleges/sibm-pune)** | [CMAT](/exams/cmat), [XAT](/exams/xat) | CMAT 80-85% / XAT 75% | ₹14.50 Lakhs | ₹15.20 LPA | ₹23.50 LPA |
+| **[PUMBA (Pune University DMS)](/colleges/pumba-pune)** | MAH MBA CET, [CMAT](/exams/cmat) | CET 99.2% / CMAT 98% | ₹1.35 Lakhs | ₹8.85 LPA | ₹18.00 LPA |
+| **[NIBM Pune](/colleges/nibm-pune)** | [CMAT](/exams/cmat), [XAT](/exams/xat) | CMAT 80-85% / XAT 75% | ₹16.00 Lakhs | ₹15.22 LPA | ₹23.50 LPA |
 | **[NIA Pune](/colleges/sibm-pune)** | [CMAT](/exams/cmat), [XAT](/exams/xat) | CMAT 75-80% / XAT 70% | ₹11.00 Lakhs | ₹13.00 LPA | ₹22.00 LPA |
-| **[Balaji Univ. (BIMM / BIIB)](/colleges/sibm-pune)** | [MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat) | MAT 70% / CMAT 65% | ₹12.60 Lakhs | ₹8.80 LPA | ₹21.50 LPA |
-| **[Indira Group (IIMP Pune)](/colleges/pumba-pune)** | MAH MBA CET, [CMAT](/exams/cmat), [MAT](/exams/mat) | CET 92% / CMAT 85% | ₹4.80 Lakhs | ₹7.50 LPA | ₹16.00 LPA |
-| **[PIBM Pune](/colleges/pumba-pune)** | [CMAT](/exams/cmat), [MAT](/exams/mat), [XAT](/exams/xat) | MAT 65% / CMAT 60% | ₹8.50 Lakhs | ₹7.80 LPA | ₹17.00 LPA |
+| **[Balaji Univ. (BIMM / BIIB)](/colleges/balaji-modern-bimm-pune)** | [MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat) | MAT 70% / CMAT 65% | ₹11.80 Lakhs | ₹8.80 LPA | ₹21.50 LPA |
+| **[Indira Group (IIMP Pune)](/colleges/indira-university-pune)** | MAH MBA CET, [CMAT](/exams/cmat), [MAT](/exams/mat) | CET 92% / CMAT 85% | ₹4.80 Lakhs | ₹6.20 LPA | ₹13.60 LPA |
+| **[PIBM Pune](/colleges/pune-institute-of-business-management)** | [CMAT](/exams/cmat), [MAT](/exams/mat), [XAT](/exams/xat) | MAT 65% / CMAT 60% | ₹8.50 Lakhs | ₹10.30 LPA | ₹26.00 LPA |
 | **[MIT-WPU School of Business](/colleges/pumba-pune)** | MIT-WPU CET, [MAT](/exams/mat), [CMAT](/exams/cmat) | MAT 65% / CMAT 60% | ₹9.50 Lakhs | ₹7.20 LPA | ₹16.00 LPA |
 
 ---
