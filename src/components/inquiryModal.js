@@ -1,5 +1,6 @@
 import confetti from 'canvas-confetti';
 import { sendLeadToCRM } from '../utils/crm.js';
+import { trackLeadSubmission } from '../utils/analytics.js';
 
 // State management for Inquiry Modal
 export const inquiryModalState = {
@@ -791,6 +792,14 @@ export function initInquiryModal() {
         },
       }).catch((crmErr) => {
         console.warn('[CRM Lead Sync Error]', crmErr);
+      });
+
+      // Report Lead to Google Analytics 4
+      trackLeadSubmission({
+        formName: 'Admissions Inquiry Modal',
+        source: 'Website Modal Popup',
+        collegeName: inquiryPayload.coursePlanning?.toUpperCase() || 'MBA/PGDM',
+        leadCategory: 'counseling',
       });
 
       // Save to localStorage

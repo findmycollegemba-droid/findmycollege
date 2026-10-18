@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=%VITE_GA_MEASUREMENT_ID%"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '%VITE_GA_MEASUREMENT_ID%', {
+        send_page_view: false
+      });
+    </script>
     <!-- Primary SEO Meta Tags (Unique to CAT College Predictor) -->
     <title>CAT College Predictor 2026: IIM Call Predictor & MBA Percentile Calculator | FindMyBSchool</title>
     <meta name="title" content="CAT College Predictor 2026: IIM Call Predictor & MBA Percentile Calculator | FindMyBSchool" />
@@ -66,7 +76,7 @@
             "@type": "ContactPoint",
             "contactType": "admissions support",
             "telephone": "+91-8800126446",
-            "email": "admissions@findmybschool.com",
+            "email": "founder@findmybschool.com",
             "availableLanguage": ["English", "Hindi"]
           }
         },

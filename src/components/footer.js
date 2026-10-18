@@ -14,6 +14,16 @@ export function renderFooter() {
           <p class="footer-desc">
             India's most transparent business school search & admission guidance platform. Filter 600+ verified MBA & PGDM colleges for the 2027-29 admission session by real-time cutoffs, audited tuition fees, and recent audited placement reports — maintained by expert counsellors with 0% scrapers.
           </p>
+          <div class="footer-contact-desk">
+            <div class="footer-contact-item">
+              <span class="footer-contact-tag">Direct Founder Desk:</span>
+              <a href="mailto:founder@findmybschool.com" class="footer-contact-link">founder@findmybschool.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-tag">Admissions Helpline:</span>
+              <a href="tel:+918800126446" class="footer-contact-link">+91 88001 26446</a>
+            </div>
+          </div>
           <div class="footer-social-row">
             <a href="#" class="social-chip" title="LinkedIn">
               <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74V9.88H5.06v8.62h2.8z"/></svg>

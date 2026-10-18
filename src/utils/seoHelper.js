@@ -1,6 +1,7 @@
 import { COLLEGES_DATA } from '../data/collegesData.js';
 import { EXAMS_DATA } from '../data/examsData.js';
 import { BLOGS_DATA } from '../data/blogsData.js';
+import { trackPageView } from './analytics.js';
 
 const BASE_URL = 'https://findmybschool.com';
 
@@ -306,6 +307,9 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
 
   // 3. Inject / Update Schema.org JSON-LD Structured Data
   updateSchemaLD(meta);
+
+  // 4. Report Virtual Page View to Google Analytics (GA4)
+  trackPageView(window.location.pathname + window.location.search, meta.title);
 }
 
 /**
@@ -357,13 +361,22 @@ function updateSchemaLD(meta) {
       'postalCode': '110001',
       'addressCountry': 'IN'
     },
-    'contactPoint': {
-      '@type': 'ContactPoint',
-      'contactType': 'admissions support',
-      'telephone': '+91-8800126446',
-      'email': 'admissions@findmybschool.com',
-      'availableLanguage': ['English', 'Hindi']
-    },
+    'contactPoint': [
+      {
+        '@type': 'ContactPoint',
+        'contactType': 'admissions and founder desk',
+        'telephone': '+91-8800126446',
+        'email': 'founder@findmybschool.com',
+        'availableLanguage': ['English', 'Hindi']
+      },
+      {
+        '@type': 'ContactPoint',
+        'contactType': 'student counseling helpdesk',
+        'telephone': '+91-8800126446',
+        'email': 'admissions@findmybschool.com',
+        'availableLanguage': ['English', 'Hindi']
+      }
+    ],
     'sameAs': [
       'https://www.linkedin.com/company/findmybschool',
       'https://www.youtube.com/@findmybschool',

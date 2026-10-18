@@ -45,6 +45,7 @@ import { getAIResponse } from './utils/aiAssistant.js';
 import { COLLEGES_DATA } from './data/collegesData.js';
 import { BLOGS_DATA } from './data/blogsData.js';
 import { EXAMS_DATA } from './data/examsData.js';
+import { initGA, trackBrochureDownload, trackSearch } from './utils/analytics.js';
 
 // Application State
 const state = {
@@ -56,6 +57,9 @@ const state = {
 
 // Initialize App
 function initApp() {
+  // Initialize Google Analytics 4
+  initGA();
+
   document.documentElement.setAttribute('data-theme', 'light');
   
   // Render App Skeleton
@@ -376,6 +380,7 @@ function setupGlobalEvents() {
         const q = searchInput.value.trim();
         if (q) {
           e.preventDefault();
+          trackSearch(q);
           toggleSearchModal(false);
           navigateTo(`/colleges?search=${encodeURIComponent(q)}`);
         }
@@ -595,6 +600,9 @@ window.openCollegeBrochureModal = function(college, prefillData) {
           expectedPercentile: percentile,
         },
       }).catch((err) => console.warn('[CRM Brochure Sync Notice]', err));
+
+      // Report Lead & Brochure Download to Google Analytics 4
+      trackBrochureDownload(college);
 
       const successMsg = document.getElementById('brochureSuccessMessage');
       if (successMsg) successMsg.style.display = 'flex';

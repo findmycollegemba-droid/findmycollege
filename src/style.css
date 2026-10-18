@@ -6186,6 +6186,44 @@ button, input, select, textarea {
 .footer-desc { font-size: 0.85rem; color: #5f6368; line-height: 1.6; margin-bottom: 18px; }
 [data-theme="dark"] .footer-desc { color: var(--text-muted); }
 
+.footer-contact-desk {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 18px;
+  padding: 10px 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+[data-theme="dark"] .footer-contact-desk {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--border-subtle);
+}
+.footer-contact-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+}
+.footer-contact-tag {
+  font-weight: 600;
+  color: #475569;
+}
+[data-theme="dark"] .footer-contact-tag {
+  color: var(--text-secondary);
+}
+.footer-contact-link {
+  color: var(--zollege-blue);
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity var(--transition-fast);
+}
+.footer-contact-link:hover {
+  text-decoration: underline;
+}
+
 .footer-social-row { display: flex; gap: 8px; }
 .social-chip {
   width: 34px;

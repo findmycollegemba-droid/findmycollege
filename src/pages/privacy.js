@@ -222,7 +222,7 @@ export function renderPrivacyPage() {
                 <span class="lcc-icon">✉️</span>
                 <div>
                   <strong>Official Privacy Contact:</strong>
-                  <p><a href="mailto:privacy@findmybschool.com">privacy@findmybschool.com</a> / <a href="mailto:grievance@findmybschool.com">grievance@findmybschool.com</a></p>
+                  <p><a href="mailto:founder@findmybschool.com">founder@findmybschool.com</a> / <a href="mailto:privacy@findmybschool.com">privacy@findmybschool.com</a></p>
                 </div>
               </div>
               <div class="lcc-item">

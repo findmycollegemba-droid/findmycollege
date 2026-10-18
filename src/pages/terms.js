@@ -226,7 +226,7 @@ export function renderTermsPage() {
                 <span class="lcc-icon">✉️</span>
                 <div>
                   <strong>Email Inquiries:</strong>
-                  <p><a href="mailto:legal@findmybschool.com">legal@findmybschool.com</a> / <a href="mailto:admissions@findmybschool.com">admissions@findmybschool.com</a></p>
+                  <p><a href="mailto:founder@findmybschool.com">founder@findmybschool.com</a> / <a href="mailto:legal@findmybschool.com">legal@findmybschool.com</a></p>
                 </div>
               </div>
               <div class="lcc-item">

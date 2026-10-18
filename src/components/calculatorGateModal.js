@@ -9,6 +9,7 @@
 
 import confetti from 'canvas-confetti';
 import { sendLeadToCRM } from '../utils/crm.js';
+import { trackLeadSubmission } from '../utils/analytics.js';
 
 const STORAGE_KEY = 'fmc_calculator_student_lead';
 
@@ -288,6 +289,14 @@ export function initCalculatorGateModal() {
 
       // Send to CRM with automatic failover and cross-tab broadcast
       await sendLeadToCRM(crmPayload);
+
+      // Report Lead to Google Analytics 4
+      trackLeadSubmission({
+        formName: `${currentExamType} Calculator Gate`,
+        source: 'Percentile Predictor Gate',
+        collegeName: topCallsSummary ? topCallsSummary.split(',')[0] : '',
+        leadCategory: 'calculator_gate',
+      });
 
       // 4. Save to LocalStorage
       saveCalculatorLead(studentLead);
