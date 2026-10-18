@@ -13,8 +13,12 @@ import { NON_CAT_BLOGS } from './blogs/nonCatBlogs.js';
 import { ADMISSIONS_STRATEGY_BLOGS } from './blogs/admissionsAndStrategyBlogs.js';
 import { REGIONAL_SERIES_BLOGS } from './blogs/regionalSeriesBlogs.js';
 import { DELHI_NCR_BLOGS } from './blogs/delhiNcrBlogs.js';
+import { ADMIT_CARD_BLOGS } from './blogs/admitCardBlogs.js';
 
 export const BLOGS_DATA = [
+  // Live Exam Admit Card & Hall Ticket Guides
+  ...ADMIT_CARD_BLOGS,
+
   // Delhi-NCR Flagship Masterclasses
   ...DELHI_NCR_BLOGS,
 
