@@ -12,8 +12,12 @@ import { CAT_PERCENTILE_BLOGS } from './blogs/catPercentileBlogs.js';
 import { NON_CAT_BLOGS } from './blogs/nonCatBlogs.js';
 import { ADMISSIONS_STRATEGY_BLOGS } from './blogs/admissionsAndStrategyBlogs.js';
 import { REGIONAL_SERIES_BLOGS } from './blogs/regionalSeriesBlogs.js';
+import { DELHI_NCR_BLOGS } from './blogs/delhiNcrBlogs.js';
 
 export const BLOGS_DATA = [
+  // Delhi-NCR Flagship Masterclasses
+  ...DELHI_NCR_BLOGS,
+
   // 10 Core 2027-29 Editorial Masterclasses
   ...CAT_PERCENTILE_BLOGS,
   ...NON_CAT_BLOGS,
@@ -22,3 +26,4 @@ export const BLOGS_DATA = [
   // Regional City Series (Jaipur & Dehradun)
   ...REGIONAL_SERIES_BLOGS
 ];
+
