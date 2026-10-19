@@ -180,6 +180,21 @@ export function renderContactPage() {
                   <span>Alumni with 8+ years MBA advisory expertise</span>
                 </div>
               </div>
+
+              <!-- Immediate Helpline Callout -->
+              <div class="mentor-instant-callout" style="margin-top: 14px; padding: 10px 14px; background: #EDE7FE; border: 1px solid rgba(107, 44, 245, 0.2); border-radius: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                <div style="font-size: 0.86rem; color: #14103A; font-weight: 600;">
+                  Need answers right now? Call mentor helpline: <a href="tel:8800126446" style="color: #6B2CF5; font-weight: 800; text-decoration: none; font-family: var(--font-mono, monospace);">+91 88001 26446</a>
+                </div>
+                <div style="display: flex; gap: 8px;">
+                  <a href="tel:8800126446" style="padding: 6px 12px; background: #6B2CF5; color: #fff; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none;">
+                    📞 Call 8800126446
+                  </a>
+                  <a href="https://wa.me/918800126446?text=Hi%20Mentor%2C%20I%20am%20looking%20for%20MBA%20admission%20guidance" target="_blank" rel="noopener noreferrer" style="padding: 6px 12px; background: #25D366; color: #fff; border-radius: 6px; font-size: 0.8rem; font-weight: 700; text-decoration: none;">
+                    💬 WhatsApp
+                  </a>
+                </div>
+              </div>
             </div>
 
             <!-- Booking Form -->

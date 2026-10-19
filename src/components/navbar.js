@@ -147,6 +147,14 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
               </a>
             </li>
 
+            <!-- Live Scholarships -->
+            <li class="nav-item">
+              <a href="/scholarships" class="nav-link ${activePage === 'scholarships' ? 'active' : ''}" data-route="scholarships" style="display:flex;align-items:center;gap:6px;">
+                <span>Scholarships</span>
+                <span style="font-size:0.62rem;font-weight:900;background:linear-gradient(135deg, #FF3D8B 0%, #FF6B35 100%);color:#fff;padding:2px 6px;border-radius:4px;letter-spacing:0.04em;">LIVE</span>
+              </a>
+            </li>
+
             <!-- Blog -->
             <li class="nav-item">
               <a href="/blog" class="nav-link ${activePage === 'blog' ? 'active' : ''}" data-route="blog">
@@ -173,6 +181,12 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
             </svg>
             <span class="search-btn-label">Search</span>
           </button>
+
+          <!-- Official Phone Helpline -->
+          <a href="tel:8800126446" class="header-phone-cta" title="Call Mentor (+91 88001 26446)" style="display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono, monospace);font-weight:700;font-size:0.86rem;color:#14103A;text-decoration:none;padding:6px 12px;border-radius:9999px;background:rgba(107,44,245,0.08);border:1px solid rgba(107,44,245,0.18);">
+            <span>📞</span>
+            <span>8800126446</span>
+          </a>
 
           <!-- Free Counseling CTA -->
           <a href="/contact" class="simple-nav-cta" data-route="contact">
@@ -216,6 +230,18 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
             <span class="m-bot-arrow">→</span>
           </div>
 
+          <!-- Mobile Direct Mentor Call Strip -->
+          <div style="margin: 10px 0 14px 0; padding: 12px; background: #EDE7FE; border-radius: 12px; display: flex; align-items: center; justify-content: space-between;">
+            <div>
+              <div style="font-size: 0.74rem; font-weight: 700; color: #6B2CF5; text-transform: uppercase;">Official Mentor Helpline</div>
+              <a href="tel:8800126446" style="font-family: var(--font-mono, monospace); font-weight: 800; font-size: 0.95rem; color: #14103A; text-decoration: none;">+91 88001 26446</a>
+            </div>
+            <div style="display: flex; gap: 6px;">
+              <a href="tel:8800126446" style="padding: 6px 10px; background: #6B2CF5; color: #fff; border-radius: 6px; font-size: 0.78rem; font-weight: 700; text-decoration: none;">Call</a>
+              <a href="https://wa.me/918800126446?text=Hi%20Mentor%2C%20I%20need%20MBA%20admission%20guidance" target="_blank" rel="noopener noreferrer" style="padding: 6px 10px; background: #25D366; color: #fff; border-radius: 6px; font-size: 0.78rem; font-weight: 700; text-decoration: none;">WhatsApp</a>
+            </div>
+          </div>
+
           <a href="/" class="mobile-nav-link ${activePage === 'home' ? 'active' : ''}" data-route="home">
             <span>🏠 Home</span>
           </a>
@@ -252,6 +278,10 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
           <a href="/mock-test" class="mobile-nav-link ${activePage === 'mock-test' ? 'active' : ''}" data-route="mock-test" style="display:flex;align-items:center;justify-content:space-between;">
             <span>📝 Free Mock Tests (CAT, XAT...)</span>
             <span style="font-size:0.65rem;font-weight:900;background:#10b981;color:#fff;padding:2px 6px;border-radius:4px;">100% FREE</span>
+          </a>
+          <a href="/scholarships" class="mobile-nav-link ${activePage === 'scholarships' ? 'active' : ''}" data-route="scholarships" style="display:flex;align-items:center;justify-content:space-between;">
+            <span>💰 Live MBA Scholarships (Up to ₹25L)</span>
+            <span style="font-size:0.65rem;font-weight:900;background:linear-gradient(135deg, #FF3D8B 0%, #FF6B35 100%);color:#fff;padding:2px 6px;border-radius:4px;">LIVE NOW</span>
           </a>
           <a href="/blog" class="mobile-nav-link ${activePage === 'blog' ? 'active' : ''}" data-route="blog">📰 Strategy Blog</a>
           <a href="/contact" class="mobile-nav-link ${activePage === 'contact' ? 'active' : ''}" data-route="contact">📞 Contact & Free Counseling</a>

@@ -1632,14 +1632,17 @@ function renderScorecardAndSolutions(scoreData) {
       <div class="scorecard-footer-cta">
         <div class="cta-content">
           <h4>Aiming for a 99+ Percentile in ${test.shortTitle}?</h4>
-          <p>Get a personalized 1-on-1 analysis session with a 99%ile IIM/XLRI mentor to plug your accuracy leaks.</p>
+          <p>Get a personalized 1-on-1 analysis session with a 99%ile IIM/XLRI mentor to plug your accuracy leaks. Call/WhatsApp Helpline: <strong>+91 88001 26446</strong></p>
         </div>
         <div class="cta-actions">
-          <a href="/contact" class="btn-book-counseling">
-            Book Free 1-on-1 Mentor Call
+          <a href="tel:8800126446" class="btn-book-counseling" style="display:inline-flex;align-items:center;gap:6px;">
+            <span>📞 Call Mentor (8800126446)</span>
           </a>
-          <a href="/mock-test" class="btn-other-mocks">
-            Attempt Other Mock Tests
+          <a href="https://wa.me/918800126446?text=Hi%20Mentor%2C%20I%20just%20finished%20my%20${encodeURIComponent(test.shortTitle)}%20Mock%20Test%20and%20want%20a%201-on-1%20scorecard%20review" target="_blank" rel="noopener noreferrer" class="btn-book-counseling" style="background:#25D366;color:#fff;display:inline-flex;align-items:center;gap:6px;">
+            <span>💬 WhatsApp Mentor</span>
+          </a>
+          <a href="/contact" class="btn-other-mocks">
+            Book Scheduled Call
           </a>
         </div>
       </div>

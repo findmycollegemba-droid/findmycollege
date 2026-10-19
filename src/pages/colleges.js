@@ -1884,6 +1884,15 @@ export function renderCollegeFullPage(col) {
               <span>Download 2027-29 Brochure (PDF)</span>
             </button>
 
+            <div style="margin: 12px 0 6px 0; display: flex; flex-direction: column; gap: 8px;">
+              <a href="tel:8800126446" class="btn-sidebar-call" style="display: flex; align-items: center; justify-content: center; gap: 6px; padding: 10px; background: #EDE7FE; color: #6B2CF5; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 0.86rem;">
+                <span>📞 Call Counselor: +91 88001 26446</span>
+              </a>
+              <a href="https://wa.me/918800126446?text=Hi%2C%20I%20am%20interested%20in%20admission%20details%20for%20${encodeURIComponent(col.name)}" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 6px; padding: 10px; background: #E8FFF6; color: #037A5B; border: 1px solid #00C795; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 0.86rem;">
+                <span>💬 WhatsApp Counselor (8800126446)</span>
+              </a>
+            </div>
+
             <div class="slc-stats">
               <div class="slc-stat-row">
                 <span>Tuition Fees:</span>

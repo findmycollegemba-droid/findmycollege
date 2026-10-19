@@ -239,6 +239,16 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
       }
       break;
 
+    case 'scholarships':
+      meta.title = 'Live MBA Scholarships 2027-29: Grants up to ₹25 Lakhs | FindMyBSchool';
+      meta.description = 'Find & apply for 14+ live MBA scholarships for Session 2027-29. Need-based, corporate, government NSP, and IIM tuition fee waivers up to 100%. Free verification & application mentorship.';
+      meta.canonical = `${BASE_URL}/scholarships`;
+      meta.breadcrumbs = [
+        { name: 'Home', url: `${BASE_URL}/` },
+        { name: 'Live MBA Scholarships', url: meta.canonical }
+      ];
+      break;
+
     case 'terms':
       meta.title = 'Terms and Conditions — User Agreement & Disclaimers | FindMyBSchool';
       meta.description = 'Official Terms and Conditions for using FindMyBSchool.com services, calculators, college comparisons, and admission guidance portals.';

@@ -987,6 +987,12 @@ function generateCollegeRecommendations() {
     // 4. Action bar below results
     const actionToolbarHtml = `
       <div class="fmc-results-toolbar">
+        <a href="tel:8800126446" class="fmc-call-mentor-btn" style="display:flex;align-items:center;justify-content:center;gap:6px;background:#EDE7FE;color:#6B2CF5;padding:8px 12px;border-radius:8px;font-weight:700;text-decoration:none;font-size:0.84rem;">
+          <span>📞 Call Senior Mentor (+91 88001 26446)</span>
+        </a>
+        <a href="https://wa.me/918800126446?text=Hi%20Mentor%2C%20I%20used%20FindMyBSchool%20Bot%20and%20need%20expert%20guidance%20on%20my%20college%20shortlist" target="_blank" rel="noopener noreferrer" style="display:flex;align-items:center;justify-content:center;gap:6px;background:#E8FFF6;color:#037A5B;border:1px solid #00C795;padding:8px 12px;border-radius:8px;font-weight:700;text-decoration:none;font-size:0.84rem;">
+          <span>💬 WhatsApp Mentor (8800126446)</span>
+        </a>
         <a href="/colleges" class="fmc-portal-link-btn" id="fmcExplorePortalBtn">
           <span>Explore All 600+ Colleges on Directory</span>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m9 18 6-6-6-6"/></svg>

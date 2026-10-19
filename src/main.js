@@ -28,6 +28,8 @@ import { renderAiChatPage } from './pages/aiChat.js';
 import { renderTermsPage } from './pages/terms.js';
 import { renderPrivacyPage } from './pages/privacy.js';
 import { renderMockTestPage, initMockTestEvents } from './pages/mockTest.js';
+import { renderScholarshipsPage, initScholarshipsInteractions } from './pages/scholarships.js';
+import './scholarships.css';
 import { updatePageSEO } from './utils/seoHelper.js';
 import { renderChatBotWidget, initChatBot, openChatBot } from './components/chatBot.js';
 import { renderInquiryModal, initInquiryModal, openInquiryModal } from './components/inquiryModal.js';
@@ -171,7 +173,7 @@ function handleRouteChange() {
         window.history.replaceState(null, '', `/programs/${encodeURIComponent(pSub.toLowerCase())}`);
         pathname = `/programs/${encodeURIComponent(pSub.toLowerCase())}`;
       }
-    } else if (['colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat', 'terms', 'privacy', 'mock-test', 'free-mock-test'].includes(hash.split('?')[0])) {
+    } else if (['colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat', 'terms', 'privacy', 'mock-test', 'free-mock-test', 'scholarships', 'scholarship'].includes(hash.split('?')[0])) {
       const cleanPath = '/' + hash.split('?')[0];
       const q = hash.includes('?') ? '?' + hash.split('?')[1] : '';
       window.history.replaceState(null, '', cleanPath + q);
@@ -271,9 +273,12 @@ function handleRouteChange() {
     page = 'terms';
   } else if (pathname === '/privacy' || pathname === '/privacy-policy') {
     page = 'privacy';
-  } else if (pathname === '/inquiry' || pathname === '/apply') {
-    page = 'home';
-    setTimeout(() => openInquiryModal(), 150);
+  } else if (pathname === '/scholarships' || pathname === '/scholarship') {
+    page = 'scholarships';
+    sub = null;
+  } else if (pathname.startsWith('/scholarships/')) {
+    page = 'scholarships';
+    sub = decodeURIComponent(pathname.replace('/scholarships/', '').trim());
   } else if (pathname === '/search') {
     page = 'colleges';
   } else {
@@ -345,6 +350,10 @@ function handleRouteChange() {
     case 'mock-test':
       mainEl.innerHTML = renderMockTestPage(sub);
       initMockTestEvents();
+      break;
+    case 'scholarships':
+      mainEl.innerHTML = renderScholarshipsPage(sub);
+      initScholarshipsInteractions();
       break;
   }
 

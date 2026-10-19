@@ -36,7 +36,13 @@ export function renderAiChatPage() {
             </div>
           </div>
 
-          <div class="ai-header-actions">
+          <div class="ai-header-actions" style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <a href="tel:8800126446" class="ai-action-btn" title="Call Human Mentor (+91 88001 26446)" style="color: #6B2CF5; text-decoration: none; font-weight: 700;">
+              <span>📞 Mentor: 8800126446</span>
+            </a>
+            <a href="https://wa.me/918800126446?text=Hi%20Mentor%2C%20I%20am%20chatting%20with%20AdmitIQ%20and%20want%20to%20speak%20with%20a%20human%20mentor" target="_blank" rel="noopener noreferrer" class="ai-action-btn" style="background: #25D366; color: #fff; text-decoration: none; border-color: #25D366; font-weight: 700;">
+              <span>💬 WhatsApp</span>
+            </a>
             <button class="ai-action-btn" id="clearChatBtn" title="Clear Chat History">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
               <span>Reset Chat</span>

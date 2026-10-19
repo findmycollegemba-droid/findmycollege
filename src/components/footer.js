@@ -61,6 +61,7 @@ export function renderFooter() {
           <h4 class="footer-heading">Calculators & Tools</h4>
           <ul class="footer-links-list">
             <li><a href="/mock-test" data-route="mock-test" style="color:#10b981;font-weight:700;">⚡ All India Free Mock CBT</a></li>
+            <li><a href="/scholarships" data-route="scholarships" style="color:#6B2CF5;font-weight:800;">💰 Live MBA Scholarships 2027-29</a></li>
             <li><a href="/tools/cat-college-predictor" data-route="tools" data-sub="cat">CAT College Predictor</a></li>
             <li><a href="/tools/xat-percentile-calculator" data-route="tools" data-sub="xat">XAT Score Calculator</a></li>
             <li><a href="/tools/cmat-percentile-calculator" data-route="tools" data-sub="cmat">CMAT Score Calculator</a></li>

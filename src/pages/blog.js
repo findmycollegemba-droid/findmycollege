@@ -317,10 +317,21 @@ export function renderBlogOverview(articles) {
             <p class="mentorship-desc">
               Book a complimentary 1-on-1 strategy call with our verified IIM and XLRI alumni mentors.
             </p>
-            <a href="#contact" class="btn-gradient-pill btn-sm" data-route="contact">
-              <span>Book Free Strategy Call</span>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
-            </a>
+            <div class="widget-mentor-phone-box" style="margin-bottom: 12px; padding: 8px 12px; background: rgba(107, 44, 245, 0.08); border-radius: 8px; text-align: left;">
+              <div style="font-size: 0.72rem; font-weight: 700; color: #6B2CF5; text-transform: uppercase;">Direct Mentor Helpline</div>
+              <a href="tel:8800126446" style="font-family: var(--font-mono, monospace); font-weight: 800; font-size: 0.95rem; color: #14103A; text-decoration: none; display: flex; align-items: center; gap: 6px; margin-top: 2px;">
+                <span>📞 +91 88001 26446</span>
+              </a>
+            </div>
+            <div style="display: flex; gap: 8px; flex-direction: column;">
+              <a href="https://wa.me/918800126446?text=Hi%20FindMyBSchool%20Team%2C%20I%20need%201-on-1%20profile%20evaluation%20from%20an%20IIM%20mentor" target="_blank" rel="noopener noreferrer" class="btn-gradient-pill btn-sm" style="display: flex; align-items: center; justify-content: center; gap: 6px; background: #25D366; color: #fff; text-decoration: none;">
+                <span>💬 WhatsApp Mentor (8800126446)</span>
+              </a>
+              <a href="/contact" class="btn-gradient-pill btn-sm" data-route="contact" style="display: flex; align-items: center; justify-content: center;">
+                <span>Book Free Strategy Call</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+              </a>
+            </div>
           </div>
         </aside>
       </div>
@@ -980,9 +991,18 @@ export function renderFullArticleView(article) {
               <span class="mentor-side-badge">1-ON-1 GUIDANCE</span>
               <h4 class="mentor-side-title">Stuck in Mock Plateaus?</h4>
               <p class="mentor-side-desc">Get a 30-minute diagnostic session with an IIM alum to analyze your sectional accuracy bottlenecks.</p>
-              <a href="/contact" class="btn-outline-pill btn-sm" data-route="contact">
-                Schedule Diagnostic →
-              </a>
+              <div style="margin: 10px 0; font-size: 0.85rem; font-weight: 700; color: #14103A;">
+                <span>Direct Helpline: </span>
+                <a href="tel:8800126446" style="color: #6B2CF5; font-family: var(--font-mono, monospace); text-decoration: none;">+91 88001 26446</a>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 6px;">
+                <a href="https://wa.me/918800126446?text=Hi%20FindMyBSchool%20Mentor%2C%20I%20need%20help%20with%20my%20MBA%20mock%20percentile%20strategy" target="_blank" rel="noopener noreferrer" class="btn-outline-pill btn-sm" style="background: #E8FFF6; color: #037A5B; border-color: #00C795; font-weight: 700; text-align: center; text-decoration: none;">
+                  💬 WhatsApp: 8800126446
+                </a>
+                <a href="/contact" class="btn-outline-pill btn-sm" data-route="contact" style="text-align: center;">
+                  Schedule Diagnostic →
+                </a>
+              </div>
             </div>
           </aside>
         </div>

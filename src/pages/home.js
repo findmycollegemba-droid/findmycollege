@@ -751,14 +751,20 @@ export function renderHomePage() {
               <span class="cta-mini-tag">Free 1-on-1 Guidance</span>
               <h2 class="cta-banner-heading">Need Personalized MBA Admission Strategy?</h2>
               <p class="cta-banner-sub">Speak directly with an IIM, XLRI or FMS alumnus. We evaluate your profile, map your realistic calls, and craft an admission roadmap tailored to your target scores.</p>
+              <div class="cta-phone-strip" style="margin-top: 12px; display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.12); padding: 6px 14px; border-radius: 9999px; font-size: 0.9rem; font-weight: 700;">
+                <span>📞 Admissions Helpline:</span>
+                <a href="tel:8800126446" style="color: #FFD426; text-decoration: none; font-family: var(--font-mono, monospace);">+91 88001 26446</a>
+              </div>
             </div>
             <div class="cta-banner-actions">
-              <a href="/contact" class="btn-gradient-pill btn-lg" data-route="contact">
-                <span>Book Free Mentorship</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <a href="tel:8800126446" class="btn-gradient-pill btn-lg" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+                <span>📞 Call 8800126446</span>
               </a>
-              <a href="/ai-chat" class="btn-secondary-pill btn-lg" data-route="ai-chat">
-                <span>Chat with AdmitIQ AI</span>
+              <a href="https://wa.me/918800126446?text=Hi%20FindMyBSchool%20Team%2C%20I%20want%20to%20book%20a%20free%20mentorship%20session" target="_blank" rel="noopener noreferrer" class="btn-secondary-pill btn-lg" style="background:#25D366;color:#fff;border-color:#25D366;">
+                <span>💬 WhatsApp Mentors</span>
+              </a>
+              <a href="/contact" class="btn-secondary-pill btn-lg" data-route="contact">
+                <span>Book Free Mentorship</span>
               </a>
             </div>
           </div>

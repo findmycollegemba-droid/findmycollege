@@ -22,6 +22,7 @@ function addUrl(loc, changefreq, priority, lastmod = TODAY) {
 // 1. Core Landing & Main Pages
 addUrl(`${BASE_URL}/`, 'daily', '1.0');
 addUrl(`${BASE_URL}/colleges`, 'daily', '0.9');
+addUrl(`${BASE_URL}/scholarships`, 'daily', '0.9');
 addUrl(`${BASE_URL}/exams`, 'weekly', '0.9');
 addUrl(`${BASE_URL}/tools`, 'weekly', '0.9');
 addUrl(`${BASE_URL}/programs`, 'weekly', '0.8');

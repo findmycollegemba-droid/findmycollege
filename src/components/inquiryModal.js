@@ -501,6 +501,9 @@ export function renderInquiryModal() {
           </div>
 
           <div class="success-action-buttons">
+            <a href="tel:8800126446" class="call-mentor-direct-btn" style="display:flex;align-items:center;justify-content:center;gap:6px;background:#EDE7FE;color:#6B2CF5;border:1.5px solid #6B2CF5;padding:12px 18px;border-radius:10px;font-weight:700;text-decoration:none;font-size:0.92rem;">
+              <span>📞 Call Senior Mentor (+91 88001 26446)</span>
+            </a>
             <a href="https://api.whatsapp.com/send?phone=918800126446&text=Hi%20FindMyBSchool,%20I%20just%20submitted%20my%20MBA%20Admission%20Inquiry%20Form.%20Please%20share%20my%20college%20shortlist." target="_blank" class="whatsapp-connect-btn">
               <span>💬 Connect with Senior Mentor on WhatsApp</span>
             </a>
