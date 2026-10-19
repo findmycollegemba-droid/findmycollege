@@ -419,13 +419,13 @@ button, input, select, textarea {
 }
 
 .header-container {
-  max-width: 1320px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 12px 24px;
+  padding: 10px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 16px;
 }
 
 .brand-logo {
@@ -433,6 +433,7 @@ button, input, select, textarea {
   align-items: center;
   gap: 10px;
   text-decoration: none;
+  flex-shrink: 0;
 }
 
 .fmc-logo-badge {
@@ -454,11 +455,12 @@ button, input, select, textarea {
 
 .brand-title {
   font-family: var(--font-heading);
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-weight: 800;
   color: var(--ink);
   letter-spacing: -0.02em;
   line-height: 1;
+  white-space: nowrap;
 }
 [data-theme="dark"] .brand-title {
   color: #ffffff;
@@ -471,16 +473,19 @@ button, input, select, textarea {
 .simple-nav-cta {
   background: var(--violet);
   color: #ffffff;
-  padding: 8px 18px;
+  height: 38px;
+  padding: 0 16px;
   border-radius: var(--radius-full);
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   font-weight: 700;
   text-decoration: none;
   transition: all 0.2s ease;
   box-shadow: 0 4px 14px rgba(107, 44, 245, 0.25);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 .simple-nav-cta:hover {
   background: #551ec9;
@@ -495,32 +500,43 @@ button, input, select, textarea {
 }
 @media (min-width: 1024px) {
   .nav-pill-wrapper {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    min-width: 0;
   }
 }
 
 .nav-pill-list {
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 3px;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap;
 }
 
 .nav-item {
   position: relative;
+  flex-shrink: 0;
 }
 
 .nav-link {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  padding: 8px 14px;
-  font-size: 0.92rem;
+  gap: 6px;
+  height: 38px;
+  padding: 0 11px;
+  font-size: 0.88rem;
   font-weight: 600;
   color: var(--ink-2);
   border-radius: var(--radius-full);
   transition: all var(--transition-fast);
   text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 [data-theme="dark"] .nav-link {
   color: rgba(255, 255, 255, 0.75);
@@ -544,6 +560,23 @@ button, input, select, textarea {
 [data-theme="dark"] .nav-link.active {
   color: #ffffff;
   background: var(--violet);
+}
+
+/* Badges inside Nav Links */
+.nav-free-badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.62rem;
+  font-weight: 800;
+  line-height: 1;
+  background: #10b981;
+  color: #ffffff;
+  padding: 2.5px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  box-shadow: 0 1px 4px rgba(16, 185, 129, 0.3);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .chevron-icon {
@@ -667,20 +700,186 @@ button, input, select, textarea {
   border-color: var(--zollege-blue);
 }
 
-.search-trigger-btn {
-  width: auto;
-  padding: 0 12px;
-  gap: 8px;
+/* ============================================================
+   PREMIUM NAVBAR SEARCH BAR
+============================================================ */
+.nav-search-bar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: clamp(160px, 14vw, 210px);
+  height: 38px;
+  padding: 0 10px 0 12px;
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: var(--radius-full);
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  outline: none;
+  font-family: inherit;
+  box-shadow: 0 1px 3px rgba(20, 16, 58, 0.04);
+  flex-shrink: 0;
 }
-.search-key-hint {
-  font-size: 0.72rem;
-  font-family: var(--font-mono);
-  background: #e2e8f0;
-  padding: 2px 6px;
-  border-radius: 4px;
+
+[data-theme="dark"] .nav-search-bar {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.65);
 }
-[data-theme="dark"] .search-key-hint {
-  background: var(--bg-surface-elevated);
+
+.nav-search-bar:hover,
+.nav-search-bar:focus-visible {
+  background: #ffffff;
+  border-color: var(--violet);
+  box-shadow: 0 4px 16px rgba(107, 44, 245, 0.14);
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+
+[data-theme="dark"] .nav-search-bar:hover,
+[data-theme="dark"] .nav-search-bar:focus-visible {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--violet);
+  color: #ffffff;
+}
+
+.nav-search-inner {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.nav-search-icon {
+  flex-shrink: 0;
+  color: var(--violet);
+  transition: transform 0.2s ease;
+}
+
+.nav-search-bar:hover .nav-search-icon {
+  transform: scale(1.12);
+}
+
+.nav-search-text {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: inherit;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  user-select: none;
+}
+
+.nav-search-kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.68rem;
+  font-family: var(--font-mono, monospace);
+  font-weight: 700;
+  color: var(--violet);
+  background: rgba(107, 44, 245, 0.07);
+  border: 1px solid rgba(107, 44, 245, 0.18);
+  padding: 3px 6px;
+  border-radius: 6px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+  margin-left: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.nav-search-bar:hover .nav-search-kbd {
+  background: var(--violet);
+  color: #ffffff;
+  border-color: var(--violet);
+}
+
+[data-theme="dark"] .nav-search-kbd {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+/* Laptop screens (1024px to 1279px) compact navbar mode */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .header-container {
+    padding: 8px 16px;
+    gap: 10px;
+  }
+  .brand-title {
+    font-size: 1.22rem;
+  }
+  .fmc-logo-badge {
+    width: 34px;
+    height: 34px;
+  }
+  .nav-pill-list {
+    gap: 1px;
+  }
+  .nav-link {
+    height: 36px;
+    padding: 0 8px;
+    font-size: 0.82rem;
+    gap: 4px;
+  }
+  .nav-free-badge {
+    font-size: 0.58rem;
+    padding: 2px 4px;
+  }
+  .nav-search-bar {
+    width: 145px;
+    height: 36px;
+    padding: 0 8px 0 10px;
+  }
+  .nav-search-text {
+    font-size: 0.78rem;
+  }
+  .nav-search-kbd {
+    font-size: 0.60rem;
+    padding: 2px 4px;
+    margin-left: 4px;
+  }
+  .simple-nav-cta {
+    height: 36px;
+    padding: 0 12px;
+    font-size: 0.80rem;
+  }
+}
+
+/* Tablet & Mobile responsive styles for nav search */
+@media (max-width: 1023px) {
+  .nav-search-bar {
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  .nav-search-kbd {
+    display: none;
+  }
+  .nav-search-text {
+    display: none;
+  }
+  .nav-search-inner {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-search-bar {
+    width: 34px;
+    height: 34px;
+  }
+  .nav-search-icon {
+    width: 15px;
+    height: 15px;
+  }
 }
 
 .cta-counseling-btn {
@@ -10053,12 +10252,12 @@ html, body {
   .brand-title {
     font-size: 1.15rem;
   }
-  .search-trigger-btn {
-    padding: 0 10px;
-    height: 34px;
-  }
-  .search-btn-label {
-    display: none;
+  .nav-search-bar {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
   }
   .simple-nav-cta {
     padding: 6px 12px;

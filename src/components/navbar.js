@@ -139,11 +139,11 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
               </div>
             </li>
 
-            <!-- Free Mock Test -->
+            <!-- Mock Tests -->
             <li class="nav-item">
-              <a href="/mock-test" class="nav-link ${activePage === 'mock-test' ? 'active' : ''}" data-route="mock-test" style="display:flex;align-items:center;gap:6px;">
-                <span>Free Mock Test</span>
-                <span style="font-size:0.62rem;font-weight:900;background:#10b981;color:#fff;padding:2px 6px;border-radius:4px;letter-spacing:0.04em;">FREE</span>
+              <a href="/mock-test" class="nav-link ${activePage === 'mock-test' ? 'active' : ''}" data-route="mock-test">
+                <span>Mock Tests</span>
+                <span class="nav-free-badge">FREE</span>
               </a>
             </li>
 
@@ -165,13 +165,16 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
 
         <!-- Right Header Actions -->
         <div class="header-actions">
-          <!-- Search Button -->
-          <button class="icon-btn search-trigger-btn" id="openSearchBtn" title="Search Colleges (⌘K)">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-              <circle cx="11" cy="11" r="8"></circle>
-              <path d="m21 21-4.3-4.3"></path>
-            </svg>
-            <span class="search-btn-label">Search</span>
+          <!-- Modern Navbar Search Bar -->
+          <button class="nav-search-bar" id="openSearchBtn" title="Search Colleges, Exams & Calculators (⌘K)" aria-label="Search colleges, entrance exams and calculators">
+            <div class="nav-search-inner">
+              <svg class="nav-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+              </svg>
+              <span class="nav-search-text">Search colleges, exams...</span>
+            </div>
+            <kbd class="nav-search-kbd">⌘K</kbd>
           </button>
 
           <!-- Free Counseling CTA -->
