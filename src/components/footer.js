@@ -23,6 +23,10 @@ export function renderFooter() {
               <span class="footer-contact-tag">Admissions Helpline:</span>
               <a href="tel:+918800126446" class="footer-contact-link">+91 88001 26446</a>
             </div>
+            <div class="footer-contact-item">
+              <span class="footer-contact-tag">MBA Scholarships:</span>
+              <a href="/scholarships" class="footer-contact-link" data-route="scholarships">Apply for up to ₹25L Aid →</a>
+            </div>
           </div>
           <div class="footer-social-row">
             <a href="#" class="social-chip" title="LinkedIn">
@@ -56,12 +60,17 @@ export function renderFooter() {
           </ul>
         </div>
 
-        <!-- Links: Tools & Calculators -->
+        <!-- Links: Tools & Scholarships -->
         <div class="footer-links-col">
-          <h4 class="footer-heading">Calculators & Tools</h4>
+          <h4 class="footer-heading">Tools & Scholarships</h4>
           <ul class="footer-links-list">
+            <li>
+              <a href="/scholarships" data-route="scholarships" style="display:inline-flex;align-items:center;gap:6px;color:#6B2CF5;font-weight:800;">
+                <span>💰 Live MBA Scholarships 2027-29</span>
+                <span style="font-size:0.60rem;font-weight:900;background:linear-gradient(135deg, #FF3D8B 0%, #FF6B35 100%);color:#fff;padding:1px 6px;border-radius:4px;letter-spacing:0.04em;">UP TO ₹25L</span>
+              </a>
+            </li>
             <li><a href="/mock-test" data-route="mock-test" style="color:#10b981;font-weight:700;">⚡ All India Free Mock CBT</a></li>
-            <li><a href="/scholarships" data-route="scholarships" style="color:#6B2CF5;font-weight:800;">💰 Live MBA Scholarships 2027-29</a></li>
             <li><a href="/tools/cat-college-predictor" data-route="tools" data-sub="cat">CAT College Predictor</a></li>
             <li><a href="/tools/xat-percentile-calculator" data-route="tools" data-sub="xat">XAT Score Calculator</a></li>
             <li><a href="/tools/cmat-percentile-calculator" data-route="tools" data-sub="cmat">CMAT Score Calculator</a></li>
@@ -93,6 +102,8 @@ export function renderFooter() {
             <a href="/terms" data-route="terms">Terms & Conditions</a>
             <span>•</span>
             <a href="/privacy" data-route="privacy">Privacy Policy</a>
+            <span>•</span>
+            <a href="/scholarships" data-route="scholarships">MBA Scholarships</a>
             <span>•</span>
             <a href="/contact" data-route="contact">Counselor Directory</a>
             <span>•</span>
