@@ -174,12 +174,6 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
             <span class="search-btn-label">Search</span>
           </button>
 
-          <!-- Official Phone Helpline -->
-          <a href="tel:8800126446" class="header-phone-cta" title="Call Mentor (+91 88001 26446)" style="display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono, monospace);font-weight:700;font-size:0.86rem;color:#14103A;text-decoration:none;padding:6px 12px;border-radius:9999px;background:rgba(107,44,245,0.08);border:1px solid rgba(107,44,245,0.18);">
-            <span>📞</span>
-            <span>8800126446</span>
-          </a>
-
           <!-- Free Counseling CTA -->
           <a href="/contact" class="simple-nav-cta" data-route="contact">
             Free Counseling
