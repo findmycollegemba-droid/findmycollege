@@ -14,8 +14,12 @@ import { ADMISSIONS_STRATEGY_BLOGS } from './blogs/admissionsAndStrategyBlogs.js
 import { REGIONAL_SERIES_BLOGS } from './blogs/regionalSeriesBlogs.js';
 import { DELHI_NCR_BLOGS } from './blogs/delhiNcrBlogs.js';
 import { ADMIT_CARD_BLOGS } from './blogs/admitCardBlogs.js';
+import { COLLEGE_REVIEW_BLOGS } from './blogs/collegeReviewBlogs.js';
 
 export const BLOGS_DATA = [
+  // Flagship 2027 College Review & Placement Series
+  ...COLLEGE_REVIEW_BLOGS,
+
   // Live Exam Admit Card & Hall Ticket Guides
   ...ADMIT_CARD_BLOGS,
 

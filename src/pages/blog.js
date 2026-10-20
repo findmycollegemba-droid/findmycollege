@@ -39,6 +39,13 @@ export const CATEGORY_META = {
     badge: 'High ROI',
     gradient: 'linear-gradient(135deg, rgba(0, 199, 149, 0.12) 0%, rgba(31, 168, 245, 0.15) 100%)',
     accent: '#00C795'
+  },
+  'College Review': {
+    theme: 'theme-review',
+    icon: '🎓',
+    badge: 'College Review',
+    gradient: 'linear-gradient(135deg, rgba(107, 44, 245, 0.15) 0%, rgba(255, 61, 139, 0.12) 100%)',
+    accent: '#6B2CF5'
   }
 };
 
@@ -85,6 +92,7 @@ export function renderBlogOverview(articles) {
   // Compute category counts
   const catCounts = {
     all: BLOGS_DATA.length,
+    review: BLOGS_DATA.filter(b => b.category === 'College Review').length,
     cat: BLOGS_DATA.filter(b => b.category === 'CAT Strategy').length,
     speed: BLOGS_DATA.filter(b => b.category === 'Exam Strategy').length,
     gdpi: BLOGS_DATA.filter(b => b.category === 'GD-PI-WAT').length,
@@ -175,6 +183,10 @@ export function renderBlogOverview(articles) {
             <button class="blog-pill active" data-blog-category="all">
               <span>All Playbooks</span>
               <span class="pill-counter">${catCounts.all}</span>
+            </button>
+            <button class="blog-pill" data-blog-category="College Review">
+              <span>🎓 College Reviews</span>
+              <span class="pill-counter">${catCounts.review}</span>
             </button>
             <button class="blog-pill" data-blog-category="CAT Strategy">
               <span>🎯 CAT Percentile & Cutoffs</span>
@@ -293,15 +305,15 @@ export function renderBlogOverview(articles) {
           <div class="sidebar-widget widget-tags">
             <h3 class="widget-title">Trending Search Topics</h3>
             <div class="sidebar-tags-cloud" id="sidebarTagsCloud">
-              <button class="topic-tag-pill" data-tag-query="jaipur">#JaipurMBA</button>
-              <button class="topic-tag-pill" data-tag-query="dehradun">#DehradunMBA</button>
-              <button class="topic-tag-pill" data-tag-query="UPES">#UPESDehradun</button>
-              <button class="topic-tag-pill" data-tag-query="Doon">#DoonBusinessSchool</button>
-              <button class="topic-tag-pill" data-tag-query="without cat">#WithoutCAT</button>
+              <button class="topic-tag-pill" data-tag-query="review">#CollegeReviews</button>
+              <button class="topic-tag-pill" data-tag-query="FORE">#FOREDelhi</button>
+              <button class="topic-tag-pill" data-tag-query="IMT">#IMTGhaziabad</button>
+              <button class="topic-tag-pill" data-tag-query="IMI">#IMINewDelhi</button>
+              <button class="topic-tag-pill" data-tag-query="LBSIM">#LBSIMDelhi</button>
+              <button class="topic-tag-pill" data-tag-query="Jaipuria">#JaipuriaNoida</button>
               <button class="topic-tag-pill" data-tag-query="placement">#Placements2027</button>
               <button class="topic-tag-pill" data-tag-query="fees">#MBAFees</button>
-              <button class="topic-tag-pill" data-tag-query="low fees">#LowFeesMBA</button>
-              <button class="topic-tag-pill" data-tag-query="pgdm">#PGDM2027</button>
+              <button class="topic-tag-pill" data-tag-query="without cat">#WithoutCAT</button>
             </div>
           </div>
 
