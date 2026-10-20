@@ -473,6 +473,19 @@ function setupNavbarEvents() {
   closeDrawerBtn?.addEventListener('click', () => toggleDrawer(false));
   drawerBackdrop?.addEventListener('click', () => toggleDrawer(false));
 
+  // Auto-close drawer on link click or resize to desktop
+  drawer?.addEventListener('click', (e) => {
+    if (e.target.closest('a')) {
+      toggleDrawer(false);
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1024 && drawer?.classList.contains('open')) {
+      toggleDrawer(false);
+    }
+  });
+
   // Chatbot Nav & Mobile triggers
   const navChatbotBtn = document.getElementById('openChatbotNavBtn');
   if (navChatbotBtn) {

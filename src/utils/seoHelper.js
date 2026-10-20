@@ -326,13 +326,24 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
  * Updates comprehensive Schema.org JSON-LD structured data for SEO, GEO, and AEO.
  */
 function updateSchemaLD(meta) {
-  let scriptEl = document.getElementById('schemaStructuredData');
-  if (!scriptEl) {
+  // Query for existing schema script element by ID or type
+  let scriptEl = document.getElementById('schemaStructuredData') || document.querySelector('script[type="application/ld+json"]');
+  if (scriptEl) {
+    scriptEl.id = 'schemaStructuredData';
+  } else {
     scriptEl = document.createElement('script');
     scriptEl.id = 'schemaStructuredData';
     scriptEl.type = 'application/ld+json';
     document.head.appendChild(scriptEl);
   }
+
+  // Remove any extraneous/duplicate ld+json script tags to guarantee Google never sees duplicate schemas or multiple aggregateRatings
+  const allJsonLdScripts = document.querySelectorAll('script[type="application/ld+json"]');
+  allJsonLdScripts.forEach(el => {
+    if (el !== scriptEl) {
+      el.remove();
+    }
+  });
 
   const graph = [];
 
@@ -486,6 +497,7 @@ function updateSchemaLD(meta) {
       'aggregateRating': {
         '@type': 'AggregateRating',
         'ratingValue': '4.9',
+        'ratingCount': '1280',
         'reviewCount': '1280',
         'bestRating': '5',
         'worstRating': '1'
@@ -689,7 +701,8 @@ function updateSchemaLD(meta) {
         'ratingValue': String(col.rating || 4.5),
         'bestRating': '5',
         'worstRating': '1',
-        'ratingCount': String(col.reviewsCount || 50)
+        'ratingCount': String(col.reviewsCount || 50),
+        'reviewCount': String(col.reviewsCount || 50)
       },
       'hasCredential': {
         '@type': 'EducationalOccupationalCredential',

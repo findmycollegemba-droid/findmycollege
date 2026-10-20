@@ -190,8 +190,9 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
           </button>
         </div>
       </div>
+    </header>
 
-      <!-- Mobile Navigation Drawer -->
+    <!-- Mobile Navigation Drawer -->
       <div class="mobile-nav-drawer" id="mobileNavDrawer">
         <div class="mobile-drawer-header">
           <div class="brand-logo">
@@ -273,8 +274,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
           <a href="/ai-chat" class="mobile-nav-link ai-link ${activePage === 'ai-chat' ? 'active' : ''}" data-route="ai-chat">✨ AdmitIQ AI Assistant</a>
         </div>
       </div>
-      <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
-    </header>
+    <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
 
     <!-- Mobile Bottom App Dock (Thumb Navigation) -->
     <nav class="mobile-bottom-dock" id="mobileBottomDock" aria-label="Mobile Navigation">
