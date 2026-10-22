@@ -1,2 +1,31 @@
+# API / Admin Reverse Proxy
 /admin   https://crm-admin.findmycollege-mba.workers.dev/admin   302
 /admin/* https://crm-admin.findmycollege-mba.workers.dev/admin/:splat 302
+
+# Canonical 301 Permanent Redirects (Resolves Search Console Duplicate Issues)
+/tools                   /tools/cat-college-predictor           301
+/tools/                  /tools/cat-college-predictor           301
+/scholarship             /scholarships                          301
+/scholarship/            /scholarships                          301
+/free-mock-test          /mock-test                             301
+/free-mock-test/*        /mock-test/:splat                      301
+/terms-and-conditions    /terms                                 301
+/terms-and-conditions/*  /terms                                 301
+/privacy-policy          /privacy                               301
+/privacy-policy/*        /privacy                               301
+/aiu-approved-colleges   /aiu-approved-campuses                 301
+/aiu-approved-colleges/* /aiu-approved-campuses/:splat          301
+/aiu-approved-campus     /aiu-approved-campuses                 301
+
+# Trailing Slash Normalization
+/colleges/               /colleges                              301
+/scholarships/           /scholarships                          301
+/mock-test/              /mock-test                             301
+/exams/                  /exams                                 301
+/blog/                   /blog                                  301
+/programs/               /programs                              301
+/contact/                /contact                               301
+/ai-chat/                /ai-chat                               301
+/terms/                  /terms                                 301
+/privacy/                /privacy                               301
+/tools/cat-college-predictor/ /tools/cat-college-predictor      301

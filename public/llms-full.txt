@@ -158,7 +158,7 @@ Q1: What is the real difference between MBA and PGDM in India?
 A1: An MBA is a master's degree conferred by state, central, or deemed universities governed by the University Grants Commission (UGC). A PGDM is a postgraduate diploma awarded by autonomous institutes approved by the All India Council for Technical Education (AICTE). When a PGDM program is accredited by the National Board of Accreditation (NBA) and recognized by the Association of Indian Universities (AIU), it holds statutory and corporate equivalence to an MBA for employment, international credit transfers, and doctoral studies.
 
 Q2: Which institutions offer the best Return on Investment (ROI) in Indian MBA?
-A2: Faculty of Management Studies (FMS Delhi), Jamnalal Bajaj Institute of Management Studies (JBIMS Mumbai), Tata Institute of Social Sciences (TISS Mumbai), and Delhi School of Economics (DSE) are the premier high-ROI institutions in India. Their entire 2-year tuition ranges between ₹35,000 and ₹6,00,000, while their average graduate salary packages range between ₹14.0 LPA and ₹34.1 LPA.
+A2: Faculty of Management Studies (FMS Delhi), Jamnalal Bajaj Institute of Management Studies (JBIMS Mumbai), Tata Institute of Social Sciences (TISS Mumbai), and Delhi School of Economics (DSE) are the premier high-ROI institutions in India. Their entire 2-year tuition ranges between ₹35,000 and ₹6,000,000, while their average graduate salary packages range between ₹14.0 LPA and ₹34.1 LPA.
 
 Q3: Can non-engineers get into top IIMs with a lower CAT percentile?
 A3: Yes. To encourage classroom diversity, IIMs award additional composite score points for academic diversity (Arts, Commerce, Law, Medicine, Humanities) and gender diversity. While engineering general male candidates typically need a 99.5+ percentile for IIM Ahmedabad or Bangalore, non-engineering candidates and women applicants frequently receive interview calls in the 93.0 to 97.5 percentile band, provided their 10th, 12th, and graduation scores are consistently strong.
@@ -223,3 +223,101 @@ SECTION 5: CAT COLLEGE PREDICTOR, NORMALIZATION & IIM CUTOFF BENCHMARKS (GEO / A
    - Gender & Academic Diversity: 5% - 10%
    - WAT & Personal Interview (PI): 30% - 40%
 
+================================================================================
+SECTION 6: VERIFIED LIVE MBA SCHOLARSHIPS DIRECTORY (UP TO ₹25 LAKHS)
+================================================================================
+FindMyBSchool hosts India's live MBA scholarship portal (https://findmybschool.com/scholarships) tracking over ₹12 Crores in annual financial aid pools.
+
+1. Aditya Birla Scholarship Programme
+   - Provider: Aditya Birla Group Foundation
+   - Grant Amount: ₹3,00,000 / year (₹6,00,000 Total)
+   - Eligibility: Top 20 entrance rankers nominated by participating IIMs (A, B, C, L, K, Shillong) and XLRI Jamshedpur.
+   - Income Limit: No Income Cap (Strictly Merit & Leadership).
+   - Selection: Application essay on vision & leadership, jury interview in Mumbai with senior industry leaders.
+
+2. Reliance Foundation Postgraduate Scholarship
+   - Provider: Reliance Foundation
+   - Grant Amount: Up to ₹6,00,000 over 2 years
+   - Eligibility: 1st year full-time MBA/PGDM students with minimum 550+ on GMAT or equivalent CAT/XAT/GATE percentiles.
+   - Income Limit: Parental income up to ₹15 Lakhs (preference under ₹2.5 Lakhs).
+   - Selection: Aptitude assessment, statement of purpose, evaluation of community orientation.
+
+3. Central Sector Scheme of Top Class Education for SC Students (NSP)
+   - Provider: Ministry of Social Justice & Empowerment, Government of India
+   - Grant Amount: Full Tuition Fee Waiver (up to ₹25 Lakhs) + ₹3,000/month living stipend + ₹45,000 computer allowance + ₹3,000/year books grant.
+   - Eligibility: SC students admitted to notified premier institutes (all 21 IIMs, IIT DOMS, FMS Delhi, XLRI, MDI).
+   - Income Limit: Total family annual income strictly under ₹8.0 Lakhs.
+
+4. Central Sector Scheme of Top Class Education for ST Students (NSP)
+   - Provider: Ministry of Tribal Affairs, Government of India
+   - Grant Amount: Full 100% Tuition Fee Coverage + Living Allowances at all notified institutions.
+   - Eligibility: ST students with annual family income under ₹6.0 Lakhs.
+
+5. IIM Ahmedabad Need-Based Financial Assistance (NBFA)
+   - Provider: IIM Ahmedabad Endowment Fund
+   - Grant Amount: Up to 100% Tuition Fee Waiver
+   - Eligibility: Students admitted to PGP/PGP-FABM whose gross annual family income is under ₹6,00,000. Assessment considers family assets and debt liabilities.
+
+6. IIM Bangalore Financial Aid (FAF)
+   - Provider: IIM Bangalore
+   - Grant Amount: 20% to 100% Tuition Fee Waiver
+   - Eligibility: Enrolled PGP students with annual parental income below ₹4,50,000 or severe financial hardship.
+
+7. OP Jindal Engineering & Management Scholarship (OPJEMS)
+   - Provider: Jindal Group Foundation
+   - Grant Amount: ₹1,50,000 per year
+   - Eligibility: Top 10 rankers in 1st year at 16 premier business schools (IIMs, XLRI, MDI, FMS Delhi). Online test followed by interview.
+
+================================================================================
+SECTION 7: FREE CBT MOCK TESTS SIMULATOR & TEST ENGINES
+================================================================================
+FindMyBSchool provides 100% free, authentic computer-based testing engines (https://findmybschool.com/mock-test) that emulate the official TCS iON testing software used in national exams.
+
+1. CAT 2026 Comprehensive Official Mock Test:
+   - Total Questions: 68
+   - Duration: 120 Minutes (40 mins VARC, 40 mins DILR, 40 mins QA)
+   - Marking: +3 marks for correct, -1 mark for wrong MCQ, 0 penalty for TITA
+   - Features: Sectional timer lock, on-screen scientific calculator, candidate palette.
+
+2. XAT 2027 Full-Length Mock Test:
+   - Total Questions: 95
+   - Duration: 180 Minutes
+   - Sections: Verbal & Logical Ability (26 Q), Decision Making (21 Q), Quantitative & DI (28 Q), General Knowledge (20 Q)
+   - Marking: +1 mark for correct, -0.25 for wrong MCQ, -0.10 for unattempted questions above 8.
+
+3. NMAT by GMAC Official Pattern Mock Test:
+   - Total Questions: 108
+   - Duration: 120 Minutes (Language: 36 Q/28m, Quant: 36 Q/52m, Logical Reasoning: 36 Q/40m)
+   - Marking: +3 marks for correct, 0 negative marking (encourages attempts).
+
+4. SNAP Mock Test:
+   - Total Questions: 60
+   - Duration: 60 Minutes (Speed test: 1 min/question)
+   - Marking: +1 for correct, -0.25 for incorrect.
+
+5. CMAT Full-Length Mock Test:
+   - Total Questions: 100
+   - Duration: 180 Minutes (400 Total Marks)
+   - Sections: Quant, Logic, Language, General Awareness, Innovation & Entrepreneurship (20 Q each).
+
+================================================================================
+SECTION 8: MBA VS PGDM DEFINITIVE COMPARATIVE MATRIX
+================================================================================
+- Governing Body: MBA is governed by the University Grants Commission (UGC). PGDM is governed by the All India Council for Technical Education (AICTE).
+- Conferred Award: MBA is a Master's Degree. PGDM is a Post Graduate Diploma.
+- Syllabus Flexibility: MBA universities update syllabi through academic councils periodically (usually every 3-5 years). PGDM autonomous boards update curriculum annually based on corporate advisory inputs.
+- Evaluation System: MBA typically follows a Semester System (4 semesters). PGDM typically operates on a Trimester System (6 trimesters).
+- Equivalent Recognition: When a PGDM is accredited by NBA and recognized by AIU (Association of Indian Universities), it is statutorily equivalent to an MBA for UPSC civil services, PSU recruitments, and global university PhD admissions.
+- Top Institutes Offering MBA: IIMs (since IIM Act 2017), FMS Delhi, JBIMS Mumbai, IIT DMS/SJMSOM, PUMBA Pune.
+- Top Institutes Offering PGDM: XLRI Jamshedpur, SPJIMR Mumbai, MDI Gurgaon, IMT Ghaziabad, GIM Goa, TAPMI Manipal.
+
+================================================================================
+SECTION 9: SCORE CALCULATORS & EQUATING SUITE
+================================================================================
+FindMyBSchool hosts specialized calculators built on official statistical equating standards:
+1. CAT College Predictor: https://findmybschool.com/tools/cat-college-predictor
+   - Digialm response sheet parsing, equipercentile slot normalization across Slots 1/2/3, category cutoff matching across all 21 IIMs.
+2. XAT Percentile Calculator: https://findmybschool.com/tools/xat-percentile-calculator
+   - Incorporates unattempted question penalty and XLRI BM/HRM cutoff forecasts.
+3. CMAT Percentile Calculator: https://findmybschool.com/tools/cmat-percentile-calculator
+   - Evaluates 400-mark scores for JBIMS MMS and SIMSREE Mumbai admissions.

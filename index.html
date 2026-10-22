@@ -19,24 +19,10 @@
     <title>FindMyBSchool — Top MBA & PGDM Colleges, Fees, Cutoffs & Exam Predictors</title>
     <meta name="title" content="FindMyBSchool — Top MBA & PGDM Colleges, Fees, Cutoffs & Exam Predictors" />
     <meta name="description" content="Find your dream MBA & PGDM business school with FindMyBSchool (findmybschool.com). Compare 600+ verified B-schools, cutoffs, tuition fees, and placements with 0% scrapers." />
+    <meta name="keywords" content="MBA colleges in India, PGDM colleges, IIM cutoffs, CAT college predictor, CAT score calculator, MBA scholarships, MBA mock tests, XAT cutoffs, CMAT percentile, NIRF management rankings" />
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-    <meta name="theme-color" content="#F4F2FF" />
+    <meta name="theme-color" content="#6B2CF5" />
     <link rel="canonical" href="https://findmybschool.com/" />
-
-    <!-- Immediate Client-Side Redirection for Legacy Hash Routes -->
-    <script>
-      (function() {
-        var hash = window.location.hash || '';
-        var search = window.location.search || '';
-        if (hash === '#tools' || hash === '#tools/' || hash.indexOf('tools?sub=cat') !== -1 || hash.indexOf('tools?tool=cat') !== -1 || (search.indexOf('page=tools') !== -1 && (search.indexOf('sub=cat') !== -1 || search.indexOf('sub=') === -1))) {
-          window.location.replace('/tools/cat-college-predictor');
-        } else if (hash.indexOf('tools?sub=xat') !== -1 || hash.indexOf('tools?tool=xat') !== -1 || (search.indexOf('page=tools') !== -1 && search.indexOf('sub=xat') !== -1)) {
-          window.location.replace('/tools/xat-percentile-calculator');
-        } else if (hash.indexOf('tools?sub=cmat') !== -1 || hash.indexOf('tools?tool=cmat') !== -1 || (search.indexOf('page=tools') !== -1 && search.indexOf('sub=cmat') !== -1)) {
-          window.location.replace('/tools/cmat-percentile-calculator');
-        }
-      })();
-    </script>
 
     <!-- GEO / Local Search Optimization Tags -->
     <meta name="geo.region" content="IN-DL" />
@@ -46,17 +32,28 @@
 
     <!-- Public Search & Browser Autodiscovery -->
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="FindMyBSchool" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Open Graph / Social Meta Tags -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://findmybschool.com/" />
     <meta property="og:site_name" content="FindMyBSchool" />
+    <meta property="og:url" content="https://findmybschool.com/" />
     <meta property="og:title" content="FindMyBSchool — Top MBA & PGDM Colleges, Fees, Cutoffs & Exam Predictors" />
     <meta property="og:description" content="Compare 600+ verified B-schools, cutoffs, tuition fees, and placements with transparent admission guidance on FindMyBSchool." />
+    <meta property="og:image" content="https://findmybschool.com/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="FindMyBSchool — India’s Transparent MBA &amp; PGDM Admissions Portal" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@findmybschool" />
+    <meta name="twitter:creator" content="@findmybschool" />
     <meta name="twitter:url" content="https://findmybschool.com/" />
     <meta name="twitter:title" content="FindMyBSchool — Top MBA & PGDM Colleges, Fees, Cutoffs & Exam Predictors" />
     <meta name="twitter:description" content="Compare 600+ verified B-schools, cutoffs, tuition fees, and placements with transparent admission guidance on FindMyBSchool." />
+    <meta name="twitter:image" content="https://findmybschool.com/og-image.svg" />
 
     <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -65,9 +62,151 @@
 
     <!-- Favicon Icon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236B2CF5'><path d='M22 10v6M2 10l10-5 10 5-10 5z'/><path d='M6 12v5c3 3 9 3 12 0v-5'/></svg>" />
+
+    <!-- Static Initial Schema.org Structured Data (Updated dynamically by seoHelper) -->
+    <script id="schemaStructuredData" type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://findmybschool.com/#website",
+          "url": "https://findmybschool.com/",
+          "name": "FindMyBSchool",
+          "alternateName": ["FMBS", "Find My B-School India"],
+          "description": "India’s transparent MBA & PGDM college search engine, cutoffs, audited tuition fees, and percentile calculators.",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://findmybschool.com/colleges?search={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          },
+          "inLanguage": "en-IN"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://findmybschool.com/#organization",
+          "name": "FindMyBSchool",
+          "url": "https://findmybschool.com/",
+          "logo": "https://findmybschool.com/favicon.svg",
+          "description": "Verified business school admissions guidance portal helping aspirants compare 600+ MBA & PGDM colleges with audited fees and placement data.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Connaught Place",
+            "addressLocality": "New Delhi",
+            "addressRegion": "Delhi",
+            "postalCode": "110001",
+            "addressCountry": "IN"
+          },
+          "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "contactType": "admissions and founder desk",
+              "telephone": "+91-8800126446",
+              "email": "founder@findmybschool.com",
+              "availableLanguage": ["English", "Hindi"]
+            },
+            {
+              "@type": "ContactPoint",
+              "contactType": "student counseling helpdesk",
+              "telephone": "+91-8800126446",
+              "email": "admissions@findmybschool.com",
+              "availableLanguage": ["English", "Hindi"]
+            }
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/company/findmybschool",
+            "https://www.youtube.com/@findmybschool",
+            "https://www.instagram.com/findmybschool"
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- Semantic Crawlable Fallback for Search Engines & Non-JS Clients (Hydrated instantly by main.js) -->
+      <header style="padding: 20px 24px; border-bottom: 1px solid #E2E8F0; text-align: center; background: #FAFAFE;">
+        <a href="/" style="font-weight: 800; font-size: 1.5rem; color: #6B2CF5; text-decoration: none; letter-spacing: -0.02em;">FindMyBSchool</a>
+        <p style="margin: 4px 0 0; color: #64748B; font-size: 0.95rem;">India’s Verified MBA &amp; PGDM Admissions Portal • Session 2027-29</p>
+      </header>
+      <main style="max-width: 1100px; margin: 32px auto; padding: 0 20px; font-family: system-ui, -apple-system, sans-serif;">
+        <h1 style="font-size: 2rem; font-weight: 800; color: #0F172A; line-height: 1.25;">
+          Find Top MBA &amp; PGDM Colleges, Fees, Cutoffs, Scholarships &amp; Exam Predictors
+        </h1>
+        <p style="color: #475569; font-size: 1.1rem; line-height: 1.6; margin-top: 14px;">
+          FindMyBSchool helps MBA and PGDM aspirants evaluate 600+ verified Indian business schools with audited 2-year tuition fees, real CAT/XAT/CMAT cutoffs, and recent placement reports with 0% scrapers.
+        </p>
+
+        <!-- Core Portal Navigation Links -->
+        <section style="margin-top: 28px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 24px;">
+          <h2 style="font-size: 1.35rem; font-weight: 700; color: #1E293B; margin-bottom: 16px;">Core Admissions Tools &amp; Directories</h2>
+          <ul style="line-height: 2.1; font-size: 1.02rem; color: #6B2CF5; padding-left: 20px;">
+            <li><a href="/colleges" style="color: #6B2CF5; text-decoration: underline; font-weight: 600;">Explore 600+ MBA &amp; PGDM Colleges in India</a> — Filter by NIRF rank, city, fees &amp; average package.</li>
+            <li><a href="/tools/cat-college-predictor" style="color: #6B2CF5; text-decoration: underline; font-weight: 600;">CAT College Predictor 2026 &amp; Percentile Calculator</a> — Slot 1/2/3 normalization &amp; IIM call forecasts.</li>
+            <li><a href="/scholarships" style="color: #6B2CF5; text-decoration: underline; font-weight: 600;">Live MBA Scholarships 2027-29 (Up to ₹25 Lakhs)</a> — Need-based, merit &amp; corporate aid schemes.</li>
+            <li><a href="/aiu-approved-campuses" style="color: #6B2CF5; text-decoration: underline; font-weight: 600;">AIU Approved Campuses (City-Wise)</a> — 360+ verified MBA &amp; PGDM colleges across 9 cities (Delhi NCR, Pune, Mumbai, Bangalore, Jaipur, Kolkata, Dehradun, Lucknow, Indore).</li>
+            <li><a href="/mock-test" style="color: #6B2CF5; text-decoration: underline; font-weight: 600;">All-India Free MBA Mock Tests (TCS iON CBT Interface)</a> — Official simulated test papers with instant analysis.</li>
+            <li><a href="/exams" style="color: #6B2CF5; text-decoration: underline; font-weight: 600;">National MBA Entrance Exams (CAT, XAT, SNAP, NMAT, CMAT, MAT)</a> — Dates, patterns &amp; syllabus.</li>
+            <li><a href="/programs/compare" style="color: #6B2CF5; text-decoration: underline; font-weight: 600;">MBA vs PGDM Comparison Dossier</a> — Accreditation, curriculum flexibility &amp; corporate ROI.</li>
+            <li><a href="/blog" style="color: #6B2CF5; text-decoration: underline; font-weight: 600;">Editorial Strategy Blog &amp; Preparation Guides</a> — Interview tips and topper preparation strategies.</li>
+            <li><a href="/contact" style="color: #6B2CF5; text-decoration: underline; font-weight: 600;">Free MBA Admission Counseling</a> — 1-on-1 profile evaluation with expert mentors.</li>
+          </ul>
+        </section>
+
+        <!-- Premier Business Schools Links -->
+        <section style="margin-top: 28px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 24px;">
+          <h2 style="font-size: 1.35rem; font-weight: 700; color: #1E293B; margin-bottom: 16px;">Top MBA Colleges &amp; Profiles</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; font-size: 0.96rem;">
+            <a href="/colleges/iim-ahmedabad" style="color: #1E293B; text-decoration: none; padding: 8px 12px; background: #F8FAFC; border-radius: 6px; border: 1px solid #E2E8F0;">🏛️ <strong>IIM Ahmedabad</strong> (PGP)</a>
+            <a href="/colleges/iim-bangalore" style="color: #1E293B; text-decoration: none; padding: 8px 12px; background: #F8FAFC; border-radius: 6px; border: 1px solid #E2E8F0;">🏛️ <strong>IIM Bangalore</strong> (PGP)</a>
+            <a href="/colleges/iim-calcutta" style="color: #1E293B; text-decoration: none; padding: 8px 12px; background: #F8FAFC; border-radius: 6px; border: 1px solid #E2E8F0;">🏛️ <strong>IIM Calcutta</strong> (MBA)</a>
+            <a href="/colleges/fms-delhi" style="color: #1E293B; text-decoration: none; padding: 8px 12px; background: #F8FAFC; border-radius: 6px; border: 1px solid #E2E8F0;">🏛️ <strong>FMS Delhi</strong> (Highest ROI)</a>
+            <a href="/colleges/xlri-jamshedpur" style="color: #1E293B; text-decoration: none; padding: 8px 12px; background: #F8FAFC; border-radius: 6px; border: 1px solid #E2E8F0;">🏛️ <strong>XLRI Jamshedpur</strong> (BM/HRM)</a>
+            <a href="/colleges/spjimr-mumbai" style="color: #1E293B; text-decoration: none; padding: 8px 12px; background: #F8FAFC; border-radius: 6px; border: 1px solid #E2E8F0;">🏛️ <strong>SPJIMR Mumbai</strong> (PGDM)</a>
+            <a href="/colleges/iim-lucknow" style="color: #1E293B; text-decoration: none; padding: 8px 12px; background: #F8FAFC; border-radius: 6px; border: 1px solid #E2E8F0;">🏛️ <strong>IIM Lucknow</strong> (PGP)</a>
+            <a href="/colleges/iim-kozhikode" style="color: #1E293B; text-decoration: none; padding: 8px 12px; background: #F8FAFC; border-radius: 6px; border: 1px solid #E2E8F0;">🏛️ <strong>IIM Kozhikode</strong> (PGP)</a>
+            <a href="/colleges/iim-indore" style="color: #1E293B; text-decoration: none; padding: 8px 12px; background: #F8FAFC; border-radius: 6px; border: 1px solid #E2E8F0;">🏛️ <strong>IIM Indore</strong> (PGP)</a>
+            <a href="/colleges/mdi-gurgaon" style="color: #1E293B; text-decoration: none; padding: 8px 12px; background: #F8FAFC; border-radius: 6px; border: 1px solid #E2E8F0;">🏛️ <strong>MDI Gurgaon</strong> (PGDM)</a>
+            <a href="/colleges/jbims-mumbai" style="color: #1E293B; text-decoration: none; padding: 8px 12px; background: #F8FAFC; border-radius: 6px; border: 1px solid #E2E8F0;">🏛️ <strong>JBIMS Mumbai</strong> (MMS)</a>
+            <a href="/colleges/iift-delhi" style="color: #1E293B; text-decoration: none; padding: 8px 12px; background: #F8FAFC; border-radius: 6px; border: 1px solid #E2E8F0;">🏛️ <strong>IIFT Delhi</strong> (MBA-IB)</a>
+          </div>
+        </section>
+
+        <!-- MBA Colleges by City -->
+        <section style="margin-top: 28px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 24px;">
+          <h2 style="font-size: 1.35rem; font-weight: 700; color: #1E293B; margin-bottom: 16px;">Top MBA Hubs by City</h2>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+            <a href="/colleges/city/delhi" style="padding: 6px 14px; background: #F1F5F9; border-radius: 20px; color: #334155; text-decoration: none; font-weight: 600;">MBA Colleges in Delhi-NCR</a>
+            <a href="/colleges/city/mumbai" style="padding: 6px 14px; background: #F1F5F9; border-radius: 20px; color: #334155; text-decoration: none; font-weight: 600;">MBA Colleges in Mumbai</a>
+            <a href="/colleges/city/bangalore" style="padding: 6px 14px; background: #F1F5F9; border-radius: 20px; color: #334155; text-decoration: none; font-weight: 600;">MBA Colleges in Bengaluru</a>
+            <a href="/colleges/city/pune" style="padding: 6px 14px; background: #F1F5F9; border-radius: 20px; color: #334155; text-decoration: none; font-weight: 600;">MBA Colleges in Pune</a>
+            <a href="/colleges/city/hyderabad" style="padding: 6px 14px; background: #F1F5F9; border-radius: 20px; color: #334155; text-decoration: none; font-weight: 600;">MBA Colleges in Hyderabad</a>
+            <a href="/colleges/city/kolkata" style="padding: 6px 14px; background: #F1F5F9; border-radius: 20px; color: #334155; text-decoration: none; font-weight: 600;">MBA Colleges in Kolkata</a>
+            <a href="/colleges/city/chennai" style="padding: 6px 14px; background: #F1F5F9; border-radius: 20px; color: #334155; text-decoration: none; font-weight: 600;">MBA Colleges in Chennai</a>
+            <a href="/colleges/city/ahmedabad" style="padding: 6px 14px; background: #F1F5F9; border-radius: 20px; color: #334155; text-decoration: none; font-weight: 600;">MBA Colleges in Ahmedabad</a>
+          </div>
+        </section>
+
+        <!-- Direct Answer / AEO Key Questions & Answers -->
+        <section style="margin-top: 28px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 24px;">
+          <h2 style="font-size: 1.35rem; font-weight: 700; color: #1E293B; margin-bottom: 16px;">Frequently Asked Questions (Admissions &amp; Cutoffs)</h2>
+          <div style="line-height: 1.7; color: #334155;">
+            <p><strong>Q: What is the main difference between an MBA and a PGDM degree in India?</strong><br />
+            A: An MBA is a master's degree granted by university-affiliated institutions (e.g., FMS Delhi, JBIMS Mumbai, PUMBA) under UGC. A PGDM is an autonomous diploma awarded by industry-focused institutions (e.g., IIMs, XLRI, SPJIMR, MDI) approved by AICTE. Both are treated as fully equivalent in corporate hiring and government recruitments when AIU accredited.</p>
+            
+            <p style="margin-top: 14px;"><strong>Q: Which MBA colleges in India provide the highest Return on Investment (ROI)?</strong><br />
+            A: The highest ROI business schools in India are FMS Delhi (2-year fees ~₹2.0 Lakhs with average CTC of ₹34.1 LPA), JBIMS Mumbai (fees ~₹6.0 Lakhs with average CTC of ₹28.0 LPA), and TISS Mumbai (fees ~₹2.5 Lakhs with average CTC of ₹27.2 LPA).</p>
+
+            <p style="margin-top: 14px;"><strong>Q: How does the CAT slot normalization work across Slot 1, Slot 2, and Slot 3?</strong><br />
+            A: CAT conducts slot normalization using the equipercentile equating method to adjust for differences in section difficulty. Raw scores are converted to scaled scores based on percentile equivalence across morning, afternoon, and evening test slots.</p>
+          </div>
+        </section>
+      </main>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

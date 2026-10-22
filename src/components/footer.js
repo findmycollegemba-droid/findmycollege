@@ -24,8 +24,8 @@ export function renderFooter() {
               <a href="tel:+918800126446" class="footer-contact-link">+91 88001 26446</a>
             </div>
             <div class="footer-contact-item">
-              <span class="footer-contact-tag">MBA Scholarships:</span>
-              <a href="/scholarships" class="footer-contact-link" data-route="scholarships">Apply for up to ₹25L Aid →</a>
+              <span class="footer-contact-tag">AIU Campuses:</span>
+              <a href="/aiu-approved-campuses" class="footer-contact-link" data-route="aiu-approved-campuses">Explore 9 City Hubs (360+) →</a>
             </div>
           </div>
           <div class="footer-social-row">
@@ -42,6 +42,33 @@ export function renderFooter() {
               <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.458c.535-.197 1.006.128.832.943z"/></svg>
             </a>
           </div>
+        </div>
+
+        <!-- Links: AIU Approved Campuses (City-Wise) -->
+        <div class="footer-links-col">
+          <h4 class="footer-heading">AIU Approved Campuses</h4>
+          <ul class="footer-links-list">
+            <li>
+              <a href="/aiu-approved-campuses" data-route="aiu-approved-campuses" style="color:#6B2CF5;font-weight:800;display:inline-flex;align-items:center;gap:5px;">
+                <span>🏛️ All 9 AIU City Hubs</span>
+                <span style="font-size:0.62rem;background:#EDE9FE;color:#6B2CF5;padding:1px 6px;border-radius:4px;font-weight:900;">Official Gazette</span>
+              </a>
+            </li>
+            <li><a href="/aiu-approved-campuses/delhi-ncr" data-route="aiu-approved-campuses" data-sub="delhi-ncr">Delhi NCR (35 AIU / 107 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/pune" data-route="aiu-approved-campuses" data-sub="pune">Pune (14 AIU / 58 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/mumbai" data-route="aiu-approved-campuses" data-sub="mumbai">Mumbai (10 AIU / 40 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/bangalore" data-route="aiu-approved-campuses" data-sub="bangalore">Bangalore (15 AIU / 37 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/jaipur" data-route="aiu-approved-campuses" data-sub="jaipur">Jaipur (3 AIU / 41 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/kolkata" data-route="aiu-approved-campuses" data-sub="kolkata">Kolkata (5 AIU / 37 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/dehradun" data-route="aiu-approved-campuses" data-sub="dehradun">Dehradun (UGC MBA Hub)</a></li>
+            <li><a href="/aiu-approved-campuses/lucknow" data-route="aiu-approved-campuses" data-sub="lucknow">Lucknow (2 AIU / 22 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/indore" data-route="aiu-approved-campuses" data-sub="indore">Indore (2 AIU / 10 Total)</a></li>
+            <li>
+              <a href="https://aiu.ac.in/wp-content/uploads/docs/2026/06/PGDM_Institution_List_June_2026.pdf" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem;color:#7c3aed;display:inline-flex;align-items:center;gap:4px;margin-top:4px;">
+                <span>📄 AIU June 2026 Gazette (PDF) ↗</span>
+              </a>
+            </li>
+          </ul>
         </div>
 
         <!-- Links: Exams -->
@@ -66,7 +93,7 @@ export function renderFooter() {
           <ul class="footer-links-list">
             <li>
               <a href="/scholarships" data-route="scholarships" style="display:inline-flex;align-items:center;gap:6px;color:#6B2CF5;font-weight:800;">
-                <span>💰 Live MBA Scholarships 2027-29</span>
+                <span>💰 Live MBA Scholarships</span>
                 <span style="font-size:0.60rem;font-weight:900;background:linear-gradient(135deg, #FF3D8B 0%, #FF6B35 100%);color:#fff;padding:1px 6px;border-radius:4px;letter-spacing:0.04em;">UP TO ₹25L</span>
               </a>
             </li>
@@ -96,9 +123,26 @@ export function renderFooter() {
       </div>
 
       <div class="footer-bottom">
+        <div class="footer-bottom-container" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #e2e8f0; font-size: 0.8rem; line-height: 1.6;">
+          <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px;">
+            <span style="font-weight:800; color:#475569;">🏛️ Official AIU Campuses by City:</span>
+            <a href="/aiu-approved-campuses/delhi-ncr" data-route="aiu-approved-campuses" data-sub="delhi-ncr">Delhi NCR</a> •
+            <a href="/aiu-approved-campuses/pune" data-route="aiu-approved-campuses" data-sub="pune">Pune</a> •
+            <a href="/aiu-approved-campuses/mumbai" data-route="aiu-approved-campuses" data-sub="mumbai">Mumbai</a> •
+            <a href="/aiu-approved-campuses/bangalore" data-route="aiu-approved-campuses" data-sub="bangalore">Bangalore</a> •
+            <a href="/aiu-approved-campuses/jaipur" data-route="aiu-approved-campuses" data-sub="jaipur">Jaipur</a> •
+            <a href="/aiu-approved-campuses/kolkata" data-route="aiu-approved-campuses" data-sub="kolkata">Kolkata</a> •
+            <a href="/aiu-approved-campuses/dehradun" data-route="aiu-approved-campuses" data-sub="dehradun">Dehradun (UGC MBA)</a> •
+            <a href="/aiu-approved-campuses/lucknow" data-route="aiu-approved-campuses" data-sub="lucknow">Lucknow</a> •
+            <a href="/aiu-approved-campuses/indore" data-route="aiu-approved-campuses" data-sub="indore">Indore</a> •
+            <a href="https://aiu.ac.in/wp-content/uploads/docs/2026/06/PGDM_Institution_List_June_2026.pdf" target="_blank" rel="noopener noreferrer" style="color:#7c3aed;font-weight:700;">AIU June 2026 Gazette (PDF) ↗</a>
+          </div>
+        </div>
         <div class="footer-bottom-container">
           <p class="copyright-text">© 2026 FindMyBSchool.com • India's Most Trusted B-School Search Portal • All Rights Reserved.</p>
           <div class="footer-bottom-links">
+            <a href="/aiu-approved-campuses" data-route="aiu-approved-campuses" style="font-weight:700;color:#6B2CF5;">AIU Approved Campuses (City-Wise)</a>
+            <span>•</span>
             <a href="/terms" data-route="terms">Terms & Conditions</a>
             <span>•</span>
             <a href="/privacy" data-route="privacy">Privacy Policy</a>

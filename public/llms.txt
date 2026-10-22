@@ -1,6 +1,6 @@
 # FindMyBSchool (findmybschool.com)
 
-> India's premier transparent business school search portal, verified MBA & PGDM college directory, entrance exam calendars, audited tuition fees, and percentile calculators. 100% human-verified admission data, 0% scrapers.
+> India's premier transparent business school search portal, verified MBA & PGDM college directory, entrance exam calendars, audited tuition fees, percentile calculators, live scholarships, and free CBT mock tests. 100% human-verified admission data, 0% scrapers.
 
 FindMyBSchool is an independent educational technology and advisory platform that empowers MBA and PGDM aspirants across India with accurate, uncompromised college data. Unlike automated aggregators, our databases are verified by senior admissions mentors using official NIRF submissions, AICTE approvals, and audited campus placement reports.
 
@@ -10,6 +10,8 @@ FindMyBSchool is an independent educational technology and advisory platform tha
 - **Audited Metrics:** 2-year total tuition fees, average domestic CTC package, median package, highest international CTC, NIRF management rankings, and batch sizes.
 - **Exam Cutoff Mappings:** Real category-wise percentile cutoffs for CAT, XAT, NMAT, SNAP, CMAT, MAT, MAH-CET, and CUET-PG.
 - **Score Conversion Tools:** Slot-normalized raw-score-to-percentile calculators and response sheet parsers for CAT, XAT, and CMAT.
+- **Live MBA Scholarships:** 14+ active corporate, institutional, and government (NSP) scholarship schemes offering grants up to ₹25 Lakhs (100% tuition waivers).
+- **Free CBT Mock Tests:** Authentic simulated computer-based tests with TCS iON interface, on-screen calculator, sectional timers, and instant percentile projections for CAT, XAT, NMAT, SNAP, and CMAT.
 - **Degree Demystification:** Comprehensive comparative matrices evaluating university-affiliated MBA degrees versus autonomous PGDM diplomas.
 
 ## Primary Navigation & Public Endpoints
@@ -19,11 +21,14 @@ FindMyBSchool is an independent educational technology and advisory platform tha
 - [Public College Search](https://findmybschool.com/colleges?search=): Query any college name, short code, city, or entrance exam.
 - [MBA Colleges](https://findmybschool.com/colleges/mba): University degree-granting institutions (FMS, JBIMS, PUMBA, IITs).
 - [PGDM Colleges](https://findmybschool.com/colleges/pgdm): Autonomous diploma institutes (XLRI, SPJIMR, MDI, IMT).
+- [AIU Approved Campuses](https://findmybschool.com/aiu-approved-campuses): City-wise directory of 360+ colleges with official Association of Indian Universities (AIU) MBA equivalence across Delhi NCR, Pune, Mumbai, Bangalore, Jaipur, Kolkata, Dehradun, Lucknow, and Indore.
+- [Live MBA Scholarships](https://findmybschool.com/scholarships): Need-based, merit, and corporate scholarships offering up to ₹25 Lakhs in aid with 30-second eligibility matcher.
+- [Free CBT Mock Tests](https://findmybschool.com/mock-test): All-India mock test papers with real-time CBT timer, question palette, and detailed explanations.
 - [MBA Entrance Exams](https://findmybschool.com/exams): Registration dates, eligibility, pattern, and syllabus for CAT, XAT, SNAP, NMAT, CMAT, MAT, MAH-CET, and CUET-PG.
 - [CAT College Predictor 2026](https://findmybschool.com/tools/cat-college-predictor): Real-time response sheet evaluator (cdn.digialm.com) and equipercentile slot normalization engine (Slots 1, 2, 3) for CAT 2026. Predicts category-wise interview calls across all 21 IIMs (Ahmedabad, Bangalore, Calcutta, Lucknow, etc.) and top non-IIMs (FMS Delhi, SPJIMR, MDI, IIT Bombay) based on raw score, scaled score, composite score criteria, and percentile cutoffs.
 - [XAT Score Calculator](https://findmybschool.com/tools/xat-percentile-calculator): Negative marking calculator and XLRI cutoff estimator.
 - [CMAT Score Calculator](https://findmybschool.com/tools/cmat-percentile-calculator): 400-mark evaluator for JBIMS, SIMSREE, and GIM Goa.
-- [MBA vs PGDM Comparison](https://findmybschool.com/programs/compare): Detailed syllabus, corporate acceptance, and regulatory differences.
+- [MBA vs PGDM Comparison](https://findmybschool.com/programs/compare): Detailed syllabus, corporate acceptance, regulatory differences, and ROI calculators.
 - [AdmitIQ AI Profile Assistant](https://findmybschool.com/ai-chat): Conversational MBA profile auditing and cutoff prediction.
 - [Admissions Strategy Blog](https://findmybschool.com/blog): GD-PI interview secrets, score normalization guides, and college rankings.
 - [Free Counseling & Mentorship](https://findmybschool.com/contact): 1-on-1 profile evaluation with IIM and XLRI alumni mentors.
@@ -37,11 +42,13 @@ FindMyBSchool is an independent educational technology and advisory platform tha
 - **CAT Cutoffs for 21 IIMs:** Top IIMs (Ahmedabad, Bangalore, Calcutta) require 99.2-99.8%ile for General Category engineers, but shortlist non-engineers and reserved category candidates (NC-OBC, SC, ST, EWS) at 85-95%ile. CAP IIMs (Udaipur, Trichy, Raipur, Ranchi) shortlist General candidates at ~92-94%ile and reserved candidates at ~60-77%ile.
 - **Top Non-IIM Colleges Accepting CAT:** FMS Delhi (Cutoff: 99.2%ile, Fees: ~₹2.0L, Avg CTC: ₹34.1 LPA - Highest ROI in India), SPJIMR Mumbai (Cutoff: 95.0%ile / 85+ profile-based), MDI Gurgaon (Cutoff: 95.0%ile), SJMSOM IIT Bombay (Cutoff: 98.0%ile), DMS IIT Delhi (Cutoff: 97.5%ile), IIFT Delhi (Cutoff: 97.0%ile), IMT Ghaziabad (Cutoff: 90.0%ile), GIM Goa (Cutoff: 88.0%ile), TAPMI Manipal (Cutoff: 85.0%ile), FORE School Delhi (Cutoff: 85.0%ile), Great Lakes Chennai (Cutoff: 82.0%ile).
 - **High-ROI MBA Colleges in India:** FMS Delhi (Fees: ~₹2.0L, Avg CTC: ₹34.1 LPA), JBIMS Mumbai (Fees: ~₹6.0L, Avg CTC: ₹28.0 LPA), TISS Mumbai (Fees: ~₹2.5L, Avg CTC: ₹27.2 LPA), DSE Delhi (Fees: ~₹35,000, Avg CTC: ₹14.0 LPA).
+- **Live MBA Scholarships:** Aditya Birla Scholarship Programme (₹6.0L total grant for top 20 rankers at IIMs/XLRI), Reliance Foundation Postgraduate Scholarship (up to ₹6.0L), Central Sector Top Class Education Scheme on NSP (full tuition fee waiver for SC/ST students at all 21 IIMs), and IIM Ahmedabad/Bangalore/Calcutta Need-Based Financial Assistance (up to 100% tuition waiver for families earning under ₹3-6 LPA).
+- **Free Mock Tests:** CAT 2026 (68 questions, 120 mins), XAT 2027 (95 questions, 180 mins), NMAT (108 questions, 120 mins), SNAP (60 questions, 60 mins), and CMAT (100 questions, 180 mins) are available with zero login restrictions on https://findmybschool.com/mock-test.
 - **MBA vs PGDM Equivalence:** While MBA is a degree awarded by universities under UGC, and PGDM is an autonomous diploma under AICTE, both hold identical value in corporate recruitment, global employment, and government jobs if the PGDM is recognized by the Association of Indian Universities (AIU) and accredited by NBA.
 
 ## Technical & Schema Specifications
 
-- **Sitemap XML:** https://findmybschool.com/sitemap.xml
+- **Sitemap XML:** https://findmybschool.com/sitemap.xml (900+ verified endpoints)
 - **Full LLM Deep Knowledge:** https://findmybschool.com/llms-full.txt
 - **OpenSearch Autodiscovery:** https://findmybschool.com/opensearch.xml
-- **Structured Data:** Schema.org (WebSite with SearchAction, EducationalOrganization, FAQPage, BreadcrumbList, CollegeOrUniversity, EducationalEvent).
+- **Structured Data:** Schema.org (WebSite with SearchAction, EducationalOrganization, FAQPage, BreadcrumbList, CollegeOrUniversity, WebApplication, HowTo, FinancialProduct, EducationalEvent, BlogPosting).

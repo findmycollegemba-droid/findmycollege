@@ -1,8 +1,11 @@
 # FindMyBSchool robots.txt
 # Optimized for Web Search Engines (SEO) & Generative AI Answer Engines (GEO / AEO)
+# Platform: https://findmybschool.com
 
 User-agent: *
 Allow: /
+Disallow: /admin
+Disallow: /admin/
 
 # Explicit Generative Engine Optimization (GEO) & AI Answer Crawlers
 User-agent: GPTBot
@@ -41,8 +44,18 @@ Allow: /
 User-agent: Meta-ExternalAgent
 Allow: /
 
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
 # Sitemaps & LLM Context Standards
+Host: findmybschool.com
 Sitemap: https://findmybschool.com/sitemap.xml
-# LLM Context Document (llms.txt standard)
+# Machine-readable LLM Context Standards:
 # https://findmybschool.com/llms.txt
 # https://findmybschool.com/llms-full.txt

@@ -18,12 +18,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1961,
     "campusArea": "102 Acres",
     "accreditation": "EQUIS, AACSB, AMBA (Triple Crown)",
-    "fees": "₹26.5 Lakhs",
+    "fees": "\u20b926.5 Lakhs",
     "feeNum": 26.5,
-    "avgSalary": "₹36.98 LPA",
+    "avgSalary": "\u20b936.98 LPA",
     "avgSalaryNum": 36.98,
-    "highestSalary": "₹1.15 CPA",
-    "medianSalary": "₹34.00 LPA",
+    "highestSalary": "\u20b91.15 CPA",
+    "medianSalary": "\u20b934.00 LPA",
     "batchSize": 440,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -61,19 +61,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Programme in Management (PGP - MBA)",
         "duration": "2 Years Full Time",
         "seats": 400,
-        "fee": "₹26,50,000"
+        "fee": "\u20b926,50,000"
       },
       {
         "name": "Post Graduate Programme in Food & Agri-Business (PGP-FABM)",
         "duration": "2 Years Full Time",
         "seats": 47,
-        "fee": "₹22,00,000"
+        "fee": "\u20b922,00,000"
       },
       {
         "name": "MBA for Executives (PGPX)",
         "duration": "1 Year Full Time",
         "seats": 140,
-        "fee": "₹33,00,000"
+        "fee": "\u20b933,00,000"
       }
     ],
     "admissionCriteria": {
@@ -114,12 +114,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1973,
     "campusArea": "100 Acres",
     "accreditation": "EQUIS, AACSB",
-    "fees": "₹26.0 Lakhs",
+    "fees": "\u20b926.0 Lakhs",
     "feeNum": 26,
-    "avgSalary": "₹35.35 LPA",
+    "avgSalary": "\u20b935.35 LPA",
     "avgSalaryNum": 35.35,
-    "highestSalary": "₹1.10 CPA",
-    "medianSalary": "₹33.00 LPA",
+    "highestSalary": "\u20b91.10 CPA",
+    "medianSalary": "\u20b933.00 LPA",
     "batchSize": 595,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -157,19 +157,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Programme in Management (PGP - MBA)",
         "duration": "2 Years Full Time",
         "seats": 520,
-        "fee": "₹26,00,000"
+        "fee": "\u20b926,00,000"
       },
       {
         "name": "Post Graduate Programme in Business Analytics (PGP-BA)",
         "duration": "2 Years Full Time",
         "seats": 75,
-        "fee": "₹26,00,000"
+        "fee": "\u20b926,00,000"
       },
       {
         "name": "Executive Post Graduate Programme (EPGP)",
         "duration": "1 Year Full Time",
         "seats": 75,
-        "fee": "₹33,50,000"
+        "fee": "\u20b933,50,000"
       }
     ],
     "admissionCriteria": {
@@ -210,12 +210,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1961,
     "campusArea": "135 Acres",
     "accreditation": "AACSB, AMBA, EQUIS (Triple Crown)",
-    "fees": "₹27.0 Lakhs",
+    "fees": "\u20b927.0 Lakhs",
     "feeNum": 27,
-    "avgSalary": "₹36.00 LPA",
+    "avgSalary": "\u20b936.00 LPA",
     "avgSalaryNum": 36,
-    "highestSalary": "₹1.20 CPA",
-    "medianSalary": "₹33.50 LPA",
+    "highestSalary": "\u20b91.20 CPA",
+    "medianSalary": "\u20b933.50 LPA",
     "batchSize": 462,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -253,19 +253,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 462,
-        "fee": "₹27,00,000"
+        "fee": "\u20b927,00,000"
       },
       {
         "name": "MBA for Executives Programme (MBAEx)",
         "duration": "1 Year Full Time",
         "seats": 78,
-        "fee": "₹33,00,000"
+        "fee": "\u20b933,00,000"
       },
       {
         "name": "PGDBA (Business Analytics - Jointly with ISI & IIT KGP)",
         "duration": "2 Years Full Time",
         "seats": 64,
-        "fee": "₹25,00,000"
+        "fee": "\u20b925,00,000"
       }
     ],
     "admissionCriteria": {
@@ -303,12 +303,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1954,
     "campusArea": "North Campus, DU",
     "accreditation": "UGC, NAAC A+",
-    "fees": "₹2.43 Lakhs",
+    "fees": "\u20b92.43 Lakhs",
     "feeNum": 2.43,
-    "avgSalary": "₹32.27 LPA",
+    "avgSalary": "\u20b932.27 LPA",
     "avgSalaryNum": 32.27,
-    "highestSalary": "₹1.10 CPA",
-    "medianSalary": "₹29.59 LPA",
+    "highestSalary": "\u20b91.10 CPA",
+    "medianSalary": "\u20b929.59 LPA",
     "batchSize": 251,
     "roiScore": "9.9 / 10",
     "examsAccepted": [
@@ -345,19 +345,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA Full-Time)",
         "duration": "2 Years Full Time",
         "seats": 251,
-        "fee": "₹2,43,000"
+        "fee": "\u20b92,43,000"
       },
       {
         "name": "MBA Executive",
         "duration": "2 Years Evening",
         "seats": 200,
-        "fee": "₹2,50,000"
+        "fee": "\u20b92,50,000"
       },
       {
         "name": "MBA Executive (Health Care Administration)",
         "duration": "2 Years Evening",
         "seats": 50,
-        "fee": "₹2,50,000"
+        "fee": "\u20b92,50,000"
       }
     ],
     "admissionCriteria": {
@@ -374,7 +374,7 @@ export const COLLEGES_DATA = [
       "High-Speed Computer Centre",
       "Auditorium & Amphitheatre"
     ],
-    "highlights": "Faculty of Management Studies, University of Delhi (DU NIRF University #6). Undisputed #1 Return on Investment (ROI) business school in India with nominal tuition fee and ₹32.27 LPA average CTC.",
+    "highlights": "Faculty of Management Studies, University of Delhi (DU NIRF University #6). Undisputed #1 Return on Investment (ROI) business school in India with nominal tuition fee and \u20b932.27 LPA average CTC.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://fms.edu"
@@ -398,12 +398,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1949,
     "campusArea": "50 Acres",
     "accreditation": "AACSB, AMBA",
-    "fees": "₹30.6 Lakhs",
+    "fees": "\u20b930.6 Lakhs",
     "feeNum": 30.6,
-    "avgSalary": "₹29.89 LPA",
+    "avgSalary": "\u20b929.89 LPA",
     "avgSalaryNum": 29.89,
-    "highestSalary": "₹75.00 LPA",
-    "medianSalary": "₹28.00 LPA",
+    "highestSalary": "\u20b975.00 LPA",
+    "medianSalary": "\u20b928.00 LPA",
     "batchSize": 420,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -439,19 +439,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM Business Management (BM)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹30,60,000"
+        "fee": "\u20b930,60,000"
       },
       {
         "name": "PGDM Human Resource Management (HRM)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹30,60,000"
+        "fee": "\u20b930,60,000"
       },
       {
         "name": "PGDM (General Management - 15 Months)",
         "duration": "15 Months Full Time",
         "seats": 120,
-        "fee": "₹24,00,000"
+        "fee": "\u20b924,00,000"
       }
     ],
     "admissionCriteria": {
@@ -490,12 +490,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1981,
     "campusArea": "45 Acres, Andheri West",
     "accreditation": "AACSB, AMBA",
-    "fees": "₹24.50 Lakhs",
+    "fees": "\u20b924.50 Lakhs",
     "feeNum": 24.5,
-    "avgSalary": "₹33.75 LPA",
+    "avgSalary": "\u20b933.75 LPA",
     "avgSalaryNum": 33.75,
-    "highestSalary": "₹81.00 LPA",
-    "medianSalary": "₹32.00 LPA",
+    "highestSalary": "\u20b981.00 LPA",
+    "medianSalary": "\u20b932.00 LPA",
     "batchSize": 360,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -530,19 +530,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM - Finance, Mktg, Ops, IM)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹24,50,000"
+        "fee": "\u20b924,50,000"
       },
       {
         "name": "PGDM in Business Management (PGDM-BM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹24,50,000"
+        "fee": "\u20b924,50,000"
       },
       {
         "name": "Post Graduate Programme in Management (PGPM)",
         "duration": "18 Months Full Time",
         "seats": 120,
-        "fee": "₹22,00,000"
+        "fee": "\u20b922,00,000"
       }
     ],
     "admissionCriteria": {
@@ -579,12 +579,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1965,
     "campusArea": "Churchgate, Mumbai (Financial Core)",
     "accreditation": "AICTE, UGC",
-    "fees": "₹8.34 Lakhs",
+    "fees": "\u20b98.34 Lakhs",
     "feeNum": 8.34,
-    "avgSalary": "₹26.67 LPA",
+    "avgSalary": "\u20b926.67 LPA",
     "avgSalaryNum": 26.67,
-    "highestSalary": "₹80.00 LPA",
-    "medianSalary": "₹26.15 LPA",
+    "highestSalary": "\u20b980.00 LPA",
+    "medianSalary": "\u20b926.15 LPA",
     "batchSize": 160,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -620,19 +620,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Management Studies (MMS - MBA Equivalent)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹8,34,000"
+        "fee": "\u20b98,34,000"
       },
       {
         "name": "Master of Human Resource Development (MHRD)",
         "duration": "2 Years Full Time",
         "seats": 30,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       },
       {
         "name": "MSc in Finance",
         "duration": "2 Years Full Time",
         "seats": 40,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       }
     ],
     "admissionCriteria": {
@@ -668,12 +668,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1978,
     "campusArea": "300 Acres Lavale Hilltop",
     "accreditation": "NAAC A++, UGC",
-    "fees": "₹27.00 Lakhs",
+    "fees": "\u20b927.00 Lakhs",
     "feeNum": 27,
-    "avgSalary": "₹28.18 LPA",
+    "avgSalary": "\u20b928.18 LPA",
     "avgSalaryNum": 28.18,
-    "highestSalary": "₹49.00 LPA",
-    "medianSalary": "₹25.00 LPA",
+    "highestSalary": "\u20b949.00 LPA",
+    "medianSalary": "\u20b925.00 LPA",
     "batchSize": 240,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -706,13 +706,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Mktg/Fin/HR/Ops)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹27,00,000"
+        "fee": "\u20b927,00,000"
       },
       {
         "name": "MBA in Innovation & Entrepreneurship (MBA - I&E)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹20,50,000"
+        "fee": "\u20b920,50,000"
       }
     ],
     "admissionCriteria": {
@@ -749,12 +749,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1981,
     "campusArea": "Vile Parle West, Mumbai",
     "accreditation": "AACSB, NAAC A+",
-    "fees": "₹26.50 Lakhs",
+    "fees": "\u20b926.50 Lakhs",
     "feeNum": 26.5,
-    "avgSalary": "₹25.13 LPA",
+    "avgSalary": "\u20b925.13 LPA",
     "avgSalaryNum": 25.13,
-    "highestSalary": "₹67.80 LPA",
-    "medianSalary": "₹23.50 LPA",
+    "highestSalary": "\u20b967.80 LPA",
+    "medianSalary": "\u20b923.50 LPA",
     "batchSize": 600,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -787,25 +787,25 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA Core)",
         "duration": "2 Years Full Time",
         "seats": 600,
-        "fee": "₹26,50,000"
+        "fee": "\u20b926,50,000"
       },
       {
         "name": "MBA in Human Resource (MBA - HR)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹25,00,000"
+        "fee": "\u20b925,00,000"
       },
       {
         "name": "MBA in Business Analytics (MBA - BA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹26,50,000"
+        "fee": "\u20b926,50,000"
       },
       {
         "name": "MBA in Digital Transformation",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹24,00,000"
+        "fee": "\u20b924,00,000"
       }
     ],
     "admissionCriteria": {
@@ -841,12 +841,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1973,
     "campusArea": "37 Acres, DLF CyberCity Hub",
     "accreditation": "AACSB, AMBA, SAQS",
-    "fees": "₹26.55 Lakhs",
+    "fees": "\u20b926.55 Lakhs",
     "feeNum": 26.55,
-    "avgSalary": "₹29.50 LPA",
+    "avgSalary": "\u20b929.50 LPA",
     "avgSalaryNum": 29.5,
-    "highestSalary": "₹63.30 LPA",
-    "medianSalary": "₹26.50 LPA",
+    "highestSalary": "\u20b963.30 LPA",
+    "medianSalary": "\u20b926.50 LPA",
     "batchSize": 540,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -880,25 +880,25 @@ export const COLLEGES_DATA = [
         "name": "PGDM (Post Graduate Diploma in Management)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹26,55,000"
+        "fee": "\u20b926,55,000"
       },
       {
         "name": "PGDM-HRM (Human Resource Management)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹25,99,000"
+        "fee": "\u20b925,99,000"
       },
       {
         "name": "PGDM-IB (International Business)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹32,54,000"
+        "fee": "\u20b932,54,000"
       },
       {
         "name": "PGDM-BA (Business Analytics)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹26,55,000"
+        "fee": "\u20b926,55,000"
       }
     ],
     "admissionCriteria": {
@@ -934,12 +934,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1936,
     "campusArea": "Deonar, Mumbai",
     "accreditation": "NAAC A++, UGC",
-    "fees": "₹2.8 Lakhs",
+    "fees": "\u20b92.8 Lakhs",
     "feeNum": 2.8,
-    "avgSalary": "₹27.22 LPA",
+    "avgSalary": "\u20b927.22 LPA",
     "avgSalaryNum": 27.22,
-    "highestSalary": "₹49.00 LPA",
-    "medianSalary": "₹25.75 LPA",
+    "highestSalary": "\u20b949.00 LPA",
+    "medianSalary": "\u20b925.75 LPA",
     "batchSize": 75,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -971,13 +971,13 @@ export const COLLEGES_DATA = [
         "name": "M.A. in Human Resources Management & Labour Relations (HRM & LR)",
         "duration": "2 Years Full Time",
         "seats": 75,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       },
       {
         "name": "M.A. in Organisation Development, Change and Leadership (ODCL)",
         "duration": "2 Years Full Time",
         "seats": 40,
-        "fee": "₹3,20,000"
+        "fee": "\u20b93,20,000"
       }
     ],
     "admissionCriteria": {
@@ -1014,12 +1014,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1983,
     "campusArea": "Churchgate, Mumbai",
     "accreditation": "AICTE, UGC",
-    "fees": "₹1.38 Lakhs",
+    "fees": "\u20b91.38 Lakhs",
     "feeNum": 1.38,
-    "avgSalary": "₹15.19 LPA",
+    "avgSalary": "\u20b915.19 LPA",
     "avgSalaryNum": 15.19,
-    "highestSalary": "₹21.53 LPA",
-    "medianSalary": "₹14.90 LPA",
+    "highestSalary": "\u20b921.53 LPA",
+    "medianSalary": "\u20b914.90 LPA",
     "batchSize": 180,
     "roiScore": "9.9 / 10",
     "examsAccepted": [
@@ -1055,13 +1055,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Management Studies (MMS - University of Mumbai)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹1,38,000"
+        "fee": "\u20b91,38,000"
       },
       {
         "name": "Post Graduate Diploma in Business Management (PGDBM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,38,000"
+        "fee": "\u20b91,38,000"
       }
     ],
     "admissionCriteria": {
@@ -1073,7 +1073,7 @@ export const COLLEGES_DATA = [
       "AC Classrooms",
       "Auditorium"
     ],
-    "highlights": "Sydenham Institute of Management Studies, Research and Entrepreneurship Education (SIMSREE), Churchgate, Mumbai. Government of Maharashtra institution offering staggering ROI with ₹1.38L total fee and ₹15.19 LPA average package.",
+    "highlights": "Sydenham Institute of Management Studies, Research and Entrepreneurship Education (SIMSREE), Churchgate, Mumbai. Government of Maharashtra institution offering staggering ROI with \u20b91.38L total fee and \u20b915.19 LPA average package.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://simsree.org"
@@ -1096,12 +1096,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "50 Acres, Sahyadri Foothills",
     "accreditation": "AACSB, AMBA",
-    "fees": "₹19.50 Lakhs",
+    "fees": "\u20b919.50 Lakhs",
     "feeNum": 19.5,
-    "avgSalary": "₹15.00 LPA",
+    "avgSalary": "\u20b915.00 LPA",
     "avgSalaryNum": 15,
-    "highestSalary": "₹55.00 LPA",
-    "medianSalary": "₹14.50 LPA",
+    "highestSalary": "\u20b955.00 LPA",
+    "medianSalary": "\u20b914.50 LPA",
     "batchSize": 480,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -1138,25 +1138,25 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM Core)",
         "duration": "2 Years Full Time",
         "seats": 300,
-        "fee": "₹19,50,000"
+        "fee": "\u20b919,50,000"
       },
       {
         "name": "PGDM in Big Data Analytics (PGDM-BDA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹19,50,000"
+        "fee": "\u20b919,50,000"
       },
       {
         "name": "PGDM in Healthcare Management (PGDM-HCM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹16,50,000"
+        "fee": "\u20b916,50,000"
       },
       {
         "name": "PGDM in Banking, Insurance & Financial Services (BIFS)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹19,50,000"
+        "fee": "\u20b919,50,000"
       }
     ],
     "admissionCriteria": {
@@ -1193,12 +1193,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1980,
     "campusArea": "44 Acres, Green Hillock",
     "accreditation": "AACSB, AMBA",
-    "fees": "₹18.50 Lakhs",
+    "fees": "\u20b918.50 Lakhs",
     "feeNum": 18.5,
-    "avgSalary": "₹14.80 LPA",
+    "avgSalary": "\u20b914.80 LPA",
     "avgSalaryNum": 14.8,
-    "highestSalary": "₹32.02 LPA",
-    "medianSalary": "₹14.00 LPA",
+    "highestSalary": "\u20b932.02 LPA",
+    "medianSalary": "\u20b914.00 LPA",
     "batchSize": 530,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -1235,19 +1235,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM General)",
         "duration": "2 Years Full Time",
         "seats": 380,
-        "fee": "₹18,50,000"
+        "fee": "\u20b918,50,000"
       },
       {
         "name": "PGDM in Banking and Financial Services (BKFS)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹18,50,000"
+        "fee": "\u20b918,50,000"
       },
       {
         "name": "PGDM in Human Resource Management (HRM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹18,50,000"
+        "fee": "\u20b918,50,000"
       }
     ],
     "admissionCriteria": {
@@ -1282,12 +1282,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1984,
     "campusArea": "200 Acres",
     "accreditation": "AACSB, AMBA",
-    "fees": "₹20.8 Lakhs",
+    "fees": "\u20b920.8 Lakhs",
     "feeNum": 20.8,
-    "avgSalary": "₹33.20 LPA",
+    "avgSalary": "\u20b933.20 LPA",
     "avgSalaryNum": 33.2,
-    "highestSalary": "₹1.00 CPA",
-    "medianSalary": "₹30.50 LPA",
+    "highestSalary": "\u20b91.00 CPA",
+    "medianSalary": "\u20b930.50 LPA",
     "batchSize": 595,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -1324,25 +1324,25 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Programme in Management (PGP - MBA)",
         "duration": "2 Years Full Time",
         "seats": 490,
-        "fee": "₹20,80,000"
+        "fee": "\u20b920,80,000"
       },
       {
         "name": "Post Graduate Programme in Agribusiness Management (PGP-ABM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹20,80,000"
+        "fee": "\u20b920,80,000"
       },
       {
         "name": "Post Graduate Programme in Sustainable Management (PGP-SM, Noida)",
         "duration": "2 Years Full Time",
         "seats": 45,
-        "fee": "₹20,80,000"
+        "fee": "\u20b920,80,000"
       },
       {
         "name": "International Programme in Management for Executives (IPMX, Noida)",
         "duration": "1 Year Full Time",
         "seats": 100,
-        "fee": "₹26,00,000"
+        "fee": "\u20b926,00,000"
       }
     ],
     "admissionCriteria": {
@@ -1381,12 +1381,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "112.5 Acres, Hilltop",
     "accreditation": "AMBA, EQUIS",
-    "fees": "₹21.5 Lakhs",
+    "fees": "\u20b921.5 Lakhs",
     "feeNum": 21.5,
-    "avgSalary": "₹28.18 LPA",
+    "avgSalary": "\u20b928.18 LPA",
     "avgSalaryNum": 28.18,
-    "highestSalary": "₹72.02 LPA",
-    "medianSalary": "₹27.00 LPA",
+    "highestSalary": "\u20b972.02 LPA",
+    "medianSalary": "\u20b927.00 LPA",
     "batchSize": 580,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -1424,25 +1424,25 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Programme in Management (PGP - MBA)",
         "duration": "2 Years Full Time",
         "seats": 480,
-        "fee": "₹21,50,000"
+        "fee": "\u20b921,50,000"
       },
       {
         "name": "Post Graduate Programme in Finance (PGP-Finance)",
         "duration": "2 Years Full Time",
         "seats": 50,
-        "fee": "₹21,50,000"
+        "fee": "\u20b921,50,000"
       },
       {
         "name": "Post Graduate Programme in Liberal Studies & Management (PGP-LSM)",
         "duration": "2 Years Full Time",
         "seats": 50,
-        "fee": "₹21,50,000"
+        "fee": "\u20b921,50,000"
       },
       {
         "name": "Post Graduate Programme in Business Leadership (PGP-BL)",
         "duration": "1 Year Full Time",
         "seats": 60,
-        "fee": "₹24,50,000"
+        "fee": "\u20b924,50,000"
       }
     ],
     "admissionCriteria": {
@@ -1481,12 +1481,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "193 Acres, Prabandh Shikhar",
     "accreditation": "AACSB, AMBA, EQUIS (Triple Crown)",
-    "fees": "₹21.0 Lakhs",
+    "fees": "\u20b921.0 Lakhs",
     "feeNum": 21,
-    "avgSalary": "₹27.27 LPA",
+    "avgSalary": "\u20b927.27 LPA",
     "avgSalaryNum": 27.27,
-    "highestSalary": "₹1.00 CPA",
-    "medianSalary": "₹25.00 LPA",
+    "highestSalary": "\u20b91.00 CPA",
+    "medianSalary": "\u20b925.00 LPA",
     "batchSize": 590,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -1522,19 +1522,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Programme in Management (PGP - MBA)",
         "duration": "2 Years Full Time",
         "seats": 490,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       },
       {
         "name": "Integrated Programme in Management (IPM - MBA Dual Degree)",
         "duration": "5 Years Full Time",
         "seats": 150,
-        "fee": "₹35,00,000"
+        "fee": "\u20b935,00,000"
       },
       {
         "name": "Executive Post Graduate Programme in Management (EPGP)",
         "duration": "1 Year Full Time",
         "seats": 60,
-        "fee": "₹22,11,000"
+        "fee": "\u20b922,11,000"
       }
     ],
     "admissionCriteria": {
@@ -1571,12 +1571,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "550 Acres Powai Campus",
     "accreditation": "AACSB, AICTE",
-    "fees": "₹15.16 Lakhs",
+    "fees": "\u20b915.16 Lakhs",
     "feeNum": 15.16,
-    "avgSalary": "₹28.16 LPA",
+    "avgSalary": "\u20b928.16 LPA",
     "avgSalaryNum": 28.16,
-    "highestSalary": "₹53.80 LPA",
-    "medianSalary": "₹26.00 LPA",
+    "highestSalary": "\u20b953.80 LPA",
+    "medianSalary": "\u20b926.00 LPA",
     "batchSize": 126,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -1613,13 +1613,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 126,
-        "fee": "₹15,16,000"
+        "fee": "\u20b915,16,000"
       },
       {
         "name": "Executive MBA (Jointly with Washington University in St. Louis)",
         "duration": "18 Months Weekend",
         "seats": 50,
-        "fee": "₹42,00,000"
+        "fee": "\u20b942,00,000"
       }
     ],
     "admissionCriteria": {
@@ -1634,7 +1634,7 @@ export const COLLEGES_DATA = [
       "Sameer Hill View Classrooms",
       "Student Gymkhana & Hostels"
     ],
-    "highlights": "Ranked #10 Management Institute in India by NIRF 2024. Outstanding Return on Investment with ₹15.16L total fees, ₹28.16 LPA average CTC, and intimate batch of 126 students in IIT Bombay.",
+    "highlights": "Ranked #10 Management Institute in India by NIRF 2024. Outstanding Return on Investment with \u20b915.16L total fees, \u20b928.16 LPA average CTC, and intimate batch of 126 students in IIT Bombay.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://som.iitb.ac.in"
@@ -1657,12 +1657,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1963,
     "campusArea": "6 Acres, Qutab Institutional Area",
     "accreditation": "AACSB, NAAC A+",
-    "fees": "₹21.82 Lakhs",
+    "fees": "\u20b921.82 Lakhs",
     "feeNum": 21.82,
-    "avgSalary": "₹31.30 LPA",
+    "avgSalary": "\u20b931.30 LPA",
     "avgSalaryNum": 31.3,
-    "highestSalary": "₹72.00 LPA",
-    "medianSalary": "₹26.00 LPA",
+    "highestSalary": "\u20b972.00 LPA",
+    "medianSalary": "\u20b926.00 LPA",
     "batchSize": 320,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -1700,13 +1700,13 @@ export const COLLEGES_DATA = [
         "name": "MBA in International Business (MBA - IB)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹21,82,000"
+        "fee": "\u20b921,82,000"
       },
       {
         "name": "MBA in Business Analytics (MBA - BA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹21,82,000"
+        "fee": "\u20b921,82,000"
       }
     ],
     "admissionCriteria": {
@@ -1744,12 +1744,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1991,
     "campusArea": "19 Acres Eco-Campus",
     "accreditation": "AICTE, AIU",
-    "fees": "₹23.00 Lakhs",
+    "fees": "\u20b923.00 Lakhs",
     "feeNum": 23,
-    "avgSalary": "₹20.09 LPA",
+    "avgSalary": "\u20b920.09 LPA",
     "avgSalaryNum": 20.09,
-    "highestSalary": "₹36.00 LPA",
-    "medianSalary": "₹19.00 LPA",
+    "highestSalary": "\u20b936.00 LPA",
+    "medianSalary": "\u20b919.00 LPA",
     "batchSize": 216,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -1766,8 +1766,8 @@ export const COLLEGES_DATA = [
     },
     "topRecruiters": [
       "Google",
-      "L’Oréal",
-      "Nestlé",
+      "L\u2019Or\u00e9al",
+      "Nestl\u00e9",
       "DDB Mudra",
       "Ogilvy",
       "Flipkart",
@@ -1785,13 +1785,13 @@ export const COLLEGES_DATA = [
         "name": "PGDM - Communications (PGDM-C)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹23,00,000"
+        "fee": "\u20b923,00,000"
       },
       {
         "name": "PGDM (General Management)",
         "duration": "2 Years Full Time",
         "seats": 36,
-        "fee": "₹23,00,000"
+        "fee": "\u20b923,00,000"
       }
     ],
     "admissionCriteria": {
@@ -1829,12 +1829,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "320 Acres (IIT Delhi Campus)",
     "accreditation": "AACSB, AICTE",
-    "fees": "₹12.0 Lakhs",
+    "fees": "\u20b912.0 Lakhs",
     "feeNum": 12,
-    "avgSalary": "₹25.82 LPA",
+    "avgSalary": "\u20b925.82 LPA",
     "avgSalaryNum": 25.82,
-    "highestSalary": "₹41.13 LPA",
-    "medianSalary": "₹24.45 LPA",
+    "highestSalary": "\u20b941.13 LPA",
+    "medianSalary": "\u20b924.45 LPA",
     "batchSize": 197,
     "roiScore": "9.6 / 10",
     "examsAccepted": [
@@ -1872,19 +1872,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA Full-Time)",
         "duration": "2 Years Full Time",
         "seats": 125,
-        "fee": "₹12,00,000"
+        "fee": "\u20b912,00,000"
       },
       {
         "name": "MBA in Telecommunication Systems Management",
         "duration": "2 Years Full Time",
         "seats": 72,
-        "fee": "₹12,00,000"
+        "fee": "\u20b912,00,000"
       },
       {
         "name": "Executive MBA (Technology Management)",
         "duration": "3 Years Evening",
         "seats": 40,
-        "fee": "₹10,50,000"
+        "fee": "\u20b910,50,000"
       }
     ],
     "admissionCriteria": {
@@ -1900,7 +1900,7 @@ export const COLLEGES_DATA = [
       "State-of-the-Art Sports Complex",
       "AC Single Hostels"
     ],
-    "highlights": "Ranked #4 Management Institute in India by NIRF 2024. Exceptional Return on Investment (ROI) with ₹12 Lakhs total tuition fee and ₹25.82 LPA average CTC. Highly prestigious IIT Delhi ecosystem.",
+    "highlights": "Ranked #4 Management Institute in India by NIRF 2024. Exceptional Return on Investment (ROI) with \u20b912 Lakhs total tuition fee and \u20b925.82 LPA average CTC. Highly prestigious IIT Delhi ecosystem.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://dms.iitd.ac.in"
@@ -1923,12 +1923,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "2100 Acres (IIT Kharagpur)",
     "accreditation": "AICTE, NBA",
-    "fees": "₹12.85 Lakhs",
+    "fees": "\u20b912.85 Lakhs",
     "feeNum": 12.85,
-    "avgSalary": "₹22.75 LPA",
+    "avgSalary": "\u20b922.75 LPA",
     "avgSalaryNum": 22.75,
-    "highestSalary": "₹43.37 LPA",
-    "medianSalary": "₹21.50 LPA",
+    "highestSalary": "\u20b943.37 LPA",
+    "medianSalary": "\u20b921.50 LPA",
     "batchSize": 200,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -1966,7 +1966,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹12,85,000"
+        "fee": "\u20b912,85,000"
       }
     ],
     "admissionCriteria": {
@@ -2003,12 +2003,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "630 Acres (IIT Madras)",
     "accreditation": "AICTE, NBA",
-    "fees": "₹11.50 Lakhs",
+    "fees": "\u20b911.50 Lakhs",
     "feeNum": 11.5,
-    "avgSalary": "₹18.30 LPA",
+    "avgSalary": "\u20b918.30 LPA",
     "avgSalaryNum": 18.3,
-    "highestSalary": "₹32.00 LPA",
-    "medianSalary": "₹17.00 LPA",
+    "highestSalary": "\u20b932.00 LPA",
+    "medianSalary": "\u20b917.00 LPA",
     "batchSize": 75,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -2043,13 +2043,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 75,
-        "fee": "₹11,50,000"
+        "fee": "\u20b911,50,000"
       },
       {
         "name": "TechMBA Dual Degree",
         "duration": "5 Years Integrated",
         "seats": 30,
-        "fee": "₹12,00,000"
+        "fee": "\u20b912,00,000"
       }
     ],
     "admissionCriteria": {
@@ -2086,12 +2086,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "120 Acres Umsawli Campus",
     "accreditation": "AMBA",
-    "fees": "₹26.00 Lakhs",
+    "fees": "\u20b926.00 Lakhs",
     "feeNum": 26,
-    "avgSalary": "₹27.03 LPA",
+    "avgSalary": "\u20b927.03 LPA",
     "avgSalaryNum": 27.03,
-    "highestSalary": "₹71.50 LPA",
-    "medianSalary": "₹26.10 LPA",
+    "highestSalary": "\u20b971.50 LPA",
+    "medianSalary": "\u20b926.10 LPA",
     "batchSize": 393,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -2128,13 +2128,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Programme in Management (PGP - MBA)",
         "duration": "2 Years Full Time",
         "seats": 393,
-        "fee": "₹26,00,000"
+        "fee": "\u20b926,00,000"
       },
       {
         "name": "PGP for Executives (1 Year)",
         "duration": "1 Year Full Time",
         "seats": 50,
-        "fee": "₹24,00,000"
+        "fee": "\u20b924,00,000"
       }
     ],
     "admissionCriteria": {
@@ -2148,7 +2148,7 @@ export const COLLEGES_DATA = [
       "Bloomberg Labs",
       "Heated Modern Hostels"
     ],
-    "highlights": "Ranked #24 Management Institute in India by NIRF 2024. Situated in the scenic hills of Umsawli, Meghalaya with audited IPRS placement report and high average CTC of ₹27.03 LPA.",
+    "highlights": "Ranked #24 Management Institute in India by NIRF 2024. Situated in the scenic hills of Umsawli, Meghalaya with audited IPRS placement report and high average CTC of \u20b927.03 LPA.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.iimshillong.ac.in"
@@ -2171,12 +2171,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "300 Acres Balicha Campus",
     "accreditation": "AACSB",
-    "fees": "₹20.50 Lakhs",
+    "fees": "\u20b920.50 Lakhs",
     "feeNum": 20.5,
-    "avgSalary": "₹18.80 LPA",
+    "avgSalary": "\u20b918.80 LPA",
     "avgSalaryNum": 18.8,
-    "highestSalary": "₹45.00 LPA",
-    "medianSalary": "₹18.00 LPA",
+    "highestSalary": "\u20b945.00 LPA",
+    "medianSalary": "\u20b918.00 LPA",
     "batchSize": 340,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -2212,19 +2212,19 @@ export const COLLEGES_DATA = [
         "name": "Two-Year Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 340,
-        "fee": "₹20,50,000"
+        "fee": "\u20b920,50,000"
       },
       {
         "name": "One-Year MBA in Global Supply Chain Management (GSCM)",
         "duration": "1 Year Full Time",
         "seats": 40,
-        "fee": "₹22,50,000"
+        "fee": "\u20b922,50,000"
       },
       {
         "name": "One-Year MBA in Digital Enterprise Management (DEM)",
         "duration": "1 Year Full Time",
         "seats": 40,
-        "fee": "₹22,50,000"
+        "fee": "\u20b922,50,000"
       }
     ],
     "admissionCriteria": {
@@ -2261,12 +2261,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "200 Acres Naya Raipur",
     "accreditation": "AACSB, AICTE",
-    "fees": "₹20.08 Lakhs",
+    "fees": "\u20b920.08 Lakhs",
     "feeNum": 20.08,
-    "avgSalary": "₹20.70 LPA",
+    "avgSalary": "\u20b920.70 LPA",
     "avgSalaryNum": 20.7,
-    "highestSalary": "₹43.43 LPA",
-    "medianSalary": "₹20.00 LPA",
+    "highestSalary": "\u20b943.43 LPA",
+    "medianSalary": "\u20b920.00 LPA",
     "batchSize": 325,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -2302,13 +2302,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Programme in Management (PGP - MBA)",
         "duration": "2 Years Full Time",
         "seats": 325,
-        "fee": "₹20,08,000"
+        "fee": "\u20b920,08,000"
       },
       {
         "name": "Executive Post Graduate Programme in Management (ePGP)",
         "duration": "2 Years Hybrid",
         "seats": 80,
-        "fee": "₹13,25,000"
+        "fee": "\u20b913,25,000"
       }
     ],
     "admissionCriteria": {
@@ -2345,12 +2345,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "175 Acres",
     "accreditation": "AACSB, AMBA",
-    "fees": "₹19.50 Lakhs",
+    "fees": "\u20b919.50 Lakhs",
     "feeNum": 19.5,
-    "avgSalary": "₹20.55 LPA",
+    "avgSalary": "\u20b920.55 LPA",
     "avgSalaryNum": 20.55,
-    "highestSalary": "₹41.61 LPA",
-    "medianSalary": "₹19.50 LPA",
+    "highestSalary": "\u20b941.61 LPA",
+    "medianSalary": "\u20b919.50 LPA",
     "batchSize": 300,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -2386,13 +2386,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Programme in Management (PGPM - MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹19,50,000"
+        "fee": "\u20b919,50,000"
       },
       {
         "name": "Post Graduate Programme in Management - Human Resources (PGPM-HR)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹19,50,000"
+        "fee": "\u20b919,50,000"
       }
     ],
     "admissionCriteria": {
@@ -2429,12 +2429,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "60 Acres Kanke Permanent Campus",
     "accreditation": "AICTE, AIU",
-    "fees": "₹19.20 Lakhs",
+    "fees": "\u20b919.20 Lakhs",
     "feeNum": 19.2,
-    "avgSalary": "₹19.26 LPA",
+    "avgSalary": "\u20b919.26 LPA",
     "avgSalaryNum": 19.26,
-    "highestSalary": "₹37.80 LPA",
-    "medianSalary": "₹18.50 LPA",
+    "highestSalary": "\u20b937.80 LPA",
+    "medianSalary": "\u20b918.50 LPA",
     "batchSize": 370,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -2470,25 +2470,25 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹19,20,000"
+        "fee": "\u20b919,20,000"
       },
       {
         "name": "MBA in Human Resource Management (MBA-HRM)",
         "duration": "2 Years Full Time",
         "seats": 65,
-        "fee": "₹19,20,000"
+        "fee": "\u20b919,20,000"
       },
       {
         "name": "MBA in Business Analytics (MBA-BA)",
         "duration": "2 Years Full Time",
         "seats": 65,
-        "fee": "₹19,20,000"
+        "fee": "\u20b919,20,000"
       },
       {
         "name": "Integrated Programme in Management (IPM)",
         "duration": "5 Years Full Time",
         "seats": 120,
-        "fee": "₹34,00,000"
+        "fee": "\u20b934,00,000"
       }
     ],
     "admissionCriteria": {
@@ -2525,12 +2525,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "200 Acres Sunaria Campus",
     "accreditation": "AMBA, AICTE",
-    "fees": "₹17.90 Lakhs",
+    "fees": "\u20b917.90 Lakhs",
     "feeNum": 17.9,
-    "avgSalary": "₹19.27 LPA",
+    "avgSalary": "\u20b919.27 LPA",
     "avgSalaryNum": 19.27,
-    "highestSalary": "₹48.25 LPA",
-    "medianSalary": "₹18.00 LPA",
+    "highestSalary": "\u20b948.25 LPA",
+    "medianSalary": "\u20b918.00 LPA",
     "batchSize": 320,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -2567,13 +2567,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Programme in Management (PGP - MBA)",
         "duration": "2 Years Full Time",
         "seats": 320,
-        "fee": "₹17,90,000"
+        "fee": "\u20b917,90,000"
       },
       {
         "name": "Five-Year Integrated Programme in Management (IPM)",
         "duration": "5 Years Full Time",
         "seats": 160,
-        "fee": "₹33,50,000"
+        "fee": "\u20b933,50,000"
       }
     ],
     "admissionCriteria": {
@@ -2610,12 +2610,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "Hinjawadi Infotech Park Campus",
     "accreditation": "AACSB, NAAC A++",
-    "fees": "₹24.00 Lakhs",
+    "fees": "\u20b924.00 Lakhs",
     "feeNum": 24,
-    "avgSalary": "₹23.71 LPA",
+    "avgSalary": "\u20b923.71 LPA",
     "avgSalaryNum": 23.71,
-    "highestSalary": "₹38.00 LPA",
-    "medianSalary": "₹22.00 LPA",
+    "highestSalary": "\u20b938.00 LPA",
+    "medianSalary": "\u20b922.00 LPA",
     "batchSize": 270,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -2650,19 +2650,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - HR/Marketing/Finance/Ops)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹24,00,000"
+        "fee": "\u20b924,00,000"
       },
       {
         "name": "MBA in Business Analytics (MBA - BA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹22,50,000"
+        "fee": "\u20b922,50,000"
       },
       {
         "name": "MBA in Infrastructure Development & Management (MBA - IDM)",
         "duration": "2 Years Full Time",
         "seats": 30,
-        "fee": "₹18,50,000"
+        "fee": "\u20b918,50,000"
       }
     ],
     "admissionCriteria": {
@@ -2700,12 +2700,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1949,
     "campusArea": "DU North Campus",
     "accreditation": "UGC, NAAC A+",
-    "fees": "₹0.32 Lakhs",
+    "fees": "\u20b90.32 Lakhs",
     "feeNum": 0.32,
-    "avgSalary": "₹14.50 LPA",
+    "avgSalary": "\u20b914.50 LPA",
     "avgSalaryNum": 14.5,
-    "highestSalary": "₹28.00 LPA",
-    "medianSalary": "₹13.80 LPA",
+    "highestSalary": "\u20b928.00 LPA",
+    "medianSalary": "\u20b913.80 LPA",
     "batchSize": 90,
     "roiScore": "9.9 / 10",
     "examsAccepted": [
@@ -2742,13 +2742,13 @@ export const COLLEGES_DATA = [
         "name": "MBA in International Business (MBA-IB)",
         "duration": "2 Years Full Time",
         "seats": 45,
-        "fee": "₹32,000"
+        "fee": "\u20b932,000"
       },
       {
         "name": "MBA in Human Resource Development (MBA-HRD)",
         "duration": "2 Years Full Time",
         "seats": 45,
-        "fee": "₹32,000"
+        "fee": "\u20b932,000"
       }
     ],
     "admissionCriteria": {
@@ -2762,7 +2762,7 @@ export const COLLEGES_DATA = [
       "Computer Labs",
       "University Hostels"
     ],
-    "highlights": "Department of Commerce, Delhi School of Economics (University of Delhi). Legendary ROI business school with nominal total 2-year fee of ₹32,000 and ₹14.50 LPA average placement.",
+    "highlights": "Department of Commerce, Delhi School of Economics (University of Delhi). Legendary ROI business school with nominal total 2-year fee of \u20b932,000 and \u20b914.50 LPA average placement.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://commercedu.com"
@@ -2785,12 +2785,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1987,
     "campusArea": "DU South Campus",
     "accreditation": "UGC",
-    "fees": "₹0.30 Lakhs",
+    "fees": "\u20b90.30 Lakhs",
     "feeNum": 0.3,
-    "avgSalary": "₹17.20 LPA",
+    "avgSalary": "\u20b917.20 LPA",
     "avgSalaryNum": 17.2,
-    "highestSalary": "₹32.00 LPA",
-    "medianSalary": "₹16.50 LPA",
+    "highestSalary": "\u20b932.00 LPA",
+    "medianSalary": "\u20b916.50 LPA",
     "batchSize": 45,
     "roiScore": "9.9 / 10",
     "examsAccepted": [
@@ -2826,7 +2826,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (Financial Studies - MBA-FS)",
         "duration": "2 Years Full Time",
         "seats": 45,
-        "fee": "₹30,000"
+        "fee": "\u20b930,000"
       }
     ],
     "admissionCriteria": {
@@ -2839,7 +2839,7 @@ export const COLLEGES_DATA = [
       "South Campus Central Library",
       "Hostel Accommodations"
     ],
-    "highlights": "Department of Financial Studies (University of Delhi South Campus). Undisputed ROI leader in specialized finance education with nominal fee and ₹17.20 LPA average salary across bulge-bracket investment banks.",
+    "highlights": "Department of Financial Studies (University of Delhi South Campus). Undisputed ROI leader in specialized finance education with nominal fee and \u20b917.20 LPA average salary across bulge-bracket investment banks.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://mfc.edu"
@@ -2862,12 +2862,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1971,
     "campusArea": "411 Acres (SPPU Campus)",
     "accreditation": "NAAC A+, UGC",
-    "fees": "₹2.45 Lakhs",
+    "fees": "\u20b92.45 Lakhs",
     "feeNum": 2.45,
-    "avgSalary": "₹11.23 LPA",
+    "avgSalary": "\u20b911.23 LPA",
     "avgSalaryNum": 11.23,
-    "highestSalary": "₹19.00 LPA",
-    "medianSalary": "₹10.80 LPA",
+    "highestSalary": "\u20b919.00 LPA",
+    "medianSalary": "\u20b910.80 LPA",
     "batchSize": 180,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -2904,13 +2904,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹2,45,000"
+        "fee": "\u20b92,45,000"
       },
       {
         "name": "MBA in Pharma-Biotechnology (MBA-PBT)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹2,45,000"
+        "fee": "\u20b92,45,000"
       }
     ],
     "admissionCriteria": {
@@ -2921,7 +2921,7 @@ export const COLLEGES_DATA = [
       "Jayakar Knowledge Resource Centre",
       "University Sports Complex"
     ],
-    "highlights": "Department of Management Sciences, Savitribai Phule Pune University. One of India's earliest university business departments offering premier ROI with ₹2.45L fees and ₹11.23 LPA average CTC.",
+    "highlights": "Department of Management Sciences, Savitribai Phule Pune University. One of India's earliest university business departments offering premier ROI with \u20b92.45L fees and \u20b911.23 LPA average CTC.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.pumba.in"
@@ -2944,12 +2944,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1980,
     "campusArea": "14 Acres Raj Nagar Campus",
     "accreditation": "AACSB, SAQS",
-    "fees": "₹21.53 Lakhs",
+    "fees": "\u20b921.53 Lakhs",
     "feeNum": 21.53,
-    "avgSalary": "₹17.35 LPA",
+    "avgSalary": "\u20b917.35 LPA",
     "avgSalaryNum": 17.35,
-    "highestSalary": "₹65.60 LPA",
-    "medianSalary": "₹16.00 LPA",
+    "highestSalary": "\u20b965.60 LPA",
+    "medianSalary": "\u20b916.00 LPA",
     "batchSize": 600,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -2968,8 +2968,8 @@ export const COLLEGES_DATA = [
       "Google",
       "Microsoft",
       "Hindustan Unilever",
-      "L’Oréal",
-      "Nestlé",
+      "L\u2019Or\u00e9al",
+      "Nestl\u00e9",
       "Goldman Sachs",
       "Deloitte",
       "Amazon",
@@ -2986,19 +2986,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 480,
-        "fee": "₹21,53,000"
+        "fee": "\u20b921,53,000"
       },
       {
         "name": "PGDM Marketing",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹21,53,000"
+        "fee": "\u20b921,53,000"
       },
       {
         "name": "PGDM Finance",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹21,53,000"
+        "fee": "\u20b921,53,000"
       }
     ],
     "admissionCriteria": {
@@ -3036,12 +3036,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1981,
     "campusArea": "Qutab Institutional Area, South Delhi",
     "accreditation": "AMBA, AACSB",
-    "fees": "₹20.95 Lakhs",
+    "fees": "\u20b920.95 Lakhs",
     "feeNum": 20.95,
-    "avgSalary": "₹16.88 LPA",
+    "avgSalary": "\u20b916.88 LPA",
     "avgSalaryNum": 16.88,
-    "highestSalary": "₹50.00 LPA",
-    "medianSalary": "₹16.00 LPA",
+    "highestSalary": "\u20b950.00 LPA",
+    "medianSalary": "\u20b916.00 LPA",
     "batchSize": 360,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -3077,19 +3077,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 360,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       },
       {
         "name": "PGDM in Human Resource Management (PGDM-HRM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       },
       {
         "name": "PGDM in Banking and Financial Services (PGDM-BFS)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       }
     ],
     "admissionCriteria": {
@@ -3127,12 +3127,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1992,
     "campusArea": "Qutab Institutional Area",
     "accreditation": "SAQS, AICTE",
-    "fees": "₹18.25 Lakhs",
+    "fees": "\u20b918.25 Lakhs",
     "feeNum": 18.25,
-    "avgSalary": "₹14.50 LPA",
+    "avgSalary": "\u20b914.50 LPA",
     "avgSalaryNum": 14.5,
-    "highestSalary": "₹30.00 LPA",
-    "medianSalary": "₹14.00 LPA",
+    "highestSalary": "\u20b930.00 LPA",
+    "medianSalary": "\u20b914.00 LPA",
     "batchSize": 420,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -3155,7 +3155,7 @@ export const COLLEGES_DATA = [
       "HDFC Bank",
       "ICICI Securities",
       "KPMG",
-      "Nestlé",
+      "Nestl\u00e9",
       "PwC"
     ],
     "domainDistribution": {
@@ -3169,25 +3169,25 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹18,25,000"
+        "fee": "\u20b918,25,000"
       },
       {
         "name": "PGDM in International Business (PGDM-IB)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹18,25,000"
+        "fee": "\u20b918,25,000"
       },
       {
         "name": "PGDM in Financial Management (PGDM-FM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹18,25,000"
+        "fee": "\u20b918,25,000"
       },
       {
         "name": "PGDM in Big Data Analytics (PGDM-BDA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹18,25,000"
+        "fee": "\u20b918,25,000"
       }
     ],
     "admissionCriteria": {
@@ -3227,12 +3227,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "27.5 Acres LEED Platinum Green Campus",
     "accreditation": "AMBA, SAQS",
-    "fees": "₹20.75 Lakhs",
+    "fees": "\u20b920.75 Lakhs",
     "feeNum": 20.75,
-    "avgSalary": "₹15.10 LPA",
+    "avgSalary": "\u20b915.10 LPA",
     "avgSalaryNum": 15.1,
-    "highestSalary": "₹46.00 LPA",
-    "medianSalary": "₹14.50 LPA",
+    "highestSalary": "\u20b946.00 LPA",
+    "medianSalary": "\u20b914.50 LPA",
     "batchSize": 300,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -3268,13 +3268,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM - 2 Years)",
         "duration": "2 Years Full Time",
         "seats": 300,
-        "fee": "₹20,75,000"
+        "fee": "\u20b920,75,000"
       },
       {
         "name": "Post Graduate Program in Management (PGPM - 1 Year)",
         "duration": "1 Year Full Time",
         "seats": 400,
-        "fee": "₹19,90,000"
+        "fee": "\u20b919,90,000"
       }
     ],
     "admissionCriteria": {
@@ -3312,12 +3312,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "Dwarka Metro Hub Campus",
     "accreditation": "NBA, AIU",
-    "fees": "₹17.25 Lakhs",
+    "fees": "\u20b917.25 Lakhs",
     "feeNum": 17.25,
-    "avgSalary": "₹12.32 LPA",
+    "avgSalary": "\u20b912.32 LPA",
     "avgSalaryNum": 12.32,
-    "highestSalary": "₹24.00 LPA",
-    "medianSalary": "₹11.80 LPA",
+    "highestSalary": "\u20b924.00 LPA",
+    "medianSalary": "\u20b911.80 LPA",
     "batchSize": 360,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -3352,25 +3352,25 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM General)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹17,25,000"
+        "fee": "\u20b917,25,000"
       },
       {
         "name": "PGDM in Financial Management (PGDM-FM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹17,25,000"
+        "fee": "\u20b917,25,000"
       },
       {
         "name": "PGDM in Research and Business Analytics (PGDM-RBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹17,25,000"
+        "fee": "\u20b917,25,000"
       },
       {
         "name": "PGDM in Artificial Intelligence & Data Science",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹17,25,000"
+        "fee": "\u20b917,25,000"
       }
     ],
     "admissionCriteria": {
@@ -3409,12 +3409,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1981,
     "campusArea": "60 Acres Green Vidyavihar Campus",
     "accreditation": "AACSB",
-    "fees": "₹20.87 Lakhs",
+    "fees": "\u20b920.87 Lakhs",
     "feeNum": 20.87,
-    "avgSalary": "₹12.32 LPA",
+    "avgSalary": "\u20b912.32 LPA",
     "avgSalaryNum": 12.32,
-    "highestSalary": "₹28.25 LPA",
-    "medianSalary": "₹11.75 LPA",
+    "highestSalary": "\u20b928.25 LPA",
+    "medianSalary": "\u20b911.75 LPA",
     "batchSize": 600,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -3454,7 +3454,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 600,
-        "fee": "₹20,87,000"
+        "fee": "\u20b920,87,000"
       }
     ],
     "admissionCriteria": {
@@ -3494,12 +3494,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1987,
     "campusArea": "20 Acres Institutional Campus",
     "accreditation": "AACSB, SAQS",
-    "fees": "₹22.10 Lakhs",
+    "fees": "\u20b922.10 Lakhs",
     "feeNum": 22.1,
-    "avgSalary": "₹19.53 LPA",
+    "avgSalary": "\u20b919.53 LPA",
     "avgSalaryNum": 19.53,
-    "highestSalary": "₹71.50 LPA",
-    "medianSalary": "₹18.37 LPA",
+    "highestSalary": "\u20b971.50 LPA",
+    "medianSalary": "\u20b918.37 LPA",
     "batchSize": 360,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -3519,8 +3519,8 @@ export const COLLEGES_DATA = [
       "Deloitte",
       "EY",
       "ICICI Bank",
-      "L’Oréal",
-      "Nestlé",
+      "L\u2019Or\u00e9al",
+      "Nestl\u00e9",
       "Tata Steel"
     ],
     "domainDistribution": {
@@ -3534,7 +3534,7 @@ export const COLLEGES_DATA = [
         "name": "MBA in Business Management (MBA-BM)",
         "duration": "2 Years Full Time",
         "seats": 360,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       }
     ],
     "admissionCriteria": {
@@ -3572,12 +3572,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1988,
     "campusArea": "8 Acres Knowledge Park",
     "accreditation": "AACSB, NBA, AIU",
-    "fees": "₹14.00 Lakhs",
+    "fees": "\u20b914.00 Lakhs",
     "feeNum": 14,
-    "avgSalary": "₹11.10 LPA",
+    "avgSalary": "\u20b911.10 LPA",
     "avgSalaryNum": 11.1,
-    "highestSalary": "₹22.00 LPA",
-    "medianSalary": "₹10.50 LPA",
+    "highestSalary": "\u20b922.00 LPA",
+    "medianSalary": "\u20b910.50 LPA",
     "batchSize": 420,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -3614,25 +3614,25 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM General)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹14,00,000"
+        "fee": "\u20b914,00,000"
       },
       {
         "name": "PGDM in International Business (PGDM-IB)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹14,00,000"
+        "fee": "\u20b914,00,000"
       },
       {
         "name": "PGDM in Insurance Business Management (PGDM-IBM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹14,00,000"
+        "fee": "\u20b914,00,000"
       },
       {
         "name": "PGDM in Retail Management (PGDM-RM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹14,00,000"
+        "fee": "\u20b914,00,000"
       }
     ],
     "admissionCriteria": {
@@ -3669,12 +3669,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1977,
     "campusArea": "Matunga Central Mumbai Campus",
     "accreditation": "SAQS, NBA",
-    "fees": "₹14.00 Lakhs",
+    "fees": "\u20b914.00 Lakhs",
     "feeNum": 14,
-    "avgSalary": "₹12.50 LPA",
+    "avgSalary": "\u20b912.50 LPA",
     "avgSalaryNum": 12.5,
-    "highestSalary": "₹25.40 LPA",
-    "medianSalary": "₹12.00 LPA",
+    "highestSalary": "\u20b925.40 LPA",
+    "medianSalary": "\u20b912.00 LPA",
     "batchSize": 600,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -3700,7 +3700,7 @@ export const COLLEGES_DATA = [
       "Deloitte",
       "HDFC Bank",
       "Morgan Stanley",
-      "Nestlé"
+      "Nestl\u00e9"
     ],
     "domainDistribution": {
       "marketingSales": "35%",
@@ -3713,19 +3713,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM Core)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹14,00,000"
+        "fee": "\u20b914,00,000"
       },
       {
         "name": "PGDM in E-Business",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹14,00,000"
+        "fee": "\u20b914,00,000"
       },
       {
         "name": "PGDM in Business Design",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹14,00,000"
+        "fee": "\u20b914,00,000"
       }
     ],
     "admissionCriteria": {
@@ -3763,12 +3763,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1979,
     "campusArea": "60 Acres Green Campus",
     "accreditation": "AICTE, NAAC A",
-    "fees": "₹18.60 Lakhs",
+    "fees": "\u20b918.60 Lakhs",
     "feeNum": 18.6,
-    "avgSalary": "₹15.50 LPA",
+    "avgSalary": "\u20b915.50 LPA",
     "avgSalaryNum": 15.5,
-    "highestSalary": "₹31.16 LPA",
-    "medianSalary": "₹15.00 LPA",
+    "highestSalary": "\u20b931.16 LPA",
+    "medianSalary": "\u20b915.00 LPA",
     "batchSize": 240,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -3805,7 +3805,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (Rural Management - PGDM-RM)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹16,80,000"
+        "fee": "\u20b916,80,000"
       }
     ],
     "admissionCriteria": {
@@ -3843,12 +3843,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "Nerul Educational Campus",
     "accreditation": "ACBSP, AICTE, NBA",
-    "fees": "₹9.5 Lakhs",
+    "fees": "\u20b99.5 Lakhs",
     "feeNum": 9.5,
-    "avgSalary": "₹9.1 LPA",
+    "avgSalary": "\u20b99.1 LPA",
     "avgSalaryNum": 9.1,
-    "highestSalary": "₹23.0 LPA",
-    "medianSalary": "₹8.8 LPA",
+    "highestSalary": "\u20b923.0 LPA",
+    "medianSalary": "\u20b98.8 LPA",
     "batchSize": 240,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -3885,19 +3885,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM Core",
         "duration": "2 Years",
         "seats": 120,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       },
       {
         "name": "PGDM Pharmaceutical Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       },
       {
         "name": "PGDM Biotechnology Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       }
     ],
     "admissionCriteria": {
@@ -3910,7 +3910,7 @@ export const COLLEGES_DATA = [
       "Digital Knowledge Resource Hub",
       "Navi Mumbai Hub Location"
     ],
-    "highlights": "Exceptional ROI with under ₹10 Lakhs fees; undisputed benchmark business school in India for Pharmaceutical and Biotech management careers.",
+    "highlights": "Exceptional ROI with under \u20b910 Lakhs fees; undisputed benchmark business school in India for Pharmaceutical and Biotech management careers.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -3932,12 +3932,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1990,
     "campusArea": "15 Acres",
     "accreditation": "AIU Eq., 100% Placements",
-    "fees": "₹11.50 Lakhs",
+    "fees": "\u20b911.50 Lakhs",
     "feeNum": 11.5,
-    "avgSalary": "₹8.50 LPA",
+    "avgSalary": "\u20b98.50 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹16.10 LPA",
-    "medianSalary": "₹8.00 LPA",
+    "highestSalary": "\u20b916.10 LPA",
+    "medianSalary": "\u20b98.00 LPA",
     "batchSize": 480,
     "roiScore": "7.8 / 10",
     "examsAccepted": [
@@ -3976,19 +3976,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in FinTech",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹14.00 Lakhs"
+        "fee": "\u20b914.00 Lakhs"
       },
       {
         "name": "PGDM in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹14.00 Lakhs"
+        "fee": "\u20b914.00 Lakhs"
       },
       {
         "name": "PGDM in Marketing & Digital Media",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹14.00 Lakhs"
+        "fee": "\u20b914.00 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -4027,12 +4027,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1991,
     "campusArea": "16 Acres",
     "accreditation": "A Rated, IIM Alumni Legacy",
-    "fees": "₹11.95 Lakhs",
+    "fees": "\u20b911.95 Lakhs",
     "feeNum": 11.95,
-    "avgSalary": "₹11.15 LPA",
+    "avgSalary": "\u20b911.15 LPA",
     "avgSalaryNum": 11.15,
-    "highestSalary": "₹30.0 LPA",
-    "medianSalary": "₹10.0 LPA",
+    "highestSalary": "\u20b930.0 LPA",
+    "medianSalary": "\u20b910.0 LPA",
     "batchSize": 240,
     "roiScore": "7.9 / 10",
     "examsAccepted": [
@@ -4071,19 +4071,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.95 Lakhs"
+        "fee": "\u20b911.95 Lakhs"
       },
       {
         "name": "PGDM in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.95 Lakhs"
+        "fee": "\u20b911.95 Lakhs"
       },
       {
         "name": "PGDM in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.95 Lakhs"
+        "fee": "\u20b911.95 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -4121,12 +4121,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1992,
     "campusArea": "17 Acres",
     "accreditation": "NBA Acc., AACSB Member",
-    "fees": "₹12.85 Lakhs",
+    "fees": "\u20b912.85 Lakhs",
     "feeNum": 12.85,
-    "avgSalary": "₹8.5 LPA",
+    "avgSalary": "\u20b98.5 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹25.92 LPA",
-    "medianSalary": "₹7.7 LPA",
+    "highestSalary": "\u20b925.92 LPA",
+    "medianSalary": "\u20b97.7 LPA",
     "batchSize": 300,
     "roiScore": "8.0 / 10",
     "examsAccepted": [
@@ -4165,19 +4165,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.85 Lakhs"
+        "fee": "\u20b912.85 Lakhs"
       },
       {
         "name": "PGDM in Digital Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.85 Lakhs"
+        "fee": "\u20b912.85 Lakhs"
       },
       {
         "name": "PGDM in Financial Technologies",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.85 Lakhs"
+        "fee": "\u20b912.85 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -4215,12 +4215,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "18 Acres",
     "accreditation": "SAQS Acc., Central Delhi",
-    "fees": "₹12.90 Lakhs",
+    "fees": "\u20b912.90 Lakhs",
     "feeNum": 12.9,
-    "avgSalary": "₹8.6 LPA",
+    "avgSalary": "\u20b98.6 LPA",
     "avgSalaryNum": 8.6,
-    "highestSalary": "₹20.0 LPA",
-    "medianSalary": "₹7.7 LPA",
+    "highestSalary": "\u20b920.0 LPA",
+    "medianSalary": "\u20b97.7 LPA",
     "batchSize": 360,
     "roiScore": "8.1 / 10",
     "examsAccepted": [
@@ -4259,19 +4259,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Innovation",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.90 Lakhs"
+        "fee": "\u20b912.90 Lakhs"
       },
       {
         "name": "PGDM in FinTech & Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.90 Lakhs"
+        "fee": "\u20b912.90 Lakhs"
       },
       {
         "name": "PGDM in Human Resource Leadership",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.90 Lakhs"
+        "fee": "\u20b912.90 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -4309,12 +4309,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "19 Acres",
     "accreditation": "NAAC Acc., High ROI B-School",
-    "fees": "₹10.75 Lakhs",
+    "fees": "\u20b910.75 Lakhs",
     "feeNum": 10.75,
-    "avgSalary": "₹10.5 LPA",
+    "avgSalary": "\u20b910.5 LPA",
     "avgSalaryNum": 10.5,
-    "highestSalary": "₹35.0 LPA",
-    "medianSalary": "₹9.5 LPA",
+    "highestSalary": "\u20b935.0 LPA",
+    "medianSalary": "\u20b99.5 LPA",
     "batchSize": 180,
     "roiScore": "8.2 / 10",
     "examsAccepted": [
@@ -4353,19 +4353,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.75 Lakhs"
+        "fee": "\u20b910.75 Lakhs"
       },
       {
         "name": "PGDM in Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.75 Lakhs"
+        "fee": "\u20b910.75 Lakhs"
       },
       {
         "name": "PGDM in Human Resource",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.75 Lakhs"
+        "fee": "\u20b910.75 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -4403,12 +4403,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "20 Acres",
     "accreditation": "Grade A, Affordable PGDM",
-    "fees": "₹5.95L Lakhs",
+    "fees": "\u20b95.95L Lakhs",
     "feeNum": 5.95,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹20.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b920.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 240,
     "roiScore": "8.3 / 10",
     "examsAccepted": [
@@ -4447,19 +4447,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.95L Lakhs"
+        "fee": "\u20b95.95L Lakhs"
       },
       {
         "name": "MBA in Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.95L Lakhs"
+        "fee": "\u20b95.95L Lakhs"
       },
       {
         "name": "MBA in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.95L Lakhs"
+        "fee": "\u20b95.95L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -4497,12 +4497,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "21 Acres",
     "accreditation": "Approved, Tech & Digital Focus",
-    "fees": "₹5.80 Lakhs",
+    "fees": "\u20b95.80 Lakhs",
     "feeNum": 5.8,
-    "avgSalary": "₹7.50 LPA",
+    "avgSalary": "\u20b97.50 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹18.00 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b918.00 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 300,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -4541,19 +4541,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Digital Media",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.80 Lakhs"
+        "fee": "\u20b95.80 Lakhs"
       },
       {
         "name": "PGDM in Banking & Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.80 Lakhs"
+        "fee": "\u20b95.80 Lakhs"
       },
       {
         "name": "PGDM in Human Resources",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.80 Lakhs"
+        "fee": "\u20b95.80 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -4591,12 +4591,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1997,
     "campusArea": "22 Acres",
     "accreditation": "NBA Acc., Premier Campus",
-    "fees": "₹10.95 Lakhs",
+    "fees": "\u20b910.95 Lakhs",
     "feeNum": 10.95,
-    "avgSalary": "₹10.5 LPA",
+    "avgSalary": "\u20b910.5 LPA",
     "avgSalaryNum": 10.5,
-    "highestSalary": "₹23.9 LPA",
-    "medianSalary": "₹9.5 LPA",
+    "highestSalary": "\u20b923.9 LPA",
+    "medianSalary": "\u20b99.5 LPA",
     "batchSize": 360,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -4635,19 +4635,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Business Analytics & Big Data",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.95 Lakhs"
+        "fee": "\u20b910.95 Lakhs"
       },
       {
         "name": "PGDM in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.95 Lakhs"
+        "fee": "\u20b910.95 Lakhs"
       },
       {
         "name": "PGDM in Marketing & Sales",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.95 Lakhs"
+        "fee": "\u20b910.95 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -4685,12 +4685,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1998,
     "campusArea": "23 Acres",
     "accreditation": "A Rated, Residential Campus",
-    "fees": "₹9.85 Lakhs",
+    "fees": "\u20b99.85 Lakhs",
     "feeNum": 9.85,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.9 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.9 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -4729,19 +4729,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Advertising & Communication",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9.85 Lakhs"
+        "fee": "\u20b99.85 Lakhs"
       },
       {
         "name": "PGDM in Research & Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9.85 Lakhs"
+        "fee": "\u20b99.85 Lakhs"
       },
       {
         "name": "PGDM in Global Business (with Japan options)",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9.85 Lakhs"
+        "fee": "\u20b99.85 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -4779,12 +4779,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1999,
     "campusArea": "24 Acres",
     "accreditation": "Estd. 1969, 50+ Years Legacy",
-    "fees": "₹9.96 Lakhs",
+    "fees": "\u20b99.96 Lakhs",
     "feeNum": 9.96,
-    "avgSalary": "₹9.5 LPA",
+    "avgSalary": "\u20b99.5 LPA",
     "avgSalaryNum": 9.5,
-    "highestSalary": "₹19.75 LPA",
-    "medianSalary": "₹8.6 LPA",
+    "highestSalary": "\u20b919.75 LPA",
+    "medianSalary": "\u20b98.6 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -4823,19 +4823,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Digital Branding",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9.96 Lakhs"
+        "fee": "\u20b99.96 Lakhs"
       },
       {
         "name": "PGDM in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9.96 Lakhs"
+        "fee": "\u20b99.96 Lakhs"
       },
       {
         "name": "PGDM in HR & Corporate Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9.96 Lakhs"
+        "fee": "\u20b99.96 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -4873,12 +4873,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2000,
     "campusArea": "25 Acres",
     "accreditation": "Grade A, Top Academic Brand",
-    "fees": "₹10.90 Lakhs",
+    "fees": "\u20b910.90 Lakhs",
     "feeNum": 10.9,
-    "avgSalary": "₹6.50 LPA",
+    "avgSalary": "\u20b96.50 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹12.00 LPA",
-    "medianSalary": "₹5.9 LPA",
+    "highestSalary": "\u20b912.00 LPA",
+    "medianSalary": "\u20b95.9 LPA",
     "batchSize": 300,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -4917,19 +4917,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in General Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.90 Lakhs"
+        "fee": "\u20b910.90 Lakhs"
       },
       {
         "name": "MBA in Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.90 Lakhs"
+        "fee": "\u20b910.90 Lakhs"
       },
       {
         "name": "MBA in Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.90 Lakhs"
+        "fee": "\u20b910.90 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -4967,12 +4967,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2001,
     "campusArea": "26 Acres",
     "accreditation": "NBA Acc., ACBSP USA Accredited",
-    "fees": "₹10.50 Lakhs",
+    "fees": "\u20b910.50 Lakhs",
     "feeNum": 10.5,
-    "avgSalary": "₹7.0 LPA",
+    "avgSalary": "\u20b97.0 LPA",
     "avgSalaryNum": 7,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 360,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -5011,19 +5011,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & E-Commerce",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.50 Lakhs"
+        "fee": "\u20b910.50 Lakhs"
       },
       {
         "name": "PGDM in Financial Markets & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.50 Lakhs"
+        "fee": "\u20b910.50 Lakhs"
       },
       {
         "name": "PGDM in Human Resource Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.50 Lakhs"
+        "fee": "\u20b910.50 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -5061,12 +5061,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2002,
     "campusArea": "27 Acres",
     "accreditation": "Approved, Jaipuria Legacy",
-    "fees": "₹9.20 Lakhs",
+    "fees": "\u20b99.20 Lakhs",
     "feeNum": 9.2,
-    "avgSalary": "₹7.0 LPA",
+    "avgSalary": "\u20b97.0 LPA",
     "avgSalaryNum": 7,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 180,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -5105,19 +5105,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Digital Media",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9.20 Lakhs"
+        "fee": "\u20b99.20 Lakhs"
       },
       {
         "name": "PGDM in Financial Services",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9.20 Lakhs"
+        "fee": "\u20b99.20 Lakhs"
       },
       {
         "name": "PGDM in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9.20 Lakhs"
+        "fee": "\u20b99.20 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -5156,12 +5156,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2003,
     "campusArea": "28 Acres",
     "accreditation": "Grade A, NAAC Grade A",
-    "fees": "₹3.00L Lakhs",
+    "fees": "\u20b93.00L Lakhs",
     "feeNum": 3,
-    "avgSalary": "₹6.0 LPA",
+    "avgSalary": "\u20b96.0 LPA",
     "avgSalaryNum": 6,
-    "highestSalary": "₹11.0 LPA",
-    "medianSalary": "₹5.4 LPA",
+    "highestSalary": "\u20b911.0 LPA",
+    "medianSalary": "\u20b95.4 LPA",
     "batchSize": 240,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -5200,19 +5200,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing & Sales",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.00L Lakhs"
+        "fee": "\u20b93.00L Lakhs"
       },
       {
         "name": "MBA in Corporate Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.00L Lakhs"
+        "fee": "\u20b93.00L Lakhs"
       },
       {
         "name": "MBA in Human Resource Capital",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.00L Lakhs"
+        "fee": "\u20b93.00L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -5250,12 +5250,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "29 Acres",
     "accreditation": "AIU Eq., Flagship Noida",
-    "fees": "₹14.75 Lakhs",
+    "fees": "\u20b914.75 Lakhs",
     "feeNum": 14.75,
-    "avgSalary": "₹11.29 LPA",
+    "avgSalary": "\u20b911.29 LPA",
     "avgSalaryNum": 11.29,
-    "highestSalary": "₹22.00 LPA",
-    "medianSalary": "₹10.80 LPA",
+    "highestSalary": "\u20b922.00 LPA",
+    "medianSalary": "\u20b910.80 LPA",
     "batchSize": 300,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -5294,19 +5294,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Brand Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹16.50 Lakhs"
+        "fee": "\u20b916.50 Lakhs"
       },
       {
         "name": "PGDM in Financial Services",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹16.50 Lakhs"
+        "fee": "\u20b916.50 Lakhs"
       },
       {
         "name": "PGDM in Human Resources Capital",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹16.50 Lakhs"
+        "fee": "\u20b916.50 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -5345,12 +5345,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "30 Acres",
     "accreditation": "Approved, Value B-School",
-    "fees": "₹3.25 Lakhs",
+    "fees": "\u20b93.25 Lakhs",
     "feeNum": 3.25,
-    "avgSalary": "₹4.5 LPA",
+    "avgSalary": "\u20b94.5 LPA",
     "avgSalaryNum": 4.5,
-    "highestSalary": "₹8.0 LPA",
-    "medianSalary": "₹4.0 LPA",
+    "highestSalary": "\u20b98.0 LPA",
+    "medianSalary": "\u20b94.0 LPA",
     "batchSize": 360,
     "roiScore": "7.8 / 10",
     "examsAccepted": [
@@ -5389,19 +5389,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.25 Lakhs"
+        "fee": "\u20b93.25 Lakhs"
       },
       {
         "name": "MBA in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.25 Lakhs"
+        "fee": "\u20b93.25 Lakhs"
       },
       {
         "name": "MBA in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.25 Lakhs"
+        "fee": "\u20b93.25 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -5440,12 +5440,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "31 Acres",
     "accreditation": "Approved, Knowledge Park Hub",
-    "fees": "₹4.95L Lakhs",
+    "fees": "\u20b94.95L Lakhs",
     "feeNum": 4.95,
-    "avgSalary": "₹5.0 LPA",
+    "avgSalary": "\u20b95.0 LPA",
     "avgSalaryNum": 5,
-    "highestSalary": "₹27.0 LPA",
-    "medianSalary": "₹4.5 LPA",
+    "highestSalary": "\u20b927.0 LPA",
+    "medianSalary": "\u20b94.5 LPA",
     "batchSize": 180,
     "roiScore": "7.9 / 10",
     "examsAccepted": [
@@ -5484,19 +5484,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹4.95L Lakhs"
+        "fee": "\u20b94.95L Lakhs"
       },
       {
         "name": "MBA in Digital Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹4.95L Lakhs"
+        "fee": "\u20b94.95L Lakhs"
       },
       {
         "name": "MBA in Banking & Finance Services",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹4.95L Lakhs"
+        "fee": "\u20b94.95L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -5534,12 +5534,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "32 Acres",
     "accreditation": "Ranked, High Placement ROI",
-    "fees": "₹7.95 Lakhs",
+    "fees": "\u20b97.95 Lakhs",
     "feeNum": 7.95,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹58.0 LPA",
-    "medianSalary": "₹6.1 LPA",
+    "highestSalary": "\u20b958.0 LPA",
+    "medianSalary": "\u20b96.1 LPA",
     "batchSize": 240,
     "roiScore": "8.0 / 10",
     "examsAccepted": [
@@ -5578,19 +5578,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.95 Lakhs"
+        "fee": "\u20b97.95 Lakhs"
       },
       {
         "name": "PGDM in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.95 Lakhs"
+        "fee": "\u20b97.95 Lakhs"
       },
       {
         "name": "PGDM in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.95 Lakhs"
+        "fee": "\u20b97.95 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -5628,12 +5628,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "33 Acres",
     "accreditation": "Approved, 100% Placement Record",
-    "fees": "₹3.25L Lakhs",
+    "fees": "\u20b93.25L Lakhs",
     "feeNum": 3.25,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹5.9 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b95.9 LPA",
     "batchSize": 300,
     "roiScore": "8.1 / 10",
     "examsAccepted": [
@@ -5672,19 +5672,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.25L Lakhs"
+        "fee": "\u20b93.25L Lakhs"
       },
       {
         "name": "PGDM in Digital Marketing Services",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.25L Lakhs"
+        "fee": "\u20b93.25L Lakhs"
       },
       {
         "name": "PGDM in Finance & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.25L Lakhs"
+        "fee": "\u20b93.25L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -5722,12 +5722,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "34 Acres",
     "accreditation": "Approved, Autonomous B-School",
-    "fees": "₹6.80 Lakhs",
+    "fees": "\u20b96.80 Lakhs",
     "feeNum": 6.8,
-    "avgSalary": "₹6.0 LPA",
+    "avgSalary": "\u20b96.0 LPA",
     "avgSalaryNum": 6,
-    "highestSalary": "₹51.0 LPA",
-    "medianSalary": "₹5.4 LPA",
+    "highestSalary": "\u20b951.0 LPA",
+    "medianSalary": "\u20b95.4 LPA",
     "batchSize": 360,
     "roiScore": "8.2 / 10",
     "examsAccepted": [
@@ -5766,19 +5766,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Sales",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6.80 Lakhs"
+        "fee": "\u20b96.80 Lakhs"
       },
       {
         "name": "PGDM in Corporate Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6.80 Lakhs"
+        "fee": "\u20b96.80 Lakhs"
       },
       {
         "name": "PGDM in Human Resources & Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6.80 Lakhs"
+        "fee": "\u20b96.80 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -5816,12 +5816,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "35 Acres",
     "accreditation": "Approved, Premium Certifications",
-    "fees": "₹10.75 Lakhs",
+    "fees": "\u20b910.75 Lakhs",
     "feeNum": 10.75,
-    "avgSalary": "₹7.50 LPA",
+    "avgSalary": "\u20b97.50 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 180,
     "roiScore": "8.3 / 10",
     "examsAccepted": [
@@ -5860,19 +5860,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.75 Lakhs"
+        "fee": "\u20b910.75 Lakhs"
       },
       {
         "name": "PGDM in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.75 Lakhs"
+        "fee": "\u20b910.75 Lakhs"
       },
       {
         "name": "PGDM in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.75 Lakhs"
+        "fee": "\u20b910.75 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -5911,12 +5911,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "36 Acres",
     "accreditation": "Approved, IBM Partnered PGDM",
-    "fees": "₹2.90L Lakhs",
+    "fees": "\u20b92.90L Lakhs",
     "feeNum": 2.9,
-    "avgSalary": "₹6.0 LPA",
+    "avgSalary": "\u20b96.0 LPA",
     "avgSalaryNum": 6,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹5.4 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b95.4 LPA",
     "batchSize": 240,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -5955,19 +5955,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Business Analytics (with IBM)",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹2.90L Lakhs"
+        "fee": "\u20b92.90L Lakhs"
       },
       {
         "name": "MBA in Supply Chain Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹2.90L Lakhs"
+        "fee": "\u20b92.90L Lakhs"
       },
       {
         "name": "MBA in Finance & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹2.90L Lakhs"
+        "fee": "\u20b92.90L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -6005,12 +6005,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "37 Acres",
     "accreditation": "Approved, Elite Legacy Campus",
-    "fees": "₹12.40 Lakhs",
+    "fees": "\u20b912.40 Lakhs",
     "feeNum": 12.4,
-    "avgSalary": "₹5.9 LPA",
+    "avgSalary": "\u20b95.9 LPA",
     "avgSalaryNum": 5.9,
-    "highestSalary": "₹14.4 LPA",
-    "medianSalary": "₹5.3 LPA",
+    "highestSalary": "\u20b914.4 LPA",
+    "medianSalary": "\u20b95.3 LPA",
     "batchSize": 300,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -6049,19 +6049,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing & Innovation",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.40 Lakhs"
+        "fee": "\u20b912.40 Lakhs"
       },
       {
         "name": "MBA in FinTech & Wealth Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.40 Lakhs"
+        "fee": "\u20b912.40 Lakhs"
       },
       {
         "name": "MBA in Strategic HR & Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.40 Lakhs"
+        "fee": "\u20b912.40 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -6099,12 +6099,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "38 Acres",
     "accreditation": "Approved, Times Group Legacy",
-    "fees": "₹12.45 Lakhs",
+    "fees": "\u20b912.45 Lakhs",
     "feeNum": 12.45,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹1.2 CPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b91.2 CPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 360,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -6143,19 +6143,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing & Sales",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.45 Lakhs"
+        "fee": "\u20b912.45 Lakhs"
       },
       {
         "name": "MBA in Finance & FinTech",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.45 Lakhs"
+        "fee": "\u20b912.45 Lakhs"
       },
       {
         "name": "MBA in Human Resource Capital",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.45 Lakhs"
+        "fee": "\u20b912.45 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -6193,12 +6193,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "39 Acres",
     "accreditation": "Approved, Value B-School",
-    "fees": "₹3.25 Lakhs",
+    "fees": "\u20b93.25 Lakhs",
     "feeNum": 3.25,
-    "avgSalary": "₹5.5 LPA",
+    "avgSalary": "\u20b95.5 LPA",
     "avgSalaryNum": 5.5,
-    "highestSalary": "₹12.4 LPA",
-    "medianSalary": "₹5.0 LPA",
+    "highestSalary": "\u20b912.4 LPA",
+    "medianSalary": "\u20b95.0 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -6237,19 +6237,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.25 Lakhs"
+        "fee": "\u20b93.25 Lakhs"
       },
       {
         "name": "PGDM in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.25 Lakhs"
+        "fee": "\u20b93.25 Lakhs"
       },
       {
         "name": "PGDM in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.25 Lakhs"
+        "fee": "\u20b93.25 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -6287,12 +6287,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "40 Acres",
     "accreditation": "Approved, Entrepreneurship Focused",
-    "fees": "₹11.85 Lakhs",
+    "fees": "\u20b911.85 Lakhs",
     "feeNum": 11.85,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 240,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -6331,19 +6331,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Strategic Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.85 Lakhs"
+        "fee": "\u20b911.85 Lakhs"
       },
       {
         "name": "PGDM in FinTech & Investment Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.85 Lakhs"
+        "fee": "\u20b911.85 Lakhs"
       },
       {
         "name": "PGDM in Strategic Human Resources",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.85 Lakhs"
+        "fee": "\u20b911.85 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -6381,12 +6381,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "41 Acres",
     "accreditation": "Approved, JK Organisation Legacy",
-    "fees": "₹8.95L Lakhs",
+    "fees": "\u20b98.95L Lakhs",
     "feeNum": 8.95,
-    "avgSalary": "₹9.0 LPA",
+    "avgSalary": "\u20b99.0 LPA",
     "avgSalaryNum": 9,
-    "highestSalary": "₹24.0 LPA",
-    "medianSalary": "₹8.1 LPA",
+    "highestSalary": "\u20b924.0 LPA",
+    "medianSalary": "\u20b98.1 LPA",
     "batchSize": 300,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -6425,19 +6425,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Sales Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8.95L Lakhs"
+        "fee": "\u20b98.95L Lakhs"
       },
       {
         "name": "PGDM in Financial Technologies",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8.95L Lakhs"
+        "fee": "\u20b98.95L Lakhs"
       },
       {
         "name": "PGDM in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8.95L Lakhs"
+        "fee": "\u20b98.95L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -6476,12 +6476,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "42 Acres",
     "accreditation": "Approved, Heart of Gurugram",
-    "fees": "₹6.60L Lakhs",
+    "fees": "\u20b96.60L Lakhs",
     "feeNum": 6.6,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹21.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b921.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 360,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -6520,19 +6520,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6.60L Lakhs"
+        "fee": "\u20b96.60L Lakhs"
       },
       {
         "name": "MBA in Digital Marketing Services",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6.60L Lakhs"
+        "fee": "\u20b96.60L Lakhs"
       },
       {
         "name": "MBA in Finance & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6.60L Lakhs"
+        "fee": "\u20b96.60L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -6570,12 +6570,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "43 Acres",
     "accreditation": "Approved, Imperial College Mentored",
-    "fees": "₹14.40 Lakhs",
+    "fees": "\u20b914.40 Lakhs",
     "feeNum": 14.4,
-    "avgSalary": "₹9.50 LPA",
+    "avgSalary": "\u20b99.50 LPA",
     "avgSalaryNum": 9.5,
-    "highestSalary": "₹25.90 LPA",
-    "medianSalary": "₹9.00 LPA",
+    "highestSalary": "\u20b925.90 LPA",
+    "medianSalary": "\u20b99.00 LPA",
     "batchSize": 120,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -6614,19 +6614,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing & Product Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹15.10 Lakhs"
+        "fee": "\u20b915.10 Lakhs"
       },
       {
         "name": "MBA in Finance & FinTech",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹15.10 Lakhs"
+        "fee": "\u20b915.10 Lakhs"
       },
       {
         "name": "MBA in Strategic Human Resources",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹15.10 Lakhs"
+        "fee": "\u20b915.10 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -6665,12 +6665,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2019,
     "campusArea": "44 Acres",
     "accreditation": "Approved, Inspired Leadership",
-    "fees": "₹17.20 Lakhs",
+    "fees": "\u20b917.20 Lakhs",
     "feeNum": 17.2,
-    "avgSalary": "₹10.3 LPA",
+    "avgSalary": "\u20b910.3 LPA",
     "avgSalaryNum": 10.3,
-    "highestSalary": "₹19.3 LPA",
-    "medianSalary": "₹9.3 LPA",
+    "highestSalary": "\u20b919.3 LPA",
+    "medianSalary": "\u20b99.3 LPA",
     "batchSize": 240,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -6709,19 +6709,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Product Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹17.20 Lakhs"
+        "fee": "\u20b917.20 Lakhs"
       },
       {
         "name": "PGDM in Finance & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹17.20 Lakhs"
+        "fee": "\u20b917.20 Lakhs"
       },
       {
         "name": "PGDM in Human Resource Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹17.20 Lakhs"
+        "fee": "\u20b917.20 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -6759,12 +6759,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1990,
     "campusArea": "45 Acres",
     "accreditation": "Approved, Premium Sector 53 Campus",
-    "fees": "₹12.90 Lakhs",
+    "fees": "\u20b912.90 Lakhs",
     "feeNum": 12.9,
-    "avgSalary": "₹8.6 LPA",
+    "avgSalary": "\u20b98.6 LPA",
     "avgSalaryNum": 8.6,
-    "highestSalary": "₹26.0 LPA",
-    "medianSalary": "₹7.7 LPA",
+    "highestSalary": "\u20b926.0 LPA",
+    "medianSalary": "\u20b97.7 LPA",
     "batchSize": 300,
     "roiScore": "7.8 / 10",
     "examsAccepted": [
@@ -6803,19 +6803,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing & Sales Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.90 Lakhs"
+        "fee": "\u20b912.90 Lakhs"
       },
       {
         "name": "MBA in FinTech & Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.90 Lakhs"
+        "fee": "\u20b912.90 Lakhs"
       },
       {
         "name": "MBA in Human Capital & Leadership",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.90 Lakhs"
+        "fee": "\u20b912.90 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -6853,12 +6853,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1991,
     "campusArea": "46 Acres",
     "accreditation": "Approved, Affordable MBA",
-    "fees": "₹3.25 Lakhs",
+    "fees": "\u20b93.25 Lakhs",
     "feeNum": 3.25,
-    "avgSalary": "₹4.5 LPA",
+    "avgSalary": "\u20b94.5 LPA",
     "avgSalaryNum": 4.5,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹4.0 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b94.0 LPA",
     "batchSize": 360,
     "roiScore": "7.9 / 10",
     "examsAccepted": [
@@ -6897,19 +6897,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.25 Lakhs"
+        "fee": "\u20b93.25 Lakhs"
       },
       {
         "name": "MBA in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.25 Lakhs"
+        "fee": "\u20b93.25 Lakhs"
       },
       {
         "name": "MBA in HR Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.25 Lakhs"
+        "fee": "\u20b93.25 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -6947,12 +6947,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1992,
     "campusArea": "47 Acres",
     "accreditation": "Approved, Corporate Integration Leader",
-    "fees": "₹8.50L Lakhs",
+    "fees": "\u20b98.50L Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹10.3 LPA",
+    "avgSalary": "\u20b910.3 LPA",
     "avgSalaryNum": 10.3,
-    "highestSalary": "₹26.0 LPA",
-    "medianSalary": "₹9.3 LPA",
+    "highestSalary": "\u20b926.0 LPA",
+    "medianSalary": "\u20b99.3 LPA",
     "batchSize": 180,
     "roiScore": "8.0 / 10",
     "examsAccepted": [
@@ -6991,19 +6991,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in FMCG & Consumer Goods Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8.50L Lakhs"
+        "fee": "\u20b98.50L Lakhs"
       },
       {
         "name": "PGDM in Investment Banking & Corporate Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8.50L Lakhs"
+        "fee": "\u20b98.50L Lakhs"
       },
       {
         "name": "PGDM in HR & Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8.50L Lakhs"
+        "fee": "\u20b98.50L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -7041,12 +7041,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "48 Acres",
     "accreditation": "Approved, Global MBA Track",
-    "fees": "₹6.95L Lakhs",
+    "fees": "\u20b96.95L Lakhs",
     "feeNum": 6.95,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹13.3 LPA",
-    "medianSalary": "₹5.9 LPA",
+    "highestSalary": "\u20b913.3 LPA",
+    "medianSalary": "\u20b95.9 LPA",
     "batchSize": 240,
     "roiScore": "8.1 / 10",
     "examsAccepted": [
@@ -7085,19 +7085,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6.95L Lakhs"
+        "fee": "\u20b96.95L Lakhs"
       },
       {
         "name": "PGDM in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6.95L Lakhs"
+        "fee": "\u20b96.95L Lakhs"
       },
       {
         "name": "PGDM in HR Capital",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6.95L Lakhs"
+        "fee": "\u20b96.95L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -7136,12 +7136,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "49 Acres",
     "accreditation": "Approved, Best ROI B-School",
-    "fees": "₹7.20L Lakhs",
+    "fees": "\u20b97.20L Lakhs",
     "feeNum": 7.2,
-    "avgSalary": "₹7.84 LPA",
+    "avgSalary": "\u20b97.84 LPA",
     "avgSalaryNum": 7.84,
-    "highestSalary": "₹35.0 LPA",
-    "medianSalary": "₹7.1 LPA",
+    "highestSalary": "\u20b935.0 LPA",
+    "medianSalary": "\u20b97.1 LPA",
     "batchSize": 300,
     "roiScore": "8.2 / 10",
     "examsAccepted": [
@@ -7180,19 +7180,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.20L Lakhs"
+        "fee": "\u20b97.20L Lakhs"
       },
       {
         "name": "MBA in Digital Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.20L Lakhs"
+        "fee": "\u20b97.20L Lakhs"
       },
       {
         "name": "MBA in FinTech & Wealth Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.20L Lakhs"
+        "fee": "\u20b97.20L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -7230,12 +7230,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "50 Acres",
     "accreditation": "Approved, Harvard & IBM Partnered",
-    "fees": "₹3.75L Lakhs",
+    "fees": "\u20b93.75L Lakhs",
     "feeNum": 3.75,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹24.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b924.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 360,
     "roiScore": "8.3 / 10",
     "examsAccepted": [
@@ -7274,19 +7274,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Business Analytics (IBM)",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.75L Lakhs"
+        "fee": "\u20b93.75L Lakhs"
       },
       {
         "name": "PGDM in Cloud Computing & AWS",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.75L Lakhs"
+        "fee": "\u20b93.75L Lakhs"
       },
       {
         "name": "PGDM in Enterprise Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.75L Lakhs"
+        "fee": "\u20b93.75L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -7324,12 +7324,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "51 Acres",
     "accreditation": "Grade A++, NAAC A++ Rated",
-    "fees": "₹3.50L Lakhs",
+    "fees": "\u20b93.50L Lakhs",
     "feeNum": 3.5,
-    "avgSalary": "₹8.0 LPA",
+    "avgSalary": "\u20b98.0 LPA",
     "avgSalaryNum": 8,
-    "highestSalary": "₹24.0 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b924.0 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 180,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -7368,19 +7368,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.50L Lakhs"
+        "fee": "\u20b93.50L Lakhs"
       },
       {
         "name": "MBA in Digital Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.50L Lakhs"
+        "fee": "\u20b93.50L Lakhs"
       },
       {
         "name": "MBA in Corporate Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.50L Lakhs"
+        "fee": "\u20b93.50L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -7418,12 +7418,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1997,
     "campusArea": "52 Acres",
     "accreditation": "Approved, SAP ERP Partnered",
-    "fees": "₹11.90 Lakhs",
+    "fees": "\u20b911.90 Lakhs",
     "feeNum": 11.9,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹30.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b930.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 240,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -7462,19 +7462,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.90 Lakhs"
+        "fee": "\u20b911.90 Lakhs"
       },
       {
         "name": "PGDM in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.90 Lakhs"
+        "fee": "\u20b911.90 Lakhs"
       },
       {
         "name": "PGDM in Human Capital Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.90 Lakhs"
+        "fee": "\u20b911.90 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -7512,12 +7512,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1998,
     "campusArea": "53 Acres",
     "accreditation": "Approved, Value B-School",
-    "fees": "₹3.15 Lakhs",
+    "fees": "\u20b93.15 Lakhs",
     "feeNum": 3.15,
-    "avgSalary": "₹4.3 L - ₹7.5 LPA",
+    "avgSalary": "\u20b94.3 L - \u20b97.5 LPA",
     "avgSalaryNum": 4.37,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹3.9 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b93.9 LPA",
     "batchSize": 300,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -7556,19 +7556,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.15 Lakhs"
+        "fee": "\u20b93.15 Lakhs"
       },
       {
         "name": "MBA in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.15 Lakhs"
+        "fee": "\u20b93.15 Lakhs"
       },
       {
         "name": "MBA in HR Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.15 Lakhs"
+        "fee": "\u20b93.15 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -7607,12 +7607,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1999,
     "campusArea": "54 Acres",
     "accreditation": "Approved, British MBA Pathway",
-    "fees": "₹7.50L Lakhs",
+    "fees": "\u20b97.50L Lakhs",
     "feeNum": 7.5,
-    "avgSalary": "₹8.0 LPA",
+    "avgSalary": "\u20b98.0 LPA",
     "avgSalaryNum": 8,
-    "highestSalary": "₹19.0 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b919.0 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 360,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -7651,19 +7651,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.50L Lakhs"
+        "fee": "\u20b97.50L Lakhs"
       },
       {
         "name": "MBA in Digital Marketing Services",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.50L Lakhs"
+        "fee": "\u20b97.50L Lakhs"
       },
       {
         "name": "MBA in Finance & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.50L Lakhs"
+        "fee": "\u20b97.50L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -7701,12 +7701,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2000,
     "campusArea": "15 Acres",
     "accreditation": "Approved, BKC Zone Campus",
-    "fees": "₹12.63 Lakhs",
+    "fees": "\u20b912.63 Lakhs",
     "feeNum": 12.63,
-    "avgSalary": "₹9.5 LPA",
+    "avgSalary": "\u20b99.5 LPA",
     "avgSalaryNum": 9.5,
-    "highestSalary": "₹22.0 LPA",
-    "medianSalary": "₹8.6 LPA",
+    "highestSalary": "\u20b922.0 LPA",
+    "medianSalary": "\u20b98.6 LPA",
     "batchSize": 180,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -7745,19 +7745,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Digital Marketing & E-Commerce",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.63 Lakhs"
+        "fee": "\u20b912.63 Lakhs"
       },
       {
         "name": "MBA in Financial Technologies",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.63 Lakhs"
+        "fee": "\u20b912.63 Lakhs"
       },
       {
         "name": "MBA in Human Capital Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.63 Lakhs"
+        "fee": "\u20b912.63 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -7796,12 +7796,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2001,
     "campusArea": "16 Acres",
     "accreditation": "Approved, India's 1st AI University",
-    "fees": "₹11.08L Lakhs",
+    "fees": "\u20b911.08L Lakhs",
     "feeNum": 11.08,
-    "avgSalary": "₹10.5 LPA",
+    "avgSalary": "\u20b910.5 LPA",
     "avgSalaryNum": 10.5,
-    "highestSalary": "₹42.0 LPA",
-    "medianSalary": "₹9.5 LPA",
+    "highestSalary": "\u20b942.0 LPA",
+    "medianSalary": "\u20b99.5 LPA",
     "batchSize": 240,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -7840,19 +7840,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in AI & Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.08L Lakhs"
+        "fee": "\u20b911.08L Lakhs"
       },
       {
         "name": "MBA in Digital Marketing Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.08L Lakhs"
+        "fee": "\u20b911.08L Lakhs"
       },
       {
         "name": "MBA in Corporate Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.08L Lakhs"
+        "fee": "\u20b911.08L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -7890,12 +7890,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2002,
     "campusArea": "17 Acres",
     "accreditation": "Grade A, iConnect Placement Focus",
-    "fees": "₹12.45 Lakhs",
+    "fees": "\u20b912.45 Lakhs",
     "feeNum": 12.45,
-    "avgSalary": "₹10.5 LPA",
+    "avgSalary": "\u20b910.5 LPA",
     "avgSalaryNum": 10.5,
-    "highestSalary": "₹25.0 LPA",
-    "medianSalary": "₹9.5 LPA",
+    "highestSalary": "\u20b925.0 LPA",
+    "medianSalary": "\u20b99.5 LPA",
     "batchSize": 300,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -7934,19 +7934,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Digital Media",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.45 Lakhs"
+        "fee": "\u20b912.45 Lakhs"
       },
       {
         "name": "PGDM in Finance & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.45 Lakhs"
+        "fee": "\u20b912.45 Lakhs"
       },
       {
         "name": "PGDM in Human Capital Capital",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹12.45 Lakhs"
+        "fee": "\u20b912.45 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -7984,12 +7984,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2003,
     "campusArea": "18 Acres",
     "accreditation": "Approved, Value B-School",
-    "fees": "₹7.00 Lakhs",
+    "fees": "\u20b97.00 Lakhs",
     "feeNum": 7,
-    "avgSalary": "₹5.5 LPA",
+    "avgSalary": "\u20b95.5 LPA",
     "avgSalaryNum": 5.5,
-    "highestSalary": "₹11.0 LPA",
-    "medianSalary": "₹5.0 LPA",
+    "highestSalary": "\u20b911.0 LPA",
+    "medianSalary": "\u20b95.0 LPA",
     "batchSize": 360,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -8028,19 +8028,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Sales",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.00 Lakhs"
+        "fee": "\u20b97.00 Lakhs"
       },
       {
         "name": "PGDM in Finance & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.00 Lakhs"
+        "fee": "\u20b97.00 Lakhs"
       },
       {
         "name": "PGDM in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.00 Lakhs"
+        "fee": "\u20b97.00 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -8078,12 +8078,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "19 Acres",
     "accreditation": "Approved, Premium Panvel Campus",
-    "fees": "₹10.25 Lakhs",
+    "fees": "\u20b910.25 Lakhs",
     "feeNum": 10.25,
-    "avgSalary": "₹7.0 LPA",
+    "avgSalary": "\u20b97.0 LPA",
     "avgSalaryNum": 7,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 180,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -8122,19 +8122,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in General Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.25 Lakhs"
+        "fee": "\u20b910.25 Lakhs"
       },
       {
         "name": "MBA in Marketing & Sales",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.25 Lakhs"
+        "fee": "\u20b910.25 Lakhs"
       },
       {
         "name": "MBA in Finance & Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.25 Lakhs"
+        "fee": "\u20b910.25 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -8172,12 +8172,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "20 Acres",
     "accreditation": "AACSB Acc., AACSB Accredited Brand",
-    "fees": "₹11.50 Lakhs",
+    "fees": "\u20b911.50 Lakhs",
     "feeNum": 11.5,
-    "avgSalary": "₹11.0 LPA",
+    "avgSalary": "\u20b911.0 LPA",
     "avgSalaryNum": 11,
-    "highestSalary": "₹25.0 LPA",
-    "medianSalary": "₹9.9 LPA",
+    "highestSalary": "\u20b925.0 LPA",
+    "medianSalary": "\u20b99.9 LPA",
     "batchSize": 240,
     "roiScore": "7.8 / 10",
     "examsAccepted": [
@@ -8216,19 +8216,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Digital Marketing & Sales",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.50 Lakhs"
+        "fee": "\u20b911.50 Lakhs"
       },
       {
         "name": "PGDM in Corporate Finance & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.50 Lakhs"
+        "fee": "\u20b911.50 Lakhs"
       },
       {
         "name": "PGDM in Human Capital Capital",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.50 Lakhs"
+        "fee": "\u20b911.50 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -8267,12 +8267,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "21 Acres",
     "accreditation": "NBA Acc., Electronic City Hub",
-    "fees": "₹11.00 Lakhs",
+    "fees": "\u20b911.00 Lakhs",
     "feeNum": 11,
-    "avgSalary": "₹9.0 LPA",
+    "avgSalary": "\u20b99.0 LPA",
     "avgSalaryNum": 9,
-    "highestSalary": "₹20.0 LPA",
-    "medianSalary": "₹8.1 LPA",
+    "highestSalary": "\u20b920.0 LPA",
+    "medianSalary": "\u20b98.1 LPA",
     "batchSize": 300,
     "roiScore": "7.9 / 10",
     "examsAccepted": [
@@ -8311,19 +8311,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.00 Lakhs"
+        "fee": "\u20b911.00 Lakhs"
       },
       {
         "name": "MBA in Digital Media Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.00 Lakhs"
+        "fee": "\u20b911.00 Lakhs"
       },
       {
         "name": "MBA in FinTech & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.00 Lakhs"
+        "fee": "\u20b911.00 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -8362,12 +8362,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "22 Acres",
     "accreditation": "Approved, High ROI B-School",
-    "fees": "₹5.25L Lakhs",
+    "fees": "\u20b95.25L Lakhs",
     "feeNum": 5.25,
-    "avgSalary": "₹8.2 LPA",
+    "avgSalary": "\u20b98.2 LPA",
     "avgSalaryNum": 8.2,
-    "highestSalary": "₹48.0 LPA",
-    "medianSalary": "₹7.4 LPA",
+    "highestSalary": "\u20b948.0 LPA",
+    "medianSalary": "\u20b97.4 LPA",
     "batchSize": 360,
     "roiScore": "8.0 / 10",
     "examsAccepted": [
@@ -8406,19 +8406,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Digital Business Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.25L Lakhs"
+        "fee": "\u20b95.25L Lakhs"
       },
       {
         "name": "MBA in Corporate Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.25L Lakhs"
+        "fee": "\u20b95.25L Lakhs"
       },
       {
         "name": "MBA in Human Capital Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.25L Lakhs"
+        "fee": "\u20b95.25L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -8456,12 +8456,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "23 Acres",
     "accreditation": "Approved, Bannerghatta Campus",
-    "fees": "₹11.25 Lakhs",
+    "fees": "\u20b911.25 Lakhs",
     "feeNum": 11.25,
-    "avgSalary": "₹9.5 LPA",
+    "avgSalary": "\u20b99.5 LPA",
     "avgSalaryNum": 9.5,
-    "highestSalary": "₹22.0 LPA",
-    "medianSalary": "₹8.6 LPA",
+    "highestSalary": "\u20b922.0 LPA",
+    "medianSalary": "\u20b98.6 LPA",
     "batchSize": 180,
     "roiScore": "8.1 / 10",
     "examsAccepted": [
@@ -8500,19 +8500,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.25 Lakhs"
+        "fee": "\u20b911.25 Lakhs"
       },
       {
         "name": "PGDM in Digital Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.25 Lakhs"
+        "fee": "\u20b911.25 Lakhs"
       },
       {
         "name": "PGDM in FinTech & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11.25 Lakhs"
+        "fee": "\u20b911.25 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -8550,12 +8550,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "24 Acres",
     "accreditation": "Approved, Elite Private University",
-    "fees": "₹15.00 Lakhs",
+    "fees": "\u20b915.00 Lakhs",
     "feeNum": 15,
-    "avgSalary": "₹8.80 LPA",
+    "avgSalary": "\u20b98.80 LPA",
     "avgSalaryNum": 8.8,
-    "highestSalary": "₹26.10 LPA",
-    "medianSalary": "₹8.30 LPA",
+    "highestSalary": "\u20b926.10 LPA",
+    "medianSalary": "\u20b98.30 LPA",
     "batchSize": 420,
     "roiScore": "8.2 / 10",
     "examsAccepted": [
@@ -8594,19 +8594,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing & Product Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹15.00L Lakhs"
+        "fee": "\u20b915.00L Lakhs"
       },
       {
         "name": "MBA in Finance & Wealth Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹15.00L Lakhs"
+        "fee": "\u20b915.00L Lakhs"
       },
       {
         "name": "MBA in Strategic Human Resources",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹15.00L Lakhs"
+        "fee": "\u20b915.00L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -8645,12 +8645,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "25 Acres",
     "accreditation": "Approved, Global Academic Tie-Ups",
-    "fees": "₹9.90L Lakhs",
+    "fees": "\u20b99.90L Lakhs",
     "feeNum": 9.9,
-    "avgSalary": "₹8.5 LPA",
+    "avgSalary": "\u20b98.5 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹7.7 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b97.7 LPA",
     "batchSize": 300,
     "roiScore": "8.3 / 10",
     "examsAccepted": [
@@ -8689,19 +8689,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Brand Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9.90L Lakhs"
+        "fee": "\u20b99.90L Lakhs"
       },
       {
         "name": "PGDM in FinTech & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9.90L Lakhs"
+        "fee": "\u20b99.90L Lakhs"
       },
       {
         "name": "PGDM in Human Capital Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9.90L Lakhs"
+        "fee": "\u20b99.90L Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -8739,12 +8739,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "26 Acres",
     "accreditation": "Approved, IACBE USA Accredited",
-    "fees": "₹10.25 Lakhs",
+    "fees": "\u20b910.25 Lakhs",
     "feeNum": 10.25,
-    "avgSalary": "₹6.6 LPA",
+    "avgSalary": "\u20b96.6 LPA",
     "avgSalaryNum": 6.6,
-    "highestSalary": "₹13.5 LPA",
-    "medianSalary": "₹5.9 LPA",
+    "highestSalary": "\u20b913.5 LPA",
+    "medianSalary": "\u20b95.9 LPA",
     "batchSize": 360,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -8783,19 +8783,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Digital Media",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.25 Lakhs"
+        "fee": "\u20b910.25 Lakhs"
       },
       {
         "name": "PGDM in Corporate Finance & Valuation",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.25 Lakhs"
+        "fee": "\u20b910.25 Lakhs"
       },
       {
         "name": "PGDM in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹10.25 Lakhs"
+        "fee": "\u20b910.25 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -8833,12 +8833,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "27 Acres",
     "accreditation": "AACSB Acc., AACSB Accredited (Top 5%)",
-    "fees": "₹17.50 Lakhs",
+    "fees": "\u20b917.50 Lakhs",
     "feeNum": 17.5,
-    "avgSalary": "₹10.9 LPA",
+    "avgSalary": "\u20b910.9 LPA",
     "avgSalaryNum": 10.9,
-    "highestSalary": "₹43.0 LPA",
-    "medianSalary": "₹9.8 LPA",
+    "highestSalary": "\u20b943.0 LPA",
+    "medianSalary": "\u20b99.8 LPA",
     "batchSize": 180,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -8877,19 +8877,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Digital Marketing & Sales",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹17.50 Lakhs"
+        "fee": "\u20b917.50 Lakhs"
       },
       {
         "name": "PGDM in Corporate Finance & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹17.50 Lakhs"
+        "fee": "\u20b917.50 Lakhs"
       },
       {
         "name": "PGDM in Human Capital Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹17.50 Lakhs"
+        "fee": "\u20b917.50 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -8927,12 +8927,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "28 Acres",
     "accreditation": "NAAC A, NIRF Top 40 B-School",
-    "fees": "₹19.11 Lakhs",
+    "fees": "\u20b919.11 Lakhs",
     "feeNum": 19.11,
-    "avgSalary": "₹10.50 LPA",
+    "avgSalary": "\u20b910.50 LPA",
     "avgSalaryNum": 10.5,
-    "highestSalary": "₹29.00 LPA",
-    "medianSalary": "₹9.5 LPA",
+    "highestSalary": "\u20b929.00 LPA",
+    "medianSalary": "\u20b99.5 LPA",
     "batchSize": 240,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -8971,19 +8971,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Digital Business",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹19.11 Lakhs"
+        "fee": "\u20b919.11 Lakhs"
       },
       {
         "name": "MBA in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹19.11 Lakhs"
+        "fee": "\u20b919.11 Lakhs"
       },
       {
         "name": "MBA in Oil & Gas Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹19.11 Lakhs"
+        "fee": "\u20b919.11 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -8999,7 +8999,7 @@ export const COLLEGES_DATA = [
       "Auditorium & Sports Complex",
       "Incubation & Startup Center"
     ],
-    "highlights": "UPES School of Business in Dehradun is one of India's top-ranked private management schools, distinguished for domain-specialized MBA programs in Digital Business, Business Analytics, Energy, Oil & Gas, and Global Supply Chain. Features a scenic Himalayan campus with 100% corporate placement linkages. Key Highlights: NIRF Top 40 ranked business school by NIRF Govt of India; Top 10% batch average CTC of ₹15.50 LPA with ₹29 LPA highest package",
+    "highlights": "UPES School of Business in Dehradun is one of India's top-ranked private management schools, distinguished for domain-specialized MBA programs in Digital Business, Business Analytics, Energy, Oil & Gas, and Global Supply Chain. Features a scenic Himalayan campus with 100% corporate placement linkages. Key Highlights: NIRF Top 40 ranked business school by NIRF Govt of India; Top 10% batch average CTC of \u20b915.50 LPA with \u20b929 LPA highest package",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -9021,12 +9021,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "29 Acres",
     "accreditation": "NAAC A+, NAAC A+ Ranked",
-    "fees": "₹7.17 Lakhs",
+    "fees": "\u20b97.17 Lakhs",
     "feeNum": 7.17,
-    "avgSalary": "₹7.50 LPA",
+    "avgSalary": "\u20b97.50 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹16.00 LPA",
-    "medianSalary": "₹7.00 LPA",
+    "highestSalary": "\u20b916.00 LPA",
+    "medianSalary": "\u20b97.00 LPA",
     "batchSize": 300,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -9065,19 +9065,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.80 Lakhs"
+        "fee": "\u20b97.80 Lakhs"
       },
       {
         "name": "MBA in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.80 Lakhs"
+        "fee": "\u20b97.80 Lakhs"
       },
       {
         "name": "MBA in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.80 Lakhs"
+        "fee": "\u20b97.80 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -9117,12 +9117,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "30 Acres",
     "accreditation": "AICTE App., Best ROI in Uttarakhand",
-    "fees": "₹8.90 Lakhs",
+    "fees": "\u20b98.90 Lakhs",
     "feeNum": 8.9,
-    "avgSalary": "₹8.70 LPA",
+    "avgSalary": "\u20b98.70 LPA",
     "avgSalaryNum": 8.7,
-    "highestSalary": "₹40.00 LPA",
-    "medianSalary": "₹7.8 LPA",
+    "highestSalary": "\u20b940.00 LPA",
+    "medianSalary": "\u20b97.8 LPA",
     "batchSize": 360,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -9161,19 +9161,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing & Digital Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8.90 Lakhs"
+        "fee": "\u20b98.90 Lakhs"
       },
       {
         "name": "MBA in FinTech & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8.90 Lakhs"
+        "fee": "\u20b98.90 Lakhs"
       },
       {
         "name": "MBA in Human Capital Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8.90 Lakhs"
+        "fee": "\u20b98.90 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -9189,7 +9189,7 @@ export const COLLEGES_DATA = [
       "Auditorium & Sports Complex",
       "Incubation & Startup Center"
     ],
-    "highlights": "Doon Business School (DBS Dehradun) is one of North India's premier business schools, known for exceptional return on investment (ROI). Offering value-added certifications with SAP, KPMG Six Sigma, and Bloomberg terminals, DBS ensures students graduate corporate-ready with multi-offer placements. Key Highlights: Integrated SAP, KPMG Six Sigma & Bloomberg Certifications; Recent audited highest package reached ₹40 LPA with top 20% average of ₹13.50 LPA",
+    "highlights": "Doon Business School (DBS Dehradun) is one of North India's premier business schools, known for exceptional return on investment (ROI). Offering value-added certifications with SAP, KPMG Six Sigma, and Bloomberg terminals, DBS ensures students graduate corporate-ready with multi-offer placements. Key Highlights: Integrated SAP, KPMG Six Sigma & Bloomberg Certifications; Recent audited highest package reached \u20b940 LPA with top 20% average of \u20b913.50 LPA",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -9211,12 +9211,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "31 Acres",
     "accreditation": "AICTE App., Affordable & High ROI",
-    "fees": "₹3.90 Lakhs",
+    "fees": "\u20b93.90 Lakhs",
     "feeNum": 3.9,
-    "avgSalary": "₹8.00 LPA",
+    "avgSalary": "\u20b98.00 LPA",
     "avgSalaryNum": 8,
-    "highestSalary": "₹22.00 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b922.00 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 180,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -9255,19 +9255,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.90 Lakhs"
+        "fee": "\u20b93.90 Lakhs"
       },
       {
         "name": "MBA in Finance & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.90 Lakhs"
+        "fee": "\u20b93.90 Lakhs"
       },
       {
         "name": "MBA in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.90 Lakhs"
+        "fee": "\u20b93.90 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -9283,7 +9283,7 @@ export const COLLEGES_DATA = [
       "Auditorium & Sports Complex",
       "Incubation & Startup Center"
     ],
-    "highlights": "Roorkee Institute of Technology (RIT) is an established technical and management institute located in the educational corridor of Roorkee-Dehradun. Celebrated for its budget-friendly fee structure under ₹4 Lakhs, intensive industrial internship tracks, and proactive corporate placement assistance. Key Highlights: Most affordable MBA in Uttarakhand with 2-year fee under ₹4 Lakhs; Approved by AICTE & affiliated to Uttarakhand Technical University (UTU)",
+    "highlights": "Roorkee Institute of Technology (RIT) is an established technical and management institute located in the educational corridor of Roorkee-Dehradun. Celebrated for its budget-friendly fee structure under \u20b94 Lakhs, intensive industrial internship tracks, and proactive corporate placement assistance. Key Highlights: Most affordable MBA in Uttarakhand with 2-year fee under \u20b94 Lakhs; Approved by AICTE & affiliated to Uttarakhand Technical University (UTU)",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -9305,12 +9305,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "32 Acres",
     "accreditation": "UGC Rec., Interdisciplinary Pedagogy",
-    "fees": "₹4.35 Lakhs",
+    "fees": "\u20b94.35 Lakhs",
     "feeNum": 4.35,
-    "avgSalary": "₹6.80 LPA",
+    "avgSalary": "\u20b96.80 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹33.50 LPA",
-    "medianSalary": "₹6.1 LPA",
+    "highestSalary": "\u20b933.50 LPA",
+    "medianSalary": "\u20b96.1 LPA",
     "batchSize": 240,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -9349,19 +9349,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Digital Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹4.35 Lakhs"
+        "fee": "\u20b94.35 Lakhs"
       },
       {
         "name": "MBA in Finance & FinTech",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹4.35 Lakhs"
+        "fee": "\u20b94.35 Lakhs"
       },
       {
         "name": "MBA in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹4.35 Lakhs"
+        "fee": "\u20b94.35 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -9399,12 +9399,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "33 Acres",
     "accreditation": "NAAC Acc., ACCA & Startup Incubator",
-    "fees": "₹5.25 Lakhs",
+    "fees": "\u20b95.25 Lakhs",
     "feeNum": 5.25,
-    "avgSalary": "₹6.50 LPA",
+    "avgSalary": "\u20b96.50 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹18.00 LPA",
-    "medianSalary": "₹5.9 LPA",
+    "highestSalary": "\u20b918.00 LPA",
+    "medianSalary": "\u20b95.9 LPA",
     "batchSize": 300,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -9443,19 +9443,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in International Finance (ACCA)",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.25 Lakhs"
+        "fee": "\u20b95.25 Lakhs"
       },
       {
         "name": "MBA in Entrepreneurship & Innovation",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.25 Lakhs"
+        "fee": "\u20b95.25 Lakhs"
       },
       {
         "name": "MBA in Digital Marketing & Growth",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.25 Lakhs"
+        "fee": "\u20b95.25 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -9493,12 +9493,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2019,
     "campusArea": "34 Acres",
     "accreditation": "NAAC A+, NAAC A+ University",
-    "fees": "₹5.00 Lakhs",
+    "fees": "\u20b95.00 Lakhs",
     "feeNum": 5,
-    "avgSalary": "₹6.70 LPA",
+    "avgSalary": "\u20b96.70 LPA",
     "avgSalaryNum": 6.7,
-    "highestSalary": "₹44.00 LPA",
-    "medianSalary": "₹6.0 LPA",
+    "highestSalary": "\u20b944.00 LPA",
+    "medianSalary": "\u20b96.0 LPA",
     "batchSize": 360,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -9537,19 +9537,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.00 Lakhs"
+        "fee": "\u20b95.00 Lakhs"
       },
       {
         "name": "MBA in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.00 Lakhs"
+        "fee": "\u20b95.00 Lakhs"
       },
       {
         "name": "MBA in Agri-Business Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.00 Lakhs"
+        "fee": "\u20b95.00 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -9587,12 +9587,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1990,
     "campusArea": "35 Acres",
     "accreditation": "NBA Acc., Top B-School in Rajasthan",
-    "fees": "₹12.75 Lakhs",
+    "fees": "\u20b912.75 Lakhs",
     "feeNum": 12.75,
-    "avgSalary": "₹10.50 LPA",
+    "avgSalary": "\u20b910.50 LPA",
     "avgSalaryNum": 10.5,
-    "highestSalary": "₹22.00 LPA",
-    "medianSalary": "₹9.80 LPA",
+    "highestSalary": "\u20b922.00 LPA",
+    "medianSalary": "\u20b99.80 LPA",
     "batchSize": 180,
     "roiScore": "7.8 / 10",
     "examsAccepted": [
@@ -9631,19 +9631,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing & Brand Strategy",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹14.75 Lakhs"
+        "fee": "\u20b914.75 Lakhs"
       },
       {
         "name": "PGDM in Financial Management & FinTech",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹14.75 Lakhs"
+        "fee": "\u20b914.75 Lakhs"
       },
       {
         "name": "PGDM in Human Capital Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹14.75 Lakhs"
+        "fee": "\u20b914.75 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -9682,12 +9682,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1991,
     "campusArea": "36 Acres",
     "accreditation": "AICTE App., IILM 30+ Yr Legacy",
-    "fees": "₹7.00 Lakhs",
+    "fees": "\u20b97.00 Lakhs",
     "feeNum": 7,
-    "avgSalary": "₹8.20 LPA",
+    "avgSalary": "\u20b98.20 LPA",
     "avgSalaryNum": 8.2,
-    "highestSalary": "₹26.00 LPA",
-    "medianSalary": "₹7.4 LPA",
+    "highestSalary": "\u20b926.00 LPA",
+    "medianSalary": "\u20b97.4 LPA",
     "batchSize": 240,
     "roiScore": "7.9 / 10",
     "examsAccepted": [
@@ -9726,19 +9726,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.00 Lakhs"
+        "fee": "\u20b97.00 Lakhs"
       },
       {
         "name": "PGDM in Financial Analysis",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.00 Lakhs"
+        "fee": "\u20b97.00 Lakhs"
       },
       {
         "name": "PGDM in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7.00 Lakhs"
+        "fee": "\u20b97.00 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -9754,7 +9754,7 @@ export const COLLEGES_DATA = [
       "Auditorium & Sports Complex",
       "Incubation & Startup Center"
     ],
-    "highlights": "IILM Academy of Higher Learning in Mansarovar, Jaipur is an AICTE-approved management institute carrying the prestigious 30-year legacy of IILM. Known for executive mentoring, personalized career grooming, case-based learning, and stellar ROI with 2027-29 session total fees of ₹7.00 Lakhs. Key Highlights: Part of the prestigious 30+ year IILM educational group; Centrally located campus in Mansarovar, Jaipur",
+    "highlights": "IILM Academy of Higher Learning in Mansarovar, Jaipur is an AICTE-approved management institute carrying the prestigious 30-year legacy of IILM. Known for executive mentoring, personalized career grooming, case-based learning, and stellar ROI with 2027-29 session total fees of \u20b97.00 Lakhs. Key Highlights: Part of the prestigious 30+ year IILM educational group; Centrally located campus in Mansarovar, Jaipur",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -9776,12 +9776,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1992,
     "campusArea": "37 Acres",
     "accreditation": "UGC Rec., Affordable High-ROI MBA",
-    "fees": "₹3.60 Lakhs",
+    "fees": "\u20b93.60 Lakhs",
     "feeNum": 3.6,
-    "avgSalary": "₹5.80 LPA",
+    "avgSalary": "\u20b95.80 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹36.00 LPA",
-    "medianSalary": "₹5.2 LPA",
+    "highestSalary": "\u20b936.00 LPA",
+    "medianSalary": "\u20b95.2 LPA",
     "batchSize": 300,
     "roiScore": "8.0 / 10",
     "examsAccepted": [
@@ -9820,19 +9820,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.60 Lakhs"
+        "fee": "\u20b93.60 Lakhs"
       },
       {
         "name": "MBA in Finance & Banking",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.60 Lakhs"
+        "fee": "\u20b93.60 Lakhs"
       },
       {
         "name": "MBA in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.60 Lakhs"
+        "fee": "\u20b93.60 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -9848,7 +9848,7 @@ export const COLLEGES_DATA = [
       "Auditorium & Sports Complex",
       "Incubation & Startup Center"
     ],
-    "highlights": "Apex University in Jaipur offers one of the most accessible and budget-friendly MBA programs in Rajasthan. Backed by the 58-year-old Sanjay Shiksha Samiti legacy, Apex features modern campuses in Mansarovar and Sitapura with extensive industry training networks. Key Highlights: Affordable MBA in Rajasthan with 2-year total tuition of ₹3.60 Lakhs; 58-year heritage in education under Sanjay Shiksha Samiti",
+    "highlights": "Apex University in Jaipur offers one of the most accessible and budget-friendly MBA programs in Rajasthan. Backed by the 58-year-old Sanjay Shiksha Samiti legacy, Apex features modern campuses in Mansarovar and Sitapura with extensive industry training networks. Key Highlights: Affordable MBA in Rajasthan with 2-year total tuition of \u20b93.60 Lakhs; 58-year heritage in education under Sanjay Shiksha Samiti",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -9871,12 +9871,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "38 Acres",
     "accreditation": "AICTE App., Global Pedagogy & Design",
-    "fees": "₹5.50 Lakhs",
+    "fees": "\u20b95.50 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹8.50 LPA",
+    "avgSalary": "\u20b98.50 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹24.00 LPA",
-    "medianSalary": "₹7.7 LPA",
+    "highestSalary": "\u20b924.00 LPA",
+    "medianSalary": "\u20b97.7 LPA",
     "batchSize": 360,
     "roiScore": "8.1 / 10",
     "examsAccepted": [
@@ -9915,19 +9915,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Business Analytics & Data Tech",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.50 Lakhs"
+        "fee": "\u20b95.50 Lakhs"
       },
       {
         "name": "MBA in Digital Media Marketing",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.50 Lakhs"
+        "fee": "\u20b95.50 Lakhs"
       },
       {
         "name": "MBA in Banking & FinTech",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5.50 Lakhs"
+        "fee": "\u20b95.50 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -9965,12 +9965,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "39 Acres",
     "accreditation": "NAAC Acc., Mega Campus & Healthcare MBA",
-    "fees": "₹6.00 Lakhs",
+    "fees": "\u20b96.00 Lakhs",
     "feeNum": 6,
-    "avgSalary": "₹6.50 LPA",
+    "avgSalary": "\u20b96.50 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹60.00 LPA",
-    "medianSalary": "₹5.9 LPA",
+    "highestSalary": "\u20b960.00 LPA",
+    "medianSalary": "\u20b95.9 LPA",
     "batchSize": 180,
     "roiScore": "8.2 / 10",
     "examsAccepted": [
@@ -10009,19 +10009,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Hospital & Healthcare Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6.00 Lakhs"
+        "fee": "\u20b96.00 Lakhs"
       },
       {
         "name": "MBA in Pharmaceutical Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6.00 Lakhs"
+        "fee": "\u20b96.00 Lakhs"
       },
       {
         "name": "MBA in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6.00 Lakhs"
+        "fee": "\u20b96.00 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -10059,12 +10059,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "40 Acres",
     "accreditation": "NAAC Acc., JIMS Group Brand Support",
-    "fees": "₹3.98 Lakhs",
+    "fees": "\u20b93.98 Lakhs",
     "feeNum": 3.98,
-    "avgSalary": "₹6.80 LPA",
+    "avgSalary": "\u20b96.80 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹16.00 LPA",
-    "medianSalary": "₹6.1 LPA",
+    "highestSalary": "\u20b916.00 LPA",
+    "medianSalary": "\u20b96.1 LPA",
     "batchSize": 240,
     "roiScore": "8.3 / 10",
     "examsAccepted": [
@@ -10103,19 +10103,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in Marketing Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.98 Lakhs"
+        "fee": "\u20b93.98 Lakhs"
       },
       {
         "name": "MBA in Financial Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.98 Lakhs"
+        "fee": "\u20b93.98 Lakhs"
       },
       {
         "name": "MBA in Human Resource Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3.98 Lakhs"
+        "fee": "\u20b93.98 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -10153,12 +10153,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "41 Acres",
     "accreditation": "NAAC Acc., Top Tech & Management Campus",
-    "fees": "₹5.40 Lakhs",
+    "fees": "\u20b95.40 Lakhs",
     "feeNum": 5.4,
-    "avgSalary": "₹7.00 LPA",
+    "avgSalary": "\u20b97.00 LPA",
     "avgSalaryNum": 7,
-    "highestSalary": "₹33.00 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b933.00 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 300,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -10197,7 +10197,7 @@ export const COLLEGES_DATA = [
         "name": "MBA Flagship Program",
         "duration": "2 Years",
         "seats": 180,
-        "fee": "₹5.40 Lakhs"
+        "fee": "\u20b95.40 Lakhs"
       }
     ],
     "admissionCriteria": {
@@ -10213,7 +10213,7 @@ export const COLLEGES_DATA = [
       "Auditorium & Sports Complex",
       "Incubation & Startup Center"
     ],
-    "highlights": "JECRC University in Jaipur is renowned for its vibrant innovation-centric campus and extensive placement records with tech companies, banks, and startups. The School of Management offers forward-looking MBA specializations in Data Analytics, Digital Marketing, and FinTech. Key Highlights: 32-acre modern campus in Jaipur's premier institutional hub; Recent audited placement cycle achieved highest package of ₹33 LPA and top 30% avg of ₹10.70 LPA",
+    "highlights": "JECRC University in Jaipur is renowned for its vibrant innovation-centric campus and extensive placement records with tech companies, banks, and startups. The School of Management offers forward-looking MBA specializations in Data Analytics, Digital Marketing, and FinTech. Key Highlights: 32-acre modern campus in Jaipur's premier institutional hub; Recent audited placement cycle achieved highest package of \u20b933 LPA and top 30% avg of \u20b910.70 LPA",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -10235,12 +10235,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1987,
     "campusArea": "5 Acres Modern Campus",
     "accreditation": "NAAC A+ Grade, DU Affiliated",
-    "fees": "₹70,000 Total",
+    "fees": "\u20b970,000 Total",
     "feeNum": 0.7,
-    "avgSalary": "₹11.2 LPA",
+    "avgSalary": "\u20b911.2 LPA",
     "avgSalaryNum": 11.2,
-    "highestSalary": "₹44.0 LPA",
-    "medianSalary": "₹10.5 LPA",
+    "highestSalary": "\u20b944.0 LPA",
+    "medianSalary": "\u20b910.5 LPA",
     "batchSize": 230,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -10275,13 +10275,13 @@ export const COLLEGES_DATA = [
         "name": "Bachelor of Management Studies (BMS)",
         "duration": "3/4 Years",
         "seats": 120,
-        "fee": "₹70,000"
+        "fee": "\u20b970,000"
       },
       {
         "name": "BBA in Financial and Investment Analysis (BBA FIA)",
         "duration": "3/4 Years",
         "seats": 110,
-        "fee": "₹75,000"
+        "fee": "\u20b975,000"
       }
     ],
     "admissionCriteria": {
@@ -10295,7 +10295,7 @@ export const COLLEGES_DATA = [
       "Central Digital Library",
       "Incubation Center"
     ],
-    "highlights": "India’s undisputed #1 undergraduate management institution. Offers unbeatable ROI with ₹70k fees and ₹44 LPA highest placement package with global bulge-bracket banks and top 3 strategy consulting firms.",
+    "highlights": "India\u2019s undisputed #1 undergraduate management institution. Offers unbeatable ROI with \u20b970k fees and \u20b944 LPA highest placement package with global bulge-bracket banks and top 3 strategy consulting firms.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -10317,12 +10317,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "Urban Campus (Vile Parle Hub)",
     "accreditation": "NAAC A+ Grade, AICTE",
-    "fees": "₹10.5 Lakhs",
+    "fees": "\u20b910.5 Lakhs",
     "feeNum": 10.5,
-    "avgSalary": "₹9.2 LPA",
+    "avgSalary": "\u20b99.2 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹21.5 LPA",
-    "medianSalary": "₹8.8 LPA",
+    "highestSalary": "\u20b921.5 LPA",
+    "medianSalary": "\u20b98.8 LPA",
     "batchSize": 600,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -10355,7 +10355,7 @@ export const COLLEGES_DATA = [
         "name": "Bachelor of Business Administration (BBA Flagship)",
         "duration": "3 Years Full Time",
         "seats": 600,
-        "fee": "₹10,50,000"
+        "fee": "\u20b910,50,000"
       }
     ],
     "admissionCriteria": {
@@ -10369,7 +10369,7 @@ export const COLLEGES_DATA = [
       "Student Cafeteria",
       "Placement Cell"
     ],
-    "highlights": "Ranked among India’s top private BBA colleges. High placement records in Mumbai’s corporate and financial capital with Big 4 consultancies and investment banks.",
+    "highlights": "Ranked among India\u2019s top private BBA colleges. High placement records in Mumbai\u2019s corporate and financial capital with Big 4 consultancies and investment banks.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -10391,12 +10391,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "15 Acres Viman Nagar Campus",
     "accreditation": "NAAC A++ Grade",
-    "fees": "₹11.2 Lakhs",
+    "fees": "\u20b911.2 Lakhs",
     "feeNum": 11.2,
-    "avgSalary": "₹8.8 LPA",
+    "avgSalary": "\u20b98.8 LPA",
     "avgSalaryNum": 8.8,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹8.2 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b98.2 LPA",
     "batchSize": 300,
     "roiScore": "8.3 / 10",
     "examsAccepted": [
@@ -10428,7 +10428,7 @@ export const COLLEGES_DATA = [
         "name": "Bachelor of Business Administration (BBA Honours)",
         "duration": "4 Years",
         "seats": 300,
-        "fee": "₹11,20,000"
+        "fee": "\u20b911,20,000"
       }
     ],
     "admissionCriteria": {
@@ -10464,12 +10464,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1969,
     "campusArea": "75 Acres Lush Green Campus",
     "accreditation": "NAAC A+ Grade",
-    "fees": "₹6.8 Lakhs",
+    "fees": "\u20b96.8 Lakhs",
     "feeNum": 6.8,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 450,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -10501,13 +10501,13 @@ export const COLLEGES_DATA = [
         "name": "BBA (Honours / Honours with Research)",
         "duration": "4 Years",
         "seats": 350,
-        "fee": "₹6,80,000"
+        "fee": "\u20b96,80,000"
       },
       {
         "name": "BBA in Decision Sciences & Business Analytics",
         "duration": "3/4 Years",
         "seats": 100,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       }
     ],
     "admissionCriteria": {
@@ -10520,7 +10520,7 @@ export const COLLEGES_DATA = [
       "Hostel Dormitories",
       "Basketball & Football Courts"
     ],
-    "highlights": "Premier BBA destination in Bangalore. Highly disciplined academic ecosystem with robust corporate placements across Bangalore’s tech corridor and multinational banks.",
+    "highlights": "Premier BBA destination in Bangalore. Highly disciplined academic ecosystem with robust corporate placements across Bangalore\u2019s tech corridor and multinational banks.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -10543,12 +10543,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "193 Acres Scenic Hill Campus",
     "accreditation": "Triple Crown (AACSB, AMBA, EQUIS)",
-    "fees": "₹35.0 Lakhs (5 Years Total)",
+    "fees": "\u20b935.0 Lakhs (5 Years Total)",
     "feeNum": 35,
-    "avgSalary": "₹25.68 LPA",
+    "avgSalary": "\u20b925.68 LPA",
     "avgSalaryNum": 25.68,
-    "highestSalary": "₹1.0 CPA",
-    "medianSalary": "₹24.5 LPA",
+    "highestSalary": "\u20b91.0 CPA",
+    "medianSalary": "\u20b924.5 LPA",
     "batchSize": 150,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -10582,7 +10582,7 @@ export const COLLEGES_DATA = [
         "name": "Five Year Integrated Programme in Management (IPM - BBA + MBA)",
         "duration": "5 Years Full Time",
         "seats": 150,
-        "fee": "₹35,00,000"
+        "fee": "\u20b935,00,000"
       }
     ],
     "admissionCriteria": {
@@ -10618,12 +10618,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2003,
     "campusArea": "44 Acres Himalayan Foothills Campus",
     "accreditation": "NAAC A Grade, UGC & IACBE",
-    "fees": "₹9.8 Lakhs",
+    "fees": "\u20b99.8 Lakhs",
     "feeNum": 9.8,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 240,
     "roiScore": "8.1 / 10",
     "examsAccepted": [
@@ -10657,13 +10657,13 @@ export const COLLEGES_DATA = [
         "name": "BBA in Digital Business & Marketing",
         "duration": "3/4 Years",
         "seats": 120,
-        "fee": "₹9,80,000"
+        "fee": "\u20b99,80,000"
       },
       {
         "name": "BBA in Logistics & Aviation Management",
         "duration": "3/4 Years",
         "seats": 120,
-        "fee": "₹9,80,000"
+        "fee": "\u20b99,80,000"
       }
     ],
     "admissionCriteria": {
@@ -10698,12 +10698,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "32 Acres Campus",
     "accreditation": "UGC Recognized, NAAC Accredited",
-    "fees": "₹3.6 Lakhs",
+    "fees": "\u20b93.6 Lakhs",
     "feeNum": 3.6,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹5.5 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b95.5 LPA",
     "batchSize": 180,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -10720,7 +10720,7 @@ export const COLLEGES_DATA = [
       "TCS",
       "ICICI Bank",
       "HDFC Bank",
-      "Byju’s",
+      "Byju\u2019s",
       "AU Small Finance Bank",
       "Amazon"
     ],
@@ -10734,7 +10734,7 @@ export const COLLEGES_DATA = [
         "name": "Bachelor of Business Administration (BBA Core & Analytics)",
         "duration": "3 Years",
         "seats": 180,
-        "fee": "₹3,60,000"
+        "fee": "\u20b93,60,000"
       }
     ],
     "admissionCriteria": {
@@ -10768,12 +10768,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "32.67 Acres",
     "accreditation": "UGC Recognized",
-    "fees": "₹3.4 Lakhs",
+    "fees": "\u20b93.4 Lakhs",
     "feeNum": 3.4,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.2 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.2 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -10803,7 +10803,7 @@ export const COLLEGES_DATA = [
         "name": "BBA in Entrepreneurship & International Business",
         "duration": "3 Years",
         "seats": 120,
-        "fee": "₹3,40,000"
+        "fee": "\u20b93,40,000"
       }
     ],
     "admissionCriteria": {
@@ -10837,12 +10837,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "27.5 Acres LEED Platinum Campus",
     "accreditation": "AMBA (UK), SAQS, AICTE Approved",
-    "fees": "₹18.5 Lakhs",
+    "fees": "\u20b918.5 Lakhs",
     "feeNum": 18.5,
-    "avgSalary": "₹18.1 LPA",
+    "avgSalary": "\u20b918.1 LPA",
     "avgSalaryNum": 18.1,
-    "highestSalary": "₹34.0 LPA",
-    "medianSalary": "₹17.5 LPA",
+    "highestSalary": "\u20b934.0 LPA",
+    "medianSalary": "\u20b917.5 LPA",
     "batchSize": 360,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -10878,7 +10878,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Program in Management (PGPM - 1 Year Fast Track)",
         "duration": "1 Year Full Time",
         "seats": 360,
-        "fee": "₹18,50,000"
+        "fee": "\u20b918,50,000"
       }
     ],
     "admissionCriteria": {
@@ -10892,7 +10892,7 @@ export const COLLEGES_DATA = [
       "Resource Center",
       "Multi-Cuisine Food Court"
     ],
-    "highlights": "India’s pioneer and #1 ranked 1-year fast-track management program for experienced professionals. Exceptional career pivot opportunities into AI, Tech Consulting, and Product Management in just 12 months.",
+    "highlights": "India\u2019s pioneer and #1 ranked 1-year fast-track management program for experienced professionals. Exceptional career pivot opportunities into AI, Tech Consulting, and Product Management in just 12 months.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -10914,12 +10914,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "Modern Cyber Hub Campus",
     "accreditation": "AICTE Approved, Industry Consortium Backed",
-    "fees": "₹15.3 Lakhs",
+    "fees": "\u20b915.3 Lakhs",
     "feeNum": 15.3,
-    "avgSalary": "₹14.5 LPA",
+    "avgSalary": "\u20b914.5 LPA",
     "avgSalaryNum": 14.5,
-    "highestSalary": "₹24.0 LPA",
-    "medianSalary": "₹13.8 LPA",
+    "highestSalary": "\u20b924.0 LPA",
+    "medianSalary": "\u20b913.8 LPA",
     "batchSize": 120,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -10956,7 +10956,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Program in Business Leadership (PGPBL - 1 Year)",
         "duration": "1 Year Full Time",
         "seats": 120,
-        "fee": "₹15,30,000"
+        "fee": "\u20b915,30,000"
       }
     ],
     "admissionCriteria": {
@@ -10991,12 +10991,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1981,
     "campusArea": "Digital Campus (State-of-the-Art Portal)",
     "accreditation": "UGC-DEB Entitled, NAAC A+ (3.59 CGPA), AICTE",
-    "fees": "₹1.80 Lakhs Total",
+    "fees": "\u20b91.80 Lakhs Total",
     "feeNum": 1.8,
-    "avgSalary": "₹8.5 LPA",
+    "avgSalary": "\u20b98.5 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹8.0 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b98.0 LPA",
     "batchSize": 5000,
     "roiScore": "9.6 / 10",
     "examsAccepted": [
@@ -11029,11 +11029,11 @@ export const COLLEGES_DATA = [
         "name": "Online Master of Business Administration (MBA - 10 Specializations)",
         "duration": "2 Years Online",
         "seats": 5000,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
-      "eligibility": "Bachelor’s Degree in any discipline with minimum 50% marks (45% for reserved categories)",
+      "eligibility": "Bachelor\u2019s Degree in any discipline with minimum 50% marks (45% for reserved categories)",
       "application": "Direct verification through NMIMS portal"
     },
     "facilities": [
@@ -11043,7 +11043,7 @@ export const COLLEGES_DATA = [
       "Digital Library with 50,000+ e-books",
       "Job Portal with 500+ Corporate Tie-ups"
     ],
-    "highlights": "India’s #1 rated Online MBA program. Features Harvard case studies, interactive live lectures, 100% remote proctored examinations, and monthly zero-cost EMI starting from ₹7,500/month.",
+    "highlights": "India\u2019s #1 rated Online MBA program. Features Harvard case studies, interactive live lectures, 100% remote proctored examinations, and monthly zero-cost EMI starting from \u20b97,500/month.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -11065,12 +11065,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "Pan India Cloud Learning Ecosystem",
     "accreditation": "UGC-DEB Entitled, NAAC A+ (3.28 CGPA), AICTE",
-    "fees": "₹1.75 Lakhs Total",
+    "fees": "\u20b91.75 Lakhs Total",
     "feeNum": 1.75,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 3500,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -11102,11 +11102,11 @@ export const COLLEGES_DATA = [
         "name": "Online Master of Business Administration (MBA)",
         "duration": "2 Years Online",
         "seats": 3500,
-        "fee": "₹1,75,000"
+        "fee": "\u20b91,75,000"
       }
     ],
     "admissionCriteria": {
-      "eligibility": "10+2+3 Bachelor’s Degree with 50% from a recognized university"
+      "eligibility": "10+2+3 Bachelor\u2019s Degree with 50% from a recognized university"
     },
     "facilities": [
       "Coursera for Campus Access Free",
@@ -11114,7 +11114,7 @@ export const COLLEGES_DATA = [
       "24x7 Student Helpdesk",
       "Interactive Live Webinars"
     ],
-    "highlights": "Global brand value of Manipal with affordable fee of ₹1.75 Lakhs. Offers free Coursera certificates, self-paced LMS, and dedicated resume-building sessions.",
+    "highlights": "Global brand value of Manipal with affordable fee of \u20b91.75 Lakhs. Offers free Coursera certificates, self-paced LMS, and dedicated resume-building sessions.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -11136,12 +11136,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "Global Online Hub",
     "accreditation": "UGC-DEB Entitled, NAAC A+ Grade, WASC (USA), QAA (UK)",
-    "fees": "₹1.99 Lakhs Total",
+    "fees": "\u20b91.99 Lakhs Total",
     "feeNum": 1.99,
-    "avgSalary": "₹8.0 LPA",
+    "avgSalary": "\u20b98.0 LPA",
     "avgSalaryNum": 8,
-    "highestSalary": "₹17.5 LPA",
-    "medianSalary": "₹7.5 LPA",
+    "highestSalary": "\u20b917.5 LPA",
+    "medianSalary": "\u20b97.5 LPA",
     "batchSize": 4500,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -11173,7 +11173,7 @@ export const COLLEGES_DATA = [
         "name": "Online MBA (14 In-Demand Industry Specializations)",
         "duration": "2 Years Online",
         "seats": 4500,
-        "fee": "₹1,99,000"
+        "fee": "\u20b91,99,000"
       }
     ],
     "admissionCriteria": {
@@ -11185,7 +11185,7 @@ export const COLLEGES_DATA = [
       "Guest Lectures by International Faculty",
       "Proctored Online Exams"
     ],
-    "highlights": "Ranked Asia’s #1 Online MBA by QS World Rankings. Offers globally valid degree accredited in USA and UK, with an AI tutor and live corporate masterclasses.",
+    "highlights": "Ranked Asia\u2019s #1 Online MBA by QS World Rankings. Offers globally valid degree accredited in USA and UK, with an AI tutor and live corporate masterclasses.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -11207,12 +11207,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2003,
     "campusArea": "Digital Campus Pune",
     "accreditation": "UGC-DEB Entitled, NAAC A++ Grade, AICTE",
-    "fees": "₹1.40 Lakhs Total",
+    "fees": "\u20b91.40 Lakhs Total",
     "feeNum": 1.4,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹14.5 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b914.5 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 2500,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -11243,11 +11243,11 @@ export const COLLEGES_DATA = [
         "name": "Online MBA (Specializations in Hospital Mgmt, FinTech & Marketing)",
         "duration": "2 Years Online",
         "seats": 2500,
-        "fee": "₹1,40,000"
+        "fee": "\u20b91,40,000"
       }
     ],
     "admissionCriteria": {
-      "eligibility": "Bachelor’s degree from a recognized university with minimum 50% marks"
+      "eligibility": "Bachelor\u2019s degree from a recognized university with minimum 50% marks"
     },
     "facilities": [
       "LMS Mobile App",
@@ -11255,7 +11255,7 @@ export const COLLEGES_DATA = [
       "Online Placement Assistance",
       "Easy No-Cost EMI"
     ],
-    "highlights": "Prestigious NAAC A++ university with the lowest fee structure (₹1.40L). Specialized tracks in Hospital & Healthcare Management, FinTech, and Logistics.",
+    "highlights": "Prestigious NAAC A++ university with the lowest fee structure (\u20b91.40L). Specialized tracks in Hospital & Healthcare Management, FinTech, and Logistics.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -11277,12 +11277,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "Pan India Online",
     "accreditation": "UGC-DEB Entitled, NAAC A+ Grade",
-    "fees": "₹1.40 Lakhs Total",
+    "fees": "\u20b91.40 Lakhs Total",
     "feeNum": 1.4,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹11.0 LPA",
-    "medianSalary": "₹5.2 LPA",
+    "highestSalary": "\u20b911.0 LPA",
+    "medianSalary": "\u20b95.2 LPA",
     "batchSize": 2000,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -11312,7 +11312,7 @@ export const COLLEGES_DATA = [
         "name": "Bachelor of Business Administration (Online BBA)",
         "duration": "3 Years Online",
         "seats": 2000,
-        "fee": "₹1,40,000"
+        "fee": "\u20b91,40,000"
       }
     ],
     "admissionCriteria": {
@@ -11346,12 +11346,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "Global Online Hub",
     "accreditation": "UGC-DEB Entitled, NAAC A+ Grade",
-    "fees": "₹1.50 Lakhs Total",
+    "fees": "\u20b91.50 Lakhs Total",
     "feeNum": 1.5,
-    "avgSalary": "₹5.5 LPA",
+    "avgSalary": "\u20b95.5 LPA",
     "avgSalaryNum": 5.5,
-    "highestSalary": "₹10.5 LPA",
-    "medianSalary": "₹5.0 LPA",
+    "highestSalary": "\u20b910.5 LPA",
+    "medianSalary": "\u20b95.0 LPA",
     "batchSize": 2500,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -11367,7 +11367,7 @@ export const COLLEGES_DATA = [
       "Teleperformance",
       "Cognizant",
       "HCL",
-      "Byju’s",
+      "Byju\u2019s",
       "Bajaj Finance",
       "Concentrix"
     ],
@@ -11381,7 +11381,7 @@ export const COLLEGES_DATA = [
         "name": "Bachelor of Business Administration (Online BBA)",
         "duration": "3 Years Online",
         "seats": 2500,
-        "fee": "₹1,50,000"
+        "fee": "\u20b91,50,000"
       }
     ],
     "admissionCriteria": {
@@ -11414,12 +11414,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "Multi-Country Global Campuses",
     "accreditation": "TEQSA (Australia), AACSB Member",
-    "fees": "₹28.0 Lakhs Total",
+    "fees": "\u20b928.0 Lakhs Total",
     "feeNum": 28,
-    "avgSalary": "₹24.5 LPA",
+    "avgSalary": "\u20b924.5 LPA",
     "avgSalaryNum": 24.5,
-    "highestSalary": "₹72.0 LPA",
-    "medianSalary": "₹23.0 LPA",
+    "highestSalary": "\u20b972.0 LPA",
+    "medianSalary": "\u20b923.0 LPA",
     "batchSize": 180,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -11454,13 +11454,13 @@ export const COLLEGES_DATA = [
         "name": "Global Master of Business Administration (GMBA - 1 Year)",
         "duration": "1 Year Full Time",
         "seats": 120,
-        "fee": "₹28,00,000"
+        "fee": "\u20b928,00,000"
       },
       {
         "name": "Master of Global Business (MGB - For 0-3 yrs work ex)",
         "duration": "16 Months Full Time",
         "seats": 150,
-        "fee": "₹26,50,000"
+        "fee": "\u20b926,50,000"
       }
     ],
     "admissionCriteria": {
@@ -11495,12 +11495,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1980,
     "campusArea": "14 Acres Lush Green Campus",
     "accreditation": "AACSB, SAQS, AICTE Approved",
-    "fees": "₹24.5 Lakhs Total",
+    "fees": "\u20b924.5 Lakhs Total",
     "feeNum": 24.5,
-    "avgSalary": "₹21.0 LPA",
+    "avgSalary": "\u20b921.0 LPA",
     "avgSalaryNum": 21,
-    "highestSalary": "₹45.0 LPA",
-    "medianSalary": "₹19.5 LPA",
+    "highestSalary": "\u20b945.0 LPA",
+    "medianSalary": "\u20b919.5 LPA",
     "batchSize": 60,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -11515,7 +11515,7 @@ export const COLLEGES_DATA = [
       "general": "CAT/XAT 90+ %ile with strong communication profile"
     },
     "topRecruiters": [
-      "L’Oreal",
+      "L\u2019Oreal",
       "LVMH",
       "PwC International",
       "KPMG Europe",
@@ -11535,7 +11535,7 @@ export const COLLEGES_DATA = [
         "name": "Dual Degree Global PGDM/MBA with ESCP Europe",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹24,50,000"
+        "fee": "\u20b924,50,000"
       }
     ],
     "admissionCriteria": {
@@ -11571,12 +11571,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1981,
     "campusArea": "Qutub Institutional Hub Campus",
     "accreditation": "SAQS, AICTE Approved, AIU Equivalent",
-    "fees": "₹17.98 Lakhs",
+    "fees": "\u20b917.98 Lakhs",
     "feeNum": 17.98,
-    "avgSalary": "₹16.0 LPA",
+    "avgSalary": "\u20b916.0 LPA",
     "avgSalaryNum": 16,
-    "highestSalary": "₹30.0 LPA",
-    "medianSalary": "₹15.2 LPA",
+    "highestSalary": "\u20b930.0 LPA",
+    "medianSalary": "\u20b915.2 LPA",
     "batchSize": 120,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -11610,7 +11610,7 @@ export const COLLEGES_DATA = [
         "name": "PGDM International Business (with Global Immersion Module)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹17,98,000"
+        "fee": "\u20b917,98,000"
       }
     ],
     "admissionCriteria": {
@@ -11645,12 +11645,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "15 Acres",
     "accreditation": "AICTE, MAKAUT Affiliated",
-    "fees": "₹4.5 Lakhs",
+    "fees": "\u20b94.5 Lakhs",
     "feeNum": 4.5,
-    "avgSalary": "₹4.8 LPA",
+    "avgSalary": "\u20b94.8 LPA",
     "avgSalaryNum": 4.8,
-    "highestSalary": "₹9.5 LPA",
-    "medianSalary": "₹4.5 LPA",
+    "highestSalary": "\u20b99.5 LPA",
+    "medianSalary": "\u20b94.5 LPA",
     "batchSize": 120,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -11689,7 +11689,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       }
     ],
     "admissionCriteria": {
@@ -11727,12 +11727,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "20 Acres",
     "accreditation": "UGC, ACBSP (USA Accredited), AICTE",
-    "fees": "₹7.5 Lakhs",
+    "fees": "\u20b97.5 Lakhs",
     "feeNum": 7.5,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -11771,13 +11771,13 @@ export const COLLEGES_DATA = [
         "name": "MBA (Dual Specialization)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       },
       {
         "name": "MBA in Rural Management & Agribusiness",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6,00,000"
+        "fee": "\u20b96,00,000"
       }
     ],
     "admissionCriteria": {
@@ -11814,12 +11814,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "10 Acres",
     "accreditation": "AICTE, NAAC A Grade, BPUT Affiliated",
-    "fees": "₹3.8 Lakhs",
+    "fees": "\u20b93.8 Lakhs",
     "feeNum": 3.8,
-    "avgSalary": "₹5.2 LPA",
+    "avgSalary": "\u20b95.2 LPA",
     "avgSalaryNum": 5.2,
-    "highestSalary": "₹10.5 LPA",
-    "medianSalary": "₹4.8 LPA",
+    "highestSalary": "\u20b910.5 LPA",
+    "medianSalary": "\u20b94.8 LPA",
     "batchSize": 180,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -11858,7 +11858,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       }
     ],
     "admissionCriteria": {
@@ -11895,12 +11895,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2000,
     "campusArea": "5 Acres (Salt Lake IT Hub)",
     "accreditation": "AICTE, MAKAUT Affiliated",
-    "fees": "₹5.8 Lakhs",
+    "fees": "\u20b95.8 Lakhs",
     "feeNum": 5.8,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹11.0 LPA",
-    "medianSalary": "₹5.4 LPA",
+    "highestSalary": "\u20b911.0 LPA",
+    "medianSalary": "\u20b95.4 LPA",
     "batchSize": 120,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -11938,7 +11938,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,80,000"
+        "fee": "\u20b95,80,000"
       }
     ],
     "admissionCriteria": {
@@ -11975,12 +11975,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "4 Acres",
     "accreditation": "AICTE Approved",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹6.0 LPA",
+    "avgSalary": "\u20b96.0 LPA",
     "avgSalaryNum": 6,
-    "highestSalary": "₹11.5 LPA",
-    "medianSalary": "₹5.6 LPA",
+    "highestSalary": "\u20b911.5 LPA",
+    "medianSalary": "\u20b95.6 LPA",
     "batchSize": 60,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -12019,7 +12019,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -12056,12 +12056,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "6 Acres",
     "accreditation": "AICTE, Affiliated to State University",
-    "fees": "₹6.2 Lakhs",
+    "fees": "\u20b96.2 Lakhs",
     "feeNum": 6.2,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.8 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.8 LPA",
     "batchSize": 120,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -12099,7 +12099,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Global)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,20,000"
+        "fee": "\u20b96,20,000"
       }
     ],
     "admissionCriteria": {
@@ -12136,12 +12136,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1999,
     "campusArea": "8 Acres (Near Infocity)",
     "accreditation": "AICTE, NBA Accredited, NAAC A Grade, BPUT Affiliated",
-    "fees": "₹3.5 Lakhs",
+    "fees": "\u20b93.5 Lakhs",
     "feeNum": 3.5,
-    "avgSalary": "₹5.5 LPA",
+    "avgSalary": "\u20b95.5 LPA",
     "avgSalaryNum": 5.5,
-    "highestSalary": "₹11.0 LPA",
-    "medianSalary": "₹5.0 LPA",
+    "highestSalary": "\u20b911.0 LPA",
+    "medianSalary": "\u20b95.0 LPA",
     "batchSize": 240,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -12180,7 +12180,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹3,50,000"
+        "fee": "\u20b93,50,000"
       }
     ],
     "admissionCriteria": {
@@ -12195,7 +12195,7 @@ export const COLLEGES_DATA = [
       "Boys & Girls Hostels",
       "Seminar Hall"
     ],
-    "highlights": "One of Odisha's premier private MBA institutes with NBA accreditation, rock-bottom fees under ₹4 Lakhs, and over 95% placement consistency.",
+    "highlights": "One of Odisha's premier private MBA institutes with NBA accreditation, rock-bottom fees under \u20b94 Lakhs, and over 95% placement consistency.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -12217,12 +12217,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "30 Acres Lush Green Campus",
     "accreditation": "UGC Recognized, AIU Equivalence",
-    "fees": "₹8.5 Lakhs",
+    "fees": "\u20b98.5 Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹15.2 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b915.2 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -12262,13 +12262,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       },
       {
         "name": "MBA in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9,00,000"
+        "fee": "\u20b99,00,000"
       }
     ],
     "admissionCriteria": {
@@ -12305,12 +12305,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "15 Acres Eco-Friendly Residential Campus",
     "accreditation": "AICTE Approved, AIU Equivalent to MBA",
-    "fees": "₹7.5 Lakhs",
+    "fees": "\u20b97.5 Lakhs",
     "feeNum": 7.5,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹14.5 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b914.5 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -12351,7 +12351,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       }
     ],
     "admissionCriteria": {
@@ -12388,12 +12388,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "10 Acres",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalence to MBA",
-    "fees": "₹8.0 Lakhs",
+    "fees": "\u20b98.0 Lakhs",
     "feeNum": 8,
-    "avgSalary": "₹8.2 LPA",
+    "avgSalary": "\u20b98.2 LPA",
     "avgSalaryNum": 8.2,
-    "highestSalary": "₹17.5 LPA",
-    "medianSalary": "₹7.8 LPA",
+    "highestSalary": "\u20b917.5 LPA",
+    "medianSalary": "\u20b97.8 LPA",
     "batchSize": 120,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -12431,13 +12431,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹8,00,000"
+        "fee": "\u20b98,00,000"
       },
       {
         "name": "Executive PGDM",
         "duration": "15 Months",
         "seats": 30,
-        "fee": "₹6,00,000"
+        "fee": "\u20b96,00,000"
       }
     ],
     "admissionCriteria": {
@@ -12474,12 +12474,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "15 Acres",
     "accreditation": "AICTE Approved, Supported by Rural Livelihoods Mission (JEEViKA)",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 60,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -12517,7 +12517,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Development Management (PGDM-DM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       }
     ],
     "admissionCriteria": {
@@ -12554,12 +12554,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2000,
     "campusArea": "22 Acres",
     "accreditation": "AICTE, NBA Accredited, MAKAUT Affiliated",
-    "fees": "₹3.8 Lakhs",
+    "fees": "\u20b93.8 Lakhs",
     "feeNum": 3.8,
-    "avgSalary": "₹5.0 LPA",
+    "avgSalary": "\u20b95.0 LPA",
     "avgSalaryNum": 5,
-    "highestSalary": "₹10.0 LPA",
-    "medianSalary": "₹4.6 LPA",
+    "highestSalary": "\u20b910.0 LPA",
+    "medianSalary": "\u20b94.6 LPA",
     "batchSize": 60,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -12597,7 +12597,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       }
     ],
     "admissionCriteria": {
@@ -12634,12 +12634,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2002,
     "campusArea": "25 Acres",
     "accreditation": "AICTE, MAKAUT Affiliated",
-    "fees": "₹3.5 Lakhs",
+    "fees": "\u20b93.5 Lakhs",
     "feeNum": 3.5,
-    "avgSalary": "₹4.5 LPA",
+    "avgSalary": "\u20b94.5 LPA",
     "avgSalaryNum": 4.5,
-    "highestSalary": "₹8.5 LPA",
-    "medianSalary": "₹4.2 LPA",
+    "highestSalary": "\u20b98.5 LPA",
+    "medianSalary": "\u20b94.2 LPA",
     "batchSize": 60,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -12674,7 +12674,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹3,50,000"
+        "fee": "\u20b93,50,000"
       }
     ],
     "admissionCriteria": {
@@ -12711,12 +12711,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "City Campus in Heritage Central Kolkata",
     "accreditation": "AICTE Approved, UGC Recognized University Affiliated",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹13.5 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "highestSalary": "\u20b913.5 LPA",
+    "medianSalary": "\u20b96.2 LPA",
     "batchSize": 240,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -12756,7 +12756,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       }
     ],
     "admissionCriteria": {
@@ -12792,12 +12792,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "10 Acres",
     "accreditation": "AICTE, MAKAUT Affiliated",
-    "fees": "₹3.2 Lakhs",
+    "fees": "\u20b93.2 Lakhs",
     "feeNum": 3.2,
-    "avgSalary": "₹4.2 LPA",
+    "avgSalary": "\u20b94.2 LPA",
     "avgSalaryNum": 4.2,
-    "highestSalary": "₹8.0 LPA",
-    "medianSalary": "₹4.0 LPA",
+    "highestSalary": "\u20b98.0 LPA",
+    "medianSalary": "\u20b94.0 LPA",
     "batchSize": 60,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -12832,7 +12832,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹3,20,000"
+        "fee": "\u20b93,20,000"
       }
     ],
     "admissionCriteria": {
@@ -12869,12 +12869,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2002,
     "campusArea": "10 Acres",
     "accreditation": "AICTE, MAKAUT Affiliated",
-    "fees": "₹5.2 Lakhs",
+    "fees": "\u20b95.2 Lakhs",
     "feeNum": 5.2,
-    "avgSalary": "₹5.5 LPA",
+    "avgSalary": "\u20b95.5 LPA",
     "avgSalaryNum": 5.5,
-    "highestSalary": "₹10.5 LPA",
-    "medianSalary": "₹5.2 LPA",
+    "highestSalary": "\u20b910.5 LPA",
+    "medianSalary": "\u20b95.2 LPA",
     "batchSize": 120,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -12912,7 +12912,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,20,000"
+        "fee": "\u20b95,20,000"
       }
     ],
     "admissionCriteria": {
@@ -12949,12 +12949,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "37 Acres Sprawling Campus",
     "accreditation": "AICTE, NBA Accredited, NAAC A Grade, MAKAUT Affiliated",
-    "fees": "₹3.8 Lakhs",
+    "fees": "\u20b93.8 Lakhs",
     "feeNum": 3.8,
-    "avgSalary": "₹5.4 LPA",
+    "avgSalary": "\u20b95.4 LPA",
     "avgSalaryNum": 5.4,
-    "highestSalary": "₹11.0 LPA",
-    "medianSalary": "₹5.0 LPA",
+    "highestSalary": "\u20b911.0 LPA",
+    "medianSalary": "\u20b95.0 LPA",
     "batchSize": 60,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -12993,7 +12993,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       }
     ],
     "admissionCriteria": {
@@ -13030,12 +13030,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2003,
     "campusArea": "10 Acres",
     "accreditation": "AICTE, NAAC Accredited, MAKAUT Affiliated",
-    "fees": "₹6.8 Lakhs",
+    "fees": "\u20b96.8 Lakhs",
     "feeNum": 6.8,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹13.0 LPA",
-    "medianSalary": "₹6.4 LPA",
+    "highestSalary": "\u20b913.0 LPA",
+    "medianSalary": "\u20b96.4 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -13076,7 +13076,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹6,80,000"
+        "fee": "\u20b96,80,000"
       }
     ],
     "admissionCriteria": {
@@ -13113,12 +13113,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1953,
     "campusArea": "Historic College Square Campus",
     "accreditation": "AICTE, Affiliated to University of Calcutta",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹9.2 LPA",
+    "avgSalary": "\u20b99.2 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹8.8 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b98.8 LPA",
     "batchSize": 180,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -13155,19 +13155,19 @@ export const COLLEGES_DATA = [
         "name": "MBA (Day)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       },
       {
         "name": "MBA in Human Resource Management (MHRM)",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6,00,000"
+        "fee": "\u20b96,00,000"
       },
       {
         "name": "MBA (Evening) for Working Executives",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       }
     ],
     "admissionCriteria": {
@@ -13203,12 +13203,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1984,
     "campusArea": "Inside Jadavpur University Campus",
     "accreditation": "AICTE Approved, Affiliated to Jadavpur University",
-    "fees": "₹4.5 Lakhs",
+    "fees": "\u20b94.5 Lakhs",
     "feeNum": 4.5,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹6.0 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b96.0 LPA",
     "batchSize": 60,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -13246,13 +13246,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Day)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       },
       {
         "name": "MBA (Evening - 3 Years)",
         "duration": "3 Years Part Time",
         "seats": 60,
-        "fee": "₹3,50,000"
+        "fee": "\u20b93,50,000"
       }
     ],
     "admissionCriteria": {
@@ -13288,12 +13288,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1976,
     "campusArea": "City Campus, South Kolkata",
     "accreditation": "AICTE, Affiliated to Vidyasagar University",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹5.2 LPA",
+    "avgSalary": "\u20b95.2 LPA",
     "avgSalaryNum": 5.2,
-    "highestSalary": "₹9.8 LPA",
-    "medianSalary": "₹4.8 LPA",
+    "highestSalary": "\u20b99.8 LPA",
+    "medianSalary": "\u20b94.8 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -13328,7 +13328,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -13365,12 +13365,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1989,
     "campusArea": "Sector V Tech Corridor Campus",
     "accreditation": "AICTE, NAAC A Grade, MAKAUT Affiliated",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 180,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -13411,7 +13411,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       }
     ],
     "admissionCriteria": {
@@ -13448,12 +13448,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1997,
     "campusArea": "10 Acres Fully Residential Campus",
     "accreditation": "AICTE Approved, AIU Equivalent to MBA",
-    "fees": "₹5.8 Lakhs",
+    "fees": "\u20b95.8 Lakhs",
     "feeNum": 5.8,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹6.0 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b96.0 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -13493,13 +13493,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,80,000"
+        "fee": "\u20b95,80,000"
       },
       {
         "name": "PGDM in Retail & Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5,20,000"
+        "fee": "\u20b95,20,000"
       }
     ],
     "admissionCriteria": {
@@ -13536,12 +13536,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "City Campus near EM Bypass",
     "accreditation": "AICTE, MAKAUT Affiliated",
-    "fees": "₹4.5 Lakhs",
+    "fees": "\u20b94.5 Lakhs",
     "feeNum": 4.5,
-    "avgSalary": "₹5.0 LPA",
+    "avgSalary": "\u20b95.0 LPA",
     "avgSalaryNum": 5,
-    "highestSalary": "₹9.5 LPA",
-    "medianSalary": "₹4.6 LPA",
+    "highestSalary": "\u20b99.5 LPA",
+    "medianSalary": "\u20b94.6 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -13577,13 +13577,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       },
       {
         "name": "MBA in Hospital & Healthcare Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -13620,12 +13620,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "Riverside Campus, Budge Budge",
     "accreditation": "AICTE Approved, NBA Accredited",
-    "fees": "₹9.2 Lakhs",
+    "fees": "\u20b99.2 Lakhs",
     "feeNum": 9.2,
-    "avgSalary": "₹8.5 LPA",
+    "avgSalary": "\u20b98.5 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹8.0 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b98.0 LPA",
     "batchSize": 120,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -13666,7 +13666,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹9,20,000"
+        "fee": "\u20b99,20,000"
       }
     ],
     "admissionCriteria": {
@@ -13703,12 +13703,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "5 Acres Modern Campus",
     "accreditation": "AICTE Approved",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.2 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.2 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -13746,7 +13746,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -13783,12 +13783,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "State-of-the-Art Tower Campus, Salt Lake",
     "accreditation": "AICTE Approved",
-    "fees": "₹7.8 Lakhs",
+    "fees": "\u20b97.8 Lakhs",
     "feeNum": 7.8,
-    "avgSalary": "₹7.0 LPA",
+    "avgSalary": "\u20b97.0 LPA",
     "avgSalaryNum": 7,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.6 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.6 LPA",
     "batchSize": 120,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -13828,7 +13828,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹7,80,000"
+        "fee": "\u20b97,80,000"
       }
     ],
     "admissionCriteria": {
@@ -13865,12 +13865,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "4 Acres City Campus",
     "accreditation": "AICTE Approved",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹11.0 LPA",
-    "medianSalary": "₹5.4 LPA",
+    "highestSalary": "\u20b911.0 LPA",
+    "medianSalary": "\u20b95.4 LPA",
     "batchSize": 60,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -13908,7 +13908,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -13944,12 +13944,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "50 Acres Sprawling Campus",
     "accreditation": "UGC, AICTE Approved, NAAC B+ Grade",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹5.5 LPA",
+    "avgSalary": "\u20b95.5 LPA",
     "avgSalaryNum": 5.5,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.0 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.0 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -13989,7 +13989,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -14013,7 +14013,7 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "KIIT – School of Management",
+    "name": "KIIT \u2013 School of Management",
     "shortName": "KSOM Bhubaneswar",
     "location": "Campus 7, KIIT Deemed to be University, Patia, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
@@ -14026,12 +14026,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "35 Acres Dedicated Management Campus",
     "accreditation": "NAAC A++ Grade (Highest in India), AICTE, UGC, NBA, AMBA",
-    "fees": "₹15.9 Lakhs",
+    "fees": "\u20b915.9 Lakhs",
     "feeNum": 15.9,
-    "avgSalary": "₹9.5 LPA",
+    "avgSalary": "\u20b99.5 LPA",
     "avgSalaryNum": 9.5,
-    "highestSalary": "₹22.7 LPA",
-    "medianSalary": "₹9.0 LPA",
+    "highestSalary": "\u20b922.7 LPA",
+    "medianSalary": "\u20b99.0 LPA",
     "batchSize": 360,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -14072,13 +14072,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 300,
-        "fee": "₹15,90,000"
+        "fee": "\u20b915,90,000"
       },
       {
         "name": "MBA in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹15,90,000"
+        "fee": "\u20b915,90,000"
       }
     ],
     "admissionCriteria": {
@@ -14102,7 +14102,7 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "KIIT – School of Rural Management",
+    "name": "KIIT \u2013 School of Rural Management",
     "shortName": "KSRM Bhubaneswar",
     "location": "Campus 17, KIIT Deemed to be University, Patia, Bhubaneswar, Odisha",
     "city": "Bhubaneswar",
@@ -14115,12 +14115,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "KIIT Campus 17",
     "accreditation": "NAAC A++ Grade, AICTE Approved, UGC Recognized",
-    "fees": "₹7.9 Lakhs",
+    "fees": "\u20b97.9 Lakhs",
     "feeNum": 7.9,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.4 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.4 LPA",
     "batchSize": 120,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -14159,13 +14159,13 @@ export const COLLEGES_DATA = [
         "name": "MBA in Rural Management (MBA-RM)",
         "duration": "2 Years Full Time",
         "seats": 90,
-        "fee": "₹7,90,000"
+        "fee": "\u20b97,90,000"
       },
       {
         "name": "MBA in Agribusiness Management (MBA-ABM)",
         "duration": "2 Years",
         "seats": 30,
-        "fee": "₹7,90,000"
+        "fee": "\u20b97,90,000"
       }
     ],
     "admissionCriteria": {
@@ -14202,12 +14202,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1973,
     "campusArea": "Prime 6 Acres Bailey Road Campus",
     "accreditation": "AICTE Approved, Affiliated to Aryabhatta Knowledge University",
-    "fees": "₹2.8 Lakhs",
+    "fees": "\u20b92.8 Lakhs",
     "feeNum": 2.8,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹12.5 LPA",
-    "medianSalary": "₹5.4 LPA",
+    "highestSalary": "\u20b912.5 LPA",
+    "medianSalary": "\u20b95.4 LPA",
     "batchSize": 180,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -14245,13 +14245,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       },
       {
         "name": "MBA in International Business",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       }
     ],
     "admissionCriteria": {
@@ -14287,12 +14287,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1973,
     "campusArea": "8 Acres",
     "accreditation": "AICTE Approved, Affiliated to B.R. Ambedkar Bihar University",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹4.8 LPA",
+    "avgSalary": "\u20b94.8 LPA",
     "avgSalaryNum": 4.8,
-    "highestSalary": "₹9.5 LPA",
-    "medianSalary": "₹4.4 LPA",
+    "highestSalary": "\u20b99.5 LPA",
+    "medianSalary": "\u20b94.4 LPA",
     "batchSize": 120,
     "roiScore": "9.6 / 10",
     "examsAccepted": [
@@ -14328,7 +14328,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -14365,12 +14365,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1999,
     "campusArea": "6 Acres City Campus",
     "accreditation": "AICTE, NAAC A Grade, NBA Accredited, MAKAUT Affiliated",
-    "fees": "₹4.2 Lakhs",
+    "fees": "\u20b94.2 Lakhs",
     "feeNum": 4.2,
-    "avgSalary": "₹5.2 LPA",
+    "avgSalary": "\u20b95.2 LPA",
     "avgSalaryNum": 5.2,
-    "highestSalary": "₹10.0 LPA",
-    "medianSalary": "₹4.8 LPA",
+    "highestSalary": "\u20b910.0 LPA",
+    "medianSalary": "\u20b94.8 LPA",
     "batchSize": 60,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -14406,7 +14406,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹4,20,000"
+        "fee": "\u20b94,20,000"
       }
     ],
     "admissionCriteria": {
@@ -14443,12 +14443,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "5 Acres",
     "accreditation": "AICTE, BRA Bihar University Affiliated",
-    "fees": "₹2.5 Lakhs",
+    "fees": "\u20b92.5 Lakhs",
     "feeNum": 2.5,
-    "avgSalary": "₹4.0 LPA",
+    "avgSalary": "\u20b94.0 LPA",
     "avgSalaryNum": 4,
-    "highestSalary": "₹7.5 LPA",
-    "medianSalary": "₹3.8 LPA",
+    "highestSalary": "\u20b97.5 LPA",
+    "medianSalary": "\u20b93.8 LPA",
     "batchSize": 60,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -14482,7 +14482,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹2,50,000"
+        "fee": "\u20b92,50,000"
       }
     ],
     "admissionCriteria": {
@@ -14518,12 +14518,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "625 Acres Magnificent NIT Campus",
     "accreditation": "AICTE, Ministry of Education, NIRF Ranked",
-    "fees": "₹2.8 Lakhs",
+    "fees": "\u20b92.8 Lakhs",
     "feeNum": 2.8,
-    "avgSalary": "₹8.5 LPA",
+    "avgSalary": "\u20b98.5 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹16.5 LPA",
-    "medianSalary": "₹8.0 LPA",
+    "highestSalary": "\u20b916.5 LPA",
+    "medianSalary": "\u20b98.0 LPA",
     "batchSize": 75,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -14562,7 +14562,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 75,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       }
     ],
     "admissionCriteria": {
@@ -14577,7 +14577,7 @@ export const COLLEGES_DATA = [
       "Central Library",
       "Sports Complex"
     ],
-    "highlights": "Elite central government institute status, ultra-low fees of under ₹3 Lakhs, with top PSU and corporate recruitment.",
+    "highlights": "Elite central government institute status, ultra-low fees of under \u20b93 Lakhs, with top PSU and corporate recruitment.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -14600,12 +14600,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1992,
     "campusArea": "City Campus, Khanapara",
     "accreditation": "AICTE Approved, Gauhati University & Dibrugarh University Affiliated",
-    "fees": "₹4.5 Lakhs",
+    "fees": "\u20b94.5 Lakhs",
     "feeNum": 4.5,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.4 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.4 LPA",
     "batchSize": 180,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -14645,13 +14645,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       },
       {
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -14687,12 +14687,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "25 Acres",
     "accreditation": "UGC Recognized, AICTE Approved, AIU Member",
-    "fees": "₹4.2 Lakhs",
+    "fees": "\u20b94.2 Lakhs",
     "feeNum": 4.2,
-    "avgSalary": "₹5.5 LPA",
+    "avgSalary": "\u20b95.5 LPA",
     "avgSalaryNum": 5.5,
-    "highestSalary": "₹11.0 LPA",
-    "medianSalary": "₹5.0 LPA",
+    "highestSalary": "\u20b911.0 LPA",
+    "medianSalary": "\u20b95.0 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -14729,7 +14729,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,20,000"
+        "fee": "\u20b94,20,000"
       }
     ],
     "admissionCriteria": {
@@ -14766,12 +14766,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "5 Acres",
     "accreditation": "AICTE, BPUT Affiliated",
-    "fees": "₹3.2 Lakhs",
+    "fees": "\u20b93.2 Lakhs",
     "feeNum": 3.2,
-    "avgSalary": "₹4.5 LPA",
+    "avgSalary": "\u20b94.5 LPA",
     "avgSalaryNum": 4.5,
-    "highestSalary": "₹8.5 LPA",
-    "medianSalary": "₹4.2 LPA",
+    "highestSalary": "\u20b98.5 LPA",
+    "medianSalary": "\u20b94.2 LPA",
     "batchSize": 60,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -14806,7 +14806,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹3,20,000"
+        "fee": "\u20b93,20,000"
       }
     ],
     "admissionCriteria": {
@@ -14842,12 +14842,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1997,
     "campusArea": "6 Acres in Mancheswar Industrial Estate",
     "accreditation": "AICTE, BPUT Affiliated",
-    "fees": "₹3.4 Lakhs",
+    "fees": "\u20b93.4 Lakhs",
     "feeNum": 3.4,
-    "avgSalary": "₹4.8 LPA",
+    "avgSalary": "\u20b94.8 LPA",
     "avgSalaryNum": 4.8,
-    "highestSalary": "₹9.0 LPA",
-    "medianSalary": "₹4.5 LPA",
+    "highestSalary": "\u20b99.0 LPA",
+    "medianSalary": "\u20b94.5 LPA",
     "batchSize": 120,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -14883,7 +14883,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹3,40,000"
+        "fee": "\u20b93,40,000"
       }
     ],
     "admissionCriteria": {
@@ -14920,12 +14920,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1982,
     "campusArea": "12 Acres",
     "accreditation": "AICTE, UGC Autonomous, NAAC A Grade, BPUT Affiliated",
-    "fees": "₹6.0 Lakhs",
+    "fees": "\u20b96.0 Lakhs",
     "feeNum": 6,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹13.5 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "highestSalary": "\u20b913.5 LPA",
+    "medianSalary": "\u20b96.2 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -14965,13 +14965,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       },
       {
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6,00,000"
+        "fee": "\u20b96,00,000"
       }
     ],
     "admissionCriteria": {
@@ -15008,12 +15008,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1984,
     "campusArea": "10 Acres",
     "accreditation": "AICTE Approved, NAAC A Grade, Sambalpur University Affiliated",
-    "fees": "₹4.2 Lakhs",
+    "fees": "\u20b94.2 Lakhs",
     "feeNum": 4.2,
-    "avgSalary": "₹5.5 LPA",
+    "avgSalary": "\u20b95.5 LPA",
     "avgSalaryNum": 5.5,
-    "highestSalary": "₹10.5 LPA",
-    "medianSalary": "₹5.0 LPA",
+    "highestSalary": "\u20b910.5 LPA",
+    "medianSalary": "\u20b95.0 LPA",
     "batchSize": 120,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -15050,7 +15050,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,20,000"
+        "fee": "\u20b94,20,000"
       }
     ],
     "admissionCriteria": {
@@ -15087,12 +15087,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "125 Acres Comprehensive University Campus",
     "accreditation": "NAAC A++ Grade, NIRF Top 20 Overall Universities, AICTE",
-    "fees": "₹7.5 Lakhs",
+    "fees": "\u20b97.5 Lakhs",
     "feeNum": 7.5,
-    "avgSalary": "₹8.0 LPA",
+    "avgSalary": "\u20b98.0 LPA",
     "avgSalaryNum": 8,
-    "highestSalary": "₹16.5 LPA",
-    "medianSalary": "₹7.5 LPA",
+    "highestSalary": "\u20b916.5 LPA",
+    "medianSalary": "\u20b97.5 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -15133,13 +15133,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       },
       {
         "name": "MBA in Hospital Administration (MHA)",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6,00,000"
+        "fee": "\u20b96,00,000"
       }
     ],
     "admissionCriteria": {
@@ -15176,12 +15176,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1997,
     "campusArea": "35 Acres Himalayan Valley Campus on Teesta River",
     "accreditation": "UGC, AICTE Approved, NAAC A+ Grade",
-    "fees": "₹5.8 Lakhs",
+    "fees": "\u20b95.8 Lakhs",
     "feeNum": 5.8,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.2 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -15220,7 +15220,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,80,000"
+        "fee": "\u20b95,80,000"
       }
     ],
     "admissionCriteria": {
@@ -15257,12 +15257,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "188 Acres Picturesque Hilltop Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC A Grade",
-    "fees": "₹8.8 Lakhs",
+    "fees": "\u20b98.8 Lakhs",
     "feeNum": 8.8,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹15.5 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b915.5 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -15302,13 +15302,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - General)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹8,80,000"
+        "fee": "\u20b98,80,000"
       },
       {
         "name": "MBA in Agribusiness Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7,20,000"
+        "fee": "\u20b97,20,000"
       }
     ],
     "admissionCriteria": {
@@ -15345,12 +15345,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "17 Acres Modern New Town Campus",
     "accreditation": "UGC Recognized, AICTE Approved, Jesuit Higher Education Association",
-    "fees": "₹10.5 Lakhs",
+    "fees": "\u20b910.5 Lakhs",
     "feeNum": 10.5,
-    "avgSalary": "₹8.8 LPA",
+    "avgSalary": "\u20b98.8 LPA",
     "avgSalaryNum": 8.8,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹8.2 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b98.2 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -15392,7 +15392,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹10,50,000"
+        "fee": "\u20b910,50,000"
       }
     ],
     "admissionCriteria": {
@@ -15429,12 +15429,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "8 Acres",
     "accreditation": "AICTE, MAKAUT Affiliated",
-    "fees": "₹4.5 Lakhs",
+    "fees": "\u20b94.5 Lakhs",
     "feeNum": 4.5,
-    "avgSalary": "₹5.2 LPA",
+    "avgSalary": "\u20b95.2 LPA",
     "avgSalaryNum": 5.2,
-    "highestSalary": "₹9.8 LPA",
-    "medianSalary": "₹4.8 LPA",
+    "highestSalary": "\u20b99.8 LPA",
+    "medianSalary": "\u20b94.8 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -15471,7 +15471,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       }
     ],
     "admissionCriteria": {
@@ -15508,12 +15508,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2001,
     "campusArea": "Multiple Sector V Campuses",
     "accreditation": "UGC, AICTE, NAAC A Grade, MAKAUT Affiliated",
-    "fees": "₹6.2 Lakhs",
+    "fees": "\u20b96.2 Lakhs",
     "feeNum": 6.2,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.0 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.0 LPA",
     "batchSize": 300,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -15554,7 +15554,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 300,
-        "fee": "₹6,20,000"
+        "fee": "\u20b96,20,000"
       }
     ],
     "admissionCriteria": {
@@ -15591,12 +15591,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "5 Acres in New Town Action Area 1",
     "accreditation": "AICTE, MAKAUT Affiliated, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹11.5 LPA",
-    "medianSalary": "₹5.4 LPA",
+    "highestSalary": "\u20b911.5 LPA",
+    "medianSalary": "\u20b95.4 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -15634,7 +15634,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -15671,12 +15671,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "15 Acres",
     "accreditation": "UGC Recognized, NAAC A Grade, Nagaland University Affiliated",
-    "fees": "₹3.8 Lakhs",
+    "fees": "\u20b93.8 Lakhs",
     "feeNum": 3.8,
-    "avgSalary": "₹4.8 LPA",
+    "avgSalary": "\u20b94.8 LPA",
     "avgSalaryNum": 4.8,
-    "highestSalary": "₹9.0 LPA",
-    "medianSalary": "₹4.4 LPA",
+    "highestSalary": "\u20b99.0 LPA",
+    "medianSalary": "\u20b94.4 LPA",
     "batchSize": 60,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -15713,7 +15713,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       }
     ],
     "admissionCriteria": {
@@ -15750,12 +15750,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "262 Acres Lush Central University Campus",
     "accreditation": "NAAC A+ Grade, Ministry of Education, NIRF Ranked",
-    "fees": "₹1.40 Lakhs",
+    "fees": "\u20b91.40 Lakhs",
     "feeNum": 1.4,
-    "avgSalary": "₹6.80 LPA",
+    "avgSalary": "\u20b96.80 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹13.50 LPA",
-    "medianSalary": "₹6.20 LPA",
+    "highestSalary": "\u20b913.50 LPA",
+    "medianSalary": "\u20b96.20 LPA",
     "batchSize": 60,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -15795,7 +15795,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,50,000"
+        "fee": "\u20b91,50,000"
       }
     ],
     "admissionCriteria": {
@@ -15810,7 +15810,7 @@ export const COLLEGES_DATA = [
       "Hostels for All",
       "Sports Stadium"
     ],
-    "highlights": "Elite Central University offering world-class management education for just ₹1.5 Lakhs total tuition; unmatched ROI in eastern India.",
+    "highlights": "Elite Central University offering world-class management education for just \u20b91.5 Lakhs total tuition; unmatched ROI in eastern India.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "http://www.tezu.ernet.in/dba/"
@@ -15833,12 +15833,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1943,
     "campusArea": "400 Acres Vani Vihar Campus",
     "accreditation": "UGC, NAAC A+ Grade, AICTE Approved",
-    "fees": "₹1.2 Lakhs",
+    "fees": "\u20b91.2 Lakhs",
     "feeNum": 1.2,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.0 LPA",
-    "medianSalary": "₹5.8 LPA",
+    "highestSalary": "\u20b913.0 LPA",
+    "medianSalary": "\u20b95.8 LPA",
     "batchSize": 120,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -15877,13 +15877,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Regular)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,20,000"
+        "fee": "\u20b91,20,000"
       },
       {
         "name": "MBA (Financial Management)",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹1,50,000"
+        "fee": "\u20b91,50,000"
       }
     ],
     "admissionCriteria": {
@@ -15920,12 +15920,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1983,
     "campusArea": "5 Acres",
     "accreditation": "AICTE Approved, Affiliated to B.R. Ambedkar Bihar University",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹4.5 LPA",
+    "avgSalary": "\u20b94.5 LPA",
     "avgSalaryNum": 4.5,
-    "highestSalary": "₹8.5 LPA",
-    "medianSalary": "₹4.0 LPA",
+    "highestSalary": "\u20b98.5 LPA",
+    "medianSalary": "\u20b94.0 LPA",
     "batchSize": 60,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -15960,7 +15960,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -15996,12 +15996,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "5 Acres in Knowledge Park III",
     "accreditation": "AICTE Approved",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹6.0 LPA",
+    "avgSalary": "\u20b96.0 LPA",
     "avgSalaryNum": 6,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.6 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.6 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -16039,7 +16039,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -16063,7 +16063,7 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "PGDM"
     ],
-    "name": "AIMA – Centre for Management Education",
+    "name": "AIMA \u2013 Centre for Management Education",
     "shortName": "AIMA CME New Delhi",
     "location": "15 Link Road, Lajpat Nagar III, New Delhi",
     "city": "Delhi-NCR",
@@ -16076,12 +16076,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "Apex Center in South Delhi",
     "accreditation": "AICTE Approved, AIU Equivalent to MBA",
-    "fees": "₹3.5 Lakhs",
+    "fees": "\u20b93.5 Lakhs",
     "feeNum": 3.5,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹12.5 LPA",
-    "medianSalary": "₹6.0 LPA",
+    "highestSalary": "\u20b912.5 LPA",
+    "medianSalary": "\u20b96.0 LPA",
     "batchSize": 180,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -16121,13 +16121,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Blended/Full Time",
         "seats": 120,
-        "fee": "₹3,50,000"
+        "fee": "\u20b93,50,000"
       },
       {
         "name": "PGDM in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       }
     ],
     "admissionCriteria": {
@@ -16163,12 +16163,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "42 Acres Lush Green Residential Campus",
     "accreditation": "AICTE Approved, Ministry of Finance, AIU Recognized",
-    "fees": "₹8.5 Lakhs",
+    "fees": "\u20b98.5 Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹9.8 LPA",
+    "avgSalary": "\u20b99.8 LPA",
     "avgSalaryNum": 9.8,
-    "highestSalary": "₹19.5 LPA",
-    "medianSalary": "₹9.2 LPA",
+    "highestSalary": "\u20b919.5 LPA",
+    "medianSalary": "\u20b99.2 LPA",
     "batchSize": 120,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -16207,13 +16207,13 @@ export const COLLEGES_DATA = [
         "name": "PGDM (Finance)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       },
       {
         "name": "PGDM (Financial Markets - Jointly with NSE)",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       }
     ],
     "admissionCriteria": {
@@ -16249,12 +16249,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "Prime Institutional Campus in Jasola",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Recognized",
-    "fees": "₹9.5 Lakhs",
+    "fees": "\u20b99.5 Lakhs",
     "feeNum": 9.5,
-    "avgSalary": "₹8.2 LPA",
+    "avgSalary": "\u20b98.2 LPA",
     "avgSalaryNum": 8.2,
-    "highestSalary": "₹16.5 LPA",
-    "medianSalary": "₹7.8 LPA",
+    "highestSalary": "\u20b916.5 LPA",
+    "medianSalary": "\u20b97.8 LPA",
     "batchSize": 180,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -16294,13 +16294,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM General)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       },
       {
         "name": "PGDM in Healthcare Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9,00,000"
+        "fee": "\u20b99,00,000"
       }
     ],
     "admissionCriteria": {
@@ -16337,12 +16337,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "Sector 125 Corporate Corridor Campus",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalent to MBA",
-    "fees": "₹8.2 Lakhs",
+    "fees": "\u20b98.2 Lakhs",
     "feeNum": 8.2,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹15.5 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b915.5 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 240,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -16382,7 +16382,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹8,20,000"
+        "fee": "\u20b98,20,000"
       }
     ],
     "admissionCriteria": {
@@ -16419,12 +16419,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "50 Acres Mega Campus",
     "accreditation": "NAAC A+ Grade, UGC, NIRF Top 60 Management",
-    "fees": "₹6.60 Lakhs",
+    "fees": "\u20b96.60 Lakhs",
     "feeNum": 6.6,
-    "avgSalary": "₹8.20 LPA",
+    "avgSalary": "\u20b98.20 LPA",
     "avgSalaryNum": 8.2,
-    "highestSalary": "₹26.00 LPA",
-    "medianSalary": "₹7.80 LPA",
+    "highestSalary": "\u20b926.00 LPA",
+    "medianSalary": "\u20b97.80 LPA",
     "batchSize": 360,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -16465,13 +16465,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Marketing/Finance/HR)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹6,80,000"
+        "fee": "\u20b96,80,000"
       },
       {
         "name": "MBA in Business Analytics / Healthcare",
         "duration": "2 Years",
         "seats": 120,
-        "fee": "₹7,20,000"
+        "fee": "\u20b97,20,000"
       }
     ],
     "admissionCriteria": {
@@ -16496,7 +16496,7 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "Christ University – School of Business and Management",
+    "name": "Christ University \u2013 School of Business and Management",
     "shortName": "Christ University Delhi-NCR",
     "location": "Mariam Nagar, Meerut Road, Delhi-NCR, Ghaziabad, Uttar Pradesh",
     "city": "Delhi-NCR",
@@ -16509,12 +16509,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2019,
     "campusArea": "15 Acres Serene Campus",
     "accreditation": "NAAC A+ Grade, UGC, AICTE Approved",
-    "fees": "₹9.2 Lakhs",
+    "fees": "\u20b99.2 Lakhs",
     "feeNum": 9.2,
-    "avgSalary": "₹8.5 LPA",
+    "avgSalary": "\u20b98.5 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹8.0 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b98.0 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -16555,7 +16555,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹9,20,000"
+        "fee": "\u20b99,20,000"
       }
     ],
     "admissionCriteria": {
@@ -16592,12 +16592,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "5 Acres",
     "accreditation": "AICTE Approved",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹5.5 LPA",
+    "avgSalary": "\u20b95.5 LPA",
     "avgSalaryNum": 5.5,
-    "highestSalary": "₹10.5 LPA",
-    "medianSalary": "₹5.0 LPA",
+    "highestSalary": "\u20b910.5 LPA",
+    "medianSalary": "\u20b95.0 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -16633,7 +16633,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -16669,12 +16669,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "8 Acres near Hero Honda Chowk",
     "accreditation": "AICTE, Affiliated to Maharshi Dayanand University (MDU)",
-    "fees": "₹2.8 Lakhs",
+    "fees": "\u20b92.8 Lakhs",
     "feeNum": 2.8,
-    "avgSalary": "₹5.0 LPA",
+    "avgSalary": "\u20b95.0 LPA",
     "avgSalaryNum": 5,
-    "highestSalary": "₹9.8 LPA",
-    "medianSalary": "₹4.6 LPA",
+    "highestSalary": "\u20b99.8 LPA",
+    "medianSalary": "\u20b94.6 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -16709,7 +16709,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       }
     ],
     "admissionCriteria": {
@@ -16746,12 +16746,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "60 Acres Himalayan Foothill Campus",
     "accreditation": "UGC Recognized, NAAC Accredited",
-    "fees": "₹1.8 Lakhs",
+    "fees": "\u20b91.8 Lakhs",
     "feeNum": 1.8,
-    "avgSalary": "₹6.0 LPA",
+    "avgSalary": "\u20b96.0 LPA",
     "avgSalaryNum": 6,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.5 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.5 LPA",
     "batchSize": 60,
     "roiScore": "9.7 / 10",
     "examsAccepted": [
@@ -16790,7 +16790,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
@@ -16805,7 +16805,7 @@ export const COLLEGES_DATA = [
       "Residential Hostels",
       "Sports Pavilions"
     ],
-    "highlights": "Premier state government university in Dehradun with rock-bottom fees under ₹2 Lakhs, excellent faculty, and high ROI.",
+    "highlights": "Premier state government university in Dehradun with rock-bottom fees under \u20b92 Lakhs, excellent faculty, and high ROI.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -16827,12 +16827,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1989,
     "campusArea": "154 Acres NIT Campus",
     "accreditation": "Ministry of Education, Institute of National Importance, NIRF Ranked",
-    "fees": "₹2.8 Lakhs",
+    "fees": "\u20b92.8 Lakhs",
     "feeNum": 2.8,
-    "avgSalary": "₹8.8 LPA",
+    "avgSalary": "\u20b98.8 LPA",
     "avgSalaryNum": 8.8,
-    "highestSalary": "₹17.0 LPA",
-    "medianSalary": "₹8.2 LPA",
+    "highestSalary": "\u20b917.0 LPA",
+    "medianSalary": "\u20b98.2 LPA",
     "batchSize": 75,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -16871,7 +16871,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 75,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       }
     ],
     "admissionCriteria": {
@@ -16908,12 +16908,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "7 Acres in Kamla Nagar",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalent to MBA",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.2 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -16953,7 +16953,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       }
     ],
     "admissionCriteria": {
@@ -16990,12 +16990,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "52 Acres Modern Yamuna Expressway Campus",
     "accreditation": "NAAC A+ Grade, UGC, NIRF Top 75 Management",
-    "fees": "₹3.40 Lakhs",
+    "fees": "\u20b93.40 Lakhs",
     "feeNum": 3.4,
-    "avgSalary": "₹6.50 LPA",
+    "avgSalary": "\u20b96.50 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹15.00 LPA",
-    "medianSalary": "₹6.00 LPA",
+    "highestSalary": "\u20b915.00 LPA",
+    "medianSalary": "\u20b96.00 LPA",
     "batchSize": 360,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -17036,13 +17036,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Dual Specialization)",
         "duration": "2 Years Full Time",
         "seats": 300,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       },
       {
         "name": "MBA in Financial Management / Logistics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5,20,000"
+        "fee": "\u20b95,20,000"
       }
     ],
     "admissionCriteria": {
@@ -17057,7 +17057,7 @@ export const COLLEGES_DATA = [
       "Food Courts",
       "Luxury Hostels"
     ],
-    "highlights": "One of the most popular private universities in NCR, holding NAAC A+ accreditation with low fees under ₹5 Lakhs and extensive corporate drives.",
+    "highlights": "One of the most popular private universities in NCR, holding NAAC A+ accreditation with low fees under \u20b95 Lakhs and extensive corporate drives.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.galgotiasuniversity.edu.in"
@@ -17080,12 +17080,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "60 Acres Luxury Eco-Campus near Aravallis",
     "accreditation": "UGC Recognized, QS I-GAUGE Diamond, AIU Member",
-    "fees": "₹8.5 Lakhs",
+    "fees": "\u20b98.5 Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹17.5 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b917.5 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -17125,13 +17125,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       },
       {
         "name": "MBA in Business Analytics / FinTech",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9,00,000"
+        "fee": "\u20b99,00,000"
       }
     ],
     "admissionCriteria": {
@@ -17168,12 +17168,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "Prime West Punjabi Bagh Campus",
     "accreditation": "AICTE Approved, GGSIPU Affiliated for University Programs",
-    "fees": "₹5.2 Lakhs",
+    "fees": "\u20b95.2 Lakhs",
     "feeNum": 5.2,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹11.5 LPA",
-    "medianSalary": "₹5.4 LPA",
+    "highestSalary": "\u20b911.5 LPA",
+    "medianSalary": "\u20b95.4 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -17210,7 +17210,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,20,000"
+        "fee": "\u20b95,20,000"
       }
     ],
     "admissionCriteria": {
@@ -17247,12 +17247,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2001,
     "campusArea": "10 Acres",
     "accreditation": "AICTE, Affiliated to HNB Garhwal Central University",
-    "fees": "₹3.2 Lakhs",
+    "fees": "\u20b93.2 Lakhs",
     "feeNum": 3.2,
-    "avgSalary": "₹4.8 LPA",
+    "avgSalary": "\u20b94.8 LPA",
     "avgSalaryNum": 4.8,
-    "highestSalary": "₹9.5 LPA",
-    "medianSalary": "₹4.4 LPA",
+    "highestSalary": "\u20b99.5 LPA",
+    "medianSalary": "\u20b94.4 LPA",
     "batchSize": 120,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -17288,7 +17288,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹3,20,000"
+        "fee": "\u20b93,20,000"
       }
     ],
     "admissionCriteria": {
@@ -17325,12 +17325,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "18 Acres on Delhi-Meerut Expressway",
     "accreditation": "AICTE, Affiliated to Dr. A.P.J. Abdul Kalam Technical University (AKTU)",
-    "fees": "₹2.9 Lakhs",
+    "fees": "\u20b92.9 Lakhs",
     "feeNum": 2.9,
-    "avgSalary": "₹4.8 LPA",
+    "avgSalary": "\u20b94.8 LPA",
     "avgSalaryNum": 4.8,
-    "highestSalary": "₹9.2 LPA",
-    "medianSalary": "₹4.5 LPA",
+    "highestSalary": "\u20b99.2 LPA",
+    "medianSalary": "\u20b94.5 LPA",
     "batchSize": 120,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -17367,7 +17367,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,90,000"
+        "fee": "\u20b92,90,000"
       }
     ],
     "admissionCriteria": {
@@ -17404,12 +17404,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "5 Acres in Prime Gomti Nagar",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalent to MBA",
-    "fees": "₹6.8 Lakhs",
+    "fees": "\u20b96.8 Lakhs",
     "feeNum": 6.8,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -17449,7 +17449,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,80,000"
+        "fee": "\u20b96,80,000"
       }
     ],
     "admissionCriteria": {
@@ -17486,12 +17486,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1990,
     "campusArea": "14 Acres Campus on NH-9",
     "accreditation": "AICTE Approved, NBA Accredited, ASIC (UK), AIU Equivalent",
-    "fees": "₹9.5 Lakhs",
+    "fees": "\u20b99.5 Lakhs",
     "feeNum": 9.5,
-    "avgSalary": "₹8.8 LPA",
+    "avgSalary": "\u20b98.8 LPA",
     "avgSalaryNum": 8.8,
-    "highestSalary": "₹28.0 LPA",
-    "medianSalary": "₹8.2 LPA",
+    "highestSalary": "\u20b928.0 LPA",
+    "medianSalary": "\u20b98.2 LPA",
     "batchSize": 240,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -17532,13 +17532,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM General)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       },
       {
         "name": "PGDM in Big Data Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       }
     ],
     "admissionCriteria": {
@@ -17575,12 +17575,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "Sector 18A Dwarka Institutional Area",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalent to MBA",
-    "fees": "₹8.9 Lakhs",
+    "fees": "\u20b98.9 Lakhs",
     "feeNum": 8.9,
-    "avgSalary": "₹8.5 LPA",
+    "avgSalary": "\u20b98.5 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹8.0 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b98.0 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -17621,13 +17621,13 @@ export const COLLEGES_DATA = [
         "name": "PGDM in Hospital and Health Management",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹8,90,000"
+        "fee": "\u20b98,90,000"
       },
       {
         "name": "PGDM in Healthcare Information Technology",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8,90,000"
+        "fee": "\u20b98,90,000"
       }
     ],
     "admissionCriteria": {
@@ -17664,12 +17664,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1989,
     "campusArea": "100 Acres Lush Campus in South Delhi",
     "accreditation": "NAAC A+ Grade, UGC, NIRF Top 50 Overall",
-    "fees": "₹5.50 Lakhs",
+    "fees": "\u20b95.50 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.50 LPA",
+    "avgSalary": "\u20b97.50 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹14.00 LPA",
-    "medianSalary": "₹7.00 LPA",
+    "highestSalary": "\u20b914.00 LPA",
+    "medianSalary": "\u20b97.00 LPA",
     "batchSize": 180,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -17709,13 +17709,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       },
       {
         "name": "MBA in Pharmaceutical Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -17753,12 +17753,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "10 Acres Lush Campus in Gomti Nagar",
     "accreditation": "NBA Accredited, NAAC A+ Grade, AACSB Business Member, AIU Equivalent",
-    "fees": "₹13.5 Lakhs",
+    "fees": "\u20b913.5 Lakhs",
     "feeNum": 13.5,
-    "avgSalary": "₹11.5 LPA",
+    "avgSalary": "\u20b911.5 LPA",
     "avgSalaryNum": 11.5,
-    "highestSalary": "₹23.0 LPA",
-    "medianSalary": "₹11.0 LPA",
+    "highestSalary": "\u20b923.0 LPA",
+    "medianSalary": "\u20b911.0 LPA",
     "batchSize": 300,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -17798,19 +17798,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM General)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹13,50,000"
+        "fee": "\u20b913,50,000"
       },
       {
         "name": "PGDM in Financial Services",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹13,50,000"
+        "fee": "\u20b913,50,000"
       },
       {
         "name": "PGDM in Retail Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹13,50,000"
+        "fee": "\u20b913,50,000"
       }
     ],
     "admissionCriteria": {
@@ -17825,7 +17825,7 @@ export const COLLEGES_DATA = [
       "Student Hostels",
       "Sports Arena"
     ],
-    "highlights": "The founding flagship campus of the Jaipuria Group; NIRF Top 50 B-school in India with average salary exceeding ₹11.5 LPA.",
+    "highlights": "The founding flagship campus of the Jaipuria Group; NIRF Top 50 B-school in India with average salary exceeding \u20b911.5 LPA.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -17847,12 +17847,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "15 Acres High-Tech Campus in Sector 62",
     "accreditation": "NAAC A+ Grade, UGC, AICTE Approved",
-    "fees": "₹9.0 Lakhs",
+    "fees": "\u20b99.0 Lakhs",
     "feeNum": 9,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹16.5 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b916.5 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -17892,7 +17892,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹9,00,000"
+        "fee": "\u20b99,00,000"
       }
     ],
     "admissionCriteria": {
@@ -17929,12 +17929,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "100 Acres State-of-the-Art Global Campus",
     "accreditation": "NAAC A Grade, AACSB Member, Institute of Eminence, UGC",
-    "fees": "₹14.0 Lakhs",
+    "fees": "\u20b914.0 Lakhs",
     "feeNum": 14,
-    "avgSalary": "₹11.2 LPA",
+    "avgSalary": "\u20b911.2 LPA",
     "avgSalaryNum": 11.2,
-    "highestSalary": "₹23.0 LPA",
-    "medianSalary": "₹10.5 LPA",
+    "highestSalary": "\u20b923.0 LPA",
+    "medianSalary": "\u20b910.5 LPA",
     "batchSize": 240,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -17976,13 +17976,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹14,00,000"
+        "fee": "\u20b914,00,000"
       },
       {
         "name": "MBA in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹14,00,000"
+        "fee": "\u20b914,00,000"
       }
     ],
     "admissionCriteria": {
@@ -18019,12 +18019,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1998,
     "campusArea": "18 Acres on NH-58",
     "accreditation": "NAAC A+ Grade, NBA Accredited, AICTE Approved",
-    "fees": "₹3.2 Lakhs",
+    "fees": "\u20b93.2 Lakhs",
     "feeNum": 3.2,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.4 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.4 LPA",
     "batchSize": 180,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -18062,7 +18062,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹3,20,000"
+        "fee": "\u20b93,20,000"
       }
     ],
     "admissionCriteria": {
@@ -18077,7 +18077,7 @@ export const COLLEGES_DATA = [
       "Hostels for All",
       "Sports Complex"
     ],
-    "highlights": "Ranked among top AKTU colleges in UP; phenomenal return on investment with total fees under ₹3.5 Lakhs and strong tech-BFSI placements.",
+    "highlights": "Ranked among top AKTU colleges in UP; phenomenal return on investment with total fees under \u20b93.5 Lakhs and strong tech-BFSI placements.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -18099,12 +18099,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "26 Acres Aravalli Valley Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹7.0 LPA",
+    "avgSalary": "\u20b97.0 LPA",
     "avgSalaryNum": 7,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.5 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.5 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -18144,13 +18144,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       },
       {
         "name": "MBA in International Business / Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7,00,000"
+        "fee": "\u20b97,00,000"
       }
     ],
     "admissionCriteria": {
@@ -18187,12 +18187,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "33 Acres Eco-Friendly Residential Campus",
     "accreditation": "NAAC A+ Grade, UGC, AACSB Member",
-    "fees": "₹10.30 Lakhs",
+    "fees": "\u20b910.30 Lakhs",
     "feeNum": 10.3,
-    "avgSalary": "₹7.80 LPA",
+    "avgSalary": "\u20b97.80 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹21.35 LPA",
-    "medianSalary": "₹7.50 LPA",
+    "highestSalary": "\u20b921.35 LPA",
+    "medianSalary": "\u20b97.50 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -18234,7 +18234,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹10,50,000"
+        "fee": "\u20b910,50,000"
       }
     ],
     "admissionCriteria": {
@@ -18272,12 +18272,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "600 Acres Mega Smart University City",
     "accreditation": "NAAC A++ Grade, NIRF Top 35 Management, ACBSP (USA Accredited)",
-    "fees": "₹8.0 Lakhs",
+    "fees": "\u20b98.0 Lakhs",
     "feeNum": 8,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹29.3 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b929.3 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 480,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -18319,13 +18319,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Dual Specialization)",
         "duration": "2 Years Full Time",
         "seats": 360,
-        "fee": "₹8,00,000"
+        "fee": "\u20b98,00,000"
       },
       {
         "name": "MBA in Hospital & Healthcare / Supply Chain",
         "duration": "2 Years",
         "seats": 120,
-        "fee": "₹8,00,000"
+        "fee": "\u20b98,00,000"
       }
     ],
     "admissionCriteria": {
@@ -18362,12 +18362,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "75 Acres Yamuna Expressway Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.5 Lakhs",
+    "fees": "\u20b94.5 Lakhs",
     "feeNum": 4.5,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.2 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.2 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -18404,7 +18404,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       }
     ],
     "admissionCriteria": {
@@ -18441,12 +18441,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "Kashmere Gate Heritage Campus",
     "accreditation": "NAAC A Grade, UGC Recognized",
-    "fees": "₹3.2 Lakhs",
+    "fees": "\u20b93.2 Lakhs",
     "feeNum": 3.2,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 60,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -18482,7 +18482,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹3,20,000"
+        "fee": "\u20b93,20,000"
       }
     ],
     "admissionCriteria": {
@@ -18518,12 +18518,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "NAAC A+ Grade, UGC Recognized",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.5 LPA",
-    "medianSalary": "₹5.8 LPA",
+    "highestSalary": "\u20b913.5 LPA",
+    "medianSalary": "\u20b95.8 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -18560,7 +18560,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -18597,12 +18597,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "63 Acres Cosmopolitan Campus",
     "accreditation": "NAAC A+ Grade, UGC, NIRF Top 85 Management",
-    "fees": "₹7.5 Lakhs",
+    "fees": "\u20b97.5 Lakhs",
     "feeNum": 7.5,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 300,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -18643,13 +18643,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Dual Specialization)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       },
       {
         "name": "MBA in International Business / Supply Chain",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8,00,000"
+        "fee": "\u20b98,00,000"
       }
     ],
     "admissionCriteria": {
@@ -18686,12 +18686,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1997,
     "campusArea": "27 Acres Green Campus",
     "accreditation": "NAAC A++ Grade, UGC, AICTE Approved",
-    "fees": "₹4.5 Lakhs",
+    "fees": "\u20b94.5 Lakhs",
     "feeNum": 4.5,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.0 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.0 LPA",
     "batchSize": 180,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -18731,7 +18731,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       }
     ],
     "admissionCriteria": {
@@ -18768,12 +18768,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "200 Acres Foothill Campus near Jolly Grant Airport",
     "accreditation": "UGC, NAAC A+ Grade",
-    "fees": "₹4.2 Lakhs",
+    "fees": "\u20b94.2 Lakhs",
     "feeNum": 4.2,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.4 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.4 LPA",
     "batchSize": 60,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -18809,13 +18809,13 @@ export const COLLEGES_DATA = [
         "name": "MBA in Hospital Administration",
         "duration": "2 Years Full Time",
         "seats": 30,
-        "fee": "₹4,20,000"
+        "fee": "\u20b94,20,000"
       },
       {
         "name": "MBA (General Management)",
         "duration": "2 Years",
         "seats": 30,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       }
     ],
     "admissionCriteria": {
@@ -18852,12 +18852,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2003,
     "campusArea": "Civil Lines Regional Campus",
     "accreditation": "NAAC A++ Grade (Panjab University), AICTE Approved",
-    "fees": "₹1.5 Lakhs",
+    "fees": "\u20b91.5 Lakhs",
     "feeNum": 1.5,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹15.5 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b915.5 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 60,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -18894,7 +18894,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,50,000"
+        "fee": "\u20b91,50,000"
       }
     ],
     "admissionCriteria": {
@@ -18908,7 +18908,7 @@ export const COLLEGES_DATA = [
       "Air-Conditioned Auditoriums",
       "Computer Lab"
     ],
-    "highlights": "Offshoot of legendary UBS Panjab University; astronomical ROI with total tuition of only ₹1.5 Lakhs and deep ties to Ludhiana's industrial barons.",
+    "highlights": "Offshoot of legendary UBS Panjab University; astronomical ROI with total tuition of only \u20b91.5 Lakhs and deep ties to Ludhiana's industrial barons.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -18930,12 +18930,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "150 Acres Mega Modern Campus",
     "accreditation": "NAAC A+ Grade, NIRF Top 40 Management, QS World Ranked",
-    "fees": "₹5.60 Lakhs",
+    "fees": "\u20b95.60 Lakhs",
     "feeNum": 5.6,
-    "avgSalary": "₹7.60 LPA",
+    "avgSalary": "\u20b97.60 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹28.00 LPA",
-    "medianSalary": "₹7.00 LPA",
+    "highestSalary": "\u20b928.00 LPA",
+    "medianSalary": "\u20b97.00 LPA",
     "batchSize": 600,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -18976,13 +18976,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Specialized)",
         "duration": "2 Years Full Time",
         "seats": 360,
-        "fee": "₹5,80,000"
+        "fee": "\u20b95,80,000"
       },
       {
         "name": "MBA in Business Analytics / FinTech",
         "duration": "2 Years",
         "seats": 120,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       }
     ],
     "admissionCriteria": {
@@ -19020,12 +19020,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "70 Acres Scenic Campus near Mussoorie Foothills",
     "accreditation": "NAAC A+ Grade, UGC Recognized, AICTE Approved",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.0 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.0 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -19065,7 +19065,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -19102,12 +19102,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "5 Acres in Bengaluru Tech Suburbs",
     "accreditation": "AICTE Approved, IACBE (USA Accredited), NBA Accredited",
-    "fees": "₹8.9 Lakhs",
+    "fees": "\u20b98.9 Lakhs",
     "feeNum": 8.9,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -19148,7 +19148,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹8,90,000"
+        "fee": "\u20b98,90,000"
       }
     ],
     "admissionCriteria": {
@@ -19185,12 +19185,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "6 Acres",
     "accreditation": "NAAC A Grade, NBA Accredited, AICTE Approved, IACBE",
-    "fees": "₹7.9 Lakhs",
+    "fees": "\u20b97.9 Lakhs",
     "feeNum": 7.9,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹14.5 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b914.5 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 240,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -19230,7 +19230,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹7,90,000"
+        "fee": "\u20b97,90,000"
       }
     ],
     "admissionCriteria": {
@@ -19267,12 +19267,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "120 Acres Acharya Mega Campus",
     "accreditation": "NAAC A Grade, AICTE Approved",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹13.5 LPA",
-    "medianSalary": "₹6.0 LPA",
+    "highestSalary": "\u20b913.5 LPA",
+    "medianSalary": "\u20b96.0 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -19312,7 +19312,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       }
     ],
     "admissionCriteria": {
@@ -19349,12 +19349,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2000,
     "campusArea": "120 Acres Acharya Campus",
     "accreditation": "NAAC A Grade, NBA Accredited, VTU Autonomous",
-    "fees": "₹6.8 Lakhs",
+    "fees": "\u20b96.8 Lakhs",
     "feeNum": 6.8,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.4 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.4 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -19394,7 +19394,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,80,000"
+        "fee": "\u20b96,80,000"
       }
     ],
     "admissionCriteria": {
@@ -19431,12 +19431,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1956,
     "campusArea": "Historic Bella Vista Palace Heritage Campus (Raj Bhavan Road)",
     "accreditation": "AICTE Approved, Ministry of Education Supported, AIU Recognized",
-    "fees": "₹8.5 Lakhs",
+    "fees": "\u20b98.5 Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹8.8 LPA",
+    "avgSalary": "\u20b98.8 LPA",
     "avgSalaryNum": 8.8,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹8.2 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b98.2 LPA",
     "batchSize": 60,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -19478,7 +19478,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       }
     ],
     "admissionCriteria": {
@@ -19515,12 +19515,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "Peenya Industrial Hub Campus",
     "accreditation": "NAAC A Grade (Score 3.46), IACBE (USA Accredited), AICTE Approved",
-    "fees": "₹9.2 Lakhs",
+    "fees": "\u20b99.2 Lakhs",
     "feeNum": 9.2,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 240,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -19563,13 +19563,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹9,20,000"
+        "fee": "\u20b99,20,000"
       },
       {
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       }
     ],
     "admissionCriteria": {
@@ -19607,12 +19607,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "Electronic City Corridor Campus",
     "accreditation": "AICTE Approved",
-    "fees": "₹6.8 Lakhs",
+    "fees": "\u20b96.8 Lakhs",
     "feeNum": 6.8,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.4 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.4 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -19652,7 +19652,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,80,000"
+        "fee": "\u20b96,80,000"
       }
     ],
     "admissionCriteria": {
@@ -19689,12 +19689,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "400 Acres Sprawling Western Ghats Campus",
     "accreditation": "AACSB Accredited (Top 5% Globally), NAAC A++ Grade, NIRF Top 30",
-    "fees": "₹11.5 Lakhs",
+    "fees": "\u20b911.5 Lakhs",
     "feeNum": 11.5,
-    "avgSalary": "₹9.2 LPA",
+    "avgSalary": "\u20b99.2 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹20.5 LPA",
-    "medianSalary": "₹8.8 LPA",
+    "highestSalary": "\u20b920.5 LPA",
+    "medianSalary": "\u20b98.8 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -19736,13 +19736,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Coimbatore)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹11,50,000"
+        "fee": "\u20b911,50,000"
       },
       {
         "name": "MBA (Bengaluru Campus)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹11,50,000"
+        "fee": "\u20b911,50,000"
       }
     ],
     "admissionCriteria": {
@@ -19779,12 +19779,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1988,
     "campusArea": "100 Acres",
     "accreditation": "NAAC A++ Grade, UGC Recognized, AICTE Approved",
-    "fees": "₹1.8 Lakhs",
+    "fees": "\u20b91.8 Lakhs",
     "feeNum": 1.8,
-    "avgSalary": "₹5.5 LPA",
+    "avgSalary": "\u20b95.5 LPA",
     "avgSalaryNum": 5.5,
-    "highestSalary": "₹11.0 LPA",
-    "medianSalary": "₹5.2 LPA",
+    "highestSalary": "\u20b911.0 LPA",
+    "medianSalary": "\u20b95.2 LPA",
     "batchSize": 60,
     "roiScore": "9.6 / 10",
     "examsAccepted": [
@@ -19822,7 +19822,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
@@ -19859,12 +19859,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1982,
     "campusArea": "500 Acres Palkalaiperur Campus",
     "accreditation": "NAAC A+ Grade, UGC, AICTE Approved",
-    "fees": "₹16.50 Lakhs",
+    "fees": "\u20b916.50 Lakhs",
     "feeNum": 16.5,
-    "avgSalary": "₹12.40 LPA",
+    "avgSalary": "\u20b912.40 LPA",
     "avgSalaryNum": 12.4,
-    "highestSalary": "₹20.50 LPA",
-    "medianSalary": "₹12.00 LPA",
+    "highestSalary": "\u20b920.50 LPA",
+    "medianSalary": "\u20b912.00 LPA",
     "batchSize": 120,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -19902,7 +19902,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,20,000"
+        "fee": "\u20b91,20,000"
       }
     ],
     "admissionCriteria": {
@@ -19940,12 +19940,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "60 Acres Airport Corridor Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -19987,13 +19987,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       },
       {
         "name": "MBA in Business Analytics / Supply Chain",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7,00,000"
+        "fee": "\u20b97,00,000"
       }
     ],
     "admissionCriteria": {
@@ -20030,12 +20030,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1984,
     "campusArea": "50 Acres GST Road Campus",
     "accreditation": "NAAC A+ Grade, NBA Accredited, AICTE Approved",
-    "fees": "₹6.8 Lakhs",
+    "fees": "\u20b96.8 Lakhs",
     "feeNum": 6.8,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹15.5 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b915.5 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -20075,7 +20075,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹6,80,000"
+        "fee": "\u20b96,80,000"
       }
     ],
     "admissionCriteria": {
@@ -20112,12 +20112,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "32 Acres South Bengaluru Campus",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalent to MBA",
-    "fees": "₹8.5 Lakhs",
+    "fees": "\u20b98.5 Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹16.5 LPA",
-    "medianSalary": "₹7.4 LPA",
+    "highestSalary": "\u20b916.5 LPA",
+    "medianSalary": "\u20b97.4 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -20158,7 +20158,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       }
     ],
     "admissionCriteria": {
@@ -20195,12 +20195,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "104 Acres Megacampus in Vadlamudi",
     "accreditation": "NAAC A+ Grade, NIRF Top 90 Management, AICTE Approved",
-    "fees": "₹3.8 Lakhs",
+    "fees": "\u20b93.8 Lakhs",
     "feeNum": 3.8,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.4 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.4 LPA",
     "batchSize": 180,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -20239,7 +20239,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       }
     ],
     "admissionCriteria": {
@@ -20276,12 +20276,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "8 Acres Eco-Friendly Campus amidst Medchal Forests",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalent to MBA",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.4 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.4 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -20322,7 +20322,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       }
     ],
     "admissionCriteria": {
@@ -20346,7 +20346,7 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "Dwaraka Doss Goverdhan Doss Vaishnav College – School of Management",
+    "name": "Dwaraka Doss Goverdhan Doss Vaishnav College \u2013 School of Management",
     "shortName": "DG Vaishnav College Chennai",
     "location": "833 Gokul Bagh, EVR Periyar Salai, Arumbakkam, Chennai, Tamil Nadu",
     "city": "Chennai",
@@ -20359,12 +20359,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "15 Acres City Campus in Arumbakkam",
     "accreditation": "NAAC A++ Grade, UGC Autonomous, AICTE Approved",
-    "fees": "₹3.2 Lakhs",
+    "fees": "\u20b93.2 Lakhs",
     "feeNum": 3.2,
-    "avgSalary": "₹6.0 LPA",
+    "avgSalary": "\u20b96.0 LPA",
     "avgSalaryNum": 6,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.5 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.5 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -20402,7 +20402,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹3,20,000"
+        "fee": "\u20b93,20,000"
       }
     ],
     "admissionCriteria": {
@@ -20439,12 +20439,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "15 Acres Eco-Campus in Coimbatore Hills",
     "accreditation": "AICTE Approved",
-    "fees": "₹7.5 Lakhs",
+    "fees": "\u20b97.5 Lakhs",
     "feeNum": 7.5,
-    "avgSalary": "₹7.0 LPA",
+    "avgSalary": "\u20b97.0 LPA",
     "avgSalaryNum": 7,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.6 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.6 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -20484,7 +20484,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       }
     ],
     "admissionCriteria": {
@@ -20521,12 +20521,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1988,
     "campusArea": "100+ Acres Across Three Metropolitan Campuses",
     "accreditation": "NAAC A++ Grade, UGC Recognized, AICTE Approved",
-    "fees": "₹9.0 Lakhs",
+    "fees": "\u20b99.0 Lakhs",
     "feeNum": 9,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹16.5 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b916.5 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 360,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -20567,13 +20567,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 300,
-        "fee": "₹9,00,000"
+        "fee": "\u20b99,00,000"
       },
       {
         "name": "MBA in Business Analytics / Healthcare",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       }
     ],
     "admissionCriteria": {
@@ -20610,12 +20610,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1964,
     "campusArea": "22 Acres Fully Residential Green Shamirpet Campus",
     "accreditation": "AICTE Approved, NBA Accredited, SAQS Accredited, AIU Equivalent",
-    "fees": "₹8.5 Lakhs",
+    "fees": "\u20b98.5 Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹24.7 LPA",
-    "medianSalary": "₹7.4 LPA",
+    "highestSalary": "\u20b924.7 LPA",
+    "medianSalary": "\u20b97.4 LPA",
     "batchSize": 360,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -20657,19 +20657,19 @@ export const COLLEGES_DATA = [
         "name": "PGDM (General Management)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       },
       {
         "name": "PGDM in Banking and Financial Services",
         "duration": "2 Years",
         "seats": 90,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       },
       {
         "name": "PGDM in Marketing / International Business",
         "duration": "2 Years",
         "seats": 90,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       }
     ],
     "admissionCriteria": {
@@ -20706,12 +20706,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "65 Acres Modern Green Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC A+ Grade",
-    "fees": "₹7.5 Lakhs",
+    "fees": "\u20b97.5 Lakhs",
     "feeNum": 7.5,
-    "avgSalary": "₹7.0 LPA",
+    "avgSalary": "\u20b97.0 LPA",
     "avgSalaryNum": 7,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.6 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.6 LPA",
     "batchSize": 300,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -20753,13 +20753,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Dual Specialization)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       },
       {
         "name": "MBA in Business Analytics / Logistics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8,00,000"
+        "fee": "\u20b98,00,000"
       }
     ],
     "admissionCriteria": {
@@ -20796,12 +20796,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1985,
     "campusArea": "800 Acres Oceanfront Campus",
     "accreditation": "NAAC A+ Grade, Ministry of Education, NIRF Ranked",
-    "fees": "₹1.4 Lakhs",
+    "fees": "\u20b91.4 Lakhs",
     "feeNum": 1.4,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 180,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -20838,13 +20838,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹1,40,000"
+        "fee": "\u20b91,40,000"
       },
       {
         "name": "MBA in International Business / Tourism",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹1,40,000"
+        "fee": "\u20b91,40,000"
       }
     ],
     "admissionCriteria": {
@@ -20859,7 +20859,7 @@ export const COLLEGES_DATA = [
       "Hostels",
       "Sports Stadium"
     ],
-    "highlights": "Elite Central University overlooking the Bay of Bengal; exceptional educational pedigree with two-year tuition under ₹1.5 Lakhs.",
+    "highlights": "Elite Central University overlooking the Bay of Bengal; exceptional educational pedigree with two-year tuition under \u20b91.5 Lakhs.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -20882,12 +20882,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "15 Acres Scenic Rajagiri Valley Campus",
     "accreditation": "AACSB Member, NBA Accredited, AIU Recognized, NAAC A++ Grade",
-    "fees": "₹8.50 Lakhs",
+    "fees": "\u20b98.50 Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹8.40 LPA",
+    "avgSalary": "\u20b98.40 LPA",
     "avgSalaryNum": 8.4,
-    "highestSalary": "₹16.05 LPA",
-    "medianSalary": "₹8.00 LPA",
+    "highestSalary": "\u20b916.05 LPA",
+    "medianSalary": "\u20b98.00 LPA",
     "batchSize": 240,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -20928,13 +20928,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       },
       {
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹8,00,000"
+        "fee": "\u20b98,00,000"
       }
     ],
     "admissionCriteria": {
@@ -20972,12 +20972,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "Prime New BEL Road City Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC A+ Grade",
-    "fees": "₹8.0 Lakhs",
+    "fees": "\u20b98.0 Lakhs",
     "feeNum": 8,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -21016,13 +21016,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹8,00,000"
+        "fee": "\u20b98,00,000"
       },
       {
         "name": "MBA in Hospital Administration / FinTech",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       }
     ],
     "admissionCriteria": {
@@ -21059,12 +21059,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1998,
     "campusArea": "25 Acres",
     "accreditation": "AICTE Approved, NAAC Accredited, MKU Affiliated",
-    "fees": "₹3.8 Lakhs",
+    "fees": "\u20b93.8 Lakhs",
     "feeNum": 3.8,
-    "avgSalary": "₹5.2 LPA",
+    "avgSalary": "\u20b95.2 LPA",
     "avgSalaryNum": 5.2,
-    "highestSalary": "₹10.0 LPA",
-    "medianSalary": "₹4.8 LPA",
+    "highestSalary": "\u20b910.0 LPA",
+    "medianSalary": "\u20b94.8 LPA",
     "batchSize": 120,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -21101,7 +21101,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       }
     ],
     "admissionCriteria": {
@@ -21138,12 +21138,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1999,
     "campusArea": "Prime Jayanagar 4th Block Campus",
     "accreditation": "NAAC A+ Grade (Score 3.38), AICTE Approved, UGC Autonomous",
-    "fees": "₹6.0 Lakhs",
+    "fees": "\u20b96.0 Lakhs",
     "feeNum": 6,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹15.5 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b915.5 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 180,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -21184,7 +21184,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹6,00,000"
+        "fee": "\u20b96,00,000"
       }
     ],
     "admissionCriteria": {
@@ -21220,12 +21220,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "30 Acres Netravathi Riverfront Campus",
     "accreditation": "NAAC A Grade, NBA Accredited, VTU Autonomous",
-    "fees": "₹4.5 Lakhs",
+    "fees": "\u20b94.5 Lakhs",
     "feeNum": 4.5,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.2 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.2 LPA",
     "batchSize": 180,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -21264,7 +21264,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       }
     ],
     "admissionCriteria": {
@@ -21301,12 +21301,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "15 Acres Kottukulam Hills Campus",
     "accreditation": "NBA Accredited, ACBSP (USA Candidacy), KTU Affiliated",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.0 LPA",
+    "avgSalary": "\u20b96.0 LPA",
     "avgSalaryNum": 6,
-    "highestSalary": "₹13.0 LPA",
-    "medianSalary": "₹5.6 LPA",
+    "highestSalary": "\u20b913.0 LPA",
+    "medianSalary": "\u20b95.6 LPA",
     "batchSize": 120,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -21345,7 +21345,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -21382,12 +21382,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1999,
     "campusArea": "10 Acres",
     "accreditation": "NAAC Accredited, AICTE Approved, Bangalore University Affiliated",
-    "fees": "₹4.5 Lakhs",
+    "fees": "\u20b94.5 Lakhs",
     "feeNum": 4.5,
-    "avgSalary": "₹5.5 LPA",
+    "avgSalary": "\u20b95.5 LPA",
     "avgSalaryNum": 5.5,
-    "highestSalary": "₹11.0 LPA",
-    "medianSalary": "₹5.0 LPA",
+    "highestSalary": "\u20b911.0 LPA",
+    "medianSalary": "\u20b95.0 LPA",
     "batchSize": 180,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -21425,7 +21425,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       }
     ],
     "admissionCriteria": {
@@ -21462,12 +21462,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2021,
     "campusArea": "5 Acres Modern Campus",
     "accreditation": "AICTE Approved",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹6.0 LPA",
+    "avgSalary": "\u20b96.0 LPA",
     "avgSalaryNum": 6,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.5 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.5 LPA",
     "batchSize": 60,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -21504,7 +21504,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -21528,7 +21528,7 @@ export const COLLEGES_DATA = [
     "degreeTypes": [
       "MBA"
     ],
-    "name": "School of Business – Aditya University",
+    "name": "School of Business \u2013 Aditya University",
     "shortName": "Aditya University Surampalem",
     "location": "Aditya Nagar, ADB Road, Surampalem, Kakinada District, Andhra Pradesh",
     "city": "Surampalem",
@@ -21541,12 +21541,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "180 Acres Mega University Campus",
     "accreditation": "NAAC A++ Grade, UGC Recognized, AICTE Approved",
-    "fees": "₹3.5 Lakhs",
+    "fees": "\u20b93.5 Lakhs",
     "feeNum": 3.5,
-    "avgSalary": "₹5.5 LPA",
+    "avgSalary": "\u20b95.5 LPA",
     "avgSalaryNum": 5.5,
-    "highestSalary": "₹12.5 LPA",
-    "medianSalary": "₹5.0 LPA",
+    "highestSalary": "\u20b912.5 LPA",
+    "medianSalary": "\u20b95.0 LPA",
     "batchSize": 240,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -21584,7 +21584,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹3,50,000"
+        "fee": "\u20b93,50,000"
       }
     ],
     "admissionCriteria": {
@@ -21621,12 +21621,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1992,
     "campusArea": "10 Acres Modern Campus on Kochi Metro Corridor",
     "accreditation": "NBA Accredited, ACBSP (USA Accredited), AICTE, AIU Recognized",
-    "fees": "₹8.0 Lakhs",
+    "fees": "\u20b98.0 Lakhs",
     "feeNum": 8,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -21668,7 +21668,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹8,00,000"
+        "fee": "\u20b98,00,000"
       }
     ],
     "admissionCriteria": {
@@ -21705,12 +21705,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2003,
     "campusArea": "Co-located with SCMS Campus",
     "accreditation": "NAAC A Grade, AICTE Approved, MG University Affiliated",
-    "fees": "₹4.5 Lakhs",
+    "fees": "\u20b94.5 Lakhs",
     "feeNum": 4.5,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.8 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.8 LPA",
     "batchSize": 120,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -21746,7 +21746,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       }
     ],
     "admissionCriteria": {
@@ -21782,12 +21782,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2001,
     "campusArea": "175 Acres Medical & Deemed University Campus",
     "accreditation": "NAAC A++ Grade, NIRF Top 60, UGC Recognized",
-    "fees": "₹5.0 Lakhs",
+    "fees": "\u20b95.0 Lakhs",
     "feeNum": 5,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.2 LPA",
     "batchSize": 120,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -21825,13 +21825,13 @@ export const COLLEGES_DATA = [
         "name": "MBA in Hospital and Health Systems Management",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹5,00,000"
+        "fee": "\u20b95,00,000"
       },
       {
         "name": "MBA (General Management)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       }
     ],
     "admissionCriteria": {
@@ -21867,12 +21867,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1963,
     "campusArea": "65 Acres Historic Campus",
     "accreditation": "NAAC A++ Grade, NBA Accredited, VTU Autonomous",
-    "fees": "₹3.8 Lakhs",
+    "fees": "\u20b93.8 Lakhs",
     "feeNum": 3.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.0 LPA",
-    "medianSalary": "₹5.8 LPA",
+    "highestSalary": "\u20b913.0 LPA",
+    "medianSalary": "\u20b95.8 LPA",
     "batchSize": 120,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -21911,7 +21911,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       }
     ],
     "admissionCriteria": {
@@ -21948,12 +21948,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1992,
     "campusArea": "8 Acres on NH-44 Kompally",
     "accreditation": "AICTE Approved, NBA Accredited, NAAC Accredited, AIU Recognized",
-    "fees": "₹7.5 Lakhs",
+    "fees": "\u20b97.5 Lakhs",
     "feeNum": 7.5,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹15.5 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b915.5 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -21994,19 +21994,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM General)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       },
       {
         "name": "PGDM in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       },
       {
         "name": "PGDM in Banking, Insurance & Financial Services",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       }
     ],
     "admissionCriteria": {
@@ -22043,12 +22043,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "250 Acres Flagship Kattankulathur Mega Campus",
     "accreditation": "NAAC A++ Grade, NIRF Top 45 Management, UGC, AICTE",
-    "fees": "₹8.5 Lakhs",
+    "fees": "\u20b98.5 Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹8.2 LPA",
+    "avgSalary": "\u20b98.2 LPA",
     "avgSalaryNum": 8.2,
-    "highestSalary": "₹21.0 LPA",
-    "medianSalary": "₹7.8 LPA",
+    "highestSalary": "\u20b921.0 LPA",
+    "medianSalary": "\u20b97.8 LPA",
     "batchSize": 480,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -22090,13 +22090,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Dual Specialization)",
         "duration": "2 Years Full Time",
         "seats": 360,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       },
       {
         "name": "MBA in Hospital Management / Business Analytics",
         "duration": "2 Years",
         "seats": 120,
-        "fee": "₹9,00,000"
+        "fee": "\u20b99,00,000"
       }
     ],
     "admissionCriteria": {
@@ -22133,12 +22133,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1998,
     "campusArea": "35 Acres in Salem City",
     "accreditation": "NAAC A Grade, NBA Accredited, Anna University Autonomous",
-    "fees": "₹4.5 Lakhs",
+    "fees": "\u20b94.5 Lakhs",
     "feeNum": 4.5,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹5.8 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b95.8 LPA",
     "batchSize": 180,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -22176,7 +22176,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       }
     ],
     "admissionCriteria": {
@@ -22213,12 +22213,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2000,
     "campusArea": "250 Acres Wi-Fi Enabled Oasis on OMR IT Expressway",
     "accreditation": "NAAC A++ Grade, NBA Accredited, Anna University Autonomous",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹16.5 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b916.5 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 120,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -22259,7 +22259,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       }
     ],
     "admissionCriteria": {
@@ -22296,12 +22296,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1880,
     "campusArea": "17 Acres Modern Kotekar Campus",
     "accreditation": "NAAC A++ Grade (Score 3.67), UGC Deemed University, AICTE",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.5 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "highestSalary": "\u20b914.5 LPA",
+    "medianSalary": "\u20b96.2 LPA",
     "batchSize": 180,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -22341,7 +22341,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -22378,12 +22378,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1968,
     "campusArea": "Prime MG Road Central Business District Campus",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalent to MBA",
-    "fees": "₹9.2 Lakhs",
+    "fees": "\u20b99.2 Lakhs",
     "feeNum": 9.2,
-    "avgSalary": "₹8.8 LPA",
+    "avgSalary": "\u20b98.8 LPA",
     "avgSalaryNum": 8.8,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹8.2 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b98.2 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -22425,13 +22425,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM General)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹9,20,000"
+        "fee": "\u20b99,20,000"
       },
       {
         "name": "PGDM in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       }
     ],
     "admissionCriteria": {
@@ -22469,12 +22469,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1962,
     "campusArea": "17 Acres Lush Residential Campus",
     "accreditation": "NBA Accredited, NAAC A+ Grade, ACBSP (USA Candidate), AIU Equivalent",
-    "fees": "₹11.50 Lakhs",
+    "fees": "\u20b911.50 Lakhs",
     "feeNum": 11.5,
-    "avgSalary": "₹7.50 LPA",
+    "avgSalary": "\u20b97.50 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹15.00 LPA",
-    "medianSalary": "₹7.00 LPA",
+    "highestSalary": "\u20b915.00 LPA",
+    "medianSalary": "\u20b97.00 LPA",
     "batchSize": 180,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -22515,13 +22515,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       },
       {
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹7,00,000"
+        "fee": "\u20b97,00,000"
       }
     ],
     "admissionCriteria": {
@@ -22559,12 +22559,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "10 Acres Bachupally Campus",
     "accreditation": "AICTE Approved, NBA Accredited, NAAC A Grade, SAQS Member, AIU Equivalent",
-    "fees": "₹8.5 Lakhs",
+    "fees": "\u20b98.5 Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 240,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -22606,13 +22606,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM General)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       },
       {
         "name": "PGDM in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       }
     ],
     "admissionCriteria": {
@@ -22650,12 +22650,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1998,
     "campusArea": "15 Acres Campus on Shamirpet Expressway",
     "accreditation": "AICTE Approved, Affiliated to Osmania University for MBA",
-    "fees": "₹7.0 Lakhs",
+    "fees": "\u20b97.0 Lakhs",
     "feeNum": 7,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.5 LPA",
-    "medianSalary": "₹6.4 LPA",
+    "highestSalary": "\u20b914.5 LPA",
+    "medianSalary": "\u20b96.4 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -22696,13 +22696,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹7,00,000"
+        "fee": "\u20b97,00,000"
       },
       {
         "name": "Master of Business Administration (MBA - Osmania Univ)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,00,000"
+        "fee": "\u20b96,00,000"
       }
     ],
     "admissionCriteria": {
@@ -22739,12 +22739,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1991,
     "campusArea": "Iconic Electronic City Campus",
     "accreditation": "AICTE Approved, NBA Accredited, ACBSP (USA Accredited), AIU Equivalent",
-    "fees": "₹12.5 Lakhs",
+    "fees": "\u20b912.5 Lakhs",
     "feeNum": 12.5,
-    "avgSalary": "₹10.3 LPA",
+    "avgSalary": "\u20b910.3 LPA",
     "avgSalaryNum": 10.3,
-    "highestSalary": "₹22.5 LPA",
-    "medianSalary": "₹9.8 LPA",
+    "highestSalary": "\u20b922.5 LPA",
+    "medianSalary": "\u20b99.8 LPA",
     "batchSize": 300,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -22788,13 +22788,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM - Bengaluru)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹12,50,000"
+        "fee": "\u20b912,50,000"
       },
       {
         "name": "Post Graduate Diploma in Management (PGDM - Kochi)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹10,50,000"
+        "fee": "\u20b910,50,000"
       }
     ],
     "admissionCriteria": {
@@ -22809,7 +22809,7 @@ export const COLLEGES_DATA = [
       "Executive Hostels",
       "Sports Complex"
     ],
-    "highlights": "Founded by Prof. J. Philip (former Director of IIM Bangalore); holding ACBSP (USA) accreditation with average package crossing ₹10.3 LPA.",
+    "highlights": "Founded by Prof. J. Philip (former Director of IIM Bangalore); holding ACBSP (USA) accreditation with average package crossing \u20b910.3 LPA.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -22831,12 +22831,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "100 Acres Lohegaon Campus",
     "accreditation": "UGC Recognized, AICTE Approved",
-    "fees": "₹7.5 Lakhs",
+    "fees": "\u20b97.5 Lakhs",
     "feeNum": 7.5,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.2 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -22876,13 +22876,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Innovation & Strategy)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       },
       {
         "name": "MBA in Digital Business / FinTech",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8,00,000"
+        "fee": "\u20b98,00,000"
       }
     ],
     "admissionCriteria": {
@@ -22919,12 +22919,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2003,
     "campusArea": "Tathawade Megacampus on Pune-Mumbai Expressway",
     "accreditation": "AICTE Approved, UGC Recognized University Campus",
-    "fees": "₹11.5 Lakhs",
+    "fees": "\u20b911.5 Lakhs",
     "feeNum": 11.5,
-    "avgSalary": "₹8.2 LPA",
+    "avgSalary": "\u20b98.2 LPA",
     "avgSalaryNum": 8.2,
-    "highestSalary": "₹18.5 LPA",
-    "medianSalary": "₹7.8 LPA",
+    "highestSalary": "\u20b918.5 LPA",
+    "medianSalary": "\u20b97.8 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -22965,13 +22965,13 @@ export const COLLEGES_DATA = [
         "name": "MBA in International Business",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹11,50,000"
+        "fee": "\u20b911,50,000"
       },
       {
         "name": "MBA in Marketing / Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11,50,000"
+        "fee": "\u20b911,50,000"
       }
     ],
     "admissionCriteria": {
@@ -23008,12 +23008,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "Tathawade Megacampus",
     "accreditation": "AICTE Approved, UGC Recognized University",
-    "fees": "₹11.5 Lakhs",
+    "fees": "\u20b911.5 Lakhs",
     "feeNum": 11.5,
-    "avgSalary": "₹8.2 LPA",
+    "avgSalary": "\u20b98.2 LPA",
     "avgSalaryNum": 8.2,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹7.8 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b97.8 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -23054,13 +23054,13 @@ export const COLLEGES_DATA = [
         "name": "MBA in Human Resource Development",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹11,50,000"
+        "fee": "\u20b911,50,000"
       },
       {
         "name": "MBA in Marketing / Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11,50,000"
+        "fee": "\u20b911,50,000"
       }
     ],
     "admissionCriteria": {
@@ -23097,12 +23097,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1999,
     "campusArea": "Tathawade Megacampus on Mumbai-Bangalore Expressway",
     "accreditation": "AICTE Approved, UGC Recognized, NIRF Ranked",
-    "fees": "₹11.8 Lakhs",
+    "fees": "\u20b911.8 Lakhs",
     "feeNum": 11.8,
-    "avgSalary": "₹8.8 LPA",
+    "avgSalary": "\u20b98.8 LPA",
     "avgSalaryNum": 8.8,
-    "highestSalary": "₹21.5 LPA",
-    "medianSalary": "₹8.4 LPA",
+    "highestSalary": "\u20b921.5 LPA",
+    "medianSalary": "\u20b98.4 LPA",
     "batchSize": 360,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -23144,13 +23144,13 @@ export const COLLEGES_DATA = [
         "name": "MBA (General Management)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹11,80,000"
+        "fee": "\u20b911,80,000"
       },
       {
         "name": "MBA in PM & HRD / IT & Marketing",
         "duration": "2 Years",
         "seats": 120,
-        "fee": "₹11,80,000"
+        "fee": "\u20b911,80,000"
       }
     ],
     "admissionCriteria": {
@@ -23187,12 +23187,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2002,
     "campusArea": "Tathawade Megacampus",
     "accreditation": "AICTE Approved, UGC Recognized University",
-    "fees": "₹11.5 Lakhs",
+    "fees": "\u20b911.5 Lakhs",
     "feeNum": 11.5,
-    "avgSalary": "₹8.2 LPA",
+    "avgSalary": "\u20b98.2 LPA",
     "avgSalaryNum": 8.2,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹7.8 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b97.8 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -23233,13 +23233,13 @@ export const COLLEGES_DATA = [
         "name": "MBA in Telecom Management",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹11,50,000"
+        "fee": "\u20b911,50,000"
       },
       {
         "name": "MBA in Marketing / Finance",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹11,50,000"
+        "fee": "\u20b911,50,000"
       }
     ],
     "admissionCriteria": {
@@ -23276,12 +23276,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1986,
     "campusArea": "22 Acres in Durg-Bhilai Industrial Belt",
     "accreditation": "NAAC A Grade, NBA Accredited, CSVTU Affiliated",
-    "fees": "₹2.8 Lakhs",
+    "fees": "\u20b92.8 Lakhs",
     "feeNum": 2.8,
-    "avgSalary": "₹5.0 LPA",
+    "avgSalary": "\u20b95.0 LPA",
     "avgSalaryNum": 5,
-    "highestSalary": "₹10.0 LPA",
-    "medianSalary": "₹4.6 LPA",
+    "highestSalary": "\u20b910.0 LPA",
+    "medianSalary": "\u20b94.6 LPA",
     "batchSize": 60,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -23317,7 +23317,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       }
     ],
     "admissionCriteria": {
@@ -23354,12 +23354,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "Hilltop Campus in Lavasa Valley",
     "accreditation": "NAAC A+ Grade, UGC, AICTE Approved",
-    "fees": "₹9.2 Lakhs",
+    "fees": "\u20b99.2 Lakhs",
     "feeNum": 9.2,
-    "avgSalary": "₹8.2 LPA",
+    "avgSalary": "\u20b98.2 LPA",
     "avgSalaryNum": 8.2,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹7.8 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b97.8 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -23400,7 +23400,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹9,20,000"
+        "fee": "\u20b99,20,000"
       }
     ],
     "admissionCriteria": {
@@ -23437,12 +23437,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "Prime Tathawade Highway Campus",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalent to MBA",
-    "fees": "₹8.5 Lakhs",
+    "fees": "\u20b98.5 Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 240,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -23484,13 +23484,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       },
       {
         "name": "PGDM in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       }
     ],
     "admissionCriteria": {
@@ -23528,12 +23528,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1973,
     "campusArea": "13 Acres Campus in Central Thane",
     "accreditation": "NAAC A Grade, AICTE Approved, University of Mumbai Affiliated",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹13.5 LPA",
-    "medianSalary": "₹6.0 LPA",
+    "highestSalary": "\u20b913.5 LPA",
+    "medianSalary": "\u20b96.0 LPA",
     "batchSize": 180,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -23573,13 +23573,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Management Studies (MMS / MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,20,000"
+        "fee": "\u20b95,20,000"
       },
       {
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹5,80,000"
+        "fee": "\u20b95,80,000"
       }
     ],
     "admissionCriteria": {
@@ -23616,12 +23616,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "60 Acres World-Class Scenic Lavale Valley Campus",
     "accreditation": "UGC Recognized, AACSB Member, NBA Accredited, AIU Recognized",
-    "fees": "₹14.5 Lakhs",
+    "fees": "\u20b914.5 Lakhs",
     "feeNum": 14.5,
-    "avgSalary": "₹10.5 LPA",
+    "avgSalary": "\u20b910.5 LPA",
     "avgSalaryNum": 10.5,
-    "highestSalary": "₹25.0 LPA",
-    "medianSalary": "₹9.8 LPA",
+    "highestSalary": "\u20b925.0 LPA",
+    "medianSalary": "\u20b99.8 LPA",
     "batchSize": 240,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -23665,13 +23665,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹14,50,000"
+        "fee": "\u20b914,50,000"
       },
       {
         "name": "MBA in Communications Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹14,50,000"
+        "fee": "\u20b914,50,000"
       }
     ],
     "admissionCriteria": {
@@ -23709,12 +23709,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2002,
     "campusArea": "Prime Central Mumbai Location at King's Circle",
     "accreditation": "AICTE Approved, University of Mumbai Affiliated, NBA Accredited",
-    "fees": "₹7.0 Lakhs",
+    "fees": "\u20b97.0 Lakhs",
     "feeNum": 7,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.4 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.4 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -23755,13 +23755,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Management Studies (MMS / MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,80,000"
+        "fee": "\u20b96,80,000"
       },
       {
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7,20,000"
+        "fee": "\u20b97,20,000"
       }
     ],
     "admissionCriteria": {
@@ -23798,12 +23798,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1986,
     "campusArea": "225 Acres University Campus",
     "accreditation": "NAAC A Grade, UGC Recognized, AICTE Approved",
-    "fees": "₹1.1 Lakhs",
+    "fees": "\u20b91.1 Lakhs",
     "feeNum": 1.1,
-    "avgSalary": "₹5.2 LPA",
+    "avgSalary": "\u20b95.2 LPA",
     "avgSalaryNum": 5.2,
-    "highestSalary": "₹10.5 LPA",
-    "medianSalary": "₹4.8 LPA",
+    "highestSalary": "\u20b910.5 LPA",
+    "medianSalary": "\u20b94.8 LPA",
     "batchSize": 60,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -23838,7 +23838,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,10,000"
+        "fee": "\u20b91,10,000"
       }
     ],
     "admissionCriteria": {
@@ -23853,7 +23853,7 @@ export const COLLEGES_DATA = [
       "Hostels for All",
       "Sports Complex"
     ],
-    "highlights": "Prestigious state university in North Gujarat offering complete two-year MBA for just ₹1.1 Lakhs with strong cooperatives and BFSI recruitment.",
+    "highlights": "Prestigious state university in North Gujarat offering complete two-year MBA for just \u20b91.1 Lakhs with strong cooperatives and BFSI recruitment.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -23875,12 +23875,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1973,
     "campusArea": "Law College Road Central Campus & Bavdhan Campus",
     "accreditation": "AICTE Approved, UGC Autonomous, SPPU Affiliated",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹12.5 LPA",
-    "medianSalary": "₹5.8 LPA",
+    "highestSalary": "\u20b912.5 LPA",
+    "medianSalary": "\u20b95.8 LPA",
     "batchSize": 120,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -23920,7 +23920,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -23957,12 +23957,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "10 Acres",
     "accreditation": "AICTE Approved, DAVV Affiliated",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹5.8 LPA",
+    "avgSalary": "\u20b95.8 LPA",
     "avgSalaryNum": 5.8,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.2 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.2 LPA",
     "batchSize": 180,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -23999,13 +23999,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       },
       {
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹4,20,000"
+        "fee": "\u20b94,20,000"
       }
     ],
     "admissionCriteria": {
@@ -24042,12 +24042,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "120 Acres High-Tech CHARUSAT Campus",
     "accreditation": "NAAC A+ Grade, UGC Recognized, AICTE Approved",
-    "fees": "₹3.8 Lakhs",
+    "fees": "\u20b93.8 Lakhs",
     "feeNum": 3.8,
-    "avgSalary": "₹6.0 LPA",
+    "avgSalary": "\u20b96.0 LPA",
     "avgSalaryNum": 6,
-    "highestSalary": "₹12.5 LPA",
-    "medianSalary": "₹5.5 LPA",
+    "highestSalary": "\u20b912.5 LPA",
+    "medianSalary": "\u20b95.5 LPA",
     "batchSize": 120,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -24085,7 +24085,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       }
     ],
     "admissionCriteria": {
@@ -24122,12 +24122,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "10 Acres Scenic Sahyadri Hill Campus in Lonavala",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalent to MBA",
-    "fees": "₹8.9 Lakhs",
+    "fees": "\u20b98.9 Lakhs",
     "feeNum": 8.9,
-    "avgSalary": "₹7.8 LPA",
+    "avgSalary": "\u20b97.8 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹16.5 LPA",
-    "medianSalary": "₹7.2 LPA",
+    "highestSalary": "\u20b916.5 LPA",
+    "medianSalary": "\u20b97.2 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -24169,13 +24169,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹8,90,000"
+        "fee": "\u20b98,90,000"
       },
       {
         "name": "PGDM in Business Analytics",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹8,90,000"
+        "fee": "\u20b98,90,000"
       }
     ],
     "admissionCriteria": {
@@ -24212,12 +24212,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "10 Acres near Hinjawadi IT Hub",
     "accreditation": "AICTE Approved, Affiliated to Savitribai Phule Pune University",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.8 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.8 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -24255,7 +24255,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -24292,12 +24292,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "10 Acres near Hinjawadi",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalent to MBA",
-    "fees": "₹7.8 Lakhs",
+    "fees": "\u20b97.8 Lakhs",
     "feeNum": 7.8,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -24339,7 +24339,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹7,80,000"
+        "fee": "\u20b97,80,000"
       }
     ],
     "admissionCriteria": {
@@ -24376,12 +24376,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "8 Acres",
     "accreditation": "AICTE Approved, Savitribai Phule Pune University Affiliated",
-    "fees": "₹5.2 Lakhs",
+    "fees": "\u20b95.2 Lakhs",
     "feeNum": 5.2,
-    "avgSalary": "₹6.0 LPA",
+    "avgSalary": "\u20b96.0 LPA",
     "avgSalaryNum": 6,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.5 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.5 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -24418,7 +24418,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,20,000"
+        "fee": "\u20b95,20,000"
       }
     ],
     "admissionCriteria": {
@@ -24455,12 +24455,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "58 Acres Knowledge Village Campus on A.B. Road",
     "accreditation": "NAAC A Grade, NBA Accredited, AICTE Approved, UGC Autonomous",
-    "fees": "₹3.2 Lakhs",
+    "fees": "\u20b93.2 Lakhs",
     "feeNum": 3.2,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹5.8 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b95.8 LPA",
     "batchSize": 240,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -24500,13 +24500,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹3,20,000"
+        "fee": "\u20b93,20,000"
       },
       {
         "name": "MBA in Financial Administration",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹3,20,000"
+        "fee": "\u20b93,20,000"
       }
     ],
     "admissionCriteria": {
@@ -24520,7 +24520,7 @@ export const COLLEGES_DATA = [
       "Central Library",
       "Hostels"
     ],
-    "highlights": "Over 30 years of pedigree in Central India; NAAC 'A' Grade institution with total MBA tuition fees of barely ₹3.2 Lakhs delivering exceptional ROI.",
+    "highlights": "Over 30 years of pedigree in Central India; NAAC 'A' Grade institution with total MBA tuition fees of barely \u20b93.2 Lakhs delivering exceptional ROI.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -24542,12 +24542,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "Sitapura Industrial Area Campus",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalent to MBA",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.2 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -24587,7 +24587,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       }
     ],
     "admissionCriteria": {
@@ -24624,12 +24624,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "150 Acres Jagatpura Multidisciplinary Campus",
     "accreditation": "NAAC A+ Grade, UGC Recognized, AICTE Approved",
-    "fees": "₹4.5 Lakhs",
+    "fees": "\u20b94.5 Lakhs",
     "feeNum": 4.5,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹14.5 LPA",
-    "medianSalary": "₹6.0 LPA",
+    "highestSalary": "\u20b914.5 LPA",
+    "medianSalary": "\u20b96.0 LPA",
     "batchSize": 180,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -24669,13 +24669,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - Dual Specialization)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,50,000"
+        "fee": "\u20b94,50,000"
       },
       {
         "name": "MBA in Hospital & Healthcare Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -24712,12 +24712,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "125 Acres Rajbaug Iconic Heritage Campus on Mula-Mutha River",
     "accreditation": "NAAC A+ Grade, UGC Recognized, AICTE Approved",
-    "fees": "₹6.8 Lakhs",
+    "fees": "\u20b96.8 Lakhs",
     "feeNum": 6.8,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -24759,13 +24759,13 @@ export const COLLEGES_DATA = [
         "name": "MBA in General Management (Dual Specialization)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹6,80,000"
+        "fee": "\u20b96,80,000"
       },
       {
         "name": "MBA in Project & Construction Management",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹7,20,000"
+        "fee": "\u20b97,20,000"
       }
     ],
     "admissionCriteria": {
@@ -24802,12 +24802,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "Prime Kothrud Education Campus",
     "accreditation": "AICTE Approved, NBA Accredited",
-    "fees": "₹7.5 Lakhs",
+    "fees": "\u20b97.5 Lakhs",
     "feeNum": 7.5,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹15.5 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b915.5 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -24848,7 +24848,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM - Telecom)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹7,50,000"
+        "fee": "\u20b97,50,000"
       }
     ],
     "admissionCriteria": {
@@ -24885,12 +24885,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "Balewadi IT-Sports Corridor Campus",
     "accreditation": "AICTE Approved, NBA Accredited, AIU Equivalent to MBA",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.2 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -24932,13 +24932,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM Business Administration)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       },
       {
         "name": "PGDM in Agri-Business Management / Pharmaceutical",
         "duration": "2 Years",
         "seats": 60,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       }
     ],
     "admissionCriteria": {
@@ -24975,12 +24975,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1998,
     "campusArea": "265 Acres Award-Winning Heritage Women's Campus",
     "accreditation": "NAAC A+ Grade, UGC Recognized, AICTE Approved, ACBSP Member",
-    "fees": "₹6.0 Lakhs",
+    "fees": "\u20b96.0 Lakhs",
     "feeNum": 6,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹14.5 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "highestSalary": "\u20b914.5 LPA",
+    "medianSalary": "\u20b96.2 LPA",
     "batchSize": 120,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -25021,7 +25021,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹6,00,000"
+        "fee": "\u20b96,00,000"
       }
     ],
     "admissionCriteria": {
@@ -25058,12 +25058,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "70 Acres Modern Residential Campus in Patalganga",
     "accreditation": "AICTE Approved, Established by SEBI (Securities & Exchange Board of India), AIU Equivalent",
-    "fees": "₹11.5 Lakhs",
+    "fees": "\u20b911.5 Lakhs",
     "feeNum": 11.5,
-    "avgSalary": "₹10.2 LPA",
+    "avgSalary": "\u20b910.2 LPA",
     "avgSalaryNum": 10.2,
-    "highestSalary": "₹24.0 LPA",
-    "medianSalary": "₹9.8 LPA",
+    "highestSalary": "\u20b924.0 LPA",
+    "medianSalary": "\u20b99.8 LPA",
     "batchSize": 120,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -25106,7 +25106,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (Securities Markets - PGDM SM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹11,50,000"
+        "fee": "\u20b911,50,000"
       }
     ],
     "admissionCriteria": {
@@ -25143,12 +25143,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1998,
     "campusArea": "Ellisbridge Heritage Campus in Central Ahmedabad",
     "accreditation": "NAAC A Grade, UGC Recognized, AICTE Approved",
-    "fees": "₹4.2 Lakhs",
+    "fees": "\u20b94.2 Lakhs",
     "feeNum": 4.2,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹12.5 LPA",
-    "medianSalary": "₹5.8 LPA",
+    "highestSalary": "\u20b912.5 LPA",
+    "medianSalary": "\u20b95.8 LPA",
     "batchSize": 180,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -25186,7 +25186,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,20,000"
+        "fee": "\u20b94,20,000"
       }
     ],
     "admissionCriteria": {
@@ -25223,12 +25223,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "10 Acres near Hinjawadi",
     "accreditation": "AICTE Approved, Affiliated to SPPU, NAAC Accredited",
-    "fees": "₹5.2 Lakhs",
+    "fees": "\u20b95.2 Lakhs",
     "feeNum": 5.2,
-    "avgSalary": "₹6.0 LPA",
+    "avgSalary": "\u20b96.0 LPA",
     "avgSalaryNum": 6,
-    "highestSalary": "₹12.0 LPA",
-    "medianSalary": "₹5.6 LPA",
+    "highestSalary": "\u20b912.0 LPA",
+    "medianSalary": "\u20b95.6 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -25266,7 +25266,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,20,000"
+        "fee": "\u20b95,20,000"
       }
     ],
     "admissionCriteria": {
@@ -25304,12 +25304,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1999,
     "campusArea": "12 Acres Scenic Bavdhan Hilltop Campus",
     "accreditation": "AICTE Approved, NBA Accredited, Savitribai Phule Pune University Affiliated, AIU Equivalent",
-    "fees": "₹6.5 Lakhs",
+    "fees": "\u20b96.5 Lakhs",
     "feeNum": 6.5,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹14.5 LPA",
-    "medianSalary": "₹6.0 LPA",
+    "highestSalary": "\u20b914.5 LPA",
+    "medianSalary": "\u20b96.0 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -25350,13 +25350,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA - SPPU)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹6,00,000"
+        "fee": "\u20b96,00,000"
       },
       {
         "name": "Post Graduate Diploma in Management (PGDM - AICTE)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹6,50,000"
+        "fee": "\u20b96,50,000"
       }
     ],
     "admissionCriteria": {
@@ -25393,12 +25393,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -25437,7 +25437,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -25475,12 +25475,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -25519,7 +25519,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -25557,12 +25557,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -25602,7 +25602,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -25640,12 +25640,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -25685,7 +25685,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -25723,12 +25723,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -25767,7 +25767,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -25805,12 +25805,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -25849,7 +25849,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -25887,12 +25887,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1986,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 240,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -25931,7 +25931,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -25969,12 +25969,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1920,
     "campusArea": "1155 Acres Heritage Campus",
     "accreditation": "NAAC A+ Grade, UGC, AIU",
-    "fees": "₹0.60 Lakhs",
+    "fees": "\u20b90.60 Lakhs",
     "feeNum": 0.6,
-    "avgSalary": "₹7.80 LPA",
+    "avgSalary": "\u20b97.80 LPA",
     "avgSalaryNum": 7.8,
-    "highestSalary": "₹15.00 LPA",
-    "medianSalary": "₹7.20 LPA",
+    "highestSalary": "\u20b915.00 LPA",
+    "medianSalary": "\u20b97.20 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -26012,19 +26012,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 90,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       },
       {
         "name": "MBA in International Business (MBA-IB)",
         "duration": "2 Years Full Time",
         "seats": 40,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       },
       {
         "name": "MBA in Islamic Banking & Finance",
         "duration": "2 Years Full Time",
         "seats": 30,
-        "fee": "₹2,40,000"
+        "fee": "\u20b92,40,000"
       }
     ],
     "admissionCriteria": {
@@ -26040,7 +26040,7 @@ export const COLLEGES_DATA = [
       "Hostels & Sports Grounds",
       "Campus Wi-Fi Network"
     ],
-    "highlights": "One of India’s most historic central institutions with dedicated department of business administration and strong domestic and Gulf alumni presence.",
+    "highlights": "One of India\u2019s most historic central institutions with dedicated department of business administration and strong domestic and Gulf alumni presence.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.amu.ac.in"
@@ -26063,12 +26063,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -26107,7 +26107,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -26145,12 +26145,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -26189,7 +26189,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -26227,12 +26227,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -26271,7 +26271,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -26309,12 +26309,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -26353,7 +26353,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -26391,12 +26391,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -26435,7 +26435,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -26473,12 +26473,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -26516,7 +26516,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -26554,12 +26554,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2019,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -26598,7 +26598,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -26636,12 +26636,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1985,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹1.8 Lakhs",
+    "fees": "\u20b91.8 Lakhs",
     "feeNum": 1.8,
-    "avgSalary": "₹9.2 LPA",
+    "avgSalary": "\u20b99.2 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹20.2 LPA",
-    "medianSalary": "₹8.5 LPA",
+    "highestSalary": "\u20b920.2 LPA",
+    "medianSalary": "\u20b98.5 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -26679,7 +26679,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
@@ -26717,12 +26717,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2021,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -26762,7 +26762,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -26800,12 +26800,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1916,
     "campusArea": "1300 Acres Historic Main Campus",
     "accreditation": "NAAC A++ Grade, UGC, AIU",
-    "fees": "₹1.00 Lakh",
+    "fees": "\u20b91.00 Lakh",
     "feeNum": 1,
-    "avgSalary": "₹11.30 LPA",
+    "avgSalary": "\u20b911.30 LPA",
     "avgSalaryNum": 11.3,
-    "highestSalary": "₹38.00 LPA",
-    "medianSalary": "₹10.40 LPA",
+    "highestSalary": "\u20b938.00 LPA",
+    "medianSalary": "\u20b910.40 LPA",
     "batchSize": 120,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -26843,19 +26843,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹1,50,000"
+        "fee": "\u20b91,50,000"
       },
       {
         "name": "MBA in International Business (MBA-IB)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,50,000"
+        "fee": "\u20b91,50,000"
       },
       {
         "name": "MBA in Agri-Business (MBA-AB)",
         "duration": "2 Years Full Time",
         "seats": 45,
-        "fee": "₹1,20,000"
+        "fee": "\u20b91,20,000"
       }
     ],
     "admissionCriteria": {
@@ -26894,12 +26894,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 120,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -26938,7 +26938,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -26976,12 +26976,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1999,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 140,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -27020,7 +27020,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -27058,12 +27058,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2000,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 160,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -27101,7 +27101,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -27139,12 +27139,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -27183,7 +27183,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -27221,12 +27221,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2002,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -27264,7 +27264,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -27302,12 +27302,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -27346,7 +27346,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -27384,12 +27384,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -27428,7 +27428,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -27466,12 +27466,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 260,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -27510,7 +27510,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -27548,12 +27548,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -27592,7 +27592,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -27630,12 +27630,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -27673,7 +27673,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -27711,12 +27711,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1964,
     "campusArea": "328 Acres Historic Residential Campus",
     "accreditation": "NAAC A Grade, UGC Deemed University",
-    "fees": "₹11.8 Lakhs",
+    "fees": "\u20b911.8 Lakhs",
     "feeNum": 11.8,
-    "avgSalary": "₹15.8 LPA",
+    "avgSalary": "\u20b915.8 LPA",
     "avgSalaryNum": 15.8,
-    "highestSalary": "₹31.5 LPA",
-    "medianSalary": "₹14.8 LPA",
+    "highestSalary": "\u20b931.5 LPA",
+    "medianSalary": "\u20b914.8 LPA",
     "batchSize": 120,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -27756,7 +27756,7 @@ export const COLLEGES_DATA = [
         "name": "MBA in Business Analytics",
         "duration": "2 Years Full Time Residential",
         "seats": 120,
-        "fee": "₹11,80,000"
+        "fee": "\u20b911,80,000"
       }
     ],
     "admissionCriteria": {
@@ -27794,12 +27794,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -27839,7 +27839,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -27877,12 +27877,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -27922,7 +27922,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -27960,12 +27960,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -28004,7 +28004,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -28042,12 +28042,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 220,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -28086,7 +28086,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -28124,12 +28124,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2020,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -28168,7 +28168,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -28206,12 +28206,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1857,
     "campusArea": "Alipore Management Campus, Kolkata",
     "accreditation": "NAAC A Grade, UGC State University",
-    "fees": "₹0.3 Lakhs",
+    "fees": "\u20b90.3 Lakhs",
     "feeNum": 0.3,
-    "avgSalary": "₹8.6 LPA",
+    "avgSalary": "\u20b98.6 LPA",
     "avgSalaryNum": 8.6,
-    "highestSalary": "₹17.0 LPA",
-    "medianSalary": "₹8.0 LPA",
+    "highestSalary": "\u20b917.0 LPA",
+    "medianSalary": "\u20b98.0 LPA",
     "batchSize": 100,
     "roiScore": "9.8 / 10",
     "examsAccepted": [
@@ -28249,7 +28249,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 100,
-        "fee": "₹33,000"
+        "fee": "\u20b933,000"
       }
     ],
     "admissionCriteria": {
@@ -28265,7 +28265,7 @@ export const COLLEGES_DATA = [
       "Hostels & Sports Grounds",
       "Campus Wi-Fi Network"
     ],
-    "highlights": "Unmatched return on investment across India with nominal government fees (approx ₹33k total) and placement across eastern corporate headquarters.",
+    "highlights": "Unmatched return on investment across India with nominal government fees (approx \u20b933k total) and placement across eastern corporate headquarters.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -28287,12 +28287,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2022,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -28331,7 +28331,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -28369,12 +28369,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹1.8 Lakhs",
+    "fees": "\u20b91.8 Lakhs",
     "feeNum": 1.8,
-    "avgSalary": "₹9.2 LPA",
+    "avgSalary": "\u20b99.2 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹20.2 LPA",
-    "medianSalary": "₹8.5 LPA",
+    "highestSalary": "\u20b920.2 LPA",
+    "medianSalary": "\u20b98.5 LPA",
     "batchSize": 120,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -28412,7 +28412,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
@@ -28450,12 +28450,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹1.8 Lakhs",
+    "fees": "\u20b91.8 Lakhs",
     "feeNum": 1.8,
-    "avgSalary": "₹9.2 LPA",
+    "avgSalary": "\u20b99.2 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹20.2 LPA",
-    "medianSalary": "₹8.5 LPA",
+    "highestSalary": "\u20b920.2 LPA",
+    "medianSalary": "\u20b98.5 LPA",
     "batchSize": 140,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -28493,7 +28493,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
@@ -28531,12 +28531,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹1.8 Lakhs",
+    "fees": "\u20b91.8 Lakhs",
     "feeNum": 1.8,
-    "avgSalary": "₹9.2 LPA",
+    "avgSalary": "\u20b99.2 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹20.2 LPA",
-    "medianSalary": "₹8.5 LPA",
+    "highestSalary": "\u20b920.2 LPA",
+    "medianSalary": "\u20b98.5 LPA",
     "batchSize": 160,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -28574,7 +28574,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
@@ -28612,12 +28612,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1984,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -28656,7 +28656,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -28694,12 +28694,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1985,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -28737,7 +28737,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -28775,12 +28775,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1986,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 220,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -28819,7 +28819,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -28857,12 +28857,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -28901,7 +28901,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -28939,12 +28939,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1988,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 260,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -28982,7 +28982,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -29020,12 +29020,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -29064,7 +29064,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -29102,12 +29102,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1990,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -29146,7 +29146,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -29184,12 +29184,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -29228,7 +29228,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -29266,12 +29266,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -29310,7 +29310,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -29348,12 +29348,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 180,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -29393,7 +29393,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -29431,12 +29431,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -29474,7 +29474,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -29512,12 +29512,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 220,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -29556,7 +29556,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -29594,12 +29594,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -29637,7 +29637,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -29675,12 +29675,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1941,
     "campusArea": "164 Acres Modern Green Campus",
     "accreditation": "NAAC A Grade, UGC, State University",
-    "fees": "₹4.3 Lakhs",
+    "fees": "\u20b94.3 Lakhs",
     "feeNum": 4.3,
-    "avgSalary": "₹10.5 LPA",
+    "avgSalary": "\u20b910.5 LPA",
     "avgSalaryNum": 10.5,
-    "highestSalary": "₹24.0 LPA",
-    "medianSalary": "₹9.8 LPA",
+    "highestSalary": "\u20b924.0 LPA",
+    "medianSalary": "\u20b99.8 LPA",
     "batchSize": 240,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -29720,13 +29720,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,30,000"
+        "fee": "\u20b94,30,000"
       },
       {
         "name": "MBA in Business Analytics",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹4,30,000"
+        "fee": "\u20b94,30,000"
       }
     ],
     "admissionCriteria": {
@@ -29764,12 +29764,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2022,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -29808,7 +29808,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -29846,12 +29846,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -29890,7 +29890,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -29928,12 +29928,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -29972,7 +29972,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -30010,12 +30010,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1964,
     "campusArea": "150 Acres Takshashila Green Campus",
     "accreditation": "NAAC A+ Grade, UGC State University",
-    "fees": "₹1.5 Lakhs",
+    "fees": "\u20b91.5 Lakhs",
     "feeNum": 1.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.5 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.5 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 300,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -30054,25 +30054,25 @@ export const COLLEGES_DATA = [
         "name": "MBA in Financial Administration (MBA-FA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹1,50,000"
+        "fee": "\u20b91,50,000"
       },
       {
         "name": "MBA in Marketing Management (MBA-MM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹1,50,000"
+        "fee": "\u20b91,50,000"
       },
       {
         "name": "MBA in Human Resource (MBA-HR)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,50,000"
+        "fee": "\u20b91,50,000"
       },
       {
         "name": "MBA in E-Commerce",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,50,000"
+        "fee": "\u20b91,50,000"
       }
     ],
     "admissionCriteria": {
@@ -30110,12 +30110,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2002,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 180,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -30154,7 +30154,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -30192,12 +30192,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -30236,7 +30236,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -30274,12 +30274,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -30318,7 +30318,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -30356,12 +30356,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -30400,7 +30400,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -30438,12 +30438,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -30482,7 +30482,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -30520,12 +30520,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 280,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -30564,7 +30564,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -30602,12 +30602,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -30645,7 +30645,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -30683,12 +30683,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 140,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -30726,7 +30726,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -30764,12 +30764,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹1.8 Lakhs",
+    "fees": "\u20b91.8 Lakhs",
     "feeNum": 1.8,
-    "avgSalary": "₹9.2 LPA",
+    "avgSalary": "\u20b99.2 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹20.2 LPA",
-    "medianSalary": "₹8.5 LPA",
+    "highestSalary": "\u20b920.2 LPA",
+    "medianSalary": "\u20b98.5 LPA",
     "batchSize": 160,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -30807,7 +30807,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
@@ -30845,12 +30845,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -30890,7 +30890,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -30928,12 +30928,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -30972,7 +30972,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -31010,12 +31010,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2019,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -31054,7 +31054,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -31092,12 +31092,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 240,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -31136,7 +31136,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -31174,12 +31174,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1980,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 260,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -31218,7 +31218,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -31256,12 +31256,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2022,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -31300,7 +31300,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -31338,12 +31338,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -31382,7 +31382,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -31420,12 +31420,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -31464,7 +31464,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -31502,12 +31502,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -31547,7 +31547,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -31585,12 +31585,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -31630,7 +31630,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -31668,12 +31668,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -31713,7 +31713,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -31751,12 +31751,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -31795,7 +31795,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -31833,12 +31833,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -31878,7 +31878,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -31916,12 +31916,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -31960,7 +31960,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -31998,12 +31998,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -32042,7 +32042,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -32080,12 +32080,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1991,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -32124,7 +32124,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -32162,12 +32162,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -32206,7 +32206,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -32244,12 +32244,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -32288,7 +32288,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -32326,12 +32326,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1998,
     "campusArea": "60 Acres State-of-the-Art Dwarka Campus",
     "accreditation": "NAAC A++ Grade, UGC, State University",
-    "fees": "₹2.4 Lakhs",
+    "fees": "\u20b92.4 Lakhs",
     "feeNum": 2.4,
-    "avgSalary": "₹8.8 LPA",
+    "avgSalary": "\u20b98.8 LPA",
     "avgSalaryNum": 8.8,
-    "highestSalary": "₹18.5 LPA",
-    "medianSalary": "₹8.2 LPA",
+    "highestSalary": "\u20b918.5 LPA",
+    "medianSalary": "\u20b98.2 LPA",
     "batchSize": 200,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -32355,7 +32355,7 @@ export const COLLEGES_DATA = [
       "ICICI Bank",
       "Tata Consultancy Services",
       "Protiviti",
-      "Moody’s Analytics",
+      "Moody\u2019s Analytics",
       "Aon Hewitt"
     ],
     "domainDistribution": {
@@ -32369,19 +32369,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,40,000"
+        "fee": "\u20b92,40,000"
       },
       {
         "name": "MBA in Financial Analysis",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹2,40,000"
+        "fee": "\u20b92,40,000"
       },
       {
         "name": "MBA in Analytics",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹2,60,000"
+        "fee": "\u20b92,60,000"
       }
     ],
     "admissionCriteria": {
@@ -32419,12 +32419,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -32462,7 +32462,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -32500,12 +32500,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 220,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -32544,7 +32544,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -32582,12 +32582,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2020,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -32626,7 +32626,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -32664,12 +32664,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1969,
     "campusArea": "500 Acres Green Campus",
     "accreditation": "NAAC A++ Grade (Category-I University)",
-    "fees": "₹1.8 Lakhs",
+    "fees": "\u20b91.8 Lakhs",
     "feeNum": 1.8,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹15.5 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b915.5 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 180,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -32707,13 +32707,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       },
       {
         "name": "MBA in Financial Services",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
@@ -32751,12 +32751,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1999,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 280,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -32794,7 +32794,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -32832,12 +32832,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 120,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -32876,7 +32876,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -32914,12 +32914,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -32958,7 +32958,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -32996,12 +32996,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -33040,7 +33040,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -33078,12 +33078,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2003,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 180,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -33122,7 +33122,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -33160,12 +33160,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -33204,7 +33204,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -33242,12 +33242,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1985,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹1.8 Lakhs",
+    "fees": "\u20b91.8 Lakhs",
     "feeNum": 1.8,
-    "avgSalary": "₹9.2 LPA",
+    "avgSalary": "\u20b99.2 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹20.2 LPA",
-    "medianSalary": "₹8.5 LPA",
+    "highestSalary": "\u20b920.2 LPA",
+    "medianSalary": "\u20b98.5 LPA",
     "batchSize": 220,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -33285,7 +33285,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
@@ -33323,12 +33323,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 240,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -33366,7 +33366,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -33404,12 +33404,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -33448,7 +33448,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -33486,12 +33486,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 280,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -33529,7 +33529,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -33567,12 +33567,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -33611,7 +33611,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -33649,12 +33649,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -33694,7 +33694,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -33732,12 +33732,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -33777,7 +33777,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -33815,12 +33815,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 180,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -33859,7 +33859,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -33897,12 +33897,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -33941,7 +33941,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -33979,12 +33979,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2019,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 220,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -34023,7 +34023,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -34061,12 +34061,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1980,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 240,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -34104,7 +34104,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -34142,12 +34142,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹1.8 Lakhs",
+    "fees": "\u20b91.8 Lakhs",
     "feeNum": 1.8,
-    "avgSalary": "₹9.2 LPA",
+    "avgSalary": "\u20b99.2 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹20.2 LPA",
-    "medianSalary": "₹8.5 LPA",
+    "highestSalary": "\u20b920.2 LPA",
+    "medianSalary": "\u20b98.5 LPA",
     "batchSize": 260,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -34185,7 +34185,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
@@ -34223,12 +34223,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2022,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -34267,7 +34267,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -34305,12 +34305,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -34350,7 +34350,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -34388,12 +34388,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -34433,7 +34433,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -34471,12 +34471,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -34515,7 +34515,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -34553,12 +34553,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -34597,7 +34597,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -34635,12 +34635,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1987,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -34678,7 +34678,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -34716,12 +34716,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -34760,7 +34760,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -34798,12 +34798,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -34842,7 +34842,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -34880,12 +34880,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -34925,7 +34925,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -34963,12 +34963,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1955,
     "campusArea": "58 Acres Urban Green Campus",
     "accreditation": "NAAC A Grade, UGC State University",
-    "fees": "₹3.1 Lakhs",
+    "fees": "\u20b93.1 Lakhs",
     "feeNum": 3.1,
-    "avgSalary": "₹9.0 LPA",
+    "avgSalary": "\u20b99.0 LPA",
     "avgSalaryNum": 9,
-    "highestSalary": "₹18.0 LPA",
-    "medianSalary": "₹8.4 LPA",
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b98.4 LPA",
     "batchSize": 80,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -35007,13 +35007,13 @@ export const COLLEGES_DATA = [
         "name": "MBA in Technology Management",
         "duration": "2 Years Full Time",
         "seats": 40,
-        "fee": "₹3,10,000"
+        "fee": "\u20b93,10,000"
       },
       {
         "name": "MBA (Evening 3-Years)",
         "duration": "3 Years Part Time",
         "seats": 40,
-        "fee": "₹2,50,000"
+        "fee": "\u20b92,50,000"
       }
     ],
     "admissionCriteria": {
@@ -35051,12 +35051,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -35095,7 +35095,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -35133,12 +35133,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 140,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -35176,7 +35176,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -35214,12 +35214,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -35258,7 +35258,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -35296,12 +35296,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 180,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -35339,7 +35339,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -35377,12 +35377,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1920,
     "campusArea": "210 Acres Metro-Connected Capital Campus",
     "accreditation": "NAAC A++ Grade, UGC, AIU",
-    "fees": "₹1.40 Lakhs",
+    "fees": "\u20b91.40 Lakhs",
     "feeNum": 1.4,
-    "avgSalary": "₹11.50 LPA",
+    "avgSalary": "\u20b911.50 LPA",
     "avgSalaryNum": 11.5,
-    "highestSalary": "₹25.00 LPA",
-    "medianSalary": "₹10.50 LPA",
+    "highestSalary": "\u20b925.00 LPA",
+    "medianSalary": "\u20b910.50 LPA",
     "batchSize": 200,
     "roiScore": "9.7 / 10",
     "examsAccepted": [
@@ -35419,19 +35419,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA Full Time)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,40,000"
+        "fee": "\u20b91,40,000"
       },
       {
         "name": "MBA in International Business (MBA-IB)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,40,000"
+        "fee": "\u20b91,40,000"
       },
       {
         "name": "MBA in Entrepreneurship & Family Business",
         "duration": "2 Years Full Time",
         "seats": 40,
-        "fee": "₹2,60,000"
+        "fee": "\u20b92,60,000"
       }
     ],
     "admissionCriteria": {
@@ -35470,12 +35470,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2019,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 220,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -35514,7 +35514,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -35552,12 +35552,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1969,
     "campusArea": "1020 Acres Lush Green Ridge Campus",
     "accreditation": "NAAC A++ Grade, UGC, AIU",
-    "fees": "₹12.0 Lakhs",
+    "fees": "\u20b912.0 Lakhs",
     "feeNum": 12,
-    "avgSalary": "₹11.8 LPA",
+    "avgSalary": "\u20b911.8 LPA",
     "avgSalaryNum": 11.8,
-    "highestSalary": "₹22.0 LPA",
-    "medianSalary": "₹11.0 LPA",
+    "highestSalary": "\u20b922.0 LPA",
+    "medianSalary": "\u20b911.0 LPA",
     "batchSize": 100,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -35594,7 +35594,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 75,
-        "fee": "₹12,00,000"
+        "fee": "\u20b912,00,000"
       }
     ],
     "admissionCriteria": {
@@ -35610,7 +35610,7 @@ export const COLLEGES_DATA = [
       "Hostels & Sports Grounds",
       "Campus Wi-Fi Network"
     ],
-    "highlights": "Premier national school combining JNU’s unparalleled social and policy intellectual legacy with state-of-the-art enterprise leadership.",
+    "highlights": "Premier national school combining JNU\u2019s unparalleled social and policy intellectual legacy with state-of-the-art enterprise leadership.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -35632,12 +35632,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2021,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -35676,7 +35676,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -35714,12 +35714,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2022,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -35759,7 +35759,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -35797,12 +35797,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -35841,7 +35841,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -35879,12 +35879,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -35923,7 +35923,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -35961,12 +35961,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -36006,7 +36006,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -36044,12 +36044,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2004,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 180,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -36087,7 +36087,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -36125,12 +36125,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -36169,7 +36169,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -36207,12 +36207,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -36251,7 +36251,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -36289,12 +36289,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -36333,7 +36333,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -36371,12 +36371,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -36416,7 +36416,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -36454,12 +36454,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -36499,7 +36499,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -36537,12 +36537,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -36582,7 +36582,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -36620,12 +36620,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -36664,7 +36664,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -36702,12 +36702,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 160,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -36746,7 +36746,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -36784,12 +36784,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 180,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -36827,7 +36827,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -36865,12 +36865,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -36908,7 +36908,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -36946,12 +36946,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1980,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 220,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -36990,7 +36990,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -37028,12 +37028,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2020,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -37072,7 +37072,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -37110,12 +37110,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1982,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 260,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -37154,7 +37154,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -37192,12 +37192,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2022,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 280,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -37237,7 +37237,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -37275,12 +37275,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1984,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 120,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -37318,7 +37318,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -37356,12 +37356,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1956,
     "campusArea": "473 Acres Historic Campus",
     "accreditation": "NAAC A++ Grade, UGC State University",
-    "fees": "₹1.2 Lakhs",
+    "fees": "\u20b91.2 Lakhs",
     "feeNum": 1.2,
-    "avgSalary": "₹6.5 LPA",
+    "avgSalary": "\u20b96.5 LPA",
     "avgSalaryNum": 6.5,
-    "highestSalary": "₹14.0 LPA",
-    "medianSalary": "₹6.0 LPA",
+    "highestSalary": "\u20b914.0 LPA",
+    "medianSalary": "\u20b96.0 LPA",
     "batchSize": 180,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -37399,13 +37399,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹1,20,000"
+        "fee": "\u20b91,20,000"
       },
       {
         "name": "MBA in Budgeting & Financial Control",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,20,000"
+        "fee": "\u20b91,20,000"
       }
     ],
     "admissionCriteria": {
@@ -37443,12 +37443,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -37487,7 +37487,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -37525,12 +37525,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -37569,7 +37569,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -37607,12 +37607,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -37651,7 +37651,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -37689,12 +37689,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -37733,7 +37733,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -37771,12 +37771,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -37815,7 +37815,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -37853,12 +37853,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1991,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 260,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -37896,7 +37896,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -37934,12 +37934,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1992,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 280,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -37977,7 +37977,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -38015,12 +38015,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -38059,7 +38059,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -38097,12 +38097,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 140,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -38141,7 +38141,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -38179,12 +38179,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 160,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -38223,7 +38223,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -38261,12 +38261,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -38305,7 +38305,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -38343,12 +38343,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -38387,7 +38387,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -38425,12 +38425,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2019,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -38469,7 +38469,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -38507,12 +38507,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2020,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -38551,7 +38551,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -38589,12 +38589,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2021,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -38633,7 +38633,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -38671,12 +38671,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2001,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 280,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -38714,7 +38714,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -38752,12 +38752,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2002,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 120,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -38795,7 +38795,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -38833,12 +38833,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -38877,7 +38877,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -38915,12 +38915,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 160,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -38959,7 +38959,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -38997,12 +38997,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -39041,7 +39041,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -39079,12 +39079,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -39122,7 +39122,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -39160,12 +39160,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 220,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -39203,7 +39203,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -39241,12 +39241,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 240,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -39285,7 +39285,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -39323,12 +39323,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 260,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -39366,7 +39366,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -39404,12 +39404,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 280,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -39448,7 +39448,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -39486,12 +39486,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -39530,7 +39530,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -39568,12 +39568,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 140,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -39612,7 +39612,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -39650,12 +39650,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -39695,7 +39695,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -39733,12 +39733,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -39778,7 +39778,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -39816,12 +39816,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -39861,7 +39861,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -39899,12 +39899,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1981,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 220,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -39942,7 +39942,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -39980,12 +39980,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2020,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 240,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -40024,7 +40024,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -40062,12 +40062,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2021,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -40106,7 +40106,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -40144,12 +40144,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2022,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -40188,7 +40188,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -40226,12 +40226,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -40270,7 +40270,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -40308,12 +40308,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -40352,7 +40352,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -40390,12 +40390,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1987,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 160,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -40434,7 +40434,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -40472,12 +40472,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -40516,7 +40516,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -40554,12 +40554,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -40598,7 +40598,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -40636,12 +40636,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -40680,7 +40680,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -40718,12 +40718,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -40762,7 +40762,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -40800,12 +40800,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -40844,7 +40844,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -40882,12 +40882,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -40926,7 +40926,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -40964,12 +40964,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -41008,7 +41008,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -41046,12 +41046,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -41091,7 +41091,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -41129,12 +41129,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1996,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 160,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -41172,7 +41172,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -41210,12 +41210,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -41255,7 +41255,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -41293,12 +41293,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -41337,7 +41337,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -41375,12 +41375,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1999,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 220,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -41418,7 +41418,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -41456,12 +41456,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2020,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -41500,7 +41500,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -41538,12 +41538,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2021,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 260,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -41583,7 +41583,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -41621,12 +41621,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2002,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 280,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -41665,7 +41665,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -41703,12 +41703,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2003,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 120,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -41746,7 +41746,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -41784,12 +41784,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -41828,7 +41828,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -41866,12 +41866,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -41910,7 +41910,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -41948,12 +41948,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -41992,7 +41992,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -42030,12 +42030,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -42074,7 +42074,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -42112,12 +42112,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -42156,7 +42156,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -42194,12 +42194,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -42238,7 +42238,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -42276,12 +42276,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -42320,7 +42320,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -42358,12 +42358,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -42402,7 +42402,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -42440,12 +42440,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -42484,7 +42484,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -42522,12 +42522,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -42566,7 +42566,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -42604,12 +42604,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -42648,7 +42648,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -42686,12 +42686,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -42730,7 +42730,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -42768,12 +42768,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -42812,7 +42812,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -42850,12 +42850,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "Modern Vijay Nagar City Campus",
     "accreditation": "NAAC A++ Grade, UGC Deemed to be University, AICTE",
-    "fees": "₹2.8 Lakhs",
+    "fees": "\u20b92.8 Lakhs",
     "feeNum": 2.8,
-    "avgSalary": "₹7.5 LPA",
+    "avgSalary": "\u20b97.5 LPA",
     "avgSalaryNum": 7.5,
-    "highestSalary": "₹16.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 420,
     "roiScore": "9.0 / 10",
     "examsAccepted": [
@@ -42896,19 +42896,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA Core)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       },
       {
         "name": "MBA in Marketing Management",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       },
       {
         "name": "MBA in International Business",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       }
     ],
     "admissionCriteria": {
@@ -42924,7 +42924,7 @@ export const COLLEGES_DATA = [
       "Hostels & Sports Grounds",
       "Campus Wi-Fi Network"
     ],
-    "highlights": "Central India’s premier private management benchmark founded by Dr. N.N. Jain, upgraded to Deemed-to-be-University with exceptional placement consistency.",
+    "highlights": "Central India\u2019s premier private management benchmark founded by Dr. N.N. Jain, upgraded to Deemed-to-be-University with exceptional placement consistency.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -42946,12 +42946,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2020,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -42990,7 +42990,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -43028,12 +43028,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1984,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 260,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -43072,7 +43072,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -43110,12 +43110,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1985,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 280,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -43153,7 +43153,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -43191,12 +43191,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1986,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 120,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -43234,7 +43234,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -43272,12 +43272,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -43316,7 +43316,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -43354,12 +43354,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -43398,7 +43398,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -43436,12 +43436,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -43481,7 +43481,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -43519,12 +43519,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -43563,7 +43563,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -43601,12 +43601,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1991,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 220,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -43645,7 +43645,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -43683,12 +43683,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1992,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 240,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -43726,7 +43726,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -43764,12 +43764,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 260,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -43807,7 +43807,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -43845,12 +43845,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 280,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -43888,7 +43888,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -43926,12 +43926,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -43971,7 +43971,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -44009,12 +44009,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -44053,7 +44053,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -44091,12 +44091,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1997,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 160,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -44134,7 +44134,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -44172,12 +44172,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -44216,7 +44216,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -44254,12 +44254,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1999,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -44297,7 +44297,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -44335,12 +44335,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2019,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -44379,7 +44379,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -44417,12 +44417,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2020,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -44461,7 +44461,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -44499,12 +44499,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2021,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -44543,7 +44543,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -44581,12 +44581,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2022,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -44625,7 +44625,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -44663,12 +44663,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -44707,7 +44707,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -44745,12 +44745,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -44789,7 +44789,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -44827,12 +44827,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -44872,7 +44872,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -44910,12 +44910,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -44954,7 +44954,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -44992,12 +44992,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -45036,7 +45036,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -45074,12 +45074,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 220,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -45119,7 +45119,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -45157,12 +45157,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -45201,7 +45201,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -45239,12 +45239,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -45283,7 +45283,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -45321,12 +45321,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -45365,7 +45365,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -45403,12 +45403,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -45447,7 +45447,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -45485,12 +45485,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -45529,7 +45529,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -45567,12 +45567,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -45611,7 +45611,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -45649,12 +45649,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -45693,7 +45693,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -45731,12 +45731,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1982,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -45774,7 +45774,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -45812,12 +45812,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2019,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 220,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -45856,7 +45856,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -45894,12 +45894,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2020,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -45938,7 +45938,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -45976,12 +45976,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2021,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -46020,7 +46020,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -46058,12 +46058,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2022,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -46103,7 +46103,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -46141,12 +46141,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -46185,7 +46185,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -46223,12 +46223,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1949,
     "campusArea": "411 Acres Historic University Estate",
     "accreditation": "NAAC A+ Grade, UGC, State University",
-    "fees": "₹1.4 Lakhs",
+    "fees": "\u20b91.4 Lakhs",
     "feeNum": 1.4,
-    "avgSalary": "₹9.4 LPA",
+    "avgSalary": "\u20b99.4 LPA",
     "avgSalaryNum": 9.4,
-    "highestSalary": "₹19.2 LPA",
-    "medianSalary": "₹8.9 LPA",
+    "highestSalary": "\u20b919.2 LPA",
+    "medianSalary": "\u20b98.9 LPA",
     "batchSize": 180,
     "roiScore": "9.6 / 10",
     "examsAccepted": [
@@ -46268,19 +46268,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹1,40,000"
+        "fee": "\u20b91,40,000"
       },
       {
         "name": "MBA in Pharma-Biotechnology (MBA-PBT)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,50,000"
+        "fee": "\u20b91,50,000"
       },
       {
         "name": "Executive MBA",
         "duration": "2 Years Weekend",
         "seats": 60,
-        "fee": "₹1,75,000"
+        "fee": "\u20b91,75,000"
       }
     ],
     "admissionCriteria": {
@@ -46318,12 +46318,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -46363,7 +46363,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -46401,12 +46401,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -46446,7 +46446,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -46484,12 +46484,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1991,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -46527,7 +46527,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -46565,12 +46565,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 220,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -46610,7 +46610,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -46648,12 +46648,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -46693,7 +46693,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -46731,12 +46731,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -46775,7 +46775,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -46813,12 +46813,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -46857,7 +46857,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -46895,12 +46895,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -46939,7 +46939,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -46977,12 +46977,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -47021,7 +47021,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -47059,12 +47059,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -47103,7 +47103,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -47141,12 +47141,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -47186,7 +47186,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -47224,12 +47224,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -47268,7 +47268,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -47306,12 +47306,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2019,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -47351,7 +47351,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -47389,12 +47389,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2002,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -47432,7 +47432,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -47470,12 +47470,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2021,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -47514,7 +47514,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -47552,12 +47552,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2022,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -47596,7 +47596,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -47634,12 +47634,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -47678,7 +47678,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -47716,12 +47716,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 140,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -47760,7 +47760,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -47798,12 +47798,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 160,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -47842,7 +47842,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -47880,12 +47880,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -47924,7 +47924,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -47962,12 +47962,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -48006,7 +48006,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -48044,12 +48044,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 220,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -48089,7 +48089,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -48127,12 +48127,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 240,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -48170,7 +48170,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -48208,12 +48208,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -48252,7 +48252,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -48290,12 +48290,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -48334,7 +48334,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -48372,12 +48372,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -48416,7 +48416,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -48454,12 +48454,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -48498,7 +48498,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -48536,12 +48536,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -48580,7 +48580,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -48618,12 +48618,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -48662,7 +48662,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -48700,12 +48700,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -48744,7 +48744,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -48782,12 +48782,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1984,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 220,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -48825,7 +48825,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -48863,12 +48863,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1985,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 240,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -48907,7 +48907,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -48945,12 +48945,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2021,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -48989,7 +48989,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -49027,12 +49027,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2022,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -49072,7 +49072,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -49110,12 +49110,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -49155,7 +49155,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -49193,12 +49193,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -49237,7 +49237,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -49275,12 +49275,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -49319,7 +49319,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -49357,12 +49357,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -49402,7 +49402,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -49440,12 +49440,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 200,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -49484,7 +49484,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -49522,12 +49522,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 220,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -49566,7 +49566,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -49604,12 +49604,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1994,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 240,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -49648,7 +49648,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -49686,12 +49686,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -49731,7 +49731,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -49769,12 +49769,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2013,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 280,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -49813,7 +49813,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -49851,12 +49851,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1987,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹1.8 Lakhs",
+    "fees": "\u20b91.8 Lakhs",
     "feeNum": 1.8,
-    "avgSalary": "₹9.2 LPA",
+    "avgSalary": "\u20b99.2 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹20.2 LPA",
-    "medianSalary": "₹8.5 LPA",
+    "highestSalary": "\u20b920.2 LPA",
+    "medianSalary": "\u20b98.5 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -49894,7 +49894,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
@@ -49932,12 +49932,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -49977,7 +49977,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -50015,12 +50015,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -50059,7 +50059,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -50097,12 +50097,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2017,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -50141,7 +50141,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -50179,12 +50179,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹5.5 Lakhs",
+    "fees": "\u20b95.5 Lakhs",
     "feeNum": 5.5,
-    "avgSalary": "₹7.6 LPA",
+    "avgSalary": "\u20b97.6 LPA",
     "avgSalaryNum": 7.6,
-    "highestSalary": "₹16.7 LPA",
-    "medianSalary": "₹7.0 LPA",
+    "highestSalary": "\u20b916.7 LPA",
+    "medianSalary": "\u20b97.0 LPA",
     "batchSize": 200,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -50223,7 +50223,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹5,50,000"
+        "fee": "\u20b95,50,000"
       }
     ],
     "admissionCriteria": {
@@ -50261,12 +50261,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2002,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 220,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -50305,7 +50305,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -50343,12 +50343,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2020,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -50388,7 +50388,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -50426,12 +50426,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2021,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -50470,7 +50470,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -50508,12 +50508,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1887,
     "campusArea": "232 Acres Colonial Heritage Campus",
     "accreditation": "NAAC A Grade, UGC Central University",
-    "fees": "₹1.1 Lakhs",
+    "fees": "\u20b91.1 Lakhs",
     "feeNum": 1.1,
-    "avgSalary": "₹7.2 LPA",
+    "avgSalary": "\u20b97.2 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.8 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.8 LPA",
     "batchSize": 120,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -50551,7 +50551,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹1,10,000"
+        "fee": "\u20b91,10,000"
       }
     ],
     "admissionCriteria": {
@@ -50567,7 +50567,7 @@ export const COLLEGES_DATA = [
       "Hostels & Sports Grounds",
       "Campus Wi-Fi Network"
     ],
-    "highlights": "Known as the \"Oxford of the East\"; MONIRBA is one of northern India’s pioneering university business schools established in 1965.",
+    "highlights": "Known as the \"Oxford of the East\"; MONIRBA is one of northern India\u2019s pioneering university business schools established in 1965.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)"
   },
@@ -50589,12 +50589,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -50633,7 +50633,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -50671,12 +50671,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -50715,7 +50715,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -50753,12 +50753,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2007,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 160,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -50798,7 +50798,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -50836,12 +50836,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2009,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 180,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -50880,7 +50880,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -50918,12 +50918,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2010,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -50961,7 +50961,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -50999,12 +50999,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1921,
     "campusArea": "75 Acres Janakipuram Second Campus",
     "accreditation": "NAAC A++ Grade, UGC State University",
-    "fees": "₹1.6 Lakhs",
+    "fees": "\u20b91.6 Lakhs",
     "feeNum": 1.6,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.2 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.2 LPA",
     "batchSize": 240,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -51042,19 +51042,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹1,60,000"
+        "fee": "\u20b91,60,000"
       },
       {
         "name": "MBA in Finance & Control (MBA-FC)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,60,000"
+        "fee": "\u20b91,60,000"
       },
       {
         "name": "MBA in International Business (MBA-IB)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹1,60,000"
+        "fee": "\u20b91,60,000"
       }
     ],
     "admissionCriteria": {
@@ -51092,12 +51092,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 240,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -51136,7 +51136,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -51174,12 +51174,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2012,
     "campusArea": "85 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -51218,7 +51218,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -51256,12 +51256,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2014,
     "campusArea": "90 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 280,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -51299,7 +51299,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -51337,12 +51337,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1980,
     "campusArea": "95 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -51380,7 +51380,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -51418,12 +51418,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1981,
     "campusArea": "100 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 140,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -51461,7 +51461,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -51499,12 +51499,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1982,
     "campusArea": "105 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 160,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -51543,7 +51543,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -51581,12 +51581,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1983,
     "campusArea": "110 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 180,
     "roiScore": "9 / 10",
     "examsAccepted": [
@@ -51625,7 +51625,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -51663,12 +51663,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2018,
     "campusArea": "115 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 200,
     "roiScore": "9.1 / 10",
     "examsAccepted": [
@@ -51708,7 +51708,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -51746,12 +51746,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1985,
     "campusArea": "40 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 220,
     "roiScore": "9.2 / 10",
     "examsAccepted": [
@@ -51789,7 +51789,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 220,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -51827,12 +51827,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2020,
     "campusArea": "45 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 240,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -51871,7 +51871,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -51909,12 +51909,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2021,
     "campusArea": "50 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 260,
     "roiScore": "9.4 / 10",
     "examsAccepted": [
@@ -51953,7 +51953,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 260,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -51991,12 +51991,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1973,
     "campusArea": "55 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹1.8 Lakhs",
+    "fees": "\u20b91.8 Lakhs",
     "feeNum": 1.8,
-    "avgSalary": "₹9.2 LPA",
+    "avgSalary": "\u20b99.2 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹20.2 LPA",
-    "medianSalary": "₹8.5 LPA",
+    "highestSalary": "\u20b920.2 LPA",
+    "medianSalary": "\u20b98.5 LPA",
     "batchSize": 280,
     "roiScore": "9.5 / 10",
     "examsAccepted": [
@@ -52034,7 +52034,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 280,
-        "fee": "₹1,80,000"
+        "fee": "\u20b91,80,000"
       }
     ],
     "admissionCriteria": {
@@ -52072,12 +52072,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2005,
     "campusArea": "60 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 120,
     "roiScore": "8.4 / 10",
     "examsAccepted": [
@@ -52116,7 +52116,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -52154,12 +52154,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2006,
     "campusArea": "65 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 140,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -52199,7 +52199,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 140,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -52237,12 +52237,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1991,
     "campusArea": "70 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 160,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -52281,7 +52281,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 160,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -52319,12 +52319,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "75 Acres Modern Campus",
     "accreditation": "UGC Recognized, AICTE Approved, NAAC Accredited",
-    "fees": "₹4.8 Lakhs",
+    "fees": "\u20b94.8 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹6.2 LPA",
+    "avgSalary": "\u20b96.2 LPA",
     "avgSalaryNum": 6.2,
-    "highestSalary": "₹13.6 LPA",
-    "medianSalary": "₹5.7 LPA",
+    "highestSalary": "\u20b913.6 LPA",
+    "medianSalary": "\u20b95.7 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -52363,7 +52363,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       }
     ],
     "admissionCriteria": {
@@ -52401,12 +52401,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "80 Acres Modern Campus",
     "accreditation": "UGC, NAAC A Grade, AIU",
-    "fees": "₹2.2 Lakhs",
+    "fees": "\u20b92.2 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹6.8 LPA",
+    "avgSalary": "\u20b96.8 LPA",
     "avgSalaryNum": 6.8,
-    "highestSalary": "₹15.0 LPA",
-    "medianSalary": "₹6.3 LPA",
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.3 LPA",
     "batchSize": 200,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -52444,7 +52444,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 200,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -52482,12 +52482,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1963,
     "campusArea": "63 Acres (Powai)",
     "accreditation": "AACSB, AICTE",
-    "fees": "₹21.0 Lakhs",
+    "fees": "\u20b921.0 Lakhs",
     "feeNum": 21,
-    "avgSalary": "₹31.50 LPA",
+    "avgSalary": "\u20b931.50 LPA",
     "avgSalaryNum": 31.5,
-    "highestSalary": "₹78.20 LPA",
-    "medianSalary": "₹30.00 LPA",
+    "highestSalary": "\u20b978.20 LPA",
+    "medianSalary": "\u20b930.00 LPA",
     "batchSize": 480,
     "roiScore": "9.3 / 10",
     "examsAccepted": [
@@ -52525,19 +52525,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       },
       {
         "name": "MBA in Operations and Supply Chain Management (MBA-OSCM)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       },
       {
         "name": "MBA in Sustainability Management (MBA-SM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       }
     ],
     "admissionCriteria": {
@@ -52577,12 +52577,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1998,
     "campusArea": "365 Acres",
     "accreditation": "AICTE, NBA",
-    "fees": "₹9.67 Lakhs",
+    "fees": "\u20b99.67 Lakhs",
     "feeNum": 9.67,
-    "avgSalary": "₹17.91 LPA",
+    "avgSalary": "\u20b917.91 LPA",
     "avgSalaryNum": 17.91,
-    "highestSalary": "₹27.94 LPA",
-    "medianSalary": "₹16.50 LPA",
+    "highestSalary": "\u20b927.94 LPA",
+    "medianSalary": "\u20b916.50 LPA",
     "batchSize": 95,
     "roiScore": "9.7 / 10",
     "examsAccepted": [
@@ -52621,7 +52621,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 95,
-        "fee": "₹9,67,000"
+        "fee": "\u20b99,67,000"
       }
     ],
     "admissionCriteria": {
@@ -52636,7 +52636,7 @@ export const COLLEGES_DATA = [
       "Air-conditioned Student Hostels",
       "Olympic Standard Swimming Pool & Sports Complex"
     ],
-    "highlights": "Ranked #18 Management Institute in India by NIRF 2024. Exceptional Return on Investment (ROI) with ₹9.67 Lakhs total fees and ₹17.91 LPA average salary across top consultancies and tech giants.",
+    "highlights": "Ranked #18 Management Institute in India by NIRF 2024. Exceptional Return on Investment (ROI) with \u20b99.67 Lakhs total fees and \u20b917.91 LPA average salary across top consultancies and tech giants.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://ms.iitr.ac.in"
@@ -52659,12 +52659,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2011,
     "campusArea": "200 Acres",
     "accreditation": "AACSB, AICTE",
-    "fees": "₹20.46 Lakhs",
+    "fees": "\u20b920.46 Lakhs",
     "feeNum": 20.46,
-    "avgSalary": "₹14.95 LPA",
+    "avgSalary": "\u20b914.95 LPA",
     "avgSalaryNum": 14.95,
-    "highestSalary": "₹37.00 LPA",
-    "medianSalary": "₹14.50 LPA",
+    "highestSalary": "\u20b937.00 LPA",
+    "medianSalary": "\u20b914.50 LPA",
     "batchSize": 380,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -52702,19 +52702,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 320,
-        "fee": "₹20,46,000"
+        "fee": "\u20b920,46,000"
       },
       {
         "name": "MBA in Analytics (MBA-Analytics)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹20,46,000"
+        "fee": "\u20b920,46,000"
       },
       {
         "name": "Executive MBA (EMBA)",
         "duration": "2 Years Weekend",
         "seats": 60,
-        "fee": "₹12,00,000"
+        "fee": "\u20b912,00,000"
       }
     ],
     "admissionCriteria": {
@@ -52752,12 +52752,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "132 Acres (MIHAN)",
     "accreditation": "AICTE",
-    "fees": "₹18.90 Lakhs",
+    "fees": "\u20b918.90 Lakhs",
     "feeNum": 18.9,
-    "avgSalary": "₹16.74 LPA",
+    "avgSalary": "\u20b916.74 LPA",
     "avgSalaryNum": 16.74,
-    "highestSalary": "₹64.00 LPA",
-    "medianSalary": "₹16.00 LPA",
+    "highestSalary": "\u20b964.00 LPA",
+    "medianSalary": "\u20b916.00 LPA",
     "batchSize": 260,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -52795,7 +52795,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 340,
-        "fee": "₹18,90,000"
+        "fee": "\u20b918,90,000"
       }
     ],
     "admissionCriteria": {
@@ -52810,7 +52810,7 @@ export const COLLEGES_DATA = [
       "High Performance Analytics Computing Lab",
       "Indoor & Outdoor Sports Arena"
     ],
-    "highlights": "Ranked #31 Management Institute in India by NIRF 2024. Fastest rising new-generation IIM located in the logistical heart of India with high average CTC of ₹18.08 LPA.",
+    "highlights": "Ranked #31 Management Institute in India by NIRF 2024. Fastest rising new-generation IIM located in the logistical heart of India with high average CTC of \u20b918.08 LPA.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.iimnagpur.ac.in"
@@ -52833,12 +52833,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "119 Acres",
     "accreditation": "AICTE",
-    "fees": "₹17.00 Lakhs",
+    "fees": "\u20b917.00 Lakhs",
     "feeNum": 17,
-    "avgSalary": "₹14.96 LPA",
+    "avgSalary": "\u20b914.96 LPA",
     "avgSalaryNum": 14.96,
-    "highestSalary": "₹48.58 LPA",
-    "medianSalary": "₹14.00 LPA",
+    "highestSalary": "\u20b948.58 LPA",
+    "medianSalary": "\u20b914.00 LPA",
     "batchSize": 300,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -52875,19 +52875,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 300,
-        "fee": "₹17,96,000"
+        "fee": "\u20b917,96,000"
       },
       {
         "name": "MBA in Digital Business Management (DBM)",
         "duration": "2 Years Full Time",
         "seats": 90,
-        "fee": "₹17,96,000"
+        "fee": "\u20b917,96,000"
       },
       {
         "name": "MBA in Hospital & Healthcare Management (HHM)",
         "duration": "2 Years Full Time",
         "seats": 90,
-        "fee": "₹17,96,000"
+        "fee": "\u20b917,96,000"
       }
     ],
     "admissionCriteria": {
@@ -52925,12 +52925,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2016,
     "campusArea": "200 Acres (Jagti)",
     "accreditation": "AICTE",
-    "fees": "₹18.85 Lakhs",
+    "fees": "\u20b918.85 Lakhs",
     "feeNum": 18.85,
-    "avgSalary": "₹15.48 LPA",
+    "avgSalary": "\u20b915.48 LPA",
     "avgSalaryNum": 15.48,
-    "highestSalary": "₹64.00 LPA",
-    "medianSalary": "₹15.00 LPA",
+    "highestSalary": "\u20b964.00 LPA",
+    "medianSalary": "\u20b915.00 LPA",
     "batchSize": 250,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -52967,13 +52967,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹17,15,000"
+        "fee": "\u20b917,15,000"
       },
       {
         "name": "MBA in Hospital Administration & Healthcare Management (HA&HM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹17,15,000"
+        "fee": "\u20b917,15,000"
       }
     ],
     "admissionCriteria": {
@@ -53011,12 +53011,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "60 Acres",
     "accreditation": "AICTE",
-    "fees": "₹17.30 Lakhs",
+    "fees": "\u20b917.30 Lakhs",
     "feeNum": 17.3,
-    "avgSalary": "₹16.51 LPA",
+    "avgSalary": "\u20b916.51 LPA",
     "avgSalaryNum": 16.51,
-    "highestSalary": "₹36.25 LPA",
-    "medianSalary": "₹16.00 LPA",
+    "highestSalary": "\u20b936.25 LPA",
+    "medianSalary": "\u20b916.00 LPA",
     "batchSize": 300,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -53054,19 +53054,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 250,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       },
       {
         "name": "MBA in Business Analytics (MBA-BA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       },
       {
         "name": "MBA in Human Resource Management (MBA-HR)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       }
     ],
     "admissionCriteria": {
@@ -53103,12 +53103,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "200 Acres",
     "accreditation": "AICTE",
-    "fees": "₹18.00 Lakhs",
+    "fees": "\u20b918.00 Lakhs",
     "feeNum": 18,
-    "avgSalary": "₹14.21 LPA",
+    "avgSalary": "\u20b914.21 LPA",
     "avgSalaryNum": 14.21,
-    "highestSalary": "₹64.61 LPA",
-    "medianSalary": "₹13.50 LPA",
+    "highestSalary": "\u20b964.61 LPA",
+    "medianSalary": "\u20b913.50 LPA",
     "batchSize": 320,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -53145,7 +53145,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 314,
-        "fee": "₹16,50,000"
+        "fee": "\u20b916,50,000"
       }
     ],
     "admissionCriteria": {
@@ -53183,12 +53183,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "210 Acres (Dhaula Kuan)",
     "accreditation": "AICTE",
-    "fees": "₹17.50 Lakhs",
+    "fees": "\u20b917.50 Lakhs",
     "feeNum": 17.5,
-    "avgSalary": "₹14.45 LPA",
+    "avgSalary": "\u20b914.45 LPA",
     "avgSalaryNum": 14.45,
-    "highestSalary": "₹64.12 LPA",
-    "medianSalary": "₹13.80 LPA",
+    "highestSalary": "\u20b964.12 LPA",
+    "medianSalary": "\u20b913.80 LPA",
     "batchSize": 300,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -53225,13 +53225,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 250,
-        "fee": "₹20,00,000"
+        "fee": "\u20b920,00,000"
       },
       {
         "name": "MBA in Tourism & Hospitality Management (MBA-T&HM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹20,00,000"
+        "fee": "\u20b920,00,000"
       }
     ],
     "admissionCriteria": {
@@ -53268,12 +53268,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1979,
     "campusArea": "99 Acres (Loyola Campus)",
     "accreditation": "SAQS, AICTE",
-    "fees": "₹17.84 Lakhs",
+    "fees": "\u20b917.84 Lakhs",
     "feeNum": 17.84,
-    "avgSalary": "₹11.20 LPA",
+    "avgSalary": "\u20b911.20 LPA",
     "avgSalaryNum": 11.2,
-    "highestSalary": "₹20.50 LPA",
-    "medianSalary": "₹11.00 LPA",
+    "highestSalary": "\u20b920.50 LPA",
+    "medianSalary": "\u20b911.00 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -53312,7 +53312,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM Full-Time)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹15,50,000"
+        "fee": "\u20b915,50,000"
       }
     ],
     "admissionCriteria": {
@@ -53350,12 +53350,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2015,
     "campusArea": "241 Acres (Gambheeram)",
     "accreditation": "AICTE",
-    "fees": "₹18.50 Lakhs",
+    "fees": "\u20b918.50 Lakhs",
     "feeNum": 18.5,
-    "avgSalary": "₹15.61 LPA",
+    "avgSalary": "\u20b915.61 LPA",
     "avgSalaryNum": 15.61,
-    "highestSalary": "₹43.25 LPA",
-    "medianSalary": "₹15.00 LPA",
+    "highestSalary": "\u20b943.25 LPA",
+    "medianSalary": "\u20b915.00 LPA",
     "batchSize": 272,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -53393,13 +53393,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Programme in Management (PGP - MBA)",
         "duration": "2 Years Full Time",
         "seats": 272,
-        "fee": "₹18,50,000"
+        "fee": "\u20b918,50,000"
       },
       {
         "name": "PGP for Experienced Professionals (PGPEx)",
         "duration": "2 Years Weekend",
         "seats": 50,
-        "fee": "₹10,80,000"
+        "fee": "\u20b910,80,000"
       }
     ],
     "admissionCriteria": {
@@ -53438,12 +53438,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1992,
     "campusArea": "10 Acres (Infotech Park Hinjawadi)",
     "accreditation": "NAAC A++, UGC",
-    "fees": "₹20.50 Lakhs",
+    "fees": "\u20b920.50 Lakhs",
     "feeNum": 20.5,
-    "avgSalary": "₹15.64 LPA",
+    "avgSalary": "\u20b915.64 LPA",
     "avgSalaryNum": 15.64,
-    "highestSalary": "₹27.60 LPA",
-    "medianSalary": "₹14.80 LPA",
+    "highestSalary": "\u20b927.60 LPA",
+    "medianSalary": "\u20b914.80 LPA",
     "batchSize": 240,
     "roiScore": "8.8 / 10",
     "examsAccepted": [
@@ -53481,19 +53481,19 @@ export const COLLEGES_DATA = [
         "name": "MBA in International Business (MBA-IB)",
         "duration": "2 Years Full Time",
         "seats": 150,
-        "fee": "₹20,50,000"
+        "fee": "\u20b920,50,000"
       },
       {
         "name": "MBA in Agri-Business (MBA-AB)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹18,50,000"
+        "fee": "\u20b918,50,000"
       },
       {
         "name": "MBA in Energy & Environment (MBA-E&E)",
         "duration": "2 Years Full Time",
         "seats": 30,
-        "fee": "₹18,50,000"
+        "fee": "\u20b918,50,000"
       }
     ],
     "admissionCriteria": {
@@ -53531,12 +53531,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 2008,
     "campusArea": "15 Acres (Electronic City Phase 1)",
     "accreditation": "NAAC A++, UGC",
-    "fees": "₹21.00 Lakhs",
+    "fees": "\u20b921.00 Lakhs",
     "feeNum": 21,
-    "avgSalary": "₹14.47 LPA",
+    "avgSalary": "\u20b914.47 LPA",
     "avgSalaryNum": 14.47,
-    "highestSalary": "₹24.00 LPA",
-    "medianSalary": "₹13.75 LPA",
+    "highestSalary": "\u20b924.00 LPA",
+    "medianSalary": "\u20b913.75 LPA",
     "batchSize": 240,
     "roiScore": "8.7 / 10",
     "examsAccepted": [
@@ -53574,13 +53574,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       },
       {
         "name": "MBA in Business Analytics",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹21,00,000"
+        "fee": "\u20b921,00,000"
       }
     ],
     "admissionCriteria": {
@@ -53618,12 +53618,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1995,
     "campusArea": "5 Acres",
     "accreditation": "AICTE, NBA, AIU",
-    "fees": "₹16.50 Lakhs",
+    "fees": "\u20b916.50 Lakhs",
     "feeNum": 16.5,
-    "avgSalary": "₹10.20 LPA",
+    "avgSalary": "\u20b910.20 LPA",
     "avgSalaryNum": 10.2,
-    "highestSalary": "₹24.00 LPA",
-    "medianSalary": "₹9.52 LPA",
+    "highestSalary": "\u20b924.00 LPA",
+    "medianSalary": "\u20b99.52 LPA",
     "batchSize": 300,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -53663,13 +53663,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM Finance/Mktg/HR)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹16,50,000"
+        "fee": "\u20b916,50,000"
       },
       {
         "name": "PGDM in Business Analytics",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹16,50,000"
+        "fee": "\u20b916,50,000"
       }
     ],
     "admissionCriteria": {
@@ -53706,12 +53706,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1970,
     "campusArea": "40 Acres (Sri City SEZ)",
     "accreditation": "SAQS, AICTE",
-    "fees": "₹14.50 Lakhs",
+    "fees": "\u20b914.50 Lakhs",
     "feeNum": 14.5,
-    "avgSalary": "₹13.04 LPA",
+    "avgSalary": "\u20b913.04 LPA",
     "avgSalaryNum": 13.04,
-    "highestSalary": "₹17.22 LPA",
-    "medianSalary": "₹13.00 LPA",
+    "highestSalary": "\u20b917.22 LPA",
+    "medianSalary": "\u20b913.00 LPA",
     "batchSize": 240,
     "roiScore": "8.9 / 10",
     "examsAccepted": [
@@ -53753,7 +53753,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹14,50,000"
+        "fee": "\u20b914,50,000"
       }
     ],
     "admissionCriteria": {
@@ -53790,12 +53790,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1969,
     "campusArea": "25 Acres (Central Campus, Hosur Road)",
     "accreditation": "NAAC A+, UGC",
-    "fees": "₹11.50 Lakhs",
+    "fees": "\u20b911.50 Lakhs",
     "feeNum": 11.5,
-    "avgSalary": "₹10.70 LPA",
+    "avgSalary": "\u20b910.70 LPA",
     "avgSalaryNum": 10.7,
-    "highestSalary": "₹43.00 LPA",
-    "medianSalary": "₹10.00 LPA",
+    "highestSalary": "\u20b943.00 LPA",
+    "medianSalary": "\u20b910.00 LPA",
     "batchSize": 600,
     "roiScore": "8.6 / 10",
     "examsAccepted": [
@@ -53837,13 +53837,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 480,
-        "fee": "₹11,50,000"
+        "fee": "\u20b911,50,000"
       },
       {
         "name": "MBA in Business Analytics",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹11,50,000"
+        "fee": "\u20b911,50,000"
       }
     ],
     "admissionCriteria": {
@@ -53880,12 +53880,12 @@ export const COLLEGES_DATA = [
     "establishedYear": 1993,
     "campusArea": "2 Acres",
     "accreditation": "NAAC A, NBA, AIU",
-    "fees": "₹9.50 Lakhs",
+    "fees": "\u20b99.50 Lakhs",
     "feeNum": 9.5,
-    "avgSalary": "₹8.30 LPA",
+    "avgSalary": "\u20b98.30 LPA",
     "avgSalaryNum": 8.3,
-    "highestSalary": "₹22.00 LPA",
-    "medianSalary": "₹8.00 LPA",
+    "highestSalary": "\u20b922.00 LPA",
+    "medianSalary": "\u20b98.00 LPA",
     "batchSize": 300,
     "roiScore": "8.5 / 10",
     "examsAccepted": [
@@ -53924,19 +53924,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       },
       {
         "name": "PGDM in International Business (PGDM-IB)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       },
       {
         "name": "PGDM in Retail Management (PGDM-RM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       }
     ],
     "admissionCriteria": {
@@ -53950,7 +53950,7 @@ export const COLLEGES_DATA = [
       "Air-conditioned Smart Classrooms",
       "Digital Computer & Analytics Labs"
     ],
-    "highlights": "Jagan Institute of Management Studies (JIMS), Rohini Sector-5. Popular Delhi-NCR management institute offering strong Return on Investment with sub-₹10 Lakh fees.",
+    "highlights": "Jagan Institute of Management Studies (JIMS), Rohini Sector-5. Popular Delhi-NCR management institute offering strong Return on Investment with sub-\u20b910 Lakh fees.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.jimsindia.org"
@@ -53965,12 +53965,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 165,
     "nirfRank": 29,
     "accreditation": "Institute of National Importance (INI)",
-    "fees": "₹3.80 Lakhs",
+    "fees": "\u20b93.80 Lakhs",
     "feeNum": 3.8,
-    "avgSalary": "₹18.14 LPA",
+    "avgSalary": "\u20b918.14 LPA",
     "avgSalaryNum": 18.14,
-    "highestSalary": "₹24.00 LPA",
-    "medianSalary": "₹17.25 LPA",
+    "highestSalary": "\u20b924.00 LPA",
+    "medianSalary": "\u20b917.25 LPA",
     "batchSize": 65,
     "roiScore": "9.6 / 10",
     "cutoffCAT": "93.0+ %ile",
@@ -53979,7 +53979,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 65,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       }
     ],
     "admissionCriteria": {
@@ -53993,7 +53993,7 @@ export const COLLEGES_DATA = [
       "Advanced Quantitative Finance & Analytics Lab",
       "High Performance Computing & AI Infrastructure"
     ],
-    "highlights": "Ranked #29 Management Institute in India by NIRF 2024. IIT Kanpur MBA is one of the highest ROI management programs nationwide with sub-₹4 Lakhs fee and an audited average CTC of ₹18.14 LPA.",
+    "highlights": "Ranked #29 Management Institute in India by NIRF 2024. IIT Kanpur MBA is one of the highest ROI management programs nationwide with sub-\u20b94 Lakhs fee and an audited average CTC of \u20b918.14 LPA.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.iitk.ac.in/ime"
@@ -54008,12 +54008,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 380,
     "nirfRank": 29,
     "accreditation": "NAAC A+, ACBSP (USA), IACBE",
-    "fees": "₹15.56 Lakhs",
+    "fees": "\u20b915.56 Lakhs",
     "feeNum": 15.56,
-    "avgSalary": "₹8.50 LPA",
+    "avgSalary": "\u20b98.50 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹25.00 LPA",
-    "medianSalary": "₹8.00 LPA",
+    "highestSalary": "\u20b925.00 LPA",
+    "medianSalary": "\u20b98.00 LPA",
     "batchSize": 600,
     "roiScore": "7.8 / 10",
     "cutoffCAT": "75.0+ %ile",
@@ -54022,19 +54022,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 360,
-        "fee": "₹15,56,000"
+        "fee": "\u20b915,56,000"
       },
       {
         "name": "MBA in International Business (MBA-IB)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹15,56,000"
+        "fee": "\u20b915,56,000"
       },
       {
         "name": "MBA in Marketing & Sales",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹15,56,000"
+        "fee": "\u20b915,56,000"
       }
     ],
     "admissionCriteria": {
@@ -54063,12 +54063,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 410,
     "nirfRank": 38,
     "accreditation": "ACBSP (USA), NAAC A++, UGC",
-    "fees": "₹8.00 Lakhs",
+    "fees": "\u20b98.00 Lakhs",
     "feeNum": 8,
-    "avgSalary": "₹7.20 LPA",
+    "avgSalary": "\u20b97.20 LPA",
     "avgSalaryNum": 7.2,
-    "highestSalary": "₹29.30 LPA",
-    "medianSalary": "₹6.80 LPA",
+    "highestSalary": "\u20b929.30 LPA",
+    "medianSalary": "\u20b96.80 LPA",
     "batchSize": 600,
     "roiScore": "8.0 / 10",
     "cutoffCAT": "70.0+ %ile",
@@ -54077,19 +54077,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA Core)",
         "duration": "2 Years Full Time",
         "seats": 360,
-        "fee": "₹8,00,000"
+        "fee": "\u20b98,00,000"
       },
       {
         "name": "MBA in Business Analytics",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹8,00,000"
+        "fee": "\u20b98,00,000"
       },
       {
         "name": "MBA in Financial Markets",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹8,00,000"
+        "fee": "\u20b98,00,000"
       }
     ],
     "admissionCriteria": {
@@ -54118,12 +54118,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 320,
     "nirfRank": 39,
     "accreditation": "AACSB, NAAC A++, SAQS",
-    "fees": "₹16.02 Lakhs",
+    "fees": "\u20b916.02 Lakhs",
     "feeNum": 16.02,
-    "avgSalary": "₹10.42 LPA",
+    "avgSalary": "\u20b910.42 LPA",
     "avgSalaryNum": 10.42,
-    "highestSalary": "₹58.19 LPA",
-    "medianSalary": "₹9.50 LPA",
+    "highestSalary": "\u20b958.19 LPA",
+    "medianSalary": "\u20b99.50 LPA",
     "batchSize": 1100,
     "roiScore": "8.1 / 10",
     "cutoffCAT": "75.0+ %ile",
@@ -54132,7 +54132,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA Flagship)",
         "duration": "2 Years Full Time",
         "seats": 1100,
-        "fee": "₹16,02,000"
+        "fee": "\u20b916,02,000"
       }
     ],
     "admissionCriteria": {
@@ -54161,12 +54161,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 220,
     "nirfRank": 41,
     "accreditation": "NAAC A, IACBE, QS 5 Stars",
-    "fees": "₹15.72 Lakhs",
+    "fees": "\u20b915.72 Lakhs",
     "feeNum": 15.72,
-    "avgSalary": "₹8.66 LPA",
+    "avgSalary": "\u20b98.66 LPA",
     "avgSalaryNum": 8.66,
-    "highestSalary": "₹30.00 LPA",
-    "medianSalary": "₹8.20 LPA",
+    "highestSalary": "\u20b930.00 LPA",
+    "medianSalary": "\u20b98.20 LPA",
     "batchSize": 360,
     "roiScore": "7.9 / 10",
     "cutoffCAT": "70.0+ %ile",
@@ -54175,25 +54175,25 @@ export const COLLEGES_DATA = [
         "name": "MBA in Oil & Gas Management",
         "duration": "2 Years Full Time",
         "seats": 90,
-        "fee": "₹15,72,000"
+        "fee": "\u20b915,72,000"
       },
       {
         "name": "MBA in Logistics & Supply Chain Management",
         "duration": "2 Years Full Time",
         "seats": 90,
-        "fee": "₹15,72,000"
+        "fee": "\u20b915,72,000"
       },
       {
         "name": "MBA in Business Analytics",
         "duration": "2 Years Full Time",
         "seats": 90,
-        "fee": "₹15,72,000"
+        "fee": "\u20b915,72,000"
       },
       {
         "name": "MBA in Core Management (Marketing/Finance/HR)",
         "duration": "2 Years Full Time",
         "seats": 90,
-        "fee": "₹15,72,000"
+        "fee": "\u20b915,72,000"
       }
     ],
     "admissionCriteria": {
@@ -54222,12 +54222,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 140,
     "nirfRank": 46,
     "accreditation": "Institute of National Importance (INI)",
-    "fees": "₹3.80 Lakhs",
+    "fees": "\u20b93.80 Lakhs",
     "feeNum": 3.8,
-    "avgSalary": "₹14.50 LPA",
+    "avgSalary": "\u20b914.50 LPA",
     "avgSalaryNum": 14.5,
-    "highestSalary": "₹50.00 LPA",
-    "medianSalary": "₹13.00 LPA",
+    "highestSalary": "\u20b950.00 LPA",
+    "medianSalary": "\u20b913.00 LPA",
     "batchSize": 120,
     "roiScore": "9.5 / 10",
     "cutoffCAT": "80.0+ %ile",
@@ -54236,13 +54236,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA Core)",
         "duration": "2 Years Full Time",
         "seats": 80,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       },
       {
         "name": "MBA in Business Analytics",
         "duration": "2 Years Full Time",
         "seats": 40,
-        "fee": "₹3,80,000"
+        "fee": "\u20b93,80,000"
       }
     ],
     "admissionCriteria": {
@@ -54256,7 +54256,7 @@ export const COLLEGES_DATA = [
       "Central Library with 1.5 Lakh Management Books",
       "Complete On-Campus Residential Life"
     ],
-    "highlights": "Ranked #46 Management Institute by NIRF 2024. Exceptional Return on Investment with an average package of ₹14.50 LPA against tuition fees of under ₹4 Lakhs.",
+    "highlights": "Ranked #46 Management Institute by NIRF 2024. Exceptional Return on Investment with an average package of \u20b914.50 LPA against tuition fees of under \u20b94 Lakhs.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.iitism.ac.in"
@@ -54271,12 +54271,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 110,
     "nirfRank": 51,
     "accreditation": "Institute of National Importance (INI)",
-    "fees": "₹2.50 Lakhs",
+    "fees": "\u20b92.50 Lakhs",
     "feeNum": 2.5,
-    "avgSalary": "₹9.60 LPA",
+    "avgSalary": "\u20b99.60 LPA",
     "avgSalaryNum": 9.6,
-    "highestSalary": "₹20.00 LPA",
-    "medianSalary": "₹9.20 LPA",
+    "highestSalary": "\u20b920.00 LPA",
+    "medianSalary": "\u20b99.20 LPA",
     "batchSize": 110,
     "roiScore": "9.5 / 10",
     "cutoffCAT": "80.0+ %ile",
@@ -54285,7 +54285,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 110,
-        "fee": "₹2,50,000"
+        "fee": "\u20b92,50,000"
       }
     ],
     "admissionCriteria": {
@@ -54299,7 +54299,7 @@ export const COLLEGES_DATA = [
       "Modern Central Library & Digital Resources",
       "Dedicated On-Campus Hostels & Sports Complexes"
     ],
-    "highlights": "Ranked #51 in NIRF 2024 Management Ranking. One of the oldest NIT management departments offering sterling ROI with total 2-year fee of just ₹2.50 Lakhs.",
+    "highlights": "Ranked #51 in NIRF 2024 Management Ranking. One of the oldest NIT management departments offering sterling ROI with total 2-year fee of just \u20b92.50 Lakhs.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.nitt.edu/home/academics/departments/management/"
@@ -54314,12 +54314,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 120,
     "nirfRank": 52,
     "accreditation": "AMBA (UK), AICTE, NBA",
-    "fees": "₹17.75 Lakhs",
+    "fees": "\u20b917.75 Lakhs",
     "feeNum": 17.75,
-    "avgSalary": "₹15.80 LPA",
+    "avgSalary": "\u20b915.80 LPA",
     "avgSalaryNum": 15.8,
-    "highestSalary": "₹25.50 LPA",
-    "medianSalary": "₹15.00 LPA",
+    "highestSalary": "\u20b925.50 LPA",
+    "medianSalary": "\u20b915.00 LPA",
     "batchSize": 240,
     "roiScore": "8.6 / 10",
     "cutoffCAT": "80.0+ %ile",
@@ -54328,13 +54328,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM 2-Year)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹17,75,000"
+        "fee": "\u20b917,75,000"
       },
       {
         "name": "Post Graduate Program in Management (PGPM 1-Year Fast-track)",
         "duration": "1 Year Full Time",
         "seats": 60,
-        "fee": "₹17,75,000"
+        "fee": "\u20b917,75,000"
       }
     ],
     "admissionCriteria": {
@@ -54348,7 +54348,7 @@ export const COLLEGES_DATA = [
       "Air-conditioned Residential Hostels",
       "Global Visiting Faculty from Top B-Schools"
     ],
-    "highlights": "Ranked #52 in India by NIRF 2024. Prestigious AMBA accreditation with verified average CTC of ₹15.80 LPA in Delhi-NCR.",
+    "highlights": "Ranked #52 in India by NIRF 2024. Prestigious AMBA accreditation with verified average CTC of \u20b915.80 LPA in Delhi-NCR.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.greatlakes.edu.in/gurgaon/"
@@ -54363,12 +54363,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 190,
     "nirfRank": 55,
     "accreditation": "AACSB, NAAC A+, SAQS",
-    "fees": "₹12.90 Lakhs",
+    "fees": "\u20b912.90 Lakhs",
     "feeNum": 12.9,
-    "avgSalary": "₹13.00 LPA",
+    "avgSalary": "\u20b913.00 LPA",
     "avgSalaryNum": 13,
-    "highestSalary": "₹30.00 LPA",
-    "medianSalary": "₹12.00 LPA",
+    "highestSalary": "\u20b930.00 LPA",
+    "medianSalary": "\u20b912.00 LPA",
     "batchSize": 300,
     "roiScore": "8.9 / 10",
     "cutoffCAT": "80.0+ %ile",
@@ -54377,13 +54377,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 240,
-        "fee": "₹12,90,000"
+        "fee": "\u20b912,90,000"
       },
       {
         "name": "MBA in Human Resource Management (MBA-HRM)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹12,90,000"
+        "fee": "\u20b912,90,000"
       }
     ],
     "admissionCriteria": {
@@ -54397,7 +54397,7 @@ export const COLLEGES_DATA = [
       "Corporate Mentorship and Incubation Center",
       "High-speed Air-conditioned Lecture Theatres"
     ],
-    "highlights": "Ranked #55 by NIRF 2024 with coveted AACSB international accreditation. Highly regarded for strong ROI with average CTC of ₹13.00 LPA.",
+    "highlights": "Ranked #55 by NIRF 2024 with coveted AACSB international accreditation. Highly regarded for strong ROI with average CTC of \u20b913.00 LPA.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://management.nirmauni.ac.in"
@@ -54412,12 +54412,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 130,
     "nirfRank": 56,
     "accreditation": "AMBA (UK), NBA, AIU",
-    "fees": "₹13.50 Lakhs",
+    "fees": "\u20b913.50 Lakhs",
     "feeNum": 13.5,
-    "avgSalary": "₹10.65 LPA",
+    "avgSalary": "\u20b910.65 LPA",
     "avgSalaryNum": 10.65,
-    "highestSalary": "₹20.30 LPA",
-    "medianSalary": "₹10.20 LPA",
+    "highestSalary": "\u20b920.30 LPA",
+    "medianSalary": "\u20b910.20 LPA",
     "batchSize": 180,
     "roiScore": "8.4 / 10",
     "cutoffCAT": "75.0+ %ile",
@@ -54426,7 +54426,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹13,50,000"
+        "fee": "\u20b913,50,000"
       }
     ],
     "admissionCriteria": {
@@ -54455,12 +54455,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 110,
     "nirfRank": 61,
     "accreditation": "AMBA (UK), NBA, AIU",
-    "fees": "₹13.20 Lakhs",
+    "fees": "\u20b913.20 Lakhs",
     "feeNum": 13.2,
-    "avgSalary": "₹12.02 LPA",
+    "avgSalary": "\u20b912.02 LPA",
     "avgSalaryNum": 12.02,
-    "highestSalary": "₹21.00 LPA",
-    "medianSalary": "₹11.50 LPA",
+    "highestSalary": "\u20b921.00 LPA",
+    "medianSalary": "\u20b911.50 LPA",
     "batchSize": 120,
     "roiScore": "8.6 / 10",
     "cutoffCAT": "75.0+ %ile",
@@ -54469,7 +54469,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹13,20,000"
+        "fee": "\u20b913,20,000"
       }
     ],
     "admissionCriteria": {
@@ -54498,12 +54498,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 180,
     "nirfRank": 65,
     "accreditation": "NAAC A++, UGC, AICTE",
-    "fees": "₹2.80 Lakhs",
+    "fees": "\u20b92.80 Lakhs",
     "feeNum": 2.8,
-    "avgSalary": "₹9.20 LPA",
+    "avgSalary": "\u20b99.20 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹18.00 LPA",
-    "medianSalary": "₹8.50 LPA",
+    "highestSalary": "\u20b918.00 LPA",
+    "medianSalary": "\u20b98.50 LPA",
     "batchSize": 180,
     "roiScore": "9.5 / 10",
     "cutoffCAT": "80.0+ %ile",
@@ -54512,13 +54512,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       },
       {
         "name": "MBA in Financial Analysis",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹2,80,000"
+        "fee": "\u20b92,80,000"
       }
     ],
     "admissionCriteria": {
@@ -54532,7 +54532,7 @@ export const COLLEGES_DATA = [
       "Air-conditioned Seminar Complexes",
       "Metro Connected Prime Delhi Location"
     ],
-    "highlights": "Ranked #65 in NIRF 2024 Management Ranking. High ROI state university MBA in Delhi with fees under ₹3 Lakhs.",
+    "highlights": "Ranked #65 in NIRF 2024 Management Ranking. High ROI state university MBA in Delhi with fees under \u20b93 Lakhs.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "http://www.ipu.ac.in"
@@ -54547,12 +54547,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 220,
     "nirfRank": 67,
     "accreditation": "NAAC A++, Institution of Eminence (IoE), AICTE",
-    "fees": "₹16.90 Lakhs",
+    "fees": "\u20b916.90 Lakhs",
     "feeNum": 16.9,
-    "avgSalary": "₹9.50 LPA",
+    "avgSalary": "\u20b99.50 LPA",
     "avgSalaryNum": 9.5,
-    "highestSalary": "₹22.75 LPA",
-    "medianSalary": "₹9.00 LPA",
+    "highestSalary": "\u20b922.75 LPA",
+    "medianSalary": "\u20b99.00 LPA",
     "batchSize": 360,
     "roiScore": "8.1 / 10",
     "cutoffCAT": "70.0+ %ile",
@@ -54561,13 +54561,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA Flagship)",
         "duration": "2 Years Full Time",
         "seats": 300,
-        "fee": "₹16,90,000"
+        "fee": "\u20b916,90,000"
       },
       {
         "name": "Super MBA (Business Analytics & Supply Chain)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹16,90,000"
+        "fee": "\u20b916,90,000"
       }
     ],
     "admissionCriteria": {
@@ -54596,12 +54596,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 95,
     "nirfRank": 68,
     "accreditation": "Institute of National Importance (INI)",
-    "fees": "₹2.60 Lakhs",
+    "fees": "\u20b92.60 Lakhs",
     "feeNum": 2.6,
-    "avgSalary": "₹9.30 LPA",
+    "avgSalary": "\u20b99.30 LPA",
     "avgSalaryNum": 9.3,
-    "highestSalary": "₹16.00 LPA",
-    "medianSalary": "₹8.80 LPA",
+    "highestSalary": "\u20b916.00 LPA",
+    "medianSalary": "\u20b98.80 LPA",
     "batchSize": 75,
     "roiScore": "9.4 / 10",
     "cutoffCAT": "75.0+ %ile",
@@ -54610,7 +54610,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 75,
-        "fee": "₹2,60,000"
+        "fee": "\u20b92,60,000"
       }
     ],
     "admissionCriteria": {
@@ -54624,7 +54624,7 @@ export const COLLEGES_DATA = [
       "On-Campus Residential Hostels",
       "Innovation and Incubation Centre"
     ],
-    "highlights": "Ranked #68 Management Institute by NIRF 2024. Superior Return on Investment with an average package of ₹9.30 LPA and sub-₹3 Lakhs total fees.",
+    "highlights": "Ranked #68 Management Institute by NIRF 2024. Superior Return on Investment with an average package of \u20b99.30 LPA and sub-\u20b93 Lakhs total fees.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.mnit.ac.in/dept_dms/"
@@ -54639,12 +54639,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 160,
     "nirfRank": 72,
     "accreditation": "AACSB Member, NBA, NAAC A+, AIU",
-    "fees": "₹13.75 Lakhs",
+    "fees": "\u20b913.75 Lakhs",
     "feeNum": 13.75,
-    "avgSalary": "₹11.08 LPA",
+    "avgSalary": "\u20b911.08 LPA",
     "avgSalaryNum": 11.08,
-    "highestSalary": "₹22.00 LPA",
-    "medianSalary": "₹10.50 LPA",
+    "highestSalary": "\u20b922.00 LPA",
+    "medianSalary": "\u20b910.50 LPA",
     "batchSize": 300,
     "roiScore": "8.5 / 10",
     "cutoffCAT": "75.0+ %ile",
@@ -54653,19 +54653,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 180,
-        "fee": "₹13,75,000"
+        "fee": "\u20b913,75,000"
       },
       {
         "name": "PGDM in Financial Services",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹13,75,000"
+        "fee": "\u20b913,75,000"
       },
       {
         "name": "PGDM in Retail Management",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹13,75,000"
+        "fee": "\u20b913,75,000"
       }
     ],
     "admissionCriteria": {
@@ -54679,7 +54679,7 @@ export const COLLEGES_DATA = [
       "Central Library with 30,000+ Management Volumes",
       "Dedicated Placement & Corporate Relations Cell"
     ],
-    "highlights": "Ranked #72 in NIRF 2024 Management Ranking. Pioneer campus of the prestigious Jaipuria group with audited average CTC exceeding ₹11 LPA.",
+    "highlights": "Ranked #72 in NIRF 2024 Management Ranking. Pioneer campus of the prestigious Jaipuria group with audited average CTC exceeding \u20b911 LPA.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.jaipuria.ac.in/campuses/jaipuria-lucknow/"
@@ -54694,12 +54694,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 85,
     "nirfRank": 76,
     "accreditation": "Institute of National Importance (INI)",
-    "fees": "₹2.40 Lakhs",
+    "fees": "\u20b92.40 Lakhs",
     "feeNum": 2.4,
-    "avgSalary": "₹9.20 LPA",
+    "avgSalary": "\u20b99.20 LPA",
     "avgSalaryNum": 9.2,
-    "highestSalary": "₹18.00 LPA",
-    "medianSalary": "₹8.80 LPA",
+    "highestSalary": "\u20b918.00 LPA",
+    "medianSalary": "\u20b98.80 LPA",
     "batchSize": 75,
     "roiScore": "9.5 / 10",
     "cutoffCAT": "75.0+ %ile",
@@ -54708,7 +54708,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 75,
-        "fee": "₹2,40,000"
+        "fee": "\u20b92,40,000"
       }
     ],
     "admissionCriteria": {
@@ -54737,12 +54737,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 140,
     "nirfRank": 80,
     "accreditation": "ACBSP (USA), NBA, Anna University",
-    "fees": "₹9.00 Lakhs",
+    "fees": "\u20b99.00 Lakhs",
     "feeNum": 9,
-    "avgSalary": "₹8.50 LPA",
+    "avgSalary": "\u20b98.50 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹19.40 LPA",
-    "medianSalary": "₹8.00 LPA",
+    "highestSalary": "\u20b919.40 LPA",
+    "medianSalary": "\u20b98.00 LPA",
     "batchSize": 180,
     "roiScore": "8.7 / 10",
     "cutoffCAT": "70.0+ %ile",
@@ -54751,13 +54751,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA Anna University)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹9,00,000"
+        "fee": "\u20b99,00,000"
       },
       {
         "name": "Post Graduate Diploma in Management (PGDM AICTE)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹9,00,000"
+        "fee": "\u20b99,00,000"
       }
     ],
     "admissionCriteria": {
@@ -54786,12 +54786,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 110,
     "nirfRank": 85,
     "accreditation": "Institute of National Importance (INI)",
-    "fees": "₹3.60 Lakhs",
+    "fees": "\u20b93.60 Lakhs",
     "feeNum": 3.6,
-    "avgSalary": "₹14.50 LPA",
+    "avgSalary": "\u20b914.50 LPA",
     "avgSalaryNum": 14.5,
-    "highestSalary": "₹28.00 LPA",
-    "medianSalary": "₹13.50 LPA",
+    "highestSalary": "\u20b928.00 LPA",
+    "medianSalary": "\u20b913.50 LPA",
     "batchSize": 60,
     "roiScore": "9.5 / 10",
     "cutoffCAT": "80.0+ %ile",
@@ -54800,7 +54800,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹3,60,000"
+        "fee": "\u20b93,60,000"
       }
     ],
     "admissionCriteria": {
@@ -54814,7 +54814,7 @@ export const COLLEGES_DATA = [
       "100% Residential Hostels with High-Speed LAN",
       "State-of-the-Art Open Air Amphitheatre"
     ],
-    "highlights": "Ranked #85 by NIRF 2024. Autonomous central institute under Ministry of Education offering exceptional technology-management synthesis and ₹14.50 LPA average package.",
+    "highlights": "Ranked #85 by NIRF 2024. Autonomous central institute under Ministry of Education offering exceptional technology-management synthesis and \u20b914.50 LPA average package.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.iiitm.ac.in"
@@ -54829,12 +54829,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 105,
     "nirfRank": 89,
     "accreditation": "NAAC A++, UGC, AICTE",
-    "fees": "₹9.50 Lakhs",
+    "fees": "\u20b99.50 Lakhs",
     "feeNum": 9.5,
-    "avgSalary": "₹9.40 LPA",
+    "avgSalary": "\u20b99.40 LPA",
     "avgSalaryNum": 9.4,
-    "highestSalary": "₹21.00 LPA",
-    "medianSalary": "₹8.80 LPA",
+    "highestSalary": "\u20b921.00 LPA",
+    "medianSalary": "\u20b98.80 LPA",
     "batchSize": 120,
     "roiScore": "8.7 / 10",
     "cutoffCAT": "75.0+ %ile",
@@ -54843,13 +54843,13 @@ export const COLLEGES_DATA = [
         "name": "MBA in Energy and Infrastructure Management",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       },
       {
         "name": "MBA in General Management (Marketing/Finance/HR/Operations)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹9,50,000"
+        "fee": "\u20b99,50,000"
       }
     ],
     "admissionCriteria": {
@@ -54878,12 +54878,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 115,
     "nirfRank": 91,
     "accreditation": "AICTE, AIU, Established by Reserve Bank of India",
-    "fees": "₹16.00 Lakhs",
+    "fees": "\u20b916.00 Lakhs",
     "feeNum": 16,
-    "avgSalary": "₹15.22 LPA",
+    "avgSalary": "\u20b915.22 LPA",
     "avgSalaryNum": 15.22,
-    "highestSalary": "₹23.50 LPA",
-    "medianSalary": "₹15.00 LPA",
+    "highestSalary": "\u20b923.50 LPA",
+    "medianSalary": "\u20b915.00 LPA",
     "batchSize": 120,
     "roiScore": "9.2 / 10",
     "cutoffCAT": "80.0+ %ile",
@@ -54894,7 +54894,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management - Banking & Financial Services (PGDM B&FS)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹16,00,000"
+        "fee": "\u20b916,00,000"
       }
     ],
     "admissionCriteria": {
@@ -54908,7 +54908,7 @@ export const COLLEGES_DATA = [
       "Bloomberg and Financial Risk Modeling Labs",
       "100% Residential Air-conditioned Campus"
     ],
-    "highlights": "Ranked #91 by NIRF 2024. Established by Reserve Bank of India (RBI) and Public Sector Banks. 100% placements in marquee investment banking, private equity, fintech, and commercial banking with median CTC of ₹15.00 LPA.",
+    "highlights": "Ranked #91 by NIRF 2024. Established by Reserve Bank of India (RBI) and Public Sector Banks. 100% placements in marquee investment banking, private equity, fintech, and commercial banking with median CTC of \u20b915.00 LPA.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.nibmindia.org"
@@ -54923,12 +54923,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 190,
     "nirfRank": 92,
     "accreditation": "UGC, NAAC A++, AICTE",
-    "fees": "₹0.50 Lakhs",
+    "fees": "\u20b90.50 Lakhs",
     "feeNum": 0.5,
-    "avgSalary": "₹13.72 LPA",
+    "avgSalary": "\u20b913.72 LPA",
     "avgSalaryNum": 13.72,
-    "highestSalary": "₹58.48 LPA",
-    "medianSalary": "₹12.50 LPA",
+    "highestSalary": "\u20b958.48 LPA",
+    "medianSalary": "\u20b912.50 LPA",
     "batchSize": 160,
     "roiScore": "9.9 / 10",
     "cutoffCAT": "88.0+ %ile",
@@ -54937,19 +54937,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA General)",
         "duration": "2 Years Full Time",
         "seats": 75,
-        "fee": "₹50,000"
+        "fee": "\u20b950,000"
       },
       {
         "name": "MBA in International Business (MBA-IB)",
         "duration": "2 Years Full Time",
         "seats": 40,
-        "fee": "₹50,000"
+        "fee": "\u20b950,000"
       },
       {
         "name": "MBA in Human Resource Management (MBA-HR)",
         "duration": "2 Years Full Time",
         "seats": 45,
-        "fee": "₹50,000"
+        "fee": "\u20b950,000"
       }
     ],
     "admissionCriteria": {
@@ -54963,7 +54963,7 @@ export const COLLEGES_DATA = [
       "Air-conditioned Seminar Halls & Case Classrooms",
       "Heritage Campus with Sports and Cultural Facilities"
     ],
-    "highlights": "Ranked #92 in NIRF 2024 Management Ranking. Legendary high-ROI B-school in North India with tuition fee of only ₹50,000 and average CTC of ₹13.72 LPA.",
+    "highlights": "Ranked #92 in NIRF 2024 Management Ranking. Legendary high-ROI B-school in North India with tuition fee of only \u20b950,000 and average CTC of \u20b913.72 LPA.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://ubs.puchd.ac.in"
@@ -54978,12 +54978,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 95,
     "nirfRank": 96,
     "accreditation": "Ministry of Agriculture & Farmers Welfare, GoI, AICTE, AIU",
-    "fees": "₹8.50 Lakhs",
+    "fees": "\u20b98.50 Lakhs",
     "feeNum": 8.5,
-    "avgSalary": "₹12.16 LPA",
+    "avgSalary": "\u20b912.16 LPA",
     "avgSalaryNum": 12.16,
-    "highestSalary": "₹20.00 LPA",
-    "medianSalary": "₹11.80 LPA",
+    "highestSalary": "\u20b920.00 LPA",
+    "medianSalary": "\u20b911.80 LPA",
     "batchSize": 120,
     "roiScore": "9.3 / 10",
     "cutoffCAT": "80.0+ %ile",
@@ -54992,7 +54992,7 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management - Agribusiness Management (PGDM-ABM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       }
     ],
     "admissionCriteria": {
@@ -55021,12 +55021,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 145,
     "nirfRank": 97,
     "accreditation": "AACSB, SAQS, AICTE, NBA, AIU",
-    "fees": "₹15.00 Lakhs",
+    "fees": "\u20b915.00 Lakhs",
     "feeNum": 15,
-    "avgSalary": "₹12.00 LPA",
+    "avgSalary": "\u20b912.00 LPA",
     "avgSalaryNum": 12,
-    "highestSalary": "₹25.00 LPA",
-    "medianSalary": "₹11.50 LPA",
+    "highestSalary": "\u20b925.00 LPA",
+    "medianSalary": "\u20b911.50 LPA",
     "batchSize": 240,
     "roiScore": "8.5 / 10",
     "cutoffCAT": "75.0+ %ile",
@@ -55037,19 +55037,19 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹15,00,000"
+        "fee": "\u20b915,00,000"
       },
       {
         "name": "PGDM in Marketing",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹15,00,000"
+        "fee": "\u20b915,00,000"
       },
       {
         "name": "PGDM in Financial Management",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹15,00,000"
+        "fee": "\u20b915,00,000"
       }
     ],
     "admissionCriteria": {
@@ -55063,7 +55063,7 @@ export const COLLEGES_DATA = [
       "Modern Amphitheatre Classrooms",
       "Executive Residential Hostels & Sports Ground"
     ],
-    "highlights": "Ranked #97 in NIRF 2024 Management Ranking. Holds elite AACSB accreditation and delivers average package of ₹12.00 LPA.",
+    "highlights": "Ranked #97 in NIRF 2024 Management Ranking. Holds elite AACSB accreditation and delivers average package of \u20b912.00 LPA.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.imthyderabad.edu.in"
@@ -55078,12 +55078,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 80,
     "nirfRank": 100,
     "accreditation": "Institute of National Importance (INI)",
-    "fees": "₹2.20 Lakhs",
+    "fees": "\u20b92.20 Lakhs",
     "feeNum": 2.2,
-    "avgSalary": "₹8.50 LPA",
+    "avgSalary": "\u20b98.50 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹15.00 LPA",
-    "medianSalary": "₹8.00 LPA",
+    "highestSalary": "\u20b915.00 LPA",
+    "medianSalary": "\u20b98.00 LPA",
     "batchSize": 60,
     "roiScore": "9.5 / 10",
     "cutoffCAT": "75.0+ %ile",
@@ -55092,7 +55092,7 @@ export const COLLEGES_DATA = [
         "name": "Master of Business Administration (MBA)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹2,20,000"
+        "fee": "\u20b92,20,000"
       }
     ],
     "admissionCriteria": {
@@ -55106,7 +55106,7 @@ export const COLLEGES_DATA = [
       "Central Library with 1.8 Lakh Volumes",
       "Hostel, Gymnasium and Sports Complex"
     ],
-    "highlights": "Ranked #100 in NIRF 2024 Management Ranking. Superb Return on Investment with tuition fees of ₹2.20 Lakhs and strong tech-corporate recruiter base.",
+    "highlights": "Ranked #100 in NIRF 2024 Management Ranking. Superb Return on Investment with tuition fees of \u20b92.20 Lakhs and strong tech-corporate recruiter base.",
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.nitw.ac.in/department/som"
@@ -55121,12 +55121,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 165,
     "nirfRank": null,
     "accreditation": "AICTE, NBA, Affiliated to University of Mumbai",
-    "fees": "₹4.80 Lakhs",
+    "fees": "\u20b94.80 Lakhs",
     "feeNum": 4.8,
-    "avgSalary": "₹8.50 LPA",
+    "avgSalary": "\u20b98.50 LPA",
     "avgSalaryNum": 8.5,
-    "highestSalary": "₹15.50 LPA",
-    "medianSalary": "₹8.00 LPA",
+    "highestSalary": "\u20b915.50 LPA",
+    "medianSalary": "\u20b98.00 LPA",
     "batchSize": 180,
     "roiScore": "8.9 / 10",
     "cutoffCET": "98.5+ %ile",
@@ -55136,13 +55136,13 @@ export const COLLEGES_DATA = [
         "name": "Master of Management Studies (MMS - Mumbai University)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,80,000"
+        "fee": "\u20b94,80,000"
       },
       {
         "name": "Post Graduate Diploma in Management (PGDM e-Business)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹10,50,000"
+        "fee": "\u20b910,50,000"
       }
     ],
     "admissionCriteria": {
@@ -55171,12 +55171,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 155,
     "nirfRank": null,
     "accreditation": "AICTE, NBA, Affiliated to University of Mumbai",
-    "fees": "₹4.60 Lakhs",
+    "fees": "\u20b94.60 Lakhs",
     "feeNum": 4.6,
-    "avgSalary": "₹8.25 LPA",
+    "avgSalary": "\u20b98.25 LPA",
     "avgSalaryNum": 8.25,
-    "highestSalary": "₹15.00 LPA",
-    "medianSalary": "₹7.80 LPA",
+    "highestSalary": "\u20b915.00 LPA",
+    "medianSalary": "\u20b97.80 LPA",
     "batchSize": 240,
     "roiScore": "8.8 / 10",
     "cutoffCET": "98.0+ %ile",
@@ -55186,19 +55186,19 @@ export const COLLEGES_DATA = [
         "name": "Master of Management Studies (MMS - CRKIMR)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹4,60,000"
+        "fee": "\u20b94,60,000"
       },
       {
         "name": "Post Graduate Diploma in Management (PGDM General - CIMR)",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       },
       {
         "name": "PGDM in Marketing",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹8,50,000"
+        "fee": "\u20b98,50,000"
       }
     ],
     "admissionCriteria": {
@@ -55227,12 +55227,12 @@ export const COLLEGES_DATA = [
     "reviewsCount": 135,
     "nirfRank": null,
     "accreditation": "AICTE, NBA, AIU",
-    "fees": "₹9.00 Lakhs",
+    "fees": "\u20b99.00 Lakhs",
     "feeNum": 9,
-    "avgSalary": "₹8.00 LPA",
+    "avgSalary": "\u20b98.00 LPA",
     "avgSalaryNum": 8,
-    "highestSalary": "₹14.00 LPA",
-    "medianSalary": "₹7.50 LPA",
+    "highestSalary": "\u20b914.00 LPA",
+    "medianSalary": "\u20b97.50 LPA",
     "batchSize": 180,
     "roiScore": "8.6 / 10",
     "cutoffCAT": "75.0+ %ile",
@@ -55243,13 +55243,13 @@ export const COLLEGES_DATA = [
         "name": "Post Graduate Diploma in Management (PGDM)",
         "duration": "2 Years Full Time",
         "seats": 120,
-        "fee": "₹9,00,000"
+        "fee": "\u20b99,00,000"
       },
       {
         "name": "PGDM in Pharmaceutical & Healthcare Management",
         "duration": "2 Years Full Time",
         "seats": 60,
-        "fee": "₹9,00,000"
+        "fee": "\u20b99,00,000"
       }
     ],
     "admissionCriteria": {
@@ -55267,5 +55267,910 @@ export const COLLEGES_DATA = [
     "admissionSession": "2027-2029",
     "placementSession": "2025-2026 (Audited)",
     "officialWebsite": "https://www.ies.edu/management/"
+  },
+  {
+    "id": "iba-bangalore",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "Indus Business Academy (IBA), Bangalore",
+    "shortName": "IBA Bangalore",
+    "location": "Kanakapura Road, Bangalore, Karnataka",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "nirfRank": 65,
+    "rating": 4.3,
+    "reviewsCount": 88,
+    "programType": "PGDM (AIU Equivalent to MBA)",
+    "ownership": "Private Autonomous",
+    "establishedYear": 2001,
+    "campusArea": "8.5 Acres",
+    "accreditation": "AICTE, AIU Equivalence, IACBE (USA)",
+    "fees": "\u20b99.78 Lakhs",
+    "feeNum": 9.78,
+    "avgSalary": "\u20b97.80 LPA",
+    "avgSalaryNum": 7.8,
+    "highestSalary": "\u20b920.0 LPA",
+    "medianSalary": "\u20b97.40 LPA",
+    "batchSize": 180,
+    "roiScore": "8.2 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAT",
+      "ATMA",
+      "GMAT"
+    ],
+    "cutoffCAT": "65+ %ile",
+    "cutoffXAT": "65+ %ile",
+    "cutoffCMAT": "75+ %ile",
+    "cutoffDetails": {
+      "general": "65+ %ile CAT/XAT, 75+ %ile CMAT"
+    },
+    "topRecruiters": [
+      "Deloitte",
+      "PwC",
+      "KPMG",
+      "ICICI Bank",
+      "Federal Bank",
+      "Nestle",
+      "Bata"
+    ],
+    "domainDistribution": {
+      "marketing": "36%",
+      "finance": "32%",
+      "hr": "14%",
+      "operations": "18%"
+    },
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fees": "\u20b99.78 Lakhs"
+      }
+    ],
+    "description": "Indus Business Academy (IBA) Bangalore is internationally accredited by IACBE (USA) and recognized by AIU for MBA equivalence. Ranked among top 1% B-schools in India with dedicated residential campus."
+  },
+  {
+    "id": "iihmr-bangalore",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "Institute of Health Management Research (IIHMR), Bangalore",
+    "shortName": "IIHMR Bangalore",
+    "location": "Electronic City, Bangalore, Karnataka",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "nirfRank": 82,
+    "rating": 4.2,
+    "reviewsCount": 64,
+    "programType": "PGDM (Health & Hospital Management - AIU Equivalent)",
+    "ownership": "Private Autonomous",
+    "establishedYear": 2004,
+    "campusArea": "3 Acres",
+    "accreditation": "AICTE, AIU Equivalence, NBA, NABH Academic Partner",
+    "fees": "\u20b99.0 Lakhs",
+    "feeNum": 9.0,
+    "avgSalary": "\u20b97.20 LPA",
+    "avgSalaryNum": 7.2,
+    "highestSalary": "\u20b916.0 LPA",
+    "medianSalary": "\u20b96.80 LPA",
+    "batchSize": 120,
+    "roiScore": "8.0 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAT",
+      "ATMA"
+    ],
+    "cutoffCAT": "55+ %ile",
+    "cutoffXAT": "55+ %ile",
+    "cutoffCMAT": "65+ %ile",
+    "cutoffDetails": {
+      "general": "55+ %ile CAT, 65+ %ile CMAT"
+    },
+    "topRecruiters": [
+      "Apollo Hospitals",
+      "Fortis Healthcare",
+      "Manipal Hospitals",
+      "Max Healthcare",
+      "GE Healthcare",
+      "Philips Health"
+    ],
+    "domainDistribution": {
+      "hospitalMgmt": "45%",
+      "healthIT": "30%",
+      "pharmaConsulting": "25%"
+    },
+    "courses": [
+      {
+        "name": "PGDM - Hospital and Health Management",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fees": "\u20b99.0 Lakhs"
+      }
+    ],
+    "description": "IIHMR Bangalore is South India\u2019s premier institute for Healthcare, Hospital and Health Information Technology management with official AIU MBA degree equivalence."
+  },
+  {
+    "id": "iibs-bangalore",
+    "degreeTypes": [
+      "PGDM",
+      "MBA"
+    ],
+    "name": "International Institute of Business Studies (IIBS), Bangalore",
+    "shortName": "IIBS Bangalore",
+    "location": "Bangalore North, Karnataka",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "nirfRank": 95,
+    "rating": 4.1,
+    "reviewsCount": 112,
+    "programType": "PGDM / MBA (AIU Equivalent to MBA)",
+    "ownership": "Private Autonomous",
+    "establishedYear": 2001,
+    "campusArea": "5 Acres",
+    "accreditation": "AICTE, AIU Equivalence, NAAC Accredited",
+    "fees": "\u20b99.0 Lakhs",
+    "feeNum": 9.0,
+    "avgSalary": "\u20b96.80 LPA",
+    "avgSalaryNum": 6.8,
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b96.20 LPA",
+    "batchSize": 240,
+    "roiScore": "7.9 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAT",
+      "ATMA"
+    ],
+    "cutoffCAT": "60+ %ile",
+    "cutoffXAT": "60+ %ile",
+    "cutoffCMAT": "65+ %ile",
+    "cutoffDetails": {
+      "general": "60+ %ile CAT/XAT, 65+ %ile CMAT"
+    },
+    "topRecruiters": [
+      "Infosys",
+      "Wipro",
+      "Accenture",
+      "TCS",
+      "ICICI Securities",
+      "Axis Bank"
+    ],
+    "domainDistribution": {
+      "marketing": "40%",
+      "finance": "30%",
+      "hr": "15%",
+      "businessAnalytics": "15%"
+    },
+    "courses": [
+      {
+        "name": "PGDM Dual Specialization",
+        "duration": "2 Years Full Time",
+        "seats": 240,
+        "fees": "\u20b99.0 Lakhs"
+      }
+    ],
+    "description": "IIBS Bangalore offers industry-aligned dual specialization PGDM programs with international study tour options and official AIU recognition."
+  },
+  {
+    "id": "iipm-bangalore",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "Indian Institute of Plantation Management (IIPM), Bangalore",
+    "shortName": "IIPM Bangalore",
+    "location": "Jnana Bharathi Campus, Malathalli, Bangalore",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "nirfRank": 78,
+    "rating": 4.3,
+    "reviewsCount": 52,
+    "programType": "PGDM (Agribusiness & Plantation - AIU Equivalent)",
+    "ownership": "Autonomous Institute founded by Ministry of Commerce & Industry, Govt of India",
+    "establishedYear": 1993,
+    "campusArea": "10 Acres",
+    "accreditation": "AICTE, AIU Equivalence, NBA Accredited",
+    "fees": "\u20b97.50 Lakhs",
+    "feeNum": 7.5,
+    "avgSalary": "\u20b98.20 LPA",
+    "avgSalaryNum": 8.2,
+    "highestSalary": "\u20b917.0 LPA",
+    "medianSalary": "\u20b97.80 LPA",
+    "batchSize": 120,
+    "roiScore": "8.9 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAT",
+      "ATMA"
+    ],
+    "cutoffCAT": "60+ %ile",
+    "cutoffXAT": "60+ %ile",
+    "cutoffCMAT": "70+ %ile",
+    "cutoffDetails": {
+      "general": "60+ %ile CAT/XAT, 70+ %ile CMAT"
+    },
+    "topRecruiters": [
+      "ITC Agri",
+      "Olam International",
+      "Godrej Agrovet",
+      "Tata Consumer Products",
+      "Bayer CropScience",
+      "UPL"
+    ],
+    "domainDistribution": {
+      "agriCommodity": "35%",
+      "supplyChain": "25%",
+      "foodProcessing": "25%",
+      "ruralBanking": "15%"
+    },
+    "courses": [
+      {
+        "name": "PGDM - Agribusiness & Plantation Management (ABPM)",
+        "duration": "2 Years Full Time",
+        "seats": 90,
+        "fees": "\u20b97.50 Lakhs"
+      },
+      {
+        "name": "PGDM - Food Processing & Business Management (FPBM)",
+        "duration": "2 Years Full Time",
+        "seats": 30,
+        "fees": "\u20b97.50 Lakhs"
+      }
+    ],
+    "description": "Autonomous sectoral business school setup by the Ministry of Commerce & Industry, Government of India. Highly sought-after recruiters in global commodities and FMCG agri-processing with AIU MBA equivalence."
+  },
+  {
+    "id": "praxis-kolkata",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "Praxis Business School, Kolkata",
+    "shortName": "Praxis Kolkata",
+    "location": "Bakrahat Road, Rasapunja, Kolkata, West Bengal",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "nirfRank": 74,
+    "rating": 4.4,
+    "reviewsCount": 76,
+    "programType": "PGDM (Business Analytics & Management - AIU Equivalent)",
+    "ownership": "Private Autonomous",
+    "establishedYear": 2007,
+    "campusArea": "9 Acres",
+    "accreditation": "AICTE, AIU Equivalence (June 2024\u20132027)",
+    "fees": "\u20b910.50 Lakhs",
+    "feeNum": 10.5,
+    "avgSalary": "\u20b99.40 LPA",
+    "avgSalaryNum": 9.4,
+    "highestSalary": "\u20b919.5 LPA",
+    "medianSalary": "\u20b98.80 LPA",
+    "batchSize": 120,
+    "roiScore": "8.6 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAT",
+      "ATMA",
+      "GMAT"
+    ],
+    "cutoffCAT": "70+ %ile",
+    "cutoffXAT": "70+ %ile",
+    "cutoffCMAT": "80+ %ile",
+    "cutoffDetails": {
+      "general": "70+ %ile CAT/XAT, 80+ %ile CMAT"
+    },
+    "topRecruiters": [
+      "PwC",
+      "EY",
+      "Fractal Analytics",
+      "Mu Sigma",
+      "Wells Fargo",
+      "Tata Steel",
+      "ICICI Bank"
+    ],
+    "domainDistribution": {
+      "analyticsDataScience": "42%",
+      "financeConsulting": "28%",
+      "marketingTech": "20%",
+      "operations": "10%"
+    },
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fees": "\u20b910.50 Lakhs"
+      }
+    ],
+    "description": "Praxis Business School is a pioneer in digital leadership, business analytics and modern enterprise management in Eastern India with official AIU MBA equivalence."
+  },
+  {
+    "id": "globsyn-kolkata",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "Globsyn Business School (GBS), Kolkata",
+    "shortName": "Globsyn Kolkata",
+    "location": "Amtala, South 24 Parganas, Kolkata, West Bengal",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "nirfRank": 86,
+    "rating": 4.2,
+    "reviewsCount": 94,
+    "programType": "PGDM (AIU Equivalent to MBA)",
+    "ownership": "Private Autonomous",
+    "establishedYear": 2002,
+    "campusArea": "8 Acres",
+    "accreditation": "AICTE, AIU Equivalence, NBA Accredited",
+    "fees": "\u20b99.40 Lakhs",
+    "feeNum": 9.4,
+    "avgSalary": "\u20b97.50 LPA",
+    "avgSalaryNum": 7.5,
+    "highestSalary": "\u20b918.3 LPA",
+    "medianSalary": "\u20b97.00 LPA",
+    "batchSize": 180,
+    "roiScore": "8.1 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "MAT",
+      "CMAT",
+      "ATMA",
+      "JEMAT"
+    ],
+    "cutoffCAT": "60+ %ile",
+    "cutoffXAT": "60+ %ile",
+    "cutoffCMAT": "70+ %ile",
+    "cutoffDetails": {
+      "general": "60+ %ile CAT/XAT, 70+ %ile CMAT"
+    },
+    "topRecruiters": [
+      "KPMG",
+      "Deloitte",
+      "PwC",
+      "Tata Consumer",
+      "Vodafone Idea",
+      "Federal Bank",
+      "Amazon"
+    ],
+    "domainDistribution": {
+      "marketing": "38%",
+      "finance": "30%",
+      "hr": "15%",
+      "analytics": "17%"
+    },
+    "courses": [
+      {
+        "name": "PGDM (Dual Specialization)",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fees": "\u20b99.40 Lakhs"
+      }
+    ],
+    "description": "Globsyn Business School is one of Eastern India\u2019s top corporate-backed business schools blending experiential learning with AIU MBA equivalence."
+  },
+  {
+    "id": "iihmr-jaipur",
+    "degreeTypes": [
+      "MBA",
+      "PGDM"
+    ],
+    "name": "IIHMR University, Jaipur",
+    "shortName": "IIHMR Jaipur",
+    "location": "Sanganer Airport, Jaipur, Rajasthan",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "nirfRank": 58,
+    "rating": 4.4,
+    "reviewsCount": 105,
+    "programType": "MBA / PGDM (Health & Hospital Management - AIU Equivalent)",
+    "ownership": "State Private University / Post-Autonomous AIU Heritage",
+    "establishedYear": 1984,
+    "campusArea": "14 Acres",
+    "accreditation": "AICTE, AIU Equivalence, UGC Recognized, NAAC 'A'",
+    "fees": "\u20b910.50 Lakhs",
+    "feeNum": 10.5,
+    "avgSalary": "\u20b98.80 LPA",
+    "avgSalaryNum": 8.8,
+    "highestSalary": "\u20b921.0 LPA",
+    "medianSalary": "\u20b98.20 LPA",
+    "batchSize": 240,
+    "roiScore": "8.5 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAT",
+      "ATMA",
+      "GPAT"
+    ],
+    "cutoffCAT": "65+ %ile",
+    "cutoffXAT": "65+ %ile",
+    "cutoffCMAT": "75+ %ile",
+    "cutoffDetails": {
+      "general": "65+ %ile CAT/XAT, 75+ %ile CMAT"
+    },
+    "topRecruiters": [
+      "WHO",
+      "UNICEF",
+      "Apollo Hospitals",
+      "Max Healthcare",
+      "Fortis",
+      "Novartis",
+      "IQVIA"
+    ],
+    "domainDistribution": {
+      "hospitalMgmt": "40%",
+      "publicHealth": "25%",
+      "pharmaHealthIT": "35%"
+    },
+    "courses": [
+      {
+        "name": "MBA Hospital and Health Management",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fees": "\u20b910.50 Lakhs"
+      },
+      {
+        "name": "MBA Pharmaceutical Management",
+        "duration": "2 Years Full Time",
+        "seats": 60,
+        "fees": "\u20b99.50 Lakhs"
+      }
+    ],
+    "description": "IIHMR University Jaipur is India\u2019s foremost pioneer in Healthcare and Hospital Management education, cited under AIU S.No 46 with decades of academic prestige."
+  },
+  {
+    "id": "iirm-jaipur",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "Institute of Rural Management (FMS-IRM), Jaipur",
+    "shortName": "IRM Jaipur",
+    "location": "Tagore Marg, Mansarovar, Jaipur, Rajasthan",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "nirfRank": 88,
+    "rating": 4.1,
+    "reviewsCount": 68,
+    "programType": "PGDM (Rural & General Management - AIU Equivalent)",
+    "ownership": "Private Autonomous",
+    "establishedYear": 1994,
+    "campusArea": "6 Acres",
+    "accreditation": "AICTE, AIU Equivalence (S.No 60), NBA Accredited",
+    "fees": "\u20b97.20 Lakhs",
+    "feeNum": 7.2,
+    "avgSalary": "\u20b96.90 LPA",
+    "avgSalaryNum": 6.9,
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.50 LPA",
+    "batchSize": 120,
+    "roiScore": "8.7 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAT",
+      "ATMA"
+    ],
+    "cutoffCAT": "55+ %ile",
+    "cutoffXAT": "55+ %ile",
+    "cutoffCMAT": "65+ %ile",
+    "cutoffDetails": {
+      "general": "55+ %ile CAT/XAT, 65+ %ile CMAT"
+    },
+    "topRecruiters": [
+      "Amul",
+      "ITC Agri",
+      "HDFC Bank",
+      "Svatantra Microfinance",
+      "DCM Shriram",
+      "Mother Dairy"
+    ],
+    "domainDistribution": {
+      "agriRuralBanking": "40%",
+      "fmcgDistribution": "30%",
+      "financeMicrofin": "30%"
+    },
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fees": "\u20b97.20 Lakhs"
+      }
+    ],
+    "description": "FMS-IRM Jaipur is Rajasthan\u2019s dedicated rural and business management institution recognized by AIU with strong placements across banking and agribusiness sectors."
+  },
+  {
+    "id": "nia-pune",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "National Insurance Academy (NIA), Pune",
+    "shortName": "NIA Pune",
+    "location": "Balewadi, Pune, Maharashtra",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "nirfRank": 45,
+    "rating": 4.6,
+    "reviewsCount": 92,
+    "programType": "PGDM (Insurance & Risk Management - AIU Equivalent)",
+    "ownership": "Autonomous Institute founded by Ministry of Finance, Govt of India & Public Insurers (LIC, GIC)",
+    "establishedYear": 1980,
+    "campusArea": "32 Acres",
+    "accreditation": "AICTE, AIU Equivalence (S.No 93, Valid till 2027), NBA Accredited",
+    "fees": "\u20b910.50 Lakhs",
+    "feeNum": 10.5,
+    "avgSalary": "\u20b912.80 LPA",
+    "avgSalaryNum": 12.8,
+    "highestSalary": "\u20b927.0 LPA",
+    "medianSalary": "\u20b912.00 LPA",
+    "batchSize": 180,
+    "roiScore": "9.2 / 10",
+    "examsAccepted": [
+      "CAT",
+      "CMAT"
+    ],
+    "cutoffCAT": "75+ %ile",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "85+ %ile",
+    "cutoffDetails": {
+      "general": "75+ %ile CAT, 85+ %ile CMAT"
+    },
+    "topRecruiters": [
+      "Swiss Re",
+      "Munich Re",
+      "Marsh McLennan",
+      "ICICI Lombard",
+      "HDFC ERGO",
+      "Bajaj Allianz",
+      "Cognizant InsurTech",
+      "TCS"
+    ],
+    "domainDistribution": {
+      "reinsuranceUnderwriting": "35%",
+      "insurTechConsulting": "30%",
+      "riskAnalytics": "20%",
+      "claimsActuarial": "15%"
+    },
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fees": "\u20b910.50 Lakhs"
+      }
+    ],
+    "description": "National Insurance Academy (NIA) is the apex management institution in Asia for insurance and risk management setup under Ministry of Finance with 100% placements and official AIU equivalence."
+  },
+  {
+    "id": "kirloskar-pune",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "Kirloskar Institute of Management (KIM), Pune",
+    "shortName": "KIM Pune",
+    "location": "Near Talegaon, Pune, Maharashtra",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "nirfRank": 80,
+    "rating": 4.3,
+    "reviewsCount": 72,
+    "programType": "PGDM (AIU Equivalent to MBA - S.No 84)",
+    "ownership": "Private Autonomous (Kirloskar Group)",
+    "establishedYear": 1991,
+    "campusArea": "12 Acres",
+    "accreditation": "AICTE, AIU Equivalence (01-01-2026 \u2013 31-12-2028), AACSB Member",
+    "fees": "\u20b911.50 Lakhs",
+    "feeNum": 11.5,
+    "avgSalary": "\u20b98.50 LPA",
+    "avgSalaryNum": 8.5,
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b98.00 LPA",
+    "batchSize": 180,
+    "roiScore": "8.2 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAT",
+      "GMAT",
+      "MH-CET"
+    ],
+    "cutoffCAT": "65+ %ile",
+    "cutoffXAT": "65+ %ile",
+    "cutoffCMAT": "75+ %ile",
+    "cutoffDetails": {
+      "general": "65+ %ile CAT/XAT, 75+ %ile CMAT"
+    },
+    "topRecruiters": [
+      "Kirloskar Group",
+      "KPMG",
+      "Accenture",
+      "PwC",
+      "Federal Bank",
+      "Marico",
+      "Capgemini"
+    ],
+    "domainDistribution": {
+      "marketing": "35%",
+      "operationsManufacturing": "30%",
+      "finance": "25%",
+      "analytics": "10%"
+    },
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fees": "\u20b911.50 Lakhs"
+      }
+    ],
+    "description": "Founded by the industrial conglomerate Kirloskar Group, KIM Pune delivers world-class industry exposure, manufacturing excellence, and official AIU MBA equivalence."
+  },
+  {
+    "id": "imdr-pune",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "Institute of Management Development and Research (IMDR), Pune",
+    "shortName": "IMDR Pune",
+    "location": "Deccan Gymkhana, Pune, Maharashtra",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "nirfRank": 85,
+    "rating": 4.2,
+    "reviewsCount": 81,
+    "programType": "PGDM (AIU Equivalent to MBA - S.No 75)",
+    "ownership": "Deccan Education Society (DES)",
+    "establishedYear": 1974,
+    "campusArea": "5 Acres",
+    "accreditation": "AICTE, AIU Equivalence (Valid till 30.06.2026), NBA Accredited",
+    "fees": "\u20b96.50 Lakhs",
+    "feeNum": 6.5,
+    "avgSalary": "\u20b97.20 LPA",
+    "avgSalaryNum": 7.2,
+    "highestSalary": "\u20b915.5 LPA",
+    "medianSalary": "\u20b96.80 LPA",
+    "batchSize": 180,
+    "roiScore": "9.1 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAT",
+      "ATMA",
+      "MH-CET"
+    ],
+    "cutoffCAT": "65+ %ile",
+    "cutoffXAT": "65+ %ile",
+    "cutoffCMAT": "75+ %ile",
+    "cutoffDetails": {
+      "general": "65+ %ile CAT/XAT, 75+ %ile CMAT/MH-CET"
+    },
+    "topRecruiters": [
+      "Tata Consultancy Services",
+      "ICICI Securities",
+      "HDFC Bank",
+      "Infosys",
+      "Tech Mahindra",
+      "Kirloskar"
+    ],
+    "domainDistribution": {
+      "finance": "35%",
+      "marketing": "35%",
+      "hr": "15%",
+      "supplyChain": "15%"
+    },
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fees": "\u20b96.50 Lakhs"
+      }
+    ],
+    "description": "IMDR Pune is Pune\u2019s oldest management institution established in 1974 by the historic Deccan Education Society. Superb ROI with moderate fees and AIU MBA equivalence."
+  },
+  {
+    "id": "vamnicom-pune",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "Vaikunth Mehta National Institute of Cooperative Management (VAMNICOM), Pune",
+    "shortName": "VAMNICOM Pune",
+    "location": "Ganeshkhind Road, Pune, Maharashtra",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "nirfRank": 70,
+    "rating": 4.4,
+    "reviewsCount": 63,
+    "programType": "PGDM - Agri Business Management (AIU Equivalent - S.No 114)",
+    "ownership": "Autonomous Institute under Ministry of Cooperation, Govt of India",
+    "establishedYear": 1967,
+    "campusArea": "15 Acres",
+    "accreditation": "AICTE, AIU Equivalence (Valid till 30.06.2025), NBA Accredited",
+    "fees": "\u20b94.50 Lakhs",
+    "feeNum": 4.5,
+    "avgSalary": "\u20b98.60 LPA",
+    "avgSalaryNum": 8.6,
+    "highestSalary": "\u20b918.0 LPA",
+    "medianSalary": "\u20b98.20 LPA",
+    "batchSize": 90,
+    "roiScore": "9.6 / 10",
+    "examsAccepted": [
+      "CAT",
+      "CMAT",
+      "MAT",
+      "ATMA"
+    ],
+    "cutoffCAT": "60+ %ile",
+    "cutoffXAT": "N/A",
+    "cutoffCMAT": "70+ %ile",
+    "cutoffDetails": {
+      "general": "60+ %ile CAT, 70+ %ile CMAT"
+    },
+    "topRecruiters": [
+      "IFFCO",
+      "KRIBHCO",
+      "Amul (GCMMF)",
+      "NABARD",
+      "Samunnati",
+      "National Cooperative Development Corp",
+      "Bayer"
+    ],
+    "domainDistribution": {
+      "agriCooperative": "40%",
+      "ruralFinance": "30%",
+      "supplyChainFMCG": "30%"
+    },
+    "courses": [
+      {
+        "name": "PGDM - Agri-Business Management (ABM)",
+        "duration": "2 Years Full Time",
+        "seats": 90,
+        "fees": "\u20b94.50 Lakhs"
+      }
+    ],
+    "description": "Apex national institution under the Ministry of Cooperation, Govt of India. High ROI with subsidized tuition of \u20b94.5L and average CTC exceeding \u20b98.6 LPA."
+  },
+  {
+    "id": "kohinoor-mumbai",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "Kohinoor Management School (KMS), Mumbai",
+    "shortName": "KMS Mumbai",
+    "location": "Kohinoor City, Kurla West, Mumbai, Maharashtra",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "nirfRank": 90,
+    "rating": 4.1,
+    "reviewsCount": 58,
+    "programType": "PGDM (AIU Equivalent to MBA - S.No 86)",
+    "ownership": "Private Autonomous",
+    "establishedYear": 2010,
+    "campusArea": "4 Acres",
+    "accreditation": "AICTE, AIU Equivalence (07.03.2024 \u2013 07.03.2027)",
+    "fees": "\u20b97.50 Lakhs",
+    "feeNum": 7.5,
+    "avgSalary": "\u20b96.80 LPA",
+    "avgSalaryNum": 6.8,
+    "highestSalary": "\u20b915.0 LPA",
+    "medianSalary": "\u20b96.40 LPA",
+    "batchSize": 120,
+    "roiScore": "8.0 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAT",
+      "ATMA",
+      "MH-CET"
+    ],
+    "cutoffCAT": "60+ %ile",
+    "cutoffXAT": "60+ %ile",
+    "cutoffCMAT": "70+ %ile",
+    "cutoffDetails": {
+      "general": "60+ %ile CAT/XAT, 70+ %ile CMAT/MH-CET"
+    },
+    "topRecruiters": [
+      "Kotak Mahindra Bank",
+      "Capgemini",
+      "Morningstar",
+      "HDFC Bank",
+      "ITC",
+      "L&T Infotech"
+    ],
+    "domainDistribution": {
+      "finance": "40%",
+      "marketing": "35%",
+      "hr": "15%",
+      "operations": "10%"
+    },
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 120,
+        "fees": "\u20b97.50 Lakhs"
+      }
+    ],
+    "description": "Kohinoor Management School (KMS) located in Kohinoor City Kurla, Mumbai offers modern corporate connectivity and newly awarded AIU MBA equivalence."
+  },
+  {
+    "id": "niet-greater-noida",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "NIET Business School, Greater Noida",
+    "shortName": "NIET Greater Noida",
+    "location": "Knowledge Park II, Greater Noida, Uttar Pradesh",
+    "city": "Greater Noida",
+    "state": "Uttar Pradesh",
+    "nirfRank": 84,
+    "rating": 4.2,
+    "reviewsCount": 97,
+    "programType": "PGDM (AIU Equivalent to MBA - S.No 98)",
+    "ownership": "Private Autonomous",
+    "establishedYear": 2001,
+    "campusArea": "14 Acres",
+    "accreditation": "AICTE, AIU Equivalence (01.07.2023 \u2013 30.06.2026), NBA Accredited",
+    "fees": "\u20b97.50 Lakhs",
+    "feeNum": 7.5,
+    "avgSalary": "\u20b97.20 LPA",
+    "avgSalaryNum": 7.2,
+    "highestSalary": "\u20b919.0 LPA",
+    "medianSalary": "\u20b96.80 LPA",
+    "batchSize": 180,
+    "roiScore": "8.4 / 10",
+    "examsAccepted": [
+      "CAT",
+      "XAT",
+      "CMAT",
+      "MAT",
+      "ATMA",
+      "CUET-PG"
+    ],
+    "cutoffCAT": "60+ %ile",
+    "cutoffXAT": "60+ %ile",
+    "cutoffCMAT": "70+ %ile",
+    "cutoffDetails": {
+      "general": "60+ %ile CAT/XAT, 70+ %ile CMAT"
+    },
+    "topRecruiters": [
+      "Amazon",
+      "Microsoft (Support)",
+      "Wipro",
+      "TCS",
+      "ICICI Bank",
+      "Berger Paints",
+      "Jaro Education"
+    ],
+    "domainDistribution": {
+      "marketing": "38%",
+      "finance": "32%",
+      "analyticsTech": "20%",
+      "hr": "10%"
+    },
+    "courses": [
+      {
+        "name": "Post Graduate Diploma in Management (PGDM)",
+        "duration": "2 Years Full Time",
+        "seats": 180,
+        "fees": "\u20b97.50 Lakhs"
+      }
+    ],
+    "description": "NIET Business School located in Knowledge Park II Greater Noida holds AICTE autonomous status, NBA accreditation, and official AIU Equivalence."
   }
 ];

@@ -30,6 +30,8 @@ import { renderPrivacyPage } from './pages/privacy.js';
 import { renderMockTestPage, initMockTestEvents } from './pages/mockTest.js';
 import { renderScholarshipsPage, initScholarshipsInteractions } from './pages/scholarships.js';
 import './scholarships.css';
+import { renderAiuApprovedPage, initAiuCampusesEvents } from './pages/aiuApprovedCampuses.js';
+import './aiuApprovedCampuses.css';
 import { updatePageSEO } from './utils/seoHelper.js';
 import { renderChatBotWidget, initChatBot, openChatBot } from './components/chatBot.js';
 import { renderInquiryModal, initInquiryModal, openInquiryModal } from './components/inquiryModal.js';
@@ -173,7 +175,7 @@ function handleRouteChange() {
         window.history.replaceState(null, '', `/programs/${encodeURIComponent(pSub.toLowerCase())}`);
         pathname = `/programs/${encodeURIComponent(pSub.toLowerCase())}`;
       }
-    } else if (['colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat', 'terms', 'privacy', 'mock-test', 'free-mock-test', 'scholarships', 'scholarship'].includes(hash.split('?')[0])) {
+    } else if (['colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat', 'terms', 'privacy', 'mock-test', 'free-mock-test', 'scholarships', 'scholarship', 'aiu-approved-campuses', 'aiu-approved-colleges'].includes(hash.split('?')[0])) {
       const cleanPath = '/' + hash.split('?')[0];
       const q = hash.includes('?') ? '?' + hash.split('?')[1] : '';
       window.history.replaceState(null, '', cleanPath + q);
@@ -217,6 +219,8 @@ function handleRouteChange() {
     page = 'tools';
     sub = 'cmat';
   } else if (pathname === '/tools') {
+    window.history.replaceState(null, '', '/tools/cat-college-predictor');
+    pathname = '/tools/cat-college-predictor';
     page = 'tools';
     sub = 'cat';
   } else if (pathname.startsWith('/colleges/city/')) {
@@ -249,7 +253,7 @@ function handleRouteChange() {
     sub = decodeURIComponent(pathname.replace('/programs/', '').trim());
   } else if (pathname === '/programs') {
     page = 'programs';
-    sub = 'mba';
+    sub = null;
   } else if (pathname.startsWith('/blog/')) {
     page = 'blog';
     sub = decodeURIComponent(pathname.replace('/blog/', '').trim());
@@ -279,6 +283,15 @@ function handleRouteChange() {
   } else if (pathname.startsWith('/scholarships/')) {
     page = 'scholarships';
     sub = decodeURIComponent(pathname.replace('/scholarships/', '').trim());
+  } else if (pathname === '/aiu-approved-campuses' || pathname === '/aiu-approved-colleges') {
+    page = 'aiu-approved-campuses';
+    sub = null;
+  } else if (pathname.startsWith('/aiu-approved-campuses/')) {
+    page = 'aiu-approved-campuses';
+    sub = decodeURIComponent(pathname.replace('/aiu-approved-campuses/', '').trim());
+  } else if (pathname.startsWith('/aiu-approved-colleges/')) {
+    page = 'aiu-approved-campuses';
+    sub = decodeURIComponent(pathname.replace('/aiu-approved-colleges/', '').trim());
   } else if (pathname === '/search') {
     page = 'colleges';
   } else {
@@ -354,6 +367,10 @@ function handleRouteChange() {
     case 'scholarships':
       mainEl.innerHTML = renderScholarshipsPage(sub);
       initScholarshipsInteractions();
+      break;
+    case 'aiu-approved-campuses':
+      mainEl.innerHTML = renderAiuApprovedPage(sub);
+      initAiuCampusesEvents();
       break;
   }
 

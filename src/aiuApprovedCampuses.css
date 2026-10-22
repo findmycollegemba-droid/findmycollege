@@ -1,0 +1,1043 @@
+/* ==========================================================================
+   AIU APPROVED CAMPUSES (CITY-WISE) DIRECTORY STYLES
+   ========================================================================== */
+
+.page-aiu-approved {
+  background-color: #F8FAFC;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* HERO SECTION */
+.aiu-hero {
+  position: relative;
+  background: linear-gradient(135deg, #0F0A2A 0%, #1A1144 50%, #291266 100%);
+  color: #FFFFFF;
+  padding: 56px 20px 48px;
+  overflow: hidden;
+}
+
+.aiu-hero-glow {
+  position: absolute;
+  top: -100px;
+  right: -50px;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(107, 44, 245, 0.35) 0%, rgba(236, 72, 153, 0.15) 50%, transparent 70%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.aiu-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.aiu-live-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #E2E8F0;
+  margin-bottom: 18px;
+  backdrop-filter: blur(8px);
+}
+
+.aiu-hero-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 14px;
+}
+
+.aiu-gradient-text {
+  background: linear-gradient(90deg, #A855F7 0%, #EC4899 50%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.aiu-hero-subtitle {
+  font-size: 1.12rem;
+  line-height: 1.6;
+  color: #CBD5E1;
+  max-width: 900px;
+  margin: 0 0 28px;
+}
+
+/* HERO STATS STRIP */
+.aiu-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.aiu-stat-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  padding: 16px 20px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.aiu-stat-box:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.aiu-stat-number {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #F8FAFC;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.aiu-stat-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #94A3B8;
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* CITY PILL SELECTOR NAV */
+.aiu-city-nav-section {
+  background: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+  position: sticky;
+  top: 72px;
+  z-index: 90;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.aiu-city-tabs-scroll {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  max-width: 1240px;
+  margin: 0 auto;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.aiu-city-tabs-scroll::-webkit-scrollbar {
+  height: 4px;
+}
+
+.aiu-city-tabs-scroll::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+.aiu-city-tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 24px;
+  border: 1px solid #E2E8F0;
+  background: #F8FAFC;
+  color: #475569;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.aiu-city-tab-btn:hover {
+  background: #EDE9FE;
+  color: #6B2CF5;
+  border-color: #DDD6FE;
+}
+
+.aiu-city-tab-btn.active {
+  background: #6B2CF5;
+  color: #FFFFFF;
+  border-color: #6B2CF5;
+  box-shadow: 0 4px 14px rgba(107, 44, 245, 0.25);
+}
+
+.aiu-tab-count {
+  font-size: 0.76rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.aiu-city-tab-btn.active .aiu-tab-count {
+  background: rgba(255, 255, 255, 0.25);
+  color: #FFFFFF;
+}
+
+/* CITY STRATEGIC DOSSIER CARD */
+.aiu-dossier-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin: 28px auto 0;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+}
+
+.aiu-dossier-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.aiu-dossier-title-wrap h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0;
+}
+
+.aiu-dossier-title-wrap p {
+  font-size: 0.88rem;
+  color: #64748B;
+  margin: 4px 0 0;
+}
+
+.aiu-dossier-badge {
+  background: #EDE9FE;
+  color: #6B2CF5;
+  border: 1px solid #DDD6FE;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.aiu-dossier-desc {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: #334155;
+  margin: 0 0 18px;
+}
+
+.aiu-dossier-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  background: #F8FAFC;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
+}
+
+.aiu-metric-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.aiu-metric-lbl {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #64748B;
+  text-transform: uppercase;
+}
+
+.aiu-metric-val {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-top: 3px;
+}
+
+.aiu-metric-val.highlight-blue { color: #2563EB; }
+.aiu-metric-val.highlight-green { color: #059669; }
+.aiu-metric-val.highlight-purple { color: #7C3AED; }
+
+/* OMNIBOX & FILTER CONTROLS */
+.aiu-filter-bar {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 22px auto;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03);
+}
+
+.aiu-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+
+.aiu-search-box {
+  flex: 1 1 280px;
+  position: relative;
+}
+
+.aiu-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94A3B8;
+  pointer-events: none;
+}
+
+.aiu-search-input {
+  width: 100%;
+  padding: 11px 16px 11px 42px;
+  border: 1px solid #CBD5E1;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  color: #0F172A;
+  background: #F8FAFC;
+  transition: all 0.2s ease;
+}
+
+.aiu-search-input:focus {
+  outline: none;
+  border-color: #6B2CF5;
+  background: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(107, 44, 245, 0.12);
+}
+
+.aiu-filter-select {
+  padding: 11px 14px;
+  border: 1px solid #CBD5E1;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #334155;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.aiu-filter-select:focus {
+  outline: none;
+  border-color: #6B2CF5;
+}
+
+.aiu-filter-count-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #F1F5F9;
+  font-size: 0.9rem;
+  color: #64748B;
+}
+
+.aiu-count-highlight {
+  font-weight: 800;
+  color: #6B2CF5;
+}
+
+.aiu-reset-btn {
+  background: none;
+  border: none;
+  color: #6B2CF5;
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* COLLEGE CARDS GRID */
+.aiu-colleges-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.aiu-college-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+}
+
+.aiu-college-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  border-color: #C4B5FD;
+}
+
+.aiu-card-top-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.aiu-logo-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #EDE9FE 0%, #DDD6FE 100%);
+  color: #6B2CF5;
+  font-weight: 900;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(107, 44, 245, 0.15);
+}
+
+.aiu-card-header-titles {
+  flex: 1;
+}
+
+.aiu-rank-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.aiu-nirf-tag {
+  background: #FEF3C7;
+  color: #92400E;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.aiu-ownership-tag {
+  background: #F1F5F9;
+  color: #475569;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.aiu-college-name {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: #0F172A;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.aiu-college-name a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.aiu-college-name a:hover {
+  color: #6B2CF5;
+}
+
+.aiu-location-bar {
+  font-size: 0.86rem;
+  color: #64748B;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+/* AIU EQUIVALENCE BANNER */
+.aiu-approval-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ECFDF5;
+  border: 1px solid #A7F3D0;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin: 12px 0 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #065F46;
+}
+
+.aiu-approval-icon {
+  font-size: 1rem;
+}
+
+/* ACCREDITATION STRIP */
+.aiu-accreditations-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.aiu-acc-pill {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* CARD STATS GRID */
+.aiu-card-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+
+.aiu-stat-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.aiu-stat-cell-lbl {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+}
+
+.aiu-stat-cell-val {
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin-top: 2px;
+}
+
+.aiu-stat-cell-val.blue { color: #2563EB; }
+.aiu-stat-cell-val.green { color: #059669; }
+.aiu-stat-cell-val.amber { color: #D97706; }
+
+/* EXAM CUTOFF & PROGRAM ROW */
+.aiu-card-info-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.84rem;
+  color: #334155;
+  margin-bottom: 12px;
+}
+
+.aiu-exam-badge {
+  background: #EFF6FF;
+  color: #1D4ED8;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.aiu-loan-badge {
+  background: #FAF5FF;
+  color: #7E22CE;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+/* CARD ACTION BUTTONS */
+.aiu-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid #F1F5F9;
+}
+
+.aiu-btn-apply {
+  flex: 1;
+  background: #6B2CF5;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.aiu-btn-apply:hover {
+  background: #581C87;
+  transform: translateY(-1px);
+}
+
+.aiu-btn-brochure {
+  background: #FFFFFF;
+  color: #6B2CF5;
+  border: 1px solid #DDD6FE;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.aiu-btn-brochure:hover {
+  background: #EDE9FE;
+  border-color: #C4B5FD;
+}
+
+.aiu-btn-profile {
+  background: #F1F5F9;
+  color: #334155;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease;
+}
+
+.aiu-btn-profile:hover {
+  background: #E2E8F0;
+  color: #0F172A;
+}
+
+/* AEO KNOWLEDGE & FAQ SECTION */
+.aiu-knowledge-section {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 36px 32px;
+  margin: 40px auto 0;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03);
+}
+
+.aiu-knowledge-heading {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0 0 10px;
+}
+
+.aiu-knowledge-sub {
+  font-size: 1rem;
+  color: #64748B;
+  margin: 0 0 24px;
+}
+
+.aiu-knowledge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.aiu-know-box {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.aiu-know-box h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #1E293B;
+  margin: 0 0 8px;
+}
+
+.aiu-know-box p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0;
+}
+
+/* FAQ ACCORDION */
+.aiu-faq-accordion {
+  margin-top: 24px;
+}
+
+.aiu-faq-item {
+  border-bottom: 1px solid #E2E8F0;
+  padding: 16px 0;
+}
+
+.aiu-faq-q {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #0F172A;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aiu-faq-a {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #475569;
+  margin-top: 10px;
+}
+
+/* LEAD COUNSELING BANNER */
+.aiu-counseling-banner {
+  background: linear-gradient(135deg, #6B2CF5 0%, #4C1D95 100%);
+  color: #FFFFFF;
+  border-radius: 16px;
+  padding: 36px 32px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 10px 24px rgba(107, 44, 245, 0.2);
+}
+
+.aiu-counseling-content h3 {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.aiu-counseling-content p {
+  font-size: 1rem;
+  color: #E2E8F0;
+  max-width: 650px;
+  margin: 0;
+}
+
+.aiu-counseling-btn {
+  background: #FFFFFF;
+  color: #6B2CF5;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  white-space: nowrap;
+}
+
+.aiu-counseling-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 768px) {
+  .aiu-hero-title { font-size: 1.9rem; }
+  .aiu-hero-stats { grid-template-columns: repeat(2, 1fr); }
+  .aiu-colleges-grid { grid-template-columns: 1fr; }
+  .aiu-dossier-metrics { grid-template-columns: repeat(2, 1fr); }
+  .aiu-counseling-banner { flex-direction: column; align-items: flex-start; }
+  .aiu-counseling-btn { width: 100%; text-align: center; }
+}
+
+/* ==========================================================================
+   OFFICIAL AIU GAZETTE JUNE 2026 CALLOUT & CARDS
+   ========================================================================== */
+
+.aiu-gazette-callout {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-left: 4px solid #6B2CF5;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.aiu-gazette-callout-text h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0 0 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aiu-gazette-callout-text p {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 780px;
+}
+
+.aiu-gazette-doc-btn {
+  background: #F1F5F9;
+  color: #6B2CF5;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.aiu-gazette-doc-btn:hover {
+  background: #EDE9FE;
+  border-color: #6B2CF5;
+  color: #551EC9;
+  transform: translateY(-1px);
+}
+
+/* VIEW MODE SWITCHER */
+.aiu-view-switcher {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #E2E8F0;
+  padding-bottom: 12px;
+}
+
+.aiu-view-btn {
+  background: #F8FAFC;
+  border: 1px solid #CBD5E1;
+  color: #475569;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.aiu-view-btn:hover {
+  background: #F1F5F9;
+  color: #0F172A;
+}
+
+.aiu-view-btn.active {
+  background: #6B2CF5;
+  color: #FFFFFF;
+  border-color: #6B2CF5;
+  box-shadow: 0 4px 12px rgba(107, 44, 245, 0.25);
+}
+
+.aiu-view-badge-count {
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.25);
+  color: inherit;
+}
+
+.aiu-view-btn:not(.active) .aiu-view-badge-count {
+  background: #E2E8F0;
+  color: #475569;
+}
+
+/* DEHRADUN SPECIAL UGC MBA CALLOUT */
+.aiu-dehradun-explainer {
+  background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+  border: 1px solid #F59E0B;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  color: #78350F;
+}
+
+.aiu-dehradun-explainer h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 0 0 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aiu-dehradun-explainer p {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* OFFICIAL GAZETTE CARDS */
+.aiu-gazette-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+}
+
+.aiu-gazette-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  border-color: #CBD5E1;
+}
+
+.aiu-gazette-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.aiu-gazette-sno-tag {
+  background: #EDE9FE;
+  color: #6B2CF5;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.aiu-gazette-valid-tag {
+  background: #DCFCE7;
+  color: #166534;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.aiu-gazette-inst-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 8px 0 6px;
+  line-height: 1.35;
+}
+
+.aiu-gazette-inst-name a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.aiu-gazette-inst-name a:hover {
+  color: #6B2CF5;
+}
+
+.aiu-gazette-progs-wrap {
+  margin: 10px 0;
+}
+
+.aiu-gazette-prog-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.aiu-gazette-progs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.aiu-gazette-prog-chip {
+  background: #F1F5F9;
+  color: #1E293B;
+  border: 1px solid #E2E8F0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 9px;
+  border-radius: 6px;
+}
+
+.aiu-gazette-address {
+  font-size: 0.82rem;
+  color: #64748B;
+  line-height: 1.45;
+  padding-top: 10px;
+  border-top: 1px solid #F1F5F9;
+}
+
+.aiu-gazette-actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #F1F5F9;
+}
+
+.aiu-gazette-actions a,
+.aiu-gazette-actions button {
+  flex: 1;
+  text-align: center;
+  padding: 9px 12px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: all 0.15s ease;
+}
+
+.aiu-gazette-btn-profile {
+  background: #6B2CF5;
+  color: #FFFFFF;
+}
+
+.aiu-gazette-btn-profile:hover {
+  background: #551EC9;
+}
+
+.aiu-gazette-btn-brochure {
+  background: #F8FAFC;
+  color: #0F172A;
+  border: 1px solid #CBD5E1 !important;
+}
+
+.aiu-gazette-btn-brochure:hover {
+  background: #F1F5F9;
+}
+

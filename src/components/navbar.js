@@ -53,6 +53,13 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
                     <div class="dropdown-desc">Autonomous diplomas (XLRI, SPJIMR, MDI)</div>
                   </div>
                 </a>
+                <a href="/aiu-approved-campuses" class="dropdown-item" data-route="aiu-approved-campuses">
+                  <span class="dropdown-icon">🏛️</span>
+                  <div>
+                    <div class="dropdown-title">AIU Approved Campuses</div>
+                    <div class="dropdown-desc">City-wise verified colleges (9 major hubs)</div>
+                  </div>
+                </a>
                 <a href="/programs/compare" class="dropdown-item" data-route="programs" data-sub="compare">
                   <span class="dropdown-icon">⚖️</span>
                   <div>
@@ -110,7 +117,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
 
             <!-- Calculators / Tools -->
             <li class="nav-item has-dropdown">
-              <a href="/tools" class="nav-link ${activePage === 'tools' ? 'active' : ''}" data-route="tools">
+              <a href="/tools/cat-college-predictor" class="nav-link ${activePage === 'tools' ? 'active' : ''}" data-route="tools">
                 <span>Calculators</span>
                 <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
               </a>
@@ -144,6 +151,14 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
               <a href="/mock-test" class="nav-link ${activePage === 'mock-test' ? 'active' : ''}" data-route="mock-test">
                 <span>Mock Tests</span>
                 <span class="nav-free-badge">FREE</span>
+              </a>
+            </li>
+
+            <!-- Scholarships -->
+            <li class="nav-item">
+              <a href="/scholarships" class="nav-link ${activePage === 'scholarships' ? 'active' : ''}" data-route="scholarships">
+                <span>Scholarships</span>
+                <span class="nav-free-badge" style="background: linear-gradient(135deg, #FF3D8B 0%, #FF6B35 100%);">₹25L</span>
               </a>
             </li>
 
@@ -269,6 +284,14 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
             <span>📝 Free Mock Tests (CAT, XAT...)</span>
             <span style="font-size:0.65rem;font-weight:900;background:#10b981;color:#fff;padding:2px 6px;border-radius:4px;">100% FREE</span>
           </a>
+          <a href="/scholarships" class="mobile-nav-link ${activePage === 'scholarships' ? 'active' : ''}" data-route="scholarships" style="display:flex;align-items:center;justify-content:space-between;">
+            <span>💰 Live MBA Scholarships</span>
+            <span style="font-size:0.65rem;font-weight:900;background:linear-gradient(135deg, #FF3D8B 0%, #FF6B35 100%);color:#fff;padding:2px 6px;border-radius:4px;">UP TO ₹25L</span>
+          </a>
+          <a href="/aiu-approved-campuses" class="mobile-nav-link ${activePage === 'aiu-approved-campuses' ? 'active' : ''}" data-route="aiu-approved-campuses" style="display:flex;align-items:center;justify-content:space-between;">
+            <span>🏛️ AIU Approved Campuses</span>
+            <span style="font-size:0.65rem;font-weight:900;background:#6B2CF5;color:#fff;padding:2px 6px;border-radius:4px;">9 CITIES</span>
+          </a>
           <a href="/blog" class="mobile-nav-link ${activePage === 'blog' ? 'active' : ''}" data-route="blog">📰 Strategy Blog</a>
           <a href="/contact" class="mobile-nav-link ${activePage === 'contact' ? 'active' : ''}" data-route="contact">📞 Contact & Free Counseling</a>
           <a href="/ai-chat" class="mobile-nav-link ai-link ${activePage === 'ai-chat' ? 'active' : ''}" data-route="ai-chat">✨ AdmitIQ AI Assistant</a>
@@ -299,7 +322,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
         <span class="dock-label">Colleges</span>
       </a>
 
-      <a href="/tools" class="dock-item ${activePage === 'tools' ? 'active' : ''}" data-route="tools">
+      <a href="/tools/cat-college-predictor" class="dock-item ${activePage === 'tools' ? 'active' : ''}" data-route="tools">
         <div class="dock-icon-wrap">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <rect width="16" height="20" x="4" y="2" rx="2"></rect>
