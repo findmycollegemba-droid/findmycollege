@@ -1,18 +1,22 @@
 /**
  * AIU Approved Campuses (City-Wise) Directory & Official Gazette
- * Extracted & Verified from the Official AIU June 2026 PGDM Institution List:
+ * Extracted & Verified directly from the Official AIU June 2026 PGDM Institution List:
  * https://aiu.ac.in/wp-content/uploads/docs/2026/06/PGDM_Institution_List_June_2026.pdf
  * 
- * Covering 9 Major Management Hubs:
- * 1. Delhi NCR
- * 2. Pune
- * 3. Mumbai
- * 4. Bangalore
- * 5. Jaipur
- * 6. Kolkata
- * 7. Dehradun
- * 8. Lucknow
- * 9. Indore
+ * Official Counts:
+ * - Total AIU Approved Colleges Nationwide: 121 (S.No 1 to 121)
+ * - Total AIU Campuses in 9 Selected Metro Cities: 86 (140 Programs)
+ *   1. Delhi NCR: 35
+ *   2. Pune: 14
+ *   3. Mumbai: 10
+ *   4. Bangalore: 15
+ *   5. Jaipur: 3
+ *   6. Kolkata: 5
+ *   7. Dehradun: 0 (UGC Statutory MBA Degree State Private Universities)
+ *   8. Lucknow: 2
+ *   9. Indore: 2
+ * - AIU Campuses in Other Indian Cities: 35
+ * - Total Verified MBA & PGDM Colleges in 9 City Hubs Directory: 367
  */
 
 import { COLLEGES_DATA } from '../data/collegesData.js';
@@ -26,8 +30,10 @@ export const AIU_CITIES_DATA = {
   'all': {
     id: 'all',
     name: 'All 9 Cities',
-    badge: 'Pan-India AIU Directory',
+    fullName: '9 Major Indian Management Hubs (Metro Directory)',
+    badge: '9 Major Management Hubs',
     aiuCount: 86,
+    directoryCount: 367,
     heroStats: {
       avgFee: '₹4.0L – ₹28.5L',
       avgSalary: '₹13.5 LPA',
@@ -35,8 +41,25 @@ export const AIU_CITIES_DATA = {
       roiRating: 'High to Ultra High',
       keySectors: 'Consulting, BFSI, Tech, Analytics, Healthcare, Manufacturing'
     },
-    overview: 'Complete city-wise directory of verified business schools holding official Association of Indian Universities (AIU) equivalence and university recognition across 9 major management education clusters in India.',
+    overview: 'Complete city-wise directory of business schools holding official Association of Indian Universities (AIU) equivalence and university recognition across 9 major management education clusters in India, featuring 86 official AIU-equated PGDM institutions and 367+ verified colleges.',
     whyChoose: '100% legal equivalence to MBA degrees, fully valid for UPSC civil services, PSU executive recruitments, and global university PhD / doctoral admissions.'
+  },
+  'pan-india': {
+    id: 'pan-india',
+    name: 'Pan-India (All 121)',
+    fullName: 'All 121 Official AIU Gazette Equated Institutions (Pan-India)',
+    badge: 'Official June 2026 PDF (1-121)',
+    aiuCount: 121,
+    directoryCount: 681,
+    heroStats: {
+      avgFee: '₹3.5L – ₹31.0L',
+      avgSalary: '₹14.2 LPA',
+      highestSalary: '₹40.0+ LPA (IIM-A, SPJIMR)',
+      roiRating: 'Very High Nationwide',
+      keySectors: 'Consulting, BFSI, Tech, Analytics, Healthcare, Manufacturing'
+    },
+    overview: 'Complete national gazette directory of all 121 business schools and autonomous institutions holding formal MBA Equivalence from the Association of Indian Universities (AIU) across India, numbered serial 1 to 121 in the official June 2026 gazette.',
+    whyChoose: 'Highest academic recognition ensuring 100% statutory equivalence with Indian university Master of Business Administration degrees for UPSC, PSU recruitments, and doctoral studies worldwide.'
   },
   'delhi-ncr': {
     id: 'delhi-ncr',
@@ -44,6 +67,7 @@ export const AIU_CITIES_DATA = {
     fullName: 'Delhi National Capital Region (Delhi, Noida, Gurgaon, Ghaziabad, Greater Noida)',
     badge: 'India’s #1 Corporate Hub',
     aiuCount: 35,
+    directoryCount: 106,
     heroStats: {
       avgFee: '₹8.5L – ₹24.5L',
       avgSalary: '₹14.8 LPA',
@@ -51,7 +75,7 @@ export const AIU_CITIES_DATA = {
       roiRating: 'Very High (FMS, MDI, IIFT)',
       keySectors: 'Consulting, BFSI, Tech, Analytics, FMCG'
     },
-    aliases: ['delhi', 'noida', 'gurugram', 'gurgaon', 'ghaziabad', 'greater noida', 'faridabad', 'delhi-ncr', 'modinagar'],
+    aliases: ['delhi', 'noida', 'gurugram', 'gurgaon', 'ghaziabad', 'greater noida', 'faridabad', 'delhi-ncr', 'modinagar', 'sonipat', 'bahadurgarh', 'palwal', 'jhajjar'],
     overview: 'Delhi-NCR stands as North India’s financial and corporate nerve center. Host to 35 official AIU-equated PGDM institutions such as MDI Gurgaon (S.No 89), IMT Ghaziabad (S.No 50), FORE School (S.No 26), IMI New Delhi (S.No 69), NDIM (S.No 99), BIMTECH (S.No 12), and LBSIM (S.No 87) alongside premier university institutions like FMS Delhi and IIFT.',
     whyChoose: 'Highest recruiter concentration in India with direct access to multinational corporate headquarters, international airport connectivity, and strong alumni networks across global conglomerates.'
   },
@@ -61,6 +85,7 @@ export const AIU_CITIES_DATA = {
     fullName: 'Pune (The Oxford of the East)',
     badge: 'Automobile & IT Powerhouse',
     aiuCount: 14,
+    directoryCount: 58,
     heroStats: {
       avgFee: '₹6.5L – ₹18.0L',
       avgSalary: '₹12.5 LPA',
@@ -78,6 +103,7 @@ export const AIU_CITIES_DATA = {
     fullName: 'Mumbai & Navi Mumbai (Financial Capital of India)',
     badge: 'Finance & Banking Capital',
     aiuCount: 10,
+    directoryCount: 35,
     heroStats: {
       avgFee: '₹9.0L – ₹24.0L',
       avgSalary: '₹16.2 LPA',
@@ -95,6 +121,7 @@ export const AIU_CITIES_DATA = {
     fullName: 'Bangalore / Bengaluru (Silicon Valley of India)',
     badge: 'Tech & Venture Capital Capital',
     aiuCount: 15,
+    directoryCount: 31,
     heroStats: {
       avgFee: '₹7.5L – ₹22.0L',
       avgSalary: '₹13.8 LPA',
@@ -112,6 +139,7 @@ export const AIU_CITIES_DATA = {
     fullName: 'Jaipur (Pink City Management Gateway)',
     badge: 'Premier Rajasthan Hub',
     aiuCount: 3,
+    directoryCount: 39,
     heroStats: {
       avgFee: '₹4.5L – ₹14.0L',
       avgSalary: '₹8.5 LPA',
@@ -129,6 +157,7 @@ export const AIU_CITIES_DATA = {
     fullName: 'Kolkata (Eastern India’s Premier Business Hub)',
     badge: 'Eastern Gateway of Trade',
     aiuCount: 5,
+    directoryCount: 37,
     heroStats: {
       avgFee: '₹5.5L – ₹18.0L',
       avgSalary: '₹11.2 LPA',
@@ -146,6 +175,7 @@ export const AIU_CITIES_DATA = {
     fullName: 'Dehradun (Education Capital of Uttarakhand)',
     badge: 'Scenic Residential Hub (UGC MBA)',
     aiuCount: 0,
+    directoryCount: 30,
     heroStats: {
       avgFee: '₹4.0L – ₹16.0L',
       avgSalary: '₹8.8 LPA',
@@ -163,6 +193,7 @@ export const AIU_CITIES_DATA = {
     fullName: 'Lucknow (Central Uttar Pradesh Commercial Hub)',
     badge: 'Capital Leadership Hub',
     aiuCount: 2,
+    directoryCount: 21,
     heroStats: {
       avgFee: '₹4.0L – ₹15.0L',
       avgSalary: '₹10.5 LPA',
@@ -180,6 +211,7 @@ export const AIU_CITIES_DATA = {
     fullName: 'Indore (Commercial Capital of Central India)',
     badge: 'India’s Cleanest City Hub',
     aiuCount: 2,
+    directoryCount: 10,
     heroStats: {
       avgFee: '₹3.5L – ₹14.0L',
       avgSalary: '₹9.8 LPA',
@@ -196,46 +228,103 @@ export const AIU_CITIES_DATA = {
 // Interactive state
 let aiuPageState = {
   activeCity: 'all',
-  activeView: 'gazette', // 'gazette' (official 86 list) or 'directory' (all 370+ colleges)
+  activeView: 'gazette', // 'gazette' (official AIU list) or 'directory' (verified colleges)
   searchQuery: '',
   selectedFee: 'all',
+  selectedSalary: 'all',
   selectedExam: 'all',
-  selectedDegree: 'all',
   selectedSort: 'nirf'
 };
+
+/**
+ * Determine single-city assignment for each college in COLLEGES_DATA
+ * Prevents false positive cross-city duplicate matches.
+ */
+export function getCollegeTargetCity(col) {
+  if (!col) return null;
+  const c = (col.city || '').toLowerCase().trim();
+  const loc = (col.location || '').toLowerCase().trim();
+
+  // 1. Delhi-NCR
+  if (['delhi-ncr', 'delhi', 'new delhi', 'gurugram', 'gurgaon', 'noida', 'greater noida', 'ghaziabad', 'faridabad', 'sonipat', 'bahadurgarh', 'palwal', 'jhajjar'].includes(c)) return 'delhi-ncr';
+  if (loc.includes('new delhi') || loc.includes('delhi ncr') || loc.includes('gurugram') || loc.includes('noida') || loc.includes('greater noida') || loc.includes('ghaziabad') || loc.includes('faridabad')) return 'delhi-ncr';
+
+  // 2. Pune
+  if (c === 'pune') return 'pune';
+  if (loc.includes('pune,') || loc.endsWith('pune')) return 'pune';
+
+  // 3. Mumbai
+  if (['mumbai', 'thane', 'navi mumbai'].includes(c)) return 'mumbai';
+  if (loc.includes('mumbai') || loc.includes('navi mumbai') || loc.includes('thane')) return 'mumbai';
+
+  // 4. Bangalore
+  if (['bengaluru', 'bangalore'].includes(c)) return 'bangalore';
+  if (loc.includes('bengaluru') || loc.includes('bangalore')) return 'bangalore';
+
+  // 5. Jaipur (Regex word boundary so "Jaipuria" doesn't match!)
+  if (c === 'jaipur') return 'jaipur';
+  if (/\bjaipur\b/i.test(loc)) return 'jaipur';
+
+  // 6. Kolkata
+  if (['kolkata', 'calcutta'].includes(c)) return 'kolkata';
+  if (loc.includes('kolkata') || loc.includes('calcutta')) return 'kolkata';
+
+  // 7. Dehradun
+  if (['dehradun', 'dehra dun'].includes(c)) return 'dehradun';
+  if (loc.includes('dehradun') || loc.includes('dehra dun')) return 'dehradun';
+
+  // 8. Lucknow (Regex word boundary)
+  if (c === 'lucknow') return 'lucknow';
+  if (/\blucknow\b/i.test(loc)) return 'lucknow';
+
+  // 9. Indore (Regex word boundary)
+  if (c === 'indore') return 'indore';
+  if (/\bindore\b/i.test(loc)) return 'indore';
+
+  return null;
+}
 
 /**
  * Filter colleges matching the selected city from COLLEGES_DATA
  */
 export function getCollegesForCity(cityKey) {
-  if (!cityKey || cityKey === 'all') {
-    const allAliases = Object.values(AIU_CITIES_DATA)
-      .filter(c => c.aliases)
-      .flatMap(c => c.aliases);
-    
-    return COLLEGES_DATA.filter(col => {
-      const fullText = `${col.city || ''} ${col.location || ''} ${col.state || ''}`.toLowerCase();
-      return allAliases.some(a => fullText.includes(a));
-    });
+  if (cityKey === 'pan-india') {
+    return COLLEGES_DATA;
   }
-
-  const cityMeta = AIU_CITIES_DATA[cityKey];
-  if (!cityMeta || !cityMeta.aliases) return [];
-
-  return COLLEGES_DATA.filter(col => {
-    const fullText = `${col.city || ''} ${col.location || ''} ${col.state || ''}`.toLowerCase();
-    return cityMeta.aliases.some(a => fullText.includes(a));
-  });
+  if (!cityKey || cityKey === 'all') {
+    return COLLEGES_DATA.filter(col => getCollegeTargetCity(col) !== null);
+  }
+  return COLLEGES_DATA.filter(col => getCollegeTargetCity(col) === cityKey);
 }
 
 /**
  * Filter official AIU gazette institutes by city
  */
 export function getOfficialAiuForCity(cityKey) {
+  if (cityKey === 'pan-india') {
+    return AIU_OFFICIAL_LIST; // All 121
+  }
   if (!cityKey || cityKey === 'all') {
-    return AIU_OFFICIAL_LIST;
+    return AIU_OFFICIAL_LIST.filter(item => item.isTargetCity === true); // 86 in 9 cities
   }
   return AIU_OFFICIAL_LIST.filter(item => item.city === cityKey);
+}
+
+/**
+ * Helper to get badge count for a tab based on active view mode
+ */
+export function getCityBadgeCount(cityKey, viewMode) {
+  if (viewMode === 'gazette') {
+    if (cityKey === 'pan-india') return '121';
+    if (cityKey === 'all') return '86';
+    if (cityKey === 'dehradun') return '0 (UGC)';
+    const meta = AIU_CITIES_DATA[cityKey];
+    return meta ? String(meta.aiuCount) : '0';
+  } else {
+    if (cityKey === 'pan-india') return String(COLLEGES_DATA.length);
+    const cols = getCollegesForCity(cityKey);
+    return String(cols.length);
+  }
 }
 
 /**
@@ -248,19 +337,8 @@ export function renderAiuApprovedPage(initialCity = null) {
   
   aiuPageState.activeCity = validCity;
 
-  // Calculate counts for each city
-  const cityCounts = {};
-  let totalAcrossAll = 0;
-  Object.keys(AIU_CITIES_DATA).forEach(k => {
-    if (k !== 'all') {
-      const cnt = getCollegesForCity(k).length;
-      cityCounts[k] = cnt;
-      totalAcrossAll += cnt;
-    }
-  });
-  cityCounts['all'] = totalAcrossAll;
-
   const currentCityMeta = AIU_CITIES_DATA[validCity] || AIU_CITIES_DATA['all'];
+  const isGazette = aiuPageState.activeView === 'gazette';
 
   return `
     <div class="page-aiu-approved">
@@ -271,32 +349,32 @@ export function renderAiuApprovedPage(initialCity = null) {
         <div class="aiu-container">
           <div class="aiu-live-badge">
             <span>🏛️</span>
-            <span>Association of Indian Universities (AIU) Official Equivalence Gazette • June 2026</span>
+            <span>Association of Indian Universities (AIU) Official Equivalence Gazette • June 2026 Edition</span>
           </div>
           
           <h1 class="aiu-hero-title">
             Top <span class="aiu-gradient-text">AIU Approved Campuses</span> in India (City-Wise Directory)
           </h1>
           <p class="aiu-hero-subtitle">
-            Explore verified business schools with official Association of Indian Universities (AIU) MBA Equivalence across Delhi NCR, Pune, Mumbai, Bangalore, Jaipur, Kolkata, Dehradun, Lucknow, and Indore. Sourced directly from the official June 2026 AIU Gazette with audited fees, entrance cutoffs, and audited placements.
+            Explore verified business schools with official Association of Indian Universities (AIU) MBA Equivalence across Delhi NCR, Pune, Mumbai, Bangalore, Jaipur, Kolkata, Dehradun, Lucknow, and Indore. Sourced directly from the official June 2026 AIU Gazette (121 Institutions Nationwide • 86 Campuses in 9 Target Hubs).
           </p>
 
           <div class="aiu-hero-stats">
             <div class="aiu-stat-box">
-              <div class="aiu-stat-number">86 Campuses</div>
-              <div class="aiu-stat-label">AIU Gazette Listed (140 Programs)</div>
+              <div class="aiu-stat-number">121 Pan-India</div>
+              <div class="aiu-stat-label">Total Official AIU Gazette List</div>
             </div>
             <div class="aiu-stat-box">
-              <div class="aiu-stat-number">${totalAcrossAll}+ Verified</div>
-              <div class="aiu-stat-label">Total City Hub Colleges</div>
+              <div class="aiu-stat-number">86 Campuses</div>
+              <div class="aiu-stat-label">AIU Listed in 9 Target Cities (140 Programs)</div>
+            </div>
+            <div class="aiu-stat-box">
+              <div class="aiu-stat-number">367+ Verified</div>
+              <div class="aiu-stat-label">Total 9 Cities MBA/PGDM Directory</div>
             </div>
             <div class="aiu-stat-box">
               <div class="aiu-stat-number">100% MBA Parity</div>
               <div class="aiu-stat-label">UPSC, PSU &amp; Ph.D Valid</div>
-            </div>
-            <div class="aiu-stat-box">
-              <div class="aiu-stat-number">Up to ₹40+ LPA</div>
-              <div class="aiu-stat-label">Top Placement Packages</div>
             </div>
           </div>
         </div>
@@ -307,52 +385,57 @@ export function renderAiuApprovedPage(initialCity = null) {
         <div class="aiu-city-tabs-scroll">
           <button type="button" class="aiu-city-tab-btn ${validCity === 'all' ? 'active' : ''}" data-city-tab="all">
             <span>All 9 Cities</span>
-            <span class="aiu-tab-count">${cityCounts['all']}</span>
+            <span class="aiu-tab-count" data-city-count-badge="all">${getCityBadgeCount('all', aiuPageState.activeView)}</span>
+          </button>
+
+          <button type="button" class="aiu-city-tab-btn ${validCity === 'pan-india' ? 'active' : ''}" data-city-tab="pan-india" style="border: 1.5px solid #8B5CF6;">
+            <span>Pan-India (All 121)</span>
+            <span class="aiu-tab-count" data-city-count-badge="pan-india">${getCityBadgeCount('pan-india', aiuPageState.activeView)}</span>
           </button>
           
           <button type="button" class="aiu-city-tab-btn ${validCity === 'delhi-ncr' ? 'active' : ''}" data-city-tab="delhi-ncr">
             <span>Delhi NCR</span>
-            <span class="aiu-tab-count">${cityCounts['delhi-ncr']}</span>
+            <span class="aiu-tab-count" data-city-count-badge="delhi-ncr">${getCityBadgeCount('delhi-ncr', aiuPageState.activeView)}</span>
           </button>
 
           <button type="button" class="aiu-city-tab-btn ${validCity === 'pune' ? 'active' : ''}" data-city-tab="pune">
             <span>Pune</span>
-            <span class="aiu-tab-count">${cityCounts['pune']}</span>
+            <span class="aiu-tab-count" data-city-count-badge="pune">${getCityBadgeCount('pune', aiuPageState.activeView)}</span>
           </button>
 
           <button type="button" class="aiu-city-tab-btn ${validCity === 'mumbai' ? 'active' : ''}" data-city-tab="mumbai">
             <span>Mumbai</span>
-            <span class="aiu-tab-count">${cityCounts['mumbai']}</span>
+            <span class="aiu-tab-count" data-city-count-badge="mumbai">${getCityBadgeCount('mumbai', aiuPageState.activeView)}</span>
           </button>
 
           <button type="button" class="aiu-city-tab-btn ${validCity === 'bangalore' ? 'active' : ''}" data-city-tab="bangalore">
             <span>Bangalore</span>
-            <span class="aiu-tab-count">${cityCounts['bangalore']}</span>
+            <span class="aiu-tab-count" data-city-count-badge="bangalore">${getCityBadgeCount('bangalore', aiuPageState.activeView)}</span>
           </button>
 
           <button type="button" class="aiu-city-tab-btn ${validCity === 'jaipur' ? 'active' : ''}" data-city-tab="jaipur">
             <span>Jaipur</span>
-            <span class="aiu-tab-count">${cityCounts['jaipur']}</span>
+            <span class="aiu-tab-count" data-city-count-badge="jaipur">${getCityBadgeCount('jaipur', aiuPageState.activeView)}</span>
           </button>
 
           <button type="button" class="aiu-city-tab-btn ${validCity === 'kolkata' ? 'active' : ''}" data-city-tab="kolkata">
             <span>Kolkata</span>
-            <span class="aiu-tab-count">${cityCounts['kolkata']}</span>
+            <span class="aiu-tab-count" data-city-count-badge="kolkata">${getCityBadgeCount('kolkata', aiuPageState.activeView)}</span>
           </button>
 
           <button type="button" class="aiu-city-tab-btn ${validCity === 'dehradun' ? 'active' : ''}" data-city-tab="dehradun">
             <span>Dehradun</span>
-            <span class="aiu-tab-count">${cityCounts['dehradun']}</span>
+            <span class="aiu-tab-count" data-city-count-badge="dehradun">${getCityBadgeCount('dehradun', aiuPageState.activeView)}</span>
           </button>
 
           <button type="button" class="aiu-city-tab-btn ${validCity === 'lucknow' ? 'active' : ''}" data-city-tab="lucknow">
             <span>Lucknow</span>
-            <span class="aiu-tab-count">${cityCounts['lucknow']}</span>
+            <span class="aiu-tab-count" data-city-count-badge="lucknow">${getCityBadgeCount('lucknow', aiuPageState.activeView)}</span>
           </button>
 
           <button type="button" class="aiu-city-tab-btn ${validCity === 'indore' ? 'active' : ''}" data-city-tab="indore">
             <span>Indore</span>
-            <span class="aiu-tab-count">${cityCounts['indore']}</span>
+            <span class="aiu-tab-count" data-city-count-badge="indore">${getCityBadgeCount('indore', aiuPageState.activeView)}</span>
           </button>
         </div>
       </nav>
@@ -372,11 +455,11 @@ export function renderAiuApprovedPage(initialCity = null) {
               <span>Official AIU Gazette Source: Association of Indian Universities (June 2026 List)</span>
             </h4>
             <p>
-              Directory curated from the official AIU Gazette document (<strong>PGDM_Institution_List_June_2026.pdf</strong>). Grants 2-year full-time PGDM programs 100% legal equivalence with Master of Business Administration (MBA) degrees for Civil Services, PSU recruitment, and global Ph.D admissions.
+              Directory verified directly against the official AIU Gazette document (<strong>PGDM_Institution_List_June_2026.pdf</strong>). Grants 2-year full-time PGDM programs 100% legal equivalence with Master of Business Administration (MBA) degrees for Civil Services (UPSC), PSU recruitment, and global Ph.D admissions.
             </p>
           </div>
           <a href="${AIU_DOCUMENT_INFO.officialPdfUrl}" target="_blank" rel="noopener noreferrer" class="aiu-gazette-doc-btn">
-            <span>📄 View Official AIU PDF (June 2026) ↗</span>
+            <span>📄 View Official AIU PDF (121 Colleges) ↗</span>
           </a>
         </div>
 
@@ -388,20 +471,20 @@ export function renderAiuApprovedPage(initialCity = null) {
               <span>Dehradun Regulatory Notice: Direct UGC Statutory MBA Degree Status</span>
             </h4>
             <p>
-              Management colleges in Dehradun (such as UPES School of Business, Graphic Era University, DIT University, and IMS Unison University) operate as UGC-recognized State Private Universities or deemed universities that confer statutory Master of Business Administration (MBA) degrees directly under Section 22 of the UGC Act 1956. Unlike autonomous institutes awarding PGDM diplomas, university MBA degrees are inherently equivalent to any Indian university post-graduate degree and do not require standalone AIU equivalence certificates.
+              Management colleges in Dehradun (such as UPES School of Business, Graphic Era University, DIT University, and IMS Unison University) operate as UGC-recognized State Private Universities that confer statutory Master of Business Administration (MBA) degrees directly under Section 22 of the UGC Act 1956. Unlike autonomous institutes awarding PGDM diplomas, university MBA degrees are inherently equivalent to any Indian university post-graduate degree and do not require standalone AIU equivalence certificates.
             </p>
           </div>
         </div>
 
         <!-- VIEW MODE SWITCHER TABS -->
         <div class="aiu-view-switcher">
-          <button type="button" class="aiu-view-btn ${aiuPageState.activeView === 'gazette' ? 'active' : ''}" id="viewModeGazetteBtn">
+          <button type="button" class="aiu-view-btn ${isGazette ? 'active' : ''}" id="viewModeGazetteBtn">
             <span>🏛️ Official AIU Gazette List (June 2026)</span>
-            <span class="aiu-view-badge-count" id="gazetteViewBadgeCount">86 Hubs</span>
+            <span class="aiu-view-badge-count" id="gazetteViewBadgeCount">121 Total (86 in Hubs)</span>
           </button>
-          <button type="button" class="aiu-view-btn ${aiuPageState.activeView === 'directory' ? 'active' : ''}" id="viewModeDirectoryBtn">
+          <button type="button" class="aiu-view-btn ${!isGazette ? 'active' : ''}" id="viewModeDirectoryBtn">
             <span>📊 All Verified MBA &amp; PGDM Directory</span>
-            <span class="aiu-view-badge-count" id="directoryViewBadgeCount">${totalAcrossAll}+</span>
+            <span class="aiu-view-badge-count" id="directoryViewBadgeCount">367 Hub Campuses</span>
           </button>
         </div>
 
@@ -453,7 +536,10 @@ export function renderAiuApprovedPage(initialCity = null) {
 
           <div class="aiu-filter-count-wrap">
             <div>
-              Showing <span class="aiu-count-highlight" id="aiuResultsCount">0</span> <span id="aiuResultsLabel">AIU approved institutions</span> in <strong id="aiuActiveCityTitle">${currentCityMeta.name}</strong>
+              Showing <span class="aiu-count-highlight" id="aiuResultsCount">0</span> 
+              <span id="aiuResultsLabel">Official AIU Gazette Institutions</span> 
+              in <strong id="aiuActiveCityTitle">${currentCityMeta.name}</strong>
+              <span id="aiuResultsContext" style="font-size:0.86rem; color:#64748B; margin-left:6px;"></span>
             </div>
             <button type="button" class="aiu-reset-btn" id="aiuResetFiltersBtn">Reset All Filters</button>
           </div>
@@ -498,6 +584,16 @@ export function renderAiuApprovedPage(initialCity = null) {
           <h3 style="font-size: 1.35rem; font-weight: 800; color: #0F172A; margin: 28px 0 16px;">Frequently Asked Questions (AIU Approval &amp; Admissions)</h3>
           
           <div class="aiu-faq-accordion">
+            <div class="aiu-faq-item">
+              <div class="aiu-faq-q">
+                <span>How many colleges in India have official AIU Equivalence?</span>
+                <span>+</span>
+              </div>
+              <div class="aiu-faq-a">
+                According to the official Association of Indian Universities (AIU) June 2026 Gazette document (PGDM_Institution_List_June_2026.pdf), there are exactly <strong>121 unique institutions nationwide</strong> holding formal MBA equivalence across 200 approved programs. Out of these 121 institutions, <strong>86 campuses</strong> are located within the 9 major metro hubs (Delhi NCR: 35, Pune: 14, Mumbai: 10, Bangalore: 15, Jaipur: 3, Kolkata: 5, Lucknow: 2, Indore: 2), and 35 institutions are located in other cities across India.
+              </div>
+            </div>
+
             <div class="aiu-faq-item">
               <div class="aiu-faq-q">
                 <span>What is the difference between AICTE Approval and AIU Equivalence?</span>
@@ -604,6 +700,7 @@ export function initAiuCampusesEvents() {
   const gridEl = document.getElementById('aiuCollegesGrid');
   const countEl = document.getElementById('aiuResultsCount');
   const resultsLabelEl = document.getElementById('aiuResultsLabel');
+  const contextSubtitleEl = document.getElementById('aiuResultsContext');
   const cityTitleEl = document.getElementById('aiuActiveCityTitle');
   const dossierMount = document.getElementById('aiuCityDossierMount');
   const dehradunMount = document.getElementById('aiuDehradunExplainerMount');
@@ -617,36 +714,90 @@ export function initAiuCampusesEvents() {
   const viewGazetteBtn = document.getElementById('viewModeGazetteBtn');
   const viewDirectoryBtn = document.getElementById('viewModeDirectoryBtn');
 
+  // Update Tab Badges when view mode switches
+  function updateTabBadges() {
+    const isGazette = aiuPageState.activeView === 'gazette';
+    document.querySelectorAll('.aiu-city-tab-btn').forEach(btn => {
+      const cityKey = btn.getAttribute('data-city-tab');
+      const badge = btn.querySelector('.aiu-tab-count');
+      if (badge && cityKey) {
+        badge.textContent = getCityBadgeCount(cityKey, aiuPageState.activeView);
+      }
+    });
+
+    const gazetteCountEl = document.getElementById('gazetteViewBadgeCount');
+    if (gazetteCountEl) {
+      gazetteCountEl.textContent = '121 Total (86 in Hubs)';
+    }
+    const directoryCountEl = document.getElementById('directoryViewBadgeCount');
+    if (directoryCountEl) {
+      directoryCountEl.textContent = '367 Hub Campuses';
+    }
+  }
+
+  // Reset Filters Function
+  function resetFilters() {
+    aiuPageState.searchQuery = '';
+    aiuPageState.selectedFee = 'all';
+    aiuPageState.selectedSalary = 'all';
+    aiuPageState.selectedExam = 'all';
+    aiuPageState.selectedSort = 'nirf';
+
+    if (searchInput) searchInput.value = '';
+    if (feeSelect) feeSelect.value = 'all';
+    if (salarySelect) salarySelect.value = 'all';
+    if (examSelect) examSelect.value = 'all';
+    if (sortSelect) sortSelect.value = 'nirf';
+
+    filterAndRender();
+  }
+
   // Filter and Render function
   function filterAndRender() {
     const isGazette = aiuPageState.activeView === 'gazette';
     const activeCity = aiuPageState.activeCity;
     const q = aiuPageState.searchQuery.trim().toLowerCase();
+    const currentMeta = AIU_CITIES_DATA[activeCity] || AIU_CITIES_DATA['all'];
 
-    if (resultsLabelEl) {
-      resultsLabelEl.textContent = isGazette 
-        ? 'Official AIU Gazette Institutions' 
-        : 'Verified City Campuses';
-    }
+    // Update tab badges to stay completely synchronized
+    updateTabBadges();
+
+    // Update active city header title in filter wrap
+    if (cityTitleEl) cityTitleEl.textContent = currentMeta.name;
 
     if (isGazette) {
-      // 1. FILTER OFFICIAL GAZETTE LIST
+      // 1. FILTER OFFICIAL GAZETTE LIST (121 Institutions / 86 in 9 Cities)
       let list = getOfficialAiuForCity(activeCity);
+      const totalInCity = list.length;
 
       if (q) {
         list = list.filter(item => {
           const inName = (item.name || '').toLowerCase().includes(q);
           const inAddr = (item.address || '').toLowerCase().includes(q);
+          const inCity = (item.cityName || '').toLowerCase().includes(q);
           const inSno = String(item.sno || '').includes(q) || (item.snoDisplay || '').toLowerCase().includes(q);
           const inProgs = (item.programs || []).some(p => p.toLowerCase().includes(q));
-          return inName || inAddr || inSno || inProgs;
+          return inName || inAddr || inCity || inSno || inProgs;
         });
       }
 
-      // Render Count
+      // Render Count and Context Label
       if (countEl) countEl.textContent = String(list.length);
-      const activeMeta = AIU_CITIES_DATA[activeCity] || AIU_CITIES_DATA['all'];
-      if (cityTitleEl) cityTitleEl.textContent = activeMeta.name;
+      if (resultsLabelEl) {
+        resultsLabelEl.textContent = 'Official AIU Gazette Institutions';
+      }
+
+      if (contextSubtitleEl) {
+        if (activeCity === 'pan-india') {
+          contextSubtitleEl.textContent = `(All 121 S.No 1–121 from June 2026 Gazette PDF)`;
+        } else if (activeCity === 'all') {
+          contextSubtitleEl.textContent = `(86 Campuses in 9 Metro Hubs • 121 Pan-India Gazette)`;
+        } else if (activeCity === 'dehradun') {
+          contextSubtitleEl.textContent = `(Dehradun colleges confer statutory UGC MBA degrees directly)`;
+        } else {
+          contextSubtitleEl.textContent = `(Official June 2026 Gazette • 121 Pan-India)`;
+        }
+      }
 
       if (gridEl) {
         if (list.length === 0) {
@@ -656,10 +807,10 @@ export function initAiuCampusesEvents() {
                 <div style="font-size:2.6rem; margin-bottom:12px;">🏛️</div>
                 <h3 style="font-size:1.3rem; font-weight:800; color:#0F172A; margin:0 0 8px;">Dehradun Campuses Confer UGC Statutory University MBA Degrees</h3>
                 <p style="color:#64748B; font-size:0.95rem; max-width:650px; margin:0 auto 20px; line-height:1.5;">
-                  Colleges in Dehradun (UPES, Graphic Era, DIT, IMS Unison) are State Private Universities that award official Master of Business Administration (MBA) degrees under UGC regulations. They do not need standalone AIU equivalence. Switch to the Directory view to explore all verified Dehradun campuses.
+                  Colleges in Dehradun (UPES, Graphic Era, DIT, IMS Unison) are State Private Universities that award official Master of Business Administration (MBA) degrees under UGC regulations. They do not need standalone AIU equivalence. Switch to the Directory view to explore all 30 verified Dehradun campuses.
                 </p>
                 <button type="button" class="aiu-btn-apply" id="switchToDehradunDirectoryBtn" style="display:inline-block; max-width:260px; margin:0 auto;">
-                  View Dehradun MBA Campuses →
+                  View Dehradun MBA Campuses (30) →
                 </button>
               </div>
             `;
@@ -743,10 +894,21 @@ export function initAiuCampusesEvents() {
         });
       }
 
-      // Render Count
+      // Render Count and Context Label
       if (countEl) countEl.textContent = String(list.length);
-      const activeMeta = AIU_CITIES_DATA[activeCity] || AIU_CITIES_DATA['all'];
-      if (cityTitleEl) cityTitleEl.textContent = activeMeta.name;
+      if (resultsLabelEl) {
+        resultsLabelEl.textContent = 'Verified MBA & PGDM Colleges';
+      }
+
+      if (contextSubtitleEl) {
+        if (activeCity === 'pan-india') {
+          contextSubtitleEl.textContent = `(All verified institutions in national directory)`;
+        } else if (activeCity === 'all') {
+          contextSubtitleEl.textContent = `(Total 367 Hub Campuses across 9 cities)`;
+        } else {
+          contextSubtitleEl.textContent = `(Total Hub Directory in ${currentMeta.name})`;
+        }
+      }
 
       if (gridEl) {
         if (list.length === 0) {
@@ -803,7 +965,9 @@ export function initAiuCampusesEvents() {
       aiuPageState.activeCity = targetCity;
 
       // Update URL silently
-      const newUrl = targetCity === 'all' ? '/aiu-approved-campuses' : `/aiu-approved-campuses/${targetCity}`;
+      const newUrl = targetCity === 'all' 
+        ? '/aiu-approved-campuses' 
+        : `/aiu-approved-campuses/${targetCity}`;
       window.history.pushState(null, '', newUrl);
 
       // Update Dossier
@@ -848,46 +1012,30 @@ export function initAiuCampusesEvents() {
     filterAndRender();
   });
 
-  // Reset Filters
-  function resetFilters() {
-    aiuPageState.searchQuery = '';
-    aiuPageState.selectedFee = 'all';
-    aiuPageState.selectedSalary = 'all';
-    aiuPageState.selectedExam = 'all';
-    aiuPageState.selectedSort = 'nirf';
-
-    if (searchInput) searchInput.value = '';
-    if (feeSelect) feeSelect.value = 'all';
-    if (salarySelect) salarySelect.value = 'all';
-    if (examSelect) examSelect.value = 'all';
-    if (sortSelect) sortSelect.value = 'nirf';
-
-    filterAndRender();
-  }
-
   resetBtn?.addEventListener('click', resetFilters);
 
-  // Free Counseling Button
+  // Profile Evaluation / Counseling Lead Action
   counselingBtn?.addEventListener('click', () => {
     if (window.openInquiryModal) {
       window.openInquiryModal();
+    } else {
+      window.location.href = '/contact';
     }
   });
 
-  // FAQ Accordion Handlers
+  // Accordion Expand/Collapse FAQ handlers
   document.querySelectorAll('.aiu-faq-item').forEach(item => {
     const qEl = item.querySelector('.aiu-faq-q');
-    const aEl = item.querySelector('.aiu-faq-a');
-    if (qEl && aEl) {
-      qEl.addEventListener('click', () => {
-        const isHidden = aEl.style.display === 'none';
-        aEl.style.display = isHidden ? 'block' : 'none';
-        qEl.querySelector('span:last-child').textContent = isHidden ? '−' : '+';
-      });
-    }
+    qEl?.addEventListener('click', () => {
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.aiu-faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) {
+        item.classList.add('open');
+      }
+    });
   });
 
-  // Initial Filter & Render
+  // Initial render
   filterAndRender();
 }
 
@@ -901,7 +1049,9 @@ function renderAiuGazetteCard(item) {
 
   const collegeHref = linkedCol 
     ? `/colleges/${encodeURIComponent(linkedCol.id)}` 
-    : `/aiu-approved-campuses/${encodeURIComponent(item.city)}`;
+    : (item.city !== 'other' 
+        ? `/aiu-approved-campuses/${encodeURIComponent(item.city)}` 
+        : `https://aiu.ac.in/wp-content/uploads/docs/2026/06/PGDM_Institution_List_June_2026.pdf`);
 
   return `
     <article class="aiu-gazette-card" id="aiu-gazette-${item.sno}">
@@ -925,7 +1075,7 @@ function renderAiuGazetteCard(item) {
         </div>
 
         ${linkedCol ? `
-          <div style="display:flex;gap:12px;margin:10px 0;font-size:0.83rem;color:#475569;background:#F8FAFC;padding:8px 12px;border-radius:6px;">
+          <div style="display:flex;gap:12px;margin:10px 0;font-size:0.83rem;color:#475569;background:#F8FAFC;padding:8px 12px;border-radius:6px;flex-wrap:wrap;">
             <span>💰 Fees: <strong>${linkedCol.fees}</strong></span>
             <span>•</span>
             <span>📈 Avg CTC: <strong>${linkedCol.avgSalary}</strong></span>
@@ -946,11 +1096,18 @@ function renderAiuGazetteCard(item) {
           <a href="${collegeHref}" class="aiu-gazette-btn-profile" data-route="colleges">
             Full Profile →
           </a>
-        ` : `
+        ` : (item.city !== 'other' ? `
           <a href="/aiu-approved-campuses/${encodeURIComponent(item.city)}" class="aiu-gazette-btn-profile">
             ${item.cityName} Hub Info →
           </a>
-        `}
+        ` : `
+          <button type="button" class="aiu-gazette-btn-brochure" data-counseling-open="true">
+            Free Counseling
+          </button>
+          <a href="https://aiu.ac.in/wp-content/uploads/docs/2026/06/PGDM_Institution_List_June_2026.pdf" target="_blank" rel="noopener noreferrer" class="aiu-gazette-btn-profile">
+            Official PDF ↗
+          </a>
+        `)}
       </div>
     </article>
   `;
@@ -972,6 +1129,17 @@ function attachGazetteCardActions(container) {
       }
     });
   });
+
+  container.querySelectorAll('[data-counseling-open]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (window.openInquiryModal) {
+        window.openInquiryModal();
+      } else {
+        window.location.href = '/contact';
+      }
+    });
+  });
 }
 
 /**
@@ -988,69 +1156,83 @@ function renderAiuCollegeCard(col) {
   return `
     <article class="aiu-college-card" id="card-${col.id}">
       
-      <div class="aiu-card-top-row">
-        <div class="aiu-logo-badge">${shortCode}</div>
-        <div class="aiu-card-header-titles">
-          <div class="aiu-rank-row">
-            ${col.nirfRank ? `<span class="aiu-nirf-tag">🏆 #${col.nirfRank} NIRF</span>` : `<span class="aiu-nirf-tag" style="background:#EDE9FE;color:#6B2CF5;">★ Top B-School</span>`}
-            <span class="aiu-ownership-tag">🏛️ ${col.ownership || 'Autonomous'}</span>
+      <!-- CARD HEADER: LOGO, BADGES, TITLES -->
+      <div class="aiu-card-header">
+        <div class="aiu-college-logo">
+          ${shortCode}
+        </div>
+        
+        <div class="aiu-card-title-wrap">
+          <div class="aiu-card-badges">
+            <span class="aiu-badge-nirf">${col.nirfRank ? `NIRF #${col.nirfRank}` : 'Top Ranked B-School'}</span>
+            <span class="aiu-badge-aiu">✓ AIU &amp; AICTE</span>
+            ${col.ownership ? `<span class="aiu-badge-tier">${col.ownership}</span>` : ''}
           </div>
+
           <h3 class="aiu-college-name">
-            <a href="/colleges/${encodeURIComponent(col.id)}" data-route="colleges">${col.name} (${col.shortName})</a>
+            <a href="/colleges/${encodeURIComponent(col.id)}" data-route="colleges">
+              ${col.name}
+            </a>
           </h3>
-          <div class="aiu-location-bar">
-            <span>📍 ${col.location || col.city}</span>
-            <span>•</span>
-            <span>★ ${col.rating || '4.5'} (${col.reviewsCount || '50'}+ Reviews)</span>
+
+          <div class="aiu-college-location">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>${col.location || col.city}</span>
+            <span style="color:#CBD5E1;">•</span>
+            <span style="color:#059669; font-weight:700;">★ ${col.rating || '4.5'}/5</span>
           </div>
         </div>
       </div>
 
-      <!-- AIU EQUIVALENCE BADGE -->
-      <div class="aiu-approval-banner">
-        <span class="aiu-approval-icon">✓</span>
-        <span>Association of Indian Universities (AIU) Approved • MBA Equivalent</span>
-      </div>
-
-      <!-- ACCREDITATIONS -->
-      <div class="aiu-accreditations-row">
-        <span class="aiu-acc-pill" style="background:#EDE9FE;color:#6B2CF5;font-weight:700;">AIU MBA Equivalence</span>
-        ${accs.slice(0, 3).map(a => `<span class="aiu-acc-pill">${a}</span>`).join('')}
-        <span class="aiu-acc-pill">AICTE Approved</span>
-      </div>
-
-      <!-- STATS GRID -->
-      <div class="aiu-card-stats-grid">
-        <div class="aiu-stat-cell">
-          <span class="aiu-stat-cell-lbl">2-Yr Total Fees</span>
-          <span class="aiu-stat-cell-val blue">${col.fees}</span>
+      <!-- KEY METRICS GRID -->
+      <div class="aiu-card-metrics">
+        <div class="aiu-metric-box">
+          <span class="aiu-metric-kpi-lbl">Total 2-Yr Fees</span>
+          <span class="aiu-metric-kpi-val highlight-blue">${col.fees || '₹8.5L – ₹14L'}</span>
         </div>
-        <div class="aiu-stat-cell">
-          <span class="aiu-stat-cell-lbl">Recent Avg CTC</span>
-          <span class="aiu-stat-cell-val green">${col.avgSalary}</span>
+        <div class="aiu-metric-box">
+          <span class="aiu-metric-kpi-lbl">Avg Placement CTC</span>
+          <span class="aiu-metric-kpi-val highlight-green">${col.avgSalary || '₹12.0 LPA'}</span>
         </div>
-        <div class="aiu-stat-cell">
-          <span class="aiu-stat-cell-lbl">Highest CTC</span>
-          <span class="aiu-stat-cell-val amber">${col.highestSalary}</span>
+        <div class="aiu-metric-box">
+          <span class="aiu-metric-kpi-lbl">Highest Placement CTC</span>
+          <span class="aiu-metric-kpi-val highlight-purple">${col.highestSalary || '₹28.0+ LPA'}</span>
+        </div>
+        <div class="aiu-metric-box">
+          <span class="aiu-metric-kpi-lbl">Entrance Cutoff</span>
+          <span class="aiu-metric-kpi-val">${cutoffText}</span>
         </div>
       </div>
 
-      <!-- EXAM CUTOFF & LOAN ELIGIBILITY -->
-      <div class="aiu-card-info-row">
-        <span class="aiu-exam-badge">🎯 ${cutoffText}</span>
-        <span class="aiu-loan-badge">🏦 100% Collateral-Free Loan</span>
+      <!-- HIGHLIGHTS / USP -->
+      <p class="aiu-card-highlights">
+        ${col.highlights || `${col.name} delivers specialized industry curriculum, faculty mentorship, and 100% placement support with top Fortune 500 recruiters.`}
+      </p>
+
+      <!-- ACCREDITATIONS & EXAMS ACCEPTED PILLS -->
+      <div class="aiu-card-pills-row">
+        <div class="aiu-pills-group">
+          ${(col.examsAccepted || ['CAT', 'XAT', 'CMAT']).slice(0, 4).map(ex => `<span class="aiu-pill-exam">📝 ${ex}</span>`).join('')}
+          ${accs.slice(0, 2).map(ac => `<span class="aiu-pill-acc">🏛️ ${ac}</span>`).join('')}
+        </div>
       </div>
 
       <!-- ACTION BUTTONS -->
       <div class="aiu-card-actions">
-        <button type="button" class="aiu-btn-apply" data-apply-college="${col.id}">
-          Apply Now
-        </button>
-        <button type="button" class="aiu-btn-brochure" data-brochure-college="${col.id}">
+        <button type="button" class="aiu-btn-brochure" data-college-brochure="${col.id}">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
           Brochure
         </button>
-        <a href="/colleges/${encodeURIComponent(col.id)}" class="aiu-btn-profile" data-route="colleges">
-          Profile →
+
+        <a href="/colleges/${encodeURIComponent(col.id)}" class="aiu-btn-apply" data-route="colleges">
+          Full Profile &amp; Cutoffs →
         </a>
       </div>
 
@@ -1061,29 +1243,14 @@ function renderAiuCollegeCard(col) {
 /**
  * Attach button interactions to cards
  */
-function attachCardActions(container, collegesList) {
-  // Apply / Inquiry button
-  container.querySelectorAll('[data-apply-college]').forEach(btn => {
+function attachCardActions(container, colleges) {
+  container.querySelectorAll('[data-college-brochure]').forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      const colId = btn.getAttribute('data-apply-college');
-      const matched = collegesList.find(c => c.id === colId);
-      if (window.openCollegeBrochureModal && matched) {
-        window.openCollegeBrochureModal(matched);
-      } else if (window.openInquiryModal) {
-        window.openInquiryModal();
-      }
-    });
-  });
-
-  // Brochure download button
-  container.querySelectorAll('[data-brochure-college]').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const colId = btn.getAttribute('data-brochure-college');
-      const matched = collegesList.find(c => c.id === colId);
-      if (window.openCollegeBrochureModal && matched) {
-        window.openCollegeBrochureModal(matched);
+      const colId = btn.getAttribute('data-college-brochure');
+      const col = colleges.find(c => c.id === colId);
+      if (window.openCollegeBrochureModal && col) {
+        window.openCollegeBrochureModal(col);
       } else if (window.openInquiryModal) {
         window.openInquiryModal();
       }

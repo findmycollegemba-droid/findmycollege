@@ -50,22 +50,23 @@ export function renderFooter() {
           <ul class="footer-links-list">
             <li>
               <a href="/aiu-approved-campuses" data-route="aiu-approved-campuses" style="color:#6B2CF5;font-weight:800;display:inline-flex;align-items:center;gap:5px;">
-                <span>🏛️ All 9 AIU City Hubs</span>
+                <span>🏛️ All 9 AIU City Hubs (86)</span>
                 <span style="font-size:0.62rem;background:#EDE9FE;color:#6B2CF5;padding:1px 6px;border-radius:4px;font-weight:900;">Official Gazette</span>
               </a>
             </li>
-            <li><a href="/aiu-approved-campuses/delhi-ncr" data-route="aiu-approved-campuses" data-sub="delhi-ncr">Delhi NCR (35 AIU / 107 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/pan-india" data-route="aiu-approved-campuses" data-sub="pan-india" style="color:#2563eb;font-weight:700;">🇮🇳 Pan-India AIU List (121 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/delhi-ncr" data-route="aiu-approved-campuses" data-sub="delhi-ncr">Delhi NCR (35 AIU / 106 Total)</a></li>
             <li><a href="/aiu-approved-campuses/pune" data-route="aiu-approved-campuses" data-sub="pune">Pune (14 AIU / 58 Total)</a></li>
-            <li><a href="/aiu-approved-campuses/mumbai" data-route="aiu-approved-campuses" data-sub="mumbai">Mumbai (10 AIU / 40 Total)</a></li>
-            <li><a href="/aiu-approved-campuses/bangalore" data-route="aiu-approved-campuses" data-sub="bangalore">Bangalore (15 AIU / 37 Total)</a></li>
-            <li><a href="/aiu-approved-campuses/jaipur" data-route="aiu-approved-campuses" data-sub="jaipur">Jaipur (3 AIU / 41 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/mumbai" data-route="aiu-approved-campuses" data-sub="mumbai">Mumbai (10 AIU / 35 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/bangalore" data-route="aiu-approved-campuses" data-sub="bangalore">Bangalore (15 AIU / 31 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/jaipur" data-route="aiu-approved-campuses" data-sub="jaipur">Jaipur (3 AIU / 39 Total)</a></li>
             <li><a href="/aiu-approved-campuses/kolkata" data-route="aiu-approved-campuses" data-sub="kolkata">Kolkata (5 AIU / 37 Total)</a></li>
-            <li><a href="/aiu-approved-campuses/dehradun" data-route="aiu-approved-campuses" data-sub="dehradun">Dehradun (UGC MBA Hub)</a></li>
-            <li><a href="/aiu-approved-campuses/lucknow" data-route="aiu-approved-campuses" data-sub="lucknow">Lucknow (2 AIU / 22 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/dehradun" data-route="aiu-approved-campuses" data-sub="dehradun">Dehradun (UGC MBA Hub / 30 Total)</a></li>
+            <li><a href="/aiu-approved-campuses/lucknow" data-route="aiu-approved-campuses" data-sub="lucknow">Lucknow (2 AIU / 21 Total)</a></li>
             <li><a href="/aiu-approved-campuses/indore" data-route="aiu-approved-campuses" data-sub="indore">Indore (2 AIU / 10 Total)</a></li>
             <li>
               <a href="https://aiu.ac.in/wp-content/uploads/docs/2026/06/PGDM_Institution_List_June_2026.pdf" target="_blank" rel="noopener noreferrer" style="font-size:0.75rem;color:#7c3aed;display:inline-flex;align-items:center;gap:4px;margin-top:4px;">
-                <span>📄 AIU June 2026 Gazette (PDF) ↗</span>
+                <span>📄 AIU June 2026 Gazette (121 Colleges PDF) ↗</span>
               </a>
             </li>
           </ul>
@@ -125,17 +126,19 @@ export function renderFooter() {
       <div class="footer-bottom">
         <div class="footer-bottom-container" style="margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #e2e8f0; font-size: 0.8rem; line-height: 1.6;">
           <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px;">
-            <span style="font-weight:800; color:#475569;">🏛️ Official AIU Campuses by City:</span>
-            <a href="/aiu-approved-campuses/delhi-ncr" data-route="aiu-approved-campuses" data-sub="delhi-ncr">Delhi NCR</a> •
-            <a href="/aiu-approved-campuses/pune" data-route="aiu-approved-campuses" data-sub="pune">Pune</a> •
-            <a href="/aiu-approved-campuses/mumbai" data-route="aiu-approved-campuses" data-sub="mumbai">Mumbai</a> •
-            <a href="/aiu-approved-campuses/bangalore" data-route="aiu-approved-campuses" data-sub="bangalore">Bangalore</a> •
-            <a href="/aiu-approved-campuses/jaipur" data-route="aiu-approved-campuses" data-sub="jaipur">Jaipur</a> •
-            <a href="/aiu-approved-campuses/kolkata" data-route="aiu-approved-campuses" data-sub="kolkata">Kolkata</a> •
+            <span style="font-weight:800; color:#475569;">🏛️ Official AIU Campuses (June 2026 Gazette):</span>
+            <a href="/aiu-approved-campuses" data-route="aiu-approved-campuses">All 9 Cities (86 AIU)</a> •
+            <a href="/aiu-approved-campuses/pan-india" data-route="aiu-approved-campuses" data-sub="pan-india" style="font-weight:700;color:#2563eb;">Pan-India (121 AIU)</a> •
+            <a href="/aiu-approved-campuses/delhi-ncr" data-route="aiu-approved-campuses" data-sub="delhi-ncr">Delhi NCR (35)</a> •
+            <a href="/aiu-approved-campuses/pune" data-route="aiu-approved-campuses" data-sub="pune">Pune (14)</a> •
+            <a href="/aiu-approved-campuses/mumbai" data-route="aiu-approved-campuses" data-sub="mumbai">Mumbai (10)</a> •
+            <a href="/aiu-approved-campuses/bangalore" data-route="aiu-approved-campuses" data-sub="bangalore">Bangalore (15)</a> •
+            <a href="/aiu-approved-campuses/jaipur" data-route="aiu-approved-campuses" data-sub="jaipur">Jaipur (3)</a> •
+            <a href="/aiu-approved-campuses/kolkata" data-route="aiu-approved-campuses" data-sub="kolkata">Kolkata (5)</a> •
             <a href="/aiu-approved-campuses/dehradun" data-route="aiu-approved-campuses" data-sub="dehradun">Dehradun (UGC MBA)</a> •
-            <a href="/aiu-approved-campuses/lucknow" data-route="aiu-approved-campuses" data-sub="lucknow">Lucknow</a> •
-            <a href="/aiu-approved-campuses/indore" data-route="aiu-approved-campuses" data-sub="indore">Indore</a> •
-            <a href="https://aiu.ac.in/wp-content/uploads/docs/2026/06/PGDM_Institution_List_June_2026.pdf" target="_blank" rel="noopener noreferrer" style="color:#7c3aed;font-weight:700;">AIU June 2026 Gazette (PDF) ↗</a>
+            <a href="/aiu-approved-campuses/lucknow" data-route="aiu-approved-campuses" data-sub="lucknow">Lucknow (2)</a> •
+            <a href="/aiu-approved-campuses/indore" data-route="aiu-approved-campuses" data-sub="indore">Indore (2)</a> •
+            <a href="https://aiu.ac.in/wp-content/uploads/docs/2026/06/PGDM_Institution_List_June_2026.pdf" target="_blank" rel="noopener noreferrer" style="color:#7c3aed;font-weight:700;">Official AIU June 2026 Gazette (121 Institutions PDF) ↗</a>
           </div>
         </div>
         <div class="footer-bottom-container">

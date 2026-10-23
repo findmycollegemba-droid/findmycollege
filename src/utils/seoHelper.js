@@ -322,6 +322,7 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
       const cityKey = sub ? sub.toLowerCase() : 'all';
       const cityTitles = {
         'all': 'Top AIU Approved Campuses in India (City-Wise Directory 2027-29)',
+        'pan-india': 'All 121 AIU Approved Colleges in India (Official June 2026 Gazette List)',
         'delhi-ncr': 'AIU Approved MBA & PGDM Colleges in Delhi NCR (2027-29)',
         'pune': 'AIU Approved MBA & PGDM Colleges in Pune (Fees, Cutoffs & Placements)',
         'mumbai': 'AIU Approved MBA & PGDM Colleges in Mumbai & Navi Mumbai',
@@ -334,16 +335,17 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
       };
 
       const cityDescs = {
-        'all': 'Explore 360+ verified business schools with official Association of Indian Universities (AIU) equivalence across Delhi NCR, Pune, Mumbai, Bangalore, Jaipur, Kolkata, Dehradun, Lucknow, and Indore. Audited fees, real cutoffs & verified placements.',
-        'delhi-ncr': 'Compare 100+ AIU-approved PGDM & MBA colleges in Delhi NCR (Noida, Gurgaon, Greater Noida). Audited tuition fees, CAT/XAT cutoffs, and recent placement packages with 0% scrapers.',
-        'pune': 'Explore 50+ AIU-equivalent management institutes in Pune. Compare SIBM, Balaji, Indira, PUMBA, fees, entrance cutoffs, and recent campus placements.',
-        'mumbai': 'Find verified AIU-approved business schools in Mumbai and Navi Mumbai. Audited 2-year fees, cutoff percentiles, and banking/finance placement statistics.',
-        'bangalore': 'Top AIU approved MBA/PGDM colleges in Bangalore. Tech, analytics, and consulting placement data, audited tuition fees, and admission criteria.',
-        'jaipur': 'AIU approved management colleges in Jaipur, Rajasthan. Compare Jaipuria Jaipur, MNIT, IIHMR, audited fees, and pooled placement reports.',
-        'kolkata': 'Best AIU approved MBA colleges in Kolkata. Audited fees, cutoffs, and average salary packages across leading West Bengal management institutes.',
-        'dehradun': 'Top AIU approved business schools in Dehradun, Uttarakhand. Compare UPES, Doon Business School, DIT, residential campus fees, and placements.',
+        'all': 'Explore verified business schools with official Association of Indian Universities (AIU) equivalence across Delhi NCR, Pune, Mumbai, Bangalore, Jaipur, Kolkata, Dehradun, Lucknow, and Indore. 86 in 9 Metro Hubs, 121 Pan-India.',
+        'pan-india': 'Explore all 121 institutions holding official Association of Indian Universities (AIU) MBA Equivalence across India, verified directly from the June 2026 AIU Gazette document.',
+        'delhi-ncr': 'Compare 35 AIU-approved PGDM & 100+ MBA colleges in Delhi NCR (Noida, Gurgaon, Greater Noida). Audited tuition fees, CAT/XAT cutoffs, and recent placement packages with 0% scrapers.',
+        'pune': 'Explore 14 AIU-equivalent management institutes and 50+ colleges in Pune. Compare SIBM, Balaji, NIA, NIBM, fees, entrance cutoffs, and recent campus placements.',
+        'mumbai': 'Find 10 verified AIU-approved business schools and 35+ top colleges in Mumbai and Navi Mumbai. Audited 2-year fees, cutoff percentiles, and banking/finance placement statistics.',
+        'bangalore': 'Top 15 AIU approved PGDM institutes and 30+ MBA colleges in Bangalore. Tech, analytics, and consulting placement data, audited tuition fees, and admission criteria.',
+        'jaipur': 'AIU approved management colleges in Jaipur, Rajasthan. Compare Jaipuria Jaipur, IIHMR, IRM, audited fees, and pooled placement reports.',
+        'kolkata': 'Best 5 AIU approved PGDM institutes and leading MBA colleges in Kolkata. Audited fees, cutoffs, and average salary packages across West Bengal.',
+        'dehradun': 'Top business schools in Dehradun, Uttarakhand conferring statutory UGC MBA degrees. Compare UPES, Graphic Era, DIT, residential campus fees, and placements.',
         'lucknow': 'Explore top AIU approved management colleges in Lucknow. IIM Lucknow, Jaipuria Lucknow, university MBA fees, and placement reports.',
-        'indore': 'Verified AIU approved MBA & PGDM colleges in Indore. Compare Prestige, IMS DAVV, Jaipuria Indore, cutoffs, and placement packages.'
+        'indore': 'Verified AIU approved MBA & PGDM colleges in Indore. Compare IIM Indore, Jaipuria Indore, cutoffs, and placement packages.'
       };
 
       meta.title = `${cityTitles[cityKey] || cityTitles['all']} | FindMyBSchool`;
