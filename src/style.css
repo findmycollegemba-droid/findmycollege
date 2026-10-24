@@ -6,7 +6,7 @@
      ============================================================ */
   --ink: #14103A;
   --ink-2: #575086;
-  --paper: #F4F2FF;
+  --paper: #FFFFFF;
   --card: #FFFFFF;
   --line: rgba(20, 16, 58, 0.10);
   --line-2: rgba(20, 16, 58, 0.06);
@@ -60,11 +60,11 @@
    COLLEGE4SURE DAY / LIGHT THEME (DEFAULT)
    ============================================================ */
 :root, [data-theme="light"], [data-theme="day"] {
-  --bg-canvas: #F4F2FF;
+  --bg-canvas: #FFFFFF;
   --bg-surface: #FFFFFF;
   --bg-surface-elevated: #FFFFFF;
   --bg-surface-card: #FFFFFF;
-  --bg-glass: rgba(244, 242, 255, 0.88);
+  --bg-glass: rgba(255, 255, 255, 0.88);
   --bg-input: #FFFFFF;
   --bg-pill: #EDE7FE;
 
