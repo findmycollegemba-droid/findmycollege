@@ -170,7 +170,7 @@ export const AIU_OFFICIAL_LIST = [
       "Personnel Management & Human Resource Development"
     ],
     "validity": "26.11.2013 – 25.11.2018",
-    "collegeId": "balaji-international-biib-pune"
+    "collegeId": "balaji-human-resource-development-bimhrd-pune"
   },
   {
     "sno": 9,
@@ -1310,7 +1310,7 @@ export const AIU_OFFICIAL_LIST = [
       "PGDM"
     ],
     "validity": "01-07-2018 – 30-06-2028",
-    "collegeId": "jaipuria-lucknow"
+    "collegeId": null
   },
   {
     "sno": 82,
@@ -1892,7 +1892,7 @@ export const AIU_OFFICIAL_LIST = [
       "PGDM-RBA (Research and Business Analytics)"
     ],
     "validity": "26.11.2013 – 25.11.2018 & 01.07.2019– 30.06.2029",
-    "collegeId": "welingkar-mumbai"
+    "collegeId": null
   },
   {
     "sno": 119,

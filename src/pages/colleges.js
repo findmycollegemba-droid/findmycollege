@@ -1279,6 +1279,107 @@ export function getSimilarColleges(currentCol, count = 4) {
   return [...sameCity, ...others].slice(0, count);
 }
 
+// Dynamic review, loan, and admission helpers for 100% unique per-college content
+export function getCollegeReviewPros(col) {
+  if (col.nirfRank && col.nirfRank <= 30) {
+    return [
+      `Tier-1 peer diversity with top percentile cohort across engineering, commerce, and sciences.`,
+      `Marquee corporate recruiters offering senior leadership roles with domestic packages reaching ${col.highestSalary || 'industry benchmarks'}.`,
+      `Distinguished faculty with case-study research pedagogy and Harvard / global partner mentorship.`
+    ];
+  }
+  if (col.feeNum && col.feeNum < 6 && col.avgSalaryNum && col.avgSalaryNum >= 8.5) {
+    return [
+      `Exceptional Return on Investment (ROI Score: ${col.roiScore || '9.2/10'}) with total fees of only ${col.fees} against ${col.avgSalary} average CTC.`,
+      `Statutory university pedigree with strong executive presence and legacy alumni network.`,
+      `High recruiter-to-student ratio ensuring multiple placement opportunities across BFSI, FMCG, and public sector undertakings.`
+    ];
+  }
+  if (col.ownership && col.ownership.toLowerCase().includes('private')) {
+    const domains = Object.keys(col.domainDistribution || {}).slice(0, 2).map(k => k.replace(/([A-Z])/g, ' $1').trim()).join(' & ') || 'core management domains';
+    return [
+      `Contemporary industry-aligned curriculum emphasizing live industry projects, corporate internships, and analytics certifications.`,
+      `Modern campus infrastructure spanning ${col.campusArea || 'well-equipped facilities'} with smart digital classrooms and simulation labs.`,
+      `Active corporate training and placement cell facilitating domain-specific hiring across ${domains}.`
+    ];
+  }
+  return [
+    `Established academic framework recognized by ${col.accreditation || 'statutory education bodies'} with seasoned faculty guidance.`,
+    `Affordable tuition fee (${col.fees}) making quality management education accessible in ${col.state}.`,
+    `Dedicated regional corporate network and career counseling support across ${col.city}.`
+  ];
+}
+
+export function getCollegeReviewCons(col) {
+  if (col.nirfRank && col.nirfRank <= 30) {
+    return [
+      `High academic pressure with continuous quizzes, case presentations, and strict grading curves.`,
+      `Intense competition during GD-PI-WAT rounds with high cutoff percentiles (${col.cutoffCAT !== 'N/A' ? col.cutoffCAT : '90+ percentile'}).`
+    ];
+  }
+  if (col.feeNum && col.feeNum < 6 && col.avgSalaryNum && col.avgSalaryNum >= 8.5) {
+    return [
+      `Hostel capacity may be limited on-campus; students occasionally opt for private student accommodations nearby.`,
+      `Curriculum revisions follow structured university syndicate schedules compared to autonomous private diplomas.`
+    ];
+  }
+  return [
+    `Strict minimum attendance policy and regular milestone deadlines for internal project assessments.`,
+    `Aspirants are advised to actively pursue supplemental certifications and off-campus internships to secure upper-quartile placement packages.`
+  ];
+}
+
+export function getCollegeLoanDetails(col) {
+  const isPremier = (col.nirfRank && col.nirfRank <= 50) ||
+    col.shortName.startsWith('IIM') ||
+    col.shortName.startsWith('IIT') ||
+    ['XLRI', 'FMS', 'SPJIMR', 'MDI', 'NMIMS', 'SIBM', 'IMT', 'GIM', 'TAPMI', 'IIFT', 'JBIMS'].some(k => (col.shortName || col.name).includes(k));
+
+  if (isPremier) {
+    return {
+      title: `Education Loan & SBI Scholar Financing for ${col.shortName}`,
+      tag: '100% Collateral-Free Premier Aid',
+      description: `As a premier management institution, students admitted to ${col.name} are eligible for top-tier student loan facilities under the SBI Scholar Loan Scheme (List AA/A) and premier partner banks with 0% collateral requirements and direct fee disbursements.`,
+      card1Title: 'SBI Scholar Loan Scheme (List AA/A)',
+      card1Rate: 'Concessional Rates (from 8.15% p.a.)',
+      card1Bullets: [
+        `Up to ₹30-40 Lakhs with <strong>0% collateral</strong> required.`,
+        `100% coverage of tuition fees, books, computer, and living expenses.`,
+        `Repayment tenure up to 15 years after course completion + 1-year moratorium.`
+      ],
+      card2Title: 'Premier Private Banks & NBFCs (Axis / HDFC Credila)',
+      card2Rate: 'Fast-Track Digital Approval',
+      card2Bullets: [
+        `Pre-sanction letters issued upon admission call letter.`,
+        `Direct disbursement to college accounts within 48-72 hours.`,
+        `Income tax rebate under Section 80E on full interest paid.`
+      ],
+      faqAnswer: `Yes. Students admitted to ${col.name} are eligible for 100% collateral-free education loans up to ₹30-40 Lakhs under premier student loan schemes including the SBI Scholar Scheme, Axis Bank Education Loan, and HDFC Credila with zero margin money and expedited approvals.`
+    };
+  }
+
+  return {
+    title: `Education Loan & Bank Financing for ${col.shortName}`,
+    tag: 'Govt Portal & Bank Financing',
+    description: `Students admitted to ${col.name} can fund 100% of their ${col.fees} course tuition fees through the Government of India Vidya Lakshmi central portal and leading public sector banks with collateral-free financing up to ₹7.5 Lakhs under the Credit Guarantee Fund Scheme.`,
+    card1Title: 'Vidya Lakshmi Central Portal (SBI / PNB / Canara)',
+    card1Rate: 'Standard Priority Sector Rates',
+    card1Bullets: [
+      `Up to ₹7.5 Lakhs with <strong>0% collateral</strong> under Central Govt Credit Guarantee.`,
+      `Covers total tuition fees (${col.fees}), library charges, and examination costs.`,
+      `Repayment tenure up to 15 years with moratorium period (Course Duration + 1 Year).`
+    ],
+    card2Title: 'Private Banks & Specialized NBFCs (HDFC Credila / Avanse)',
+    card2Rate: 'Flexible Co-Borrower Financing',
+    card2Bullets: [
+      `Loan amounts tailored to the complete ${col.fees} fee structure with parental co-borrower.`,
+      `Doorstep document pickup and fast-track digital approval within 3-5 working days.`,
+      `Tax deductions available under Section 80E of the IT Act on annual interest repayments.`
+    ],
+    faqAnswer: `Yes. Admitted candidates can secure education loans covering the entire ${col.fees} tuition fee through the Government of India Vidya Lakshmi portal and partner banks (SBI, Canara, HDFC Credila) with collateral-free limits up to ₹7.5 Lakhs and flexible repayment terms.`
+  };
+}
+
 // STANDALONE CRAWLABLE FULL COLLEGE PROFILE PAGE (Optimized for Google Rank #1, AEO & GEO)
 export function renderCollegeFullPage(col) {
   if (!col) {
@@ -1300,6 +1401,9 @@ export function renderCollegeFullPage(col) {
   const facilities = col.facilities || [];
   const similarColleges = getSimilarColleges(col, 4);
   const cutoffText = col.cutoffCAT !== 'N/A' ? `CAT: ${col.cutoffCAT}` : (col.cutoffXAT !== 'N/A' ? `XAT: ${col.cutoffXAT}` : `CMAT: ${col.cutoffCMAT}`);
+  const reviewPros = getCollegeReviewPros(col);
+  const reviewCons = getCollegeReviewCons(col);
+  const loanData = getCollegeLoanDetails(col);
 
   return `
     <div class="page-college-profile standalone-college-profile shiksha-portal-theme">
@@ -1372,9 +1476,9 @@ export function renderCollegeFullPage(col) {
               <span class="fact-hint">ROI Rating: ${col.roiScore}</span>
             </div>
             <div class="aeo-fact-card fact-loan">
-              <span class="fact-label">SBI Scholar Loan</span>
+              <span class="fact-label">Education Loan</span>
               <span class="fact-value text-purple">100% Eligible</span>
-              <span class="fact-hint">0% Collateral Required</span>
+              <span class="fact-hint">${col.nirfRank && col.nirfRank <= 50 ? 'SBI Scholar 0% Collateral' : 'Vidya Lakshmi Govt Aid'}</span>
             </div>
           </div>
 
@@ -1441,7 +1545,7 @@ export function renderCollegeFullPage(col) {
                   <li><strong>NIRF Management Ranking:</strong> ${col.nirfRank ? `Ranked #${col.nirfRank} across India` : 'Premier Management Institute'}</li>
                   <li><strong>Accreditation:</strong> ${col.accreditation}</li>
                   <li><strong>Flagship Program:</strong> ${col.programType}</li>
-                  <li><strong>Campus Spread:</strong> ${col.campusArea} residential campus</li>
+                  <li><strong>Campus Spread:</strong> ${col.campusArea} campus</li>
                   <li><strong>Return on Investment (ROI):</strong> ${col.roiScore}</li>
                   <li><strong>Accepted Exams:</strong> ${col.examsAccepted.join(', ')}</li>
                 </ul>
@@ -1550,7 +1654,7 @@ export function renderCollegeFullPage(col) {
 
             <div class="cutoff-tips-box">
               <h4>🎯 How to Convert Your Shortlist at ${col.shortName}?</h4>
-              <p>While clearing the entrance percentile gets you into the interview pool, final offers heavily weigh your PI performance, WAT writing clarity, and academic consistency across 10th, 12th, and undergraduate degrees.</p>
+              <p>Candidates targeting ${col.shortName} should aim to clear the entrance benchmark (${cutoffText}). Final selection also assesses your undergraduate academic consistency${col.admissionCriteria?.interviewPersonalRound || col.admissionCriteria?.piWatWeight ? ', personal interview clarity,' : ''} and articulated motivation for joining ${col.shortName}.</p>
             </div>
           </section>
 
@@ -1643,19 +1747,19 @@ export function renderCollegeFullPage(col) {
               <div class="timeline-step">
                 <div class="step-num">1</div>
                 <div>
-                  <strong>Entrance Exam Gate:</strong> Register and appear for ${col.examsAccepted.join('/')}. Meet overall and sectional minimum percentiles.
+                  <strong>Entrance Exam Gate:</strong> Register and appear for ${col.examsAccepted.join(' or ')}. Secure valid scores satisfying the expected cutoff threshold (${cutoffText}).
                 </div>
               </div>
               <div class="timeline-step">
                 <div class="step-num">2</div>
                 <div>
-                  <strong>Shortlisting for WAT & PI:</strong> Qualified aspirants receive shortlist invitations based on entrance percentile plus graduation academics and diversity points.
+                  <strong>Shortlisting for WAT & PI:</strong> Qualified aspirants receive shortlist invitations evaluated on entrance percentile plus graduation academics and diversity points.
                 </div>
               </div>
               <div class="timeline-step">
                 <div class="step-num">3</div>
                 <div>
-                  <strong>Final Selection & Seat Offer:</strong> Personal Interview (PI) performance combined with WAT score and work experience determines final admissions.
+                  <strong>Final Selection & Seat Offer:</strong> Personal Interview (PI) performance combined with WAT writing clarity and academic track record determines final merit offers.
                 </div>
               </div>
             </div>
@@ -1668,7 +1772,7 @@ export function renderCollegeFullPage(col) {
               <span class="section-tag">Campus Spread: ${col.campusArea}</span>
             </div>
             <p class="section-text-para">
-              ${col.name} provides a fully residential learning environment designed to support round-the-clock case studies, corporate competitions, and sports.
+              ${col.campusArea && col.campusArea.toLowerCase().includes('acres') ? `${col.name} operates a spacious ${col.campusArea} campus equipped with modern classrooms, seminar halls, and learning facilities in ${col.location}.` : `${col.name} provides modern academic and learning infrastructure in ${col.location}, equipped with digital classrooms, seminar halls, and student activity facilities.`}
             </p>
 
             <div class="facilities-tags-grid">
@@ -1677,7 +1781,7 @@ export function renderCollegeFullPage(col) {
                   <span class="fac-icon-large">🏛️</span>
                   <div>
                     <strong>${fac}</strong>
-                    <p class="text-xs text-muted">Modern infrastructure maintained to global standards.</p>
+                    <p class="text-xs text-muted">Modern infrastructure maintained to institutional standards.</p>
                   </div>
                 </div>
               `).join('')}
@@ -1687,11 +1791,11 @@ export function renderCollegeFullPage(col) {
           <!-- SECTION 7: BANK LOANS & FINANCING -->
           <section id="bank-loans" class="college-detail-section">
             <div class="section-heading-row">
-              <h2 class="section-title">Education Loan & Bank Financing for ${col.shortName}</h2>
-              <span class="section-tag">Collateral-Free Aid</span>
+              <h2 class="section-title">${loanData.title}</h2>
+              <span class="section-tag">${loanData.tag}</span>
             </div>
             <p class="section-text-para">
-              As a premier management institute, students admitted to ${col.name} qualify for top-tier national education loan schemes with zero collateral and 100% course fee coverage.
+              ${loanData.description}
             </p>
 
             <div class="loan-cards-grid">
@@ -1699,30 +1803,26 @@ export function renderCollegeFullPage(col) {
                 <div class="loan-card-top">
                   <span class="bank-emblem">🏦</span>
                   <div>
-                    <h4>SBI Scholar Loan Scheme</h4>
-                    <span class="loan-rate">Concessional Rates (from 8.15% p.a.)</span>
+                    <h4>${loanData.card1Title}</h4>
+                    <span class="loan-rate">${loanData.card1Rate}</span>
                   </div>
                 </div>
                 <ul class="loan-bullets">
-                  <li>Up to ₹30-40 Lakhs with <strong>0% collateral</strong> required.</li>
-                  <li>100% coverage of tuition fees, books, computer, and hostel expenses.</li>
-                  <li>Repayment tenure up to 15 years after course completion + 1-year moratorium.</li>
+                  ${loanData.card1Bullets.map(b => `<li>${b}</li>`).join('')}
                 </ul>
-                <button class="btn-loan-inquire" data-loan-college="${col.id}">Inquire SBI Scholar Loan →</button>
+                <button class="btn-loan-inquire" data-loan-college="${col.id}">Inquire Financing Details →</button>
               </div>
 
               <div class="loan-card-item">
                 <div class="loan-card-top">
                   <span class="bank-emblem">💳</span>
                   <div>
-                    <h4>Private Banks & NBFCs (Axis / HDFC Credila)</h4>
-                    <span class="loan-rate">Fast-Track Digital Approval</span>
+                    <h4>${loanData.card2Title}</h4>
+                    <span class="loan-rate">${loanData.card2Rate}</span>
                   </div>
                 </div>
                 <ul class="loan-bullets">
-                  <li>Pre-sanction letters issued upon admission call letter.</li>
-                  <li>Direct disbursement to college accounts within 48-72 hours.</li>
-                  <li>Income tax rebate under Section 80E on full interest paid.</li>
+                  ${loanData.card2Bullets.map(b => `<li>${b}</li>`).join('')}
                 </ul>
                 <button class="btn-loan-inquire" data-loan-college="${col.id}">Inquire Private Education Loan →</button>
               </div>
@@ -1748,16 +1848,13 @@ export function renderCollegeFullPage(col) {
                   <div class="pro-box">
                     <strong class="text-green">✓ Notable Strengths:</strong>
                     <ul>
-                      <li>Stellar peer group with high diversity across consulting, analytics, and tech.</li>
-                      <li>Unmatched corporate access and placement packages.</li>
-                      <li>Distinguished faculty and global case-study pedagogical methodology.</li>
+                      ${reviewPros.map(p => `<li>${p}</li>`).join('')}
                     </ul>
                   </div>
                   <div class="con-box">
                     <strong class="text-amber">⚠️ Key Considerations:</strong>
                     <ul>
-                      <li>High academic pressure and continuous evaluation quizzes.</li>
-                      <li>Strict attendance policy and intensive project deadlines.</li>
+                      ${reviewCons.map(c => `<li>${c}</li>`).join('')}
                     </ul>
                   </div>
                 </div>
@@ -1789,7 +1886,7 @@ export function renderCollegeFullPage(col) {
                   <span class="faq-toggle-icon">+</span>
                 </button>
                 <div class="college-faq-answer">
-                  <p>For general category candidates, the expected minimum cutoff for ${col.name} (2027-29 session) is <strong>${col.cutoffCAT !== 'N/A' ? 'CAT ' + col.cutoffCAT : (col.cutoffXAT !== 'N/A' ? 'XAT ' + col.cutoffXAT : 'CMAT ' + col.cutoffCMAT)}</strong>. Reserved category candidates (NC-OBC, SC, ST, EWS) receive relaxed cutoff percentiles as per institutional norms.</p>
+                  <p>For general category candidates, the expected minimum cutoff for ${col.name} (2027-29 session) is <strong>${cutoffText}</strong>. Reserved category candidates (NC-OBC, SC, ST, EWS) receive relaxed cutoff percentiles as per institutional norms.</p>
                 </div>
               </div>
 
@@ -1819,7 +1916,7 @@ export function renderCollegeFullPage(col) {
                   <span class="faq-toggle-icon">+</span>
                 </button>
                 <div class="college-faq-answer">
-                  <p>Yes. Students admitted to ${col.name} are eligible for 100% collateral-free education loans up to ₹30-40 Lakhs under premier student loan schemes including the SBI Scholar Scheme, Axis Bank Education Loan, and HDFC Credila with zero margin money and expedited approvals.</p>
+                  <p>${loanData.faqAnswer}</p>
                 </div>
               </div>
             </div>

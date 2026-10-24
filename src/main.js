@@ -411,7 +411,7 @@ async function handleRouteChange() {
     case 'scholarships': {
       const scholarshipsMod = await import('./pages/scholarships.js');
       mainEl.innerHTML = scholarshipsMod.renderScholarshipsPage(sub);
-      scholarshipsMod.initScholarshipsInteractions();
+      scholarshipsMod.initScholarshipsInteractions(sub);
       break;
     }
 

@@ -24,6 +24,33 @@ export function initToolsInteractions() {
       if (tab === 'xat') targetUrl = '/tools/xat-percentile-calculator';
       else if (tab === 'cmat') targetUrl = '/tools/cmat-percentile-calculator';
 
+      const TOOL_HEADINGS = {
+        cat: {
+          badge: '⚡ CAT 2026 Response Sheet Scanner & Slot Normalization Engine',
+          title: 'CAT College Predictor 2026: IIM Call Predictor & MBA Percentile Calculator',
+          subtitle: 'Calculate your raw score, scaled score, and percentile from your official candidate response sheet URL or source. Features official +3/−1/0 marking, slot 1/2/3 normalization, and 2027 IIM call prediction.'
+        },
+        xat: {
+          badge: '🎯 Official XLRI Negative Marking & Unattempt Penalty Engine',
+          title: 'XAT 2027 Score Calculator & XLRI Percentile Predictor',
+          subtitle: 'Calculate your raw and scaled XAT score with official -0.25 negative marking and -0.10 unattempted penalty. Estimate XLRI BM, HRM, and top XAMI institute shortlist percentiles.'
+        },
+        cmat: {
+          badge: '⚡ CMAT 400-Mark Score & Percentile Normalization System',
+          title: 'CMAT 2026 Score Calculator & JBIMS Cutoff Predictor',
+          subtitle: 'Calculate your score across QA, LR, Language, General Awareness, and Innovation. Predict JBIMS MMS, SIMSREE, GIM Goa, and K J Somaiya percentile cutoffs.'
+        }
+      };
+
+      const heroBadge = document.querySelector('.tools-hero .hero-badge-pill .badge-text');
+      const heroTitle = document.querySelector('.tools-hero .page-title');
+      const heroSub = document.querySelector('.tools-hero .page-subtitle');
+      if (TOOL_HEADINGS[tab]) {
+        if (heroBadge) heroBadge.textContent = TOOL_HEADINGS[tab].badge;
+        if (heroTitle) heroTitle.textContent = TOOL_HEADINGS[tab].title;
+        if (heroSub) heroSub.textContent = TOOL_HEADINGS[tab].subtitle;
+      }
+
       window.history.pushState(null, '', targetUrl);
       state.currentSub = tab;
       updatePageSEO('tools', tab, new URLSearchParams());

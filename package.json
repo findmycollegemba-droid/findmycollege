@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "node scripts/generate-sitemap.mjs && vite build",
     "preview": "vite preview",
-    "sitemap": "node scripts/generate-sitemap.mjs"
+    "sitemap": "node scripts/generate-sitemap.mjs",
+    "audit:duplicates": "node scripts/audit-duplicate-content.mjs"
   },
   "devDependencies": {
     "vite": "^8.3.0"

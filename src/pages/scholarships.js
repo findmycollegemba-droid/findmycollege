@@ -56,6 +56,11 @@ export function saveAppliedScholarship(appData) {
  * Main render function for Live Scholarships Page
  */
 export function renderScholarshipsPage(subRoute = null) {
+  const specificSch = subRoute ? (SCHOLARSHIPS_DATA.find(s => s.id === subRoute || s.slug === subRoute) || null) : null;
+  if (specificSch) {
+    return renderSingleScholarshipPage(specificSch);
+  }
+
   const appliedList = getAppliedScholarships();
   const appliedCount = appliedList.length;
 
@@ -1033,9 +1038,238 @@ export function renderMyApplicationsBody() {
 }
 
 /**
+ * Renders dedicated standalone Scholarship Profile Page (Unique URL)
+ */
+export function renderSingleScholarshipPage(sch) {
+  const appliedList = getAppliedScholarships();
+  const appliedCount = appliedList.length;
+
+  return `
+    <div class="page-scholarships single-scholarship-profile" id="scholarshipsApp">
+      <!-- Breadcrumb Bar -->
+      <div class="portal-breadcrumb-bar">
+        <div class="section-container">
+          <nav class="portal-breadcrumb" aria-label="Breadcrumb">
+            <a href="/" data-route="home">Home</a>
+            <span class="bc-sep">/</span>
+            <a href="/scholarships" data-route="scholarships">MBA Scholarships</a>
+            <span class="bc-sep">/</span>
+            <span class="bc-current">${sch.title}</span>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <section class="sch-hero single-sch-hero">
+        <div class="sch-hero-bg-glow"></div>
+        <div class="section-container">
+          <div class="sch-hero-top-row">
+            <div class="sch-live-pulse-badge">
+              <span class="live-dot-pulse"></span>
+              <span>🔴 ${sch.status} • Session 2027-29 Active</span>
+            </div>
+            <button type="button" class="sch-applied-tracker-btn" id="openMyApplicationsBtn">
+              <span class="tracker-icon">📑</span>
+              <span>My Applications</span>
+              <span class="sch-badge-counter" id="appliedCounterBadge">${appliedCount}</span>
+            </button>
+          </div>
+
+          <div class="single-sch-badge-row" style="margin-top: 15px;">
+            <span class="sch-tag-category ${sch.category}">${sch.badge}</span>
+            <span class="sch-tag-provider" style="background:#e0e7ff;color:#3730a3;font-weight:700;font-size:0.8rem;padding:3px 10px;border-radius:20px;border:1px solid #c7d2fe;margin-left:8px;">🏛️ ${sch.providerType}</span>
+          </div>
+
+          <h1 class="sch-hero-title" style="margin-top: 15px;">
+            ${sch.title}
+          </h1>
+          <p class="sch-hero-subtitle">
+            Administered by <strong>${sch.provider}</strong>. Financial grant of <strong>${sch.amount}</strong> for qualified management candidates admitted to premier business schools across India.
+          </p>
+
+          <!-- Key Metrics Quad -->
+          <div class="sch-stats-grid" style="margin-top: 25px;">
+            <div class="sch-stat-card">
+              <div class="stat-num text-green">${sch.amount}</div>
+              <div class="stat-lbl">Total Grant Value</div>
+            </div>
+            <div class="sch-stat-card">
+              <div class="stat-num">${sch.deadline}</div>
+              <div class="stat-lbl">Application Deadline (${sch.daysRemaining} days left)</div>
+            </div>
+            <div class="sch-stat-card">
+              <div class="stat-num">${sch.minExamPercentile}</div>
+              <div class="stat-lbl">Exam Percentile Benchmark</div>
+            </div>
+            <div class="sch-stat-card">
+              <div class="stat-num">${sch.minGraduationMarks}</div>
+              <div class="stat-lbl">Min Academic Marks</div>
+            </div>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="hero-cta-group" style="margin-top: 25px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <button class="btn-primary-apply btn-hero-apply" id="btnSingleApplyNow" data-apply-sch-id="${sch.id}">
+              <span>Apply for ${sch.title} →</span>
+            </button>
+            ${sch.officialUrl ? `
+              <a href="${sch.officialUrl}" target="_blank" rel="noopener noreferrer" class="btn-official-website">
+                <span>Official Foundation Portal ↗</span>
+              </a>
+            ` : ''}
+            <a href="/scholarships" class="btn-back-catalog" data-route="scholarships">
+              <span>← All 14 Live Scholarships</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Body -->
+      <div class="section-container" style="padding: 40px 1.5rem; max-width: 1000px; margin: 0 auto;">
+        
+        <!-- Overview & Description -->
+        <div class="sch-detail-block" style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:28px; margin-bottom:24px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+          <h2 style="font-size:1.4rem; font-weight:800; color:#0f172a; margin-bottom:12px;">About the Scholarship</h2>
+          <p style="font-size:1.05rem; line-height:1.7; color:#334155;">${sch.description}</p>
+        </div>
+
+        <!-- Coverage Breakdown -->
+        <div class="sch-detail-block" style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:28px; margin-bottom:24px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+          <h2 style="font-size:1.4rem; font-weight:800; color:#0f172a; margin-bottom:12px;">Grant Coverage & Financial Benefits</h2>
+          <ul style="list-style:none; padding:0; display:grid; gap:10px;">
+            ${(sch.coverage || []).map(cov => `
+              <li style="display:flex; align-items:flex-start; gap:10px; font-size:1rem; color:#334155;">
+                <span style="color:#059669; font-weight:800; font-size:1.1rem;">✓</span>
+                <span>${cov}</span>
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+
+        <!-- Targeted Institutes & Eligibility -->
+        <div class="sch-detail-block" style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:28px; margin-bottom:24px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+          <h2 style="font-size:1.4rem; font-weight:800; color:#0f172a; margin-bottom:16px;">Target Institutes & Eligibility Criteria</h2>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:16px;">
+            <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:16px; border-radius:10px;">
+              <div style="font-size:0.8rem; font-weight:700; color:#64748b; text-transform:uppercase;">Eligible Institutes</div>
+              <div style="font-weight:700; color:#0f172a; margin-top:4px;">${sch.targetInstitutes}</div>
+            </div>
+            <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:16px; border-radius:10px;">
+              <div style="font-size:0.8rem; font-weight:700; color:#64748b; text-transform:uppercase;">Eligibility Summary</div>
+              <div style="font-weight:700; color:#0f172a; margin-top:4px;">${sch.eligibilitySummary}</div>
+            </div>
+            <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:16px; border-radius:10px;">
+              <div style="font-size:0.8rem; font-weight:700; color:#64748b; text-transform:uppercase;">Parental Family Income Limit</div>
+              <div style="font-weight:700; color:#0f172a; margin-top:4px;">${sch.familyIncomeLimit}</div>
+            </div>
+            <div style="background:#f8fafc; border:1px solid #e2e8f0; padding:16px; border-radius:10px;">
+              <div style="font-size:0.8rem; font-weight:700; color:#64748b; text-transform:uppercase;">Academic Consistency Threshold</div>
+              <div style="font-weight:700; color:#0f172a; margin-top:4px;">${sch.minGraduationMarks} (Graduation)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selection Roadmap -->
+        <div class="sch-detail-block" style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:28px; margin-bottom:24px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+          <h2 style="font-size:1.4rem; font-weight:800; color:#0f172a; margin-bottom:16px;">Selection Process & Evaluation Stages</h2>
+          <div class="admission-steps-timeline">
+            ${(sch.selectionProcess || []).map((step, idx) => `
+              <div class="timeline-step">
+                <div class="step-num">${idx + 1}</div>
+                <div>${step}</div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- Mandatory Documents -->
+        <div class="sch-detail-block" style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:28px; margin-bottom:24px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+          <h2 style="font-size:1.4rem; font-weight:800; color:#0f172a; margin-bottom:16px;">Mandatory Application Documents</h2>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:12px;">
+            ${(sch.documentsRequired || []).map(doc => `
+              <div style="display:flex; align-items:center; gap:8px; background:#f8fafc; border:1px solid #e2e8f0; padding:12px 16px; border-radius:8px; font-size:0.95rem; font-weight:600; color:#334155;">
+                <span>📄</span>
+                <span>${doc}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <!-- FAQs -->
+        ${sch.faqs && sch.faqs.length > 0 ? `
+          <div class="sch-detail-block" style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:28px; margin-bottom:24px; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+            <h2 style="font-size:1.4rem; font-weight:800; color:#0f172a; margin-bottom:16px;">Frequently Asked Questions</h2>
+            <div class="college-faqs-accordion">
+              ${sch.faqs.map(faq => `
+                <div class="college-faq-item open">
+                  <button class="college-faq-question" style="pointer-events:none;">
+                    <span>${faq.q}</span>
+                  </button>
+                  <div class="college-faq-answer">
+                    <p>${faq.a}</p>
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        ` : ''}
+
+        <!-- Bottom Action Strip -->
+        <div style="text-align:center; padding:30px 20px; background:linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%); border-radius:16px; border:1px solid #bfdbfe; margin-top:20px;">
+          <h3 style="font-size:1.3rem; font-weight:800; color:#1e3a8a; margin-bottom:8px;">Ready to Submit Your Application?</h3>
+          <p style="color:#475569; max-width:600px; margin:0 auto 16px;">Our senior MBA admission mentors evaluate candidate profiles for ${sch.title} free of charge with complete guidance on SOPs and document verification.</p>
+          <button class="btn-primary-apply" id="btnSingleApplyNowBottom" data-apply-sch-id="${sch.id}">
+            <span>Apply Now for ${sch.title} →</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Detail & Application Modals Mount -->
+      <div class="portal-modal-overlay sch-modal-overlay" id="schDetailModalOverlay" style="display:none;">
+        <div class="portal-modal-dialog sch-modal-dialog" id="schDetailModalDialog"></div>
+      </div>
+
+      <div class="portal-modal-overlay sch-modal-overlay" id="schApplyModalOverlay" style="display:none;">
+        <div class="portal-modal-dialog sch-modal-dialog" id="schApplyModalDialog"></div>
+      </div>
+
+      <div class="portal-modal-overlay sch-modal-overlay" id="myAppsModalOverlay" style="display:none;">
+        <div class="portal-modal-dialog sch-modal-dialog my-apps-dialog" id="myAppsModalDialog">
+          <div class="my-apps-header">
+            <div class="mah-left">
+              <span class="mah-icon">📑</span>
+              <div>
+                <h3 class="mah-title">My Tracked Scholarship Applications</h3>
+                <p class="mah-sub">Real-time status tracking and document check</p>
+              </div>
+            </div>
+            <button type="button" class="sch-modal-close" id="closeMyAppsBtn" title="Close Drawer">✕</button>
+          </div>
+          <div class="my-apps-body" id="myAppsBody"></div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+/**
  * Initialize all interactions, event listeners, and modals on the scholarships page
  */
-export function initScholarshipsInteractions() {
+export function initScholarshipsInteractions(subRoute = null) {
+  const specificSch = subRoute ? (SCHOLARSHIPS_DATA.find(s => s.id === subRoute || s.slug === subRoute) || null) : null;
+  if (specificSch) {
+    const applyBtn1 = document.getElementById('btnSingleApplyNow');
+    const applyBtn2 = document.getElementById('btnSingleApplyNowBottom');
+    const openMyAppsBtn = document.getElementById('openMyApplicationsBtn');
+
+    if (applyBtn1) applyBtn1.addEventListener('click', () => openScholarshipApplyModal(specificSch));
+    if (applyBtn2) applyBtn2.addEventListener('click', () => openScholarshipApplyModal(specificSch));
+    if (openMyAppsBtn) openMyAppsBtn.addEventListener('click', openMyApplicationsModal);
+    setupModalDismissListeners();
+    return;
+  }
+
   // 1. Search Query Input
   const searchInput = document.getElementById('schSearchInput');
   const clearSearchBtn = document.getElementById('schClearSearchBtn');

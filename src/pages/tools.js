@@ -3,6 +3,26 @@ import { calculateCATScore, calculateXATScore, calculateCMATScore, calculateGoal
 export function renderToolsPage(activeSub = 'cat') {
   const currentSub = ['cat', 'xat', 'cmat'].includes(activeSub) ? activeSub : 'cat';
 
+  const TOOL_HEADINGS = {
+    cat: {
+      badge: '⚡ CAT 2026 Response Sheet Scanner & Slot Normalization Engine',
+      title: 'CAT College Predictor 2026: IIM Call Predictor & MBA Percentile Calculator',
+      subtitle: 'Calculate your raw score, scaled score, and percentile from your official candidate response sheet URL or source. Features official +3/−1/0 marking, slot 1/2/3 normalization, and 2027 IIM call prediction.'
+    },
+    xat: {
+      badge: '🎯 Official XLRI Negative Marking & Unattempt Penalty Engine',
+      title: 'XAT 2027 Score Calculator & XLRI Percentile Predictor',
+      subtitle: 'Calculate your raw and scaled XAT score with official -0.25 negative marking and -0.10 unattempted penalty. Estimate XLRI BM, HRM, and top XAMI institute shortlist percentiles.'
+    },
+    cmat: {
+      badge: '⚡ CMAT 400-Mark Score & Percentile Normalization System',
+      title: 'CMAT 2026 Score Calculator & JBIMS Cutoff Predictor',
+      subtitle: 'Calculate your score across QA, LR, Language, General Awareness, and Innovation. Predict JBIMS MMS, SIMSREE, GIM Goa, and K J Somaiya percentile cutoffs.'
+    }
+  };
+
+  const activeToolHeading = TOOL_HEADINGS[currentSub] || TOOL_HEADINGS.cat;
+
   return `
     <div class="page-tools">
       <!-- Tools Hero -->
@@ -10,12 +30,10 @@ export function renderToolsPage(activeSub = 'cat') {
         <div class="section-container">
           <div class="hero-badge-pill">
             <span class="pulse-indicator"></span>
-            <span class="badge-text">⚡ CAT 2026 Response Sheet Scanner & Slot Normalization Engine</span>
+            <span class="badge-text">${activeToolHeading.badge}</span>
           </div>
-          <h1 class="page-title">CAT College Predictor 2026: IIM Call Predictor & MBA Percentile Calculator</h1>
-          <p class="page-subtitle">
-            Calculate your raw score, scaled score, and percentile from your official candidate response sheet URL or source. Features official +3/−1/0 marking, slot 1/2/3 normalization, and 2027 IIM call prediction.
-          </p>
+          <h1 class="page-title">${activeToolHeading.title}</h1>
+          <p class="page-subtitle">${activeToolHeading.subtitle}</p>
 
           <!-- Exam Tools Tab Bar -->
           <div class="tools-tab-bar">
