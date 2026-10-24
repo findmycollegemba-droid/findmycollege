@@ -1,4 +1,4 @@
-import confetti from 'canvas-confetti';
+import { fireConfetti } from '../utils/confettiHelper.js';
 import { sendLeadToCRM } from '../utils/crm.js';
 import { trackLeadSubmission } from '../utils/analytics.js';
 
@@ -815,7 +815,7 @@ export function initInquiryModal() {
       }
 
       // Confetti Burst Celebration
-      confetti({
+      fireConfetti({
         particleCount: 80,
         spread: 70,
         origin: { y: 0.6 }

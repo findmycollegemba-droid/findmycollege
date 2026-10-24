@@ -1,5 +1,4 @@
 import { PROGRAMS_DATA } from '../data/programsData.js';
-import { COLLEGES_DATA } from '../data/collegesData.js';
 
 export function renderProgramsPage(activeSub = 'mba') {
   const currentSub = ['mba', 'pgdm', 'compare', 'specializations', 'roi'].includes(activeSub) ? activeSub : 'mba';
@@ -322,4 +321,73 @@ export function renderProgramsPage(activeSub = 'mba') {
       </div>
     </div>
   `;
+}
+
+export function initProgramsInteractions(onTabChange) {
+  const tabBtns = document.querySelectorAll('.program-tab-btn');
+  const panels = document.querySelectorAll('.program-tab-panel');
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetTab = btn.getAttribute('data-program-tab');
+      tabBtns.forEach(b => b.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+
+      btn.classList.add('active');
+      const targetPanel = document.getElementById(`panel-${targetTab}`);
+      if (targetPanel) targetPanel.classList.add('active');
+
+      if (onTabChange) onTabChange(targetTab);
+    });
+  });
+
+  // ROI Calculator
+  const tuitionInp = document.getElementById('roiTuition');
+  const livingInp = document.getElementById('roiLiving');
+  const currCtcInp = document.getElementById('roiCurrentCTC');
+  const postCtcInp = document.getElementById('roiPostCTC');
+  const calcRoiBtn = document.getElementById('runRoiCalcBtn');
+
+  const calculateROI = () => {
+    const tuition = parseFloat(tuitionInp?.value || 24);
+    const living = parseFloat(livingInp?.value || 3.5);
+    const currCtc = parseFloat(currCtcInp?.value || 8);
+    const postCtc = parseFloat(postCtcInp?.value || 28);
+
+    const directInvest = tuition + living;
+    const foregone = currCtc * 2;
+    const totalEffective = directInvest + foregone;
+    const annualIncrement = Math.max(1, postCtc - currCtc);
+
+    // After tax & living net savings jump (approx 70% of increment)
+    const netAnnualJump = annualIncrement * 0.72;
+    const breakEvenMonths = Math.max(6, Math.round((directInvest / netAnnualJump) * 12));
+
+    // 5-Year Net Wealth Gain
+    const fiveYearGain = Number((netAnnualJump * 5 - directInvest).toFixed(1));
+
+    // Update UI
+    const bMonthsEl = document.getElementById('roiBreakEvenMonths');
+    const totDirEl = document.getElementById('roiTotalDirect');
+    const foregoneEl = document.getElementById('roiForegone');
+    const totEffEl = document.getElementById('roiTotalEffective');
+    const annIncEl = document.getElementById('roiAnnualIncrement');
+    const fiveYrEl = document.getElementById('roi5YrBoost');
+    const insightEl = document.getElementById('roiInsightText');
+
+    if (bMonthsEl) bMonthsEl.innerText = `${breakEvenMonths} Months`;
+    if (totDirEl) totDirEl.innerText = `₹${directInvest.toFixed(1)} Lakhs`;
+    if (foregoneEl) foregoneEl.innerText = `₹${foregone.toFixed(1)} Lakhs`;
+    if (totEffEl) totEffEl.innerText = `₹${totalEffective.toFixed(1)} Lakhs`;
+    if (annIncEl) annIncEl.innerText = `+₹${annualIncrement.toFixed(1)} LPA`;
+    if (fiveYrEl) fiveYrEl.innerText = `+₹${fiveYearGain} Lakhs`;
+
+    if (insightEl) {
+      insightEl.innerHTML = `
+        🚀 <strong>Outstanding Investment:</strong> At an expected CTC of ₹${postCtc} LPA, your incremental post-MBA cash flow pays off the entire direct investment in approximately ${breakEvenMonths} months, boosting your net earnings by over ₹${fiveYearGain} Lakhs over a 5-year career horizon!
+      `;
+    }
+  };
+
+  if (calcRoiBtn) calcRoiBtn.addEventListener('click', calculateROI);
 }

@@ -25,6 +25,7 @@ import {
   AIU_CITY_GAZETTE_STATS, 
   AIU_OFFICIAL_LIST 
 } from '../data/aiuOfficialData.js';
+import '../aiuApprovedCampuses.css';
 
 export const AIU_CITIES_DATA = {
   'all': {

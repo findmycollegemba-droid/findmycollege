@@ -7,7 +7,7 @@
  * Dispatches verified lead with calculated total score to Admissions CRM.
  */
 
-import confetti from 'canvas-confetti';
+import { fireConfetti } from '../utils/confettiHelper.js';
 import { sendLeadToCRM } from '../utils/crm.js';
 import { trackLeadSubmission } from '../utils/analytics.js';
 
@@ -305,9 +305,7 @@ export function initCalculatorGateModal() {
       closeCalculatorGate();
 
       // 6. Confetti Burst
-      try {
-        confetti({ particleCount: 90, spread: 70, origin: { y: 0.6 } });
-      } catch (err) {}
+      fireConfetti({ particleCount: 90, spread: 70, origin: { y: 0.6 } });
 
       // 7. Trigger caller callback with fresh lead and result
       if (activePromptCallback) {

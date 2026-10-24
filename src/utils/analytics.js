@@ -28,7 +28,7 @@ export function initGA(customId = null) {
     return;
   }
 
-  // 1. Setup dataLayer and gtag stub if not present
+  // 1. Setup dataLayer and gtag stub
   window.dataLayer = window.dataLayer || [];
   if (!window.gtag) {
     window.gtag = function() {
@@ -36,22 +36,33 @@ export function initGA(customId = null) {
     };
   }
 
-  // 2. Inject Google Tag Manager Script tag if not already on page
-  const scriptId = 'google-analytics-script';
-  if (!document.getElementById(scriptId)) {
-    const script = document.createElement('script');
-    script.id = scriptId;
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
-    document.head.appendChild(script);
-  }
-
-  // 3. Configure gtag with send_page_view disabled (SPA router handles page views)
+  // 2. Configure gtag with send_page_view disabled (SPA router handles page views)
   window.gtag('js', new Date());
   window.gtag('config', measurementId, {
     send_page_view: false, // SPA handles pageviews to prevent duplicate counts
     cookie_flags: 'SameSite=None;Secure',
   });
+
+  // 3. Inject Google Tag Manager script non-blockingly on idle or interaction
+  const scriptId = 'google-analytics-script';
+  if (!document.getElementById(scriptId) && !window.__gaLoaded) {
+    const loadGTag = () => {
+      if (window.__gaLoaded) return;
+      window.__gaLoaded = true;
+      const script = document.createElement('script');
+      script.id = scriptId;
+      script.async = true;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
+      document.head.appendChild(script);
+    };
+
+    ['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach(evt => {
+      window.addEventListener(evt, loadGTag, { once: true, passive: true });
+    });
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadGTag, { timeout: 9000 });
+    }
+  }
 }
 
 /**

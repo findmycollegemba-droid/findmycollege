@@ -1,6 +1,18 @@
-import { COLLEGES_DATA } from '../data/collegesData.js';
-import { EXAMS_DATA } from '../data/examsData.js';
-import { BLOGS_DATA } from '../data/blogsData.js';
+let _searchDataPromise = null;
+export async function getSearchData() {
+  if (!_searchDataPromise) {
+    _searchDataPromise = Promise.all([
+      import('../data/collegesData.js'),
+      import('../data/examsData.js'),
+      import('../data/blogsData.js')
+    ]).then(([cMod, eMod, bMod]) => ({
+      COLLEGES_DATA: cMod.COLLEGES_DATA,
+      EXAMS_DATA: eMod.EXAMS_DATA,
+      BLOGS_DATA: bMod.BLOGS_DATA
+    }));
+  }
+  return _searchDataPromise;
+}
 
 export function renderQuickSearchModal() {
   return `
@@ -38,7 +50,7 @@ export function renderQuickSearchModal() {
   `;
 }
 
-export function handleSearchQuery(query) {
+export async function handleSearchQuery(query) {
   const q = (query || '').trim().toLowerCase();
   const listEl = document.getElementById('searchResultsList');
   if (!listEl) return;
@@ -52,6 +64,8 @@ export function handleSearchQuery(query) {
     `;
     return;
   }
+
+  const { COLLEGES_DATA, EXAMS_DATA, BLOGS_DATA } = await getSearchData();
 
   const results = [];
 

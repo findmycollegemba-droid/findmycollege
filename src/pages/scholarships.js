@@ -11,7 +11,8 @@
 
 import { SCHOLARSHIPS_DATA, getScholarshipById } from '../data/scholarshipsData.js';
 import { sendLeadToCRM } from '../utils/crm.js';
-import confetti from 'canvas-confetti';
+import { fireConfetti } from '../utils/confettiHelper.js';
+import '../scholarships.css';
 
 // Local storage key for applied scholarships
 const APPLIED_STORAGE_KEY = 'fmc_applied_scholarships';
@@ -1441,15 +1442,11 @@ async function handleScholarshipFormSubmit(e, scholarship) {
   }
 
   // 3. Trigger Confetti Celebration!
-  try {
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 }
-    });
-  } catch (e) {
-    // Confetti optional
-  }
+  fireConfetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 }
+  });
 
   // 4. Update Badge Counter in Hero
   const counterBadge = document.getElementById('appliedCounterBadge');

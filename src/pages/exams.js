@@ -232,3 +232,23 @@ function renderSingleExamDossier(exam) {
     </div>
   `;
 }
+
+export function initExamsInteractions(navigateToFn) {
+  const pills = document.querySelectorAll('#examSelectorPills .exam-pill');
+  pills.forEach(pill => {
+    pill.addEventListener('click', () => {
+      const filter = pill.getAttribute('data-exam-filter');
+      pills.forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+
+      if (filter === 'all') {
+        if (navigateToFn) navigateToFn('/exams');
+        else window.location.href = '/exams';
+      } else {
+        if (navigateToFn) navigateToFn(`/exams/${filter}`);
+        else window.location.href = `/exams/${filter}`;
+      }
+    });
+  });
+}
+

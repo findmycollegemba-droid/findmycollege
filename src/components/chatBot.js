@@ -1,5 +1,5 @@
-import { COLLEGES_DATA } from '../data/collegesData.js';
-import confetti from 'canvas-confetti';
+import { getCollegesData } from '../data/collegesLoader.js';
+import { fireConfetti } from '../utils/confettiHelper.js';
 import { sendLeadToCRM } from '../utils/crm.js';
 
 // State for ChatBot
@@ -206,15 +206,14 @@ export function initChatBot() {
 
   if (!launcher || !win) return;
 
-  // Show proactive greeting teaser after 1.5 seconds if never opened
+  // Show proactive greeting teaser after 6 seconds if never opened
   const hasSeenTeaser = sessionStorage.getItem('fmc_teaser_dismissed');
   if (!hasSeenTeaser && teaser) {
     setTimeout(() => {
       if (!chatBotState.isOpen && teaser) {
         teaser.style.display = 'flex';
-        playChatChime();
       }
-    }, 1500);
+    }, 6000);
   }
 
   // Teaser click opens chat
@@ -281,10 +280,12 @@ export function initChatBot() {
     if (detailBtn) {
       e.preventDefault();
       const colId = detailBtn.getAttribute('data-college-id');
-      const college = COLLEGES_DATA.find(c => c.id === colId);
-      if (college && window.openCollegeDetailModal) {
-        window.openCollegeDetailModal(college);
-      }
+      getCollegesData().then(colleges => {
+        const college = colleges.find(c => c.id === colId);
+        if (college && window.openCollegeDetailModal) {
+          window.openCollegeDetailModal(college);
+        }
+      });
       return;
     }
 
@@ -292,10 +293,12 @@ export function initChatBot() {
     if (brochureBtn) {
       e.preventDefault();
       const colId = brochureBtn.getAttribute('data-college-id');
-      const college = COLLEGES_DATA.find(c => c.id === colId);
-      if (college && window.openCollegeBrochureModal) {
-        window.openCollegeBrochureModal(college, chatBotState.studentData);
-      }
+      getCollegesData().then(colleges => {
+        const college = colleges.find(c => c.id === colId);
+        if (college && window.openCollegeBrochureModal) {
+          window.openCollegeBrochureModal(college, chatBotState.studentData);
+        }
+      });
       return;
     }
   });
@@ -837,22 +840,18 @@ function generateCollegeRecommendations() {
   updateProgress(8, 'Completed: Your Curated Colleges');
 
   // Trigger celebration confetti
-  try {
-    confetti({
-      particleCount: 50,
-      spread: 60,
-      origin: { y: 0.7 }
-    });
-  } catch (e) {
-    // Canvas confetti optional
-  }
+  fireConfetti({
+    particleCount: 50,
+    spread: 60,
+    origin: { y: 0.7 }
+  });
 
-  showTypingIndicator(() => {
+  showTypingIndicator(async () => {
     const student = chatBotState.studentData;
     student.timestamp = new Date().toISOString();
 
-    // Query matched colleges from COLLEGES_DATA
-    const matchedColleges = filterCollegesForStudent(student);
+    // Query matched colleges from collegesData
+    const matchedColleges = await filterCollegesForStudent(student);
 
     // Save lead to local storage for portal pre-fills
     try {
@@ -1053,9 +1052,10 @@ function generateCollegeRecommendations() {
 function attachResultsEventHandlers(colleges) {
   // Detail buttons
   document.querySelectorAll('.fmc-college-chat-card [data-action="detail"]').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', async () => {
       const colId = btn.getAttribute('data-college-id');
-      const college = COLLEGES_DATA.find(c => c.id === colId);
+      const allCols = await getCollegesData();
+      const college = allCols.find(c => c.id === colId);
       if (college && window.openCollegeDetailModal) {
         window.openCollegeDetailModal(college);
       } else {
@@ -1067,9 +1067,10 @@ function attachResultsEventHandlers(colleges) {
 
   // Brochure buttons
   document.querySelectorAll('.fmc-college-chat-card [data-action="brochure"]').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', async () => {
       const colId = btn.getAttribute('data-college-id');
-      const college = COLLEGES_DATA.find(c => c.id === colId);
+      const allCols = await getCollegesData();
+      const college = allCols.find(c => c.id === colId);
       if (college && window.openCollegeBrochureModal) {
         window.openCollegeBrochureModal(college, chatBotState.studentData);
       } else {
@@ -1086,9 +1087,7 @@ function attachResultsEventHandlers(colleges) {
       loanBtn.textContent = '✓ Loan Consultation Requested! Our Banking Officer Will Call You.';
       loanBtn.style.background = '#16a34a';
       loanBtn.disabled = true;
-      try {
-        confetti({ particleCount: 30, spread: 50 });
-      } catch (e) {}
+      fireConfetti({ particleCount: 30, spread: 50 });
 
       // Send Loan application lead to CRM
       if (chatBotState.studentData.name) {
@@ -1191,8 +1190,9 @@ function downloadShortlistAsText(student, colleges) {
 }
 
 // Helper: Filter COLLEGES_DATA based on user's choices
-function filterCollegesForStudent(student) {
-  let list = [...COLLEGES_DATA];
+async function filterCollegesForStudent(student) {
+  const allCols = await getCollegesData();
+  let list = [...allCols];
 
   // 1. Program Match
   const prog = student.program.toLowerCase();

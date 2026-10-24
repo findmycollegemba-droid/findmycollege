@@ -1,8 +1,3 @@
-import { COLLEGES_DATA } from '../data/collegesData.js';
-import { EXAMS_DATA } from '../data/examsData.js';
-import { BLOGS_DATA } from '../data/blogsData.js';
-import { SCHOLARSHIPS_DATA } from '../data/scholarshipsData.js';
-import { MOCK_TESTS } from '../data/mockTestsData.js';
 import { trackPageView } from './analytics.js';
 
 const BASE_URL = 'https://findmybschool.com';
@@ -13,7 +8,7 @@ const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.svg`;
  * and Schema.org JSON-LD structured data.
  * Powers SEO, GEO (Generative Engine Optimization), and AEO (Answer Engine Optimization).
  */
-export function updatePageSEO(page = 'home', sub = null, params = null) {
+export async function updatePageSEO(page = 'home', sub = null, params = null) {
   let meta = {
     title: 'FindMyBSchool — Top MBA & PGDM Colleges, Fees, Cutoffs & Exam Predictors',
     description: 'Find your dream MBA & PGDM business school with FindMyBSchool (findmybschool.com). Compare 600+ verified B-schools, cutoffs, tuition fees, and placements with 0% scrapers.',
@@ -43,7 +38,9 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
       let specificCollege = null;
       const collegeId = params?.get('id') || sub;
       if (collegeId) {
-        specificCollege = COLLEGES_DATA.find(c => c.id === collegeId || c.slug === collegeId);
+        const { getCollegesData } = await import('../data/collegesLoader.js');
+        const colleges = await getCollegesData();
+        specificCollege = colleges.find(c => c.id === collegeId || c.slug === collegeId);
       }
 
       if (specificCollege) {
@@ -102,6 +99,7 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
       let specificExam = null;
       const examId = params?.get('exam') || sub;
       if (examId) {
+        const { EXAMS_DATA } = await import('../data/examsData.js');
         specificExam = EXAMS_DATA.find(e => e.id === examId || e.name.toLowerCase() === examId.toLowerCase());
       }
 
@@ -213,6 +211,7 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
       let specificBlog = null;
       const blogId = sub || params?.get('id') || params?.get('sub');
       if (blogId) {
+        const { BLOGS_DATA } = await import('../data/blogsData.js');
         specificBlog = BLOGS_DATA.find(b => b.id === blogId);
       }
 
@@ -265,6 +264,7 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
     case 'mock-test': {
       let specificTest = null;
       if (sub) {
+        const { MOCK_TESTS } = await import('../data/mockTestsData.js');
         specificTest = MOCK_TESTS.find(t => t.id === sub || t.slug === sub);
       }
 
@@ -293,6 +293,7 @@ export function updatePageSEO(page = 'home', sub = null, params = null) {
     case 'scholarships': {
       let specificScholarship = null;
       if (sub) {
+        const { SCHOLARSHIPS_DATA } = await import('../data/scholarshipsData.js');
         specificScholarship = SCHOLARSHIPS_DATA.find(s => s.id === sub || s.slug === sub);
       }
 

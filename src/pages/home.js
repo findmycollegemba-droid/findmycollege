@@ -1,30 +1,5 @@
-import { COLLEGES_DATA } from '../data/collegesData.js';
+import { FEATURED_COLLEGES, TOTAL_COLLEGES_COUNT, getFeaturedColleges } from '../data/featuredCollegesData.js';
 import { CITY_INFOGRAPHICS_DATA } from '../data/cityInfographicsData.js';
-import { BLOGS_DATA } from '../data/blogsData.js';
-
-// Helper to filter featured colleges by category
-export function getFeaturedColleges(category = 'nirf') {
-  if (category === 'roi') {
-    // High ROI: Low fees (< 15L), high average salary
-    return COLLEGES_DATA
-      .filter(c => c.feeNum && c.feeNum <= 15 && c.avgSalaryNum)
-      .sort((a, b) => (b.avgSalaryNum / b.feeNum) - (a.avgSalaryNum / a.feeNum))
-      .slice(0, 6);
-  } else if (category === 'metro') {
-    // Metro powerhouses in Delhi-NCR, Mumbai, Bengaluru, Pune
-    const metroColleges = COLLEGES_DATA.filter(c => ['Delhi-NCR', 'Mumbai', 'Bengaluru', 'Pune'].includes(c.city));
-    return metroColleges.slice(0, 6);
-  } else if (category === 'iim') {
-    // Premier IIMs
-    return COLLEGES_DATA.filter(c => c.shortName?.startsWith('IIM ') || c.name.startsWith('IIM ')).slice(0, 6);
-  } else {
-    // Default NIRF Top Tier
-    return COLLEGES_DATA
-      .filter(c => c.nirfRank)
-      .sort((a, b) => a.nirfRank - b.nirfRank)
-      .slice(0, 6);
-  }
-}
 
 // Render Featured College Cards (compact, sleek light theme)
 export function renderFeaturedCollegesCards(category = 'nirf') {
@@ -392,7 +367,7 @@ export function renderHomePage() {
           <div class="hero-quick-filters">
             <span class="quick-filters-label">Popular Searches:</span>
             <div class="quick-filters-pills" id="homeQuickPills">
-              <button class="q-pill-btn active" data-filter="all">All Colleges (${COLLEGES_DATA.length})</button>
+              <button class="q-pill-btn active" data-filter="all">All Colleges (${TOTAL_COLLEGES_COUNT})</button>
               <button class="q-pill-btn" data-filter="mba">🎓 MBA Colleges</button>
               <button class="q-pill-btn" data-filter="pgdm">💼 PGDM Colleges</button>
               <button class="q-pill-btn" data-filter="top10">🏆 Top 10 NIRF</button>
@@ -498,7 +473,7 @@ export function renderHomePage() {
               <p>Explore our complete catalog of 600+ verified colleges with fee sliders, percentile cutoffs, and exam filters for the 2027-29 session.</p>
             </div>
             <a href="/colleges" class="btn-dock-browse" data-route="colleges">
-              <span>Browse All ${COLLEGES_DATA.length} Colleges with Filters</span>
+              <span>Browse All ${TOTAL_COLLEGES_COUNT} Colleges with Filters</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
             </a>
           </div>

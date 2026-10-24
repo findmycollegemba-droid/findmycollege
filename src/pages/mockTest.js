@@ -14,7 +14,7 @@
 
 import { MOCK_TESTS, getMockTestById, getAllQuestionsForTest, estimatePercentile } from '../data/mockTestsData.js';
 import { sendLeadToCRM } from '../utils/crm.js';
-import confetti from 'canvas-confetti';
+import { fireConfetti } from '../utils/confettiHelper.js';
 
 // State management for current exam session
 let currentExamState = {
@@ -1509,13 +1509,11 @@ function openPostTestModal(scoreData) {
     renderScorecardAndSolutions(scoreData);
 
     // Confetti celebration
-    try {
-      confetti({
-        particleCount: 80,
-        spread: 70,
-        origin: { y: 0.6 }
-      });
-    } catch (e) {}
+    fireConfetti({
+      particleCount: 80,
+      spread: 70,
+      origin: { y: 0.6 }
+    });
   });
 }
 
