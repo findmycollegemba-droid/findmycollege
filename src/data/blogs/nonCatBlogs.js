@@ -69,7 +69,7 @@ For the **2027-29 admissions cycle**, candidates can strategically map non-CAT t
 | **[WeSchool (Welingkar Mumbai)](/colleges/welingkar-mumbai)** | [CMAT](/exams/cmat) / [XAT](/exams/xat) / ATMA | CMAT 85% / CET 90% | ₹14.50 Lakhs | ₹12.50 LPA | ₹25.40 LPA |
 | **[Jaipuria Institute of Mgmt (Jaipur)](/colleges/jaipuria-institute-of-management-jaipur)** | [CMAT](/exams/cmat) / [MAT](/exams/mat) / [XAT](/exams/xat) | CMAT 75% / MAT 80% | ₹12.75 Lakhs | ₹10.50 LPA | ₹22.00 LPA |
 | **[Christ University Bengaluru](/colleges/christ-university-bangalore)** | [MAT](/exams/mat) / [CMAT](/exams/cmat) / [XAT](/exams/xat) | MAT 75% / CMAT 70% | ₹9.50 Lakhs | ₹8.50 LPA | ₹16.00 LPA |
-| **[NDIM New Delhi](/colleges/new-delhi-institute-of-management)** | [MAT](/exams/mat) / [CMAT](/exams/cmat) / [XAT](/exams/xat) | MAT 70% / CMAT 65% | ₹11.50 Lakhs | ₹8.50 LPA | ₹16.10 LPA |
+| **[NDIM New Delhi](/colleges/new-delhi-institute-of-management)** | [MAT](/exams/mat) / [CMAT](/exams/cmat) / [XAT](/exams/xat) | MAT 70% / CMAT 65% | ₹14.00 Lakhs | ₹8.50 LPA | ₹16.10 LPA |
 
 ---
 

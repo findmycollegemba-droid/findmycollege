@@ -81,7 +81,7 @@ Below is the verified master matrix comparing NIRF rankings, degree awarded, tot
 | **[Jamia Hamdard, New Delhi](/colleges/jamia-hamdard-studies-delhincr)** | MBA | NIRF #78 | ₹5.50 Lakhs | ₹7.50 LPA | ₹14.00 LPA | CMAT / MAT (70+ %ile) |
 | **[BML Munjal University, Gurugram](/colleges/bml-munjal-university-delhi)** | MBA | NIRF #83 | ₹14.40 Lakhs | ₹9.50 LPA | ₹25.90 LPA | CAT / NMAT / CMAT (70+ %ile) |
 | **[JIMS Rohini Sector-5, Delhi](/colleges/jims-rohini-delhi)** | PGDM | NIRF #87 | ₹9.50 Lakhs | ₹8.30 LPA | ₹22.00 LPA | CAT / MAT / CMAT (70+ %ile) |
-| **[NDIM New Delhi (Tughlakabad)](/colleges/new-delhi-institute-of-management)** | PGDM | NIRF #88 | ₹11.50 Lakhs | ₹8.50 LPA | ₹16.10 LPA | CAT / MAT / CMAT (65+ %ile) |
+| **[NDIM New Delhi (Tughlakabad)](/colleges/new-delhi-institute-of-management)** | PGDM | NIRF #88 | ₹14.00 Lakhs | ₹8.50 LPA | ₹16.10 LPA | CAT / MAT / CMAT (65+ %ile) |
 | **[Galgotias University, Greater Noida](/colleges/galgotias-greaternoida)** | MBA | NIRF #98 | ₹3.40 Lakhs | ₹6.50 LPA | ₹15.00 LPA | MAT / CMAT / CUET (60+ %ile) |
 | **[LBSIM Delhi (Dwarka)](/colleges/lbsim-delhi)** | PGDM | Premier | ₹17.25 Lakhs | ₹12.32 LPA | ₹24.00 LPA | CAT / XAT (83+ %ile) |
 
@@ -136,7 +136,7 @@ Candidates scoring between 70 and 85 percentile in CAT or seeking admission thro
 - **Jaipuria Institute of Management (Noida):** Ranked **#45 NIRF**, centralized pan-India placement network with average CTC of ₹11.29 LPA.
 - **USMS GGSIPU (Dwarka, Delhi):** Ranked **#65 NIRF**, state university department with total fees under ₹2.80 Lakhs and ₹9.20 LPA average salary.
 - **JIMS Rohini Sector-5:** Ranked **#87 NIRF**, ₹9.50 Lakhs tuition with average CTC of ₹8.30 LPA.
-- **NDIM New Delhi:** Ranked **#88 NIRF**, ₹11.50 Lakhs tuition with average CTC of ₹8.50 LPA.
+- **NDIM New Delhi:** Ranked **#88 NIRF**, ₹14.00 Lakhs tuition with average CTC of ₹8.50 LPA.
 
 ---
 
@@ -255,7 +255,7 @@ A score above **1.0x** is healthy; a score above **2.0x** is exceptional. Below 
 | **[IMI New Delhi](/colleges/imi-new-delhi)** | ₹20.95 Lakhs | ₹16.88 LPA | ₹50.00 LPA | **0.81x** | 14.9 Months |
 | **[BIMTECH Greater Noida](/colleges/bimtech-noida)** | ₹14.00 Lakhs | ₹11.10 LPA | ₹22.00 LPA | **0.79x** | 15.1 Months |
 | **[Jaipuria Institute of Management, Noida](/colleges/jaipuria-institute-of-management)** | ₹14.75 Lakhs | ₹11.29 LPA | ₹22.00 LPA | **0.77x** | 15.7 Months |
-| **[NDIM New Delhi](/colleges/new-delhi-institute-of-management)** | ₹11.50 Lakhs | ₹8.50 LPA | ₹16.10 LPA | **0.74x** | 16.2 Months |
+| **[NDIM New Delhi](/colleges/new-delhi-institute-of-management)** | ₹14.00 Lakhs | ₹8.50 LPA | ₹16.10 LPA | **0.61x** | 19.8 Months |
 | **[LBSIM Delhi](/colleges/lbsim-delhi)** | ₹17.25 Lakhs | ₹12.32 LPA | ₹24.00 LPA | **0.71x** | 16.8 Months |
 | **[BML Munjal University, Gurugram](/colleges/bml-munjal-university-delhi)** | ₹14.40 Lakhs | ₹9.50 LPA | ₹25.90 LPA | **0.66x** | 18.2 Months |
 

@@ -571,7 +571,7 @@ If your goal is an **investment banking, credit risk, financial research, or con
     author: 'Vikramaditya Rathore',
     authorRole: 'Senior Admissions Consultant • Ex-IIM Alum',
     authorBio: 'Advises management aspirants across Delhi-NCR on B-school admissions, profile evaluation, composite scoring, and placement trajectory analysis.',
-    summary: 'An objective review of New Delhi Institute of Management (NDIM) Tughlakabad for 2027 admissions. In-depth analysis of NIRF #88 ranking, AICTE-CII industry linkage awards, dual specialization PGDM, CMAT/MAT/CAT cutoffs (65-75 percentile), ₹11.50 Lakh fees, and ₹8.50 LPA average placement packages.',
+    summary: 'An objective review of New Delhi Institute of Management (NDIM) Tughlakabad for 2027 admissions. In-depth analysis of NIRF #88 ranking, AICTE-CII industry linkage awards, dual specialization PGDM, CMAT/MAT/CAT cutoffs (65-75 percentile), ₹14.00 Lakh fees, and ₹8.50 LPA average placement packages.',
     featured: false,
     badge: 'Industry-Integrated PGDM',
     views: '24.1k',
@@ -588,7 +588,7 @@ If your goal is an **investment banking, credit risk, financial research, or con
       'Ranked #88 in India by NIRF 2024 and declared \'Best Industry-Linked Management Institute\' by AICTE-CII for three consecutive years.',
       'Offers AICTE-approved, AIU-recognized PGDM programs with unique customizable Dual Specialization options across 9 modern streams.',
       'Accepts a wide spectrum of entrance tests including CAT, XAT, CMAT, MAT, and ATMA with achievable cutoffs in the 65 to 75 percentile bracket.',
-      'With total tuition fees capped at ₹11.50 Lakhs and an Average CTC of ₹8.50 LPA, NDIM presents strong financial return on investment for Tier-2 applicants.'
+      'With total tuition fees capped at ₹14.00 Lakhs and an Average CTC of ₹8.50 LPA, NDIM presents strong financial return on investment for Tier-2 applicants.'
     ],
     content: `
 ### Executive Overview: The Industry-Integrated Philosophy of NDIM
@@ -607,7 +607,7 @@ NDIM is ranked **#88 in India by NIRF 2024** and was recognized by **AICTE-CII (
 | **Campus Location** | Tughlakabad Institutional Area, South Delhi |
 | **NIRF Management Rank** | **#88** (2024) |
 | **Accreditation** | AICTE Approved, AIU Recognized (Equivalent to MBA), ASIC (UK) |
-| **Total 2-Year Fees** | **₹11.50 Lakhs** |
+| **Total 2-Year Fees** | **₹14.00 Lakhs** |
 | **Average Placement CTC** | **₹8.50 LPA** |
 | **Median Placement CTC** | **₹8.00 LPA** |
 | **Highest CTC** | **₹16.10 LPA** (Domestic) / ₹22.00 LPA (Peak) |
@@ -669,7 +669,7 @@ NDIM's admissions committee evaluates candidates using a multi-parameter evaluat
 ### Campus Realities: Pros & Cons
 
 #### Advantages
-- **High ROI**: At ₹11.50 Lakhs tuition fees, NDIM is among the most affordable AICTE-approved South Delhi business schools.
+- **High ROI**: At ₹14.00 Lakhs tuition fees, NDIM is among the most accessible AICTE-approved South Delhi business schools with dual specialization options.
 - **Active Corporate Mentorship**: Every student is paired with an industry CXO mentor for monthly guidance and live project opportunities.
 
 #### Considerations

@@ -62,7 +62,7 @@ The following institutions accept CAT 2026 scores in the 70-79 percentile range 
 | **[Jaipuria Institute of Management](/colleges/jaipuria-institute-of-management)** | PGDM (Core / SM / RM) | ₹14.75 Lakhs | ₹11.29 LPA | ₹22.00 LPA | 70-75 %ile | Noida / LKO / JPR |
 | **[WeSchool (Welingkar Mumbai)](/colleges/welingkar-mumbai)** | PGDM (Rural / Healthcare / Media) | ₹14.50 Lakhs | ₹12.50 LPA | ₹25.40 LPA | 75-80 %ile | Mumbai, MH |
 | **[Christ University](/colleges/christ-university-bangalore)** | MBA (Dual Specialization) | ₹9.50 Lakhs | ₹8.50 LPA | ₹16.00 LPA | 70-75 %ile | Bengaluru, KA |
-| **[NDIM New Delhi](/colleges/new-delhi-institute-of-management)** | PGDM (Dual Specialization) | ₹11.50 Lakhs | ₹8.50 LPA | ₹16.10 LPA | 70-75 %ile | New Delhi |
+| **[NDIM New Delhi](/colleges/new-delhi-institute-of-management)** | PGDM (Dual Specialization) | ₹14.00 Lakhs | ₹8.50 LPA | ₹16.10 LPA | 70-75 %ile | New Delhi |
 | **[JIMS Rohini (Sector-5)](/colleges/jims-rohini-delhi)** | PGDM (Core / IB / Retail) | ₹9.50 Lakhs | ₹8.30 LPA | ₹22.00 LPA | 70-75 %ile | New Delhi |
 | **[Balaji University Pune (BIMM/BIIB)](/colleges/balaji-modern-bimm-pune)** | MBA (PM & HRD / Telecom) | ₹11.80 Lakhs | ₹8.80 LPA | ₹21.50 LPA | 70-75 %ile | Pune, MH |
 | **[FOSTIIMA Business School](/colleges/fostiima-business-school-delhi)** | PGDM (IIM Alum Faculty) | ₹9.50 Lakhs | ₹8.50 LPA | ₹15.50 LPA | 70-75 %ile | Delhi NCR |
