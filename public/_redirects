@@ -19,13 +19,32 @@
 
 # Trailing Slash Normalization
 /colleges/               /colleges                              301
+/colleges/mba/           /colleges/mba                          301
+/colleges/pgdm/          /colleges/pgdm                         301
+/colleges/city           /colleges                              301
+/colleges/city/          /colleges                              301
 /scholarships/           /scholarships                          301
 /mock-test/              /mock-test                             301
 /exams/                  /exams                                 301
 /blog/                   /blog                                  301
 /programs/               /programs                              301
+/programs/mba/           /programs/mba                          301
+/programs/pgdm/          /programs/pgdm                         301
+/programs/compare/       /programs/compare                      301
+/programs/specializations/ /programs/specializations            301
+/programs/roi/           /programs/roi                          301
 /contact/                /contact                               301
 /ai-chat/                /ai-chat                               301
 /terms/                  /terms                                 301
 /privacy/                /privacy                               301
+/aiu-approved-campuses/  /aiu-approved-campuses                 301
 /tools/cat-college-predictor/ /tools/cat-college-predictor      301
+/tools/xat               /tools/xat-percentile-calculator       301
+/tools/xat/              /tools/xat-percentile-calculator       301
+/tools/xat-percentile-calculator/ /tools/xat-percentile-calculator 301
+/tools/cmat              /tools/cmat-percentile-calculator      301
+/tools/cmat/             /tools/cmat-percentile-calculator      301
+/tools/cmat-percentile-calculator/ /tools/cmat-percentile-calculator 301
+/search                  /colleges                              301
+/search/*                /colleges                              301
+
