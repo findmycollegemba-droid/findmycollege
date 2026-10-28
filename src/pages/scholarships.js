@@ -529,7 +529,9 @@ export function renderScholarshipCards() {
             </span>
           </div>
 
-          <h3 class="sch-card-title">${item.title}</h3>
+          <h3 class="sch-card-title">
+            <a href="/scholarships/${item.id}" class="sch-card-title-link" data-route="scholarships" data-sub="${item.id}">${item.title}</a>
+          </h3>
           <div class="sch-provider-name">
             <span class="p-icon">🏛️</span>
             <span>${item.provider}</span>
@@ -567,7 +569,7 @@ export function renderScholarshipCards() {
         <!-- CARD ACTIONS FOOTER -->
         <div class="sch-card-actions">
           <button type="button" class="btn-sch-detail" data-action="detail" data-id="${item.id}">
-            View Eligibility & Docs
+            View Details & Eligibility
           </button>
           
           ${isApplied ? `

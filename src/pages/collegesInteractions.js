@@ -87,12 +87,12 @@ export function initCollegesInteractions(subId, params) {
     const q = filterState.searchQuery.trim().toLowerCase();
     if (q) {
       list = list.filter(c => {
-        const inName = c.name.toLowerCase().includes(q) || c.shortName.toLowerCase().includes(q);
-        const inLoc = c.location.toLowerCase().includes(q) || c.city.toLowerCase().includes(q) || c.state.toLowerCase().includes(q);
-        const inExams = c.examsAccepted.some(e => e.toLowerCase().includes(q));
-        const inCourses = (c.courses || []).some(course => course.name.toLowerCase().includes(q));
-        const inHighlights = c.highlights.toLowerCase().includes(q);
-        const inOwnership = c.ownership.toLowerCase().includes(q);
+        const inName = (c.name || '').toLowerCase().includes(q) || (c.shortName || '').toLowerCase().includes(q);
+        const inLoc = (c.location || '').toLowerCase().includes(q) || (c.city || '').toLowerCase().includes(q) || (c.state || '').toLowerCase().includes(q);
+        const inExams = (c.examsAccepted || []).some(e => e.toLowerCase().includes(q));
+        const inCourses = (c.courses || []).some(course => (course.name || '').toLowerCase().includes(q));
+        const inHighlights = (c.highlights || '').toLowerCase().includes(q);
+        const inOwnership = (c.ownership || '').toLowerCase().includes(q);
         return inName || inLoc || inExams || inCourses || inHighlights || inOwnership;
       });
     }
@@ -101,8 +101,8 @@ export function initCollegesInteractions(subId, params) {
     if (filterState.selectedCities.length > 0) {
       list = list.filter(c => {
         return filterState.selectedCities.some(city => 
-          c.city.toLowerCase().includes(city.toLowerCase()) || 
-          c.location.toLowerCase().includes(city.toLowerCase())
+          (c.city || '').toLowerCase().includes(city.toLowerCase()) || 
+          (c.location || '').toLowerCase().includes(city.toLowerCase())
         );
       });
     }
@@ -119,7 +119,7 @@ export function initCollegesInteractions(subId, params) {
     if (filterState.selectedExams.length > 0) {
       list = list.filter(c => {
         return filterState.selectedExams.some(exam => 
-          c.examsAccepted.map(e => e.toUpperCase()).includes(exam.toUpperCase())
+          (c.examsAccepted || []).map(e => e.toUpperCase()).includes(exam.toUpperCase())
         );
       });
     }
@@ -137,31 +137,31 @@ export function initCollegesInteractions(subId, params) {
 
     // Salary range
     if (filterState.salaryRange === 'above30') {
-      list = list.filter(c => c.avgSalaryNum >= 30);
+      list = list.filter(c => (c.avgSalaryNum || 0) >= 30);
     } else if (filterState.salaryRange === '20to30') {
-      list = list.filter(c => c.avgSalaryNum >= 20 && c.avgSalaryNum < 30);
+      list = list.filter(c => (c.avgSalaryNum || 0) >= 20 && (c.avgSalaryNum || 0) < 30);
     } else if (filterState.salaryRange === 'under20') {
-      list = list.filter(c => c.avgSalaryNum < 20);
+      list = list.filter(c => (c.avgSalaryNum || 0) < 20);
     }
 
     // Ownership
     if (filterState.selectedOwnership.length > 0) {
       list = list.filter(c => {
-        return filterState.selectedOwnership.some(own => c.ownership.toLowerCase().includes(own.toLowerCase()));
+        return filterState.selectedOwnership.some(own => (c.ownership || '').toLowerCase().includes(own.toLowerCase()));
       });
     }
 
     // Sorting
     if (filterState.sortBy === 'nirf') {
-      list.sort((a, b) => a.nirfRank - b.nirfRank);
+      list.sort((a, b) => (a.nirfRank || 9999) - (b.nirfRank || 9999));
     } else if (filterState.sortBy === 'fees-asc') {
-      list.sort((a, b) => a.feeNum - b.feeNum);
+      list.sort((a, b) => (a.feeNum || 0) - (b.feeNum || 0));
     } else if (filterState.sortBy === 'fees-desc') {
-      list.sort((a, b) => b.feeNum - a.feeNum);
+      list.sort((a, b) => (b.feeNum || 0) - (a.feeNum || 0));
     } else if (filterState.sortBy === 'salary-desc') {
-      list.sort((a, b) => b.avgSalaryNum - a.avgSalaryNum);
+      list.sort((a, b) => (b.avgSalaryNum || 0) - (a.avgSalaryNum || 0));
     } else if (filterState.sortBy === 'rating-desc') {
-      list.sort((a, b) => b.rating - a.rating);
+      list.sort((a, b) => (b.rating || 0) - (a.rating || 0));
     }
 
     // Update count & label

@@ -36,7 +36,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
                   <span class="dropdown-icon">🏛️</span>
                   <div>
                     <div class="dropdown-title">All Colleges</div>
-                    <div class="dropdown-desc">Explore 111 verified top business schools</div>
+                    <div class="dropdown-desc">Explore 680+ verified top business schools</div>
                   </div>
                 </a>
                 <a href="/colleges/mba" class="dropdown-item" data-route="colleges" data-sub="type=mba">
@@ -253,7 +253,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
           
           <div class="mobile-nav-group">
             <div class="mobile-group-title">Colleges Directory</div>
-            <a href="/colleges" class="mobile-sublink" data-route="colleges">🏛️ All Colleges (111 Verified)</a>
+            <a href="/colleges" class="mobile-sublink" data-route="colleges">🏛️ All Colleges (680+ Verified)</a>
             <a href="/colleges/mba" class="mobile-sublink" data-route="colleges" data-sub="type=mba">🎓 MBA Colleges (Degree)</a>
             <a href="/colleges/pgdm" class="mobile-sublink" data-route="colleges" data-sub="type=pgdm">💼 PGDM Colleges (Diploma)</a>
             <a href="/programs/compare" class="mobile-sublink" data-route="programs" data-sub="compare">⚖️ MBA vs PGDM Comparison</a>
@@ -317,7 +317,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
             <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
             <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
           </svg>
-          <span class="dock-badge">111</span>
+          <span class="dock-badge">680+</span>
         </div>
         <span class="dock-label">Colleges</span>
       </a>

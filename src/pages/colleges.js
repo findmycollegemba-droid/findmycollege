@@ -278,43 +278,43 @@ export function renderCollegesPage() {
                     <input type="checkbox" name="examFilter" value="CAT" class="portal-checkbox" />
                     <span class="cb-custom"></span>
                     <span class="cb-label">CAT (Common Admission Test)</span>
-                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted.includes('CAT')).length}</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted?.includes('CAT')).length}</span>
                   </label>
                   <label class="filter-checkbox-item">
                     <input type="checkbox" name="examFilter" value="XAT" class="portal-checkbox" />
                     <span class="cb-custom"></span>
                     <span class="cb-label">XAT (Xavier Aptitude Test)</span>
-                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted.includes('XAT')).length}</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted?.includes('XAT')).length}</span>
                   </label>
                   <label class="filter-checkbox-item">
                     <input type="checkbox" name="examFilter" value="CMAT" class="portal-checkbox" />
                     <span class="cb-custom"></span>
                     <span class="cb-label">CMAT (Common Management)</span>
-                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted.includes('CMAT')).length}</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted?.includes('CMAT')).length}</span>
                   </label>
                   <label class="filter-checkbox-item">
                     <input type="checkbox" name="examFilter" value="MAT" class="portal-checkbox" />
                     <span class="cb-custom"></span>
                     <span class="cb-label">MAT / ATMA</span>
-                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted.includes('MAT') || c.examsAccepted.includes('ATMA')).length}</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted?.includes('MAT') || c.examsAccepted?.includes('ATMA')).length}</span>
                   </label>
                   <label class="filter-checkbox-item">
                     <input type="checkbox" name="examFilter" value="SNAP" class="portal-checkbox" />
                     <span class="cb-custom"></span>
                     <span class="cb-label">SNAP (Symbiosis Entrance)</span>
-                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted.includes('SNAP')).length}</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted?.includes('SNAP')).length}</span>
                   </label>
                   <label class="filter-checkbox-item">
                     <input type="checkbox" name="examFilter" value="NMAT" class="portal-checkbox" />
                     <span class="cb-custom"></span>
                     <span class="cb-label">NMAT by GMAC</span>
-                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted.includes('NMAT')).length}</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted?.includes('NMAT')).length}</span>
                   </label>
                   <label class="filter-checkbox-item">
                     <input type="checkbox" name="examFilter" value="GMAT" class="portal-checkbox" />
                     <span class="cb-custom"></span>
                     <span class="cb-label">GMAT</span>
-                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted.includes('GMAT')).length}</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.examsAccepted?.includes('GMAT')).length}</span>
                   </label>
                 </div>
               </div>
@@ -399,13 +399,13 @@ export function renderCollegesPage() {
                     <input type="checkbox" name="ownershipFilter" value="Government" class="portal-checkbox" />
                     <span class="cb-custom"></span>
                     <span class="cb-label">Government / Public / Central</span>
-                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.ownership.toLowerCase().includes('government')).length}</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => (c.ownership || '').toLowerCase().includes('government')).length}</span>
                   </label>
                   <label class="filter-checkbox-item">
                     <input type="checkbox" name="ownershipFilter" value="Private" class="portal-checkbox" />
                     <span class="cb-custom"></span>
                     <span class="cb-label">Private Autonomous / University</span>
-                    <span class="cb-badge">${COLLEGES_DATA.filter(c => c.ownership.toLowerCase().includes('private')).length}</span>
+                    <span class="cb-badge">${COLLEGES_DATA.filter(c => (c.ownership || '').toLowerCase().includes('private')).length}</span>
                   </label>
                 </div>
               </div>
@@ -558,7 +558,7 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
                   </td>
                   <td>
                     <div class="table-college-info">
-                      <div class="table-college-avatar">${col.shortName.substring(0, 3)}</div>
+                      <div class="table-college-avatar">${(col.shortName || col.name || 'MBA').substring(0, 3)}</div>
                       <div>
                         <a href="/colleges/${col.id}" class="table-college-name" data-route="colleges" data-sub="${col.id}">${col.name}</a>
                         <div class="table-college-sub">${col.location} • <span class="stars">★ ${col.rating}</span> (${col.reviewsCount} reviews)</div>
@@ -587,7 +587,7 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
   return colleges.map(col => {
     const isCompared = compareList.includes(col.id);
     const cutoffText = col.cutoffCAT !== 'N/A' ? `CAT: ${col.cutoffCAT}` : (col.cutoffXAT !== 'N/A' ? `XAT: ${col.cutoffXAT}` : `CMAT: ${col.cutoffCMAT}`);
-    const examTags = col.examsAccepted.map(e => `<span class="badge-exam-pill">${e}</span>`).join('');
+    const examTags = (col.examsAccepted || ['CAT', 'MAT', 'CMAT']).map(e => `<span class="badge-exam-pill">${e}</span>`).join('');
     const topRecruitersPreview = (col.topRecruiters || []).slice(0, 4).join(', ');
 
     return `
@@ -597,7 +597,7 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
           <div class="topbar-left">
             ${col.nirfRank ? `<span class="nirf-tag">#${col.nirfRank} NIRF Ranking</span>` : `<span class="nirf-tag" style="background:#e0e7ff;color:#3730a3;border-color:#c7d2fe;">Premier Institute</span>`}
             <span class="degree-tag ${col.degreeTypes?.includes('MBA') ? 'tag-mba' : 'tag-pgdm'}">${(col.degreeTypes || ['MBA']).join(' & ')}</span>
-            <span class="ownership-tag">${col.ownership.split('/')[0]}</span>
+            <span class="ownership-tag">${(col.ownership || 'Private').split('/')[0]}</span>
             <span class="session-tag" style="background:#ecfdf5;color:#059669;font-weight:700;font-size:0.75rem;padding:2px 8px;border-radius:6px;border:1px solid #a7f3d0;">Session 2027-29 Open</span>
           </div>
           
@@ -654,7 +654,7 @@ export function renderCollegesCards(colleges, compareList = [], viewMode = 'card
             <div class="metric-block">
               <span class="metric-label">Accepted Exams & Cutoff</span>
               <span class="metric-value text-blue font-semibold">${cutoffText}</span>
-              <span class="metric-hint">${col.examsAccepted.join(', ')}</span>
+              <span class="metric-hint">${(col.examsAccepted || ['CAT', 'MAT', 'CMAT']).join(', ')}</span>
             </div>
 
             <div class="metric-block">
@@ -819,7 +819,7 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
                   <li><strong>Flagship Program:</strong> ${col.programType}</li>
                   <li><strong>Campus Spread:</strong> ${col.campusArea} fully residential</li>
                   <li><strong>Return on Investment (ROI):</strong> ${col.roiScore}</li>
-                  <li><strong>Accepted Exams:</strong> ${col.examsAccepted.join(', ')}</li>
+                  <li><strong>Accepted Exams:</strong> ${(col.examsAccepted || ['CAT', 'MAT', 'CMAT']).join(', ')}</li>
                 </ul>
               </div>
 
@@ -864,7 +864,7 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
                       <td>${course.duration}</td>
                       <td><span class="seat-badge">${course.seats} Seats</span></td>
                       <td class="font-semibold text-blue">${course.fee}</td>
-                      <td class="text-secondary">Graduation (50% min) + Valid ${col.examsAccepted[0]}</td>
+                      <td class="text-secondary">Graduation (50% min) + Valid ${(col.examsAccepted && col.examsAccepted[0]) || 'CAT'}</td>
                     </tr>
                   `).join('')}
                 </tbody>
@@ -1008,7 +1008,7 @@ export function renderCollegeDetailModalContent(col, activeTab = 'overview') {
               <div class="timeline-step">
                 <div class="step-num">1</div>
                 <div>
-                  <strong>Entrance Exam Gate:</strong> Register and appear for ${col.examsAccepted.join('/')}. Meet overall & sectional minimum percentiles.
+                  <strong>Entrance Exam Gate:</strong> Register and appear for ${(col.examsAccepted || ['CAT', 'MAT', 'CMAT']).join('/')}. Meet overall & sectional minimum percentiles.
                 </div>
               </div>
               <div class="timeline-step">
@@ -1154,7 +1154,7 @@ export function renderComparisonModalContent(selectedColleges = []) {
             </tr>
             <tr>
               <td class="prop-label">Accepted Exams</td>
-              ${selectedColleges.map(c => `<td>${c.examsAccepted.join(', ')}</td>`).join('')}
+              ${selectedColleges.map(c => `<td>${(c.examsAccepted || ['CAT']).join(', ')}</td>`).join('')}
             </tr>
             <tr>
               <td class="prop-label">Cutoff Percentile</td>
@@ -1468,7 +1468,7 @@ export function renderCollegeFullPage(col) {
             <div class="aeo-fact-card fact-cutoff">
               <span class="fact-label">Entrance Cutoff (2027-29)</span>
               <span class="fact-value text-amber">${cutoffText}</span>
-              <span class="fact-hint">Accepted: ${col.examsAccepted.join(', ')}</span>
+              <span class="fact-hint">Accepted: ${(col.examsAccepted || ['CAT', 'MAT', 'CMAT']).join(', ')}</span>
             </div>
             <div class="aeo-fact-card fact-seats">
               <span class="fact-label">Total Batch Intake</span>
@@ -1547,7 +1547,7 @@ export function renderCollegeFullPage(col) {
                   <li><strong>Flagship Program:</strong> ${col.programType}</li>
                   <li><strong>Campus Spread:</strong> ${col.campusArea} campus</li>
                   <li><strong>Return on Investment (ROI):</strong> ${col.roiScore}</li>
-                  <li><strong>Accepted Exams:</strong> ${col.examsAccepted.join(', ')}</li>
+                  <li><strong>Accepted Exams:</strong> ${(col.examsAccepted || ['CAT', 'MAT', 'CMAT']).join(', ')}</li>
                 </ul>
               </div>
 
@@ -1595,7 +1595,7 @@ export function renderCollegeFullPage(col) {
                       <td>${course.duration}</td>
                       <td><span class="seat-badge">${course.seats} Seats</span></td>
                       <td class="font-semibold text-blue">${course.fee}</td>
-                      <td class="text-secondary">Graduation (50% min) + Valid ${col.examsAccepted[0]}</td>
+                      <td class="text-secondary">Graduation (50% min) + Valid ${(col.examsAccepted && col.examsAccepted[0]) || 'CAT'}</td>
                     </tr>
                   `).join('')}
                 </tbody>
@@ -1747,7 +1747,7 @@ export function renderCollegeFullPage(col) {
               <div class="timeline-step">
                 <div class="step-num">1</div>
                 <div>
-                  <strong>Entrance Exam Gate:</strong> Register and appear for ${col.examsAccepted.join(' or ')}. Secure valid scores satisfying the expected cutoff threshold (${cutoffText}).
+                  <strong>Entrance Exam Gate:</strong> Register and appear for ${(col.examsAccepted || ['CAT', 'MAT', 'CMAT']).join(' or ')}. Secure valid scores satisfying the expected cutoff threshold (${cutoffText}).
                 </div>
               </div>
               <div class="timeline-step">
@@ -1906,7 +1906,7 @@ export function renderCollegeFullPage(col) {
                   <span class="faq-toggle-icon">+</span>
                 </button>
                 <div class="college-faq-answer">
-                  <p>${col.name} accepts scores from <strong>${col.examsAccepted.join(', ')}</strong> for shortlisting candidates for the Personal Interview (PI) and Written Ability Test (WAT) admission rounds.</p>
+                  <p>${col.name} accepts scores from <strong>${(col.examsAccepted || ['CAT', 'MAT', 'CMAT']).join(', ')}</strong> for shortlisting candidates for the Personal Interview (PI) and Written Ability Test (WAT) admission rounds.</p>
                 </div>
               </div>
 

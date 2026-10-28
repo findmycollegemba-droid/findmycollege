@@ -17149,7 +17149,102 @@ html, body {
 }
 @media (max-width: 860px) {
   .cbt-main-body { grid-template-columns: 1fr; }
-  .cbt-palette-sidebar { display: none; }
+  .cbt-palette-sidebar {
+    position: fixed;
+    top: 64px;
+    right: 0;
+    bottom: 60px;
+    width: 320px;
+    max-width: 85vw;
+    z-index: 100001;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.25);
+    background: #ffffff;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex !important;
+  }
+  [data-theme="dark"] .cbt-palette-sidebar {
+    background: #111827;
+  }
+  .cbt-palette-sidebar.mobile-open {
+    transform: translateX(0);
+  }
+  .palette-mobile-header {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  [data-theme="dark"] .palette-mobile-header {
+    border-color: #1e293b;
+  }
+  .btn-palette-toggle-mobile {
+    display: inline-flex !important;
+  }
+  .mobile-submit-btn {
+    display: inline-flex !important;
+  }
+}
+@media (min-width: 861px) {
+  .palette-mobile-header {
+    display: none !important;
+  }
+  .btn-palette-toggle-mobile {
+    display: none !important;
+  }
+  .mobile-submit-btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .cbt-header {
+    height: auto;
+    min-height: 56px;
+    padding: 8px 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .cbt-brand-text .cbt-subtitle {
+    display: none;
+  }
+  .cbt-candidate-chip {
+    display: none;
+  }
+  .cbt-tools-row {
+    gap: 4px;
+  }
+  .cbt-tool-btn {
+    padding: 5px 8px;
+    font-size: 0.72rem;
+  }
+  .cbt-timer-box {
+    padding: 4px 10px;
+  }
+  .cbt-timer-box .timer-digits {
+    font-size: 1.1rem;
+  }
+  .cbt-question-workspace {
+    padding: 14px 16px;
+  }
+  .cbt-footer-bar {
+    height: auto;
+    padding: 8px 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: space-between;
+  }
+  .cbt-footer-left, .cbt-footer-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .btn-cbt-sec, .btn-cbt-nav, .btn-cbt-save, .btn-cbt-submit {
+    padding: 8px 10px;
+    font-size: 0.76rem;
+    min-height: 38px;
+  }
 }
 
 /* Question Workspace */

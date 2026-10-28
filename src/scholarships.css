@@ -573,6 +573,14 @@
   color: var(--text-primary, #14103A);
   margin-bottom: 6px;
 }
+.sch-card-title-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.sch-card-title-link:hover {
+  color: #6B2CF5;
+}
 
 .sch-provider-name {
   display: flex;

@@ -266,7 +266,7 @@ export function renderBlogOverview(articles) {
                 <div class="tool-icon-box">🏛️</div>
                 <div>
                   <div class="tool-link-title">Cutoff & Fees Explorer</div>
-                  <div class="tool-link-desc">Filter 111+ colleges by verified CTC</div>
+                  <div class="tool-link-desc">Filter 680+ colleges by verified CTC</div>
                 </div>
                 <span class="tool-arrow">→</span>
               </a>
@@ -440,7 +440,7 @@ export function renderArticlesGrid(articles, savedIds = null) {
           <p class="empty-subtitle">We are currently refreshing our editorial desk. Check back soon for brand-new MBA admissions playbooks, exam strategy breakdowns, and salary analysis.</p>
           <div class="empty-suggestions">
             <span>Explore our portal tools & colleges in the meantime:</span>
-            <a href="/colleges" class="empty-tag-pill" data-route="colleges">🏛️ 111+ MBA Colleges</a>
+            <a href="/colleges" class="empty-tag-pill" data-route="colleges">🏛️ 680+ MBA Colleges</a>
             <a href="/tools" class="empty-tag-pill" data-route="tools">📊 Percentile Predictor</a>
             <a href="/exams" class="empty-tag-pill" data-route="exams">🎯 Exam Guides</a>
           </div>

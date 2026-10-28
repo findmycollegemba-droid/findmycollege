@@ -3,7 +3,8 @@ import { promptCalculatorGate, getSavedCalculatorLead } from '../components/calc
 import { fireConfetti } from '../utils/confettiHelper.js';
 import { sendLeadToCRM } from '../utils/crm.js';
 import { openInquiryModal } from '../components/inquiryModal.js';
-import { navigateTo } from '../main.js';
+import { navigateTo, state } from '../main.js';
+import { updatePageSEO } from '../utils/seoHelper.js';
 
 export function initToolsInteractions() {
   // Tab Switcher between CAT, XAT, and CMAT

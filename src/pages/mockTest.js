@@ -161,10 +161,21 @@ function renderMockTestHub() {
             <span class="stat-label">With Detailed Solutions</span>
           </div>
         </div>
+
+        <div class="mock-hero-actions" style="margin-top: 24px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <button type="button" class="btn-start-mock large" data-exam-id="cat-2026">
+            <span>Launch CAT 2026 Free Mock Test</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+          <a href="#mockTestsGrid" class="btn-outline-hero" style="display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 9999px; border: 1.5px solid #cbd5e1; font-weight: 700; color: #1e293b; text-decoration: none; background: #ffffff;">
+            <span>Explore All 6 Mock Tests</span>
+            <span style="font-size: 1.1rem;">↓</span>
+          </a>
+        </div>
       </section>
 
       <!-- Grid of 6 Mock Tests -->
-      <section class="mock-tests-grid-section">
+      <section class="mock-tests-grid-section" id="mockTestsGrid">
         <div class="section-header-compact">
           <h2 class="section-title-sm">Select Your Target MBA Mock Test</h2>
           <span class="section-subtitle-sm">Choose an exam below to begin simulated computer-based practice</span>
@@ -330,15 +341,15 @@ export function initMockTestEvents() {
   const appEl = document.getElementById('mockTestApp');
   if (!appEl) return;
 
-  // Handle click on "Start Free Mock Test" buttons
-  document.querySelectorAll('.btn-start-mock').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const examId = btn.getAttribute('data-exam-id');
-      const test = getMockTestById(examId);
-      if (test) {
-        openPreTestModal(test);
-      }
-    });
+  // Handle click on "Start Free Mock Test" buttons using robust event delegation
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-start-mock');
+    if (!btn) return;
+    const examId = btn.getAttribute('data-exam-id');
+    const test = getMockTestById(examId);
+    if (test) {
+      openPreTestModal(test);
+    }
   });
 
   // Setup On-Screen Calculator events
@@ -641,9 +652,9 @@ function renderCBTInterface(test, candidate) {
           </div>
 
           <div class="cbt-candidate-chip">
-            <div class="cand-avatar">${candidate.name.slice(0, 1).toUpperCase()}</div>
+            <div class="cand-avatar">${(candidate?.name || 'Candidate').slice(0, 1).toUpperCase()}</div>
             <div class="cand-details">
-              <span class="cand-name">${candidate.name}</span>
+              <span class="cand-name">${candidate?.name || 'Candidate'}</span>
               <span class="cand-roll">Roll: ${rollNumber}</span>
             </div>
           </div>
@@ -675,6 +686,11 @@ function renderCBTInterface(test, candidate) {
 
         <!-- Right: TCS iON Question Palette -->
         <aside class="cbt-palette-sidebar">
+          <div class="palette-mobile-header">
+            <strong>Question Palette</strong>
+            <button type="button" class="palette-close-mobile-btn" id="closeMobilePaletteBtn" title="Close Question Palette">&times;</button>
+          </div>
+
           <!-- Palette Status Legend -->
           <div class="palette-legend">
             <div class="legend-item"><span class="badge-dot not-visited"></span> Not Visited</div>
@@ -716,6 +732,9 @@ function renderCBTInterface(test, candidate) {
           <button type="button" class="btn-cbt-sec" id="cbtClearResponseBtn">
             Clear Response
           </button>
+          <button type="button" class="btn-cbt-sec btn-palette-toggle-mobile" id="cbtPaletteToggleBtn" title="Toggle Question Palette">
+            <span>🔢 Question Palette</span>
+          </button>
         </div>
 
         <div class="cbt-footer-right">
@@ -727,6 +746,9 @@ function renderCBTInterface(test, candidate) {
           </button>
           <button type="button" class="btn-cbt-save" id="cbtSaveNextBtn">
             Save & Next
+          </button>
+          <button type="button" class="btn-cbt-submit mobile-submit-btn" id="cbtSubmitTestBtnMobile" title="Submit Examination">
+            <span>Submit Test</span>
           </button>
         </div>
       </footer>
@@ -1007,9 +1029,22 @@ function attachCBTEvents() {
     showCompleteQuestionPaperModal();
   });
 
-  // Submit Test Button
+  // Submit Test Buttons (Desktop & Mobile)
   document.getElementById('cbtSubmitTestBtn')?.addEventListener('click', () => {
     openSubmitConfirmModal();
+  });
+  document.getElementById('cbtSubmitTestBtnMobile')?.addEventListener('click', () => {
+    openSubmitConfirmModal();
+  });
+
+  // Mobile Question Palette Drawer Toggles
+  document.getElementById('cbtPaletteToggleBtn')?.addEventListener('click', () => {
+    const sidebar = document.querySelector('.cbt-palette-sidebar');
+    sidebar?.classList.toggle('mobile-open');
+  });
+  document.getElementById('closeMobilePaletteBtn')?.addEventListener('click', () => {
+    const sidebar = document.querySelector('.cbt-palette-sidebar');
+    sidebar?.classList.remove('mobile-open');
   });
 }
 
