@@ -143,7 +143,14 @@ export const CMAT_OVERALL_ANCHORS = [
   { score: 0,   perc: 0.00 }
 ];
 
-export function calculateCATScore({ slot = '1', category = 'GEN', varc = {}, dilr = {}, qa = {} }) {
+export function calculateCATScore({ 
+  slot = '1', 
+  category = 'GEN', 
+  varc = {}, 
+  dilr = {}, 
+  qa = {},
+  profile = {}
+}) {
   // Score per section: Correct MCQ * 3 - Wrong MCQ * 1 + Correct TITA * 3
   const vCorrMcq = Math.max(0, Number(varc.correctMcq || 0));
   const vWrongMcq = Math.max(0, Number(varc.wrongMcq || 0));
@@ -203,9 +210,38 @@ export function calculateCATScore({ slot = '1', category = 'GEN', varc = {}, dil
   if (category === 'SC') categoryRelaxation = 15.0;
   if (category === 'ST' || category === 'PWD') categoryRelaxation = 24.0;
 
-  const effectivePercentile = Math.min(100, Number((estimatedPercentile + categoryRelaxation).toFixed(2)));
+  // Profile-Based Composite Score Bonus (10th, 12th, Grad, Diversity, WorkEx)
+  let profileBonus = 0;
+  const tenth = Number(profile.tenth || 85);
+  const twelfth = Number(profile.twelfth || 85);
+  const grad = Number(profile.grad || 75);
+  const isNonEng = profile.stream === 'non-eng';
+  const isFemaleOrTrans = profile.gender === 'female' || profile.gender === 'transgender';
+  const workExMonths = Number(profile.workEx || 0);
 
-  // Grouped College Calls by Tiers
+  // Academic consistency bonus (up to +1.5 percentile effective boost)
+  if (tenth >= 90 && twelfth >= 90 && grad >= 80) profileBonus += 1.5;
+  else if (tenth >= 80 && twelfth >= 80 && grad >= 75) profileBonus += 0.8;
+
+  // Academic diversity bonus (Non-engineers get priority at IIM A, B, C, L, K, I)
+  if (isNonEng) profileBonus += 2.0;
+
+  // Gender diversity bonus (up to +2.5 percentile boost for female/transgender candidates)
+  if (isFemaleOrTrans) profileBonus += 2.0;
+
+  // Work experience sweet spot (24-36 months receives maximum points at IIM Bangalore/Calcutta)
+  if (workExMonths >= 24 && workExMonths <= 36) profileBonus += 1.5;
+  else if (workExMonths >= 12 && workExMonths < 24) profileBonus += 0.8;
+  else if (workExMonths > 36) profileBonus += 0.5;
+
+  const effectivePercentile = Math.min(100, Number((estimatedPercentile + categoryRelaxation + profileBonus).toFixed(2)));
+
+  // Profile Strength Label
+  let profileStrength = 'Competitive';
+  if (profileBonus >= 4.0) profileStrength = 'Exceptional Diversity & Profile';
+  else if (profileBonus >= 2.0) profileStrength = 'High Diversity Advantage';
+
+  // Grouped College Calls by Tiers with Call Probability
   const tierCalls = {
     tier1: [],      // Mega Premier IIMs (99.0+)
     tier1_5: [],    // Legacy IIMs & Premier B-Schools (95.0 – 98.9)
@@ -214,62 +250,82 @@ export function calculateCATScore({ slot = '1', category = 'GEN', varc = {}, dil
     tier3: [],      // Metro PGDM Hubs (60.0 – 74.9)
   };
 
+  // Helper for Call Chance
+  const getCallChance = (effPerc, requiredCutoff) => {
+    if (effPerc >= requiredCutoff + 1.5) return { status: 'High Conversion Chance', chance: 'High' };
+    if (effPerc >= requiredCutoff - 0.5) return { status: 'Competitive / Interview Call Likely', chance: 'Moderate' };
+    return { status: 'Dream Reach / Diversity Dependent', chance: 'Low' };
+  };
+
   // Tier 1: Mega Premier IIMs & Top FMS
-  if (effectivePercentile >= 99.0) {
-    tierCalls.tier1.push({ name: 'IIM Ahmedabad (PGP)', cutoff: category === 'GEN' ? '99.5%ile' : '94.0%ile', status: 'High Conversion Chance', badge: 'Tier 1' });
-    tierCalls.tier1.push({ name: 'IIM Bangalore (PGP)', cutoff: category === 'GEN' ? '99.3%ile' : '93.5%ile', status: 'High Conversion Chance', badge: 'Tier 1' });
-    tierCalls.tier1.push({ name: 'IIM Calcutta (MBA)', cutoff: category === 'GEN' ? '99.4%ile' : '93.0%ile', status: 'High Conversion Chance', badge: 'Tier 1' });
-    tierCalls.tier1.push({ name: 'FMS Delhi (Faculty of Management Studies)', cutoff: category === 'GEN' ? '99.2%ile' : '91.0%ile', status: 'Top ROI Convert', badge: 'Tier 1' });
-  } else if (effectivePercentile >= 97.5) {
-    tierCalls.tier1.push({ name: 'FMS Delhi / IIM Calcutta', cutoff: '99.0%ile', status: 'Profile / Diversity Dependent', badge: 'Tier 1' });
+  if (effectivePercentile >= 97.0) {
+    const aReq = category === 'GEN' ? 99.5 : 94.0;
+    const bReq = category === 'GEN' ? 99.3 : 93.5;
+    const cReq = category === 'GEN' ? 99.4 : 93.0;
+    const fmsReq = category === 'GEN' ? 99.2 : 91.0;
+
+    tierCalls.tier1.push({ name: 'IIM Ahmedabad (PGP)', cutoff: aReq + '%ile', status: getCallChance(effectivePercentile, aReq).status, chance: getCallChance(effectivePercentile, aReq).chance, badge: 'Tier 1' });
+    tierCalls.tier1.push({ name: 'IIM Bangalore (PGP)', cutoff: bReq + '%ile', status: getCallChance(effectivePercentile, bReq).status, chance: getCallChance(effectivePercentile, bReq).chance, badge: 'Tier 1' });
+    tierCalls.tier1.push({ name: 'IIM Calcutta (MBA)', cutoff: cReq + '%ile', status: getCallChance(effectivePercentile, cReq).status, chance: getCallChance(effectivePercentile, cReq).chance, badge: 'Tier 1' });
+    tierCalls.tier1.push({ name: 'FMS Delhi (Faculty of Management Studies)', cutoff: fmsReq + '%ile', status: getCallChance(effectivePercentile, fmsReq).status, chance: getCallChance(effectivePercentile, fmsReq).chance, badge: 'Tier 1 • High ROI' });
   }
 
   // Tier 1.5: Legacy IIMs & Premier Private
-  if (effectivePercentile >= 95.0) {
-    tierCalls.tier1_5.push({ name: 'IIM Lucknow / Kozhikode / Indore', cutoff: category === 'GEN' ? '97.5%ile' : '88.0%ile', status: 'Strong Shortlist Chance', badge: 'Tier 1.5' });
-    tierCalls.tier1_5.push({ name: 'SPJIMR Mumbai (PGDM)', cutoff: '96.0%ile', status: 'Score & Profile Shortlist', badge: 'Tier 1.5' });
-    tierCalls.tier1_5.push({ name: 'MDI Gurgaon (PGDM)', cutoff: '96.5%ile', status: 'Strong Call', badge: 'Tier 1.5' });
-    tierCalls.tier1_5.push({ name: 'IIT Bombay - SJMSOM', cutoff: '98.0%ile', status: 'Strong Tech-MBA Call', badge: 'Tier 1.5' });
-    tierCalls.tier1_5.push({ name: 'IIFT Delhi (MBA-IB)', cutoff: '96.5%ile', status: 'Strong Call', badge: 'Tier 1.5' });
-  } else if (effectivePercentile >= 92.5) {
-    tierCalls.tier1_5.push({ name: 'MDI Gurgaon / IIFT / SPJIMR', cutoff: '95.0%ile', status: 'Competitive Shortlist', badge: 'Tier 1.5' });
+  if (effectivePercentile >= 91.0) {
+    const lkiReq = category === 'GEN' ? 97.5 : 88.0;
+    const spjReq = isNonEng || isFemaleOrTrans ? 90.0 : 95.0;
+    const mdiReq = 95.0;
+    const iitbReq = 98.0;
+    const iiftReq = 96.5;
+
+    tierCalls.tier1_5.push({ name: 'IIM Lucknow / Kozhikode / Indore', cutoff: lkiReq + '%ile', status: getCallChance(effectivePercentile, lkiReq).status, chance: getCallChance(effectivePercentile, lkiReq).chance, badge: 'Tier 1.5' });
+    tierCalls.tier1_5.push({ name: 'SPJIMR Mumbai (PGDM)', cutoff: spjReq + '%ile (Profile: 85+)', status: getCallChance(effectivePercentile, spjReq).status, chance: getCallChance(effectivePercentile, spjReq).chance, badge: 'Tier 1.5' });
+    tierCalls.tier1_5.push({ name: 'MDI Gurgaon (PGDM)', cutoff: mdiReq + '%ile', status: getCallChance(effectivePercentile, mdiReq).status, chance: getCallChance(effectivePercentile, mdiReq).chance, badge: 'Tier 1.5' });
+    tierCalls.tier1_5.push({ name: 'IIT Bombay - SJMSOM', cutoff: iitbReq + '%ile', status: getCallChance(effectivePercentile, iitbReq).status, chance: getCallChance(effectivePercentile, iitbReq).chance, badge: 'Tier 1.5 • High ROI' });
+    tierCalls.tier1_5.push({ name: 'IIFT Delhi (MBA-IB)', cutoff: iiftReq + '%ile', status: getCallChance(effectivePercentile, iiftReq).status, chance: getCallChance(effectivePercentile, iiftReq).chance, badge: 'Tier 1.5' });
   }
 
   // Tier 2 Top: High ROI & CAP IIMs
-  if (effectivePercentile >= 88.0) {
-    tierCalls.tier2_top.push({ name: 'IIM Shillong (PGP)', cutoff: category === 'GEN' ? '92.0%ile' : '80.0%ile', status: 'Strong Call Chance', badge: 'Tier 2 Top' });
-    tierCalls.tier2_top.push({ name: 'CAP New IIMs (Udaipur, Trichy, Ranchi, Raipur)', cutoff: category === 'GEN' ? '92.0%ile' : '77.0%ile', status: 'High Conversion Chance', badge: 'Tier 2 Top' });
-    tierCalls.tier2_top.push({ name: 'IIT Delhi - DMS', cutoff: '94.0%ile', status: 'High ROI Contender', badge: 'Tier 2 Top' });
-    tierCalls.tier2_top.push({ name: 'Delhi School of Economics (DSE Delhi)', cutoff: '92.0%ile', status: 'Super High ROI', badge: 'Tier 2 Top' });
-    tierCalls.tier2_top.push({ name: 'Baby IIMs (Nagpur, Vizag, Amritsar, Bodhgaya)', cutoff: category === 'GEN' ? '88.0%ile' : '72.0%ile', status: 'Safe Convert', badge: 'Tier 2 Top' });
+  if (effectivePercentile >= 85.0) {
+    const shillongReq = category === 'GEN' ? 92.0 : 80.0;
+    const capReq = category === 'GEN' ? 92.0 : 77.0;
+    const iitdReq = 94.0;
+    const dseReq = 92.0;
+    const babyReq = category === 'GEN' ? 88.0 : 72.0;
+
+    tierCalls.tier2_top.push({ name: 'IIM Shillong (PGP)', cutoff: shillongReq + '%ile', status: getCallChance(effectivePercentile, shillongReq).status, chance: getCallChance(effectivePercentile, shillongReq).chance, badge: 'Tier 2 Top' });
+    tierCalls.tier2_top.push({ name: 'CAP New IIMs (Udaipur, Trichy, Ranchi, Raipur)', cutoff: capReq + '%ile', status: getCallChance(effectivePercentile, capReq).status, chance: getCallChance(effectivePercentile, capReq).chance, badge: 'Tier 2 Top' });
+    tierCalls.tier2_top.push({ name: 'IIT Delhi - DMS', cutoff: iitdReq + '%ile', status: getCallChance(effectivePercentile, iitdReq).status, chance: getCallChance(effectivePercentile, iitdReq).chance, badge: 'Tier 2 Top • High ROI' });
+    tierCalls.tier2_top.push({ name: 'Delhi School of Economics (DSE Delhi)', cutoff: dseReq + '%ile', status: getCallChance(effectivePercentile, dseReq).status, chance: getCallChance(effectivePercentile, dseReq).chance, badge: 'Tier 2 Top • Top ROI' });
+    tierCalls.tier2_top.push({ name: 'Baby IIMs (Nagpur, Vizag, Amritsar, Bodhgaya)', cutoff: babyReq + '%ile', status: getCallChance(effectivePercentile, babyReq).status, chance: getCallChance(effectivePercentile, babyReq).chance, badge: 'Tier 2 Top' });
   }
 
   // Tier 2: Leading Private PGDM
-  if (effectivePercentile >= 75.0) {
-    tierCalls.tier2.push({ name: 'IMT Ghaziabad (PGDM)', cutoff: '90.0%ile', status: effectivePercentile >= 88 ? 'Safe Call' : 'Competitive', badge: 'Tier 2' });
-    tierCalls.tier2.push({ name: 'IMI New Delhi', cutoff: '88.0%ile', status: effectivePercentile >= 85 ? 'Safe Call' : 'Competitive', badge: 'Tier 2' });
-    tierCalls.tier2.push({ name: 'Goa Institute of Management (GIM Goa)', cutoff: '85.0%ile', status: 'Strong Shortlist', badge: 'Tier 2' });
-    tierCalls.tier2.push({ name: 'TAPMI Manipal', cutoff: '85.0%ile', status: 'Strong Shortlist', badge: 'Tier 2' });
-    tierCalls.tier2.push({ name: 'FORE School of Management, New Delhi', cutoff: '83.0%ile', status: 'Safe Convert', badge: 'Tier 2' });
-    tierCalls.tier2.push({ name: 'Great Lakes Chennai (GLIM PGPM/PGDM)', cutoff: '80.0%ile', status: 'Safe Convert', badge: 'Tier 2' });
-    tierCalls.tier2.push({ name: 'LBSIM Delhi (Lal Bahadur Shastri)', cutoff: '82.0%ile', status: 'Safe Convert', badge: 'Tier 2' });
-    tierCalls.tier2.push({ name: 'BIMTECH Greater Noida', cutoff: '75.0%ile', status: 'Confirmed Call', badge: 'Tier 2' });
+  if (effectivePercentile >= 72.0) {
+    tierCalls.tier2.push({ name: 'IMT Ghaziabad (PGDM)', cutoff: '90.0%ile', status: effectivePercentile >= 88 ? 'Safe Call' : 'Competitive', chance: effectivePercentile >= 88 ? 'High' : 'Moderate', badge: 'Tier 2' });
+    tierCalls.tier2.push({ name: 'IMI New Delhi', cutoff: '88.0%ile', status: effectivePercentile >= 85 ? 'Safe Call' : 'Competitive', chance: effectivePercentile >= 85 ? 'High' : 'Moderate', badge: 'Tier 2' });
+    tierCalls.tier2.push({ name: 'Goa Institute of Management (GIM Goa)', cutoff: '85.0%ile', status: 'Strong Shortlist', chance: effectivePercentile >= 84 ? 'High' : 'Moderate', badge: 'Tier 2' });
+    tierCalls.tier2.push({ name: 'TAPMI Manipal', cutoff: '85.0%ile', status: 'Strong Shortlist', chance: effectivePercentile >= 84 ? 'High' : 'Moderate', badge: 'Tier 2' });
+    tierCalls.tier2.push({ name: 'FORE School of Management, New Delhi', cutoff: '83.0%ile', status: 'Safe Convert', chance: effectivePercentile >= 82 ? 'High' : 'Moderate', badge: 'Tier 2' });
+    tierCalls.tier2.push({ name: 'Great Lakes Chennai (GLIM PGPM/PGDM)', cutoff: '80.0%ile', status: 'Safe Convert', chance: effectivePercentile >= 79 ? 'High' : 'Moderate', badge: 'Tier 2' });
+    tierCalls.tier2.push({ name: 'LBSIM Delhi (Lal Bahadur Shastri)', cutoff: '82.0%ile', status: 'Safe Convert', chance: effectivePercentile >= 80 ? 'High' : 'Moderate', badge: 'Tier 2' });
+    tierCalls.tier2.push({ name: 'BIMTECH Greater Noida', cutoff: '75.0%ile', status: 'Confirmed Call', chance: 'High', badge: 'Tier 2' });
   }
 
   // Tier 3: Metro PGDM Hubs & Targeted Direct Admissions
-  if (effectivePercentile >= 55.0) {
-    tierCalls.tier3.push({ name: 'New Delhi Institute of Management (NDIM)', cutoff: '65-70%ile', status: 'High Conversion Chance', badge: 'Tier 3' });
-    tierCalls.tier3.push({ name: 'FOSTIIMA Business School, Delhi', cutoff: '65%ile', status: 'Confirmed Call', badge: 'Tier 3' });
-    tierCalls.tier3.push({ name: 'Fortune Institute (FIIB Delhi)', cutoff: '65%ile', status: 'Confirmed Call', badge: 'Tier 3' });
-    tierCalls.tier3.push({ name: 'JIMS Kalkaji (New Delhi)', cutoff: '65-70%ile', status: 'Confirmed Call', badge: 'Tier 3' });
-    tierCalls.tier3.push({ name: 'Pune Institute of Business Management (PIBM)', cutoff: '65-70%ile', status: 'Confirmed Call', badge: 'Tier 3' });
-    tierCalls.tier3.push({ name: 'Lexicon MILE, Pune', cutoff: '60-65%ile', status: 'Confirmed Call', badge: 'Tier 3' });
-    tierCalls.tier3.push({ name: 'JAGSoM Bangalore (Jagdish Sheth)', cutoff: '70%ile', status: 'Strong Call', badge: 'Tier 3' });
-    tierCalls.tier3.push({ name: 'ISBR Business School, Bangalore', cutoff: '60-65%ile', status: 'Direct Admission Available', badge: 'Tier 3' });
-    tierCalls.tier3.push({ name: 'UPES Dehradun (School of Business)', cutoff: '65%ile', status: 'Confirmed Call', badge: 'Tier 3' });
-    tierCalls.tier3.push({ name: 'Doon Business School (DBS Dehradun)', cutoff: '60%ile', status: 'Confirmed Call', badge: 'Tier 3' });
-    tierCalls.tier3.push({ name: 'Jaipuria Institute of Management (Noida/Jaipur)', cutoff: '70%ile', status: 'Confirmed Call', badge: 'Tier 3' });
-    tierCalls.tier3.push({ name: 'Poornima University / VGU Jaipur', cutoff: '50-60%ile', status: 'Direct Admission Available', badge: 'Tier 3' });
+  if (effectivePercentile >= 50.0) {
+    tierCalls.tier3.push({ name: 'New Delhi Institute of Management (NDIM)', cutoff: '65-70%ile', status: 'High Conversion Chance', chance: 'High', badge: 'Tier 3' });
+    tierCalls.tier3.push({ name: 'FOSTIIMA Business School, Delhi', cutoff: '65%ile', status: 'Confirmed Call', chance: 'High', badge: 'Tier 3' });
+    tierCalls.tier3.push({ name: 'Fortune Institute (FIIB Delhi)', cutoff: '65%ile', status: 'Confirmed Call', chance: 'High', badge: 'Tier 3' });
+    tierCalls.tier3.push({ name: 'JIMS Kalkaji (New Delhi)', cutoff: '65-70%ile', status: 'Confirmed Call', chance: 'High', badge: 'Tier 3' });
+    tierCalls.tier3.push({ name: 'Pune Institute of Business Management (PIBM)', cutoff: '65-70%ile', status: 'Confirmed Call', chance: 'High', badge: 'Tier 3' });
+    tierCalls.tier3.push({ name: 'Lexicon MILE, Pune', cutoff: '60-65%ile', status: 'Confirmed Call', chance: 'High', badge: 'Tier 3' });
+    tierCalls.tier3.push({ name: 'JAGSoM Bangalore (Jagdish Sheth)', cutoff: '70%ile', status: 'Strong Call', chance: 'High', badge: 'Tier 3' });
+    tierCalls.tier3.push({ name: 'ISBR Business School, Bangalore', cutoff: '60-65%ile', status: 'Direct Admission Available', chance: 'High', badge: 'Tier 3' });
+    tierCalls.tier3.push({ name: 'UPES Dehradun (School of Business)', cutoff: '65%ile', status: 'Confirmed Call', chance: 'High', badge: 'Tier 3' });
+    tierCalls.tier3.push({ name: 'Doon Business School (DBS Dehradun)', cutoff: '60%ile', status: 'Confirmed Call', chance: 'High', badge: 'Tier 3' });
+    tierCalls.tier3.push({ name: 'Jaipuria Institute of Management (Noida/Jaipur)', cutoff: '70%ile', status: 'Confirmed Call', chance: 'High', badge: 'Tier 3' });
+    tierCalls.tier3.push({ name: 'Poornima University / VGU Jaipur', cutoff: '50-60%ile', status: 'Direct Admission Available', chance: 'High', badge: 'Tier 3' });
   }
 
   // Flat list for compact widgets
@@ -299,6 +355,8 @@ export function calculateCATScore({ slot = '1', category = 'GEN', varc = {}, dil
     negativePenalty,
     category,
     slot,
+    profileBonus,
+    profileStrength,
     collegeCalls,
     tierCalls
   };

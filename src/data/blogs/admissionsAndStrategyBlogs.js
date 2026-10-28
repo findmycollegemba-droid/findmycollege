@@ -337,5 +337,160 @@ Both programs receive equal treatment under RBI guidelines and Indian Banks' Ass
 2. You want access to extensive corporate campus placements, summer internships, and live project networks in corporate hubs.
 3. The institute holds **AICTE Approval, NBA Accreditation, and AIU Equivalence** (e.g., [XLRI](/colleges/xlri-jamshedpur), [SPJIMR](/colleges/spjimr-mumbai), [MDI](/colleges/mdi-gurgaon), [GIM](/colleges/gim-goa), [TAPMI](/colleges/tapmi-manipal), [BIMTECH](/colleges/bimtech-noida), [Jaipuria](/colleges/jaipuria-institute-of-management-jaipur)).
 `
+  },
+  // ============================================================
+  // 9. CAT 2026 ANSWER KEY & RESPONSE SHEET: SCORE CALCULATOR & OBJECTION GUIDE
+  // ============================================================
+  {
+    id: 'cat-2026-answer-key-response-sheet-score-calculator',
+    title: 'CAT 2026 Answer Key & Response Sheet: Direct Download Link, Slot 1/2/3 Score Calculator & Objection Process',
+    primaryKeyword: 'cat 2026 answer key response sheet',
+    category: 'Exam Strategy & Prep',
+    categoryKey: 'exam',
+    readTime: '9 min read',
+    readMinutes: 9,
+    date: 'Oct 28, 2026',
+    timestamp: 1793200000000,
+    author: 'Vikramaditya Rathore',
+    authorRole: 'Senior Admissions Consultant • Ex-IIM Alum',
+    authorBio: 'Advises management aspirants nationally on admissions timelines, portfolio application strategy, and composite score optimization.',
+    summary: 'The ultimate guide to checking your official CAT 2026 candidate response sheet and answer key on cdn.digialm.com. Calculate your raw and scaled sectional scores (+3/-1/0), understand Slot 1/2/3 normalization, raise objections (₹1,200 fee), and forecast IIM calls with our free predictor.',
+    featured: true,
+    badge: 'CAT 2026 Answer Key & Score Predictor',
+    views: '52.8k',
+    likes: 1840,
+    tags: [
+      'cat 2026 answer key',
+      'cat response sheet download link',
+      'cat score calculator',
+      'cat college predictor',
+      'cdn.digialm.com cat response sheet',
+      'cat marks vs percentile 2026',
+      'iim call predictor 2026',
+      'cat slot normalization'
+    ],
+    keyTakeaways: [
+      'The official CAT 2026 response sheet and provisional answer key are released within 5 to 7 days post-exam on iimcat.ac.in (hosted on cdn.digialm.com).',
+      'Marking Scheme: +3 marks for every correct MCQ/TITA answer, -1 mark penalty for incorrect MCQs, and 0 marks (no deduction) for unattempted or incorrect TITA responses.',
+      'Objection Window: Aspirants can challenge provisional keys within 3-4 days on the portal with supporting rationale for ₹1,200 per question (100% refunded if upheld).',
+      'Slot 1, 2, and 3 Normalization: IIMs use an equipercentile equating method to standardize difficulty across morning, afternoon, and evening slots.',
+      'Instant Calculation: Paste your response sheet URL into the FindMyBSchool CAT College Predictor to get an instant breakdown of raw marks, scaled scores, and category IIM call chances.'
+    ],
+    content: `
+### CAT 2026 Answer Key & Response Sheet: Complete Guide to Score Calculation & IIM Calls
+
+The release of the **CAT 2026 provisional answer key and candidate response sheet** is the most pivotal moment on the MBA admission calendar. Held every year by the Indian Institutes of Management (IIMs), the Common Admission Test (CAT) receives over 2.9 Lakh applicants competing for prestigious seats across [21 IIMs](/tools/cat-college-predictor) and premier institutions like [FMS Delhi](/colleges/fms-delhi), [SPJIMR Mumbai](/colleges/spjimr-mumbai), [MDI Gurgaon](/colleges/mdi-gurgaon), and [IIT Bombay (SJMSOM)](/colleges/iit-bombay-sjmsom).
+
+Whether you took the test in **Slot 1 (8:30 AM - 10:30 AM)**, **Slot 2 (12:30 PM - 2:30 PM)**, or **Slot 3 (4:30 PM - 6:30 PM)**, this playbook outlines exactly how to retrieve your response sheet from \`cdn.digialm.com\`, calculate your raw and scaled scores, raise official challenges, and forecast interview shortlists.
+
+> ⚡ **Check Your CAT Score Instantly**: Don't calculate 66 questions by hand! Paste your response sheet link into the free [FindMyBSchool CAT College Predictor & Response Sheet Scanner](/tools/cat-college-predictor) to get an automated question-by-question audit, sectional percentile forecasts, and IIM call probabilities.
+
+---
+
+### Official CAT 2026 Answer Key & Response Sheet Schedule
+
+| Milestone Event | Official Date / Expected Window | Candidate Actions & Importance |
+| :--- | :--- | :--- |
+| **CAT 2026 Exam** | Sunday, November 29, 2026 | Conducted in 3 slots across 170+ test cities nationwide. |
+| **Provisional Answer Key & Response Sheet** | First Week of December 2026 (10:00 AM) | Candidate response sheets go live on \`cdn.digialm.com\` via [iimcat.ac.in](https://iimcat.ac.in). |
+| **Objection Management Window** | 3 to 4 Days Post Release | Challenge disputed questions with documentary proof. Fee: ₹1,200 per question. |
+| **Final Official CAT Answer Key** | Third Week of December 2026 | Reviewed and locked by IIM subject-matter expert panels. |
+| **CAT 2026 Official Scorecard / Results** | Late December 2026 / Early January 2027 | Scaled scores and percentiles declared for 2026-28 admissions. |
+| **IIM WAT-PI Shortlists Released** | January – February 2027 | First shortlists announced by IIM Ahmedabad, Bangalore, Calcutta, Lucknow, etc. |
+
+---
+
+### Step-by-Step: How to Download CAT 2026 Response Sheet from cdn.digialm.com
+
+The response sheet is your official examination transcript showing the questions presented, your marked options, and the system's provisional correct answers.
+
+#### 5-Step Process:
+1. **Visit Official Portal:** Navigate to [iimcat.ac.in](https://iimcat.ac.in) on your desktop or mobile browser.
+2. **Log In:** Click on **"Registered Candidate Login"** and enter your **User ID** and **Password** received during registration.
+3. **Open Candidate Response Tab:** In the candidate dashboard, click on the **"Candidate Response"** tab next to "Personal Details".
+4. **Generate Question Paper & Response:** Click the hyperlink that reads: *"To download your question paper for CAT 2026, click here to generate it"*.
+5. **Copy the URL:** The response sheet opens in a new tab hosted on a domain like:
+   \`\`\`
+   https://cdn.digialm.com//per/g01/pub/756/touchstone/AssessmentQPHTMLMode1//...
+   \`\`\`
+   Copy this complete link from your address bar.
+
+---
+
+### Official Marking Scheme for CAT 2026 (66 Questions, 198 Marks)
+
+Understanding how marks are awarded is essential before auditing your responses:
+
+| Question Type | Correct Response | Incorrect Response | Unattempted | Total Questions | Max Section Marks |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **VARC (MCQ & TITA)** | +3 Marks | -1 Mark (MCQ) / 0 (TITA) | 0 Marks | 24 | 72 Marks |
+| **DILR (MCQ & TITA)** | +3 Marks | -1 Mark (MCQ) / 0 (TITA) | 0 Marks | 20 | 60 Marks |
+| **QA (MCQ & TITA)** | +3 Marks | -1 Mark (MCQ) / 0 (TITA) | 0 Marks | 22 | 66 Marks |
+| **Overall Exam** | **+3 Marks** | **-1 (MCQ) / 0 (TITA)** | **0 Marks** | **66** | **198 Marks** |
+
+*Note: Non-MCQ questions (Type In The Answer - TITA) carry **ZERO negative marking**. If an attempted TITA response is incorrect, you lose 0 marks.*
+
+---
+
+### How Slot Normalization Works (Slot 1 vs Slot 2 vs Slot 3)
+
+Because CAT 2026 is administered across three separate time slots, question papers inevitably vary in perceived difficulty. To maintain absolute fairness, the convening IIM applies a mathematical **equipercentile equating normalization** formula.
+
+#### The Normalization Formula:
+$$\\text{Normalized Scaled Score} = S_{ij} = \\frac{R_{ij} - M_i}{\\sigma_i} \\times \\sigma_{\\text{base}} + M_{\\text{base}}$$
+
+Where:
+- $R_{ij}$ = Candidate $j$'s raw score in Section $i$ of that slot.
+- $M_i$ = Mean score of all test takers in Section $i$ of that slot.
+- $\\sigma_i$ = Standard deviation of scores in that slot.
+- $\\sigma_{\\text{base}}, M_{\\text{base}}$ = Master equated standard deviation and mean across all test takers nationally.
+
+**Key Rule of Thumb**:
+- If Slot 2 QA was exceptionally difficult (with lower mean raw scores), Slot 2 test takers will see their raw score scale **upward** by +2 to +4 marks.
+- Conversely, if Slot 1 VARC was relatively easy (higher mean raw scores), candidates in that slot may experience slight downward adjustments.
+
+---
+
+### CAT 2026 Expected Marks vs Percentile (198 Maximum Marks)
+
+Based on calibrated difficulty trends across recent CAT administrations, here are the target raw scores needed to achieve key national percentile brackets:
+
+| Percentile Target | Overall Raw Marks (198M) | VARC (72M) | DILR (60M) | QA (66M) | Target Institutions |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **99.9+ %ile** | **110 - 125+** | 46+ | 38+ | 42+ | [IIM Ahmedabad](/colleges/iim-ahmedabad), [IIM Bangalore](/colleges/iim-bangalore), [IIM Calcutta](/colleges/iim-calcutta), [FMS Delhi](/colleges/fms-delhi) |
+| **99.5+ %ile** | **95 - 109** | 42+ | 32+ | 35+ | [IIM Lucknow](/colleges/iim-lucknow), [IIM Kozhikode](/colleges/iim-kozhikode), [SPJIMR Mumbai](/colleges/spjimr-mumbai) |
+| **99.0+ %ile** | **82 - 94** | 38+ | 28+ | 30+ | [IIM Indore](/colleges/iim-indore), [MDI Gurgaon](/colleges/mdi-gurgaon), [SJMSOM IIT Bombay](/colleges/iit-bombay-sjmsom) |
+| **98.0+ %ile** | **72 - 81** | 33+ | 24+ | 25+ | [IIM Shillong](/colleges/iim-shillong), [DMS IIT Delhi](/colleges/dms-iit-delhi), [IIFT Delhi](/colleges/iift-delhi) |
+| **95.0+ %ile** | **58 - 71** | 28+ | 18+ | 19+ | [CAP IIMs (Udaipur, Trichy, Ranchi)](/tools/cat-college-predictor), [IMT Ghaziabad](/colleges/imt-ghaziabad), [IMI Delhi](/colleges/imi-delhi) |
+| **90.0+ %ile** | **45 - 57** | 22+ | 14+ | 14+ | [GIM Goa](/colleges/gim-goa), [TAPMI Manipal](/colleges/tapmi-manipal), [FORE School Delhi](/colleges/fore-school-delhi) |
+| **85.0+ %ile** | **37 - 44** | 18+ | 11+ | 11+ | [KJ Somaiya](/colleges/kj-somaiya-mumbai), [Great Lakes Chennai](/colleges/great-lakes-chennai), [BIMTECH](/colleges/bimtech-noida) |
+| **80.0+ %ile** | **30 - 36** | 14+ | 9+ | 8+ | Baby IIMs (Reserved Categories), [Welingkar Mumbai](/colleges/welingkar-mumbai), [LBSIM Delhi](/colleges/lbsim-delhi) |
+
+---
+
+### How to Raise Objections on CAT 2026 Provisional Answer Key
+
+If you spot an ambiguous reading comprehension question, incorrect data interpretation question, or flawed answer key option:
+
+1. **Objection Window:** The objection management portal opens for approximately 72 to 96 hours following provisional key release.
+2. **Access Objection Management:** Log in at [iimcat.ac.in](https://iimcat.ac.in) and click on **"Objection Management"**.
+3. **Select Question ID:** Select the Section, Question ID, and specific nature of objection (e.g., "Multiple correct options", "None of the options correct", "Ambiguous question text").
+4. **Upload Supporting Proof:** Upload standard textbook citations, mathematical derivations, or academic dictionaries in PDF/JPEG format.
+5. **Fee Payment:** Pay **₹1,200 per challenged question** plus gateway charges via Net Banking, UPI, or Credit Card.
+6. **Refund Clause:** If the IIM expert committee accepts your objection and updates or drops the question, the **entire ₹1,200 fee is credited back** to your source account. If rejected, the fee is forfeited.
+
+---
+
+### Academic & Gender Diversity: The Secret to Converting IIMs at 90-95%ile
+
+A common myth among candidates is that only 99+ percentiles can secure IIM calls. While general engineering males (GEM) indeed require 99.2+ percentile for older IIMs, candidate diversity criteria significantly expand shortlist opportunities:
+
+- **Academic Diversity:** Non-engineers (Arts, Commerce, Science, Medicine, Law, CA) receive **2% to 5% bonus marks** in initial composite score calculations across IIM Ahmedabad, IIM Bangalore, IIM Calcutta, and IIM Kozhikode.
+- **Gender Diversity:** Female and transgender applicants receive **2% to 5% bonus points** at almost all top institutions to foster balanced classroom representation.
+- **Work Experience:** Candidates with **24 to 36 months of full-time post-graduation executive experience** achieve maximum points on admission rubrics.
+
+> 📊 **Calculate Your Composite Score**: Test how your 10th %, 12th %, graduation stream, and work experience impact your IIM shortlist calls on our free [CAT College Predictor Tool](/tools/cat-college-predictor).
+`
   }
 ];
+

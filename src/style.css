@@ -19507,4 +19507,251 @@ html, body {
   background: #ffedd5;
 }
 
+/* ============================================================
+   CAT PREDICTOR 2026: ADVANCED ENHANCEMENTS (SXO, AIO, GEO)
+   ============================================================ */
+
+.bookmarklet-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.08), rgba(168, 85, 247, 0.08));
+  border: 1px dashed rgba(107, 44, 245, 0.35);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-top: 14px;
+}
+
+.bookmarklet-banner .bm-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.88rem;
+  color: #334155;
+  line-height: 1.45;
+}
+
+.bookmarklet-banner .bm-icon {
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.btn-copy-bm {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #6B2CF5;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(107, 44, 245, 0.25);
+}
+
+.btn-copy-bm:hover {
+  background: #581c87;
+  transform: translateY(-1px);
+}
+
+.btn-copy-bm:active {
+  transform: translateY(0);
+}
+
+/* Academic Profile & Diversity Composite Evaluator */
+.cat-profile-evaluator-card {
+  background: #ffffff;
+  border: 1px solid #E2E8F0;
+  border-radius: 14px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="dark"] .cat-profile-evaluator-card {
+  background: #1E293B;
+  border-color: #334155;
+}
+
+.profile-eval-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+[data-theme="dark"] .profile-eval-header {
+  border-bottom-color: #334155;
+}
+
+.pe-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pe-icon {
+  font-size: 1.3rem;
+}
+
+.pe-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+[data-theme="dark"] .pe-title {
+  color: #F8FAFC;
+}
+
+.pe-sub {
+  margin: 2px 0 0 0;
+  font-size: 0.8rem;
+  color: #64748B;
+}
+
+.profile-strength-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: #F1F5F9;
+  color: #334155;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border: 1px solid #CBD5E1;
+}
+
+.profile-strength-badge.exceptional {
+  background: #ECFDF5;
+  color: #047857;
+  border-color: #A7F3D0;
+}
+
+.profile-strength-badge.advantage {
+  background: #EFF6FF;
+  color: #1D4ED8;
+  border-color: #BFDBFE;
+}
+
+.profile-inputs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.pe-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pe-field label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #64748B;
+}
+
+.pe-input, .pe-select {
+  height: 38px;
+  padding: 6px 10px;
+  font-size: 0.88rem;
+  border: 1.5px solid #CBD5E1;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #0F172A;
+  transition: border-color 0.2s ease;
+}
+
+[data-theme="dark"] .pe-input, [data-theme="dark"] .pe-select {
+  background: #0F172A;
+  border-color: #334155;
+  color: #F8FAFC;
+}
+
+.pe-input:focus, .pe-select:focus {
+  border-color: #6B2CF5;
+  outline: none;
+}
+
+/* Call Chance Badges */
+.chance-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.chance-tag.chance-high {
+  background: #ECFDF5;
+  color: #047857;
+  border: 1px solid #A7F3D0;
+}
+
+.chance-tag.chance-moderate {
+  background: #FEF9C3;
+  color: #854D0E;
+  border: 1px solid #FDE047;
+}
+
+.chance-tag.chance-low {
+  background: #FEE2E2;
+  color: #991B1B;
+  border: 1px solid #FECACA;
+}
+
+/* Official Timeline Table */
+.cat-timeline-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  margin: 16px 0;
+}
+
+.cat-timeline-table th {
+  background: #F1F5F9;
+  color: #1E293B;
+  font-weight: 700;
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 2px solid #CBD5E1;
+}
+
+.cat-timeline-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #E2E8F0;
+  color: #334155;
+}
+
+.cat-timeline-table tr:hover td {
+  background: rgba(107, 44, 245, 0.03);
+}
+
+@media (max-width: 640px) {
+  .bookmarklet-banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn-copy-bm {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 

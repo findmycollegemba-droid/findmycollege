@@ -100,6 +100,7 @@ export function initToolsInteractions() {
         <div class="call-info-right">
           <span class="call-tier-pill">${c.badge}</span>
           <span class="call-status ${c.status.includes('High') || c.status.includes('Top') || c.status.includes('Confirmed') ? 'confirmed' : 'dream'}">${c.status}</span>
+          ${c.chance ? `<span class="chance-tag chance-${c.chance.toLowerCase()}">${c.chance} Chance</span>` : ''}
         </div>
       </div>
     `).join('');
@@ -108,6 +109,13 @@ export function initToolsInteractions() {
   // Main function to update UI from CAT calculation results
   const applyAndDisplayCatResults = (res, candidateInfo = null) => {
     lastCatResult = res;
+
+    // Update Profile Strength Badge
+    const strengthBadge = document.getElementById('profileStrengthBadge');
+    if (strengthBadge && res.profileStrength) {
+      strengthBadge.innerText = `Profile: ${res.profileStrength}`;
+      strengthBadge.className = `profile-strength-badge ${res.profileBonus >= 3 ? 'exceptional' : (res.profileBonus >= 1.5 ? 'advantage' : '')}`;
+    }
 
     // Update Scores
     const percEl = document.getElementById('catResPercentile');
@@ -382,11 +390,21 @@ export function initToolsInteractions() {
   document.getElementById('btnChangeStudentXat')?.addEventListener('click', () => openCalculatorGate('XAT'));
   document.getElementById('btnChangeStudentCmat')?.addEventListener('click', () => openCalculatorGate('CMAT'));
 
+  // Profile Data Extractor
+  const getProfileData = () => ({
+    tenth: Number(document.getElementById('catTenthInput')?.value || 88),
+    twelfth: Number(document.getElementById('catTwelfthInput')?.value || 86),
+    grad: Number(document.getElementById('catGradInput')?.value || 78),
+    stream: document.getElementById('catStreamSelect')?.value || 'eng',
+    gender: document.getElementById('catGenderSelect')?.value || 'male',
+    workEx: Number(document.getElementById('catWorkExSelect')?.value || 0)
+  });
+
   // Digialm URL Scan Handler
   const btnScanUrl = document.getElementById('btnScanUrl');
   const catUrlInput = document.getElementById('catUrlInput');
 
-  const executeUrlScan = (slotNum = '1', studentLead = null) => {
+  const executeUrlScan = async (slotNum = '1', studentLead = null) => {
     const student = studentLead || getSavedCalculatorLead();
     const candidateName = student ? student.name : 'Rahul Sharma';
 
@@ -395,27 +413,52 @@ export function initToolsInteractions() {
       btnScanUrl.disabled = true;
     }
 
-    setTimeout(() => {
-      const sampleData = getSampleResponseSheet(slotNum, candidateName);
-      const res = calculateCATScore({
-        slot: sampleData.slot,
-        category: document.getElementById('catCategorySelect')?.value || 'GEN',
-        varc: sampleData.varc,
-        dilr: sampleData.dilr,
-        qa: sampleData.qa
-      });
+    const inputUrl = catUrlInput?.value.trim() || '';
+    let parsedData = null;
 
-      updateCatLockState(student);
-      applyAndDisplayCatResults(res, sampleData);
-
-      // Sync manual inputs as well
-      syncInputsFromObject(sampleData.varc, sampleData.dilr, sampleData.qa);
-
-      if (btnScanUrl) {
-        btnScanUrl.innerHTML = `<span>Scan Response Sheet</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`;
-        btnScanUrl.disabled = false;
+    // Check if live response sheet URL from Digialm or IIM CAT is provided
+    if (inputUrl && (inputUrl.includes('digialm.com') || inputUrl.includes('iimcat.ac.in'))) {
+      try {
+        const resp = await fetch('/api/scan-cat-response', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ url: inputUrl })
+        });
+        if (resp.ok) {
+          const json = await resp.json();
+          if (json.success) {
+            parsedData = json;
+          }
+        }
+      } catch (err) {
+        console.warn('Backend response sheet scan proxy offline or unreachable:', err);
       }
-    }, 400);
+    }
+
+    // Seamless fallback to sample response sheet if proxy is offline or demo clicked
+    if (!parsedData) {
+      parsedData = getSampleResponseSheet(slotNum, candidateName);
+    }
+
+    const res = calculateCATScore({
+      slot: parsedData.slot || slotNum,
+      category: document.getElementById('catCategorySelect')?.value || 'GEN',
+      varc: parsedData.varc,
+      dilr: parsedData.dilr,
+      qa: parsedData.qa,
+      profile: getProfileData()
+    });
+
+    updateCatLockState(student);
+    applyAndDisplayCatResults(res, parsedData);
+
+    // Sync manual inputs as well
+    syncInputsFromObject(parsedData.varc, parsedData.dilr, parsedData.qa);
+
+    if (btnScanUrl) {
+      btnScanUrl.innerHTML = `<span>Scan Response Sheet</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>`;
+      btnScanUrl.disabled = false;
+    }
   };
 
   const getCatUrlScanResult = (slotNum = '1') => {
@@ -426,7 +469,8 @@ export function initToolsInteractions() {
       category: document.getElementById('catCategorySelect')?.value || 'GEN',
       varc: sampleData.varc,
       dilr: sampleData.dilr,
-      qa: sampleData.qa
+      qa: sampleData.qa,
+      profile: getProfileData()
     });
   };
 
@@ -487,7 +531,8 @@ export function initToolsInteractions() {
       category: document.getElementById('catCategorySelect')?.value || 'GEN',
       varc: parsed.varc,
       dilr: parsed.dilr,
-      qa: parsed.qa
+      qa: parsed.qa,
+      profile: getProfileData()
     });
   };
 
@@ -503,7 +548,8 @@ export function initToolsInteractions() {
       category: document.getElementById('catCategorySelect')?.value || 'GEN',
       varc: parsed.varc,
       dilr: parsed.dilr,
-      qa: parsed.qa
+      qa: parsed.qa,
+      profile: getProfileData()
     });
 
     updateCatLockState(student);
@@ -629,7 +675,7 @@ export function initToolsInteractions() {
       wrongTita: document.getElementById('catQaWrongTita')?.value
     };
 
-    return calculateCATScore({ slot, category, varc, dilr, qa });
+    return calculateCATScore({ slot, category, varc, dilr, qa, profile: getProfileData() });
   };
 
   const runCatCalc = () => {
@@ -658,6 +704,51 @@ export function initToolsInteractions() {
   });
   document.getElementById('catCategorySelect')?.addEventListener('change', () => {
     if (getSavedCalculatorLead()) runCatCalc();
+  });
+
+  // Profile Inputs Live Listeners
+  [
+    'catTenthInput', 'catTwelfthInput', 'catGradInput',
+    'catStreamSelect', 'catGenderSelect', 'catWorkExSelect'
+  ].forEach(id => {
+    const el = document.getElementById(id);
+    el?.addEventListener('change', () => {
+      if (getSavedCalculatorLead()) runCatCalc();
+    });
+    el?.addEventListener('input', () => {
+      if (getSavedCalculatorLead()) runCatCalc();
+    });
+  });
+
+  // Bookmarklet Copy Handler
+  document.getElementById('btnCopyBookmarklet')?.addEventListener('click', () => {
+    const code = `javascript:(function(){try{var h=document.documentElement.outerHTML;var w=window.open('https://findmybschool.com/tools/cat-college-predictor');setTimeout(function(){w.postMessage({type:'FMBS_CAT_HTML',html:h},'*');},1200);}catch(e){alert('Bookmarklet error: '+e.message);}})();`;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById('btnCopyBookmarklet');
+        if (btn) {
+          const originalText = btn.innerHTML;
+          btn.innerHTML = '<span>✅ Copied to Clipboard!</span>';
+          setTimeout(() => { btn.innerHTML = originalText; }, 2500);
+        }
+      }).catch(() => {
+        prompt('Copy this 1-click Bookmarklet code:', code);
+      });
+    } else {
+      prompt('Copy this 1-click Bookmarklet code:', code);
+    }
+  });
+
+  // Listen for Bookmarklet Source Broadcast
+  window.addEventListener('message', (event) => {
+    if (event.data && event.data.type === 'FMBS_CAT_HTML' && event.data.html) {
+      const sourceInput = document.getElementById('catSourceInput');
+      if (sourceInput) {
+        sourceInput.value = event.data.html;
+      }
+      switchCatMode('source');
+      executeSourceParse();
+    }
   });
 
   // CAT Presets

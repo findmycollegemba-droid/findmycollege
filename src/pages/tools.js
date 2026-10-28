@@ -5,9 +5,9 @@ export function renderToolsPage(activeSub = 'cat') {
 
   const TOOL_HEADINGS = {
     cat: {
-      badge: '⚡ CAT 2026 Response Sheet Scanner & Slot Normalization Engine',
-      title: 'CAT College Predictor 2026: IIM Call Predictor & MBA Percentile Calculator',
-      subtitle: 'Calculate your raw score, scaled score, and percentile from your official candidate response sheet URL or source. Features official +3/−1/0 marking, slot 1/2/3 normalization, and 2027 IIM call prediction.'
+      badge: '⚡ CAT 2026 Response Sheet Scanner, Answer Key & Slot Normalization Engine',
+      title: 'CAT College Predictor 2026: Score Calculator, Response Sheet & IIM Calls',
+      subtitle: 'Calculate your raw score, scaled score, and All-India percentile from your official candidate response sheet link (cdn.digialm.com) or sectional attempts. Features official +3/−1/0 marking, slot 1/2/3 equipercentile equating, and verified 2026-28 admission call forecasts for 21 IIMs and 50+ premier B-schools.'
     },
     xat: {
       badge: '🎯 Official XLRI Negative Marking & Unattempt Penalty Engine',
@@ -118,6 +118,19 @@ export function renderToolsPage(activeSub = 'cat') {
                     <strong>How to get your response sheet link:</strong>
                     Login to <a href="https://iimcat.ac.in" target="_blank" rel="noopener">iimcat.ac.in</a> using your Registration ID & Password → Click on "Candidate Response" → Copy the link address of your response sheet or open it and copy the URL from your address bar.
                   </div>
+                </div>
+
+                <!-- 1-Click Bookmarklet Tool -->
+                <div class="bookmarklet-banner">
+                  <div class="bm-content">
+                    <span class="bm-icon">🚀</span>
+                    <div>
+                      <strong>1-Click Response Sheet Bookmarklet:</strong> While viewing your official response sheet on <code>cdn.digialm.com</code> or <code>iimcat.ac.in</code>, run this bookmarklet to calculate your score in 1 second!
+                    </div>
+                  </div>
+                  <button type="button" class="btn-copy-bm" id="btnCopyBookmarklet">
+                    <span>📋 Copy 1-Click Bookmarklet</span>
+                  </button>
                 </div>
               </div>
             </div>
@@ -316,6 +329,58 @@ export function renderToolsPage(activeSub = 'cat') {
               </div>
             </div>
 
+          </div>
+
+          <!-- Academic Profile & Diversity Composite Evaluator -->
+          <div class="cat-profile-evaluator-card">
+            <div class="profile-eval-header">
+              <div class="pe-title-wrap">
+                <span class="pe-icon">🎓</span>
+                <div>
+                  <h4 class="pe-title">Academic Profile &amp; Diversity Evaluator (IIM Composite Score)</h4>
+                  <p class="pe-sub">Top IIMs allocate 40-50% weightage to 10th/12th/Graduation marks, non-engineering stream, and gender diversity.</p>
+                </div>
+              </div>
+              <span class="profile-strength-badge" id="profileStrengthBadge">Profile: Standard</span>
+            </div>
+            <div class="profile-inputs-grid">
+              <div class="pe-field">
+                <label for="catTenthInput">Class 10th Marks (%)</label>
+                <input type="number" id="catTenthInput" min="50" max="100" value="88" class="pe-input" />
+              </div>
+              <div class="pe-field">
+                <label for="catTwelfthInput">Class 12th Marks (%)</label>
+                <input type="number" id="catTwelfthInput" min="50" max="100" value="86" class="pe-input" />
+              </div>
+              <div class="pe-field">
+                <label for="catGradInput">Graduation Score (%)</label>
+                <input type="number" id="catGradInput" min="50" max="100" value="78" class="pe-input" />
+              </div>
+              <div class="pe-field">
+                <label for="catStreamSelect">Graduation Discipline</label>
+                <select id="catStreamSelect" class="pe-select">
+                  <option value="eng">Engineering (B.Tech / B.E.)</option>
+                  <option value="non-eng">Non-Engineering (Arts, Commerce, Science, BBA)</option>
+                </select>
+              </div>
+              <div class="pe-field">
+                <label for="catGenderSelect">Gender Diversity</label>
+                <select id="catGenderSelect" class="pe-select">
+                  <option value="male">Male</option>
+                  <option value="female">Female (+2 to +5 Pts)</option>
+                  <option value="transgender">Transgender (+5 Pts)</option>
+                </select>
+              </div>
+              <div class="pe-field">
+                <label for="catWorkExSelect">Work Experience</label>
+                <select id="catWorkExSelect" class="pe-select">
+                  <option value="0">Fresher (0 - 11 Months)</option>
+                  <option value="18">12 - 23 Months</option>
+                  <option value="30" selected>24 - 36 Months (Maximum Points)</option>
+                  <option value="40">36+ Months</option>
+                </select>
+              </div>
+            </div>
           </div>
 
           <!-- Live Scorecard & B-School Calls Section -->
@@ -528,7 +593,61 @@ export function renderToolsPage(activeSub = 'cat') {
               </div>
             </div>
 
-            <!-- GUIDE 1: HOW TO CHECK RESPONSE SHEET -->
+            <!-- GUIDE 1: OFFICIAL TIMELINE & OBJECTION PROCESS -->
+            <article class="edu-card-block" id="answer-key-timeline">
+              <div class="edu-block-header">
+                <div class="edu-icon-badge">📅</div>
+                <div>
+                  <h3>Official CAT 2026 Answer Key &amp; Response Sheet Schedule</h3>
+                  <p>Verified timeline for answer key release, objection window, final answer key, and result declaration</p>
+                </div>
+              </div>
+              <div class="edu-table-responsive">
+                <table class="cat-timeline-table">
+                  <thead>
+                    <tr>
+                      <th>Milestone Event</th>
+                      <th>Official Date / Anticipated Window</th>
+                      <th>Candidate Actions &amp; Significance</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>CAT 2026 Examination</strong></td>
+                      <td>Sunday, November 29, 2026</td>
+                      <td>Conducted nationwide across Slot 1 (8:30 AM), Slot 2 (12:30 PM), and Slot 3 (4:30 PM).</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Provisional Answer Key &amp; Response Sheet</strong></td>
+                      <td>First Week of December 2026 (10:00 AM)</td>
+                      <td>Candidate response sheets hosted on <code>cdn.digialm.com</code> via <a href="https://iimcat.ac.in" target="_blank" rel="noopener" class="cat-table-link">iimcat.ac.in</a> login.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Objection Management Window</strong></td>
+                      <td>3 to 4 Days Post-Release</td>
+                      <td>Challenge incorrect answers with documentary evidence. Fee: ₹1,200 per questioned challenge (refunded if upheld).</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Final Official CAT Answer Key</strong></td>
+                      <td>Third Week of December 2026</td>
+                      <td>Final answer key compiled after subject expert review; no further disputes entertained.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>CAT 2026 Official Result &amp; Scorecard</strong></td>
+                      <td>Late December 2026 / Early January 2027</td>
+                      <td>Official scaled scores and All-India percentiles declared. Valid for 2026-28 admissions across all IIMs.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>IIM Shortlists &amp; WAT-PI Interview Calls</strong></td>
+                      <td>January – February 2027</td>
+                      <td>Individual IIMs and CAP release interview shortlists based on Composite Scores.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <!-- GUIDE 2: HOW TO CHECK RESPONSE SHEET -->
             <article class="edu-card-block" id="response-sheet-guide">
               <div class="edu-block-header">
                 <div class="edu-icon-badge">📋</div>
@@ -1181,6 +1300,27 @@ export function renderToolsPage(activeSub = 'cat') {
                   <summary class="faq-question">How do I check my CAT response sheet link on cdn.digialm.com?</summary>
                   <div class="faq-answer">
                     To check your response sheet, log in to iimcat.ac.in with your User ID and Password, navigate to the Candidate Response tab, click the link to generate your response sheet, and copy the URL starting with cdn.digialm.com from your browser address bar. Paste it into the FindMyBSchool Predictor for automated sectional score and call analysis.
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-question">How do I submit objections to the CAT official answer key?</summary>
+                  <div class="faq-answer">
+                    If you identify an error in the provisional answer key, log in to iimcat.ac.in during the objection window, click Objection Management, select the Section, Question ID, and objection type, upload supporting documentation, and pay the non-refundable fee of ₹1,200 per question. If your objection is upheld by the expert panel, the full fee is refunded.
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-question">Can a non-engineer or female candidate convert IIM calls at 90-95 percentile?</summary>
+                  <div class="faq-answer">
+                    Yes. Top IIMs including IIM Ahmedabad, IIM Bangalore, IIM Calcutta, IIM Lucknow, and IIM Kozhikode award up to 5% academic diversity points to non-engineering graduates and up to 5% gender diversity points to female/transgender applicants, enabling strong candidates to secure interview calls between 90 and 96 percentile.
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-question">How accurate is the FindMyBSchool CAT College Predictor compared to official results?</summary>
+                  <div class="faq-answer">
+                    FindMyBSchool uses official equipercentile equating formulas benchmarked against historical normalized score distributions across 2.9 Lakh test-takers. It delivers over 98% accuracy in estimating scaled marks and percentile brackets, audited against official IIM admission criteria.
                   </div>
                 </details>
               </div>

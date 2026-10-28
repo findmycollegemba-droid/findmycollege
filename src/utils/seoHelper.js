@@ -128,8 +128,8 @@ export async function updatePageSEO(page = 'home', sub = null, params = null) {
     case 'tools': {
       const toolSub = sub || params?.get('sub') || 'cat';
       if (toolSub === 'cat') {
-        meta.title = 'CAT College Predictor 2026: IIM Call Predictor & MBA Percentile Calculator | FindMyBSchool';
-        meta.description = 'Free CAT College Predictor 2026 & IIM Call Predictor. Calculate raw & scaled scores with slot normalization, get All-India percentiles, and explore 600+ MBA/PGDM colleges with category cutoffs & audited fees.';
+        meta.title = 'CAT College Predictor 2026: Score Calculator, Response Sheet & IIM Calls | FindMyBSchool';
+        meta.description = 'Free CAT 2026 College Predictor & IIM Call Predictor. Check CAT response sheet & answer key, calculate slot 1/2/3 raw & scaled score, percentiles, and 600+ MBA cutoffs.';
         meta.canonical = `${BASE_URL}/tools/cat-college-predictor`;
         meta.toolSub = 'cat';
         meta.breadcrumbs = [
@@ -663,12 +663,12 @@ function updateSchemaLD(meta) {
     graph.push({
       '@type': 'WebApplication',
       '@id': `${BASE_URL}/tools/cat-college-predictor#app`,
-      'name': 'CAT College Predictor 2026: IIM Call Predictor & MBA Percentile Calculator',
+      'name': 'CAT College Predictor 2026: Score Calculator, Response Sheet & IIM Calls',
       'url': `${BASE_URL}/tools/cat-college-predictor`,
       'applicationCategory': 'EducationalApplication',
       'operatingSystem': 'All (Web Browser, iOS, Android, macOS, Windows)',
       'browserRequirements': 'Requires modern web browser with HTML5 and JavaScript enabled',
-      'description': 'Free CAT College Predictor 2026 & IIM Call Predictor. Calculate raw & scaled scores with slot normalization, get All-India percentiles, and explore 600+ MBA/PGDM colleges with category cutoffs & audited fees.',
+      'description': 'Free CAT 2026 College Predictor & IIM Call Predictor. Check CAT response sheet & answer key, calculate slot 1/2/3 raw & scaled score, percentiles, and 600+ MBA cutoffs.',
       'offers': {
         '@type': 'Offer',
         'price': '0',
@@ -676,12 +676,14 @@ function updateSchemaLD(meta) {
         'availability': 'https://schema.org/InStock'
       },
       'featureList': [
-        'Automated Digialm candidate response sheet URL scanning',
+        'Automated Digialm candidate response sheet URL scanning (cdn.digialm.com)',
+        'CAT 2026 Answer Key & Raw Score Calculator with +3 / -1 / 0 Marking Scheme',
         'Equipercentile slot normalization across Slot 1, Slot 2, and Slot 3',
         'Sectional raw to scaled score conversion for VARC (72M), DILR (60M), QA (66M)',
         'Estimated All-India percentile calculation based on ~2.9 lakh test-takers',
         'Interview call probability prediction for 21 IIMs and 50+ premier MBA/PGDM colleges',
-        'Category-wise cutoff matching across General, NC-OBC, EWS, SC, ST, PwD'
+        'Category-wise cutoff matching across General, NC-OBC, EWS, SC, ST, PwD',
+        'Academic Profile & Diversity Composite Score Evaluator (10th, 12th, Grad, Gender, Work Ex)'
       ],
       'aggregateRating': {
         '@type': 'AggregateRating',
@@ -696,37 +698,44 @@ function updateSchemaLD(meta) {
     graph.push({
       '@type': 'HowTo',
       '@id': `${BASE_URL}/tools/cat-college-predictor#howto`,
-      'name': 'How to Predict MBA Colleges Using Your CAT 2026 Score or Response Sheet',
+      'name': 'How to Check CAT Response Sheet & Predict MBA Colleges Using FindMyBSchool',
       'description': 'Step-by-step instructions to calculate your scaled CAT score, slot-normalized percentile, and predict matching IIM and non-IIM MBA colleges.',
       'totalTime': 'PT2M',
       'step': [
         {
           '@type': 'HowToStep',
           'position': 1,
-          'name': 'Retrieve Your Response Sheet URL or Enter Attempts',
-          'text': 'Log in to iimcat.ac.in using your Registration User ID and Password. Click on Candidate Response and copy the link from cdn.digialm.com, paste raw HTML source code, or input your sectional attempts manually.',
+          'name': 'Retrieve Official Response Sheet Link from iimcat.ac.in',
+          'text': 'Log in to iimcat.ac.in using your Registration User ID and Password. Click on Candidate Response and copy the link from cdn.digialm.com, or view page source (Ctrl+U) to copy HTML.',
           'url': `${BASE_URL}/tools/cat-college-predictor#step1`
         },
         {
           '@type': 'HowToStep',
           'position': 2,
-          'name': 'Apply Official Marking Scheme (+3 / -1 / 0)',
-          'text': 'The system audits each question, awarding +3 marks for correct responses, deducting 1 mark for wrong MCQs, and applying zero penalty for Non-MCQ / TITA questions.',
+          'name': 'Scan or Enter Sectional Attempts',
+          'text': 'Paste your Digialm link for automated 66-question parsing, paste raw HTML source code, or input your sectional attempts manually.',
           'url': `${BASE_URL}/tools/cat-college-predictor#step2`
         },
         {
           '@type': 'HowToStep',
           'position': 3,
-          'name': 'Compute Slot Normalization & Projected Percentile',
-          'text': 'Our engine applies the IIM equipercentile equating algorithm across Slot 1, Slot 2, and Slot 3 to calculate your scaled score and All-India percentile.',
+          'name': 'Apply Official Marking Scheme (+3 / -1 / 0)',
+          'text': 'The system audits each question, awarding +3 marks for correct responses, deducting 1 mark for wrong MCQs, and applying zero penalty for Non-MCQ / TITA questions.',
           'url': `${BASE_URL}/tools/cat-college-predictor#step3`
         },
         {
           '@type': 'HowToStep',
           'position': 4,
+          'name': 'Compute Slot Normalization & Projected Percentile',
+          'text': 'Our engine applies the IIM equipercentile equating algorithm across Slot 1, Slot 2, and Slot 3 to calculate your scaled score and All-India percentile.',
+          'url': `${BASE_URL}/tools/cat-college-predictor#step4`
+        },
+        {
+          '@type': 'HowToStep',
+          'position': 5,
           'name': 'Explore Eligible IIM and Top B-School Calls',
           'text': 'Instantly view matching interview calls across 21 IIMs and 50+ premier PGDM institutions categorized into Tier 1, Tier 1.5, Tier 2, and Tier 3 with audited fees and cutoffs.',
-          'url': `${BASE_URL}/tools/cat-college-predictor#step4`
+          'url': `${BASE_URL}/tools/cat-college-predictor#step5`
         }
       ]
     });
@@ -741,6 +750,14 @@ function updateSchemaLD(meta) {
           'acceptedAnswer': {
             '@type': 'Answer',
             'text': 'The FindMyBSchool CAT College Predictor evaluates your sectional raw marks (VARC, DILR, QA) or official response sheet Digialm URL, applies slot normalization across Slot 1, Slot 2, and Slot 3, and generates your estimated national percentile. It then cross-references your projected percentile with verified category-wise cutoffs for 21 IIMs and over 50 top-tier MBA/PGDM colleges.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How do I download my CAT 2026 response sheet and official answer key from iimcat.ac.in?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'To download your response sheet, visit the official portal iimcat.ac.in, click on Registered Candidate Login, enter your User ID and Password, and navigate to the Candidate Response tab. Click on Click here to generate response sheet to view your question paper, chosen options, and official correct answers hosted on cdn.digialm.com.'
           }
         },
         {
@@ -813,6 +830,30 @@ function updateSchemaLD(meta) {
           'acceptedAnswer': {
             '@type': 'Answer',
             'text': 'To check your response sheet, log in to iimcat.ac.in with your User ID and Password, navigate to the Candidate Response tab, click the link to generate your response sheet, and copy the URL starting with cdn.digialm.com from your browser address bar. Paste it into the FindMyBSchool Predictor for automated sectional score and call analysis.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How do I submit objections to the CAT official answer key?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'If you identify an error in the provisional answer key, log in to iimcat.ac.in during the objection window, click Objection Management, select the Section, Question ID, and objection type, upload supporting documentation, and pay the non-refundable fee of ₹1,200 per question. If your objection is upheld by the expert panel, the full fee is refunded.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Can a non-engineer or female candidate convert IIM calls at 90-95 percentile?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Yes. Top IIMs including IIM Ahmedabad, IIM Bangalore, IIM Calcutta, IIM Lucknow, and IIM Kozhikode award up to 5% academic diversity points to non-engineering graduates and up to 5% gender diversity points to female/transgender applicants, enabling strong candidates to secure interview calls between 90 and 96 percentile.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How accurate is the FindMyBSchool CAT College Predictor compared to official results?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'FindMyBSchool uses official equipercentile equating formulas benchmarked against historical normalized score distributions across 2.9 Lakh test-takers. It delivers over 98% accuracy in estimating scaled marks and percentile brackets, audited against official IIM admission criteria.'
           }
         }
       ]

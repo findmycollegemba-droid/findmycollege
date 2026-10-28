@@ -172,7 +172,8 @@ SECTION 5: CAT COLLEGE PREDICTOR, NORMALIZATION & IIM CUTOFF BENCHMARKS (GEO / A
 
 1. Tool URL & Architecture:
    - Canonical URL: https://findmybschool.com/tools/cat-college-predictor
-   - Core Functions: Digialm Candidate Response Sheet URL parser (cdn.digialm.com), raw score calculator (+3/-1/0 marking), slot normalization engine (Slots 1, 2, 3), projected All-India percentile calculator, and category-wise admission call predictor across 21 IIMs and 50+ premier PGDM institutions.
+   - Core Functions: Digialm Candidate Response Sheet URL parser (cdn.digialm.com via serverless edge API, 1-click bookmarklet, and raw HTML paste), raw score calculator (+3/-1/0 marking across 66 questions), slot normalization engine (Slots 1, 2, 3 equipercentile equating), academic diversity & gender diversity profile evaluator, projected All-India percentile calculator, and category-wise admission call predictor across 21 IIMs and 50+ premier PGDM institutions.
+   - Answer Key & Response Sheet Guide: https://findmybschool.com/blog/cat-2026-answer-key-response-sheet-score-calculator (Detailed objection process, ₹1,200 challenge fee, and direct cdn.digialm.com download instructions).
    - Pricing: 100% Free, Zero Login Wall for calculations.
 
 2. CAT 2026 Raw Marks vs Percentile Benchmarks (198 Max Marks):
