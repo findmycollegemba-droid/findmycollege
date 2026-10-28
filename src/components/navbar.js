@@ -35,29 +35,29 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
                 <a href="/colleges" class="dropdown-item" data-route="colleges">
                   <span class="dropdown-icon">🏛️</span>
                   <div>
-                    <div class="dropdown-title">All Colleges</div>
-                    <div class="dropdown-desc">Explore 680+ verified top business schools</div>
+                    <div class="dropdown-title">All Colleges (680+)</div>
+                    <div class="dropdown-desc">Verified fees, placements & cutoffs</div>
                   </div>
                 </a>
                 <a href="/colleges/mba" class="dropdown-item" data-route="colleges" data-sub="type=mba">
                   <span class="dropdown-icon">🎓</span>
                   <div>
-                    <div class="dropdown-title">MBA Colleges</div>
-                    <div class="dropdown-desc">University degrees (FMS, JBIMS, IIMs, IITs)</div>
+                    <div class="dropdown-title">MBA Degree Colleges</div>
+                    <div class="dropdown-desc">University programs (FMS, JBIMS, IITs)</div>
                   </div>
                 </a>
                 <a href="/colleges/pgdm" class="dropdown-item" data-route="colleges" data-sub="type=pgdm">
                   <span class="dropdown-icon">💼</span>
                   <div>
                     <div class="dropdown-title">PGDM Colleges</div>
-                    <div class="dropdown-desc">Autonomous diplomas (XLRI, SPJIMR, MDI)</div>
+                    <div class="dropdown-desc">Industry diplomas (XLRI, SPJIMR, MDI)</div>
                   </div>
                 </a>
                 <a href="/aiu-approved-campuses" class="dropdown-item" data-route="aiu-approved-campuses">
-                  <span class="dropdown-icon">🏛️</span>
+                  <span class="dropdown-icon">📍</span>
                   <div>
                     <div class="dropdown-title">AIU Approved Campuses</div>
-                    <div class="dropdown-desc">City-wise verified colleges (9 major hubs)</div>
+                    <div class="dropdown-desc">City-wise verified colleges (9 hubs)</div>
                   </div>
                 </a>
                 <a href="/programs/compare" class="dropdown-item" data-route="programs" data-sub="compare">
@@ -81,28 +81,28 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
                   <span class="dropdown-icon">📝</span>
                   <div>
                     <div class="dropdown-title">All Entrance Exams</div>
-                    <div class="dropdown-desc">Syllabus, cutoffs & calendar 2027-29</div>
+                    <div class="dropdown-desc">2027-29 calendar, pattern & syllabus</div>
                   </div>
                 </a>
                 <a href="/exams/cat" class="dropdown-item" data-route="exams" data-sub="exam=cat">
                   <span class="dropdown-icon">🐱</span>
                   <div>
                     <div class="dropdown-title">CAT 2026</div>
-                    <div class="dropdown-desc">IIMs, FMS & SPJIMR Gateway</div>
+                    <div class="dropdown-desc">IIMs, FMS & SPJIMR gateway</div>
                   </div>
                 </a>
                 <a href="/exams/xat" class="dropdown-item" data-route="exams" data-sub="exam=xat">
                   <span class="dropdown-icon">🎯</span>
                   <div>
                     <div class="dropdown-title">XAT 2027</div>
-                    <div class="dropdown-desc">XLRI Jamshedpur & top associates</div>
+                    <div class="dropdown-desc">XLRI Jamshedpur & top institutes</div>
                   </div>
                 </a>
                 <a href="/exams/snap" class="dropdown-item" data-route="exams" data-sub="exam=snap">
                   <span class="dropdown-icon">🦁</span>
                   <div>
                     <div class="dropdown-title">SNAP 2026</div>
-                    <div class="dropdown-desc">Symbiosis SIBM Pune & SCMHRD</div>
+                    <div class="dropdown-desc">SIBM Pune, SCMHRD & Symbiosis</div>
                   </div>
                 </a>
                 <a href="/exams/cmat" class="dropdown-item" data-route="exams" data-sub="exam=cmat">
@@ -115,7 +115,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
               </div>
             </li>
 
-            <!-- Calculators / Tools -->
+            <!-- Calculators / Tools Dropdown -->
             <li class="nav-item has-dropdown">
               <a href="/tools/cat-college-predictor" class="nav-link ${activePage === 'tools' ? 'active' : ''}" data-route="tools">
                 <span>Calculators</span>
@@ -126,7 +126,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
                   <span class="dropdown-icon">📊</span>
                   <div>
                     <div class="dropdown-title">CAT College Predictor</div>
-                    <div class="dropdown-desc">Raw score to %ile & IIM call predictor</div>
+                    <div class="dropdown-desc">Raw score to percentile & IIM calls</div>
                   </div>
                 </a>
                 <a href="/tools/xat-percentile-calculator" class="dropdown-item" data-route="tools" data-sub="xat">
@@ -150,7 +150,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
             <li class="nav-item">
               <a href="/mock-test" class="nav-link ${activePage === 'mock-test' ? 'active' : ''}" data-route="mock-test">
                 <span>Mock Tests</span>
-                <span class="nav-free-badge">FREE</span>
+                <span class="nav-pill-badge free">FREE</span>
               </a>
             </li>
 
@@ -158,7 +158,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
             <li class="nav-item">
               <a href="/scholarships" class="nav-link ${activePage === 'scholarships' ? 'active' : ''}" data-route="scholarships">
                 <span>Scholarships</span>
-                <span class="nav-free-badge" style="background: linear-gradient(135deg, #FF3D8B 0%, #FF6B35 100%);">₹25L</span>
+                <span class="nav-pill-badge grant">₹25L</span>
               </a>
             </li>
 
@@ -168,19 +168,12 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
                 Blog
               </a>
             </li>
-
-            <!-- Contact -->
-            <li class="nav-item">
-              <a href="/contact" class="nav-link ${activePage === 'contact' ? 'active' : ''}" data-route="contact">
-                Contact
-              </a>
-            </li>
           </ul>
         </nav>
 
         <!-- Right Header Actions -->
         <div class="header-actions">
-          <!-- Modern Navbar Search Bar -->
+          <!-- Navbar Search Button Trigger -->
           <button class="nav-search-bar" id="openSearchBtn" title="Search Colleges, Exams & Calculators (⌘K)" aria-label="Search colleges, entrance exams and calculators">
             <div class="nav-search-inner">
               <svg class="nav-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
@@ -192,12 +185,12 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
             <kbd class="nav-search-kbd">⌘K</kbd>
           </button>
 
-          <!-- Free Counseling CTA -->
+          <!-- Free Counseling Primary CTA -->
           <a href="/contact" class="simple-nav-cta" data-route="contact">
             Free Counseling
           </a>
 
-          <!-- Mobile Hamburger Menu Button -->
+          <!-- Mobile Hamburger Toggle -->
           <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
             <span></span>
             <span></span>
@@ -207,103 +200,151 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
       </div>
     </header>
 
-    <!-- Mobile Navigation Drawer -->
-      <div class="mobile-nav-drawer" id="mobileNavDrawer">
-        <div class="mobile-drawer-header">
-          <div class="brand-logo">
-            <div class="fmc-logo-badge">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-              </svg>
-            </div>
-            <span class="brand-title">FindMy<span class="brand-accent">BSchool</span></span>
+    <!-- Redesigned Clean Mobile Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-label="Mobile Navigation Menu">
+      <!-- Drawer Header -->
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <div class="fmc-logo-badge">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
           </div>
-          <button class="mobile-drawer-close-btn" id="closeMobileDrawerBtn" aria-label="Close menu">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-          </button>
+          <span class="brand-title">FindMy<span class="brand-accent">BSchool</span></span>
+        </div>
+        <button class="mobile-drawer-close-btn" id="closeMobileDrawerBtn" aria-label="Close menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Drawer Scrollable Content -->
+      <div class="mobile-nav-content">
+        <!-- Quick Search Bar inside Drawer -->
+        <button class="mobile-drawer-search-btn" onclick="document.getElementById('openSearchBtn')?.click(); document.getElementById('closeMobileDrawerBtn')?.click();" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+          </svg>
+          <span>Search colleges, exams & cutoffs...</span>
+        </button>
+
+        <!-- Primary Navigation List -->
+        <div class="mobile-nav-section">
+          <a href="/" class="mobile-nav-row ${activePage === 'home' ? 'active' : ''}" data-route="home">
+            <span class="mobile-row-icon">🏠</span>
+            <span class="mobile-row-title">Home</span>
+          </a>
         </div>
 
-        <div class="mobile-nav-content">
-          <!-- Mobile FindMyBSchool Chatbot Card -->
-          <div class="mobile-bot-launch-banner" id="openChatbotMobileBtn">
-            <div class="m-bot-avatar">🎓</div>
-            <div class="m-bot-info">
-              <div class="m-bot-title">FindMyBSchool Bot <span class="m-bot-pill">2-Min Match</span></div>
-              <div class="m-bot-sub">Shortlist MBA, PGDM, BBA by Budget & City</div>
-            </div>
-            <span class="m-bot-arrow">→</span>
+        <!-- Section: Colleges -->
+        <div class="mobile-nav-section">
+          <div class="mobile-section-heading">Colleges Directory</div>
+          <div class="mobile-links-list">
+            <a href="/colleges" class="mobile-nav-subitem ${activePage === 'colleges' && !activeSub ? 'active' : ''}" data-route="colleges">
+              <span>🏛️ All Verified Colleges</span>
+              <span class="mobile-badge-subtle">680+</span>
+            </a>
+            <a href="/colleges/mba" class="mobile-nav-subitem" data-route="colleges" data-sub="type=mba">
+              <span>🎓 MBA Colleges (Degree)</span>
+            </a>
+            <a href="/colleges/pgdm" class="mobile-nav-subitem" data-route="colleges" data-sub="type=pgdm">
+              <span>💼 PGDM Colleges (Diploma)</span>
+            </a>
+            <a href="/aiu-approved-campuses" class="mobile-nav-subitem" data-route="aiu-approved-campuses">
+              <span>📍 AIU Approved Campuses</span>
+              <span class="mobile-badge-subtle">9 Hubs</span>
+            </a>
+            <a href="/programs/compare" class="mobile-nav-subitem" data-route="programs" data-sub="compare">
+              <span>⚖️ MBA vs PGDM Comparison</span>
+            </a>
           </div>
+        </div>
 
-          <!-- Mobile Direct Mentor Call Strip -->
-          <div style="margin: 10px 0 14px 0; padding: 12px; background: #EDE7FE; border-radius: 12px; display: flex; align-items: center; justify-content: space-between;">
+        <!-- Section: Entrance Exams -->
+        <div class="mobile-nav-section">
+          <div class="mobile-section-heading">MBA Entrance Exams</div>
+          <div class="mobile-chips-cloud">
+            <a href="/exams/cat" class="mobile-exam-chip" data-route="exams" data-sub="cat">CAT</a>
+            <a href="/exams/xat" class="mobile-exam-chip" data-route="exams" data-sub="xat">XAT</a>
+            <a href="/exams/snap" class="mobile-exam-chip" data-route="exams" data-sub="snap">SNAP</a>
+            <a href="/exams/cmat" class="mobile-exam-chip" data-route="exams" data-sub="cmat">CMAT</a>
+            <a href="/exams/nmat" class="mobile-exam-chip" data-route="exams" data-sub="nmat">NMAT</a>
+            <a href="/exams/mat" class="mobile-exam-chip" data-route="exams" data-sub="mat">MAT</a>
+            <a href="/exams/mhcet" class="mobile-exam-chip" data-route="exams" data-sub="mhcet">MAH-CET</a>
+            <a href="/exams" class="mobile-exam-chip view-all" data-route="exams">All Exams →</a>
+          </div>
+        </div>
+
+        <!-- Section: Tools & Prep -->
+        <div class="mobile-nav-section">
+          <div class="mobile-section-heading">Calculators & Prep</div>
+          <div class="mobile-links-list">
+            <a href="/tools/cat-college-predictor" class="mobile-nav-subitem" data-route="tools" data-sub="cat">
+              <span>📊 CAT College Predictor</span>
+            </a>
+            <a href="/tools/xat-percentile-calculator" class="mobile-nav-subitem" data-route="tools" data-sub="xat">
+              <span>🎯 XAT Score & Cutoff Predictor</span>
+            </a>
+            <a href="/mock-test" class="mobile-nav-subitem" data-route="mock-test">
+              <span>📝 Free CBT Mock Tests</span>
+              <span class="mobile-pill-tag green">FREE</span>
+            </a>
+            <a href="/scholarships" class="mobile-nav-subitem" data-route="scholarships">
+              <span>💰 Live MBA Scholarships</span>
+              <span class="mobile-pill-tag pink">₹25L Pool</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Section: Insights & AI Assistant -->
+        <div class="mobile-nav-section">
+          <div class="mobile-section-heading">Insights & Guidance</div>
+          <div class="mobile-links-list">
+            <a href="/blog" class="mobile-nav-subitem" data-route="blog">
+              <span>📰 MBA Strategy & News Blog</span>
+            </a>
+            <button type="button" class="mobile-nav-subitem mobile-ai-trigger" id="openChatbotMobileBtn">
+              <span>✨ AdmitIQ AI Assistant</span>
+              <span class="mobile-pill-tag violet">Instant</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mentor Helpline & Counseling Card -->
+        <div class="mobile-helpline-box">
+          <div class="mobile-helpline-top">
             <div>
-              <div style="font-size: 0.74rem; font-weight: 700; color: #6B2CF5; text-transform: uppercase;">Official Mentor Helpline</div>
-              <a href="tel:8800126446" style="font-family: var(--font-mono, monospace); font-weight: 800; font-size: 0.95rem; color: #14103A; text-decoration: none;">+91 88001 26446</a>
-            </div>
-            <div style="display: flex; gap: 6px;">
-              <a href="tel:8800126446" style="padding: 6px 10px; background: #6B2CF5; color: #fff; border-radius: 6px; font-size: 0.78rem; font-weight: 700; text-decoration: none;">Call</a>
-              <a href="https://wa.me/918800126446?text=Hi%20Mentor%2C%20I%20need%20MBA%20admission%20guidance" target="_blank" rel="noopener noreferrer" style="padding: 6px 10px; background: #25D366; color: #fff; border-radius: 6px; font-size: 0.78rem; font-weight: 700; text-decoration: none;">WhatsApp</a>
+              <div class="helpline-subtext">Official Admissions Helpline</div>
+              <a href="tel:8800126446" class="helpline-phone">+91 88001 26446</a>
             </div>
           </div>
-
-          <a href="/" class="mobile-nav-link ${activePage === 'home' ? 'active' : ''}" data-route="home">
-            <span>🏠 Home</span>
-          </a>
-          
-          <div class="mobile-nav-group">
-            <div class="mobile-group-title">Colleges Directory</div>
-            <a href="/colleges" class="mobile-sublink" data-route="colleges">🏛️ All Colleges (680+ Verified)</a>
-            <a href="/colleges/mba" class="mobile-sublink" data-route="colleges" data-sub="type=mba">🎓 MBA Colleges (Degree)</a>
-            <a href="/colleges/pgdm" class="mobile-sublink" data-route="colleges" data-sub="type=pgdm">💼 PGDM Colleges (Diploma)</a>
-            <a href="/programs/compare" class="mobile-sublink" data-route="programs" data-sub="compare">⚖️ MBA vs PGDM Comparison</a>
+          <div class="mobile-helpline-actions">
+            <a href="tel:8800126446" class="helpline-btn call">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>Call</span>
+            </a>
+            <a href="https://wa.me/918800126446?text=Hi%20Mentor%2C%20I%20need%20MBA%20admission%20guidance" target="_blank" rel="noopener noreferrer" class="helpline-btn whatsapp">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.316 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.818-.981z"/></svg>
+              <span>WhatsApp</span>
+            </a>
           </div>
-
-          <div class="mobile-nav-group">
-            <div class="mobile-group-title">Score Calculators & Predictors</div>
-            <a href="/tools/cat-college-predictor" class="mobile-sublink" data-route="tools" data-sub="cat">⚡ CAT College Predictor</a>
-            <a href="/tools/xat-percentile-calculator" class="mobile-sublink" data-route="tools" data-sub="xat">🎯 XAT Score & XLRI Predictor</a>
-            <a href="/tools/cmat-percentile-calculator" class="mobile-sublink" data-route="tools" data-sub="cmat">⚡ CMAT Score Calculator</a>
-          </div>
-
-          <div class="mobile-nav-group">
-            <div class="mobile-group-title">MBA Entrance Exams (Session 2027-29)</div>
-            <div class="mobile-chips-grid">
-              <a href="/exams/cat" class="mobile-chip" data-route="exams" data-sub="cat">CAT</a>
-              <a href="/exams/xat" class="mobile-chip" data-route="exams" data-sub="xat">XAT</a>
-              <a href="/exams/nmat" class="mobile-chip" data-route="exams" data-sub="nmat">NMAT</a>
-              <a href="/exams/snap" class="mobile-chip" data-route="exams" data-sub="snap">SNAP</a>
-              <a href="/exams/cmat" class="mobile-chip" data-route="exams" data-sub="cmat">CMAT</a>
-              <a href="/exams/mat" class="mobile-chip" data-route="exams" data-sub="mat">MAT</a>
-              <a href="/exams/mhcet" class="mobile-chip" data-route="exams" data-sub="mhcet">MH-CET</a>
-              <a href="/exams/cuetpg" class="mobile-chip" data-route="exams" data-sub="cuetpg">CUET PG</a>
-            </div>
-          </div>
-
-          <a href="/mock-test" class="mobile-nav-link ${activePage === 'mock-test' ? 'active' : ''}" data-route="mock-test" style="display:flex;align-items:center;justify-content:space-between;">
-            <span>📝 Free Mock Tests (CAT, XAT...)</span>
-            <span style="font-size:0.65rem;font-weight:900;background:#10b981;color:#fff;padding:2px 6px;border-radius:4px;">100% FREE</span>
+          <a href="/contact" class="mobile-counseling-cta simple-nav-cta" data-route="contact">
+            Book Free Counseling
           </a>
-          <a href="/scholarships" class="mobile-nav-link ${activePage === 'scholarships' ? 'active' : ''}" data-route="scholarships" style="display:flex;align-items:center;justify-content:space-between;">
-            <span>💰 Live MBA Scholarships</span>
-            <span style="font-size:0.65rem;font-weight:900;background:linear-gradient(135deg, #FF3D8B 0%, #FF6B35 100%);color:#fff;padding:2px 6px;border-radius:4px;">UP TO ₹25L</span>
-          </a>
-          <a href="/aiu-approved-campuses" class="mobile-nav-link ${activePage === 'aiu-approved-campuses' ? 'active' : ''}" data-route="aiu-approved-campuses" style="display:flex;align-items:center;justify-content:space-between;">
-            <span>🏛️ AIU Approved Campuses</span>
-            <span style="font-size:0.65rem;font-weight:900;background:#6B2CF5;color:#fff;padding:2px 6px;border-radius:4px;">9 CITIES</span>
-          </a>
-          <a href="/blog" class="mobile-nav-link ${activePage === 'blog' ? 'active' : ''}" data-route="blog">📰 Strategy Blog</a>
-          <a href="/contact" class="mobile-nav-link ${activePage === 'contact' ? 'active' : ''}" data-route="contact">📞 Contact & Free Counseling</a>
-          <a href="/ai-chat" class="mobile-nav-link ai-link ${activePage === 'ai-chat' ? 'active' : ''}" data-route="ai-chat">✨ AdmitIQ AI Assistant</a>
         </div>
       </div>
+    </div>
     <div class="mobile-drawer-backdrop" id="mobileDrawerBackdrop"></div>
 
-    <!-- Mobile Bottom App Dock (Thumb Navigation) -->
+    <!-- Mobile Bottom App Dock -->
     <nav class="mobile-bottom-dock" id="mobileBottomDock" aria-label="Mobile Navigation">
       <a href="/" class="dock-item ${activePage === 'home' ? 'active' : ''}" data-route="home">
         <div class="dock-icon-wrap">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
             <polyline points="9 22 9 12 15 12 15 22"></polyline>
           </svg>
@@ -313,18 +354,17 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
 
       <a href="/colleges" class="dock-item ${activePage === 'colleges' ? 'active' : ''}" data-route="colleges">
         <div class="dock-icon-wrap">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
             <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
           </svg>
-          <span class="dock-badge">680+</span>
         </div>
         <span class="dock-label">Colleges</span>
       </a>
 
       <a href="/tools/cat-college-predictor" class="dock-item ${activePage === 'tools' ? 'active' : ''}" data-route="tools">
         <div class="dock-icon-wrap">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect width="16" height="20" x="4" y="2" rx="2"></rect>
             <line x1="8" x2="16" y1="6" y2="6"></line>
             <line x1="16" x2="16" y1="14" y2="18"></line>
@@ -342,12 +382,11 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
 
       <a href="/exams" class="dock-item ${activePage === 'exams' ? 'active' : ''}" data-route="exams">
         <div class="dock-icon-wrap">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
             <polyline points="14 2 14 8 20 8"></polyline>
             <line x1="16" x2="8" y1="13" y2="13"></line>
             <line x1="16" x2="8" y1="17" y2="17"></line>
-            <polyline points="10 9 9 9 8 9"></polyline>
           </svg>
         </div>
         <span class="dock-label">Exams</span>
@@ -355,7 +394,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
 
       <a href="/contact" class="dock-item dock-counseling-item ${activePage === 'contact' ? 'active' : ''}" data-route="contact">
         <div class="dock-icon-wrap">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
           </svg>
         </div>
