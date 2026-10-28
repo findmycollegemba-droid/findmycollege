@@ -15,8 +15,12 @@ import { REGIONAL_SERIES_BLOGS } from './blogs/regionalSeriesBlogs.js';
 import { DELHI_NCR_BLOGS } from './blogs/delhiNcrBlogs.js';
 import { ADMIT_CARD_BLOGS } from './blogs/admitCardBlogs.js';
 import { COLLEGE_REVIEW_BLOGS } from './blogs/collegeReviewBlogs.js';
+import { FMS_DELHI_BLOGS } from './blogs/fmsDelhiBlog.js';
 
 export const BLOGS_DATA = [
+  // Live Admissions & Application Guides (FMS Delhi 2027-29)
+  ...FMS_DELHI_BLOGS,
+
   // Flagship 2027 College Review & Placement Series
   ...COLLEGE_REVIEW_BLOGS,
 
