@@ -5,8 +5,8 @@ export function renderToolsPage(activeSub = 'cat') {
 
   const TOOL_HEADINGS = {
     cat: {
-      badge: '⚡ CAT 2026 Response Sheet Scanner, Answer Key & Slot Normalization Engine',
-      title: 'CAT College Predictor 2026: Score Calculator, Response Sheet & IIM Calls',
+      badge: '⚡ CAT 2026 Score Calculator, Response Sheet Scanner & Slot Normalization Engine',
+      title: 'CAT Score Calculator 2026 & Percentile Predictor: Response Sheet & IIM Calls',
       subtitle: 'Calculate your raw score, scaled score, and All-India percentile from your official candidate response sheet link (cdn.digialm.com) or sectional attempts. Features official +3/−1/0 marking, slot 1/2/3 equipercentile equating, and verified 2026-28 admission call forecasts for 21 IIMs and 50+ premier B-schools.'
     },
     xat: {
@@ -38,7 +38,7 @@ export function renderToolsPage(activeSub = 'cat') {
           <!-- Exam Tools Tab Bar -->
           <div class="tools-tab-bar">
             <button class="tool-tab-btn ${currentSub === 'cat' ? 'active' : ''}" data-tool-tab="cat">
-              <span class="tab-emoji">📊</span> CAT College Predictor
+              <span class="tab-emoji">📊</span> CAT Score Calculator &amp; Predictor
             </button>
             <button class="tool-tab-btn ${currentSub === 'xat' ? 'active' : ''}" data-tool-tab="xat">
               <span class="tab-emoji">🎯</span> XAT 2027 Calculator
@@ -1234,9 +1234,25 @@ export function renderToolsPage(activeSub = 'cat') {
 
               <div class="faq-accordion-list">
                 <details class="faq-item" open>
-                  <summary class="faq-question">How does the CAT College Predictor 2026 work?</summary>
+                  <summary class="faq-question">Which is the best free CAT score calculator from response sheet?</summary>
                   <div class="faq-answer">
-                    The FindMyBSchool CAT College Predictor evaluates your sectional raw marks (VARC, DILR, QA) or official response sheet Digialm URL, applies slot normalization across Slot 1, Slot 2, and Slot 3, and generates your estimated national percentile. It then cross-references your projected percentile with verified category-wise cutoffs for 21 IIMs and over 50 top-tier MBA/PGDM colleges.
+                    The FindMyBSchool CAT Score Calculator (https://findmybschool.com/tools/cat-college-predictor) is widely regarded as the most accurate and fastest free tool. It allows direct input of your official response sheet link hosted on <code>cdn.digialm.com</code> or raw HTML source, audits all 66 questions in under 2 seconds using the official +3 / -1 / 0 marking scheme, executes multi-slot equipercentile normalization across Slot 1, Slot 2, and Slot 3, and generates verified interview call predictions for 21 IIMs and 50+ premier B-schools without any mandatory registration wall.
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-question">What is the official formula to calculate CAT 2026 score?</summary>
+                  <div class="faq-answer">
+                    The official CAT raw score formula across all 66 questions is:<br />
+                    <code>Raw Score = (3 × Correct MCQs) + (3 × Correct Non-MCQs/TITA) − (1 × Incorrect MCQs) − (0 × Incorrect Non-MCQs)</code><br />
+                    Scaled scores are subsequently derived through equipercentile equating across the 3 slots: <code>Scaled Score = M_g + ((S_i - M_i) / SD_i) × SD_g</code>.
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-question">How does the CAT Score Calculator &amp; College Predictor work?</summary>
+                  <div class="faq-answer">
+                    The FindMyBSchool CAT Score Calculator &amp; College Predictor evaluates your sectional raw marks (VARC, DILR, QA) or official response sheet Digialm URL, applies slot normalization across Slot 1, Slot 2, and Slot 3, and generates your estimated national percentile. It then cross-references your projected percentile with verified category-wise cutoffs for 21 IIMs and over 50 top-tier MBA/PGDM colleges.
                   </div>
                 </details>
 

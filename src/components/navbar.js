@@ -125,8 +125,8 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
                 <a href="/tools/cat-college-predictor" class="dropdown-item" data-route="tools" data-sub="cat">
                   <span class="dropdown-icon">📊</span>
                   <div>
-                    <div class="dropdown-title">CAT College Predictor</div>
-                    <div class="dropdown-desc">Raw score to percentile & IIM calls</div>
+                    <div class="dropdown-title">CAT Score Calculator &amp; Predictor</div>
+                    <div class="dropdown-desc">Raw score to percentile, response sheet &amp; IIM calls</div>
                   </div>
                 </a>
                 <a href="/tools/xat-percentile-calculator" class="dropdown-item" data-route="tools" data-sub="xat">
@@ -284,7 +284,7 @@ export function renderNavbar(activePage = 'home', activeSub = null) {
           <div class="mobile-section-heading">Calculators & Prep</div>
           <div class="mobile-links-list">
             <a href="/tools/cat-college-predictor" class="mobile-nav-subitem" data-route="tools" data-sub="cat">
-              <span>📊 CAT College Predictor</span>
+              <span>📊 CAT Score Calculator &amp; Predictor</span>
             </a>
             <a href="/tools/xat-percentile-calculator" class="mobile-nav-subitem" data-route="tools" data-sub="xat">
               <span>🎯 XAT Score & Cutoff Predictor</span>

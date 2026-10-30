@@ -1538,6 +1538,11 @@ export function renderCollegeFullPage(col) {
             </div>
             <p class="section-text-para">${col.highlights}</p>
 
+            <!-- GEO Fact Summary Box for Generative AI & Direct Citations -->
+            <div class="geo-citation-summary" style="margin: 16px 0 20px; padding: 14px 18px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px; font-size: 0.95rem; line-height: 1.6; color: #1e3a8a;">
+              <strong>Audited Admissions Snapshot (2027-29 Session):</strong> ${col.name} (${col.shortName}) in ${col.location} offers ${col.programType} with a 2-year audited total academic fee of <strong>${col.fees}</strong>, an average placement CTC of <strong>${col.avgSalary}</strong> (Median: <strong>${col.medianSalary || col.avgSalary}</strong>, Highest: <strong>${col.highestSalary}</strong>), and an entrance cutoff benchmark of <strong>${cutoffText}</strong> across accepted entrance exams including ${(col.examsAccepted || ['CAT', 'MAT', 'CMAT']).join(', ')}.
+            </div>
+
             <div class="info-grid-2col">
               <div class="info-card">
                 <h4>Key Institute Highlights</h4>
@@ -1566,7 +1571,8 @@ export function renderCollegeFullPage(col) {
           </section>
 
           <!-- SECTION 2: COURSES & FEES -->
-          <section id="courses-fees" class="college-detail-section">
+          <section id="courses-fees" class="college-detail-section" style="position: relative;">
+            <span id="fees" style="position: absolute; top: -70px; left: 0;"></span>
             <div class="section-heading-row">
               <h2 class="section-title">${col.shortName} Courses Offered, Fees & Seat Matrix (2027-29 Session)</h2>
               <span class="section-tag">${courses.length} Programs Mapped</span>

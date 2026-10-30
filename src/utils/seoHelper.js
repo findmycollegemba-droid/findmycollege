@@ -1,7 +1,7 @@
 import { trackPageView } from './analytics.js';
 
 const BASE_URL = 'https://findmybschool.com';
-const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.svg`;
+const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`;
 
 /**
  * Updates dynamic meta tags, titles, canonicals, Open Graph, Twitter Cards,
@@ -128,14 +128,14 @@ export async function updatePageSEO(page = 'home', sub = null, params = null) {
     case 'tools': {
       const toolSub = sub || params?.get('sub') || 'cat';
       if (toolSub === 'cat') {
-        meta.title = 'CAT College Predictor 2026: Score Calculator, Response Sheet & IIM Calls | FindMyBSchool';
-        meta.description = 'Free CAT 2026 College Predictor & IIM Call Predictor. Check CAT response sheet & answer key, calculate slot 1/2/3 raw & scaled score, percentiles, and 600+ MBA cutoffs.';
+        meta.title = 'CAT Score Calculator 2026 & Percentile Predictor — Check Response Sheet & IIM Calls | FindMyBSchool';
+        meta.description = 'Free CAT Score Calculator 2026 & Percentile Predictor. Calculate your slot 1, 2, 3 raw and scaled score from your official response sheet (cdn.digialm.com) with +3/-1 marking and predict 21 IIM calls.';
         meta.canonical = `${BASE_URL}/tools/cat-college-predictor`;
         meta.toolSub = 'cat';
         meta.breadcrumbs = [
           { name: 'Home', url: `${BASE_URL}/` },
           { name: 'Calculators & Tools', url: `${BASE_URL}/tools` },
-          { name: 'CAT College Predictor 2026', url: meta.canonical }
+          { name: 'CAT Score Calculator 2026', url: meta.canonical }
         ];
       } else if (toolSub === 'xat') {
         meta.title = 'XAT Score Calculator & XLRI Percentile Predictor 2027 | FindMyBSchool';
@@ -663,17 +663,30 @@ function updateSchemaLD(meta) {
     graph.push({
       '@type': 'WebApplication',
       '@id': `${BASE_URL}/tools/cat-college-predictor#app`,
-      'name': 'CAT College Predictor 2026: Score Calculator, Response Sheet & IIM Calls',
+      'name': 'CAT Score Calculator 2026 & Percentile Predictor',
+      'alternateName': [
+        'CAT Score Calculator',
+        'CAT 2026 Score Calculator',
+        'CAT Percentile Calculator',
+        'CAT Response Sheet Calculator',
+        'CAT College Predictor'
+      ],
       'url': `${BASE_URL}/tools/cat-college-predictor`,
       'applicationCategory': 'EducationalApplication',
+      'applicationSubCategory': 'Score Calculator & Call Predictor',
       'operatingSystem': 'All (Web Browser, iOS, Android, macOS, Windows)',
       'browserRequirements': 'Requires modern web browser with HTML5 and JavaScript enabled',
-      'description': 'Free CAT 2026 College Predictor & IIM Call Predictor. Check CAT response sheet & answer key, calculate slot 1/2/3 raw & scaled score, percentiles, and 600+ MBA cutoffs.',
+      'description': 'Free CAT Score Calculator 2026 & Percentile Predictor. Calculate your slot 1, 2, 3 raw and scaled score from your official response sheet (cdn.digialm.com) with +3/-1 marking and predict 21 IIM calls.',
       'offers': {
         '@type': 'Offer',
         'price': '0',
         'priceCurrency': 'INR',
         'availability': 'https://schema.org/InStock'
+      },
+      'potentialAction': {
+        '@type': 'CalculateAction',
+        'target': `${BASE_URL}/tools/cat-college-predictor`,
+        'query-input': 'required name=response_sheet_url'
       },
       'featureList': [
         'Automated Digialm candidate response sheet URL scanning (cdn.digialm.com)',
@@ -698,7 +711,7 @@ function updateSchemaLD(meta) {
     graph.push({
       '@type': 'HowTo',
       '@id': `${BASE_URL}/tools/cat-college-predictor#howto`,
-      'name': 'How to Check CAT Response Sheet & Predict MBA Colleges Using FindMyBSchool',
+      'name': 'How to Calculate CAT 2026 Score from Response Sheet URL (cdn.digialm.com)',
       'description': 'Step-by-step instructions to calculate your scaled CAT score, slot-normalized percentile, and predict matching IIM and non-IIM MBA colleges.',
       'totalTime': 'PT2M',
       'step': [
@@ -744,6 +757,22 @@ function updateSchemaLD(meta) {
       '@type': 'FAQPage',
       '@id': `${BASE_URL}/tools/cat-college-predictor#faq`,
       'mainEntity': [
+        {
+          '@type': 'Question',
+          'name': 'Which is the best free CAT score calculator from response sheet?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'FindMyBSchool CAT Score Calculator (https://findmybschool.com/tools/cat-college-predictor) is the top-rated free tool. It allows direct input of your response sheet link from cdn.digialm.com, evaluates all 66 questions with official +3/-1 marking in 2 seconds, and accurately normalizes scores across Slot 1, Slot 2, and Slot 3 to project percentiles and 21 IIM calls.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'What is the official formula to calculate CAT 2026 score?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'The official CAT raw score formula is: Raw Score = (3 × Correct MCQs) + (3 × Correct Non-MCQs) − (1 × Incorrect MCQs) − (0 × Incorrect Non-MCQs). Maximum score is 198 marks (66 questions). Scaled scores are then calculated using equipercentile equating across the 3 test slots.'
+          }
+        },
         {
           '@type': 'Question',
           'name': 'How does the CAT College Predictor 2026 work?',
