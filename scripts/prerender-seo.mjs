@@ -26,31 +26,31 @@ const BASE_URL = 'https://findmybschool.com';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`;
 
 const cityTitles = {
-  'all': 'Top AIU Approved Campuses in India (City-Wise Directory 2027-29)',
-  'pan-india': 'All 121 AIU Approved Colleges in India (Official June 2026 Gazette List)',
-  'delhi-ncr': 'AIU Approved MBA & PGDM Colleges in Delhi NCR (2027-29)',
-  'pune': 'AIU Approved MBA & PGDM Colleges in Pune (Fees, Cutoffs & Placements)',
-  'mumbai': 'AIU Approved MBA & PGDM Colleges in Mumbai & Navi Mumbai',
-  'bangalore': 'AIU Approved MBA & PGDM Colleges in Bangalore / Bengaluru',
-  'jaipur': 'AIU Approved MBA & PGDM Colleges in Jaipur (Fees & Cutoffs)',
-  'kolkata': 'AIU Approved MBA & PGDM Colleges in Kolkata (Eastern India)',
-  'dehradun': 'AIU Approved MBA Colleges in Dehradun (Uttarakhand)',
-  'lucknow': 'AIU Approved MBA Colleges in Lucknow (Uttar Pradesh)',
-  'indore': 'AIU Approved MBA & PGDM Colleges in Indore (Madhya Pradesh)'
+  'all': 'AIU Approved MBA Campuses in India (2027-29) | FMBS',
+  'pan-india': 'All 121 AIU Approved MBA Colleges in India | FMBS',
+  'delhi-ncr': 'AIU Approved MBA Colleges in Delhi NCR (2027-29) | FMBS',
+  'pune': 'AIU Approved MBA Colleges in Pune: Fees & Placements | FMBS',
+  'mumbai': 'AIU Approved MBA Colleges in Mumbai & Navi Mumbai | FMBS',
+  'bangalore': 'AIU Approved MBA Colleges in Bangalore: Fees & Cutoff | FMBS',
+  'jaipur': 'AIU Approved MBA Colleges in Jaipur: Fees & Cutoffs | FMBS',
+  'kolkata': 'AIU Approved MBA Colleges in Kolkata: Fees & Placements | FMBS',
+  'dehradun': 'AIU Approved MBA Colleges in Dehradun: Fees & Ranking | FMBS',
+  'lucknow': 'AIU Approved MBA Colleges in Lucknow: Fees & Cutoffs | FMBS',
+  'indore': 'AIU Approved MBA Colleges in Indore: Fees & Placements | FMBS'
 };
 
 const cityDescs = {
-  'all': 'Explore verified business schools with official Association of Indian Universities (AIU) equivalence across Delhi NCR, Pune, Mumbai, Bangalore, Jaipur, Kolkata, Dehradun, Lucknow, and Indore. 86 in 9 Metro Hubs, 121 Pan-India.',
-  'pan-india': 'Explore all 121 institutions holding official Association of Indian Universities (AIU) MBA Equivalence across India, verified directly from the June 2026 AIU Gazette document.',
-  'delhi-ncr': 'Compare 35 AIU-approved PGDM & 100+ MBA colleges in Delhi NCR (Noida, Gurgaon, Greater Noida). Audited tuition fees, CAT/XAT cutoffs, and recent placement packages with 0% scrapers.',
-  'pune': 'Explore 14 AIU-equivalent management institutes and 50+ colleges in Pune. Compare SIBM, Balaji, NIA, NIBM, fees, entrance cutoffs, and recent campus placements.',
-  'mumbai': 'Find 10 verified AIU-approved business schools and 35+ top colleges in Mumbai and Navi Mumbai. Audited 2-year fees, cutoff percentiles, and banking/finance placement statistics.',
-  'bangalore': 'Top 15 AIU approved PGDM institutes and 30+ MBA colleges in Bangalore. Tech, analytics, and consulting placement data, audited tuition fees, and admission criteria.',
-  'jaipur': 'AIU approved management colleges in Jaipur, Rajasthan. Compare Jaipuria Jaipur, IIHMR, IRM, audited fees, and pooled placement reports.',
-  'kolkata': 'Best 5 AIU approved PGDM institutes and leading MBA colleges in Kolkata. Audited fees, cutoffs, and average salary packages across West Bengal.',
-  'dehradun': 'Top business schools in Dehradun, Uttarakhand conferring statutory UGC MBA degrees. Compare UPES, Graphic Era, DIT, residential campus fees, and placements.',
+  'all': 'Explore verified business schools with official Association of Indian Universities (AIU) equivalence across Delhi NCR, Pune, Mumbai, Bangalore and Pan-India.',
+  'pan-india': 'Explore all 121 institutions holding official Association of Indian Universities (AIU) MBA Equivalence across India, verified from the AIU Gazette.',
+  'delhi-ncr': 'Compare 35 AIU-approved PGDM & 100+ MBA colleges in Delhi NCR (Noida, Gurgaon). Audited tuition fees, CAT/XAT cutoffs, and recent placement packages.',
+  'pune': 'Explore 14 AIU-equivalent management institutes and 50+ colleges in Pune. Compare SIBM, Balaji, NIA, NIBM, fees, entrance cutoffs, and campus placements.',
+  'mumbai': 'Find verified AIU-approved business schools and top colleges in Mumbai and Navi Mumbai. Audited 2-year fees, cutoff percentiles, and placement statistics.',
+  'bangalore': 'Top AIU approved PGDM institutes and MBA colleges in Bangalore. Tech, analytics, and consulting placement data, audited tuition fees, and admission criteria.',
+  'jaipur': 'AIU approved management colleges in Jaipur, Rajasthan. Compare Jaipuria Jaipur, IIHMR, IRM, audited fees, and pooled placement reports on FindMyBSchool.',
+  'kolkata': 'Best AIU approved PGDM institutes and leading MBA colleges in Kolkata. Audited fees, cutoffs, and average salary packages across West Bengal.',
+  'dehradun': 'Top business schools in Dehradun conferring statutory UGC MBA degrees. Compare UPES, Graphic Era, DIT, residential campus fees, and placements.',
   'lucknow': 'Explore top AIU approved management colleges in Lucknow. IIM Lucknow, Jaipuria Lucknow, university MBA fees, and placement reports.',
-  'indore': 'Verified AIU approved MBA & PGDM colleges in Indore. Compare IIM Indore, Jaipuria Indore, cutoffs, and placement packages.'
+  'indore': 'Verified AIU approved MBA & PGDM colleges in Indore. Compare IIM Indore, Jaipuria Indore, cutoffs, and placement packages on FindMyBSchool.'
 };
 
 function escapeHtml(str) {
@@ -179,8 +179,8 @@ let count = 0;
 const coreRoutes = [
   {
     path: '/colleges',
-    title: 'Explore 600+ Verified MBA & PGDM Colleges in India (2027-29 Admission) | FindMyBSchool',
-    description: 'Filter and compare 600+ top Indian business schools for 2027-29 admission by fees, NIRF rank, recent average CTC packages, CAT/XAT/CMAT cutoffs, and city locations.',
+    title: 'Explore 600+ Top MBA & PGDM Colleges in India | FMBS',
+    description: 'Filter and compare 600+ top Indian business schools for 2027-29 admission by fees, NIRF rank, average CTC packages, CAT/XAT cutoffs, and city locations.',
     h1: 'Explore 600+ Verified MBA & PGDM Colleges in India',
     lead: 'Compare top management institutes by audited fees, placements, entrance exam cutoffs, and NIRF rankings with 0% scrapers.',
     schema: {
@@ -208,8 +208,8 @@ const coreRoutes = [
   },
   {
     path: '/colleges/mba',
-    title: 'Top University MBA Colleges in India — Fees, NIRF Rankings & Cutoffs (2027-29 Session) | FindMyBSchool',
-    description: 'Find the best university MBA colleges in India for the 2027-29 session. Comprehensive comparison of UGC recognized MBA colleges, audited fees, and placements.',
+    title: 'Top University MBA Colleges in India: Fees & Cutoffs | FMBS',
+    description: 'Explore statutory UGC university MBA programs in India including FMS Delhi, JBIMS Mumbai, and top universities with audited fees and placements.',
     h1: 'Top University MBA Colleges in India',
     lead: 'Compare statutory UGC university MBA programs including FMS Delhi, JBIMS Mumbai, and top central universities.',
     schema: {
@@ -231,8 +231,8 @@ const coreRoutes = [
   },
   {
     path: '/colleges/pgdm',
-    title: 'Top AICTE PGDM Colleges in India — Fees, NIRF Rankings & Cutoffs (2027-29 Session) | FindMyBSchool',
-    description: 'Find the best AICTE approved autonomous PGDM institutes in India for 2027-29 admissions. Compare XLRI, SPJIMR, MDI, IMT, fees, and placements.',
+    title: 'Top Autonomous PGDM Colleges in India: Fees & Cutoffs | FMBS',
+    description: 'Compare premier AICTE approved autonomous PGDM institutes in India (XLRI, SPJIMR, MDI, IMT) with audited tuition fees and placement packages.',
     h1: 'Top Autonomous PGDM Colleges in India',
     lead: 'Explore premier AICTE-approved autonomous business schools offering industry-driven PGDM diplomas with AIU equivalence.',
     schema: {
@@ -254,8 +254,8 @@ const coreRoutes = [
   },
   {
     path: '/exams',
-    title: 'Top MBA Entrance Exams 2026-27 — CAT, XAT, SNAP, NMAT, CMAT Calendars | FindMyBSchool',
-    description: 'Compare syllabus, eligibility, exam patterns, and registration deadlines for CAT, XAT, SNAP, NMAT, CMAT, MAH-CET, and CUET-PG. Official preparation strategies.',
+    title: 'Top MBA Entrance Exams 2026-27: Dates & Syllabus | FMBS',
+    description: 'Compare syllabus, eligibility, exam patterns, and registration deadlines for CAT, XAT, SNAP, NMAT, CMAT, MAH-CET, and CUET-PG on FindMyBSchool.',
     h1: 'National MBA Entrance Exams 2026-27',
     lead: 'Comprehensive calendars, eligibility criteria, exam patterns, and score-to-percentile converters for all major national MBA tests.',
     schema: {
@@ -276,7 +276,7 @@ const coreRoutes = [
   },
   {
     path: '/scholarships',
-    title: 'Live MBA Scholarships 2027-29: Grants up to ₹25 Lakhs | FindMyBSchool',
+    title: 'Live MBA Scholarships 2027-29: Grants up to ₹25 Lakhs | FMBS',
     description: 'Find & apply for 14+ live MBA scholarships for Session 2027-29. Need-based, corporate, government NSP, and IIM tuition fee waivers up to 100%. Free mentorship.',
     h1: 'Live MBA Scholarships for 2027-29 Session',
     lead: 'Financial grants, corporate diversity awards, merit waivers, and government schemes up to 100% tuition coverage for business school aspirants.',
@@ -320,7 +320,7 @@ const coreRoutes = [
   },
   {
     path: '/mock-test',
-    title: 'All-India Free MBA Mock Tests 2026-27 (CAT, XAT, NMAT, SNAP, CMAT) | FindMyBSchool',
+    title: 'Free MBA Mock Tests 2026-27: CAT, XAT & SNAP | FMBS',
     description: 'Attempt 100% Free All-India MBA Mock Tests with TCS iON simulated interface, on-screen calculator, sectional timers, instant score report, and solutions.',
     h1: 'All-India Free CBT MBA Mock Tests',
     lead: 'Experience the real test-taking environment with our TCS iON simulated CBT engine, sectional timers, and instant percentile analytics.',
@@ -342,50 +342,50 @@ const coreRoutes = [
   },
   {
     path: '/programs',
-    title: 'MBA vs PGDM Comparison Guide (2027-29 Session) — Differences, Fees & Placement ROI | FindMyBSchool',
-    description: 'Understand the crucial differences between University MBA degrees and Autonomous PGDM diplomas. Compare AICTE accreditation, syllabus flexibility, and corporate ROI.',
+    title: 'MBA vs PGDM Guide 2027: Differences, Fees & ROI | FMBS',
+    description: 'Understand crucial differences between University MBA degrees and Autonomous PGDM diplomas. Compare AICTE accreditation, syllabus, and corporate ROI.',
     h1: 'MBA vs PGDM Comprehensive Analysis & Programs Guide',
     lead: 'Make an informed career decision: compare curriculum architecture, accreditation, corporate acceptance, and salary trends.'
   },
   {
     path: '/programs/mba',
-    title: 'Top University MBA Degrees in India — Eligibility, Fees, UGC Norms & Placements | FindMyBSchool',
-    description: 'Complete guide to University MBA degrees in India (FMS Delhi, JBIMS, PUMBA). Compare UGC affiliations, semester syllabus, tuition fees, and corporate hiring trends.',
+    title: 'Top University MBA Degrees in India: Fees & Placements | FMBS',
+    description: 'Guide to University MBA degrees in India (FMS Delhi, JBIMS, PUMBA). Compare UGC affiliations, semester syllabus, tuition fees, and corporate hiring trends.',
     h1: 'Top University MBA Programs in India',
     lead: 'Explore university-affiliated MBA degrees conferring recognized master’s credentials under UGC regulations.'
   },
   {
     path: '/programs/pgdm',
-    title: 'Top AICTE PGDM Programs in India — Top Autonomous B-Schools & Placements | FindMyBSchool',
-    description: 'Explore premier AICTE-approved PGDM programs (XLRI, SPJIMR, MDI, IMT). Industry-aligned trimester curriculum, corporate internships, and executive compensation.',
+    title: 'Top AICTE PGDM Programs in India: Colleges, Fees & ROI | FMBS',
+    description: 'Explore premier AICTE-approved PGDM programs (XLRI, SPJIMR, MDI, IMT). Industry-aligned curriculum, corporate internships, and executive compensation.',
     h1: 'Premier AICTE Approved PGDM Programs',
     lead: 'Industry-aligned postgraduate diplomas offering contemporary specializations and high corporate placement traction.'
   },
   {
     path: '/programs/compare',
-    title: 'MBA vs PGDM Comparison Guide (2027-29 Session) — Key Differences, AICTE vs UGC, ROI | FindMyBSchool',
-    description: 'Understand the crucial differences between University MBA degrees and Autonomous PGDM diplomas. Compare AICTE accreditation, AIU equivalence, syllabus flexibility, and corporate ROI.',
+    title: 'MBA vs PGDM Comparison: Key Differences, AICTE & ROI | FMBS',
+    description: 'Understand the crucial differences between University MBA degrees and Autonomous PGDM diplomas. Compare AICTE accreditation, fees, and corporate ROI.',
     h1: 'MBA vs PGDM: The Complete Comparison Dossier',
     lead: 'Deciding between an MBA degree and a PGDM diploma? Here is the complete breakdown of accreditation, pedagogy, and recruitments.'
   },
   {
     path: '/programs/specializations',
-    title: 'Top MBA Specializations 2027-29 — Finance, Marketing, Analytics, Consulting & HR | FindMyBSchool',
-    description: 'Compare high-paying MBA specializations: Finance, Marketing, Business Analytics, Strategy & Consulting, Operations, and Human Resources. Average salaries and top hiring sectors.',
+    title: 'Top MBA Specializations 2027-29: Scope, Salary & Career | FMBS',
+    description: 'Compare high-paying MBA specializations: Finance, Marketing, Business Analytics, Strategy, Operations, and HR. Average salaries and top hiring sectors.',
     h1: 'Top MBA & PGDM Specializations (2027-29)',
     lead: 'Explore career trajectories, compensation packages, and core curricula across Finance, Marketing, Analytics, Operations, and HR.'
   },
   {
     path: '/programs/roi',
-    title: 'MBA ROI Calculator & Highest Return on Investment Colleges in India | FindMyBSchool',
-    description: 'Calculate your MBA Return on Investment (ROI). Discover high-ROI business schools like FMS Delhi, JBIMS Mumbai, and TISS offering top placement packages at nominal tuition fees.',
+    title: 'Top High-ROI MBA Colleges in India: Low Fees & Top CTC | FMBS',
+    description: 'Calculate MBA Return on Investment. Discover high-ROI colleges like FMS Delhi, JBIMS, and TISS offering top placement packages at nominal tuition fees.',
     h1: 'Highest Return on Investment (ROI) MBA Colleges in India',
     lead: 'Maximize your educational investment with institutions that offer low fee structures combined with premier corporate recruitment packages.'
   },
   {
     path: '/tools/cat-college-predictor',
-    title: 'CAT Score Calculator 2026 & Percentile Predictor — Check Response Sheet & IIM Calls | FindMyBSchool',
-    description: 'Free CAT Score Calculator 2026 & Percentile Predictor. Calculate your slot 1, 2, 3 raw and scaled score from your official response sheet (cdn.digialm.com) with +3/-1 marking and predict 21 IIM calls.',
+    title: 'CAT Score Calculator 2026 & Percentile Predictor | FMBS',
+    description: 'Free CAT 2026 score calculator. Calculate your raw score from official response sheet (cdn.digialm.com) with +3/-1 marking and predict 21 IIM calls.',
     h1: 'CAT Score Calculator 2026 & Percentile Predictor: Response Sheet & IIM Calls',
     lead: 'Calculate your raw score, scaled score, and All-India percentile from your official candidate response sheet link (cdn.digialm.com) or sectional attempts. Features official +3/−1/0 marking, slot 1/2/3 equipercentile equating, and verified 2026-28 admission call forecasts for 21 IIMs and 50+ premier B-schools.',
     schema: {
@@ -521,7 +521,7 @@ const coreRoutes = [
   },
   {
     path: '/tools/xat-percentile-calculator',
-    title: 'XAT Score Calculator & XLRI Percentile Predictor 2027 | FindMyBSchool',
+    title: 'XAT Score Calculator & XLRI Predictor 2027 | FMBS',
     description: 'Calculate your XAT score with official negative marking and unattempted question penalty. Estimate XLRI BM & HRM shortlist cutoffs.',
     h1: 'XAT Score Calculator & Percentile Predictor 2027',
     lead: 'Input your raw attempts, correct and incorrect answers to calculate normalized score and predict XLRI shortlist percentiles.',
@@ -553,7 +553,7 @@ const coreRoutes = [
   },
   {
     path: '/tools/cmat-percentile-calculator',
-    title: 'CMAT Score Calculator & JBIMS Cutoff Predictor 2026 | FindMyBSchool',
+    title: 'CMAT Score Calculator & JBIMS Cutoff Predictor | FMBS',
     description: 'Calculate your CMAT 400-mark score across 5 sections. Predict JBIMS MMS, SIMSREE, and GIM Goa percentile cutoffs.',
     h1: 'CMAT Score Calculator & Percentile Predictor 2026',
     lead: 'Calculate your total CMAT score out of 400 marks and evaluate your admission chances at JBIMS, SIMSREE, K J Somaiya, and GIM.',
@@ -585,42 +585,42 @@ const coreRoutes = [
   },
   {
     path: '/blog',
-    title: 'MBA Admissions Strategy Blog & Exam Preparation Guides | FindMyBSchool',
+    title: 'MBA Admissions Strategy Blog & Exam Guides | FMBS',
     description: 'Read expert editorial guides on CAT preparation, GD-PI interview secrets, MBA vs PGDM analysis, and top B-school placement insights written by IIM/XLRI mentors.',
     h1: 'MBA Strategy Blog & Admissions Editorial',
     lead: 'Actionable guidance on entrance exam strategies, GD-PI prep, profile building, and college comparisons authored by admission veterans.'
   },
   {
     path: '/aiu-approved-campuses',
-    title: 'Top AIU Approved Campuses in India (City-Wise Directory 2027-29) | FindMyBSchool',
-    description: 'Explore verified business schools with official Association of Indian Universities (AIU) equivalence across Delhi NCR, Pune, Mumbai, Bangalore, Jaipur, Kolkata, Dehradun, Lucknow, and Indore.',
+    title: cityTitles['all'],
+    description: cityDescs['all'],
     h1: 'AIU Approved MBA & PGDM Campuses Directory',
     lead: 'Verified list of autonomous management institutions whose PGDM diplomas are officially recognized as equivalent to an MBA degree by AIU.'
   },
   {
     path: '/contact',
-    title: 'Free MBA Admission Counseling & Mentorship | FindMyBSchool',
+    title: 'Free MBA Admission Counseling & Mentorship | FMBS',
     description: 'Book a 1-on-1 profile evaluation with senior MBA admission mentors. Get personalized B-school shortlists according to your budget, city, and exam scores.',
     h1: 'Free 1-on-1 MBA Admission Counseling',
     lead: 'Connect with expert mentors for unbiased guidance on college selection, application deadlines, and GD-PI preparation.'
   },
   {
     path: '/ai-chat',
-    title: 'AdmitIQ AI Assistant — Instant MBA Profile & College Evaluator | FindMyBSchool',
+    title: 'AdmitIQ AI Assistant: MBA Profile & College Evaluator | FMBS',
     description: 'Chat with AdmitIQ, India’s specialized AI MBA admissions assistant. Get immediate answers on college cutoffs, fee structures, and profile shortlist chances.',
     h1: 'AdmitIQ AI Admissions Assistant',
     lead: 'Instant answers to your queries on B-school cutoffs, fees, placement reports, and profile eligibility powered by intelligent admissions data.'
   },
   {
     path: '/terms',
-    title: 'Terms and Conditions — User Agreement & Disclaimers | FindMyBSchool',
+    title: 'Terms and Conditions — User Agreement & Disclaimers | FMBS',
     description: 'Official Terms and Conditions for using FindMyBSchool.com services, calculators, college comparisons, and admission guidance portals.',
     h1: 'Terms and Conditions',
     lead: 'Please review our service agreement, platform usage policies, and counseling disclaimers.'
   },
   {
     path: '/privacy',
-    title: 'Privacy Policy — Student Data Protection & DPDP Compliance | FindMyBSchool',
+    title: 'Privacy Policy — Student Data Protection & DPDP | FMBS',
     description: 'FindMyBSchool Privacy Policy compliant with India DPDP Act 2023 and GDPR. Understand how your academic profile and contact data are securely protected.',
     h1: 'Privacy Policy & Student Data Protection',
     lead: 'Committed to candidate privacy, strict adherence to the DPDP Act 2023, and zero unauthorized sharing of your contact information.'
@@ -631,7 +631,7 @@ const coreRoutes = [
 ['delhi-ncr', 'pune', 'mumbai', 'bangalore', 'jaipur', 'kolkata', 'dehradun', 'lucknow', 'indore'].forEach(city => {
   coreRoutes.push({
     path: `/aiu-approved-campuses/${city}`,
-    title: `${cityTitles[city] || city.toUpperCase()} | FindMyBSchool`,
+    title: cityTitles[city] || `${city.toUpperCase()} AIU Campuses | FMBS`,
     description: cityDescs[city] || `AIU approved MBA & PGDM colleges in ${city}. Compare fees, cutoffs, and placements.`,
     h1: cityTitles[city] || `AIU Approved Campuses in ${city}`,
     lead: cityDescs[city] || `Verified MBA and PGDM colleges in ${city} with official Association of Indian Universities equivalence.`
@@ -649,7 +649,7 @@ function generateCatCalculatorBodyHtml() {
       <!-- Breadcrumb -->
       <nav aria-label="Breadcrumb" style="font-size: 0.9rem; color: #64748B; margin-bottom: 16px;">
         <a href="/" style="color: #6B2CF5; text-decoration: none; font-weight: 500;">Home</a> &gt; 
-        <a href="/tools" style="color: #6B2CF5; text-decoration: none; font-weight: 500;">Calculators &amp; Tools</a> &gt; 
+        <a href="/tools/cat-college-predictor" style="color: #6B2CF5; text-decoration: none; font-weight: 500;">Calculators &amp; Tools</a> &gt; 
         <span style="color: #0F172A; font-weight: 600;">CAT Score Calculator 2026</span>
       </nav>
 
@@ -753,7 +753,7 @@ function generateCatCalculatorBodyHtml() {
                 <td style="padding: 12px 16px;">38+ Marks</td>
                 <td style="padding: 12px 16px;">28+ Marks</td>
                 <td style="padding: 12px 16px;">30+ Marks</td>
-                <td style="padding: 12px 16px;"><a href="/colleges/iim-indore" style="color: #6B2CF5; text-decoration: none;">IIM Indore</a>, <a href="/colleges/mdi-gurgaon" style="color: #6B2CF5; text-decoration: none;">MDI Gurgaon</a>, <a href="/colleges/sjmsom-iit-bombay" style="color: #6B2CF5; text-decoration: none;">SJMSOM IIT Bombay</a></td>
+                <td style="padding: 12px 16px;"><a href="/colleges/iim-indore" style="color: #6B2CF5; text-decoration: none;">IIM Indore</a>, <a href="/colleges/mdi-gurgaon" style="color: #6B2CF5; text-decoration: none;">MDI Gurgaon</a>, <a href="/colleges/iit-bombay-sjmsom" style="color: #6B2CF5; text-decoration: none;">SJMSOM IIT Bombay</a></td>
               </tr>
               <tr style="border-bottom: 1px solid #E2E8F0; background: #F8FAFC;">
                 <td style="padding: 12px 16px;"><strong>98.0+ %ile</strong></td>
@@ -777,7 +777,7 @@ function generateCatCalculatorBodyHtml() {
                 <td style="padding: 12px 16px;">23+ Marks</td>
                 <td style="padding: 12px 16px;">15+ Marks</td>
                 <td style="padding: 12px 16px;">16+ Marks</td>
-                <td style="padding: 12px 16px;"><a href="/colleges/imt-ghaziabad" style="color: #6B2CF5; text-decoration: none;">IMT Ghaziabad</a>, <a href="/colleges/imi-delhi" style="color: #6B2CF5; text-decoration: none;">IMI New Delhi</a>, GIM Goa, Baby IIMs</td>
+                <td style="padding: 12px 16px;"><a href="/colleges/imt-ghaziabad" style="color: #6B2CF5; text-decoration: none;">IMT Ghaziabad</a>, <a href="/colleges/imi-new-delhi" style="color: #6B2CF5; text-decoration: none;">IMI New Delhi</a>, GIM Goa, Baby IIMs</td>
               </tr>
               <tr style="border-bottom: 1px solid #E2E8F0; background: #FFFFFF;">
                 <td style="padding: 12px 16px;"><strong>85.0+ %ile</strong></td>
@@ -1118,9 +1118,12 @@ for (const city of allCities) {
     ]
   };
 
+  let cityDesc = `Explore ${totalCityColleges > 0 ? totalCityColleges + '+' : 'top'} MBA & PGDM colleges in ${city} for 2027-29. Compare audited fees, average CTC, and entrance cutoffs on FindMyBSchool.`;
+  if (cityDesc.length > 158) cityDesc = cityDesc.slice(0, 155).trim() + '...';
+
   const meta = {
-    title: `Top MBA & PGDM Colleges in ${city} — Fees, Placements & Cutoffs (2027-29 Session) | FindMyBSchool`,
-    description: `Explore ${totalCityColleges > 0 ? totalCityColleges + '+' : 'top'} verified management institutes in ${city} for 2027-29 admissions. Compare AICTE & UGC approved MBA/PGDM colleges, audited fees, average salaries, and exam cutoffs.`,
+    title: `Top MBA Colleges in ${city}: Fees & Cutoffs 2027`,
+    description: cityDesc,
     canonical: canonicalUrl,
     schema: citySchema
   };
@@ -1228,7 +1231,7 @@ for (const city of allCities) {
     </main>
   `;
 
-  writeStaticRoute(`/colleges/city/${normCity}`, generatePageHtml(meta, bodyHtml));
+  writeStaticRoute(`/colleges/city/${encodeURIComponent(normCity)}`, generatePageHtml(meta, bodyHtml));
   count++;
 }
 
@@ -1288,9 +1291,17 @@ for (const exam of EXAMS_DATA) {
     ]
   };
 
+  let examDesc = `Guide for ${exam.name} 2026-27 (${exam.fullName}) by ${exam.conductingBody}. Exam date: ${exam.examDate}. Syllabus & cutoffs.`;
+  if (examDesc.length > 158) {
+    examDesc = `Guide for ${exam.name} 2026-27 by ${exam.conductingBody}. Exam date: ${exam.examDate}. Syllabus, fees & cutoffs on FMBS.`;
+  }
+  if (examDesc.length > 158) {
+    examDesc = examDesc.slice(0, 155).trim() + '...';
+  }
+
   const meta = {
-    title: `${exam.fullName} (${exam.name}) 2026-27 — Dates, Syllabus, Cutoffs & Registration | FindMyBSchool`,
-    description: `Complete guide for ${exam.fullName} (${exam.name}). Conducting body: ${exam.conductingBody}. Exam date: ${exam.examDate}. Eligibility, registration fees, syllabus, and top participating colleges.`,
+    title: `${exam.name} 2026-27: Dates, Syllabus & Cutoffs | FMBS`,
+    description: examDesc,
     canonical: canonicalUrl,
     schema: examSchema
   };
@@ -1398,9 +1409,14 @@ for (const sch of SCHOLARSHIPS_DATA) {
     ]
   };
 
+  const cleanSchTitle = sch.title.replace(/\s*\([^)]*\)/, '').trim();
+  const simpleAmount = (sch.amount || '').split('(')[0].replace(/Grants up to/i, '').trim();
+  const shortSchName = cleanSchTitle.length > 34 ? cleanSchTitle.slice(0, 32).trim() : cleanSchTitle;
+  let schTitle = `${shortSchName} 2027: Grants | FMBS`;
+
   const meta = {
-    title: `${sch.title} (${sch.provider}): Eligibility, Grants up to ${sch.amount} & Deadlines | FindMyBSchool`,
-    description: `Apply for ${sch.title}. Provider: ${sch.provider}. Grant: ${sch.amount}. Target: ${sch.targetInstitutes}. Eligibility: ${sch.eligibilitySummary}. Free document checklist & mentorship.`,
+    title: schTitle,
+    description: `Apply for ${cleanSchTitle} by ${sch.provider}. Grant: ${simpleAmount}. Free guide & eligibility rules on FindMyBSchool.`.slice(0, 155),
     canonical: canonicalUrl,
     schema: schSchema
   };
@@ -1468,9 +1484,10 @@ for (const test of MOCK_TESTS) {
     ]
   };
 
+  const shortT = test.title.length > 42 ? test.title.replace(/\s*\([^)]*\)/, '') : test.title;
   const meta = {
-    title: `${test.title} — Real CBT Exam Simulation & Percentile Predictor | FindMyBSchool`,
-    description: `Attempt 100% Free ${test.title}. ${test.tagline}. Full duration: ${test.fullDurationMinutes} mins, ${test.totalQuestions} questions. Real-time sectional timers, on-screen calculator, and instant percentile report.`,
+    title: `${shortT} Free CBT Mock Test | FMBS`.slice(0, 68),
+    description: `Take free ${shortT} (${test.totalQuestions} Qs, ${test.fullDurationMinutes} mins) with real TCS iON CBT interface & instant score percentiles on FMBS.`,
     canonical: canonicalUrl,
     schema: testSchema
   };
@@ -1537,9 +1554,30 @@ for (const blog of BLOGS_DATA) {
     ]
   };
 
+  const cleanBlogTitle = (blog.title || '').trim();
+  let blogTitle = cleanBlogTitle;
+  if (blogTitle.length > 68) {
+    const colonIdx = blogTitle.indexOf(':');
+    if (colonIdx > 20 && colonIdx <= 60) {
+      blogTitle = blogTitle.slice(0, colonIdx).trim();
+    } else {
+      blogTitle = blogTitle.slice(0, 65).trim();
+    }
+  }
+  if (blogTitle.length <= 54) {
+    blogTitle = `${blogTitle} | FMBS`;
+  }
+
+  let blogDesc = blog.summary || blog.excerpt || blog.description || 'Actionable MBA admissions insights, interview secrets, and CAT percentile strategies.';
+  if (blogDesc.length > 158) {
+    const truncated = blogDesc.slice(0, 155);
+    const lastSpace = truncated.lastIndexOf(' ');
+    blogDesc = (lastSpace > 120 ? truncated.slice(0, lastSpace) : truncated).trim() + '...';
+  }
+
   const meta = {
-    title: `${blog.title} | FindMyBSchool Strategy Blog`,
-    description: blog.summary || blog.excerpt || blog.description || 'Actionable MBA admissions insights, interview secrets, and CAT percentile strategies.',
+    title: blogTitle,
+    description: blogDesc,
     canonical: canonicalUrl,
     schema: blogSchema
   };
@@ -1549,7 +1587,7 @@ for (const blog of BLOGS_DATA) {
       <a href="/" style="font-weight: 800; font-size: 1.5rem; color: #6B2CF5; text-decoration: none;">FindMyBSchool</a>
       <p style="margin: 4px 0 0; color: #64748B; font-size: 0.95rem;">India’s Verified MBA &amp; PGDM Admissions Portal • Session 2027-29</p>
     </header>
-    <main style="max-width: 1100px; margin: 32px auto; padding: 0 20px; font-family: system-ui, -apple-system, sans-serif;">
+    <main style="max-width: 900px; margin: 32px auto; padding: 0 20px; font-family: system-ui, -apple-system, sans-serif;">
       <nav aria-label="Breadcrumb" style="font-size: 0.9rem; color: #64748B; margin-bottom: 16px;">
         <a href="/" style="color: #6B2CF5; text-decoration: none;">Home</a> &gt; 
         <a href="/blog" style="color: #6B2CF5; text-decoration: none;">Blog</a> &gt; 
@@ -1575,10 +1613,28 @@ for (const blog of BLOGS_DATA) {
 // ==========================================
 for (const col of COLLEGES_DATA) {
   const canonicalUrl = `${BASE_URL}/colleges/${encodeURIComponent(col.id)}`;
-  const title = `${col.name} (${col.shortName}) Admission 2027-29: Fees, Cutoffs, Recent Placements & NIRF Ranking | FindMyBSchool`;
-  const description = `Get verified 2027-29 admission session details for ${col.name} (${col.shortName}), ${col.location}. 2-Year Total Fees: ${col.fees}, Recent Average CTC: ${col.avgSalary}, Cutoff: ${col.cutoffCAT !== 'N/A' ? 'CAT ' + col.cutoffCAT : (col.cutoffXAT !== 'N/A' ? 'XAT ' + col.cutoffXAT : 'CMAT ' + col.cutoffCMAT)}. 100% audited recent placement statistics & bank loan schemes.`;
-
   const cutoffText = col.cutoffCAT !== 'N/A' ? `CAT ${col.cutoffCAT}` : (col.cutoffXAT !== 'N/A' ? `XAT ${col.cutoffXAT}` : `CMAT ${col.cutoffCMAT}`);
+  const brand = (col.shortName || col.name).trim();
+  let title;
+  if (brand.length <= 22) {
+    title = `${brand} MBA Admission 2027: Fees & Placements`;
+  } else if (brand.length <= 36) {
+    title = `${brand} Admission 2027: Fees & Cutoff`;
+  } else {
+    title = `${brand.slice(0, 38).trim()} Admission & Fees 2027`;
+  }
+  if (escapeHtml(title).length > 70) {
+    title = `${brand.slice(0, 30).trim()} Admission 2027`;
+  }
+
+  const cityStr = col.city ? ` in ${col.city}` : '';
+  let description = `Explore ${brand}${cityStr} 2027-29: fees ${col.fees}, avg CTC ${col.avgSalary}, ${cutoffText} cutoff. Audited report on FindMyBSchool.`;
+  if (description.length > 158) {
+    description = `Explore ${brand} 2027-29: fees ${col.fees}, avg CTC ${col.avgSalary}, ${cutoffText} cutoff on FMBS.`;
+  }
+  if (description.length > 158) {
+    description = description.slice(0, 155).trim() + '...';
+  }
   const examsList = col.examsAccepted && col.examsAccepted.length > 0 ? col.examsAccepted.join(', ') : 'CAT, XAT, CMAT';
 
   // Find 3 peer colleges in same city or ranking band for internal linking
@@ -1881,6 +1937,7 @@ for (const col of COLLEGES_DATA) {
 // ==========================================
 const notFoundHtml = template
   .replace(/<title>.*?<\/title>/i, '<title>Page Not Found (404) | FindMyBSchool</title>')
+  .replace(/<meta name="description" content=".*?" \/>/i, '<meta name="description" content="Page not found. Explore 600+ verified MBA colleges, fee structures, cutoffs, and percentile calculators on FindMyBSchool." />')
   .replace(/<meta name="robots" content=".*?" \/>/i, '<meta name="robots" content="noindex, nofollow" />')
   .replace(/<link rel="canonical" href=".*?" \/>/i, '<link rel="canonical" href="https://findmybschool.com/404" />')
   .replace(/<meta property="og:image" content=".*?" \/>/i, `<meta property="og:image" content="${DEFAULT_OG_IMAGE}" />`)

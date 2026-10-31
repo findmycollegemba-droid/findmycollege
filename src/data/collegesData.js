@@ -845,6 +845,83 @@ export const COLLEGES_DATA = [
     "officialWebsite": "https://sbm.nmims.edu"
   },
   {
+    "id": "sda-bocconi-mumbai",
+    "degreeTypes": [
+      "PGDM"
+    ],
+    "name": "SDA Bocconi Asia Center, Mumbai",
+    "shortName": "SDA Bocconi Mumbai",
+    "location": "Powai, Mumbai, Maharashtra",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "nirfRank": 65,
+    "rating": 4.5,
+    "reviewsCount": 84,
+    "programType": "International Master in Business (IMB)",
+    "ownership": "Private International Business School",
+    "establishedYear": 2012,
+    "campusArea": "Hiranandani Knowledge Park, Powai",
+    "accreditation": "EQUIS, AACSB, AMBA (Triple Crown via SDA Bocconi Milan)",
+    "fees": "₹21.00 Lakhs",
+    "feeNum": 21,
+    "avgSalary": "₹15.00 LPA",
+    "avgSalaryNum": 15,
+    "highestSalary": "₹39.24 LPA",
+    "medianSalary": "₹14.20 LPA",
+    "batchSize": 280,
+    "roiScore": "8.5 / 10",
+    "examsAccepted": [
+      "CAT",
+      "NMAT",
+      "GMAT",
+      "GRE"
+    ],
+    "cutoffCAT": "85.0+ %ile",
+    "cutoffXAT": "85.0+ %ile",
+    "cutoffCMAT": "N/A",
+    "cutoffDetails": {
+      "general": "NMAT 200-210+ / CAT 85%ile",
+      "ncObc": "NMAT 190+ Score",
+      "sc": "NMAT 180+ Score",
+      "st": "NMAT 175+ Score",
+      "sectional": "Evaluated for SDA Bocconi Asia Center admissions based on NMAT, CAT, GMAT, or Bocconi Test and profile."
+    },
+    "topRecruiters": [
+      "Deloitte",
+      "PwC",
+      "EY",
+      "KPMG",
+      "ICICI Bank",
+      "Amazon",
+      "Barclays",
+      "L'Oréal"
+    ],
+    "domainDistribution": {
+      "consulting": "32%",
+      "finance": "28%",
+      "marketing": "24%",
+      "operationsAnalytics": "16%"
+    },
+    "courses": [
+      {
+        "name": "International Master in Business (IMB)",
+        "duration": "2 Years Full Time (including Milan Semester)",
+        "seats": 280,
+        "fee": "₹21,00,000"
+      }
+    ],
+    "admissionCriteria": {
+      "entranceScore": "35% weightage",
+      "personalInterviewGD": "35% weightage",
+      "academicProfile": "20% weightage",
+      "workExDiversity": "10% weightage"
+    },
+    "highlights": "Asian presence of SDA Bocconi School of Management (Milan, Italy - Top 3 B-School in Europe by FT). Features mandatory 1-semester immersion at Bocconi Milan campus and stellar placement access across luxury, consulting, and finance.",
+    "admissionSession": "2027-2029",
+    "placementSession": "2025-2026 (Audited)",
+    "officialWebsite": "https://sdabocconiasiacenter.com"
+  },
+  {
     "id": "mdi-gurgaon",
     "degreeTypes": [
       "PGDM"
@@ -18845,7 +18922,7 @@ export const COLLEGES_DATA = [
       "MBA"
     ],
     "name": "Lovely Professional University",
-    "shortName": "LPU Mittal School of Business",
+    "shortName": "LPU Phagwara",
     "location": "Jalandhar - Delhi G.T. Road, Phagwara, Punjab",
     "city": "Phagwara",
     "state": "Punjab",
@@ -30383,7 +30460,7 @@ export const COLLEGES_DATA = [
     "name": "Delhi Skill and Entrepreneurship University",
     "shortName": "Delhi Skill and Entrepreneurship University (New Delhi)",
     "location": "Delhi Skill and Entrepreneurship University Campus, New Delhi, Delhi",
-    "city": "New Delhi",
+    "city": "Delhi-NCR",
     "state": "Delhi",
     "nirfRank": null,
     "rating": 4.3,
@@ -30466,7 +30543,7 @@ export const COLLEGES_DATA = [
     "name": "Delhi Technological University",
     "shortName": "DSM DTU New Delhi",
     "location": "Delhi School of Management (DSM), DTU, Shahbad Daulatpur, Bawana Road, Delhi",
-    "city": "New Delhi",
+    "city": "Delhi-NCR",
     "state": "Delhi",
     "nirfRank": null,
     "rating": 4.3,
@@ -32883,7 +32960,7 @@ export const COLLEGES_DATA = [
     "name": "Gautam Buddha University",
     "shortName": "Gautam Buddha University (Greater Noida)",
     "location": "Gautam Buddha University Campus, Greater Noida, Uttar Pradesh",
-    "city": "Greater Noida",
+    "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
     "nirfRank": null,
     "rating": 4.3,
@@ -33130,7 +33207,7 @@ export const COLLEGES_DATA = [
     "name": "Guru Gobind Singh Indraprastha Vishwavidyalaya",
     "shortName": "USMS GGSIPU New Delhi",
     "location": "University School of Management Studies (USMS), Sector 16C, Dwarka, New Delhi",
-    "city": "New Delhi",
+    "city": "Delhi-NCR",
     "state": "Delhi",
     "nirfRank": null,
     "rating": 4.3,
@@ -36205,7 +36282,7 @@ export const COLLEGES_DATA = [
     "name": "Jamia Millia Islamia",
     "shortName": "CMS JMI New Delhi",
     "location": "Centre for Management Studies, Jamia Millia Islamia, Jamia Nagar, New Delhi",
-    "city": "New Delhi",
+    "city": "Delhi-NCR",
     "state": "Delhi",
     "nirfRank": 25,
     "rating": 4.5,
@@ -36379,7 +36456,7 @@ export const COLLEGES_DATA = [
     "name": "Jawaharlal Nehru University",
     "shortName": "ABVSME JNU New Delhi",
     "location": "Atal Bihari Vajpayee School of Management and Entrepreneurship, JNU, New Delhi",
-    "city": "New Delhi",
+    "city": "Delhi-NCR",
     "state": "Delhi",
     "nirfRank": null,
     "rating": 4.5,
@@ -55840,7 +55917,7 @@ export const COLLEGES_DATA = [
     "id": "usms-ggsipu-delhi",
     "name": "University School of Management Studies (USMS), Guru Gobind Singh Indraprastha University",
     "shortName": "USMS GGSIPU Delhi",
-    "city": "New Delhi",
+    "city": "Delhi-NCR",
     "state": "Delhi",
     "rating": 4.5,
     "reviewsCount": 180,
@@ -58328,7 +58405,7 @@ export const COLLEGES_DATA = [
     "name": "NIET Business School, Greater Noida",
     "shortName": "NIET Greater Noida",
     "location": "Knowledge Park II, Greater Noida, Uttar Pradesh",
-    "city": "Greater Noida",
+    "city": "Delhi-NCR",
     "state": "Uttar Pradesh",
     "nirfRank": 84,
     "rating": 4.2,

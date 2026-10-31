@@ -23,6 +23,11 @@
 /colleges/pgdm/          /colleges/pgdm                         301
 /colleges/city           /colleges                              301
 /colleges/city/          /colleges                              301
+/colleges/city/delhi     /colleges/city/delhi-ncr               301
+/colleges/city/delhi/    /colleges/city/delhi-ncr               301
+/colleges/sjmsom-iit-bombay /colleges/iit-bombay-sjmsom         301
+/colleges/imi-delhi      /colleges/imi-new-delhi                301
+/colleges/k-j-somaiya-mumbai /colleges/kj-somaiya-mumbai        301
 /scholarships/           /scholarships                          301
 /mock-test/              /mock-test                             301
 /exams/                  /exams                                 301

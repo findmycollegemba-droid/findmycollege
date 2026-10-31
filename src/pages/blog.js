@@ -441,7 +441,7 @@ export function renderArticlesGrid(articles, savedIds = null) {
           <div class="empty-suggestions">
             <span>Explore our portal tools & colleges in the meantime:</span>
             <a href="/colleges" class="empty-tag-pill" data-route="colleges">🏛️ 680+ MBA Colleges</a>
-            <a href="/tools" class="empty-tag-pill" data-route="tools">📊 Percentile Predictor</a>
+            <a href="/tools/cat-college-predictor" class="empty-tag-pill" data-route="tools">📊 Percentile Predictor</a>
             <a href="/exams" class="empty-tag-pill" data-route="exams">🎯 Exam Guides</a>
           </div>
         </div>

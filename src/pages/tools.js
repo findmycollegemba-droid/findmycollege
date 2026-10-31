@@ -750,7 +750,7 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>23+ Marks</td>
                       <td>15+ Marks</td>
                       <td>16+ Marks</td>
-                      <td><a href="/colleges/imt-ghaziabad" class="cat-table-link">IMT Ghaziabad</a>, <a href="/colleges/imi-delhi" class="cat-table-link">IMI New Delhi</a>, <a href="/colleges/gim-goa" class="cat-table-link">GIM Goa</a>, Baby IIMs</td>
+                      <td><a href="/colleges/imt-ghaziabad" class="cat-table-link">IMT Ghaziabad</a>, <a href="/colleges/imi-new-delhi" class="cat-table-link">IMI New Delhi</a>, <a href="/colleges/gim-goa" class="cat-table-link">GIM Goa</a>, Baby IIMs</td>
                     </tr>
                     <tr>
                       <td><strong>85.0+ %ile</strong></td>
@@ -774,7 +774,7 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td>10+ Marks</td>
                       <td>7+ Marks</td>
                       <td>7+ Marks</td>
-                      <td><a href="/colleges/ndim-delhi-ncr" class="cat-table-link">NDIM New Delhi</a>, <a href="/colleges/fostiima-business-school" class="cat-table-link">FOSTIIMA</a>, <a href="/colleges/fiib-delhi-ncr" class="cat-table-link">FIIB</a>, <a href="/colleges/jims-kalkaji" class="cat-table-link">JIMS Kalkaji</a></td>
+                      <td><a href="/colleges/new-delhi-institute-of-management" class="cat-table-link">NDIM New Delhi</a>, <a href="/colleges/fostiima-business-school-delhi" class="cat-table-link">FOSTIIMA</a>, <a href="/colleges/fortune-institute-of-international-business-delhi" class="cat-table-link">FIIB</a>, <a href="/colleges/jims-kalkaji-delhi" class="cat-table-link">JIMS Kalkaji</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -1104,7 +1104,7 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td><span class="badge-tier-1">NIRF #11 • Prime Corporate Hub NCR</span></td>
                     </tr>
                     <tr>
-                      <td><strong><a href="/colleges/sjmsom-iit-bombay" class="cat-table-link">SJMSOM, IIT Bombay</a></strong></td>
+                      <td><strong><a href="/colleges/iit-bombay-sjmsom" class="cat-table-link">SJMSOM, IIT Bombay</a></strong></td>
                       <td>98.0+ %ile</td>
                       <td>₹15.16 Lakhs</td>
                       <td>₹28.16 LPA</td>
@@ -1118,7 +1118,7 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td><span class="badge-roi">NIRF #4 • Premier IIT Business School</span></td>
                     </tr>
                     <tr>
-                      <td><strong><a href="/colleges/iift-new-delhi" class="cat-table-link">IIFT Delhi (MBA-IB)</a></strong></td>
+                      <td><strong><a href="/colleges/iift-delhi" class="cat-table-link">IIFT Delhi (MBA-IB)</a></strong></td>
                       <td>97.0+ %ile</td>
                       <td>₹21.82 Lakhs</td>
                       <td>₹31.30 LPA</td>
@@ -1167,7 +1167,7 @@ export function renderToolsPage(activeSub = 'cat') {
                       <td><span class="badge-tier-1">NIRF #43 • Finance &amp; Strategy Leader</span></td>
                     </tr>
                     <tr>
-                      <td><strong><a href="/colleges/fore-school-of-management-delhi" class="cat-table-link">FORE School of Management Delhi</a></strong></td>
+                      <td><strong><a href="/colleges/fore-school-delhi" class="cat-table-link">FORE School of Management Delhi</a></strong></td>
                       <td>85.0+ %ile</td>
                       <td>₹18.98 Lakhs</td>
                       <td>₹16.01 LPA</td>

@@ -228,7 +228,7 @@ Keep at least 2 physical copies safely until final admissions conclude in June/J
     content: `
 ### NMAT 2026 Admit Card Download: Master the Slot Booking & Testing Process
 
-The **NMAT by GMAC™** is widely celebrated as one of India's most student-friendly MBA entrance tests. Conducted by the Graduate Management Admission Council (GMAC), NMAT scores open admissions to prestigious institutions including **[NMIMS Mumbai](/colleges/nmims-mumbai)** (School of Business Management), **[K J Somaiya Institute of Management Mumbai](/colleges/k-j-somaiya-mumbai)**, **[XIM University Bhubaneswar](/colleges/ximb-bhubaneswar) (HRM)**, **[SDA Bocconi Asia Center](/colleges/sda-bocconi-mumbai)**, and **[TAPMI Manipal](/colleges/tapmi-manipal)**.
+The **NMAT by GMAC™** is widely celebrated as one of India's most student-friendly MBA entrance tests. Conducted by the Graduate Management Admission Council (GMAC), NMAT scores open admissions to prestigious institutions including **[NMIMS Mumbai](/colleges/nmims-mumbai)** (School of Business Management), **[K J Somaiya Institute of Management Mumbai](/colleges/kj-somaiya-mumbai)**, **[XIM University Bhubaneswar](/colleges/ximb-bhubaneswar) (HRM)**, **[SDA Bocconi Asia Center](/colleges/sda-bocconi-mumbai)**, and **[TAPMI Manipal](/colleges/tapmi-manipal)**.
 
 Unlike fixed-day examinations such as CAT or XAT, NMAT operates across a flexible **70-day testing window from October 10 to December 19, 2026**. Consequently, the **NMAT 2026 Admit Card** is not released simultaneously for all candidates on a single date. Instead, it becomes available dynamically **immediately after you select your preferred test center, exam date, and time slot**.
 
@@ -338,7 +338,7 @@ If you opted for the Online Proctored Test from Home:
 | --- | --- | --- | --- | --- |
 | **[NMIMS Mumbai (SBM)](/colleges/nmims-mumbai)** | MBA Core (First attempt only) | 235 – 240+ | ₹26.50 Lakhs | ₹25.13 LPA |
 | **[NMIMS Mumbai (SBM)](/colleges/nmims-mumbai)** | MBA Human Resources (HR) | 228 – 232+ | ₹24.00 Lakhs | ₹19.50 LPA |
-| **[K J Somaiya Mumbai](/colleges/k-j-somaiya-mumbai)** | MBA General | 225 – 230+ | ₹20.87 Lakhs | ₹12.32 LPA |
+| **[K J Somaiya Mumbai](/colleges/kj-somaiya-mumbai)** | MBA General | 225 – 230+ | ₹20.87 Lakhs | ₹12.32 LPA |
 | **[XIM University Bhubaneswar](/colleges/ximb-bhubaneswar)** | MBA-HRM (Human Resource) | 220 – 225+ | ₹21.00 Lakhs | ₹16.50 LPA |
 | **[SDA Bocconi Asia Center](/colleges/sda-bocconi-mumbai)** | International Master in Business | 200 – 210+ | ₹21.00 Lakhs | ₹15.00 LPA |
 | **[NMIMS Bengaluru / Hyderabad](/colleges/nmims-mumbai)** | MBA Specializations | 215 – 220+ | ₹21.00 Lakhs | ₹14.00 LPA |

@@ -461,7 +461,7 @@ Based on calibrated difficulty trends across recent CAT administrations, here ar
 | **99.5+ %ile** | **95 - 109** | 42+ | 32+ | 35+ | [IIM Lucknow](/colleges/iim-lucknow), [IIM Kozhikode](/colleges/iim-kozhikode), [SPJIMR Mumbai](/colleges/spjimr-mumbai) |
 | **99.0+ %ile** | **82 - 94** | 38+ | 28+ | 30+ | [IIM Indore](/colleges/iim-indore), [MDI Gurgaon](/colleges/mdi-gurgaon), [SJMSOM IIT Bombay](/colleges/iit-bombay-sjmsom) |
 | **98.0+ %ile** | **72 - 81** | 33+ | 24+ | 25+ | [IIM Shillong](/colleges/iim-shillong), [DMS IIT Delhi](/colleges/dms-iit-delhi), [IIFT Delhi](/colleges/iift-delhi) |
-| **95.0+ %ile** | **58 - 71** | 28+ | 18+ | 19+ | [CAP IIMs (Udaipur, Trichy, Ranchi)](/tools/cat-college-predictor), [IMT Ghaziabad](/colleges/imt-ghaziabad), [IMI Delhi](/colleges/imi-delhi) |
+| **95.0+ %ile** | **58 - 71** | 28+ | 18+ | 19+ | [CAP IIMs (Udaipur, Trichy, Ranchi)](/tools/cat-college-predictor), [IMT Ghaziabad](/colleges/imt-ghaziabad), [IMI New Delhi](/colleges/imi-new-delhi) |
 | **90.0+ %ile** | **45 - 57** | 22+ | 14+ | 14+ | [GIM Goa](/colleges/gim-goa), [TAPMI Manipal](/colleges/tapmi-manipal), [FORE School Delhi](/colleges/fore-school-delhi) |
 | **85.0+ %ile** | **37 - 44** | 18+ | 11+ | 11+ | [KJ Somaiya](/colleges/kj-somaiya-mumbai), [Great Lakes Chennai](/colleges/great-lakes-chennai), [BIMTECH](/colleges/bimtech-noida) |
 | **80.0+ %ile** | **30 - 36** | 14+ | 9+ | 8+ | Baby IIMs (Reserved Categories), [Welingkar Mumbai](/colleges/welingkar-mumbai), [LBSIM Delhi](/colleges/lbsim-delhi) |
