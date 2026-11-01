@@ -16,8 +16,16 @@ import { DELHI_NCR_BLOGS } from './blogs/delhiNcrBlogs.js';
 import { ADMIT_CARD_BLOGS } from './blogs/admitCardBlogs.js';
 import { COLLEGE_REVIEW_BLOGS } from './blogs/collegeReviewBlogs.js';
 import { FMS_DELHI_BLOGS } from './blogs/fmsDelhiBlog.js';
+import { TOP_IIM_COLLEGES_2027_BLOGS } from './blogs/topIIMColleges2027Blogs.js';
+import { TIER1_ELITE_COLLEGES_2027_BLOGS } from './blogs/tier1EliteColleges2027Blogs.js';
+import { TOP_BSCHOOLS_2027_BLOGS } from './blogs/topBschools2027Blogs.js';
 
 export const BLOGS_DATA = [
+  // Top 20 Flagship MBA College Guides 2027 (IIMs, Elite Non-IIMs & Top B-Schools)
+  ...TOP_IIM_COLLEGES_2027_BLOGS,
+  ...TIER1_ELITE_COLLEGES_2027_BLOGS,
+  ...TOP_BSCHOOLS_2027_BLOGS,
+
   // Live Admissions & Application Guides (FMS Delhi 2027-29)
   ...FMS_DELHI_BLOGS,
 
