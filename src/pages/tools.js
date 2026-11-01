@@ -6,8 +6,8 @@ export function renderToolsPage(activeSub = 'cat') {
   const TOOL_HEADINGS = {
     cat: {
       badge: '⚡ CAT 2026 Score Calculator, Response Sheet Scanner & Slot Normalization Engine',
-      title: 'CAT Score Calculator 2026 & Percentile Predictor: Response Sheet & IIM Calls',
-      subtitle: 'Calculate your raw score, scaled score, and All-India percentile from your official candidate response sheet link (cdn.digialm.com) or sectional attempts. Features official +3/−1/0 marking, slot 1/2/3 equipercentile equating, and verified 2026-28 admission call forecasts for 21 IIMs and 50+ premier B-schools.'
+      title: 'CAT Score Calculator 2026: Response Sheet, Percentile & College Predictor',
+      subtitle: 'Calculate your CAT 2026 raw score from your official candidate response sheet link (cdn.digialm.com) or sectional attempts. Get your estimated percentile through slot normalization (+3/-1 marking) and forecast interview calls for 21 IIMs and 50+ premier B-schools categorized as Ambitious, Moderate, or Safe.'
     },
     xat: {
       badge: '🎯 Official XLRI Negative Marking & Unattempt Penalty Engine',
@@ -537,10 +537,11 @@ export function renderToolsPage(activeSub = 'cat') {
                 
                 <div class="calls-tier-tabs">
                   <button type="button" class="tier-tab-btn active" data-call-filter="all">All Calls</button>
+                  <button type="button" class="tier-tab-btn" data-call-filter="safe">🛡️ Safe (High)</button>
+                  <button type="button" class="tier-tab-btn" data-call-filter="moderate">🎯 Moderate (Target)</button>
+                  <button type="button" class="tier-tab-btn" data-call-filter="ambitious">🚀 Ambitious (Dream)</button>
                   <button type="button" class="tier-tab-btn" data-call-filter="tier1">Tier 1</button>
-                  <button type="button" class="tier-tab-btn" data-call-filter="tier1_5">Tier 1.5</button>
                   <button type="button" class="tier-tab-btn" data-call-filter="tier2">Tier 2</button>
-                  <button type="button" class="tier-tab-btn" data-call-filter="tier3">Tier 3 Direct</button>
                 </div>
 
                 <div class="calls-list-box" id="catCallsListBox">
@@ -1236,107 +1237,70 @@ export function renderToolsPage(activeSub = 'cat') {
                 <details class="faq-item" open>
                   <summary class="faq-question">Which is the best free CAT score calculator from response sheet?</summary>
                   <div class="faq-answer">
-                    The FindMyBSchool CAT Score Calculator (https://findmybschool.com/tools/cat-college-predictor) is widely regarded as the most accurate and fastest free tool. It allows direct input of your official response sheet link hosted on <code>cdn.digialm.com</code> or raw HTML source, audits all 66 questions in under 2 seconds using the official +3 / -1 / 0 marking scheme, executes multi-slot equipercentile normalization across Slot 1, Slot 2, and Slot 3, and generates verified interview call predictions for 21 IIMs and 50+ premier B-schools without any mandatory registration wall.
+                    The FindMyBSchool CAT Score Calculator is widely regarded as the most accurate free evaluation tool. It enables direct scanning of your official candidate response sheet link hosted on <code>cdn.digialm.com</code> via <a href="https://iimcat.ac.in" target="_blank" rel="noopener">iimcat.ac.in</a>, audits all 66 questions in under two seconds using the official +3 / -1 / 0 marking scheme, executes equipercentile normalization across Slots 1, 2, and 3, and forecasts interview call probabilities for 21 IIMs and 50+ premier B-schools without mandatory registration.
                   </div>
                 </details>
 
                 <details class="faq-item">
-                  <summary class="faq-question">What is the official formula to calculate CAT 2026 score?</summary>
+                  <summary class="faq-question">What is the official formula to calculate CAT 2026 raw score?</summary>
                   <div class="faq-answer">
-                    The official CAT raw score formula across all 66 questions is:<br />
-                    <code>Raw Score = (3 × Correct MCQs) + (3 × Correct Non-MCQs/TITA) − (1 × Incorrect MCQs) − (0 × Incorrect Non-MCQs)</code><br />
-                    Scaled scores are subsequently derived through equipercentile equating across the 3 slots: <code>Scaled Score = M_g + ((S_i - M_i) / SD_i) × SD_g</code>.
+                    The official CAT raw score formula across all 66 questions is: <code>Raw Score = (3 × Correct MCQs) + (3 × Correct Non-MCQs/TITA) − (1 × Incorrect MCQs) − (0 × Incorrect Non-MCQs)</code>. Unattempted questions carry zero penalty. The maximum achievable raw score is 198 marks across VARC (72 marks), DILR (60 marks), and QA (66 marks).
                   </div>
                 </details>
 
                 <details class="faq-item">
-                  <summary class="faq-question">How does the CAT Score Calculator &amp; College Predictor work?</summary>
+                  <summary class="faq-question">How do I check and download my CAT response sheet from cdn.digialm.com?</summary>
                   <div class="faq-answer">
-                    The FindMyBSchool CAT Score Calculator &amp; College Predictor evaluates your sectional raw marks (VARC, DILR, QA) or official response sheet Digialm URL, applies slot normalization across Slot 1, Slot 2, and Slot 3, and generates your estimated national percentile. It then cross-references your projected percentile with verified category-wise cutoffs for 21 IIMs and over 50 top-tier MBA/PGDM colleges.
+                    Log in to the official portal <a href="https://iimcat.ac.in" target="_blank" rel="noopener">iimcat.ac.in</a> with your User ID and password, navigate to the Candidate Response tab, and click the link "Click here to generate your response sheet". The response sheet opens in a new tab hosted on <code>cdn.digialm.com</code> showing your selected responses alongside the official provisional answer key. Copy that URL and paste it into our tool for automated score calculation.
                   </div>
                 </details>
 
                 <details class="faq-item">
-                  <summary class="faq-question">What CAT percentile is required for IIM Ahmedabad, Bangalore, and Calcutta?</summary>
+                  <summary class="faq-question">Is there negative marking for TITA (non-MCQ) questions in CAT?</summary>
                   <div class="faq-answer">
-                    For General Category engineering candidates, top IIMs (IIM Ahmedabad, IIM Bangalore, IIM Calcutta) typically require a minimum 99.2 to 99.8 percentile in CAT, alongside strong sectional scores (usually 80-85+ sectional percentile). Non-engineers with exceptional academic records (90%+ in 10th/12th/Graduation) and NC-OBC/SC/ST/EWS candidates may receive interview calls between 90 and 96 percentile.
-                  </div>
-                </details>
-
-                <details class="faq-item">
-                  <summary class="faq-question">Which top MBA/PGDM colleges accept 80 to 90 CAT percentile?</summary>
-                  <div class="faq-answer">
-                    With an 80 to 90 CAT percentile, candidates have strong shortlist prospects at reputed business schools including GIM Goa, FORE School of Management Delhi, Great Lakes Institute of Management Chennai (PGDM), TAPMI Manipal, BIMTECH Greater Noida, LIBA Chennai, and KJ Somaiya Mumbai.
-                  </div>
-                </details>
-
-                <details class="faq-item">
-                  <summary class="faq-question">Can I get an IIM interview call with an 85 to 90 percentile in CAT?</summary>
-                  <div class="faq-answer">
-                    Yes. While General Category engineering candidates need 98+ percentile, candidates belonging to NC-OBC, EWS, SC, ST, and PwD categories frequently receive shortlist calls from Baby and New IIMs (such as IIM Bodhgaya, IIM Sambalpur, IIM Sirmaur, IIM Jammu, IIM Nagpur, and IIM Amritsar) in the 80 to 90 percentile range, provided minimum sectional cutoffs (typically 65-75%ile) are satisfied.
-                  </div>
-                </details>
-
-                <details class="faq-item">
-                  <summary class="faq-question">How does CAT slot normalization affect raw scores across Slot 1, Slot 2, and Slot 3?</summary>
-                  <div class="faq-answer">
-                    Because CAT is conducted across 3 separate slots with varying question difficulty, IIMs employ an equipercentile statistical normalization model. If your slot was comparatively harder, your scaled score is adjusted upward; if your slot had a higher average, the score adjusts slightly downward to ensure complete fairness across morning, afternoon, and evening slots.
-                  </div>
-                </details>
-
-                <details class="faq-item">
-                  <summary class="faq-question">Which premier non-IIM business schools accept CAT scores?</summary>
-                  <div class="faq-answer">
-                    Premier non-IIM institutions accepting CAT scores include FMS Delhi (Faculty of Management Studies), SPJIMR Mumbai, MDI Gurgaon, IIT Bombay (SJMSOM), IIT Delhi (DMS), IIT Kharagpur (VGSOM), IIFT Delhi, IMI New Delhi, and IMT Ghaziabad.
-                  </div>
-                </details>
-
-                <details class="faq-item">
-                  <summary class="faq-question">What is the official CAT marking scheme for MCQs and non-MCQs (TITA)?</summary>
-                  <div class="faq-answer">
-                    In CAT 2026, correct Multiple Choice Questions (MCQs) award +3 marks, while incorrect MCQs penalize -1 mark. Non-MCQ / TITA (Type In The Answer) questions award +3 marks for a correct response, but carry ZERO negative deduction (0 penalty) for incorrect responses.
+                    No. Non-MCQ or Type In The Answer (TITA) questions carry zero negative marking. A correct TITA answer awards +3 marks, while an incorrect or unattempted TITA answer results in 0 deduction. Consequently, candidates should attempt all TITA questions without fear of penalties.
                   </div>
                 </details>
 
                 <details class="faq-item">
                   <summary class="faq-question">What is the difference between CAT raw score, scaled score, and percentile?</summary>
                   <div class="faq-answer">
-                    Your Raw Score is your direct points total from +3/-1 marking out of 198. The Scaled Score is your score adjusted for slot difficulty through equipercentile equating. Your Percentile represents the percentage of all national test-takers who scored equal to or less than your scaled score.
+                    Your Raw Score is the direct marks (+3/-1/0) earned out of 198. The Scaled Score is mathematically adjusted through equipercentile equating to account for slight difficulty variations among Slot 1, Slot 2, and Slot 3. Your Percentile indicates the percentage of total candidates nationwide who scored equal to or lower than your scaled score.
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-question">How does CAT slot normalization work across Slot 1, Slot 2, and Slot 3?</summary>
+                  <div class="faq-answer">
+                    IIMs utilize an equipercentile equating model that standardizes score distributions across all three test sessions. If a particular slot (such as Slot 2 QA) exhibits a lower mean and standard deviation among top candidates due to higher question difficulty, raw scores in that slot receive an upward adjustment so that candidates across all sessions are evaluated equitably.
+                  </div>
+                </details>
+
+                <details class="faq-item">
+                  <summary class="faq-question">What raw score is needed for 99+ percentile in CAT 2026?</summary>
+                  <div class="faq-answer">
+                    Based on historical 66-question test administrations (~2.9 lakh candidates), an overall raw score of 82 to 94 marks out of 198 (~42%–48% aggregate marks) typically scales to the 99.0+ percentile. An estimated 60 to 74 marks corresponds to ~95 percentile, and 48 to 59 marks corresponds to ~90 percentile, depending on slot difficulty.
                   </div>
                 </details>
 
                 <details class="faq-item">
                   <summary class="faq-question">How do top IIMs calculate the Composite Score for final admissions?</summary>
                   <div class="faq-answer">
-                    Final admission offers are based on a Composite Score, not percentile alone. Top IIMs weight CAT performance (40-60%), 10th and 12th board marks (10-20%), undergraduate degree (5-15%), relevant work experience (5-10%), gender/academic diversity (5-10%), and Personal Interview / WAT performance (30-40%).
-                  </div>
-                </details>
-
-                <details class="faq-item">
-                  <summary class="faq-question">How do I check my CAT response sheet link on cdn.digialm.com?</summary>
-                  <div class="faq-answer">
-                    To check your response sheet, log in to iimcat.ac.in with your User ID and Password, navigate to the Candidate Response tab, click the link to generate your response sheet, and copy the URL starting with cdn.digialm.com from your browser address bar. Paste it into the FindMyBSchool Predictor for automated sectional score and call analysis.
-                  </div>
-                </details>
-
-                <details class="faq-item">
-                  <summary class="faq-question">How do I submit objections to the CAT official answer key?</summary>
-                  <div class="faq-answer">
-                    If you identify an error in the provisional answer key, log in to iimcat.ac.in during the objection window, click Objection Management, select the Section, Question ID, and objection type, upload supporting documentation, and pay the non-refundable fee of ₹1,200 per question. If your objection is upheld by the expert panel, the full fee is refunded.
+                    IIMs do not shortlist candidates based on CAT percentile alone. Final interview shortlists and merit lists rely on a Composite Score combining CAT score (40–60%), Class 10th and 12th board marks (10–20%), graduation marks (5–15%), relevant work experience (5–10%), and academic or gender diversity (5–10%).
                   </div>
                 </details>
 
                 <details class="faq-item">
                   <summary class="faq-question">Can a non-engineer or female candidate convert IIM calls at 90-95 percentile?</summary>
                   <div class="faq-answer">
-                    Yes. Top IIMs including IIM Ahmedabad, IIM Bangalore, IIM Calcutta, IIM Lucknow, and IIM Kozhikode award up to 5% academic diversity points to non-engineering graduates and up to 5% gender diversity points to female/transgender applicants, enabling strong candidates to secure interview calls between 90 and 96 percentile.
+                    Yes. Leading institutes including IIM Ahmedabad, IIM Bangalore, IIM Calcutta, IIM Lucknow, and IIM Kozhikode award up to 5% academic diversity weightage to non-engineering graduates and up to 5% gender diversity points to female and transgender candidates, allowing applicants with consistent past academic records to secure calls between 90 and 95 percentile.
                   </div>
                 </details>
 
                 <details class="faq-item">
-                  <summary class="faq-question">How accurate is the FindMyBSchool CAT College Predictor compared to official results?</summary>
+                  <summary class="faq-question">What is the fee and process to challenge an answer in the CAT objection window?</summary>
                   <div class="faq-answer">
-                    FindMyBSchool uses official equipercentile equating formulas benchmarked against historical normalized score distributions across 2.9 Lakh test-takers. It delivers over 98% accuracy in estimating scaled marks and percentile brackets, audited against official IIM admission criteria.
+                    Candidates can challenge provisional answers through the Objection Management tab on <a href="https://iimcat.ac.in" target="_blank" rel="noopener">iimcat.ac.in</a> during the 3-day post-release objection window. A processing fee of ₹1,200 per question challenged must be submitted online with supporting documentation. If the subject expert committee upholds your challenge, the entire ₹1,200 fee is refunded to the candidate.
                   </div>
                 </details>
               </div>

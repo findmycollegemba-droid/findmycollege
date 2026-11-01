@@ -67,20 +67,23 @@ export function initToolsInteractions() {
     const callsBox = document.getElementById('catCallsListBox');
     if (!callsBox || !tierCalls) return;
 
+    const allList = [
+      ...(tierCalls.tier1 || []),
+      ...(tierCalls.tier1_5 || []),
+      ...(tierCalls.tier2_top || []),
+      ...(tierCalls.tier2 || []),
+      ...(tierCalls.tier3 || [])
+    ];
+
     let list = [];
-    if (filter === 'tier1') list = tierCalls.tier1 || [];
+    if (filter === 'safe') list = allList.filter(c => c.chance === 'High');
+    else if (filter === 'moderate') list = allList.filter(c => c.chance === 'Moderate');
+    else if (filter === 'ambitious') list = allList.filter(c => c.chance === 'Low');
+    else if (filter === 'tier1') list = tierCalls.tier1 || [];
     else if (filter === 'tier1_5') list = tierCalls.tier1_5 || [];
-    else if (filter === 'tier2') list = tierCalls.tier2 || [];
+    else if (filter === 'tier2') list = [...(tierCalls.tier2_top || []), ...(tierCalls.tier2 || [])];
     else if (filter === 'tier3') list = tierCalls.tier3 || [];
-    else {
-      list = [
-        ...(tierCalls.tier1 || []),
-        ...(tierCalls.tier1_5 || []),
-        ...(tierCalls.tier2_top || []),
-        ...(tierCalls.tier2 || []),
-        ...(tierCalls.tier3 || [])
-      ];
-    }
+    else list = allList;
 
     if (list.length === 0) {
       callsBox.innerHTML = `

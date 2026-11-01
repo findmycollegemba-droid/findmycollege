@@ -61,7 +61,7 @@ addUrl(`${BASE_URL}/programs/specializations`, 'weekly', '0.85', TODAY);
 addUrl(`${BASE_URL}/programs/roi`, 'weekly', '0.85', TODAY);
 
 // 3. Score Calculators & Tools
-addUrl(`${BASE_URL}/tools/cat-college-predictor`, 'daily', '1.0', TODAY, { loc: DEFAULT_IMAGE, title: 'CAT College Predictor 2026 & IIM Call Predictor' });
+addUrl(`${BASE_URL}/tools/cat-college-predictor`, 'daily', '1.0', TODAY, { loc: DEFAULT_IMAGE, title: 'CAT Score Calculator 2026: Percentile & College Predictor' });
 addUrl(`${BASE_URL}/tools/xat-percentile-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'XAT Score Calculator & XLRI Percentile Predictor 2027' });
 addUrl(`${BASE_URL}/tools/cmat-percentile-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'CMAT Score Calculator & JBIMS Cutoff Predictor 2026' });
 

@@ -28,10 +28,26 @@ export async function onRequest(context) {
     return Response.redirect(url.toString(), 301);
   }
 
+  // 4. Prevent Cloudflare Pages directory trailing-slash 308 redirect loops:
+  // If requesting a clean static route without trailing slash and without an extension,
+  // fetch /index.html directly from ASSETS to return 200 OK directly.
+  if (context.env && context.env.ASSETS && !url.pathname.includes('.')) {
+    try {
+      const assetUrl = new URL(`${url.pathname}/index.html`, url.origin);
+      const assetReq = new Request(assetUrl, context.request);
+      const assetRes = await context.env.ASSETS.fetch(assetReq);
+      if (assetRes && assetRes.status === 200) {
+        return assetRes;
+      }
+    } catch (e) {
+      // Fall through to context.next() if asset fetch fails
+    }
+  }
+
   // Pass through to static assets
   const response = await context.next();
 
-  // 4. If 404, enforce strict X-Robots-Tag
+  // 5. If 404, enforce strict X-Robots-Tag
   if (response.status === 404) {
     const newHeaders = new Headers(response.headers);
     newHeaders.set('X-Robots-Tag', 'noindex, nofollow');
