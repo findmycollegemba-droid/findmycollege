@@ -1,7 +1,7 @@
-import { calculateCATScore, calculateXATScore, calculateCMATScore, calculateGoalPlan } from '../utils/calculators.js';
+import { calculateCATScore, calculateXATScore, calculateCMATScore, calculateSNAPScore, calculateNMATScore, calculateGoalPlan } from '../utils/calculators.js';
 
 export function renderToolsPage(activeSub = 'cat') {
-  const currentSub = ['cat', 'xat', 'cmat'].includes(activeSub) ? activeSub : 'cat';
+  const currentSub = ['cat', 'xat', 'cmat', 'snap', 'nmat'].includes(activeSub) ? activeSub : 'cat';
 
   const TOOL_HEADINGS = {
     cat: {
@@ -18,6 +18,16 @@ export function renderToolsPage(activeSub = 'cat') {
       badge: '⚡ CMAT 400-Mark Score & Percentile Normalization System',
       title: 'CMAT 2026 Score Calculator & JBIMS Cutoff Predictor',
       subtitle: 'Calculate your score across QA, LR, Language, General Awareness, and Innovation. Predict JBIMS MMS, SIMSREE, GIM Goa, and K J Somaiya percentile cutoffs.'
+    },
+    snap: {
+      badge: '⚡ SNAP 2026 Score Calculator & SIBM Percentile Predictor',
+      title: 'SNAP 2026 Score Calculator & SIBM Percentile Predictor',
+      subtitle: 'Calculate your raw score from 60 questions in 60 minutes with official negative marking and forecast Symbiosis B-school calls (SIBM Pune, SCMHRD, SIIB).'
+    },
+    nmat: {
+      badge: '🎯 NMAT Scaled Score & NMIMS Cutoff Engine',
+      title: 'NMAT Score to Percentile Calculator & NMIMS Cutoff Predictor',
+      subtitle: 'Enter your Language, Quant, and Logical Reasoning scores out of 360 to estimate your national percentile and NMIMS Mumbai Core & HR call chances.'
     }
   };
 
@@ -38,13 +48,19 @@ export function renderToolsPage(activeSub = 'cat') {
           <!-- Exam Tools Tab Bar -->
           <div class="tools-tab-bar">
             <button class="tool-tab-btn ${currentSub === 'cat' ? 'active' : ''}" data-tool-tab="cat">
-              <span class="tab-emoji">📊</span> CAT Score Calculator &amp; Predictor
+              <span class="tab-emoji">📊</span> CAT Calculator
             </button>
             <button class="tool-tab-btn ${currentSub === 'xat' ? 'active' : ''}" data-tool-tab="xat">
               <span class="tab-emoji">🎯</span> XAT 2027 Calculator
             </button>
             <button class="tool-tab-btn ${currentSub === 'cmat' ? 'active' : ''}" data-tool-tab="cmat">
               <span class="tab-emoji">⚡</span> CMAT 2026 Calculator
+            </button>
+            <button class="tool-tab-btn ${currentSub === 'snap' ? 'active' : ''}" data-tool-tab="snap">
+              <span class="tab-emoji">⚡</span> SNAP 2026 Calculator
+            </button>
+            <button class="tool-tab-btn ${currentSub === 'nmat' ? 'active' : ''}" data-tool-tab="nmat">
+              <span class="tab-emoji">🎯</span> NMAT Score Predictor
             </button>
           </div>
         </div>
@@ -1532,6 +1548,125 @@ export function renderToolsPage(activeSub = 'cat') {
                 <div class="calls-list-box" id="cmatCallsListBox">
                   <!-- Dynamically populated -->
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 4: SNAP 2026 CALCULATOR -->
+        <div class="tool-panel ${currentSub === 'snap' ? 'active' : ''}" id="panel-snap-calc">
+          <div class="calculator-layout">
+            <div class="calc-form-card">
+              <div class="calc-header-flex">
+                <div>
+                  <h3 class="calc-card-title">SNAP 2026 Score to Percentile</h3>
+                  <p class="calc-card-sub">60 Questions • 60 Minutes • +1 Correct, -0.25 Incorrect</p>
+                </div>
+              </div>
+
+              <div class="inputs-row-2">
+                <div class="form-field">
+                  <label>General English (15 Qs)</label>
+                  <input type="number" id="snapEngCorrect" min="0" max="15" value="12" placeholder="Correct" class="score-input" />
+                  <input type="number" id="snapEngWrong" min="0" max="15" value="2" placeholder="Wrong" class="score-input" style="margin-top:6px;" />
+                </div>
+                <div class="form-field">
+                  <label>Analytical &amp; Logical Reasoning (25 Qs)</label>
+                  <input type="number" id="snapLrCorrect" min="0" max="25" value="20" placeholder="Correct" class="score-input" />
+                  <input type="number" id="snapLrWrong" min="0" max="25" value="3" placeholder="Wrong" class="score-input" style="margin-top:6px;" />
+                </div>
+                <div class="form-field">
+                  <label>Quant, Data Interpretation &amp; DS (20 Qs)</label>
+                  <input type="number" id="snapQaCorrect" min="0" max="20" value="16" placeholder="Correct" class="score-input" />
+                  <input type="number" id="snapQaWrong" min="0" max="20" value="2" placeholder="Wrong" class="score-input" style="margin-top:6px;" />
+                </div>
+              </div>
+
+              <button class="btn-gradient-pill full-width-btn" id="btnCalculateSNAP" style="margin-top: 20px;">
+                <span>Calculate SNAP Score &amp; SIBM Calls 🚀</span>
+              </button>
+            </div>
+
+            <!-- SNAP Results -->
+            <div class="calc-results-card" id="snapResultsCard">
+              <div class="results-header">
+                <span class="badge-tag">SNAP Projection</span>
+                <h3 class="results-title">Projected SNAP Percentile</h3>
+              </div>
+
+              <div class="hero-score-badge">
+                <div class="big-percentile" id="snapResPercentile">98.50 %ile</div>
+                <div class="percentile-label">Estimated National Percentile</div>
+              </div>
+
+              <div class="score-summary-grid">
+                <div class="summary-metric">
+                  <div class="s-val text-blue" id="snapResTotal">42.75</div>
+                  <div class="s-lbl">Raw Score / 60</div>
+                </div>
+              </div>
+
+              <h4 class="breakdown-title">Symbiosis Institute Eligibility</h4>
+              <div class="calls-list-box" id="snapCallsListBox">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 5: NMAT PREDICTOR -->
+        <div class="tool-panel ${currentSub === 'nmat' ? 'active' : ''}" id="panel-nmat-calc">
+          <div class="calculator-layout">
+            <div class="calc-form-card">
+              <div class="calc-header-flex">
+                <div>
+                  <h3 class="calc-card-title">NMAT by GMAC Scaled Score to Percentile</h3>
+                  <p class="calc-card-sub">Max Score: 360 (108 Questions • Zero Negative Marking)</p>
+                </div>
+              </div>
+
+              <div class="inputs-row-2">
+                <div class="form-field">
+                  <label>Language Skills Scaled Score (12 to 120)</label>
+                  <input type="number" id="nmatLangScore" min="12" max="120" value="78" placeholder="Lang Score" class="score-input" />
+                </div>
+                <div class="form-field">
+                  <label>Quantitative Skills Scaled Score (12 to 120)</label>
+                  <input type="number" id="nmatQuantScore" min="12" max="120" value="76" placeholder="Quant Score" class="score-input" />
+                </div>
+                <div class="form-field">
+                  <label>Logical Reasoning Scaled Score (12 to 120)</label>
+                  <input type="number" id="nmatLrScore" min="12" max="120" value="77" placeholder="LR Score" class="score-input" />
+                </div>
+              </div>
+
+              <button class="btn-gradient-pill full-width-btn" id="btnCalculateNMAT" style="margin-top: 20px;">
+                <span>Predict NMIMS Mumbai Calls 🚀</span>
+              </button>
+            </div>
+
+            <!-- NMAT Results -->
+            <div class="calc-results-card" id="nmatResultsCard">
+              <div class="results-header">
+                <span class="badge-tag">NMAT Projection</span>
+                <h3 class="results-title">Projected NMAT Percentile</h3>
+              </div>
+
+              <div class="hero-score-badge">
+                <div class="big-percentile" id="nmatResPercentile">96.50 %ile</div>
+                <div class="percentile-label">Estimated National Percentile</div>
+              </div>
+
+              <div class="score-summary-grid">
+                <div class="summary-metric">
+                  <div class="s-val text-blue" id="nmatResTotal">231</div>
+                  <div class="s-lbl">Score / 360</div>
+                </div>
+              </div>
+
+              <h4 class="breakdown-title">B-School Eligibility</h4>
+              <div class="calls-list-box" id="nmatCallsListBox">
+                <!-- Dynamically populated -->
               </div>
             </div>
           </div>

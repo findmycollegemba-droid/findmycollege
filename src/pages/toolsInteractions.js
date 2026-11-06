@@ -1,4 +1,4 @@
-import { calculateCATScore, calculateXATScore, calculateCMATScore, calculateGoalPlan, parseResponseSheetHTML, getSampleResponseSheet } from '../utils/calculators.js';
+import { calculateCATScore, calculateXATScore, calculateCMATScore, calculateSNAPScore, calculateNMATScore, calculateGoalPlan, parseResponseSheetHTML, getSampleResponseSheet } from '../utils/calculators.js';
 import { promptCalculatorGate, getSavedCalculatorLead } from '../components/calculatorGateModal.js';
 import { fireConfetti } from '../utils/confettiHelper.js';
 import { sendLeadToCRM } from '../utils/crm.js';
@@ -24,6 +24,8 @@ export function initToolsInteractions() {
       let targetUrl = '/tools/cat-college-predictor';
       if (tab === 'xat') targetUrl = '/tools/xat-percentile-calculator';
       else if (tab === 'cmat') targetUrl = '/tools/cmat-percentile-calculator';
+      else if (tab === 'snap') targetUrl = '/tools/snap-score-calculator';
+      else if (tab === 'nmat') targetUrl = '/tools/nmat-score-predictor';
 
       const TOOL_HEADINGS = {
         cat: {
@@ -40,6 +42,16 @@ export function initToolsInteractions() {
           badge: '⚡ CMAT 400-Mark Score & Percentile Normalization System',
           title: 'CMAT 2026 Score Calculator & JBIMS Cutoff Predictor',
           subtitle: 'Calculate your score across QA, LR, Language, General Awareness, and Innovation. Predict JBIMS MMS, SIMSREE, GIM Goa, and K J Somaiya percentile cutoffs.'
+        },
+        snap: {
+          badge: '⚡ SNAP 2026 Score Calculator & SIBM Percentile Predictor',
+          title: 'SNAP 2026 Score Calculator & SIBM Percentile Predictor',
+          subtitle: 'Calculate your raw score from 60 questions in 60 minutes with official negative marking and forecast Symbiosis B-school calls (SIBM Pune, SCMHRD, SIIB).'
+        },
+        nmat: {
+          badge: '🎯 NMAT Scaled Score & NMIMS Cutoff Engine',
+          title: 'NMAT Score to Percentile Calculator & NMIMS Cutoff Predictor',
+          subtitle: 'Enter your Language, Quant, and Logical Reasoning scores out of 360 to estimate your national percentile and NMIMS Mumbai Core & HR call chances.'
         }
       };
 
@@ -948,6 +960,82 @@ export function initToolsInteractions() {
 
   if (btnCalcCmat) btnCalcCmat.addEventListener('click', handleCmatCalculateClick);
   document.getElementById('btnUnlockScorecardCmat')?.addEventListener('click', handleCmatCalculateClick);
+
+  // ============================================================
+  // SNAP CALCULATOR
+  // ============================================================
+  const btnCalcSnap = document.getElementById('btnCalculateSNAP');
+  const runSnapCalc = () => {
+    const english = { correct: document.getElementById('snapEngCorrect')?.value, wrong: document.getElementById('snapEngWrong')?.value };
+    const lr = { correct: document.getElementById('snapLrCorrect')?.value, wrong: document.getElementById('snapLrWrong')?.value };
+    const qa = { correct: document.getElementById('snapQaCorrect')?.value, wrong: document.getElementById('snapQaWrong')?.value };
+
+    const res = calculateSNAPScore({ english, lr, qa });
+
+    const percEl = document.getElementById('snapResPercentile');
+    const rawEl = document.getElementById('snapResTotal');
+    const callsBox = document.getElementById('snapCallsListBox');
+
+    if (percEl) percEl.innerText = `${res.estimatedPercentile} %ile`;
+    if (rawEl) rawEl.innerText = `${res.totalRaw}`;
+
+    if (callsBox) {
+      callsBox.innerHTML = res.collegeCalls.map(c => `
+        <div class="call-badge-item">
+          <span class="call-status confirmed">${c.status}</span>
+          <span class="call-name">${c.name}</span>
+        </div>
+      `).join('');
+    }
+
+    if (parseFloat(res.estimatedPercentile) >= 95) {
+      try {
+        fireConfetti({ particleCount: 70, spread: 60, origin: { y: 0.6 } });
+      } catch (e) {}
+    }
+
+    return res;
+  };
+
+  if (btnCalcSnap) btnCalcSnap.addEventListener('click', runSnapCalc);
+
+  // ============================================================
+  // NMAT CALCULATOR
+  // ============================================================
+  const btnCalcNmat = document.getElementById('btnCalculateNMAT');
+  const runNmatCalc = () => {
+    const language = document.getElementById('nmatLangScore')?.value;
+    const quant = document.getElementById('nmatQuantScore')?.value;
+    const logic = document.getElementById('nmatLrScore')?.value;
+
+    const res = calculateNMATScore({ language, quant, logic });
+
+    const percEl = document.getElementById('nmatResPercentile');
+    const rawEl = document.getElementById('nmatResTotal');
+    const callsBox = document.getElementById('nmatCallsListBox');
+
+    if (percEl) percEl.innerText = `${res.estimatedPercentile} %ile`;
+    if (rawEl) rawEl.innerText = `${res.totalScore}`;
+
+    if (callsBox) {
+      callsBox.innerHTML = res.collegeCalls.map(c => `
+        <div class="call-badge-item">
+          <span class="call-status confirmed">${c.status}</span>
+          <span class="call-name">${c.name}</span>
+        </div>
+      `).join('');
+    }
+
+    if (parseFloat(res.estimatedPercentile) >= 95) {
+      try {
+        fireConfetti({ particleCount: 70, spread: 60, origin: { y: 0.6 } });
+      } catch (e) {}
+    }
+
+    return res;
+  };
+
+  if (btnCalcNmat) btnCalcNmat.addEventListener('click', runNmatCalc);
 
   // ============================================================
   // INITIAL LOAD STATE (Locks scorecards if lead not yet provided)

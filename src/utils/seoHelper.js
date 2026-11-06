@@ -186,9 +186,29 @@ export async function updatePageSEO(page = 'home', sub = null, params = null) {
           { name: 'Calculators & Tools', url: `${BASE_URL}/tools/cat-college-predictor` },
           { name: 'CMAT Calculator', url: meta.canonical }
         ];
+      } else if (toolSub === 'snap') {
+        meta.title = 'SNAP 2026 Score Calculator & SIBM Percentile Predictor | FMBS';
+        meta.description = 'Calculate your SNAP 60-mark score (+1/-0.25). Predict SIBM Pune, SCMHRD, and SIIB interview call cutoffs with instant percentile converter.';
+        meta.canonical = `${BASE_URL}/tools/snap-score-calculator`;
+        meta.toolSub = 'snap';
+        meta.breadcrumbs = [
+          { name: 'Home', url: `${BASE_URL}/` },
+          { name: 'Calculators & Tools', url: `${BASE_URL}/tools/cat-college-predictor` },
+          { name: 'SNAP Score Calculator', url: meta.canonical }
+        ];
+      } else if (toolSub === 'nmat') {
+        meta.title = 'NMAT Score to Percentile Calculator & NMIMS Predictor | FMBS';
+        meta.description = 'Predict your NMAT by GMAC scaled score & percentile out of 360 marks. Check eligibility for NMIMS Mumbai Core (235+ score) and top B-schools.';
+        meta.canonical = `${BASE_URL}/tools/nmat-score-predictor`;
+        meta.toolSub = 'nmat';
+        meta.breadcrumbs = [
+          { name: 'Home', url: `${BASE_URL}/` },
+          { name: 'Calculators & Tools', url: `${BASE_URL}/tools/cat-college-predictor` },
+          { name: 'NMAT Score Predictor', url: meta.canonical }
+        ];
       } else {
         meta.title = 'MBA Score Calculators & Percentile Predictors | FMBS';
-        meta.description = 'Free, accurate MBA percentile predictors and response sheet score calculators for CAT, XAT, and CMAT. Check your normalized scores instantly on FindMyBSchool.';
+        meta.description = 'Free, accurate MBA percentile predictors and response sheet score calculators for CAT, XAT, SNAP, NMAT, and CMAT. Check your normalized scores instantly on FindMyBSchool.';
         meta.canonical = `${BASE_URL}/tools/cat-college-predictor`;
         meta.breadcrumbs = [
           { name: 'Home', url: `${BASE_URL}/` },

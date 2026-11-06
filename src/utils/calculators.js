@@ -143,6 +143,42 @@ export const CMAT_OVERALL_ANCHORS = [
   { score: 0,   perc: 0.00 }
 ];
 
+// SNAP Score vs Percentile Anchors (Max 60 Marks, 60 Qs, +1 / -0.25)
+export const SNAP_OVERALL_ANCHORS = [
+  { score: 48, perc: 99.95 },
+  { score: 45, perc: 99.80 },
+  { score: 43, perc: 99.50 },
+  { score: 41, perc: 99.00 },
+  { score: 39, perc: 98.00 },
+  { score: 37, perc: 97.00 },
+  { score: 35, perc: 95.00 },
+  { score: 33, perc: 92.00 },
+  { score: 31, perc: 90.00 },
+  { score: 28, perc: 85.00 },
+  { score: 25, perc: 80.00 },
+  { score: 22, perc: 75.00 },
+  { score: 19, perc: 65.00 },
+  { score: 15, perc: 50.00 },
+  { score: 0,  perc: 0.00 }
+];
+
+// NMAT Scaled Score vs Percentile & Call Cutoff Anchors (Max 360 Marks, 108 Qs, No -ve)
+export const NMAT_OVERALL_ANCHORS = [
+  { score: 265, perc: 99.90 },
+  { score: 255, perc: 99.50 },
+  { score: 245, perc: 98.50 },
+  { score: 238, perc: 97.00 },
+  { score: 232, perc: 95.00 },
+  { score: 225, perc: 92.00 },
+  { score: 218, perc: 88.00 },
+  { score: 210, perc: 85.00 },
+  { score: 200, perc: 80.00 },
+  { score: 190, perc: 75.00 },
+  { score: 180, perc: 70.00 },
+  { score: 160, perc: 55.00 },
+  { score: 0,   perc: 0.00 }
+];
+
 export function calculateCATScore({ 
   slot = '1', 
   category = 'GEN', 
@@ -656,6 +692,76 @@ export function calculateCMATScore({ quant = {}, lr = {}, lang = {}, gk = {}, in
     totalRaw,
     maxMarks,
     estimatedPercentile: Number(estimatedPercentile).toFixed(2),
+    collegeCalls
+  };
+}
+
+// SNAP 2026 Calculator (60 Questions in 60 Minutes, +1 / -0.25)
+export function calculateSNAPScore({ english = {}, lr = {}, qa = {} }) {
+  const calcSection = (s) => (Math.max(0, Number(s.correct || 0)) * 1) - (Math.max(0, Number(s.wrong || 0)) * 0.25);
+
+  const engScore = calcSection(english);
+  const lrScore = calcSection(lr);
+  const qaScore = calcSection(qa);
+
+  const totalRaw = Number((engScore + lrScore + qaScore).toFixed(2));
+  const maxMarks = 60;
+
+  const estimatedPercentile = interpolatePercentile(totalRaw, SNAP_OVERALL_ANCHORS);
+
+  const collegeCalls = [];
+  if (estimatedPercentile >= 98.50) collegeCalls.push({ name: 'SIBM Pune (Symbiosis Institute of Business Management)', status: 'Interview Call Expected (98.5+ %ile)', badge: 'Tier 1' });
+  if (estimatedPercentile >= 97.00) collegeCalls.push({ name: 'SCMHRD Pune (MBA Core / Business Analytics)', status: 'Interview Call Expected (97.0+ %ile)', badge: 'Tier 1' });
+  if (estimatedPercentile >= 92.50) collegeCalls.push({ name: 'SIIB Pune (International Business)', status: 'High Probability (93+ %ile)', badge: 'Tier 1.5' });
+  if (estimatedPercentile >= 90.00) collegeCalls.push({ name: 'SIBM Bangalore (MBA Core)', status: 'High Probability (90+ %ile)', badge: 'Tier 1.5' });
+  if (estimatedPercentile >= 87.00) collegeCalls.push({ name: 'SIOM Nashik (Operations Management)', status: 'High Probability (87+ %ile)', badge: 'Tier 2' });
+  if (estimatedPercentile >= 82.00) collegeCalls.push({ name: 'SICSR Pune / SITM Pune (Telecom)', status: 'Safe Shortlist (82+ %ile)', badge: 'Tier 2' });
+  if (estimatedPercentile >= 75.00) collegeCalls.push({ name: 'SIMS Pune / SCIT Pune (IT & Data)', status: 'Confirmed Shortlist', badge: 'Tier 2.5' });
+
+  return {
+    engScore: Number(engScore.toFixed(2)),
+    lrScore: Number(lrScore.toFixed(2)),
+    qaScore: Number(qaScore.toFixed(2)),
+    totalRaw,
+    maxMarks,
+    estimatedPercentile: Number(estimatedPercentile).toFixed(2),
+    collegeCalls
+  };
+}
+
+// NMAT by GMAC Scaled Score & NMIMS Cutoff Predictor (360 Marks, Zero Negative)
+export function calculateNMATScore({ language = 0, quant = 0, logic = 0 }) {
+  const langScore = Math.min(120, Math.max(0, Number(language || 0)));
+  const qaScore = Math.min(120, Math.max(0, Number(quant || 0)));
+  const lrScore = Math.min(120, Math.max(0, Number(logic || 0)));
+
+  const totalScore = langScore + qaScore + lrScore;
+  const maxMarks = 360;
+
+  const estimatedPercentile = interpolatePercentile(totalScore, NMAT_OVERALL_ANCHORS);
+
+  // Sectional cutoffs for NMIMS Mumbai Core (Lang >= 74, Quant >= 72, LR >= 72, Overall >= 235)
+  const isNmimsCoreEligible = totalScore >= 235 && langScore >= 72 && qaScore >= 70 && lrScore >= 70;
+  const isNmimsHrEligible = totalScore >= 228 && langScore >= 70 && qaScore >= 68 && lrScore >= 68;
+
+  const collegeCalls = [];
+  if (isNmimsCoreEligible) collegeCalls.push({ name: 'NMIMS Mumbai (MBA Core)', status: 'Cutoff Cleared! (Core Flagship)', badge: 'Top Tier 1' });
+  if (isNmimsHrEligible) collegeCalls.push({ name: 'NMIMS Mumbai (MBA HR)', status: 'Cutoff Cleared! (HR Flagship)', badge: 'Tier 1' });
+  if (totalScore >= 225) collegeCalls.push({ name: 'K J Somaiya Mumbai (MBA Core)', status: 'High Probability', badge: 'Tier 1.5' });
+  if (totalScore >= 220) collegeCalls.push({ name: 'XIM University Bhubaneswar (MBA HRM)', status: 'High Probability', badge: 'Tier 1.5' });
+  if (totalScore >= 215) collegeCalls.push({ name: 'NMIMS Bangalore / Navi Mumbai', status: 'Safe Convert', badge: 'Tier 2' });
+  if (totalScore >= 200) collegeCalls.push({ name: 'SDA Bocconi Asia Center / NMIMS Hyderabad', status: 'Safe Convert', badge: 'Tier 2' });
+  if (totalScore >= 180) collegeCalls.push({ name: 'Alliance University / Bennett / SOIL Gurgaon', status: 'Confirmed Shortlist', badge: 'Tier 3' });
+
+  return {
+    langScore,
+    qaScore,
+    lrScore,
+    totalScore,
+    maxMarks,
+    estimatedPercentile: Number(estimatedPercentile).toFixed(2),
+    isNmimsCoreEligible,
+    isNmimsHrEligible,
     collegeCalls
   };
 }

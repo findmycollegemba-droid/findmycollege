@@ -212,6 +212,12 @@ async function handleRouteChange() {
   } else if (pathname === '/tools/cmat-percentile-calculator' || pathname === '/tools/cmat') {
     page = 'tools';
     sub = 'cmat';
+  } else if (pathname === '/tools/snap-score-calculator' || pathname === '/tools/snap') {
+    page = 'tools';
+    sub = 'snap';
+  } else if (pathname === '/tools/nmat-score-predictor' || pathname === '/tools/nmat') {
+    page = 'tools';
+    sub = 'nmat';
   } else if (pathname === '/tools') {
     window.history.replaceState(null, '', '/tools/cat-college-predictor');
     pathname = '/tools/cat-college-predictor';

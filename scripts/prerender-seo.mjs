@@ -9,6 +9,16 @@ import { SCHOLARSHIPS_DATA } from '../src/data/scholarshipsData.js';
 import { MOCK_TESTS } from '../src/data/mockTestsData.js';
 import { CITY_INFOGRAPHICS_DATA } from '../src/data/cityInfographicsData.js';
 import { AIU_OFFICIAL_LIST } from '../src/data/aiuOfficialData.js';
+import {
+  generateExamBodyHtml,
+  generateMbaCollegesBodyHtml,
+  generatePgdmCollegesBodyHtml,
+  generateProgramsCompareBodyHtml,
+  generateExamsDirectoryBodyHtml,
+  generateXatCalculatorBodyHtml,
+  generateSnapCalculatorBodyHtml,
+  generateNmatPredictorBodyHtml
+} from './prerender-helpers.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -63,7 +73,7 @@ function escapeHtml(str) {
     .replace(/'/g, '&#39;');
 }
 
-// Base Schemas present in every graph
+// Base Schemas present in every graph (SEO, GEO, AEO)
 const baseWebSiteSchema = {
   '@type': 'WebSite',
   '@id': `${BASE_URL}/#website`,
@@ -587,6 +597,70 @@ const coreRoutes = [
           '@id': `${BASE_URL}/tools/cmat-percentile-calculator#app`,
           'name': 'CMAT Score Calculator & JBIMS Cutoff Predictor',
           'url': `${BASE_URL}/tools/cmat-percentile-calculator`,
+          'applicationCategory': 'EducationalApplication',
+          'operatingSystem': 'All',
+          'offers': { '@type': 'Offer', 'price': '0', 'priceCurrency': 'INR', 'availability': 'https://schema.org/InStock' }
+        }
+      ]
+    }
+  },
+  {
+    path: '/tools/snap-score-calculator',
+    title: 'SNAP 2026 Score Calculator & SIBM Percentile Predictor | FMBS',
+    description: 'Calculate your SNAP 60-mark score (+1/-0.25). Predict SIBM Pune, SCMHRD, and SIIB interview call cutoffs with instant percentile converter.',
+    h1: 'SNAP 2026 Score Calculator & Percentile Predictor',
+    lead: 'Calculate your raw score from 60 questions in 60 minutes with official negative marking and forecast Symbiosis B-school calls (SIBM Pune, SCMHRD, SIIB).',
+    schema: {
+      '@context': 'https://schema.org',
+      '@graph': [
+        baseWebSiteSchema,
+        baseOrgSchema,
+        {
+          '@type': 'BreadcrumbList',
+          '@id': `${BASE_URL}/tools/snap-score-calculator#breadcrumb`,
+          'itemListElement': [
+            { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `${BASE_URL}/` },
+            { '@type': 'ListItem', 'position': 2, 'name': 'Tools', 'item': `${BASE_URL}/tools` },
+            { '@type': 'ListItem', 'position': 3, 'name': 'SNAP Calculator', 'item': `${BASE_URL}/tools/snap-score-calculator` }
+          ]
+        },
+        {
+          '@type': 'WebApplication',
+          '@id': `${BASE_URL}/tools/snap-score-calculator#app`,
+          'name': 'SNAP 2026 Score Calculator & SIBM Percentile Predictor',
+          'url': `${BASE_URL}/tools/snap-score-calculator`,
+          'applicationCategory': 'EducationalApplication',
+          'operatingSystem': 'All',
+          'offers': { '@type': 'Offer', 'price': '0', 'priceCurrency': 'INR', 'availability': 'https://schema.org/InStock' }
+        }
+      ]
+    }
+  },
+  {
+    path: '/tools/nmat-score-predictor',
+    title: 'NMAT Score to Percentile Calculator & NMIMS Predictor | FMBS',
+    description: 'Predict your NMAT by GMAC scaled score & percentile out of 360 marks. Check eligibility for NMIMS Mumbai Core (235+ score) and top B-schools.',
+    h1: 'NMAT Score to Percentile Calculator & NMIMS Cutoff Predictor',
+    lead: 'Enter your Language, Quant, and Logical Reasoning scores out of 360 to estimate your national percentile and NMIMS Mumbai Core & HR call chances.',
+    schema: {
+      '@context': 'https://schema.org',
+      '@graph': [
+        baseWebSiteSchema,
+        baseOrgSchema,
+        {
+          '@type': 'BreadcrumbList',
+          '@id': `${BASE_URL}/tools/nmat-score-predictor#breadcrumb`,
+          'itemListElement': [
+            { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `${BASE_URL}/` },
+            { '@type': 'ListItem', 'position': 2, 'name': 'Tools', 'item': `${BASE_URL}/tools` },
+            { '@type': 'ListItem', 'position': 3, 'name': 'NMAT Predictor', 'item': `${BASE_URL}/tools/nmat-score-predictor` }
+          ]
+        },
+        {
+          '@type': 'WebApplication',
+          '@id': `${BASE_URL}/tools/nmat-score-predictor#app`,
+          'name': 'NMAT Score to Percentile Calculator & NMIMS Predictor',
+          'url': `${BASE_URL}/tools/nmat-score-predictor`,
           'applicationCategory': 'EducationalApplication',
           'operatingSystem': 'All',
           'offers': { '@type': 'Offer', 'price': '0', 'priceCurrency': 'INR', 'availability': 'https://schema.org/InStock' }
@@ -1472,6 +1546,20 @@ for (const cr of coreRoutes) {
   let bodyHtml = '';
   if (cr.path === '/tools/cat-college-predictor') {
     bodyHtml = generateCatCalculatorBodyHtml();
+  } else if (cr.path === '/colleges/mba') {
+    bodyHtml = generateMbaCollegesBodyHtml(COLLEGES_DATA);
+  } else if (cr.path === '/colleges/pgdm') {
+    bodyHtml = generatePgdmCollegesBodyHtml(COLLEGES_DATA);
+  } else if (cr.path === '/programs/compare') {
+    bodyHtml = generateProgramsCompareBodyHtml();
+  } else if (cr.path === '/exams') {
+    bodyHtml = generateExamsDirectoryBodyHtml(EXAMS_DATA);
+  } else if (cr.path === '/tools/xat-percentile-calculator') {
+    bodyHtml = generateXatCalculatorBodyHtml();
+  } else if (cr.path === '/tools/snap-score-calculator') {
+    bodyHtml = generateSnapCalculatorBodyHtml();
+  } else if (cr.path === '/tools/nmat-score-predictor') {
+    bodyHtml = generateNmatPredictorBodyHtml();
   } else {
     bodyHtml = `
       <header style="padding: 20px 24px; border-bottom: 1px solid #E2E8F0; text-align: center; background: #FAFAFE;">
@@ -1769,49 +1857,7 @@ for (const exam of EXAMS_DATA) {
     schema: examSchema
   };
 
-  const bodyHtml = `
-    <header style="padding: 20px 24px; border-bottom: 1px solid #E2E8F0; text-align: center; background: #FAFAFE;">
-      <a href="/" style="font-weight: 800; font-size: 1.5rem; color: #6B2CF5; text-decoration: none;">FindMyBSchool</a>
-      <p style="margin: 4px 0 0; color: #64748B; font-size: 0.95rem;">India’s Verified MBA &amp; PGDM Admissions Portal • Session 2027-29</p>
-    </header>
-    <main style="max-width: 1100px; margin: 32px auto; padding: 0 20px; font-family: system-ui, -apple-system, sans-serif;">
-      <nav aria-label="Breadcrumb" style="font-size: 0.9rem; color: #64748B; margin-bottom: 16px;">
-        <a href="/" style="color: #6B2CF5; text-decoration: none;">Home</a> &gt; 
-        <a href="/exams" style="color: #6B2CF5; text-decoration: none;">Exams</a> &gt; 
-        <span>${escapeHtml(exam.name)}</span>
-      </nav>
-      <h1 style="font-size: 2.2rem; font-weight: 800; color: #0F172A; line-height: 1.25;">
-        ${escapeHtml(exam.fullName)} (${escapeHtml(exam.name)}) 2026-27
-      </h1>
-      <p style="color: #475569; font-size: 1.1rem; line-height: 1.6; margin-top: 14px;">
-        Official examination roadmap, registration deadlines, sectional pattern, marking criteria, and cutoff percentiles across participating business schools.
-      </p>
-
-      <!-- Exam Key Factsheet -->
-      <section style="margin-top: 24px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px;">
-          <div>
-            <div style="font-size: 0.85rem; color: #64748B; font-weight: 600;">CONDUCTING BODY</div>
-            <div style="font-size: 1.2rem; font-weight: 800; color: #0F172A; margin-top: 4px;">${escapeHtml(exam.conductingBody)}</div>
-          </div>
-          <div>
-            <div style="font-size: 0.85rem; color: #64748B; font-weight: 600;">EXAM DATE</div>
-            <div style="font-size: 1.2rem; font-weight: 800; color: #6B2CF5; margin-top: 4px;">${escapeHtml(exam.examDate)}</div>
-          </div>
-          <div>
-            <div style="font-size: 0.85rem; color: #64748B; font-weight: 600;">TEST FORMAT</div>
-            <div style="font-size: 1.2rem; font-weight: 800; color: #10B981; margin-top: 4px;">${escapeHtml(exam.mode || 'Computer Based Test')}</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Actions -->
-      <div style="margin-top: 28px;">
-        <a href="/tools/cat-college-predictor" style="display: inline-block; padding: 12px 24px; background: #6B2CF5; color: #FFFFFF; font-weight: 700; text-decoration: none; border-radius: 8px;">Check Cutoffs &amp; Predictor</a>
-        <a href="/colleges" style="display: inline-block; margin-left: 12px; padding: 12px 24px; background: #F1F5F9; color: #1E293B; font-weight: 600; text-decoration: none; border-radius: 8px;">Explore Accepting Colleges</a>
-      </div>
-    </main>
-  `;
+  const bodyHtml = generateExamBodyHtml(exam);
   writeStaticRoute(`/exams/${exam.id}`, generatePageHtml(meta, bodyHtml));
   count++;
 }

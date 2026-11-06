@@ -64,6 +64,8 @@ addUrl(`${BASE_URL}/programs/roi`, 'weekly', '0.85', TODAY);
 addUrl(`${BASE_URL}/tools/cat-college-predictor`, 'daily', '1.0', TODAY, { loc: DEFAULT_IMAGE, title: 'CAT Score Calculator 2026: Percentile & College Predictor' });
 addUrl(`${BASE_URL}/tools/xat-percentile-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'XAT Score Calculator & XLRI Percentile Predictor 2027' });
 addUrl(`${BASE_URL}/tools/cmat-percentile-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'CMAT Score Calculator & JBIMS Cutoff Predictor 2026' });
+addUrl(`${BASE_URL}/tools/snap-score-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'SNAP 2026 Score Calculator & SIBM Percentile Predictor' });
+addUrl(`${BASE_URL}/tools/nmat-score-predictor`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'NMAT Score to Percentile Calculator & NMIMS Predictor' });
 
 // 4. College Degree Filters
 addUrl(`${BASE_URL}/colleges/mba`, 'daily', '0.85', TODAY);
