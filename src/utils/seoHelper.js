@@ -78,11 +78,12 @@ export async function updatePageSEO(page = 'home', sub = null, params = null) {
       } else if (searchQuery) {
         meta.title = `Colleges matching "${searchQuery}" — Directory | FMBS`;
         meta.description = `Search results for "${searchQuery}" across verified business schools in India. Compare tuition fees, entrance exams, and placement packages on FindMyBSchool.`;
-        meta.canonical = `${BASE_URL}/colleges?search=${encodeURIComponent(searchQuery)}`;
+        meta.canonical = `${BASE_URL}/colleges`;
+        meta.robots = 'noindex, follow';
         meta.breadcrumbs = [
           { name: 'Home', url: `${BASE_URL}/` },
           { name: 'Colleges', url: `${BASE_URL}/colleges` },
-          { name: `Search: ${searchQuery}`, url: meta.canonical }
+          { name: `Search: ${searchQuery}`, url: `${BASE_URL}/colleges?search=${encodeURIComponent(searchQuery)}` }
         ];
       } else if (cityParam) {
         meta.title = `Top MBA Colleges in ${cityParam}: Fees & Cutoffs 2027`;
@@ -450,6 +451,17 @@ export async function updatePageSEO(page = 'home', sub = null, params = null) {
         { name: 'Privacy Policy', url: meta.canonical }
       ];
       break;
+
+    case '404':
+      meta.title = 'Page Not Found (404) | FindMyBSchool';
+      meta.description = 'Page not found. Explore 600+ verified MBA colleges, fee structures, cutoffs, and percentile calculators on FindMyBSchool.';
+      meta.canonical = null;
+      meta.robots = 'noindex, nofollow';
+      meta.breadcrumbs = [
+        { name: 'Home', url: `${BASE_URL}/` },
+        { name: 'Page Not Found', url: `${BASE_URL}/404` }
+      ];
+      break;
   }
 
   // 1. Apply DOM Title
@@ -468,7 +480,8 @@ export async function updatePageSEO(page = 'home', sub = null, params = null) {
 
   setMeta('name', 'title', meta.title);
   setMeta('name', 'description', meta.description);
-  setMeta('name', 'robots', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
+  const robotsDirective = meta.robots || 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
+  setMeta('name', 'robots', robotsDirective);
 
   // Geo Tags (for India Local & Geo SEO)
   setMeta('name', 'geo.region', 'IN-DL');
@@ -480,7 +493,9 @@ export async function updatePageSEO(page = 'home', sub = null, params = null) {
   const shareImage = meta.image || DEFAULT_OG_IMAGE;
   setMeta('property', 'og:title', meta.title);
   setMeta('property', 'og:description', meta.description);
-  setMeta('property', 'og:url', meta.canonical);
+  if (meta.canonical) {
+    setMeta('property', 'og:url', meta.canonical);
+  }
   setMeta('property', 'og:type', meta.ogType || 'website');
   setMeta('property', 'og:site_name', 'FindMyBSchool');
   setMeta('property', 'og:image', shareImage);
@@ -495,17 +510,23 @@ export async function updatePageSEO(page = 'home', sub = null, params = null) {
   setMeta('name', 'twitter:creator', '@findmybschool');
   setMeta('name', 'twitter:title', meta.title);
   setMeta('name', 'twitter:description', meta.description);
-  setMeta('name', 'twitter:url', meta.canonical);
+  if (meta.canonical) {
+    setMeta('name', 'twitter:url', meta.canonical);
+  }
   setMeta('name', 'twitter:image', shareImage);
 
-  // Canonical Link
+  // Canonical Link (Only for valid canonical pages; removed on 404 to avoid soft-404 canonical errors)
   let canonicalEl = document.querySelector('link[rel="canonical"]');
-  if (!canonicalEl) {
-    canonicalEl = document.createElement('link');
-    canonicalEl.setAttribute('rel', 'canonical');
-    document.head.appendChild(canonicalEl);
+  if (meta.canonical) {
+    if (!canonicalEl) {
+      canonicalEl = document.createElement('link');
+      canonicalEl.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalEl);
+    }
+    canonicalEl.setAttribute('href', meta.canonical);
+  } else if (canonicalEl) {
+    canonicalEl.remove();
   }
-  canonicalEl.setAttribute('href', meta.canonical);
 
   // 3. Inject / Update Schema.org JSON-LD Structured Data
   updateSchemaLD(meta);

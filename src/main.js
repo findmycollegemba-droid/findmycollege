@@ -294,8 +294,10 @@ async function handleRouteChange() {
     sub = decodeURIComponent(pathname.replace('/aiu-approved-colleges/', '').trim());
   } else if (pathname === '/search') {
     page = 'colleges';
-  } else {
+  } else if (pathname === '/' || pathname === '') {
     page = 'home';
+  } else {
+    page = '404';
   }
 
   if (page === 'home' && (params.get('search') || params.get('q'))) {
@@ -314,6 +316,22 @@ async function handleRouteChange() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 
   switch (page) {
+    case '404':
+      mainEl.innerHTML = `
+        <div style="max-width: 600px; margin: 60px auto; padding: 0 20px; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
+          <div style="font-size: 4rem; font-weight: 900; color: #6B2CF5;">404</div>
+          <h1 style="font-size: 1.8rem; font-weight: 800; color: #0F172A; margin-top: 10px;">Page Not Found</h1>
+          <p style="color: #64748B; font-size: 1.05rem; line-height: 1.6; margin-top: 14px;">
+            The page or college profile you are looking for has been moved, archived, or does not exist.
+          </p>
+          <div style="margin-top: 28px;">
+            <a href="/" style="display: inline-block; padding: 12px 24px; background: #6B2CF5; color: #FFFFFF; font-weight: 700; text-decoration: none; border-radius: 8px;">Return to Homepage</a>
+            <a href="/colleges" style="display: inline-block; margin-left: 12px; padding: 12px 24px; background: #F1F5F9; color: #1E293B; font-weight: 600; text-decoration: none; border-radius: 8px;">Search Colleges</a>
+          </div>
+        </div>
+      `;
+      break;
+
     case 'home':
       mainEl.innerHTML = renderHomePage();
       initHomeInteractions();

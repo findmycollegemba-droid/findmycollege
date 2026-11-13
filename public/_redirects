@@ -2,11 +2,9 @@
 /admin   https://crm-admin.findmycollege-mba.workers.dev/admin   302
 /admin/* https://crm-admin.findmycollege-mba.workers.dev/admin/:splat 302
 
-# Canonical 301 Permanent Redirects (Resolves Search Console Duplicate Issues)
+# Canonical 301 Permanent Redirects for Legacy URLs
 /tools                   /tools/cat-college-predictor           301
-/tools/                  /tools/cat-college-predictor           301
 /scholarship             /scholarships                          301
-/scholarship/            /scholarships                          301
 /free-mock-test          /mock-test                             301
 /free-mock-test/*        /mock-test/:splat                      301
 /terms-and-conditions    /terms                                 301
@@ -17,51 +15,25 @@
 /aiu-approved-colleges/* /aiu-approved-campuses/:splat          301
 /aiu-approved-campus     /aiu-approved-campuses                 301
 
-# Trailing Slash Normalization
-/colleges/               /colleges                              301
-/colleges/mba/           /colleges/mba                          301
-/colleges/pgdm/          /colleges/pgdm                         301
+# College Slug Normalization
 /colleges/city           /colleges                              301
-/colleges/city/          /colleges                              301
 /colleges/city/delhi     /colleges/city/delhi-ncr               301
-/colleges/city/delhi/    /colleges/city/delhi-ncr               301
 /colleges/sjmsom-iit-bombay /colleges/iit-bombay-sjmsom         301
 /colleges/imi-delhi      /colleges/imi-new-delhi                301
 /colleges/k-j-somaiya-mumbai /colleges/kj-somaiya-mumbai        301
-/scholarships/           /scholarships                          301
-/mock-test/              /mock-test                             301
-/exams/                  /exams                                 301
-/blog/                   /blog                                  301
-/programs/               /programs                              301
-/programs/mba/           /programs/mba                          301
-/programs/pgdm/          /programs/pgdm                         301
-/programs/compare/       /programs/compare                      301
-/programs/specializations/ /programs/specializations            301
-/programs/roi/           /programs/roi                          301
-/contact/                /contact                               301
-/ai-chat/                /ai-chat                               301
-/terms/                  /terms                                 301
-/privacy/                /privacy                               301
-/aiu-approved-campuses/  /aiu-approved-campuses                 301
-/tools/cat-college-predictor/ /tools/cat-college-predictor      301
+
+# Calculator Legacy URL Normalization
 /cat-score-calculator              /tools/cat-college-predictor           301
-/cat-score-calculator/             /tools/cat-college-predictor           301
 /tools/cat-score-calculator        /tools/cat-college-predictor           301
-/tools/cat-score-calculator/       /tools/cat-college-predictor           301
 /cat-percentile-calculator         /tools/cat-college-predictor           301
-/cat-percentile-calculator/        /tools/cat-college-predictor           301
 /tools/cat-percentile-calculator   /tools/cat-college-predictor           301
-/tools/cat-percentile-calculator/  /tools/cat-college-predictor           301
 /cat-response-sheet-calculator     /tools/cat-college-predictor           301
-/cat-response-sheet-calculator/    /tools/cat-college-predictor           301
 /cat-calculator                    /tools/cat-college-predictor           301
-/cat-calculator/                   /tools/cat-college-predictor           301
-/tools/xat               /tools/xat-percentile-calculator       301
-/tools/xat/              /tools/xat-percentile-calculator       301
-/tools/xat-percentile-calculator/ /tools/xat-percentile-calculator 301
-/tools/cmat              /tools/cmat-percentile-calculator      301
-/tools/cmat/             /tools/cmat-percentile-calculator      301
-/tools/cmat-percentile-calculator/ /tools/cmat-percentile-calculator 301
+/tools/xat                         /tools/xat-percentile-calculator       301
+/tools/cmat                        /tools/cmat-percentile-calculator      301
+/tools/snap                        /tools/snap-score-calculator           301
+/tools/nmat                        /tools/nmat-score-predictor            301
+
+# Internal Search Redirect
 /search                  /colleges                              301
 /search/*                /colleges                              301
-

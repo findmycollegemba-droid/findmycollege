@@ -6,6 +6,10 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /admin/
+Disallow: /*?*search=*
+Disallow: /*?*q=*
+Disallow: /*?*utm_*
+Disallow: /*?*fbclid=*
 
 # Explicit Generative Engine Optimization (GEO) & AI Answer Crawlers
 User-agent: GPTBot

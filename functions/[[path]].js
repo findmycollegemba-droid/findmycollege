@@ -1,39 +1,56 @@
 /**
  * Cloudflare Pages Function Middleware
  * Handles:
- * 1. HTTP to HTTPS 301 Permanent Redirect
- * 2. WWW to non-WWW (findmybschool.com) 301 Permanent Redirect
- * 3. Trailing slash normalization (e.g. /colleges/iim-ahmedabad/ -> /colleges/iim-ahmedabad) 301
- * 4. X-Robots-Tag: noindex on 404 pages to drop non-existent pages from Google crawl queue
+ * 1. Single-hop 301 Permanent Redirects:
+ *    - HTTP -> HTTPS
+ *    - WWW -> non-WWW (findmybschool.com)
+ *    - Trailing slash removal (e.g. /colleges/iim-ahmedabad/ -> /colleges/iim-ahmedabad)
+ *    - Uppercase path normalization to lowercase (e.g. /Colleges -> /colleges)
+ * 2. Prevents Cloudflare Pages directory trailing-slash 308 redirect loops:
+ *    Fetches /index.html directly from ASSETS to return 200 OK directly.
+ * 3. Enforces X-Robots-Tag: noindex, nofollow on all 404 responses.
  */
 export async function onRequest(context) {
   const url = new URL(context.request.url);
+  let redirectNeeded = false;
 
   // 1. Force HTTPS
   const proto = context.request.headers.get('x-forwarded-proto') || url.protocol.replace(':', '');
   if (proto === 'http') {
     url.protocol = 'https:';
-    return Response.redirect(url.toString(), 301);
+    redirectNeeded = true;
   }
 
   // 2. Force non-www
   if (url.hostname.startsWith('www.')) {
     url.hostname = url.hostname.replace(/^www\./, '');
-    return Response.redirect(url.toString(), 301);
+    redirectNeeded = true;
   }
 
-  // 3. Trailing slash normalization for paths (except root /)
+  // 3. Normalize uppercase path to lowercase (paths only, preserving query strings)
+  if (url.pathname !== url.pathname.toLowerCase()) {
+    url.pathname = url.pathname.toLowerCase();
+    redirectNeeded = true;
+  }
+
+  // 4. Trailing slash normalization for paths (except root /)
   if (url.pathname.length > 1 && url.pathname.endsWith('/')) {
-    url.pathname = url.pathname.slice(0, -1);
+    url.pathname = url.pathname.replace(/\/+$/, '');
+    redirectNeeded = true;
+  }
+
+  // Perform single consolidated 301 redirect if any normalization was needed
+  if (redirectNeeded) {
     return Response.redirect(url.toString(), 301);
   }
 
-  // 4. Prevent Cloudflare Pages directory trailing-slash 308 redirect loops:
-  // If requesting a clean static route without trailing slash and without an extension,
-  // fetch /index.html directly from ASSETS to return 200 OK directly.
+  // 5. Prevent Cloudflare Pages directory trailing-slash 308 redirect loops:
+  // For clean static routes without trailing slash and without file extension,
+  // fetch /index.html directly from ASSETS and return 200 OK directly.
   if (context.env && context.env.ASSETS && !url.pathname.includes('.')) {
     try {
-      const assetUrl = new URL(`${url.pathname}/index.html`, url.origin);
+      const cleanPath = url.pathname === '/' ? '' : url.pathname;
+      const assetUrl = new URL(`${cleanPath}/index.html`, url.origin);
       const assetReq = new Request(assetUrl, context.request);
       const assetRes = await context.env.ASSETS.fetch(assetReq);
       if (assetRes && assetRes.status === 200) {
@@ -47,7 +64,7 @@ export async function onRequest(context) {
   // Pass through to static assets
   const response = await context.next();
 
-  // 5. If 404, enforce strict X-Robots-Tag
+  // 6. If 404, enforce strict X-Robots-Tag and return 404 status
   if (response.status === 404) {
     const newHeaders = new Headers(response.headers);
     newHeaders.set('X-Robots-Tag', 'noindex, nofollow');

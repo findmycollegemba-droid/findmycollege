@@ -10,6 +10,8 @@ import { MOCK_TESTS } from '../src/data/mockTestsData.js';
 import { CITY_INFOGRAPHICS_DATA } from '../src/data/cityInfographicsData.js';
 import { AIU_OFFICIAL_LIST } from '../src/data/aiuOfficialData.js';
 import {
+  COMMON_HEADER,
+  COMMON_FOOTER,
   generateExamBodyHtml,
   generateMbaCollegesBodyHtml,
   generatePgdmCollegesBodyHtml,
@@ -17,7 +19,19 @@ import {
   generateExamsDirectoryBodyHtml,
   generateXatCalculatorBodyHtml,
   generateSnapCalculatorBodyHtml,
-  generateNmatPredictorBodyHtml
+  generateNmatPredictorBodyHtml,
+  generateCollegesDirectoryBodyHtml,
+  generateScholarshipsDirectoryBodyHtml,
+  generateMockTestsDirectoryBodyHtml,
+  generateAiuCampusesDirectoryBodyHtml,
+  generateProgramsIndexBodyHtml,
+  generateProgramsSpecializationsBodyHtml,
+  generateProgramsRoiBodyHtml,
+  generateContactBodyHtml,
+  generateTermsBodyHtml,
+  generatePrivacyBodyHtml,
+  generateHomepageBodyHtml,
+  generateBlogsDirectoryBodyHtml
 } from './prerender-helpers.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -183,10 +197,46 @@ function writeStaticRoute(routePath, htmlContent) {
 console.log('🚀 Starting Pre-rendering for SEO, GEO, AEO, AIO & SXO Optimization...');
 let count = 0;
 
+// Initialize City Directory
+const addedCities = new Set();
+const allCities = [];
+
+CITY_INFOGRAPHICS_DATA.forEach(c => {
+  const cName = c.cityName.toLowerCase();
+  if (!addedCities.has(cName)) {
+    addedCities.add(cName);
+    allCities.push(c.cityName);
+  }
+});
+
+COLLEGES_DATA.forEach(col => {
+  if (col.city) {
+    const cName = col.city.toLowerCase().trim();
+    if (!addedCities.has(cName)) {
+      addedCities.add(cName);
+      allCities.push(col.city.trim());
+    }
+  }
+});
+
 // ==========================================
 // 1. Core Landing & Directory Pages
 // ==========================================
 const coreRoutes = [
+  {
+    path: '/',
+    title: 'FindMyBSchool — Top MBA & PGDM Colleges, Fees, Cutoffs & Exam Predictors',
+    description: 'Find your dream MBA & PGDM business school with FindMyBSchool. Compare 680+ verified B-schools, cutoffs, tuition fees, and placements with 0% scrapers.',
+    h1: 'Find Top MBA & PGDM Colleges, Fees, Cutoffs, Scholarships & Exam Predictors',
+    lead: 'FindMyBSchool helps MBA and PGDM aspirants evaluate 680+ verified Indian business schools with audited 2-year tuition fees, real CAT/XAT/CMAT cutoffs, and recent placement reports with 0% scrapers.',
+    schema: {
+      '@context': 'https://schema.org',
+      '@graph': [
+        baseWebSiteSchema,
+        baseOrgSchema
+      ]
+    }
+  },
   {
     path: '/colleges',
     title: 'Explore 600+ Top MBA & PGDM Colleges in India | FMBS',
@@ -1518,6 +1568,7 @@ function generateCatCalculatorBodyHtml() {
       </section>
 
     </main>
+    ${COMMON_FOOTER}
   `;
 }
 
@@ -1544,14 +1595,45 @@ for (const cr of coreRoutes) {
   };
 
   let bodyHtml = '';
-  if (cr.path === '/tools/cat-college-predictor') {
+  if (cr.path === '/') {
+    bodyHtml = generateHomepageBodyHtml(COLLEGES_DATA, allCities);
+  } else if (cr.path === '/tools/cat-college-predictor') {
     bodyHtml = generateCatCalculatorBodyHtml();
+  } else if (cr.path === '/colleges') {
+    bodyHtml = generateCollegesDirectoryBodyHtml(COLLEGES_DATA, allCities);
   } else if (cr.path === '/colleges/mba') {
     bodyHtml = generateMbaCollegesBodyHtml(COLLEGES_DATA);
   } else if (cr.path === '/colleges/pgdm') {
     bodyHtml = generatePgdmCollegesBodyHtml(COLLEGES_DATA);
+  } else if (cr.path === '/scholarships') {
+    bodyHtml = generateScholarshipsDirectoryBodyHtml(SCHOLARSHIPS_DATA);
+  } else if (cr.path === '/mock-test') {
+    bodyHtml = generateMockTestsDirectoryBodyHtml(MOCK_TESTS);
+  } else if (cr.path === '/aiu-approved-campuses') {
+    bodyHtml = generateAiuCampusesDirectoryBodyHtml(AIU_OFFICIAL_LIST);
+  } else if (cr.path.startsWith('/aiu-approved-campuses/')) {
+    const city = cr.path.replace('/aiu-approved-campuses/', '');
+    bodyHtml = generateAiuCampusesDirectoryBodyHtml(AIU_OFFICIAL_LIST, city);
+  } else if (cr.path === '/programs') {
+    bodyHtml = generateProgramsIndexBodyHtml();
   } else if (cr.path === '/programs/compare') {
     bodyHtml = generateProgramsCompareBodyHtml();
+  } else if (cr.path === '/programs/mba') {
+    bodyHtml = generateMbaCollegesBodyHtml(COLLEGES_DATA);
+  } else if (cr.path === '/programs/pgdm') {
+    bodyHtml = generatePgdmCollegesBodyHtml(COLLEGES_DATA);
+  } else if (cr.path === '/programs/specializations') {
+    bodyHtml = generateProgramsSpecializationsBodyHtml();
+  } else if (cr.path === '/programs/roi') {
+    bodyHtml = generateProgramsRoiBodyHtml(COLLEGES_DATA);
+  } else if (cr.path === '/contact') {
+    bodyHtml = generateContactBodyHtml();
+  } else if (cr.path === '/terms') {
+    bodyHtml = generateTermsBodyHtml();
+  } else if (cr.path === '/privacy') {
+    bodyHtml = generatePrivacyBodyHtml();
+  } else if (cr.path === '/blog') {
+    bodyHtml = generateBlogsDirectoryBodyHtml(BLOGS_DATA);
   } else if (cr.path === '/exams') {
     bodyHtml = generateExamsDirectoryBodyHtml(EXAMS_DATA);
   } else if (cr.path === '/tools/xat-percentile-calculator') {
@@ -1562,10 +1644,7 @@ for (const cr of coreRoutes) {
     bodyHtml = generateNmatPredictorBodyHtml();
   } else {
     bodyHtml = `
-      <header style="padding: 20px 24px; border-bottom: 1px solid #E2E8F0; text-align: center; background: #FAFAFE;">
-        <a href="/" style="font-weight: 800; font-size: 1.5rem; color: #6B2CF5; text-decoration: none;">FindMyBSchool</a>
-        <p style="margin: 4px 0 0; color: #64748B; font-size: 0.95rem;">India’s Verified MBA &amp; PGDM Admissions Portal • Session 2027-29</p>
-      </header>
+      ${COMMON_HEADER}
       <main style="max-width: 1100px; margin: 32px auto; padding: 0 20px; font-family: system-ui, -apple-system, sans-serif;">
         <nav aria-label="Breadcrumb" style="font-size: 0.9rem; color: #64748B; margin-bottom: 16px;">
           <a href="/" style="color: #6B2CF5; text-decoration: none;">Home</a> &gt; <span>${escapeHtml(cr.h1)}</span>
@@ -1577,6 +1656,7 @@ for (const cr of coreRoutes) {
           <a href="/tools/cat-college-predictor" style="display: inline-block; margin-left: 12px; padding: 10px 20px; background: #F1F5F9; color: #1E293B; font-weight: 600; text-decoration: none; border-radius: 8px;">CAT Score Calculator</a>
         </div>
       </main>
+      ${COMMON_FOOTER}
     `;
   }
 
@@ -1587,27 +1667,6 @@ for (const cr of coreRoutes) {
 // ==========================================
 // 2. City Hubs with Static College Listings (GEO & SEO Hubs)
 // ==========================================
-const addedCities = new Set();
-const allCities = [];
-
-CITY_INFOGRAPHICS_DATA.forEach(c => {
-  const cName = c.cityName.toLowerCase();
-  if (!addedCities.has(cName)) {
-    addedCities.add(cName);
-    allCities.push(c.cityName);
-  }
-});
-
-COLLEGES_DATA.forEach(col => {
-  if (col.city) {
-    const cName = col.city.toLowerCase().trim();
-    if (!addedCities.has(cName)) {
-      addedCities.add(cName);
-      allCities.push(col.city.trim());
-    }
-  }
-});
-
 for (const city of allCities) {
   const normCity = city.toLowerCase().trim();
   const canonicalUrl = `${BASE_URL}/colleges/city/${encodeURIComponent(normCity)}`;
@@ -1780,6 +1839,7 @@ for (const city of allCities) {
         <a href="/tools/cat-college-predictor" style="display: inline-block; margin-left: 12px; padding: 12px 24px; background: #F1F5F9; color: #1E293B; font-weight: 600; text-decoration: none; border-radius: 8px;">Check CAT College Predictor</a>
       </div>
     </main>
+    ${COMMON_FOOTER}
   `;
 
   writeStaticRoute(`/colleges/city/${encodeURIComponent(normCity)}`, generatePageHtml(meta, bodyHtml));
@@ -1957,6 +2017,7 @@ for (const sch of SCHOLARSHIPS_DATA) {
         <a href="/scholarships" style="display: inline-block; margin-left: 12px; padding: 12px 24px; background: #F1F5F9; color: #1E293B; font-weight: 600; text-decoration: none; border-radius: 8px;">View All Scholarships</a>
       </div>
     </main>
+    ${COMMON_FOOTER}
   `;
   writeStaticRoute(`/scholarships/${sch.id}`, generatePageHtml(meta, bodyHtml));
   count++;
@@ -2020,6 +2081,7 @@ for (const test of MOCK_TESTS) {
         <a href="/mock-test/${test.id}" style="display: inline-block; padding: 12px 24px; background: #6B2CF5; color: #FFFFFF; font-weight: 700; text-decoration: none; border-radius: 8px;">Start CBT Mock Test Now</a>
       </div>
     </main>
+    ${COMMON_FOOTER}
   `;
   writeStaticRoute(`/mock-test/${test.id}`, generatePageHtml(meta, bodyHtml));
   count++;
@@ -2091,6 +2153,8 @@ for (const blog of BLOGS_DATA) {
     schema: blogSchema
   };
 
+  const relatedBlogs = BLOGS_DATA.filter(b => b.id !== blog.id).slice(0, 3);
+
   const bodyHtml = `
     <header style="padding: 20px 24px; border-bottom: 1px solid #E2E8F0; text-align: center; background: #FAFAFE;">
       <a href="/" style="font-weight: 800; font-size: 1.5rem; color: #6B2CF5; text-decoration: none;">FindMyBSchool</a>
@@ -2107,10 +2171,28 @@ for (const blog of BLOGS_DATA) {
       <div style="color: #334155; font-size: 1.1rem; line-height: 1.7; margin-top: 18px;">
         <p>${escapeHtml(blog.summary || blog.excerpt || '')}</p>
       </div>
+
+      <!-- Related Strategy Articles -->
+      <section style="margin-top: 36px; padding-top: 24px; border-top: 1px solid #E2E8F0;">
+        <h3 style="font-size: 1.2rem; font-weight: 700; color: #0F172A; margin-bottom: 14px;">Related MBA Strategy Articles</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
+          ${relatedBlogs.map(r => `
+            <div style="padding: 14px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px;">
+              <h4 style="font-size: 0.95rem; font-weight: 700; margin: 0 0 6px;">
+                <a href="/blog/${r.id}" style="color: #6B2CF5; text-decoration: none;">${escapeHtml(r.title)}</a>
+              </h4>
+              <p style="font-size: 0.82rem; color: #64748B; margin: 0;">${escapeHtml((r.summary || r.excerpt || '').slice(0, 90))}...</p>
+            </div>
+          `).join('')}
+        </div>
+      </section>
+
       <div style="margin-top: 28px;">
         <a href="/colleges" style="display: inline-block; padding: 12px 24px; background: #6B2CF5; color: #FFFFFF; font-weight: 700; text-decoration: none; border-radius: 8px;">Explore Verified Colleges</a>
+        <a href="/blog" style="display: inline-block; margin-left: 12px; padding: 12px 24px; background: #F1F5F9; color: #1E293B; font-weight: 600; text-decoration: none; border-radius: 8px;">Browse All 50+ Strategy Articles</a>
       </div>
     </main>
+    ${COMMON_FOOTER}
   `;
   writeStaticRoute(`/blog/${blog.id}`, generatePageHtml(meta, bodyHtml));
   count++;
@@ -2435,6 +2517,7 @@ for (const col of COLLEGES_DATA) {
         <a href="/contact" style="display: inline-block; margin-left: 12px; padding: 12px 24px; background: #F1F5F9; color: #1E293B; font-weight: 600; text-decoration: none; border-radius: 8px;">Book 1-on-1 Profile Evaluation</a>
       </div>
     </main>
+    ${COMMON_FOOTER}
   `;
 
   writeStaticRoute(`/colleges/${col.id}`, generatePageHtml(meta, bodyHtml));
@@ -2448,7 +2531,7 @@ const notFoundHtml = template
   .replace(/<title>.*?<\/title>/i, '<title>Page Not Found (404) | FindMyBSchool</title>')
   .replace(/<meta name="description" content=".*?" \/>/i, '<meta name="description" content="Page not found. Explore 600+ verified MBA colleges, fee structures, cutoffs, and percentile calculators on FindMyBSchool." />')
   .replace(/<meta name="robots" content=".*?" \/>/i, '<meta name="robots" content="noindex, nofollow" />')
-  .replace(/<link rel="canonical" href=".*?" \/>/i, '<link rel="canonical" href="https://findmybschool.com/404" />')
+  .replace(/<link rel="canonical" href=".*?" \/>/i, '')
   .replace(/<meta property="og:image" content=".*?" \/>/i, `<meta property="og:image" content="${DEFAULT_OG_IMAGE}" />`)
   .replace(/<meta name="twitter:image" content=".*?" \/>/i, `<meta name="twitter:image" content="${DEFAULT_OG_IMAGE}" />`)
   .replace(/<div id="app">[\s\S]*?<\/div>\s*<\/body>/i, `
