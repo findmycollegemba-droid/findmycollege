@@ -61,7 +61,7 @@ function walkDir(dir) {
       if (file !== 'assets') {
         walkDir(fullPath);
       }
-    } else if (file === 'index.html' || file === '404.html') {
+    } else if (file.endsWith('.html')) {
       allDiscoveredFiles.push(fullPath);
     }
   }
@@ -194,10 +194,11 @@ while (queue.length > 0) {
   const targets = internalLinkGraph.get(route) || new Set();
   for (const target of targets) {
     if (!visited.has(target)) {
-      // Check if target exists in dist
-      const targetRel = target === '/' ? 'index.html' : path.join(target.replace(/^\//, ''), 'index.html');
-      const targetFile = path.resolve(distDir, targetRel);
-      if (fs.existsSync(targetFile)) {
+      // Check if target exists in dist as [target].html or [target]/index.html
+      const targetClean = target.replace(/^\//, '');
+      const flatTarget = target === '/' ? path.resolve(distDir, 'index.html') : path.resolve(distDir, `${targetClean}.html`);
+      const dirTarget = target === '/' ? path.resolve(distDir, 'index.html') : path.resolve(distDir, targetClean, 'index.html');
+      if (fs.existsSync(flatTarget) || fs.existsSync(dirTarget)) {
         visited.add(target);
         queue.push({ route: target, depth: depth + 1 });
       } else if (!target.startsWith('/api') && !target.startsWith('/assets')) {
@@ -238,3 +239,4 @@ if (unreachable.length === 0 && canonicalMismatchCount === 0 && missingCanonical
 } else {
   console.log('\n⚠️ Some issues remain to be resolved.');
 }
+

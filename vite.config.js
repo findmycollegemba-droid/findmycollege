@@ -35,8 +35,7 @@ export default defineConfig({
     chunkSizeWarningLimit: 600,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        catCollegePredictor: resolve(__dirname, 'tools/cat-college-predictor/index.html')
+        main: resolve(__dirname, 'index.html')
       },
       output: {
         manualChunks(id) {

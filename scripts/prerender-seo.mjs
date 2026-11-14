@@ -184,13 +184,24 @@ function generatePageHtml(meta, bodyHtml) {
 
 function writeStaticRoute(routePath, htmlContent) {
   const cleanPath = routePath.replace(/^\//, '').replace(/\/$/, '');
-  const targetDir = cleanPath ? path.resolve(distDir, cleanPath) : distDir;
   
+  if (!cleanPath) {
+    // Root homepage: / -> dist/index.html
+    fs.writeFileSync(path.resolve(distDir, 'index.html'), htmlContent, 'utf-8');
+    return;
+  }
+
+  // Cloudflare Pages clean URLs standard:
+  // Write flat .html files (e.g. dist/colleges.html, dist/colleges/iim-ahmedabad.html).
+  // Cloudflare Pages serves [name].html cleanly as /[name] with HTTP 200 OK without
+  // directory trailing-slash 307/308 redirects.
+  const targetFile = path.resolve(distDir, `${cleanPath}.html`);
+  const targetDir = path.dirname(targetFile);
+
   if (!fs.existsSync(targetDir)) {
     fs.mkdirSync(targetDir, { recursive: true });
   }
 
-  const targetFile = path.resolve(targetDir, 'index.html');
   fs.writeFileSync(targetFile, htmlContent, 'utf-8');
 }
 

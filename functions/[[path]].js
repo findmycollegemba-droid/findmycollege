@@ -44,13 +44,12 @@ export async function onRequest(context) {
     return Response.redirect(url.toString(), 301);
   }
 
-  // 5. Prevent Cloudflare Pages directory trailing-slash 308 redirect loops:
-  // For clean static routes without trailing slash and without file extension,
-  // fetch /index.html directly from ASSETS and return 200 OK directly.
+  // 5. Direct flat .html asset resolution for clean routes:
+  // Fetches /cleanPath.html directly from ASSETS to return 200 OK directly
   if (context.env && context.env.ASSETS && !url.pathname.includes('.')) {
     try {
-      const cleanPath = url.pathname === '/' ? '' : url.pathname;
-      const assetUrl = new URL(`${cleanPath}/index.html`, url.origin);
+      const cleanPath = url.pathname === '/' ? '/index' : url.pathname;
+      const assetUrl = new URL(`${cleanPath}.html`, url.origin);
       const assetReq = new Request(assetUrl, context.request);
       const assetRes = await context.env.ASSETS.fetch(assetReq);
       if (assetRes && assetRes.status === 200) {
