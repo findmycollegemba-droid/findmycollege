@@ -63,6 +63,9 @@ const EXACT_REDIRECTS = {
   // Core aliases & legacy paths
   '/scholarship': '/scholarships',
   '/free-mock-test': '/mock-test',
+  '/mock-test/mat': '/mock-test/dec-mat-mock-test-free',
+  '/mock-test/mat-2026': '/mock-test/dec-mat-mock-test-free',
+  '/dec-mat-mock-test-free': '/mock-test/dec-mat-mock-test-free',
   '/terms-and-conditions': '/terms',
   '/privacy-policy': '/privacy',
   '/aiu-approved-colleges': '/aiu-approved-campuses',
@@ -154,7 +157,12 @@ export async function onRequest(context) {
       }
     } else if (page === 'mock-test' || page === 'free-mock-test') {
       if (id) {
-        url.pathname = `/mock-test/${encodeURIComponent(id.trim())}`;
+        const cleanId = id.trim().toLowerCase();
+        if (cleanId === 'mat' || cleanId === 'mat-2026') {
+          url.pathname = '/mock-test/dec-mat-mock-test-free';
+        } else {
+          url.pathname = `/mock-test/${encodeURIComponent(cleanId)}`;
+        }
       } else {
         url.pathname = '/mock-test';
       }

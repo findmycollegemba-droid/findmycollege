@@ -75,7 +75,7 @@ export async function sendLeadToCRM(leadData) {
     message,
     form_name: formName,
     source,
-    page_url: typeof window !== 'undefined' ? window.location.href : '',
+    page_url: leadData.page_url || leadData.pageUrl || (typeof window !== 'undefined' ? window.location.href : ''),
     referrer: typeof document !== 'undefined' ? document.referrer || 'Direct Website' : 'Direct Website',
     device,
     utm_source: leadData.utm_source || utms.utm_source || '',

@@ -169,7 +169,7 @@ async function handleRouteChange() {
         window.history.replaceState(null, '', `/programs/${encodeURIComponent(pSub.toLowerCase())}`);
         pathname = `/programs/${encodeURIComponent(pSub.toLowerCase())}`;
       }
-    } else if (['colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat', 'terms', 'privacy', 'mock-test', 'free-mock-test', 'scholarships', 'scholarship', 'aiu-approved-campuses', 'aiu-approved-colleges'].includes(hash.split('?')[0])) {
+    } else if (['colleges', 'programs', 'tools', 'exams', 'blog', 'contact', 'ai-chat', 'terms', 'privacy', 'mock-test', 'free-mock-test', 'dec-mat-mock-test-free', 'scholarships', 'scholarship', 'aiu-approved-campuses', 'aiu-approved-colleges'].includes(hash.split('?')[0])) {
       const cleanPath = '/' + hash.split('?')[0];
       const q = hash.includes('?') ? '?' + hash.split('?')[1] : '';
       window.history.replaceState(null, '', cleanPath + q);
@@ -280,6 +280,14 @@ async function handleRouteChange() {
     sub = null;
   } else if (pathname === '/contact') {
     page = 'contact';
+  } else if (pathname === '/mock-test/mat' || pathname === '/mock-test/mat-2026') {
+    window.history.replaceState(null, '', '/mock-test/dec-mat-mock-test-free');
+    pathname = '/mock-test/dec-mat-mock-test-free';
+    page = 'mock-test';
+    sub = 'dec-mat-mock-test-free';
+  } else if (pathname === '/dec-mat-mock-test-free') {
+    page = 'mock-test';
+    sub = 'dec-mat-mock-test-free';
   } else if (pathname.startsWith('/mock-test/')) {
     page = 'mock-test';
     sub = decodeURIComponent(pathname.replace('/mock-test/', '').trim());

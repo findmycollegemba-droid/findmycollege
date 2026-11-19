@@ -48,12 +48,25 @@ let currentExamState = {
  * Main render function for Free Mock Test page
  */
 export function renderMockTestPage(subRoute = null) {
-  // If subRoute corresponds to an exam id (e.g. 'cat-2026'), pre-select it
+  // If subRoute corresponds to an exam id (e.g. 'cat-2026', 'dec-mat-mock-test-free'), pre-select it
   const selectedTest = subRoute ? getMockTestById(subRoute) : null;
+  const isDecMat = selectedTest && (
+    selectedTest.id === 'dec-mat-mock-test-free' ||
+    selectedTest.slug === 'dec-mat-mock-test-free' ||
+    selectedTest.aliases?.includes(subRoute) ||
+    subRoute === 'dec-mat-mock-test-free' ||
+    subRoute === 'mat' ||
+    subRoute === 'mat-2026' ||
+    subRoute === 'dec-mat'
+  );
+
+  const mainViewHtml = isDecMat 
+    ? renderDecMatLandingPage(selectedTest)
+    : (selectedTest ? renderMockTestDetailHeader(selectedTest) : renderMockTestHub());
 
   return `
     <div class="mock-test-page" id="mockTestApp">
-      ${selectedTest ? renderMockTestDetailHeader(selectedTest) : renderMockTestHub()}
+      ${mainViewHtml}
     </div>
 
     <!-- Pre-Test Lead Registration Gate Modal -->
@@ -236,6 +249,7 @@ function renderMockTestHub() {
 function renderExamCard(test) {
   const qCount = test.totalQuestions;
   const sectionsList = test.sections.map(s => s.name).join(' • ');
+  const cardTitle = test.shortTitle.toLowerCase().includes('mock test') ? test.shortTitle : `${test.shortTitle} Mock Test`;
 
   return `
     <div class="mock-exam-card" data-exam-id="${test.id}">
@@ -244,7 +258,7 @@ function renderExamCard(test) {
           <span class="exam-badge-pill">${test.badge}</span>
           <span class="free-badge">FREE</span>
         </div>
-        <h3 class="exam-card-title">${test.shortTitle} Mock Test</h3>
+        <h3 class="exam-card-title"><a href="/mock-test/${test.id}" style="color: inherit; text-decoration: none;">${cardTitle}</a></h3>
         <p class="exam-card-desc">${test.tagline}</p>
       </div>
 
@@ -274,7 +288,593 @@ function renderExamCard(test) {
           <span>Start Free Mock Test</span>
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
         </button>
+        <a href="/mock-test/${test.id}" class="btn-card-landing-link" style="display: flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 14px; border-radius: 12px; border: 1.5px solid #cbd5e1; color: #334155; font-weight: 700; font-size: 0.88rem; text-decoration: none; background: #ffffff; transition: all 0.2s;">
+          <span>Details &amp; Syllabus</span>
+          <span>→</span>
+        </a>
       </div>
+    </div>
+  `;
+}
+
+/**
+ * Dedicated, conversion-focused landing page for Dec MAT Mock Test Free
+ */
+function renderDecMatLandingPage(test) {
+  return `
+    <div class="mock-hub-container mat-landing-container">
+      <!-- Breadcrumb -->
+      <nav class="mock-breadcrumb" aria-label="Breadcrumb">
+        <a href="/" class="back-link">Home</a>
+        <span class="bc-sep">/</span>
+        <a href="/mock-test" class="back-link">Free Mock Tests</a>
+        <span class="bc-sep">/</span>
+        <span class="bc-current">Dec MAT Mock Test Free</span>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="mat-landing-hero">
+        <div class="card-badge-row mb-2" style="justify-content: flex-start; gap: 10px; flex-wrap: wrap;">
+          <span class="exam-badge-pill" style="background: rgba(37, 99, 235, 0.12); color: #2563eb; font-weight: 800;">
+            ⚡ AIMA Dec 2026 Session • Official Pattern
+          </span>
+          <span class="free-badge" style="background: #10b981; font-weight: 900;">
+            100% FREE ALL-INDIA CBT
+          </span>
+        </div>
+
+        <h1 class="mat-hero-title">
+          Dec MAT Mock Test Free
+        </h1>
+        <p class="mat-hero-tagline">
+          Official AIMA Pattern CBT Simulation • 150 Questions • 120 Minutes • Scaled Composite Score out of 800
+        </p>
+        <p class="mat-hero-subtitle">
+          Experience the authentic AIMA MAT December 2026 examination environment. Full-length practice covering all 5 sections — Language Comprehension, Intelligence &amp; Critical Reasoning, Mathematical Skills, Data Analysis &amp; Sufficiency, and Indian &amp; Global Environment. Get instant composite scaled score out of 800, All-India percentile rank, and cutoff predictions for 600+ top MBA/PGDM colleges.
+        </p>
+
+        <!-- Live Trust Metrics Ribbon -->
+        <div class="mat-hero-ribbon">
+          <div class="mat-ribbon-item">
+            <span class="mat-ribbon-icon">⏱️</span>
+            <div class="mat-ribbon-text">
+              <strong>120 Mins</strong>
+              <span>24 Mins / Section</span>
+            </div>
+          </div>
+          <div class="mat-ribbon-divider"></div>
+          <div class="mat-ribbon-item">
+            <span class="mat-ribbon-icon">📝</span>
+            <div class="mat-ribbon-text">
+              <strong>150 Questions</strong>
+              <span>30 Qs per Section</span>
+            </div>
+          </div>
+          <div class="mat-ribbon-divider"></div>
+          <div class="mat-ribbon-item">
+            <span class="mat-ribbon-icon">🎯</span>
+            <div class="mat-ribbon-text">
+              <strong>800 Composite</strong>
+              <span>Scaled Score + %ile</span>
+            </div>
+          </div>
+          <div class="mat-ribbon-divider"></div>
+          <div class="mat-ribbon-item">
+            <span class="mat-ribbon-icon">🏛️</span>
+            <div class="mat-ribbon-text">
+              <strong>600+ B-Schools</strong>
+              <span>Cutoff Predictions</span>
+            </div>
+          </div>
+          <div class="mat-ribbon-divider"></div>
+          <div class="mat-ribbon-item">
+            <span class="mat-ribbon-icon">💡</span>
+            <div class="mat-ribbon-text">
+              <strong>100% Free</strong>
+              <span>With Full Solutions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Actions -->
+        <div class="mat-hero-actions">
+          <button type="button" class="btn-start-mock large" data-exam-id="${test.id}">
+            <span>Start Dec MAT Free Mock Test</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+          <a href="#matPattern" class="btn-mat-outline">
+            <span>Sectional Pattern &amp; Specs</span>
+            <span>↓</span>
+          </a>
+          <a href="#matColleges" class="btn-mat-outline">
+            <span>Colleges &amp; Cutoffs</span>
+            <span>↓</span>
+          </a>
+          <a href="#matFaq" class="btn-mat-outline">
+            <span>FAQs</span>
+            <span>↓</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Exam Key Specs Grid -->
+      <section class="mat-specs-section" id="matPattern">
+        <div class="section-header-compact">
+          <h2 class="section-title-sm">Dec MAT 2026 Examination Highlights</h2>
+          <span class="section-subtitle-sm">Comprehensive overview of the latest AIMA MAT December examination structure</span>
+        </div>
+
+        <div class="mat-specs-grid">
+          <div class="mat-spec-card">
+            <div class="spec-icon">⏱️</div>
+            <div class="spec-info">
+              <span class="spec-label">Total Duration</span>
+              <strong class="spec-value">120 Minutes</strong>
+              <span class="spec-hint">2 Hours (approx. 24 mins per section)</span>
+            </div>
+          </div>
+
+          <div class="mat-spec-card">
+            <div class="spec-icon">📊</div>
+            <div class="spec-info">
+              <span class="spec-label">Total Questions</span>
+              <strong class="spec-value">150 Questions</strong>
+              <span class="spec-hint">5 sections with 30 MCQs each</span>
+            </div>
+          </div>
+
+          <div class="mat-spec-card">
+            <div class="spec-icon">⚖️</div>
+            <div class="spec-info">
+              <span class="spec-label">Marking Scheme</span>
+              <strong class="spec-value">+1 / -0.25 Mark</strong>
+              <span class="spec-hint">+1 for correct, -0.25 penalty for wrong</span>
+            </div>
+          </div>
+
+          <div class="mat-spec-card">
+            <div class="spec-icon">🏆</div>
+            <div class="spec-info">
+              <span class="spec-label">Composite Score</span>
+              <strong class="spec-value">200 – 800 Marks</strong>
+              <span class="spec-hint">Scaled score from 4 sections; GK reported separately</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sectional Breakdown -->
+      <section class="mat-sections-breakdown" id="matSections">
+        <div class="section-header-compact">
+          <h2 class="section-title-sm">Dec MAT 5-Section Official Syllabus &amp; Pattern</h2>
+          <span class="section-subtitle-sm">Detailed structure of each section tested in the December MAT CBT paper</span>
+        </div>
+
+        <div class="mat-sections-cards">
+          <!-- Section 1 -->
+          <div class="mat-section-card">
+            <div class="sec-card-header">
+              <div class="sec-badge">Section 1</div>
+              <span class="sec-timing">30 Qs • 30 Marks • 24 Mins</span>
+            </div>
+            <h3 class="sec-title">Language Comprehension</h3>
+            <p class="sec-desc">Evaluates verbal reasoning, reading speed, comprehension accuracy, and English grammatical precision.</p>
+            <div class="sec-topics-list">
+              <span class="topic-tag">Reading Comprehension</span>
+              <span class="topic-tag">Antonyms &amp; Synonyms</span>
+              <span class="topic-tag">Para Jumbles</span>
+              <span class="topic-tag">Sentence Completion</span>
+              <span class="topic-tag">Idioms &amp; Phrases</span>
+              <span class="topic-tag">One Word Substitution</span>
+              <span class="topic-tag">Grammar Correction</span>
+            </div>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="mat-section-card">
+            <div class="sec-card-header">
+              <div class="sec-badge">Section 2</div>
+              <span class="sec-timing">30 Qs • 30 Marks • 24 Mins</span>
+            </div>
+            <h3 class="sec-title">Intelligence &amp; Critical Reasoning</h3>
+            <p class="sec-desc">Assesses analytical thinking, deductive logic, relationship identification, and premise evaluations.</p>
+            <div class="sec-topics-list">
+              <span class="topic-tag">Blood Relations</span>
+              <span class="topic-tag">Direction Sense</span>
+              <span class="topic-tag">Coding-Decoding</span>
+              <span class="topic-tag">Syllogisms</span>
+              <span class="topic-tag">Series &amp; Sequences</span>
+              <span class="topic-tag">Analogies</span>
+              <span class="topic-tag">Statement &amp; Assumptions</span>
+              <span class="topic-tag">Seating Arrangement</span>
+            </div>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="mat-section-card">
+            <div class="sec-card-header">
+              <div class="sec-badge">Section 3</div>
+              <span class="sec-timing">30 Qs • 30 Marks • 24 Mins</span>
+            </div>
+            <h3 class="sec-title">Mathematical Skills</h3>
+            <p class="sec-desc">Tests foundational quantitative problem-solving across arithmetic, modern mathematics, algebra, and geometry.</p>
+            <div class="sec-topics-list">
+              <span class="topic-tag">Percentages &amp; Profit/Loss</span>
+              <span class="topic-tag">Simple &amp; Compound Interest</span>
+              <span class="topic-tag">Time, Speed &amp; Distance</span>
+              <span class="topic-tag">Time &amp; Work</span>
+              <span class="topic-tag">Ratio &amp; Proportion</span>
+              <span class="topic-tag">Number Systems</span>
+              <span class="topic-tag">Geometry &amp; Mensuration</span>
+              <span class="topic-tag">Averages &amp; Mixtures</span>
+            </div>
+          </div>
+
+          <!-- Section 4 -->
+          <div class="mat-section-card">
+            <div class="sec-card-header">
+              <div class="sec-badge">Section 4</div>
+              <span class="sec-timing">30 Qs • 30 Marks • 24 Mins</span>
+            </div>
+            <h3 class="sec-title">Data Analysis &amp; Sufficiency</h3>
+            <p class="sec-desc">Measures ability to interpret structured numerical charts, graphs, tables, and determine data adequacy.</p>
+            <div class="sec-topics-list">
+              <span class="topic-tag">Data Tables</span>
+              <span class="topic-tag">Bar Charts</span>
+              <span class="topic-tag">Pie Charts</span>
+              <span class="topic-tag">Line Graphs</span>
+              <span class="topic-tag">Data Sufficiency (I &amp; II)</span>
+              <span class="topic-tag">Caselet DI</span>
+              <span class="topic-tag">Venn Diagrams</span>
+            </div>
+          </div>
+
+          <!-- Section 5 -->
+          <div class="mat-section-card highlight-gk">
+            <div class="sec-card-header">
+              <div class="sec-badge gk">Section 5</div>
+              <span class="sec-timing">30 Qs • 30 Marks • 24 Mins</span>
+            </div>
+            <h3 class="sec-title">Indian &amp; Global Environment</h3>
+            <p class="sec-desc">Tests current affairs, business awareness, economic policy, and global organizations. <em>Note: Scored separately on a 0-100 scale; not included in the 200-800 composite score, but verified by B-schools during interviews.</em></p>
+            <div class="sec-topics-list">
+              <span class="topic-tag">Indian Economy &amp; Banking</span>
+              <span class="topic-tag">RBI Monetary Policy</span>
+              <span class="topic-tag">Corporate Mergers &amp; CEOs</span>
+              <span class="topic-tag">National &amp; International Affairs</span>
+              <span class="topic-tag">BRICS, G20 &amp; UN Summits</span>
+              <span class="topic-tag">Awards &amp; Honors</span>
+              <span class="topic-tag">Business Regulations &amp; CSR</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mid-Page CTA Ribbon -->
+      <div class="mat-mid-cta">
+        <div class="mid-cta-content">
+          <h3>Ready to test your December MAT preparation under real exam timing?</h3>
+          <p>Get your estimated scaled score out of 800 and All-India percentile rank in 120 minutes.</p>
+        </div>
+        <button type="button" class="btn-start-mock" data-exam-id="${test.id}">
+          <span>Take Dec MAT Mock Test Now</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+
+      <!-- Top Colleges Accepting Dec MAT Scores -->
+      <section class="mat-colleges-section" id="matColleges">
+        <div class="section-header-compact">
+          <h2 class="section-title-sm">Top MBA Colleges Accepting Dec MAT 2026 Scores &amp; Cutoffs</h2>
+          <span class="section-subtitle-sm">Explore leading management institutes accepting AIMA MAT December scores for admissions</span>
+        </div>
+
+        <div class="mat-colleges-table-wrapper">
+          <table class="mat-colleges-table">
+            <thead>
+              <tr>
+                <th>College / Institute Name</th>
+                <th>Location</th>
+                <th>Expected MAT Cutoff</th>
+                <th>Avg. Placement CTC</th>
+                <th>Programs Offered</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>PUMBA (Dept. of Management Sciences, Pune Univ.)</strong></td>
+                <td>Pune, Maharashtra</td>
+                <td><span class="cutoff-pill green">95+ %ile (700+ Score)</span></td>
+                <td>₹8.9 LPA</td>
+                <td>MBA, MBA Pharma-Biotech</td>
+              </tr>
+              <tr>
+                <td><strong>SIMSREE / JBIMS (MMS CAP All-India)</strong></td>
+                <td>Mumbai, Maharashtra</td>
+                <td><span class="cutoff-pill green">99.9+ %ile</span></td>
+                <td>₹15.3 - 27.6 LPA</td>
+                <td>MMS (All-India Seats)</td>
+              </tr>
+              <tr>
+                <td><strong>BIMTECH (Birla Institute of Management Tech)</strong></td>
+                <td>Greater Noida, NCR</td>
+                <td><span class="cutoff-pill blue">80 - 85+ %ile</span></td>
+                <td>₹11.2 LPA</td>
+                <td>PGDM, PGDM Retail &amp; Insurance</td>
+              </tr>
+              <tr>
+                <td><strong>XIME (Xavier Institute of Management &amp; Entrepreneurship)</strong></td>
+                <td>Bengaluru / Chennai / Kochi</td>
+                <td><span class="cutoff-pill blue">75 - 80+ %ile</span></td>
+                <td>₹10.3 LPA</td>
+                <td>PGDM General</td>
+              </tr>
+              <tr>
+                <td><strong>SIESCOMS (SIES College of Management Studies)</strong></td>
+                <td>Navi Mumbai, Maharashtra</td>
+                <td><span class="cutoff-pill blue">80+ %ile</span></td>
+                <td>₹9.1 LPA</td>
+                <td>MMS, PGDM Pharma &amp; Biotech</td>
+              </tr>
+              <tr>
+                <td><strong>Christ University Institute of Management</strong></td>
+                <td>Bengaluru, Karnataka</td>
+                <td><span class="cutoff-pill amber">70 - 75+ %ile</span></td>
+                <td>₹8.5 LPA</td>
+                <td>MBA (Dual Specialization)</td>
+              </tr>
+              <tr>
+                <td><strong>JIMS Rohini (Sector 5)</strong></td>
+                <td>New Delhi</td>
+                <td><span class="cutoff-pill blue">75 - 80+ %ile</span></td>
+                <td>₹8.1 LPA</td>
+                <td>PGDM, PGDM International Business</td>
+              </tr>
+              <tr>
+                <td><strong>Jaipuria Institute of Management</strong></td>
+                <td>Lucknow / Noida / Jaipur</td>
+                <td><span class="cutoff-pill amber">70 - 75+ %ile</span></td>
+                <td>₹11.5 LPA</td>
+                <td>PGDM, PGDM Service Mgmt</td>
+              </tr>
+              <tr>
+                <td><strong>Alliance School of Business, Alliance University</strong></td>
+                <td>Bengaluru, Karnataka</td>
+                <td><span class="cutoff-pill amber">70+ %ile</span></td>
+                <td>₹8.5 LPA</td>
+                <td>MBA</td>
+              </tr>
+              <tr>
+                <td><strong>BIMM Pune (Balaji Institute of Modern Management)</strong></td>
+                <td>Pune, Maharashtra</td>
+                <td><span class="cutoff-pill blue">75 - 80+ %ile</span></td>
+                <td>₹8.6 LPA</td>
+                <td>MBA (Executive &amp; General)</td>
+              </tr>
+              <tr>
+                <td><strong>IPE (Institute of Public Enterprise)</strong></td>
+                <td>Hyderabad, Telangana</td>
+                <td><span class="cutoff-pill amber">70 - 75+ %ile</span></td>
+                <td>₹7.8 LPA</td>
+                <td>PGDM, PGDM Banking &amp; Financial Services</td>
+              </tr>
+              <tr>
+                <td><strong>NDIM (New Delhi Institute of Management)</strong></td>
+                <td>New Delhi</td>
+                <td><span class="cutoff-pill amber">70+ %ile</span></td>
+                <td>₹7.5 LPA</td>
+                <td>PGDM Finance, HR, Marketing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Dec MAT 2026 Key Dates Timeline -->
+      <section class="mat-dates-section">
+        <div class="section-header-compact">
+          <h2 class="section-title-sm">AIMA MAT December 2026 Important Exam Schedule</h2>
+          <span class="section-subtitle-sm">Key calendar milestones for Paper-Based (PBT) and Computer-Based (CBT) tests</span>
+        </div>
+
+        <div class="mat-dates-grid">
+          <div class="date-card">
+            <span class="date-phase">Phase 1</span>
+            <h4>Registration Opening</h4>
+            <span class="date-val">September – October 2026</span>
+            <p>Online application portal opens on official AIMA website (mat.aima.in).</p>
+          </div>
+          <div class="date-card">
+            <span class="date-phase">Phase 2</span>
+            <h4>PBT Registration Deadline</h4>
+            <span class="date-val">Late November 2026</span>
+            <p>Final date to submit registration and upload documents for Paper Based Test.</p>
+          </div>
+          <div class="date-card">
+            <span class="date-phase">Phase 3</span>
+            <h4>December PBT Exam Date</h4>
+            <span class="date-val">1st / 2nd Sunday of Dec 2026</span>
+            <p>Conducted in pen-and-paper mode across 50+ national test cities.</p>
+          </div>
+          <div class="date-card">
+            <span class="date-phase">Phase 4</span>
+            <h4>December CBT Exam Date</h4>
+            <span class="date-val">2nd / 3rd Sunday of Dec 2026</span>
+            <p>Official Computer-Based Test conducted in TCS iON supervised digital testing centres.</p>
+          </div>
+          <div class="date-card">
+            <span class="date-phase">Phase 5</span>
+            <h4>Scorecard &amp; Result Declaration</h4>
+            <span class="date-val">Late Dec 2026 / Early Jan 2027</span>
+            <p>Official composite scores out of 800 and section-wise percentiles released by AIMA.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- How MAT Composite Score is Calculated -->
+      <section class="mat-scoring-guide">
+        <div class="section-header-compact">
+          <h2 class="section-title-sm">How is the MAT Composite Score (800) Calculated?</h2>
+          <span class="section-subtitle-sm">Demystifying AIMA's scaled scoring methodology and percentile equating process</span>
+        </div>
+
+        <div class="mat-scoring-explanation-card">
+          <div class="scoring-steps-grid">
+            <div class="step-card">
+              <span class="step-num">1</span>
+              <h4>Raw Score Computation</h4>
+              <p>For each correct response, +1 mark is awarded. For every wrong answer, -0.25 mark is deducted. Unattempted questions yield 0 marks.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-num">2</span>
+              <h4>Sectional Scaling (0 - 100)</h4>
+              <p>The raw score in each of the first 4 sections (Language, Reasoning, Math, DI) is converted into an AIMA scaled score between 0 and 100 to normalize difficulty across slots.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-num">3</span>
+              <h4>Composite Scaled Score (200 - 800)</h4>
+              <p>The scaled scores of the first 4 sections are mathematically combined to produce the famous MAT Composite Score ranging between 199 and 801 (commonly reported as 200 to 800).</p>
+            </div>
+            <div class="step-card">
+              <span class="step-num">4</span>
+              <h4>Indian &amp; Global Environment Score</h4>
+              <p>The GK section is reported separately on a scale of 0 to 100 and is NOT included in your composite percentile, though certain institutions review it for PI rounds.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Preparation Strategy Pillars -->
+      <section class="mat-strategy-section">
+        <div class="section-header-compact">
+          <h2 class="section-title-sm">Dec MAT Strategy: How to Score 95+ Percentile (700+ Score)</h2>
+          <span class="section-subtitle-sm">Expert time-management techniques and question-selection frameworks</span>
+        </div>
+
+        <div class="mat-strategy-grid">
+          <div class="strat-card">
+            <div class="strat-icon">🎯</div>
+            <h4>Strict 24-Minute Sectional Allocation</h4>
+            <p>Because MAT gives you 120 minutes for 150 questions (48 seconds per question), never spend more than 24 minutes in any single section. Divide your time evenly across all 5 sections.</p>
+          </div>
+          <div class="strat-card">
+            <div class="strat-icon">⚡</div>
+            <h4>Scan and Triage Easy Questions First</h4>
+            <p>Start each section by quickly answering high-yield direct questions (One-word substitutions, Antonyms, direct Arithmetic, simple Direction Sense) before tackling lengthier sets.</p>
+          </div>
+          <div class="strat-card">
+            <div class="strat-icon">🛡️</div>
+            <h4>Protect Accuracy from -0.25 Penalties</h4>
+            <p>Avoid blind guessing. Attempting 110-120 questions with 85%+ accuracy reliably yields an 800 scaled composite score above 680-720, guaranteeing calls from top institutes like PUMBA and BIMTECH.</p>
+          </div>
+          <div class="strat-card">
+            <div class="strat-icon">⏱️</div>
+            <h4>Speed-Reading in Data Interpretation</h4>
+            <p>Focus on approximations and percentage change estimation rather than doing exhaustive manual arithmetic when solving Data Analysis tables and bar graphs.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Frequently Asked Questions (FAQ) Section -->
+      <section class="mat-faq-section" id="matFaq">
+        <div class="section-header-compact">
+          <h2 class="section-title-sm">Frequently Asked Questions: Dec MAT Mock Test Free</h2>
+          <span class="section-subtitle-sm">Answers to common queries about FindMyBSchool's Free Dec MAT CBT Mock Test</span>
+        </div>
+
+        <div class="mat-faq-accordion">
+          <details class="mat-faq-item" open>
+            <summary class="faq-question">
+              <span>Is this Dec MAT Mock Test completely free of cost?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes, 100% free! FindMyBSchool offers full-length CBT mock tests for Dec MAT with zero hidden fees. You get the complete 150-question simulated test, instant All-India percentile analysis, scaled composite score out of 800, and step-by-step verified explanations.</p>
+            </div>
+          </details>
+
+          <details class="mat-faq-item">
+            <summary class="faq-question">
+              <span>What is the latest exam pattern and duration for Dec MAT 2026?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Under the latest AIMA MAT pattern, the examination consists of 150 multiple choice questions to be completed in 120 minutes (2 hours). The paper has 5 sections of 30 questions each: Language Comprehension, Intelligence &amp; Critical Reasoning, Mathematical Skills, Data Analysis &amp; Sufficiency, and Indian &amp; Global Environment.</p>
+            </div>
+          </details>
+
+          <details class="mat-faq-item">
+            <summary class="faq-question">
+              <span>How is the composite score out of 800 calculated in MAT?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>AIMA converts your raw scores in the first 4 sections (Language, Reasoning, Math, and Data Analysis) into scaled scores between 0 and 100. These 4 scaled scores are combined into a composite score ranging from 199 to 801 (typically referred to as 200 to 800). Section 5 (Indian &amp; Global Environment) is scored separately and does not count towards the composite score.</p>
+            </div>
+          </details>
+
+          <details class="mat-faq-item">
+            <summary class="faq-question">
+              <span>Which top colleges accept MAT December scores for admissions?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Over 600 B-schools across India accept MAT December scores, including PUMBA Pune (95+ %ile), SIMSREE / JBIMS MMS (via MAH CET CAP All-India quota, 99.9+ %ile), BIMTECH Greater Noida (80-85+ %ile), XIME Bangalore (75-80+ %ile), Christ University Bangalore (70-75+ %ile), Alliance School of Business (70+ %ile), JIMS Rohini (75-80+ %ile), and Jaipuria Institute of Management (70-75+ %ile).</p>
+            </div>
+          </details>
+
+          <details class="mat-faq-item">
+            <summary class="faq-question">
+              <span>Can I choose between Full Length (120 Mins) and Quick Practice (30 Mins) modes?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes! When launching the mock test, you can select between <strong>Full Exam Mode</strong> (authentic 120-minute timed simulation) and <strong>Quick Practice Mode</strong> (curated 30-minute high-yield practice set) depending on your current preparation stage.</p>
+            </div>
+          </details>
+
+          <details class="mat-faq-item">
+            <summary class="faq-question">
+              <span>Will I get detailed solutions and explanations after submitting the test?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Immediately after submitting your test and verifying your candidate roll, you unlock full question-by-question solutions, alternative shortcut methods, verbal rationale, and comprehensive performance metrics broken down by accuracy, speed, and topic.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- Bottom High-Impact CTA Banner -->
+      <section class="mat-bottom-cta-banner">
+        <div class="cta-inner-box">
+          <div class="cta-badge">🎯 All-India Mock Series 2026</div>
+          <h2 class="cta-title">Begin Your Dec MAT Mock Test Free Now</h2>
+          <p class="cta-subtitle">
+            Join thousands of MBA aspirants testing their speed, accuracy, and All-India percentile benchmark on FindMyBSchool.
+          </p>
+          <div class="cta-actions">
+            <button type="button" class="btn-start-mock large" data-exam-id="${test.id}">
+              <span>Launch Free CBT Test Now</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+          <div class="cta-trust-note">
+            ✓ Instant Scaled Score /800 • ✓ Question Palette Navigation • ✓ Step-by-Step Solutions
+          </div>
+        </div>
+      </section>
+
+      <!-- Other Popular MBA Mock Tests Grid -->
+      <section class="mock-tests-grid-section mt-12" style="margin-top: 48px;">
+        <div class="section-header-compact">
+          <h3 class="section-title-sm">Other Popular All-India MBA Mock Tests</h3>
+          <span class="section-subtitle-sm">Explore official simulated tests for other national entrance examinations</span>
+        </div>
+        <div class="mock-tests-cards-grid">
+          ${MOCK_TESTS.filter(t => t.id !== test.id).slice(0, 3).map(t => renderExamCard(t)).join('')}
+        </div>
+      </section>
     </div>
   `;
 }
@@ -540,6 +1140,7 @@ function openPreTestModal(test) {
         email,
         form_name: `Free Mock Test Started - ${test.shortTitle}`,
         source: 'Free Mock Test Registration',
+        page_url: typeof window !== 'undefined' && window.location.origin ? `${window.location.origin}/mock-test/${test.id}` : '/mock-test',
         message: `Student registered and started ${test.title}. Location: ${location}. Target: ${targetCollege}.`,
         custom_fields: {
           isMockTest: true,
@@ -1511,6 +2112,7 @@ function openPostTestModal(scoreData) {
         email,
         form_name: `Free Mock Test Score - ${scoreData.test.shortTitle}`,
         source: 'Free Mock Test Completed',
+        page_url: typeof window !== 'undefined' && window.location.origin ? `${window.location.origin}/mock-test/${scoreData.test.id}` : '/mock-test',
         message: `Candidate completed ${scoreData.test.title}. Achieved Score: ${scoreData.rawScore} / ${scoreData.maxScore}. Accuracy: ${scoreData.accuracy}%. Projected Percentile: ${scoreData.percentile}%ile. Location: ${location}.`,
         custom_fields: {
           isMockTest: true,
@@ -1562,6 +2164,9 @@ function renderScorecardAndSolutions(scoreData) {
   const test = scoreData.test;
   const cand = currentExamState.candidate;
 
+  const isMatExam = test.id === 'dec-mat-mock-test-free' || test.slug === 'dec-mat-mock-test-free' || test.id === 'mat';
+  const matCompositeScore = isMatExam ? Math.min(800, Math.max(200, Math.round(200 + (Math.max(0, scoreData.rawScore) / Math.max(1, scoreData.maxScore)) * 600))) : null;
+
   appEl.innerHTML = `
     <div class="mock-scorecard-container">
       <!-- Breadcrumb -->
@@ -1585,6 +2190,7 @@ function renderScorecardAndSolutions(scoreData) {
             <div class="score-pill-row">
               <span class="accuracy-pill">Accuracy: ${scoreData.accuracy}%</span>
               <span class="time-pill">Time Taken: ${scoreData.timeTakenFormatted}</span>
+              ${isMatExam ? `<span class="accuracy-pill" style="background: rgba(16, 185, 129, 0.15); color: #059669; font-weight: 800;">🎯 Scaled Score: ${matCompositeScore} / 800</span>` : ''}
             </div>
           </div>
 

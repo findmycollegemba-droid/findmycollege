@@ -2210,6 +2210,7 @@ for (const sch of SCHOLARSHIPS_DATA) {
 // ==========================================
 for (const test of MOCK_TESTS) {
   const canonicalUrl = `${BASE_URL}/mock-test/${encodeURIComponent(test.id)}`;
+  const isDecMat = test.id === 'dec-mat-mock-test-free';
   
   const testSchema = {
     '@context': 'https://schema.org',
@@ -2236,18 +2237,66 @@ for (const test of MOCK_TESTS) {
     ]
   };
 
-  const shortT = test.title.length > 36 ? test.title.replace(/\s*\([^)]*\)/, '').trim() : test.title;
-  let testTitle = `${shortT} Free CBT Mock Test | FMBS`;
-  if (testTitle.length > 60) testTitle = `${shortT} CBT Mock Test | FMBS`;
-  if (testTitle.length > 60) testTitle = testTitle.slice(0, 60).trim();
+  if (isDecMat) {
+    testSchema['@graph'].push({
+      '@type': 'FAQPage',
+      '@id': `${canonicalUrl}#faq`,
+      'mainEntity': [
+        {
+          '@type': 'Question',
+          'name': 'Is the Dec MAT Mock Test completely free of cost?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Yes, 100% free. FindMyBSchool offers full-length CBT mock tests for Dec MAT with zero hidden fees, instant percentile analysis, scaled composite score out of 800, and verified step-by-step explanations.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'What is the latest exam pattern and duration for Dec MAT 2026?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Under the latest AIMA MAT pattern, the examination consists of 150 multiple choice questions to be completed in 120 minutes (2 hours). The paper has 5 sections of 30 questions each.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'How is the composite score out of 800 calculated in MAT?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'AIMA converts your raw scores in the first 4 sections into scaled scores between 0 and 100, which are combined into a composite score ranging from 200 to 800. Indian & Global Environment is evaluated separately.'
+          }
+        },
+        {
+          '@type': 'Question',
+          'name': 'Which top colleges accept MAT December scores for admissions?',
+          'acceptedAnswer': {
+            '@type': 'Answer',
+            'text': 'Over 600 B-schools across India accept MAT December scores, including PUMBA Pune, SIMSREE/JBIMS MMS via CAP All-India quota, BIMTECH Greater Noida, XIME, Christ University, JIMS Rohini, Alliance, and Jaipuria.'
+          }
+        }
+      ]
+    });
+  }
 
-  let testDesc = `Take free ${shortT} (${test.totalQuestions} Qs, ${test.fullDurationMinutes} mins) with real TCS iON CBT interface & instant score percentiles on FMBS.`;
-  if (testDesc.length > 155) {
-    testDesc = `Free ${shortT} (${test.totalQuestions} Qs, ${test.fullDurationMinutes}m) with TCS iON interface & instant percentiles on FMBS.`;
-  }
-  if (testDesc.length > 155) {
-    testDesc = testDesc.slice(0, 151).trim() + '...';
-  }
+  let testTitle = isDecMat 
+    ? 'Dec MAT Mock Test Free 2026 (Official Pattern CBT) | FMBS'
+    : (() => {
+        const shortT = test.title.length > 36 ? test.title.replace(/\s*\([^)]*\)/, '').trim() : test.title;
+        let t = `${shortT} Free CBT Mock Test | FMBS`;
+        if (t.length > 60) t = `${shortT} CBT Mock Test | FMBS`;
+        if (t.length > 60) t = t.slice(0, 60).trim();
+        return t;
+      })();
+
+  let testDesc = isDecMat
+    ? 'Attempt 100% Free Dec MAT 2026 Mock Test with official AIMA 5-section CBT pattern, real timers, 800 composite scaled score & top 600+ B-school cutoff predictor.'
+    : (() => {
+        const shortT = test.title.length > 36 ? test.title.replace(/\s*\([^)]*\)/, '').trim() : test.title;
+        let d = `Take free ${shortT} (${test.totalQuestions} Qs, ${test.fullDurationMinutes} mins) with real TCS iON CBT interface & instant score percentiles on FMBS.`;
+        if (d.length > 155) d = `Free ${shortT} (${test.totalQuestions} Qs, ${test.fullDurationMinutes}m) with TCS iON interface & instant percentiles on FMBS.`;
+        if (d.length > 155) d = d.slice(0, 151).trim() + '...';
+        return d;
+      })();
 
   const meta = {
     title: testTitle,
@@ -2256,7 +2305,68 @@ for (const test of MOCK_TESTS) {
     schema: testSchema
   };
 
-  const bodyHtml = `
+  const bodyHtml = isDecMat ? `
+    <header style="padding: 20px 24px; border-bottom: 1px solid #E2E8F0; text-align: center; background: #FAFAFE;">
+      <a href="/" style="font-weight: 800; font-size: 1.5rem; color: #6B2CF5; text-decoration: none;">FindMyBSchool</a>
+      <p style="margin: 4px 0 0; color: #64748B; font-size: 0.95rem;">India’s Verified MBA &amp; PGDM Admissions Portal • Session 2027-29</p>
+    </header>
+    <main style="max-width: 1100px; margin: 32px auto; padding: 0 20px; font-family: system-ui, -apple-system, sans-serif; line-height: 1.65; color: #1E293B;">
+      <nav aria-label="Breadcrumb" style="font-size: 0.9rem; color: #64748B; margin-bottom: 16px;">
+        <a href="/" style="color: #6B2CF5; text-decoration: none;">Home</a> &gt; 
+        <a href="/mock-test" style="color: #6B2CF5; text-decoration: none;">Mock Tests</a> &gt; 
+        <span>Dec MAT Mock Test Free</span>
+      </nav>
+      <div style="display: inline-block; background: rgba(37, 99, 235, 0.1); color: #2563EB; font-weight: 800; font-size: 0.82rem; padding: 4px 12px; border-radius: 9999px; margin-bottom: 12px;">
+        ⚡ AIMA Dec 2026 Session • Official Pattern CBT
+      </div>
+      <h1 style="font-size: 2.3rem; font-weight: 800; color: #0F172A; line-height: 1.25; margin-bottom: 10px;">
+        Dec MAT Mock Test Free (Official MAT 2026 CBT Simulation)
+      </h1>
+      <p style="color: #475569; font-size: 1.1rem; line-height: 1.6; max-width: 900px; margin-bottom: 24px;">
+        Experience the authentic AIMA MAT December 2026 CBT examination environment. Practice 150 questions across all 5 sections — Language Comprehension, Intelligence &amp; Critical Reasoning, Mathematical Skills, Data Analysis &amp; Sufficiency, and Indian &amp; Global Environment. Get instant composite scaled score out of 800 and verified cutoff predictions for 600+ B-schools.
+      </p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 28px;">
+        <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 16px; text-align: center;">
+          <div style="font-size: 0.75rem; text-transform: uppercase; color: #64748B; font-weight: 700;">Duration</div>
+          <div style="font-size: 1.25rem; font-weight: 800; color: #0F172A;">120 Minutes</div>
+        </div>
+        <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 16px; text-align: center;">
+          <div style="font-size: 0.75rem; text-transform: uppercase; color: #64748B; font-weight: 700;">Total Questions</div>
+          <div style="font-size: 1.25rem; font-weight: 800; color: #0F172A;">150 Questions</div>
+        </div>
+        <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 16px; text-align: center;">
+          <div style="font-size: 0.75rem; text-transform: uppercase; color: #64748B; font-weight: 700;">Marking Scheme</div>
+          <div style="font-size: 1.25rem; font-weight: 800; color: #0F172A;">+1 / -0.25</div>
+        </div>
+        <div style="background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 12px; padding: 16px; text-align: center;">
+          <div style="font-size: 0.75rem; text-transform: uppercase; color: #64748B; font-weight: 700;">Composite Score</div>
+          <div style="font-size: 1.25rem; font-weight: 800; color: #0F172A;">200 – 800 Scale</div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 32px;">
+        <a href="/mock-test/dec-mat-mock-test-free" style="display: inline-block; padding: 14px 28px; background: #2563EB; color: #FFFFFF; font-weight: 800; text-decoration: none; border-radius: 10px; font-size: 1.05rem;">
+          Launch Dec MAT Free Mock Test Now →
+        </a>
+      </div>
+
+      <section style="margin-top: 40px;">
+        <h2 style="font-size: 1.6rem; font-weight: 800; color: #0F172A;">Top MBA Colleges Accepting Dec MAT Scores &amp; Expected Cutoffs</h2>
+        <ul style="margin-top: 14px; padding-left: 20px; line-height: 1.8;">
+          <li><strong>PUMBA (Dept. of Management Sciences, Pune Univ.)</strong> — 95+ Percentile (Avg CTC: ₹8.9 LPA)</li>
+          <li><strong>SIMSREE / JBIMS (MMS CAP All-India Seats)</strong> — 99.9+ Percentile (Avg CTC: ₹15.3 LPA)</li>
+          <li><strong>BIMTECH Greater Noida</strong> — 80-85+ Percentile (Avg CTC: ₹11.2 LPA)</li>
+          <li><strong>XIME Bengaluru / Chennai / Kochi</strong> — 75-80+ Percentile (Avg CTC: ₹10.3 LPA)</li>
+          <li><strong>Christ University Institute of Management</strong> — 70-75+ Percentile (Avg CTC: ₹8.5 LPA)</li>
+          <li><strong>JIMS Rohini, New Delhi</strong> — 75-80+ Percentile (Avg CTC: ₹8.1 LPA)</li>
+          <li><strong>Jaipuria Institute of Management</strong> — 70-75+ Percentile (Avg CTC: ₹11.5 LPA)</li>
+          <li><strong>Alliance School of Business, Bengaluru</strong> — 70+ Percentile (Avg CTC: ₹8.5 LPA)</li>
+        </ul>
+      </section>
+    </main>
+    ${COMMON_FOOTER}
+  ` : `
     <header style="padding: 20px 24px; border-bottom: 1px solid #E2E8F0; text-align: center; background: #FAFAFE;">
       <a href="/" style="font-weight: 800; font-size: 1.5rem; color: #6B2CF5; text-decoration: none;">FindMyBSchool</a>
       <p style="margin: 4px 0 0; color: #64748B; font-size: 0.95rem;">India’s Verified MBA &amp; PGDM Admissions Portal • Session 2027-29</p>
@@ -2277,6 +2387,7 @@ for (const test of MOCK_TESTS) {
     </main>
     ${COMMON_FOOTER}
   `;
+
   writeStaticRoute(`/mock-test/${test.id}`, generatePageHtml(meta, bodyHtml));
   count++;
 }

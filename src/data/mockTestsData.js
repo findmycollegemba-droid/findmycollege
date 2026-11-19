@@ -11,6 +11,7 @@ import { NMAT_108_QUESTIONS_SECTIONS } from './nmatMock108Data.js';
 import { XAT_95_QUESTIONS_SECTIONS } from './xatMock95Data.js';
 import { SNAP_60_QUESTIONS_SECTIONS } from './snapMock60Data.js';
 import { CMAT_100_QUESTIONS_SECTIONS } from './cmatMock100Data.js';
+import { DEC_MAT_QUESTIONS_SECTIONS } from './decMatMockData.js';
 
 export const MOCK_TESTS = [
   {
@@ -109,106 +110,39 @@ export const MOCK_TESTS = [
     sections: CMAT_100_QUESTIONS_SECTIONS
   },
   {
-    id: 'mat',
-    slug: 'mat',
-    title: 'MAT 2026 Official Pattern All-India Free Mock Test',
-    shortTitle: 'MAT 2026',
-    badge: 'AIMA National Gateway (600+ B-Schools)',
-    tagline: 'Standard AIMA Examination Pattern: 5 Sections, Scaled Composite Score up to 800',
-    fullDurationMinutes: 150,
+    id: 'dec-mat-mock-test-free',
+    slug: 'dec-mat-mock-test-free',
+    aliases: ['mat', 'mat-2026', 'dec-mat', 'dec-mat-2026', 'dec-mat-mock-test'],
+    title: 'Dec MAT Mock Test Free (Official MAT 2026 Pattern)',
+    shortTitle: 'Dec MAT Mock Test Free',
+    badge: 'AIMA Dec Session • Official Pattern',
+    tagline: 'Authentic 5-Section CBT Practice: Language, Reasoning, Math, DI & GK with Instant 800 Scaled Score & Percentile',
+    fullDurationMinutes: 120,
     quickDurationMinutes: 30,
-    totalQuestions: 15,
-    totalMarks: 15,
+    totalQuestions: 30,
+    totalMarks: 30,
+    compositeScaleMax: 800,
     markingScheme: {
       correct: 1,
       incorrect: -0.25,
       unattempted: 0,
-      description: '+1 mark for correct answer, -0.25 mark for incorrect answer'
+      description: '+1 mark for correct answer, -0.25 mark for incorrect answer (GK scored separately)'
     },
-    sections: [
-      {
-        id: 'mat-lang',
-        name: 'Language Comprehension',
-        fullName: 'Language Comprehension',
-        durationMinutes: 30,
-        questions: [
-          {
-            id: 'mat-q1',
-            sectionId: 'mat-lang',
-            type: 'mcq',
-            text: 'Choose the word that best substitutes the given phrase: "A person who renounces a religious or political belief or principle."',
-            options: [
-              { id: 'A', text: 'Apostate' },
-              { id: 'B', text: 'Iconoclast' },
-              { id: 'C', text: 'Philistine' },
-              { id: 'D', text: 'Ascetic' }
-            ],
-            correctOption: 'A',
-            explanation: 'An apostate is a person who renounces or abandons a religious, political, or moral belief.',
-            topic: 'One Word Substitution',
-            difficulty: 'Easy'
-          }
-        ]
-      },
-      {
-        id: 'mat-math',
-        name: 'Mathematical Skills',
-        fullName: 'Mathematical Skills',
-        durationMinutes: 30,
-        questions: [
-          {
-            id: 'mat-q2',
-            sectionId: 'mat-math',
-            type: 'mcq',
-            text: 'A pipe can fill a cistern in 12 hours while another pipe empties it in 18 hours. If both pipes are opened simultaneously, in how many hours will the cistern be completely filled?',
-            options: [
-              { id: 'A', text: '24 hours' },
-              { id: 'B', text: '30 hours' },
-              { id: 'C', text: '36 hours' },
-              { id: 'D', text: '42 hours' }
-            ],
-            correctOption: 'C',
-            explanation: 'Net filling rate per hour = (1/12) - (1/18) = (3 - 2) / 36 = 1/36.\nTherefore, the cistern will be filled in 36 hours (Option C).',
-            topic: 'Pipes & Cisterns',
-            difficulty: 'Easy'
-          }
-        ]
-      },
-      {
-        id: 'mat-gk',
-        name: 'Indian & Global Environment',
-        fullName: 'Indian & Global Environment',
-        durationMinutes: 30,
-        questions: [
-          {
-            id: 'mat-q3',
-            sectionId: 'mat-gk',
-            type: 'mcq',
-            text: 'Which institution serves as the monetary and regulatory authority of the banking system in India?',
-            options: [
-              { id: 'A', text: 'SEBI' },
-              { id: 'B', text: 'Reserve Bank of India (RBI)' },
-              { id: 'C', text: 'NITI Aayog' },
-              { id: 'D', text: 'Ministry of Corporate Affairs' }
-            ],
-            correctOption: 'B',
-            explanation: 'The Reserve Bank of India (RBI) is the central bank and primary monetary authority regulating Indian banks and monetary supply.',
-            topic: 'Indian Economy',
-            difficulty: 'Easy'
-          }
-        ]
-      }
-    ]
+    sections: DEC_MAT_QUESTIONS_SECTIONS
   }
 ];
 
 /**
- * Returns mock test by ID or slug
+ * Returns mock test by ID or slug (including aliases)
  */
 export function getMockTestById(id) {
   if (!id) return null;
   const cleanId = String(id).toLowerCase().trim();
-  return MOCK_TESTS.find(t => t.id === cleanId || t.slug === cleanId) || null;
+  return MOCK_TESTS.find(t => 
+    t.id === cleanId || 
+    t.slug === cleanId || 
+    (t.aliases && t.aliases.includes(cleanId))
+  ) || null;
 }
 
 /**
@@ -251,7 +185,15 @@ export function estimatePercentile(examId, score, maxScore) {
     return Math.max(50, (50 + percentage * 1.0)).toFixed(2);
   }
 
-  // General Percentile Curve for NMAT, SNAP, CMAT, MAT
+  if (examId === 'dec-mat-mock-test-free' || examId === 'mat' || examId === 'mat-2026') {
+    if (percentage >= 75) return (98.5 + (percentage - 75) * 0.05).toFixed(2);
+    if (percentage >= 60) return (92.0 + (percentage - 60) * 0.43).toFixed(2);
+    if (percentage >= 45) return (82.0 + (percentage - 45) * 0.66).toFixed(2);
+    if (percentage >= 30) return (68.0 + (percentage - 30) * 0.93).toFixed(2);
+    return Math.max(45, (45 + percentage * 0.75)).toFixed(2);
+  }
+
+  // General Percentile Curve for NMAT, SNAP, CMAT
   if (percentage >= 75) return (98.0 + (percentage - 75) * 0.07).toFixed(2);
   if (percentage >= 60) return (90.0 + (percentage - 60) * 0.53).toFixed(2);
   if (percentage >= 45) return (80.0 + (percentage - 45) * 0.66).toFixed(2);

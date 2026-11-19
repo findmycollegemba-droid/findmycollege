@@ -339,24 +339,36 @@ export async function updatePageSEO(page = 'home', sub = null, params = null) {
     case 'mock-test': {
       let specificTest = null;
       if (sub) {
-        const { MOCK_TESTS } = await import('../data/mockTestsData.js');
-        specificTest = MOCK_TESTS.find(t => t.id === sub || t.slug === sub);
+        const { MOCK_TESTS, getMockTestById } = await import('../data/mockTestsData.js');
+        specificTest = getMockTestById(sub) || MOCK_TESTS.find(t => t.id === sub || t.slug === sub || (t.aliases && t.aliases.includes(sub)));
       }
 
       if (specificTest) {
-        const shortT = specificTest.title.length > 42 ? specificTest.title.replace(/\s*\([^)]*\)/, '') : specificTest.title;
-        meta.title = `${shortT} Free CBT Mock Test | FMBS`.slice(0, 68);
-        meta.description = `Take free ${shortT} (${specificTest.totalQuestions} Qs, ${specificTest.fullDurationMinutes} mins) with real TCS iON CBT interface & instant score percentiles on FMBS.`;
-        meta.canonical = `${BASE_URL}/mock-test/${encodeURIComponent(specificTest.id)}`;
-        meta.mockTestData = specificTest;
-        meta.breadcrumbs = [
-          { name: 'Home', url: `${BASE_URL}/` },
-          { name: 'Free Mock Tests', url: `${BASE_URL}/mock-test` },
-          { name: specificTest.shortTitle || specificTest.title, url: meta.canonical }
-        ];
+        if (specificTest.id === 'dec-mat-mock-test-free' || sub === 'dec-mat-mock-test-free' || sub === 'mat' || sub === 'mat-2026' || sub === 'dec-mat') {
+          meta.title = 'Dec MAT Mock Test Free 2026 (Official Pattern CBT) | FMBS';
+          meta.description = 'Attempt 100% Free Dec MAT 2026 Mock Test with official AIMA 5-section CBT pattern, real timers, 800 composite scaled score & top 600+ B-school cutoff predictor.';
+          meta.canonical = `${BASE_URL}/mock-test/dec-mat-mock-test-free`;
+          meta.mockTestData = specificTest;
+          meta.breadcrumbs = [
+            { name: 'Home', url: `${BASE_URL}/` },
+            { name: 'Free Mock Tests', url: `${BASE_URL}/mock-test` },
+            { name: 'Dec MAT Mock Test Free', url: meta.canonical }
+          ];
+        } else {
+          const shortT = specificTest.title.length > 42 ? specificTest.title.replace(/\s*\([^)]*\)/, '') : specificTest.title;
+          meta.title = `${shortT} Free CBT Mock Test | FMBS`.slice(0, 68);
+          meta.description = `Take free ${shortT} (${specificTest.totalQuestions} Qs, ${specificTest.fullDurationMinutes} mins) with real TCS iON CBT interface & instant score percentiles on FMBS.`;
+          meta.canonical = `${BASE_URL}/mock-test/${encodeURIComponent(specificTest.id)}`;
+          meta.mockTestData = specificTest;
+          meta.breadcrumbs = [
+            { name: 'Home', url: `${BASE_URL}/` },
+            { name: 'Free Mock Tests', url: `${BASE_URL}/mock-test` },
+            { name: specificTest.shortTitle || specificTest.title, url: meta.canonical }
+          ];
+        }
       } else {
-        meta.title = 'Free MBA Mock Tests 2026-27: CAT, XAT & SNAP | FMBS';
-        meta.description = 'Attempt 100% Free All-India MBA Mock Tests with TCS iON simulated interface, on-screen calculator, sectional timers, and instant score report on FMBS.';
+        meta.title = 'Free MBA Mock Tests 2026-27: CAT, XAT, MAT & SNAP | FMBS';
+        meta.description = 'Attempt 100% Free All-India MBA Mock Tests for CAT, XAT, Dec MAT, SNAP, NMAT & CMAT with TCS iON simulated interface, on-screen calculator, and instant score reports on FMBS.';
         meta.canonical = `${BASE_URL}/mock-test`;
         meta.breadcrumbs = [
           { name: 'Home', url: `${BASE_URL}/` },
@@ -1141,29 +1153,82 @@ function updateSchemaLD(meta) {
       ]
     });
   } else if (meta.page === 'mock-test') {
-    // 9. Mock Test Hub FAQs
-    graph.push({
-      '@type': 'FAQPage',
-      '@id': `${BASE_URL}/mock-test#faq`,
-      'mainEntity': [
-        {
-          '@type': 'Question',
-          'name': 'Which free MBA mock tests are available on FindMyBSchool?',
-          'acceptedAnswer': {
-            '@type': 'Answer',
-            'text': 'FindMyBSchool offers 100% free full-length simulated mock tests for CAT 2026 (68 questions), XAT 2027 (95 questions), NMAT by GMAC (108 questions), SNAP (60 questions), and CMAT (100 questions) with TCS iON interface and instant percentile reports.'
+    if (meta.mockTestData) {
+      const test = meta.mockTestData;
+      graph.push({
+        '@type': 'Quiz',
+        '@id': `${meta.canonical}#quiz`,
+        'name': test.title,
+        'description': test.tagline,
+        'timeRequired': `PT${test.fullDurationMinutes}M`,
+        'educationalLevel': 'Postgraduate Management Admissions'
+      });
+
+      if (test.id === 'dec-mat-mock-test-free') {
+        graph.push({
+          '@type': 'FAQPage',
+          '@id': `${meta.canonical}#faq`,
+          'mainEntity': [
+            {
+              '@type': 'Question',
+              'name': 'Is the Dec MAT Mock Test completely free of cost?',
+              'acceptedAnswer': {
+                '@type': 'Answer',
+                'text': 'Yes, 100% free. FindMyBSchool offers full-length CBT mock tests for Dec MAT with zero hidden fees, instant percentile analysis, scaled composite score out of 800, and verified step-by-step explanations.'
+              }
+            },
+            {
+              '@type': 'Question',
+              'name': 'What is the latest exam pattern and duration for Dec MAT 2026?',
+              'acceptedAnswer': {
+                '@type': 'Answer',
+                'text': 'Under the latest AIMA MAT pattern, the exam consists of 150 questions in 120 minutes across 5 sections (Language, Reasoning, Math, Data Analysis, and Indian & Global Environment).'
+              }
+            },
+            {
+              '@type': 'Question',
+              'name': 'How is the composite score out of 800 calculated in MAT?',
+              'acceptedAnswer': {
+                '@type': 'Answer',
+                'text': 'Raw scores in the first 4 sections are converted to scaled scores between 0 and 100, which are combined into a composite score ranging from 200 to 800. Indian & Global Environment is evaluated separately.'
+              }
+            },
+            {
+              '@type': 'Question',
+              'name': 'Which top colleges accept MAT December scores?',
+              'acceptedAnswer': {
+                '@type': 'Answer',
+                'text': 'Over 600 colleges accept MAT December scores including PUMBA Pune, SIMSREE/JBIMS MMS via CAP All-India seats, BIMTECH Greater Noida, XIME, Christ University, JIMS Rohini, Alliance, and Jaipuria.'
+              }
+            }
+          ]
+        });
+      }
+    } else {
+      // Mock Test Hub FAQs
+      graph.push({
+        '@type': 'FAQPage',
+        '@id': `${BASE_URL}/mock-test#faq`,
+        'mainEntity': [
+          {
+            '@type': 'Question',
+            'name': 'Which free MBA mock tests are available on FindMyBSchool?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'FindMyBSchool offers 100% free full-length simulated mock tests for CAT 2026 (68 questions), XAT 2027 (95 questions), NMAT by GMAC (108 questions), SNAP (60 questions), CMAT (100 questions), and Dec MAT 2026 (150 questions) with TCS iON interface and instant percentile reports.'
+            }
+          },
+          {
+            '@type': 'Question',
+            'name': 'How is the mock test percentile calculated?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Percentiles are calculated based on historical score vs percentile equating curves across over 2.5 lakh historical test-takers, benchmarked against real exam results.'
+            }
           }
-        },
-        {
-          '@type': 'Question',
-          'name': 'How is the mock test percentile calculated?',
-          'acceptedAnswer': {
-            '@type': 'Answer',
-            'text': 'Percentiles are calculated based on historical score vs percentile equating curves across over 2.5 lakh historical test-takers, benchmarked against real exam results.'
-          }
-        }
-      ]
-    });
+        ]
+      });
+    }
   } else if (meta.examData) {
     // 10. Specific Exam Schema & FAQs
     const exam = meta.examData;

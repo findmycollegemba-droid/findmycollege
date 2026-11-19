@@ -1558,7 +1558,7 @@ export function generateMockTestsDirectoryBodyHtml(mockTests = []) {
           <span>🎯 Real TCS iON CBT Interface • All-India Rank &amp; AI Analysis</span>
         </div>
         <h1 style="font-size: 2.25rem; font-weight: 800; color: #0F172A; line-height: 1.25; margin: 0 0 14px;">
-          Free All-India MBA CBT Mock Tests (CAT, XAT, CMAT, SNAP &amp; NMAT)
+          Free All-India MBA CBT Mock Tests (CAT, XAT, MAT, CMAT, SNAP &amp; NMAT)
         </h1>
         <p style="color: #475569; font-size: 1.15rem; line-height: 1.6; max-width: 960px;">
           Simulate real national exam conditions with countdown timers, question palette navigation, negative marking rules, sectional cutoffs, and percentile benchmarking.
