@@ -24,7 +24,7 @@ export function renderFooter() {
             </div>
             <div class="helpline-row">
               <span class="helpline-label">Direct Counselor Desk:</span>
-              <a href="mailto:admissions@findmybschool.com" class="helpline-val">admissions@findmybschool.com</a>
+              <a href="mailto:admission@findmybschool.com" class="helpline-val">admission@findmybschool.com</a>
             </div>
           </div>
           <div class="footer-social-row">

@@ -571,7 +571,7 @@ function updateSchemaLD(meta) {
       '@type': 'SearchAction',
       'target': {
         '@type': 'EntryPoint',
-        'urlTemplate': `${BASE_URL}/?page=colleges&search={search_term_string}`
+        'urlTemplate': `${BASE_URL}/colleges?search={search_term_string}`
       },
       'query-input': 'required name=search_term_string'
     },
@@ -606,7 +606,7 @@ function updateSchemaLD(meta) {
         '@type': 'ContactPoint',
         'contactType': 'student counseling helpdesk',
         'telephone': '+91-8800126446',
-        'email': 'admissions@findmybschool.com',
+        'email': 'admission@findmybschool.com',
         'availableLanguage': ['English', 'Hindi']
       }
     ],

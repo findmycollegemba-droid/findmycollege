@@ -107,9 +107,9 @@ export function renderContactPage() {
             </div>
           </div>
 
-          <!-- Card 3: Official Founder & Admissions Email -->
+          <!-- Card 3: Official Admissions & Counselor Email -->
           <div class="channel-card">
-            <div class="channel-badge email-badge">Founder's Desk</div>
+            <div class="channel-badge email-badge">Official Admissions Desk</div>
             <div class="channel-icon-wrap email-icon">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -117,16 +117,16 @@ export function renderContactPage() {
               </svg>
             </div>
             <div class="channel-content">
-              <h2 class="channel-title">Official Founder & Admissions Desk</h2>
+              <h2 class="channel-title">Official Admissions Email Desk</h2>
               <div class="channel-number-row">
-                <a href="mailto:founder@findmybschool.com" class="channel-phone-link channel-email-link">
-                  founder@findmybschool.com
+                <a href="mailto:admission@findmybschool.com" class="channel-phone-link channel-email-link">
+                  admission@findmybschool.com
                 </a>
               </div>
-              <p class="channel-sub">Direct founder desk for student profile reviews, institutional tie-ups, and escalations.</p>
+              <p class="channel-sub">Direct admissions inbox for candidate profile reviews, cutoff inquiries & escalations.</p>
               <div class="channel-actions">
-                <a href="mailto:founder@findmybschool.com" class="btn-channel btn-email">
-                  <span>Email Founder Desk</span>
+                <a href="mailto:admission@findmybschool.com" class="btn-channel btn-email">
+                  <span>Email Admissions Desk</span>
                   <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
               </div>
@@ -445,8 +445,8 @@ export function renderContactPage() {
                 <span class="office-icon">✉️</span>
                 <div class="office-info">
                   <strong>Official Emails</strong>
+                  <span>Admissions: <a href="mailto:admission@findmybschool.com" class="office-link">admission@findmybschool.com</a></span>
                   <span>Founder Desk: <a href="mailto:founder@findmybschool.com" class="office-link">founder@findmybschool.com</a></span>
-                  <span>Admissions: <a href="mailto:admissions@findmybschool.com" class="office-link">admissions@findmybschool.com</a></span>
                   <span>Grievances: <a href="mailto:grievance@findmybschool.com" class="office-link">grievance@findmybschool.com</a></span>
                 </div>
               </div>
@@ -488,7 +488,7 @@ export function renderContactPage() {
                 <span class="faq-chevron">+</span>
               </button>
               <div class="faq-answer">
-                <p>The official admissions helpline for FindMyBSchool is <strong>+91 88001 26446</strong>. You can call or WhatsApp our senior counseling desk from <strong>Monday to Saturday between 9:00 AM and 8:00 PM IST</strong>. Our dedicated email support and founder desk is available at <strong>founder@findmybschool.com</strong> / <strong>admissions@findmybschool.com</strong> with responses within 2 to 4 hours.</p>
+                <p>The official admissions helpline for FindMyBSchool is <strong>+91 88001 26446</strong>. You can call or WhatsApp our senior counseling desk from <strong>Monday to Saturday between 9:00 AM and 8:00 PM IST</strong>. Our dedicated email support and admissions desk is available at <strong>admission@findmybschool.com</strong> with responses within 2 to 4 hours.</p>
               </div>
             </div>
 

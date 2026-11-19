@@ -237,8 +237,26 @@ async function handleRouteChange() {
     sub = 'pgdm';
     params.set('type', 'pgdm');
   } else if (pathname.startsWith('/colleges/')) {
+    const rawCollegeSlug = decodeURIComponent(pathname.replace('/colleges/', '').trim());
+    const DUP_SLUG_MAP = {
+      'imi-delhi': 'imi-new-delhi',
+      'sjmsom-iit-bombay': 'iit-bombay-sjmsom',
+      'k-j-somaiya-mumbai': 'kj-somaiya-mumbai',
+      'indus-business-academy-bangalore': 'iba-bangalore',
+      'upes-dehradun': 'upes-school-of-business-dehradun',
+      'noida-institute-of-engineering-technology': 'niet-greater-noida',
+      'lovely-professional-phagwara': 'lpu-mittal-school-of-business',
+      'maharishi-markandeshwar-ambala': 'maharishi-markandeshwar-university-ambala'
+    };
+    if (DUP_SLUG_MAP[rawCollegeSlug]) {
+      const canonicalSlug = DUP_SLUG_MAP[rawCollegeSlug];
+      window.history.replaceState(null, '', `/colleges/${canonicalSlug}`);
+      pathname = `/colleges/${canonicalSlug}`;
+      sub = canonicalSlug;
+    } else {
+      sub = rawCollegeSlug;
+    }
     page = 'colleges';
-    sub = decodeURIComponent(pathname.replace('/colleges/', '').trim());
   } else if (pathname === '/colleges') {
     page = 'colleges';
     sub = null;

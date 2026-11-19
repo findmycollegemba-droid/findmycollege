@@ -260,7 +260,7 @@ For candidates targeting the **2027-29 batch**, CAT is by no means mandatory. Ne
 
 | Business School | Non-CAT Tests Accepted | Expected Cutoff | 2-Yr Total Fees | Average CTC | Highest CTC |
 | --- | --- | --- | --- | --- | --- |
-| **[UPES School of Business](/colleges/upes-dehradun)** | UPESMET, [MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat) | UPESMET 50% / MAT 70% | ₹19.11 Lakhs | ₹10.50 LPA | ₹29.00 LPA |
+| **[UPES School of Business](/colleges/upes-school-of-business-dehradun)** | UPESMET, [MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat) | UPESMET 50% / MAT 70% | ₹19.11 Lakhs | ₹10.50 LPA | ₹29.00 LPA |
 | **[Doon Business School (DBS)](/colleges/doon-business-school-dehradun)** | [MAT](/exams/mat), [CMAT](/exams/cmat), [XAT](/exams/xat) | MAT 65% / CMAT 60% | ₹8.90 Lakhs | ₹8.70 LPA | ₹40.00 LPA |
 | **[Graphic Era University (GEU)](/colleges/graphic-era-dehradun)** | [MAT](/exams/mat), [CMAT](/exams/cmat), CUET PG | MAT 60% / CMAT 55% | ₹7.17 Lakhs | ₹7.50 LPA | ₹16.00 LPA |
 | **[IMS Unison University](/colleges/ims-unison-university-dehradun)** | [MAT](/exams/mat), [CMAT](/exams/cmat), UKSEE | MAT 55% / Merit | ₹4.80 Lakhs | ₹6.20 LPA | ₹13.60 LPA |
