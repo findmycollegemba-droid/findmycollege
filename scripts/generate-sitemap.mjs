@@ -16,9 +16,6 @@ const BASE_URL = 'https://findmybschool.com';
 const TODAY = new Date().toISOString().split('T')[0];
 const DEFAULT_IMAGE = `${BASE_URL}/og-image.png`;
 
-const urls = [];
-const seenLocs = new Set();
-
 function escapeXml(str) {
   if (!str) return '';
   return String(str)
@@ -29,90 +26,82 @@ function escapeXml(str) {
     .replace(/'/g, '&apos;');
 }
 
-function addUrl(loc, changefreq, priority, lastmod = TODAY, image = null) {
-  if (seenLocs.has(loc)) return;
-  seenLocs.add(loc);
-  urls.push({ loc, changefreq, priority, lastmod, image });
+function buildUrlXml(urlList) {
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">',
+    ...urlList.map(u => {
+      let block = `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod || TODAY}</lastmod>\n    <changefreq>${u.changefreq || 'weekly'}</changefreq>\n    <priority>${u.priority || '0.7'}</priority>`;
+      if (u.image) {
+        block += `\n    <image:image>\n      <image:loc>${escapeXml(u.image.loc)}</image:loc>\n      <image:title>${escapeXml(u.image.title)}</image:title>\n    </image:image>`;
+      }
+      block += `\n  </url>`;
+      return block;
+    }),
+    '</urlset>',
+    ''
+  ].join('\n');
 }
 
-// 1. Core Landing & Main Pages
-addUrl(`${BASE_URL}/`, 'daily', '1.0', TODAY, { loc: DEFAULT_IMAGE, title: 'FindMyBSchool — Top MBA & PGDM Colleges, Fees & Cutoffs' });
-addUrl(`${BASE_URL}/colleges`, 'daily', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'Explore 600+ Verified MBA & PGDM Colleges in India' });
-addUrl(`${BASE_URL}/scholarships`, 'daily', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'Live MBA Scholarships 2027-29 (Grants up to ₹25 Lakhs)' });
-addUrl(`${BASE_URL}/mock-test`, 'daily', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'All-India Free MBA Mock Tests (TCS iON CBT Interface)' });
-addUrl(`${BASE_URL}/exams`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'National MBA Entrance Exams 2026-27' });
-addUrl(`${BASE_URL}/programs`, 'weekly', '0.8', TODAY, { loc: DEFAULT_IMAGE, title: 'MBA vs PGDM Comparison & ROI Analysis' });
-addUrl(`${BASE_URL}/blog`, 'daily', '0.8', TODAY, { loc: DEFAULT_IMAGE, title: 'MBA Strategy Blog & Editorial Prep Guides' });
-addUrl(`${BASE_URL}/contact`, 'monthly', '0.7', TODAY, { loc: DEFAULT_IMAGE, title: 'Free MBA Admission Counseling & Mentorship' });
-addUrl(`${BASE_URL}/ai-chat`, 'weekly', '0.7', TODAY, { loc: DEFAULT_IMAGE, title: 'AdmitIQ AI Admissions Assistant' });
-addUrl(`${BASE_URL}/aiu-approved-campuses`, 'daily', '0.95', TODAY, { loc: DEFAULT_IMAGE, title: 'AIU Approved MBA & PGDM Campuses Directory' });
+function writeSitemapFile(filename, content) {
+  const publicPath = path.resolve(__dirname, '../public', filename);
+  fs.writeFileSync(publicPath, content, 'utf-8');
 
-['delhi-ncr', 'pune', 'mumbai', 'bangalore', 'jaipur', 'kolkata', 'dehradun', 'lucknow', 'indore'].forEach(city => {
-  addUrl(`${BASE_URL}/aiu-approved-campuses/${city}`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: `AIU Approved Campuses in ${city}` });
-});
-addUrl(`${BASE_URL}/terms`, 'monthly', '0.6', TODAY);
-addUrl(`${BASE_URL}/privacy`, 'monthly', '0.6', TODAY);
-
-// 2. Program Comparison & Specialization Guides
-addUrl(`${BASE_URL}/programs/mba`, 'weekly', '0.85', TODAY);
-addUrl(`${BASE_URL}/programs/pgdm`, 'weekly', '0.85', TODAY);
-addUrl(`${BASE_URL}/programs/compare`, 'weekly', '0.9', TODAY);
-addUrl(`${BASE_URL}/programs/specializations`, 'weekly', '0.85', TODAY);
-addUrl(`${BASE_URL}/programs/roi`, 'weekly', '0.85', TODAY);
-
-// 3. Score Calculators & Tools
-addUrl(`${BASE_URL}/tools/cat-college-predictor`, 'daily', '1.0', TODAY, { loc: DEFAULT_IMAGE, title: 'CAT Score Calculator 2026: Percentile & College Predictor' });
-addUrl(`${BASE_URL}/tools/xat-percentile-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'XAT Score Calculator & XLRI Percentile Predictor 2027' });
-addUrl(`${BASE_URL}/tools/cmat-percentile-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'CMAT Score Calculator & JBIMS Cutoff Predictor 2026' });
-addUrl(`${BASE_URL}/tools/snap-score-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'SNAP 2026 Score Calculator & SIBM Percentile Predictor' });
-addUrl(`${BASE_URL}/tools/nmat-score-predictor`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'NMAT Score to Percentile Calculator & NMIMS Predictor' });
-
-// 4. College Degree Filters
-addUrl(`${BASE_URL}/colleges/mba`, 'daily', '0.85', TODAY);
-addUrl(`${BASE_URL}/colleges/pgdm`, 'daily', '0.85', TODAY);
-
-// 5. City Hubs (from CITY_INFOGRAPHICS_DATA and major college locations)
-const addedCities = new Set();
-CITY_INFOGRAPHICS_DATA.forEach(city => {
-  const cName = city.cityName.toLowerCase();
-  addedCities.add(cName);
-  addUrl(`${BASE_URL}/colleges/city/${encodeURIComponent(cName)}`, 'weekly', '0.85', TODAY, { loc: DEFAULT_IMAGE, title: `Top MBA & PGDM Colleges in ${city.cityName}` });
-});
-
-// Add other prominent cities from colleges data
-COLLEGES_DATA.forEach(col => {
-  if (col.city) {
-    const cName = col.city.toLowerCase().trim();
-    if (!addedCities.has(cName)) {
-      addedCities.add(cName);
-      addUrl(`${BASE_URL}/colleges/city/${encodeURIComponent(cName)}`, 'weekly', '0.75', TODAY, { loc: DEFAULT_IMAGE, title: `Top MBA & PGDM Colleges in ${col.city}` });
-    }
+  const distDir = path.resolve(__dirname, '../dist');
+  if (fs.existsSync(distDir)) {
+    const distPath = path.resolve(distDir, filename);
+    fs.writeFileSync(distPath, content, 'utf-8');
   }
-});
+}
 
-// 6. National MBA Entrance Exams
-EXAMS_DATA.forEach(exam => {
-  addUrl(`${BASE_URL}/exams/${encodeURIComponent(exam.id)}`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: `${exam.fullName} (${exam.name}) 2026-27` });
-});
+// =========================================================================
+// 1. MAIN / CORE PAGES (sitemap-main.xml)
+// =========================================================================
+const mainUrls = [];
+const seenMain = new Set();
+function addMain(loc, changefreq, priority, lastmod = TODAY, image = null) {
+  if (seenMain.has(loc)) return;
+  seenMain.add(loc);
+  mainUrls.push({ loc, changefreq, priority, lastmod, image });
+}
 
-// 7. Live MBA Scholarships
-SCHOLARSHIPS_DATA.forEach(scholarship => {
-  addUrl(`${BASE_URL}/scholarships/${encodeURIComponent(scholarship.id)}`, 'weekly', '0.85', TODAY, { loc: DEFAULT_IMAGE, title: `${scholarship.title} Scholarship` });
-});
+addMain(`${BASE_URL}/`, 'daily', '1.0', TODAY, { loc: DEFAULT_IMAGE, title: 'FindMyBSchool — Top MBA & PGDM Colleges, Fees & Cutoffs' });
+addMain(`${BASE_URL}/colleges`, 'daily', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'Explore 600+ Verified MBA & PGDM Colleges in India' });
+addMain(`${BASE_URL}/colleges/mba`, 'daily', '0.85', TODAY);
+addMain(`${BASE_URL}/colleges/pgdm`, 'daily', '0.85', TODAY);
+addMain(`${BASE_URL}/scholarships`, 'daily', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'Live MBA Scholarships 2027-29 (Grants up to ₹25 Lakhs)' });
+addMain(`${BASE_URL}/mock-test`, 'daily', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'All-India Free MBA Mock Tests (TCS iON CBT Interface)' });
+addMain(`${BASE_URL}/exams`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'National MBA Entrance Exams 2026-27' });
+addMain(`${BASE_URL}/programs`, 'weekly', '0.85', TODAY, { loc: DEFAULT_IMAGE, title: 'MBA vs PGDM Comparison & ROI Analysis' });
+addMain(`${BASE_URL}/programs/compare`, 'weekly', '0.85', TODAY);
+addMain(`${BASE_URL}/programs/mba`, 'weekly', '0.85', TODAY);
+addMain(`${BASE_URL}/programs/pgdm`, 'weekly', '0.85', TODAY);
+addMain(`${BASE_URL}/programs/specializations`, 'weekly', '0.85', TODAY);
+addMain(`${BASE_URL}/programs/roi`, 'weekly', '0.85', TODAY);
+addMain(`${BASE_URL}/blog`, 'daily', '0.85', TODAY, { loc: DEFAULT_IMAGE, title: 'MBA Strategy Blog & Editorial Prep Guides' });
+addMain(`${BASE_URL}/aiu-approved-campuses`, 'daily', '0.95', TODAY, { loc: DEFAULT_IMAGE, title: 'AIU Approved MBA & PGDM Campuses Directory' });
+addMain(`${BASE_URL}/tools/cat-college-predictor`, 'daily', '1.0', TODAY, { loc: DEFAULT_IMAGE, title: 'CAT Score Calculator 2026: Percentile & College Predictor' });
+addMain(`${BASE_URL}/tools/xat-percentile-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'XAT Score Calculator & XLRI Percentile Predictor 2027' });
+addMain(`${BASE_URL}/tools/cmat-percentile-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'CMAT Score Calculator & JBIMS Cutoff Predictor 2026' });
+addMain(`${BASE_URL}/tools/snap-score-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'SNAP 2026 Score Calculator & SIBM Percentile Predictor' });
+addMain(`${BASE_URL}/tools/nmat-score-predictor`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'NMAT Score to Percentile Calculator & NMIMS Predictor' });
+addMain(`${BASE_URL}/contact`, 'monthly', '0.7', TODAY, { loc: DEFAULT_IMAGE, title: 'Free MBA Admission Counseling & Mentorship' });
+addMain(`${BASE_URL}/terms`, 'monthly', '0.5', TODAY);
+addMain(`${BASE_URL}/privacy`, 'monthly', '0.5', TODAY);
 
-// 8. Free CBT Mock Tests
-MOCK_TESTS.forEach(test => {
-  addUrl(`${BASE_URL}/mock-test/${encodeURIComponent(test.id)}`, 'weekly', '0.85', TODAY, { loc: DEFAULT_IMAGE, title: `${test.title} Mock Test` });
-});
+writeSitemapFile('sitemap-main.xml', buildUrlXml(mainUrls));
 
-// 9. Editorial Strategy Blogs
-BLOGS_DATA.forEach(blog => {
-  const blogImg = blog.coverImage || blog.image || DEFAULT_IMAGE;
-  addUrl(`${BASE_URL}/blog/${encodeURIComponent(blog.id)}`, 'weekly', '0.8', TODAY, { loc: blogImg, title: blog.title });
-});
+// =========================================================================
+// 2. VERIFIED COLLEGES (sitemap-colleges.xml)
+// =========================================================================
+const collegeUrls = [];
+const seenColleges = new Set();
 
-// 10. Individual Business School Profiles (with Google Image Sitemap tags)
 COLLEGES_DATA.forEach(college => {
+  const loc = `${BASE_URL}/colleges/${encodeURIComponent(college.id)}`;
+  if (seenColleges.has(loc)) return;
+  seenColleges.add(loc);
+
   let priority = '0.65';
   if (college.nirfRank && college.nirfRank <= 30) {
     priority = '0.9';
@@ -123,39 +112,157 @@ COLLEGES_DATA.forEach(college => {
   }
 
   const colImg = college.logo || DEFAULT_IMAGE;
-  addUrl(`${BASE_URL}/colleges/${encodeURIComponent(college.id)}`, 'weekly', priority, TODAY, {
-    loc: colImg,
-    title: `${college.name} (${college.shortName}) Admission, Fees & Placements`
+  collegeUrls.push({
+    loc,
+    changefreq: 'weekly',
+    priority,
+    lastmod: TODAY,
+    image: {
+      loc: colImg,
+      title: `${college.name} (${college.shortName}) Admission, Fees & Placements`
+    }
   });
 });
 
-// Build XML string with Google Image Sitemap namespace
-const xmlContent = [
-  '<?xml version="1.0" encoding="UTF-8"?>',
-  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">',
-  ...urls.map(u => {
-    let urlBlock = `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</lastmod>\n    <changefreq>${u.changefreq}</changefreq>\n    <priority>${u.priority}</priority>`;
-    if (u.image) {
-      urlBlock += `\n    <image:image>\n      <image:loc>${escapeXml(u.image.loc)}</image:loc>\n      <image:title>${escapeXml(u.image.title)}</image:title>\n    </image:image>`;
+writeSitemapFile('sitemap-colleges.xml', buildUrlXml(collegeUrls));
+
+// =========================================================================
+// 3. CITY HUBS & AIU CAMPUSES (sitemap-cities.xml)
+// =========================================================================
+const cityUrls = [];
+const seenCities = new Set();
+
+const aiuCities = ['delhi-ncr', 'pune', 'mumbai', 'bangalore', 'jaipur', 'kolkata', 'dehradun', 'lucknow', 'indore'];
+aiuCities.forEach(city => {
+  const loc = `${BASE_URL}/aiu-approved-campuses/${city}`;
+  if (!seenCities.has(loc)) {
+    seenCities.add(loc);
+    cityUrls.push({ loc, changefreq: 'weekly', priority: '0.85', lastmod: TODAY, image: { loc: DEFAULT_IMAGE, title: `AIU Approved Campuses in ${city}` } });
+  }
+});
+
+CITY_INFOGRAPHICS_DATA.forEach(city => {
+  const cName = city.cityName.toLowerCase().trim();
+  const loc = `${BASE_URL}/colleges/city/${encodeURIComponent(cName)}`;
+  if (!seenCities.has(loc)) {
+    seenCities.add(loc);
+    cityUrls.push({ loc, changefreq: 'weekly', priority: '0.85', lastmod: TODAY, image: { loc: DEFAULT_IMAGE, title: `Top MBA & PGDM Colleges in ${city.cityName}` } });
+  }
+});
+
+COLLEGES_DATA.forEach(col => {
+  if (col.city) {
+    const cName = col.city.toLowerCase().trim();
+    const loc = `${BASE_URL}/colleges/city/${encodeURIComponent(cName)}`;
+    if (!seenCities.has(loc)) {
+      seenCities.add(loc);
+      cityUrls.push({ loc, changefreq: 'weekly', priority: '0.75', lastmod: TODAY, image: { loc: DEFAULT_IMAGE, title: `Top MBA & PGDM Colleges in ${col.city}` } });
     }
-    urlBlock += `\n  </url>`;
-    return urlBlock;
+  }
+});
+
+writeSitemapFile('sitemap-cities.xml', buildUrlXml(cityUrls));
+
+// =========================================================================
+// 4. NATIONAL MBA ENTRANCE EXAMS (sitemap-exams.xml)
+// =========================================================================
+const examUrls = EXAMS_DATA.map(exam => ({
+  loc: `${BASE_URL}/exams/${encodeURIComponent(exam.id)}`,
+  changefreq: 'weekly',
+  priority: '0.9',
+  lastmod: TODAY,
+  image: {
+    loc: DEFAULT_IMAGE,
+    title: `${exam.fullName} (${exam.name}) 2026-27`
+  }
+}));
+
+writeSitemapFile('sitemap-exams.xml', buildUrlXml(examUrls));
+
+// =========================================================================
+// 5. STRATEGY BLOGS (sitemap-blogs.xml)
+// =========================================================================
+const blogUrls = BLOGS_DATA.map(blog => {
+  const blogImg = blog.coverImage || blog.image || DEFAULT_IMAGE;
+  const blogDate = blog.date && /^\d{4}-\d{2}-\d{2}$/.test(blog.date) ? blog.date : TODAY;
+  return {
+    loc: `${BASE_URL}/blog/${encodeURIComponent(blog.id)}`,
+    changefreq: 'weekly',
+    priority: '0.8',
+    lastmod: blogDate,
+    image: {
+      loc: blogImg,
+      title: blog.title
+    }
+  };
+});
+
+writeSitemapFile('sitemap-blogs.xml', buildUrlXml(blogUrls));
+
+// =========================================================================
+// 6. LIVE MBA SCHOLARSHIPS (sitemap-scholarships.xml)
+// =========================================================================
+const scholarshipUrls = SCHOLARSHIPS_DATA.map(sch => ({
+  loc: `${BASE_URL}/scholarships/${encodeURIComponent(sch.id)}`,
+  changefreq: 'weekly',
+  priority: '0.85',
+  lastmod: TODAY,
+  image: {
+    loc: DEFAULT_IMAGE,
+    title: `${sch.title} Scholarship`
+  }
+}));
+
+writeSitemapFile('sitemap-scholarships.xml', buildUrlXml(scholarshipUrls));
+
+// =========================================================================
+// 7. FREE CBT MOCK TESTS (sitemap-mock-tests.xml)
+// =========================================================================
+const mockTestUrls = MOCK_TESTS.map(test => ({
+  loc: `${BASE_URL}/mock-test/${encodeURIComponent(test.id)}`,
+  changefreq: 'weekly',
+  priority: '0.85',
+  lastmod: TODAY,
+  image: {
+    loc: DEFAULT_IMAGE,
+    title: `${test.title} Mock Test`
+  }
+}));
+
+writeSitemapFile('sitemap-mock-tests.xml', buildUrlXml(mockTestUrls));
+
+// =========================================================================
+// 8. SITEMAP INDEX (public/sitemap.xml)
+// =========================================================================
+const sitemapSubfiles = [
+  'sitemap-main.xml',
+  'sitemap-colleges.xml',
+  'sitemap-cities.xml',
+  'sitemap-exams.xml',
+  'sitemap-blogs.xml',
+  'sitemap-scholarships.xml',
+  'sitemap-mock-tests.xml'
+];
+
+const sitemapIndexXml = [
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  ...sitemapSubfiles.map(sf => {
+    return `  <sitemap>\n    <loc>${BASE_URL}/${sf}</loc>\n    <lastmod>${TODAY}</lastmod>\n  </sitemap>`;
   }),
-  '</urlset>',
+  '</sitemapindex>',
   ''
 ].join('\n');
 
-const outputPath = path.resolve(__dirname, '../public/sitemap.xml');
-fs.writeFileSync(outputPath, xmlContent, 'utf-8');
+writeSitemapFile('sitemap.xml', sitemapIndexXml);
 
-console.log(`✅ Successfully generated sitemap with ${urls.length} URLs (including Google Image extensions) at ${outputPath}`);
-console.log(`- Core Pages: 11`);
-console.log(`- Program Guides: 5`);
-console.log(`- Calculators: 3`);
-console.log(`- Degree Types: 2`);
-console.log(`- City Hubs: ${addedCities.size}`);
-console.log(`- Live Scholarships: ${SCHOLARSHIPS_DATA.length}`);
-console.log(`- CBT Mock Tests: ${MOCK_TESTS.length}`);
-console.log(`- Entrance Exams: ${EXAMS_DATA.length}`);
-console.log(`- Strategy Blogs: ${BLOGS_DATA.length}`);
-console.log(`- Verified Colleges: ${COLLEGES_DATA.length}`);
+const totalUrls = mainUrls.length + collegeUrls.length + cityUrls.length + examUrls.length + blogUrls.length + scholarshipUrls.length + mockTestUrls.length;
+console.log(`✅ Successfully generated Modular Sitemap Index with 7 sub-sitemaps (${totalUrls} total indexable URLs):`);
+console.log(`- sitemap-main.xml: ${mainUrls.length} core pages`);
+console.log(`- sitemap-colleges.xml: ${collegeUrls.length} verified colleges`);
+console.log(`- sitemap-cities.xml: ${cityUrls.length} city & AIU hubs`);
+console.log(`- sitemap-exams.xml: ${examUrls.length} entrance exams`);
+console.log(`- sitemap-blogs.xml: ${blogUrls.length} strategy articles`);
+console.log(`- sitemap-scholarships.xml: ${scholarshipUrls.length} live scholarships`);
+console.log(`- sitemap-mock-tests.xml: ${mockTestUrls.length} CBT mock tests`);
+console.log(`- sitemap.xml: Sitemap Index pointing to all 7 sub-sitemaps`);

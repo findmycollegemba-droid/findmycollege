@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://findmybschool.com/mock-test/cat-2026</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://findmybschool.com/og-image.png</image:loc>
+      <image:title>CAT 2026 Comprehensive Official Mock Test (68 Questions) Mock Test</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://findmybschool.com/mock-test/xat-2027</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://findmybschool.com/og-image.png</image:loc>
+      <image:title>XAT Official Full Mock Test (95 Questions) Mock Test</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://findmybschool.com/mock-test/nmat</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://findmybschool.com/og-image.png</image:loc>
+      <image:title>NMAT by GMAC Official Pattern Mock Test (108 Questions) Mock Test</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://findmybschool.com/mock-test/snap</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://findmybschool.com/og-image.png</image:loc>
+      <image:title>SNAP Official Pattern Mock Test (60 Questions) Mock Test</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://findmybschool.com/mock-test/cmat</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://findmybschool.com/og-image.png</image:loc>
+      <image:title>CMAT Official Pattern Mock Test (100 Questions) Mock Test</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://findmybschool.com/mock-test/mat</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://findmybschool.com/og-image.png</image:loc>
+      <image:title>MAT 2026 Official Pattern All-India Free Mock Test Mock Test</image:title>
+    </image:image>
+  </url>
+</urlset>

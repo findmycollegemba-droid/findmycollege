@@ -53,27 +53,27 @@ const cityTitles = {
   'all': 'AIU Approved MBA Campuses in India (2027-29) | FMBS',
   'pan-india': 'All 121 AIU Approved MBA Colleges in India | FMBS',
   'delhi-ncr': 'AIU Approved MBA Colleges in Delhi NCR (2027-29) | FMBS',
-  'pune': 'AIU Approved MBA Colleges in Pune: Fees & Placements | FMBS',
+  'pune': 'AIU Approved MBA Colleges in Pune: Fees & Cutoff | FMBS',
   'mumbai': 'AIU Approved MBA Colleges in Mumbai & Navi Mumbai | FMBS',
-  'bangalore': 'AIU Approved MBA Colleges in Bangalore: Fees & Cutoff | FMBS',
-  'jaipur': 'AIU Approved MBA Colleges in Jaipur: Fees & Cutoffs | FMBS',
-  'kolkata': 'AIU Approved MBA Colleges in Kolkata: Fees & Placements | FMBS',
-  'dehradun': 'AIU Approved MBA Colleges in Dehradun: Fees & Ranking | FMBS',
-  'lucknow': 'AIU Approved MBA Colleges in Lucknow: Fees & Cutoffs | FMBS',
-  'indore': 'AIU Approved MBA Colleges in Indore: Fees & Placements | FMBS'
+  'bangalore': 'AIU Approved MBA Colleges in Bangalore: Cutoffs | FMBS',
+  'jaipur': 'AIU Approved MBA Colleges in Jaipur: Fees & Cutoffs',
+  'kolkata': 'AIU Approved MBA Colleges in Kolkata: Fees & Placements',
+  'dehradun': 'AIU Approved MBA Colleges in Dehradun: Fees & Ranking',
+  'lucknow': 'AIU Approved MBA Colleges in Lucknow: Fees & Cutoffs',
+  'indore': 'AIU Approved MBA Colleges in Indore: Fees & Placements'
 };
 
 const cityDescs = {
-  'all': 'Explore verified business schools with official Association of Indian Universities (AIU) equivalence across Delhi NCR, Pune, Mumbai, Bangalore and Pan-India.',
-  'pan-india': 'Explore all 121 institutions holding official Association of Indian Universities (AIU) MBA Equivalence across India, verified from the AIU Gazette.',
+  'all': 'Explore verified business schools with official AIU MBA equivalence across Delhi NCR, Pune, Mumbai, Bangalore and Pan-India on FindMyBSchool.',
+  'pan-india': 'Explore all 121 institutions holding official AIU MBA Equivalence across India, verified from the statutory AIU Gazette on FindMyBSchool.',
   'delhi-ncr': 'Compare 35 AIU-approved PGDM & 100+ MBA colleges in Delhi NCR (Noida, Gurgaon). Audited tuition fees, CAT/XAT cutoffs, and recent placement packages.',
   'pune': 'Explore 14 AIU-equivalent management institutes and 50+ colleges in Pune. Compare SIBM, Balaji, NIA, NIBM, fees, entrance cutoffs, and campus placements.',
   'mumbai': 'Find verified AIU-approved business schools and top colleges in Mumbai and Navi Mumbai. Audited 2-year fees, cutoff percentiles, and placement statistics.',
-  'bangalore': 'Top AIU approved PGDM institutes and MBA colleges in Bangalore. Tech, analytics, and consulting placement data, audited tuition fees, and admission criteria.',
+  'bangalore': 'Top AIU approved PGDM and MBA colleges in Bangalore. Tech, analytics, and consulting placement data, audited tuition fees, and admission criteria on FMBS.',
   'jaipur': 'AIU approved management colleges in Jaipur, Rajasthan. Compare Jaipuria Jaipur, IIHMR, IRM, audited fees, and pooled placement reports on FindMyBSchool.',
   'kolkata': 'Best AIU approved PGDM institutes and leading MBA colleges in Kolkata. Audited fees, cutoffs, and average salary packages across West Bengal.',
   'dehradun': 'Top business schools in Dehradun conferring statutory UGC MBA degrees. Compare UPES, Graphic Era, DIT, residential campus fees, and placements.',
-  'lucknow': 'Explore top AIU approved management colleges in Lucknow. IIM Lucknow, Jaipuria Lucknow, university MBA fees, and placement reports.',
+  'lucknow': 'Explore top AIU approved management colleges in Lucknow. IIM Lucknow, Jaipuria Lucknow, university MBA fees, and placement reports on FMBS.',
   'indore': 'Verified AIU approved MBA & PGDM colleges in Indore. Compare IIM Indore, Jaipuria Indore, cutoffs, and placement packages on FindMyBSchool.'
 };
 
@@ -140,29 +140,81 @@ const baseOrgSchema = {
 function generatePageHtml(meta, bodyHtml) {
   let html = template;
 
+  // Enforce strict SERP limits: Title <= 60 chars, Description <= 155 chars (including HTML entity lengths)
+  let pageTitle = (meta.title || '').trim();
+  while (escapeHtml(pageTitle).length > 60 && pageTitle.length > 10) {
+    if (pageTitle.endsWith(' | FMBS')) {
+      pageTitle = pageTitle.slice(0, -7).trim();
+      continue;
+    }
+    if (pageTitle.includes(': Fees & Cutoffs')) {
+      pageTitle = pageTitle.replace(': Fees & Cutoffs', ' 2027');
+      continue;
+    }
+    if (pageTitle.includes(': Fees & Cutoff')) {
+      pageTitle = pageTitle.replace(': Fees & Cutoff', ' 2027');
+      continue;
+    }
+    if (pageTitle.includes(': Fees & Placements')) {
+      pageTitle = pageTitle.replace(': Fees & Placements', ' 2027');
+      continue;
+    }
+    if (pageTitle.includes(' Admission 2027')) {
+      pageTitle = pageTitle.replace(' Admission 2027', ' 2027');
+      continue;
+    }
+    if (pageTitle.includes(' Admission & Fees 2027')) {
+      pageTitle = pageTitle.replace(' Admission & Fees 2027', ' 2027');
+      continue;
+    }
+    const lastSpace = pageTitle.lastIndexOf(' ');
+    if (lastSpace > 10) {
+      pageTitle = pageTitle.slice(0, lastSpace).trim();
+    } else {
+      pageTitle = pageTitle.slice(0, pageTitle.length - 1).trim();
+    }
+  }
+
+  let pageDesc = (meta.description || '').trim();
+  while (escapeHtml(pageDesc).length > 155 && pageDesc.length > 20) {
+    const lastSpace = pageDesc.lastIndexOf(' ');
+    if (lastSpace > 60) {
+      pageDesc = pageDesc.slice(0, lastSpace).trim();
+    } else {
+      pageDesc = pageDesc.slice(0, pageDesc.length - 1).trim();
+    }
+  }
+
   // Replace Title
-  html = html.replace(/<title>.*?<\/title>/i, `<title>${escapeHtml(meta.title)}</title>`);
+  html = html.replace(/<title>.*?<\/title>/i, `<title>${escapeHtml(pageTitle)}</title>`);
 
   // Replace Meta title
-  html = html.replace(/<meta name="title" content=".*?" \/>/i, `<meta name="title" content="${escapeHtml(meta.title)}" />`);
+  html = html.replace(/<meta name="title" content=".*?" \/>/i, `<meta name="title" content="${escapeHtml(pageTitle)}" />`);
 
   // Replace Meta description
-  html = html.replace(/<meta name="description" content=".*?" \/>/i, `<meta name="description" content="${escapeHtml(meta.description)}" />`);
+  html = html.replace(/<meta name="description" content=".*?" \/>/i, `<meta name="description" content="${escapeHtml(pageDesc)}" />`);
 
   // Replace Canonical Link (self-referencing canonical to eliminate Search Console errors)
   html = html.replace(/<link rel="canonical" href=".*?" \/>/i, `<link rel="canonical" href="${meta.canonical}" />`);
 
+  // Robots directive (noindex for utility / private tools, index, follow for public pages)
+  if (meta.noindex) {
+    html = html.replace(/<meta name="robots" content=".*?" \/>/i, '<meta name="robots" content="noindex, follow" />');
+  } else {
+    html = html.replace(/<meta name="robots" content=".*?" \/>/i, '<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />');
+  }
+
   // Open Graph
   const ogImg = meta.image || DEFAULT_OG_IMAGE;
   html = html.replace(/<meta property="og:url" content=".*?" \/>/i, `<meta property="og:url" content="${meta.canonical}" />`);
-  html = html.replace(/<meta property="og:title" content=".*?" \/>/i, `<meta property="og:title" content="${escapeHtml(meta.title)}" />`);
-  html = html.replace(/<meta property="og:description" content=".*?" \/>/i, `<meta property="og:description" content="${escapeHtml(meta.description)}" />`);
+  html = html.replace(/<meta property="og:title" content=".*?" \/>/i, `<meta property="og:title" content="${escapeHtml(pageTitle)}" />`);
+  html = html.replace(/<meta property="og:description" content=".*?" \/>/i, `<meta property="og:description" content="${escapeHtml(pageDesc)}" />`);
   html = html.replace(/<meta property="og:image" content=".*?" \/>/i, `<meta property="og:image" content="${ogImg}" />`);
 
   // Twitter Cards
   html = html.replace(/<meta name="twitter:url" content=".*?" \/>/i, `<meta name="twitter:url" content="${meta.canonical}" />`);
-  html = html.replace(/<meta name="twitter:title" content=".*?" \/>/i, `<meta name="twitter:title" content="${escapeHtml(meta.title)}" />`);
-  html = html.replace(/<meta name="twitter:description" content=".*?" \/>/i, `<meta name="twitter:description" content="${escapeHtml(meta.description)}" />`);
+  html = html.replace(/<meta name="twitter:title" content=".*?" \/>/i, `<meta name="twitter:title" content="${escapeHtml(pageTitle)}" />`);
+  html = html.replace(/<meta name="twitter:description" content=".*?" \/>/i, `<meta name="twitter:description" content="${escapeHtml(pageDesc)}" />`);
   html = html.replace(/<meta name="twitter:image" content=".*?" \/>/i, `<meta name="twitter:image" content="${ogImg}" />`);
 
   // Replace Schema JSON-LD if provided
@@ -208,6 +260,21 @@ function writeStaticRoute(routePath, htmlContent) {
 console.log('🚀 Starting Pre-rendering for SEO, GEO, AEO, AIO & SXO Optimization...');
 let count = 0;
 
+// Remove stale duplicate/deprecated HTML files from dist if present
+const staleFiles = [
+  'colleges/indus-business-academy-bangalore.html',
+  'colleges/upes-dehradun.html',
+  'colleges/noida-institute-of-engineering-technology.html',
+  'colleges/lovely-professional-phagwara.html',
+  'colleges/maharishi-markandeshwar-ambala.html'
+];
+for (const sf of staleFiles) {
+  const p = path.resolve(distDir, sf);
+  if (fs.existsSync(p)) {
+    fs.unlinkSync(p);
+  }
+}
+
 // Initialize City Directory
 const addedCities = new Set();
 const allCities = [];
@@ -236,10 +303,10 @@ COLLEGES_DATA.forEach(col => {
 const coreRoutes = [
   {
     path: '/',
-    title: 'FindMyBSchool — Top MBA & PGDM Colleges, Fees, Cutoffs & Exam Predictors',
-    description: 'Find your dream MBA & PGDM business school with FindMyBSchool. Compare 680+ verified B-schools, cutoffs, tuition fees, and placements with 0% scrapers.',
+    title: 'FindMyBSchool: Top MBA Colleges, Fees & Cutoffs',
+    description: 'Find your dream MBA & PGDM business school with FindMyBSchool. Compare 600+ verified B-schools, cutoffs, tuition fees, and placements with 0% scrapers.',
     h1: 'Find Top MBA & PGDM Colleges, Fees, Cutoffs, Scholarships & Exam Predictors',
-    lead: 'FindMyBSchool helps MBA and PGDM aspirants evaluate 680+ verified Indian business schools with audited 2-year tuition fees, real CAT/XAT/CMAT cutoffs, and recent placement reports with 0% scrapers.',
+    lead: 'FindMyBSchool helps MBA and PGDM aspirants evaluate 600+ verified Indian business schools with audited 2-year tuition fees, real CAT/XAT/CMAT cutoffs, and recent placement reports with 0% scrapers.',
     schema: {
       '@context': 'https://schema.org',
       '@graph': [
@@ -279,7 +346,7 @@ const coreRoutes = [
   },
   {
     path: '/colleges/mba',
-    title: 'Top University MBA Colleges in India: Fees & Cutoffs | FMBS',
+    title: 'Top University MBA Colleges in India: Fees & Cutoff | FMBS',
     description: 'Explore statutory UGC university MBA programs in India including FMS Delhi, JBIMS Mumbai, and top universities with audited fees and placements.',
     h1: 'Top University MBA Colleges in India',
     lead: 'Compare statutory UGC university MBA programs including FMS Delhi, JBIMS Mumbai, and top central universities.',
@@ -302,7 +369,7 @@ const coreRoutes = [
   },
   {
     path: '/colleges/pgdm',
-    title: 'Top Autonomous PGDM Colleges in India: Fees & Cutoffs | FMBS',
+    title: 'Top Autonomous PGDM Colleges in India: Fees & Cutoffs',
     description: 'Compare premier AICTE approved autonomous PGDM institutes in India (XLRI, SPJIMR, MDI, IMT) with audited tuition fees and placement packages.',
     h1: 'Top Autonomous PGDM Colleges in India',
     lead: 'Explore premier AICTE-approved autonomous business schools offering industry-driven PGDM diplomas with AIU equivalence.',
@@ -347,8 +414,8 @@ const coreRoutes = [
   },
   {
     path: '/scholarships',
-    title: 'Live MBA Scholarships 2027-29: Grants up to ₹25 Lakhs | FMBS',
-    description: 'Find & apply for 14+ live MBA scholarships for Session 2027-29. Need-based, corporate, government NSP, and IIM tuition fee waivers up to 100%. Free mentorship.',
+    title: 'Live MBA Scholarships 2027-29: Grants to ₹25L | FMBS',
+    description: 'Find and apply for 14+ live MBA scholarships for Session 2027-29. Need-based, corporate, government NSP, and IIM tuition fee waivers up to 100% on FMBS.',
     h1: 'Live MBA Scholarships for 2027-29 Session',
     lead: 'Financial grants, corporate diversity awards, merit waivers, and government schemes up to 100% tuition coverage for business school aspirants.',
     schema: {
@@ -392,7 +459,7 @@ const coreRoutes = [
   {
     path: '/mock-test',
     title: 'Free MBA Mock Tests 2026-27: CAT, XAT & SNAP | FMBS',
-    description: 'Attempt 100% Free All-India MBA Mock Tests with TCS iON simulated interface, on-screen calculator, sectional timers, instant score report, and solutions.',
+    description: 'Attempt free All-India MBA CBT Mock Tests with real TCS iON interface, on-screen calculator, sectional timers, instant score report, and solutions on FMBS.',
     h1: 'All-India Free CBT MBA Mock Tests',
     lead: 'Experience the real test-taking environment with our TCS iON simulated CBT engine, sectional timers, and instant percentile analytics.',
     schema: {
@@ -420,35 +487,35 @@ const coreRoutes = [
   },
   {
     path: '/programs/mba',
-    title: 'Top University MBA Degrees in India: Fees & Placements | FMBS',
+    title: 'Top University MBA Degrees: Fees & Placements | FMBS',
     description: 'Guide to University MBA degrees in India (FMS Delhi, JBIMS, PUMBA). Compare UGC affiliations, semester syllabus, tuition fees, and corporate hiring trends.',
     h1: 'Top University MBA Programs in India',
     lead: 'Explore university-affiliated MBA degrees conferring recognized master’s credentials under UGC regulations.'
   },
   {
     path: '/programs/pgdm',
-    title: 'Top AICTE PGDM Programs in India: Colleges, Fees & ROI | FMBS',
+    title: 'Top AICTE PGDM Programs: Colleges, Fees & ROI | FMBS',
     description: 'Explore premier AICTE-approved PGDM programs (XLRI, SPJIMR, MDI, IMT). Industry-aligned curriculum, corporate internships, and executive compensation.',
     h1: 'Premier AICTE Approved PGDM Programs',
     lead: 'Industry-aligned postgraduate diplomas offering contemporary specializations and high corporate placement traction.'
   },
   {
     path: '/programs/compare',
-    title: 'MBA vs PGDM Comparison: Key Differences, AICTE & ROI | FMBS',
+    title: 'MBA vs PGDM Comparison: Key Differences & ROI | FMBS',
     description: 'Understand the crucial differences between University MBA degrees and Autonomous PGDM diplomas. Compare AICTE accreditation, fees, and corporate ROI.',
     h1: 'MBA vs PGDM: The Complete Comparison Dossier',
     lead: 'Deciding between an MBA degree and a PGDM diploma? Here is the complete breakdown of accreditation, pedagogy, and recruitments.'
   },
   {
     path: '/programs/specializations',
-    title: 'Top MBA Specializations 2027-29: Scope, Salary & Career | FMBS',
+    title: 'Top MBA Specializations 2027-29: Scope & Salary | FMBS',
     description: 'Compare high-paying MBA specializations: Finance, Marketing, Business Analytics, Strategy, Operations, and HR. Average salaries and top hiring sectors.',
     h1: 'Top MBA & PGDM Specializations (2027-29)',
     lead: 'Explore career trajectories, compensation packages, and core curricula across Finance, Marketing, Analytics, Operations, and HR.'
   },
   {
     path: '/programs/roi',
-    title: 'Top High-ROI MBA Colleges in India: Low Fees & Top CTC | FMBS',
+    title: 'High-ROI MBA Colleges in India: Low Fees & Top CTC | FMBS',
     description: 'Calculate MBA Return on Investment. Discover high-ROI colleges like FMS Delhi, JBIMS, and TISS offering top placement packages at nominal tuition fees.',
     h1: 'Highest Return on Investment (ROI) MBA Colleges in India',
     lead: 'Maximize your educational investment with institutions that offer low fee structures combined with premier corporate recruitment packages.'
@@ -667,8 +734,8 @@ const coreRoutes = [
   },
   {
     path: '/tools/snap-score-calculator',
-    title: 'SNAP 2026 Score Calculator & SIBM Percentile Predictor | FMBS',
-    description: 'Calculate your SNAP 60-mark score (+1/-0.25). Predict SIBM Pune, SCMHRD, and SIIB interview call cutoffs with instant percentile converter.',
+    title: 'SNAP Score Calculator & SIBM Predictor 2026 | FMBS',
+    description: 'Calculate your SNAP 60-mark score (+1/-0.25). Predict SIBM Pune, SCMHRD, and SIIB interview call cutoffs with instant percentile converter on FMBS.',
     h1: 'SNAP 2026 Score Calculator & Percentile Predictor',
     lead: 'Calculate your raw score from 60 questions in 60 minutes with official negative marking and forecast Symbiosis B-school calls (SIBM Pune, SCMHRD, SIIB).',
     schema: {
@@ -699,8 +766,8 @@ const coreRoutes = [
   },
   {
     path: '/tools/nmat-score-predictor',
-    title: 'NMAT Score to Percentile Calculator & NMIMS Predictor | FMBS',
-    description: 'Predict your NMAT by GMAC scaled score & percentile out of 360 marks. Check eligibility for NMIMS Mumbai Core (235+ score) and top B-schools.',
+    title: 'NMAT Score to Percentile Calculator & NMIMS | FMBS',
+    description: 'Predict your NMAT by GMAC scaled score & percentile out of 360 marks. Check eligibility for NMIMS Mumbai Core (235+ score) and top B-schools on FMBS.',
     h1: 'NMAT Score to Percentile Calculator & NMIMS Cutoff Predictor',
     lead: 'Enter your Language, Quant, and Logical Reasoning scores out of 360 to estimate your national percentile and NMIMS Mumbai Core & HR call chances.',
     schema: {
@@ -732,7 +799,7 @@ const coreRoutes = [
   {
     path: '/blog',
     title: 'MBA Admissions Strategy Blog & Exam Guides | FMBS',
-    description: 'Read expert editorial guides on CAT preparation, GD-PI interview secrets, MBA vs PGDM analysis, and top B-school placement insights written by IIM/XLRI mentors.',
+    description: 'Expert editorial guides on CAT preparation, GD-PI interview secrets, MBA vs PGDM analysis, and top B-school placement insights written by IIM mentors.',
     h1: 'MBA Strategy Blog & Admissions Editorial',
     lead: 'Actionable guidance on entrance exam strategies, GD-PI prep, profile building, and college comparisons authored by admission veterans.'
   },
@@ -752,22 +819,23 @@ const coreRoutes = [
   },
   {
     path: '/ai-chat',
-    title: 'AdmitIQ AI Assistant: MBA Profile & College Evaluator | FMBS',
-    description: 'Chat with AdmitIQ, India’s specialized AI MBA admissions assistant. Get immediate answers on college cutoffs, fee structures, and profile shortlist chances.',
+    title: 'AdmitIQ AI: MBA Profile & College Evaluator | FMBS',
+    description: 'Chat with AdmitIQ, specialized AI MBA admissions assistant. Get immediate answers on college cutoffs, fee structures, and profile shortlist chances.',
     h1: 'AdmitIQ AI Admissions Assistant',
-    lead: 'Instant answers to your queries on B-school cutoffs, fees, placement reports, and profile eligibility powered by intelligent admissions data.'
+    lead: 'Instant answers to your queries on B-school cutoffs, fees, placement reports, and profile eligibility powered by intelligent admissions data.',
+    noindex: true
   },
   {
     path: '/terms',
-    title: 'Terms and Conditions — User Agreement & Disclaimers | FMBS',
+    title: 'Terms and Conditions — User Agreement | FMBS',
     description: 'Official Terms and Conditions for using FindMyBSchool.com services, calculators, college comparisons, and admission guidance portals.',
     h1: 'Terms and Conditions',
     lead: 'Please review our service agreement, platform usage policies, and counseling disclaimers.'
   },
   {
     path: '/privacy',
-    title: 'Privacy Policy — Student Data Protection & DPDP | FMBS',
-    description: 'FindMyBSchool Privacy Policy compliant with India DPDP Act 2023 and GDPR. Understand how your academic profile and contact data are securely protected.',
+    title: 'Privacy Policy — Student Data Protection | FMBS',
+    description: 'FindMyBSchool Privacy Policy compliant with India DPDP Act 2023. Learn how student academic profiles and inquiry data are securely handled.',
     h1: 'Privacy Policy & Student Data Protection',
     lead: 'Committed to candidate privacy, strict adherence to the DPDP Act 2023, and zero unauthorized sharing of your contact information.'
   }
@@ -1739,11 +1807,22 @@ for (const city of allCities) {
     ]
   };
 
+  let cityTitle = `Top MBA Colleges in ${city}: Fees & Cutoffs 2027`;
+  if (cityTitle.length > 60) cityTitle = `Top MBA Colleges in ${city}: Fees & Cutoff`;
+  if (cityTitle.length > 60) cityTitle = `MBA Colleges in ${city} 2027: Fees & Cutoff`;
+  if (cityTitle.length > 60) cityTitle = `${city} MBA Colleges: Fees & Cutoff 2027`;
+  if (cityTitle.length > 60) cityTitle = cityTitle.slice(0, 60).trim();
+
   let cityDesc = `Explore ${totalCityColleges > 0 ? totalCityColleges + '+' : 'top'} MBA & PGDM colleges in ${city} for 2027-29. Compare audited fees, average CTC, and entrance cutoffs on FindMyBSchool.`;
-  if (cityDesc.length > 158) cityDesc = cityDesc.slice(0, 155).trim() + '...';
+  if (cityDesc.length > 155) {
+    cityDesc = `Explore ${totalCityColleges > 0 ? totalCityColleges + '+' : 'top'} MBA colleges in ${city}. Audited fees, average CTC, and entrance cutoffs on FindMyBSchool.`;
+  }
+  if (cityDesc.length > 155) {
+    cityDesc = cityDesc.slice(0, 151).trim() + '...';
+  }
 
   const meta = {
-    title: `Top MBA Colleges in ${city}: Fees & Cutoffs 2027`,
+    title: cityTitle,
     description: cityDesc,
     canonical: canonicalUrl,
     schema: citySchema
@@ -1913,16 +1992,22 @@ for (const exam of EXAMS_DATA) {
     ]
   };
 
-  let examDesc = `Guide for ${exam.name} 2026-27 (${exam.fullName}) by ${exam.conductingBody}. Exam date: ${exam.examDate}. Syllabus & cutoffs.`;
-  if (examDesc.length > 158) {
-    examDesc = `Guide for ${exam.name} 2026-27 by ${exam.conductingBody}. Exam date: ${exam.examDate}. Syllabus, fees & cutoffs on FMBS.`;
+  const cleanExamName = exam.name.replace(/\s*2026-27/g, '').replace(/\s*2026/g, '').trim();
+  let examTitle = `${cleanExamName} 2026-27: Dates, Syllabus & Cutoffs | FMBS`;
+  if (examTitle.length > 60) examTitle = `${cleanExamName} 2026-27: Dates & Cutoffs | FMBS`;
+  if (examTitle.length > 60) examTitle = `${cleanExamName} 2026: Dates, Syllabus & Cutoffs`;
+  if (examTitle.length > 60) examTitle = examTitle.slice(0, 60).trim();
+
+  let examDesc = `Guide for ${exam.name} (${exam.fullName}) by ${exam.conductingBody}. Exam date: ${exam.examDate}. Syllabus & cutoffs.`;
+  if (examDesc.length > 155) {
+    examDesc = `Guide for ${exam.name} by ${exam.conductingBody}. Exam date: ${exam.examDate}. Syllabus, pattern & cutoffs on FMBS.`;
   }
-  if (examDesc.length > 158) {
-    examDesc = examDesc.slice(0, 155).trim() + '...';
+  if (examDesc.length > 155) {
+    examDesc = examDesc.slice(0, 151).trim() + '...';
   }
 
   const meta = {
-    title: `${exam.name} 2026-27: Dates, Syllabus & Cutoffs | FMBS`,
+    title: examTitle,
     description: examDesc,
     canonical: canonicalUrl,
     schema: examSchema
@@ -1991,12 +2076,21 @@ for (const sch of SCHOLARSHIPS_DATA) {
 
   const cleanSchTitle = sch.title.replace(/\s*\([^)]*\)/, '').trim();
   const simpleAmount = (sch.amount || '').split('(')[0].replace(/Grants up to/i, '').trim();
-  const shortSchName = cleanSchTitle.length > 34 ? cleanSchTitle.slice(0, 32).trim() : cleanSchTitle;
+  const shortSchName = cleanSchTitle.length > 28 ? cleanSchTitle.slice(0, 26).trim() : cleanSchTitle;
   let schTitle = `${shortSchName} 2027: Grants | FMBS`;
+  if (schTitle.length > 60) schTitle = schTitle.slice(0, 60).trim();
+
+  let schDesc = `Apply for ${cleanSchTitle} by ${sch.provider}. Grant: ${simpleAmount}. Free guide & eligibility rules on FindMyBSchool.`;
+  if (schDesc.length > 155) {
+    schDesc = `Apply for ${cleanSchTitle} (${simpleAmount}) by ${sch.provider}. Eligibility rules and free guidance on FMBS.`;
+  }
+  if (schDesc.length > 155) {
+    schDesc = schDesc.slice(0, 151).trim() + '...';
+  }
 
   const meta = {
     title: schTitle,
-    description: `Apply for ${cleanSchTitle} by ${sch.provider}. Grant: ${simpleAmount}. Free guide & eligibility rules on FindMyBSchool.`.slice(0, 155),
+    description: schDesc,
     canonical: canonicalUrl,
     schema: schSchema
   };
@@ -2065,10 +2159,22 @@ for (const test of MOCK_TESTS) {
     ]
   };
 
-  const shortT = test.title.length > 42 ? test.title.replace(/\s*\([^)]*\)/, '') : test.title;
+  const shortT = test.title.length > 36 ? test.title.replace(/\s*\([^)]*\)/, '').trim() : test.title;
+  let testTitle = `${shortT} Free CBT Mock Test | FMBS`;
+  if (testTitle.length > 60) testTitle = `${shortT} CBT Mock Test | FMBS`;
+  if (testTitle.length > 60) testTitle = testTitle.slice(0, 60).trim();
+
+  let testDesc = `Take free ${shortT} (${test.totalQuestions} Qs, ${test.fullDurationMinutes} mins) with real TCS iON CBT interface & instant score percentiles on FMBS.`;
+  if (testDesc.length > 155) {
+    testDesc = `Free ${shortT} (${test.totalQuestions} Qs, ${test.fullDurationMinutes}m) with TCS iON interface & instant percentiles on FMBS.`;
+  }
+  if (testDesc.length > 155) {
+    testDesc = testDesc.slice(0, 151).trim() + '...';
+  }
+
   const meta = {
-    title: `${shortT} Free CBT Mock Test | FMBS`.slice(0, 68),
-    description: `Take free ${shortT} (${test.totalQuestions} Qs, ${test.fullDurationMinutes} mins) with real TCS iON CBT interface & instant score percentiles on FMBS.`,
+    title: testTitle,
+    description: testDesc,
     canonical: canonicalUrl,
     schema: testSchema
   };
@@ -2138,21 +2244,23 @@ for (const blog of BLOGS_DATA) {
 
   const cleanBlogTitle = (blog.title || '').trim();
   let blogTitle = cleanBlogTitle;
-  if (blogTitle.length > 68) {
+  if (blogTitle.length > 52) {
     const colonIdx = blogTitle.indexOf(':');
-    if (colonIdx > 20 && colonIdx <= 60) {
-      blogTitle = blogTitle.slice(0, colonIdx).trim();
+    if (colonIdx > 15 && colonIdx <= 52) {
+      blogTitle = `${blogTitle.slice(0, colonIdx).trim()} | FMBS`;
     } else {
-      blogTitle = blogTitle.slice(0, 65).trim();
+      blogTitle = `${blogTitle.slice(0, 52).trim()} | FMBS`;
     }
-  }
-  if (blogTitle.length <= 54) {
+  } else {
     blogTitle = `${blogTitle} | FMBS`;
+  }
+  if (blogTitle.length > 60) {
+    blogTitle = blogTitle.slice(0, 60).trim();
   }
 
   let blogDesc = blog.summary || blog.excerpt || blog.description || 'Actionable MBA admissions insights, interview secrets, and CAT percentile strategies.';
-  if (blogDesc.length > 158) {
-    const truncated = blogDesc.slice(0, 155);
+  if (blogDesc.length > 155) {
+    const truncated = blogDesc.slice(0, 151);
     const lastSpace = truncated.lastIndexOf(' ');
     blogDesc = (lastSpace > 120 ? truncated.slice(0, lastSpace) : truncated).trim() + '...';
   }
@@ -2218,24 +2326,32 @@ for (const col of COLLEGES_DATA) {
   const cutoffText = col.cutoffCAT !== 'N/A' ? `CAT ${col.cutoffCAT}` : (col.cutoffXAT !== 'N/A' ? `XAT ${col.cutoffXAT}` : `CMAT ${col.cutoffCMAT}`);
   const brand = (col.shortName || col.name).trim();
   let title;
-  if (brand.length <= 22) {
-    title = `${brand} MBA Admission 2027: Fees & Placements`;
-  } else if (brand.length <= 36) {
+  if (brand.length <= 18) {
+    title = `${brand} MBA Admission 2027: Fees & Cutoff`;
+  } else if (brand.length <= 28) {
     title = `${brand} Admission 2027: Fees & Cutoff`;
+  } else if (brand.length <= 36) {
+    title = `${brand} Admission & Fees 2027`;
   } else {
-    title = `${brand.slice(0, 38).trim()} Admission & Fees 2027`;
+    title = `${brand.slice(0, 34).trim()} Admission 2027`;
   }
-  if (escapeHtml(title).length > 70) {
+  if (title.length > 60) {
     title = `${brand.slice(0, 30).trim()} Admission 2027`;
+  }
+  if (title.length > 60) {
+    title = title.slice(0, 60).trim();
   }
 
   const cityStr = col.city ? ` in ${col.city}` : '';
   let description = `Explore ${brand}${cityStr} 2027-29: fees ${col.fees}, avg CTC ${col.avgSalary}, ${cutoffText} cutoff. Audited report on FindMyBSchool.`;
-  if (description.length > 158) {
+  if (description.length > 155) {
     description = `Explore ${brand} 2027-29: fees ${col.fees}, avg CTC ${col.avgSalary}, ${cutoffText} cutoff on FMBS.`;
   }
-  if (description.length > 158) {
-    description = description.slice(0, 155).trim() + '...';
+  if (description.length > 155) {
+    description = `Explore ${brand}: fees ${col.fees}, avg CTC ${col.avgSalary}, ${cutoffText} cutoff on FMBS.`;
+  }
+  if (description.length > 155) {
+    description = description.slice(0, 151).trim() + '...';
   }
   const examsList = col.examsAccepted && col.examsAccepted.length > 0 ? col.examsAccepted.join(', ') : 'CAT, XAT, CMAT';
 
