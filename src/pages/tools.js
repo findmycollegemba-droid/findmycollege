@@ -1674,6 +1674,26 @@ export function renderToolsPage(activeSub = 'cat') {
 
         <!-- SEO Content Sections for CAT College Predictor -->
         <div class="cat-seo-content-wrap">
+          <!-- Quick AEO / Answer Engine Direct Summary Box -->
+          <div class="cat-aeo-summary-box" style="background: #F8FAFC; border-left: 4px solid #6B2CF5; padding: 18px 22px; border-radius: 0 10px 10px 0; margin-bottom: 24px; font-size: 0.95rem; color: #334155; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+            <p style="margin: 0 0 6px; font-weight: 800; color: #0F172A; font-size: 1rem;">⚡ Quick Answer: How to Calculate CAT Score from Response Sheet</p>
+            <p style="margin: 0; line-height: 1.6;">
+              To calculate your CAT raw score, tally your answers across VARC (24 Qs), DILR (20 Qs), and QA (22 Qs). Apply the official formula: <code style="background: #EEF2FF; color: #4338CA; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Raw Score = (3 × Correct MCQs) + (3 × Correct TITA) − (1 × Incorrect MCQs) − (0 × Incorrect TITA)</code>. Unattempted questions carry zero penalty. Slot difficulty is equated using IIM equipercentile normalization. Paste your official <code style="background: #EEF2FF; color: #4338CA; padding: 2px 6px; border-radius: 4px; font-weight: 600;">cdn.digialm.com</code> response sheet link above for an automated 66-question audit in 2 seconds.
+            </p>
+          </div>
+
+          <!-- Editorial Masterclass Playbook Callout -->
+          <div class="cat-editorial-guide-card" style="background: linear-gradient(135deg, #FAF5FF 0%, #F3E8FF 100%); border: 1.5px solid #D8B4FE; border-radius: 12px; padding: 18px 22px; margin-bottom: 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+            <div style="flex: 1; min-width: 260px;">
+              <span style="font-size: 0.75rem; font-weight: 800; color: #7E22CE; text-transform: uppercase; letter-spacing: 0.05em;">📖 Masterclass Editorial Guide</span>
+              <h3 style="margin: 4px 0 0; font-size: 1.05rem; font-weight: 800; color: #4C1D95; line-height: 1.4;">
+                <a href="/blog/cat-score-calculator-2026-response-sheet-percentile-predictor" style="color: #6B2CF5; text-decoration: none;">CAT Score Calculator 2026: Calculate Raw Score from Response Sheet URL, Percentile &amp; IIM Calls &rarr;</a>
+              </h3>
+              <p style="margin: 4px 0 0; font-size: 0.85rem; color: #6B21A8;">Read our in-depth walkthrough on retrieving Digialm response sheets, slot 1/2/3 equating formulas, marks vs percentile, and composite score strategy.</p>
+            </div>
+            <a href="/blog/cat-score-calculator-2026-response-sheet-percentile-predictor" style="padding: 10px 18px; background: #6B2CF5; color: #FFFFFF; font-weight: 700; text-decoration: none; border-radius: 8px; font-size: 0.85rem; white-space: nowrap; box-shadow: 0 4px 10px rgba(107, 44, 245, 0.25);">Read Guide &rarr;</a>
+          </div>
+
           <section class="cat-seo-section-block">
             <h2 class="cat-seo-heading">How to Use CAT College Predictor 2026</h2>
             <p class="cat-seo-intro-p">

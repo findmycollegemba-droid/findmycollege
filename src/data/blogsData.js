@@ -8,6 +8,7 @@
  * 4. Regional Master Guides (Jaipur & Dehradun City Series)
  */
 
+import { CAT_SCORE_CALCULATOR_BLOG } from './blogs/catScoreCalculatorBlog.js';
 import { CAT_PERCENTILE_BLOGS } from './blogs/catPercentileBlogs.js';
 import { NON_CAT_BLOGS } from './blogs/nonCatBlogs.js';
 import { ADMISSIONS_STRATEGY_BLOGS } from './blogs/admissionsAndStrategyBlogs.js';
@@ -21,6 +22,9 @@ import { TIER1_ELITE_COLLEGES_2027_BLOGS } from './blogs/tier1EliteColleges2027B
 import { TOP_BSCHOOLS_2027_BLOGS } from './blogs/topBschools2027Blogs.js';
 
 export const BLOGS_DATA = [
+  // Flagship CAT Score Calculator & Response Sheet Masterclass 2026
+  ...CAT_SCORE_CALCULATOR_BLOG,
+
   // Top 20 Flagship MBA College Guides 2027 (IIMs, Elite Non-IIMs & Top B-Schools)
   ...TOP_IIM_COLLEGES_2027_BLOGS,
   ...TIER1_ELITE_COLLEGES_2027_BLOGS,

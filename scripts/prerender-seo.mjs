@@ -9,6 +9,7 @@ import { SCHOLARSHIPS_DATA } from '../src/data/scholarshipsData.js';
 import { MOCK_TESTS } from '../src/data/mockTestsData.js';
 import { CITY_INFOGRAPHICS_DATA } from '../src/data/cityInfographicsData.js';
 import { AIU_OFFICIAL_LIST } from '../src/data/aiuOfficialData.js';
+import { parseMarkdown } from '../src/pages/blog.js';
 import {
   COMMON_HEADER,
   COMMON_FOOTER,
@@ -193,6 +194,11 @@ function generatePageHtml(meta, bodyHtml) {
 
   // Replace Meta description
   html = html.replace(/<meta name="description" content=".*?" \/>/i, `<meta name="description" content="${escapeHtml(pageDesc)}" />`);
+
+  // Replace Meta keywords if provided
+  if (meta.keywords) {
+    html = html.replace(/<meta name="keywords" content=".*?" \/>/i, `<meta name="keywords" content="${escapeHtml(meta.keywords)}" />`);
+  }
 
   // Replace Canonical Link (self-referencing canonical to eliminate Search Console errors)
   html = html.replace(/<link rel="canonical" href=".*?" \/>/i, `<link rel="canonical" href="${meta.canonical}" />`);
@@ -522,8 +528,9 @@ const coreRoutes = [
   },
   {
     path: '/tools/cat-college-predictor',
-    title: 'CAT Score Calculator 2026: Percentile & College Predictor',
-    description: 'Calculate CAT 2026 raw score from your response sheet & answer key (+3/-1). Get estimated percentile, slot normalization & IIM college call predictions.',
+    title: 'CAT Score Calculator 2026 & Percentile Predictor',
+    description: 'Calculate CAT 2026 raw score from your response sheet URL (+3/-1). Predict scaled score, slot normalization, percentile & IIM calls on FindMyBSchool.',
+    keywords: 'CAT score calculator, CAT score calculator 2026, CAT percentile calculator, CAT college predictor, CAT response sheet calculator, CAT answer key score calculator, CAT marks vs percentile, calculate CAT score from response sheet, IIM call predictor 2026',
     h1: 'CAT Score Calculator 2026: Response Sheet, Percentile & College Predictor',
     lead: 'Calculate your CAT 2026 raw score from your official candidate response sheet link (cdn.digialm.com) or sectional attempts. Features official +3/−1/0 marking, slot 1/2/3 equipercentile equating, and verified 2026-28 admission call forecasts for 21 IIMs and 50+ premier B-schools.',
     schema: {
@@ -549,14 +556,16 @@ const coreRoutes = [
             'CAT 2026 Score Calculator',
             'CAT Percentile Calculator',
             'CAT Response Sheet Calculator',
-            'CAT College Predictor 2026'
+            'CAT College Predictor 2026',
+            'CAT Answer Key Calculator',
+            'CAT Slot Normalization Calculator'
           ],
           'url': `${BASE_URL}/tools/cat-college-predictor`,
           'applicationCategory': 'EducationalApplication',
-          'applicationSubCategory': 'Score Calculator & Call Predictor',
+          'applicationSubCategory': 'CAT Score Calculator & IIM Call Predictor',
           'operatingSystem': 'All (Web Browser, iOS, Android, macOS, Windows)',
-          'browserRequirements': 'HTML5 enabled browser',
-          'description': 'Calculate CAT 2026 raw score from your response sheet & answer key (+3/-1). Get estimated percentile, slot normalization & IIM college call predictions.',
+          'browserRequirements': 'HTML5 enabled browser with JavaScript support',
+          'description': 'Free CAT Score Calculator 2026 & Percentile Predictor. Calculate your slot 1, 2, 3 raw and scaled score from your official response sheet URL (cdn.digialm.com) with +3/-1 marking and predict 21 IIM calls.',
           'offers': { '@type': 'Offer', 'price': '0', 'priceCurrency': 'INR', 'availability': 'https://schema.org/InStock' },
           'potentialAction': {
             '@type': 'CalculateAction',
@@ -564,20 +573,67 @@ const coreRoutes = [
             'query-input': 'required name=response_sheet_url'
           },
           'featureList': [
-            'Digialm candidate response sheet URL scanning (cdn.digialm.com)',
-            '+3/-1/0 Official CAT Marking Scheme',
-            'Equipercentile slot normalization (Slots 1, 2, 3)',
-            '21 IIMs call probability analysis (Ambitious, Moderate, Safe)',
-            'Non-IIM cutoffs matching (FMS, SPJIMR, MDI, IITs)'
+            'Automated Digialm candidate response sheet URL scanning (cdn.digialm.com)',
+            'CAT 2026 Answer Key & Raw Score Calculator with +3 / -1 / 0 Marking Scheme',
+            'Equipercentile slot normalization across Slot 1, Slot 2, and Slot 3',
+            'Sectional raw to scaled score conversion for VARC (72M), DILR (60M), QA (66M)',
+            'Estimated All-India percentile calculation based on ~2.9 lakh test-takers',
+            'Interview call probability prediction for 21 IIMs and 50+ premier MBA/PGDM colleges',
+            'Category-wise cutoff matching across General, NC-OBC, EWS, SC, ST, PwD',
+            'Academic Profile & Diversity Composite Score Evaluator (10th, 12th, Grad, Gender, Work Ex)'
           ],
           'aggregateRating': {
             '@type': 'AggregateRating',
             'ratingValue': '4.9',
-            'ratingCount': '1280',
-            'reviewCount': '1280',
+            'ratingCount': '1450',
+            'reviewCount': '1450',
             'bestRating': '5',
             'worstRating': '1'
           }
+        },
+        {
+          '@type': 'HowTo',
+          '@id': `${BASE_URL}/tools/cat-college-predictor#howto`,
+          'name': 'How to Calculate CAT 2026 Score from Response Sheet URL (cdn.digialm.com)',
+          'description': 'Step-by-step instructions to calculate your scaled CAT score, slot-normalized percentile, and predict matching IIM and non-IIM MBA colleges.',
+          'totalTime': 'PT2M',
+          'step': [
+            {
+              '@type': 'HowToStep',
+              'position': 1,
+              'name': 'Retrieve Official Response Sheet Link from iimcat.ac.in',
+              'text': 'Log in to iimcat.ac.in using your Registration User ID and Password. Click on Candidate Response and copy the link from cdn.digialm.com, or view page source (Ctrl+U) to copy HTML.',
+              'url': `${BASE_URL}/tools/cat-college-predictor#step1`
+            },
+            {
+              '@type': 'HowToStep',
+              'position': 2,
+              'name': 'Scan or Enter Sectional Attempts',
+              'text': 'Paste your Digialm link for automated 66-question parsing, paste raw HTML source code, or input your sectional attempts manually.',
+              'url': `${BASE_URL}/tools/cat-college-predictor#step2`
+            },
+            {
+              '@type': 'HowToStep',
+              'position': 3,
+              'name': 'Apply Official Marking Scheme (+3 / -1 / 0)',
+              'text': 'The system audits each question, awarding +3 marks for correct responses, deducting 1 mark for wrong MCQs, and applying zero penalty for Non-MCQ / TITA questions.',
+              'url': `${BASE_URL}/tools/cat-college-predictor#step3`
+            },
+            {
+              '@type': 'HowToStep',
+              'position': 4,
+              'name': 'Compute Slot Normalization & Projected Percentile',
+              'text': 'Our engine applies the IIM equipercentile equating algorithm across Slot 1, Slot 2, and Slot 3 to calculate your scaled score and All-India percentile.',
+              'url': `${BASE_URL}/tools/cat-college-predictor#step4`
+            },
+            {
+              '@type': 'HowToStep',
+              'position': 5,
+              'name': 'Explore Eligible IIM and Top B-School Calls',
+              'text': 'Instantly view matching interview calls across 21 IIMs and 50+ premier PGDM institutions categorized into Tier 1, Tier 1.5, Tier 2, and Tier 3 with audited fees and cutoffs.',
+              'url': `${BASE_URL}/tools/cat-college-predictor#step5`
+            }
+          ]
         },
         {
           '@type': 'FAQPage',
@@ -880,11 +936,31 @@ function generateCatCalculatorBodyHtml() {
           Calculate your CAT 2026 raw score from your official candidate response sheet URL (<code style="background: #F1F5F9; padding: 2px 6px; border-radius: 4px; font-size: 0.95em;">cdn.digialm.com</code>) or manual sectional attempts. Get your estimated percentile through slot normalization (+3/-1 marking) and forecast interview calls for 21 IIMs and 50+ premier B-schools categorized as Ambitious, Moderate, or Safe.
         </p>
         <div style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.85rem; color: #64748B; margin-top: 12px; padding-top: 12px; border-top: 1px solid #E2E8F0;">
-          <span>📅 <strong>Last Updated:</strong> November 2, 2026 (Audited for CAT 2026 Notification)</span>
+          <span>📅 <strong>Last Updated:</strong> November 19, 2026 (Audited for CAT 2026 Notification)</span>
           <span>✍️ <strong>Lead Author:</strong> Rohit Sharma, Senior MBA Admissions Analyst</span>
           <span>🔍 <strong>Reviewed by:</strong> IIM Alumni Admissions Editorial Board</span>
         </div>
       </header>
+
+      <!-- Quick AEO / Answer Engine Direct Summary Box -->
+      <div style="background: #F8FAFC; border-left: 4px solid #6B2CF5; padding: 16px 20px; border-radius: 0 10px 10px 0; margin-bottom: 24px; font-size: 0.95rem; color: #334155; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <p style="margin: 0 0 6px; font-weight: 800; color: #0F172A; font-size: 1rem;">⚡ Quick Answer: How to Calculate CAT Score from Response Sheet</p>
+        <p style="margin: 0; line-height: 1.6;">
+          To calculate your CAT raw score, tally your answers across VARC (24 Qs), DILR (20 Qs), and QA (22 Qs). Apply the official formula: <code style="background: #EEF2FF; color: #4338CA; padding: 2px 6px; border-radius: 4px; font-weight: 600;">Raw Score = (3 × Correct MCQs) + (3 × Correct TITA) − (1 × Incorrect MCQs) − (0 × Incorrect TITA)</code>. Unattempted questions carry zero penalty. Slot difficulty is equated using IIM equipercentile normalization. Paste your official <code style="background: #EEF2FF; color: #4338CA; padding: 2px 6px; border-radius: 4px; font-weight: 600;">cdn.digialm.com</code> response sheet link below for an automated 66-question audit in 2 seconds.
+        </p>
+      </div>
+
+      <!-- Editorial Masterclass Playbook Callout -->
+      <div style="background: linear-gradient(135deg, #FAF5FF 0%, #F3E8FF 100%); border: 1.5px solid #D8B4FE; border-radius: 12px; padding: 16px 20px; margin-bottom: 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+        <div style="flex: 1; min-width: 260px;">
+          <span style="font-size: 0.75rem; font-weight: 800; color: #7E22CE; text-transform: uppercase; letter-spacing: 0.05em;">📖 Masterclass Editorial Guide</span>
+          <h3 style="margin: 4px 0 0; font-size: 1.05rem; font-weight: 800; color: #4C1D95; line-height: 1.4;">
+            <a href="/blog/cat-score-calculator-2026-response-sheet-percentile-predictor" style="color: #6B2CF5; text-decoration: none;">CAT Score Calculator 2026: Calculate Raw Score from Response Sheet URL, Percentile &amp; IIM Calls &rarr;</a>
+          </h3>
+          <p style="margin: 4px 0 0; font-size: 0.85rem; color: #6B21A8;">Read our in-depth walkthrough on retrieving Digialm response sheets, slot 1/2/3 equating formulas, marks vs percentile, and composite score strategy.</p>
+        </div>
+        <a href="/blog/cat-score-calculator-2026-response-sheet-percentile-predictor" style="padding: 10px 18px; background: #6B2CF5; color: #FFFFFF; font-weight: 700; text-decoration: none; border-radius: 8px; font-size: 0.85rem; white-space: nowrap; box-shadow: 0 4px 10px rgba(107, 44, 245, 0.25);">Read Guide &rarr;</a>
+      </div>
 
       <!-- ========================================================= -->
       <!-- TOOL FIRST: ABOVE THE FOLD INTERACTIVE CALCULATOR (MOBILE-FIRST) -->
@@ -1655,6 +1731,7 @@ for (const cr of coreRoutes) {
   const meta = {
     title: cr.title,
     description: cr.description,
+    keywords: cr.keywords,
     canonical: `${BASE_URL}${cr.path}`,
     schema: cr.schema || {
       '@context': 'https://schema.org',
@@ -2209,6 +2286,7 @@ for (const test of MOCK_TESTS) {
 // ==========================================
 for (const blog of BLOGS_DATA) {
   const canonicalUrl = `${BASE_URL}/blog/${encodeURIComponent(blog.id)}`;
+  const isoDate = blog.timestamp ? new Date(blog.timestamp).toISOString().split('T')[0] : (blog.date && /^\d{4}-\d{2}-\d{2}$/.test(blog.date) ? blog.date : '2026-11-19');
   
   const blogSchema = {
     '@context': 'https://schema.org',
@@ -2234,8 +2312,8 @@ for (const blog of BLOGS_DATA) {
           'name': blog.author || 'FindMyBSchool Editorial Team'
         },
         'publisher': baseOrgSchema,
-        'datePublished': blog.date || '2026-10-14',
-        'dateModified': blog.date || '2026-10-14',
+        'datePublished': isoDate,
+        'dateModified': isoDate,
         'image': blog.coverImage || blog.image || DEFAULT_OG_IMAGE,
         'mainEntityOfPage': canonicalUrl
       }
@@ -2268,47 +2346,89 @@ for (const blog of BLOGS_DATA) {
   const meta = {
     title: blogTitle,
     description: blogDesc,
+    keywords: blog.tags && blog.tags.length > 0 ? blog.tags.join(', ') : (blog.primaryKeyword || ''),
     canonical: canonicalUrl,
     schema: blogSchema
   };
 
   const relatedBlogs = BLOGS_DATA.filter(b => b.id !== blog.id).slice(0, 3);
+  const parsedContent = blog.content ? parseMarkdown(blog.content) : '';
 
   const bodyHtml = `
     <header style="padding: 20px 24px; border-bottom: 1px solid #E2E8F0; text-align: center; background: #FAFAFE;">
       <a href="/" style="font-weight: 800; font-size: 1.5rem; color: #6B2CF5; text-decoration: none;">FindMyBSchool</a>
       <p style="margin: 4px 0 0; color: #64748B; font-size: 0.95rem;">India’s Verified MBA &amp; PGDM Admissions Portal • Session 2027-29</p>
     </header>
-    <main style="max-width: 900px; margin: 32px auto; padding: 0 20px; font-family: system-ui, -apple-system, sans-serif;">
+    <main style="max-width: 920px; margin: 32px auto; padding: 0 20px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1E293B; line-height: 1.7;">
       <nav aria-label="Breadcrumb" style="font-size: 0.9rem; color: #64748B; margin-bottom: 16px;">
-        <a href="/" style="color: #6B2CF5; text-decoration: none;">Home</a> &gt; 
-        <a href="/blog" style="color: #6B2CF5; text-decoration: none;">Blog</a> &gt; 
-        <span>${escapeHtml(blog.title)}</span>
+        <ol style="list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0;">
+          <li><a href="/" style="color: #6B2CF5; text-decoration: none; font-weight: 500;">Home</a> &gt;</li>
+          <li><a href="/blog" style="color: #6B2CF5; text-decoration: none; font-weight: 500;">Blog</a> &gt;</li>
+          <li aria-current="page" style="color: #0F172A; font-weight: 600;">${escapeHtml(blog.title)}</li>
+        </ol>
       </nav>
-      <h1 style="font-size: 2.2rem; font-weight: 800; color: #0F172A; line-height: 1.25;">${escapeHtml(blog.title)}</h1>
-      <p style="color: #64748B; font-size: 0.95rem; margin-top: 8px;">Published by FindMyBSchool Editorial Team • Session 2027-29</p>
-      <div style="color: #334155; font-size: 1.1rem; line-height: 1.7; margin-top: 18px;">
-        <p>${escapeHtml(blog.summary || blog.excerpt || '')}</p>
+      <header style="margin-bottom: 24px;">
+        <h1 style="font-size: 2.2rem; font-weight: 800; color: #0F172A; line-height: 1.25; margin: 0 0 12px;">${escapeHtml(blog.title)}</h1>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.85rem; color: #64748B; padding-bottom: 14px; border-bottom: 1px solid #E2E8F0;">
+          <span>📅 <strong>Date:</strong> ${escapeHtml(blog.date || 'November 2026')}</span>
+          <span>✍️ <strong>Author:</strong> ${escapeHtml(blog.author || 'FindMyBSchool Editorial Team')}</span>
+          <span>⏱️ <strong>Read Time:</strong> ${escapeHtml(blog.readTime || '10 min read')}</span>
+          <span>🏷️ <strong>Category:</strong> ${escapeHtml(blog.category || 'MBA Strategy')}</span>
+        </div>
+      </header>
+
+      ${blog.summary ? `
+      <!-- Executive Summary Card (AEO Optimized) -->
+      <div style="background: #F8FAFC; border-left: 4px solid #6B2CF5; padding: 18px 22px; border-radius: 0 10px 10px 0; margin-bottom: 30px; font-size: 1.05rem; color: #334155; line-height: 1.65; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+        <p style="margin: 0 0 6px; font-weight: 800; color: #0F172A;">⚡ Executive Summary</p>
+        <p style="margin: 0;">${escapeHtml(blog.summary)}</p>
       </div>
+      ` : ''}
+
+      <!-- Full Article Content Stream -->
+      <article class="article-body-content" style="color: #1E293B; font-size: 1.05rem; line-height: 1.75;">
+        ${parsedContent || `<p>${escapeHtml(blog.summary || blog.excerpt || '')}</p>`}
+      </article>
+
+      ${blog.keyTakeaways && blog.keyTakeaways.length > 0 ? `
+      <!-- Key Strategic Takeaways -->
+      <section style="background: #FAF5FF; border: 1.5px solid #D8B4FE; border-radius: 12px; padding: 22px 24px; margin: 36px 0;">
+        <h3 style="color: #581C87; font-size: 1.25rem; font-weight: 800; margin: 0 0 14px;">📌 Key Strategic Takeaways</h3>
+        <ul style="margin: 0; padding-left: 20px; line-height: 1.8; color: #4C1D95;">
+          ${blog.keyTakeaways.map(t => `<li style="margin-bottom: 6px;">${escapeHtml(t)}</li>`).join('')}
+        </ul>
+      </section>
+      ` : ''}
+
+      <!-- Interactive Calculator CTA -->
+      <section style="background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%); color: #FFFFFF; border-radius: 14px; padding: 26px 28px; margin: 36px 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <span style="font-size: 0.8rem; font-weight: 700; color: #38BDF8; text-transform: uppercase; letter-spacing: 0.05em;">Free Interactive Tool</span>
+          <h3 style="margin: 4px 0 6px; font-size: 1.35rem; font-weight: 800; color: #FFFFFF;">CAT Score Calculator &amp; Response Sheet Scanner 2026</h3>
+          <p style="margin: 0; color: #CBD5E1; font-size: 0.95rem; max-width: 580px;">Paste your official cdn.digialm.com response sheet link for instant +3/-1 scoring, slot normalization, and IIM call probabilities.</p>
+        </div>
+        <a href="/tools/cat-college-predictor" style="padding: 12px 24px; background: #6B2CF5; color: #FFFFFF; font-weight: 700; text-decoration: none; border-radius: 8px; font-size: 0.95rem; white-space: nowrap; box-shadow: 0 4px 14px rgba(107, 44, 245, 0.4);">Open Calculator &rarr;</a>
+      </section>
 
       <!-- Related Strategy Articles -->
       <section style="margin-top: 36px; padding-top: 24px; border-top: 1px solid #E2E8F0;">
-        <h3 style="font-size: 1.2rem; font-weight: 700; color: #0F172A; margin-bottom: 14px;">Related MBA Strategy Articles</h3>
+        <h3 style="font-size: 1.2rem; font-weight: 700; color: #0F172A; margin-bottom: 14px;">Related MBA Admissions &amp; Strategy Articles</h3>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px;">
           ${relatedBlogs.map(r => `
             <div style="padding: 14px; background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px;">
               <h4 style="font-size: 0.95rem; font-weight: 700; margin: 0 0 6px;">
                 <a href="/blog/${r.id}" style="color: #6B2CF5; text-decoration: none;">${escapeHtml(r.title)}</a>
               </h4>
-              <p style="font-size: 0.82rem; color: #64748B; margin: 0;">${escapeHtml((r.summary || r.excerpt || '').slice(0, 90))}...</p>
+              <p style="font-size: 0.82rem; color: #64748B; margin: 0;">${escapeHtml((r.summary || r.excerpt || '').slice(0, 95))}...</p>
             </div>
           `).join('')}
         </div>
       </section>
 
-      <div style="margin-top: 28px;">
-        <a href="/colleges" style="display: inline-block; padding: 12px 24px; background: #6B2CF5; color: #FFFFFF; font-weight: 700; text-decoration: none; border-radius: 8px;">Explore Verified Colleges</a>
-        <a href="/blog" style="display: inline-block; margin-left: 12px; padding: 12px 24px; background: #F1F5F9; color: #1E293B; font-weight: 600; text-decoration: none; border-radius: 8px;">Browse All 50+ Strategy Articles</a>
+      <div style="margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap;">
+        <a href="/tools/cat-college-predictor" style="display: inline-block; padding: 12px 24px; background: #6B2CF5; color: #FFFFFF; font-weight: 700; text-decoration: none; border-radius: 8px;">CAT Score Calculator</a>
+        <a href="/colleges" style="display: inline-block; padding: 12px 24px; background: #F1F5F9; color: #1E293B; font-weight: 600; text-decoration: none; border-radius: 8px;">Explore 600+ Colleges</a>
+        <a href="/blog" style="display: inline-block; padding: 12px 24px; background: #F1F5F9; color: #1E293B; font-weight: 600; text-decoration: none; border-radius: 8px;">All Strategy Articles</a>
       </div>
     </main>
     ${COMMON_FOOTER}

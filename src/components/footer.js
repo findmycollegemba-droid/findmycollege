@@ -69,7 +69,8 @@ export function renderFooter() {
             <li><a href="/exams/cmat" data-route="exams" data-sub="cmat">CMAT 2027 (JBIMS & GIM)</a></li>
             <li><a href="/exams/nmat" data-route="exams" data-sub="nmat">NMAT by GMAC (NMIMS)</a></li>
             <li><a href="/mock-test" data-route="mock-test" class="footer-accent-link green">⚡ All-India Free Mock CBT</a></li>
-            <li><a href="/tools/cat-college-predictor" data-route="tools" data-sub="cat">CAT College Predictor</a></li>
+            <li><a href="/tools/cat-college-predictor" data-route="tools" data-sub="cat">CAT Score Calculator & Predictor</a></li>
+            <li><a href="/blog/cat-score-calculator-2026-response-sheet-percentile-predictor" data-route="blog" data-sub="cat-score-calculator-2026-response-sheet-percentile-predictor">CAT Score Calculator Guide</a></li>
             <li><a href="/tools/xat-percentile-calculator" data-route="tools" data-sub="xat">XAT Score Calculator</a></li>
           </ul>
         </div>

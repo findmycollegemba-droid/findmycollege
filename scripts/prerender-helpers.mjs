@@ -73,7 +73,8 @@ export const COMMON_FOOTER = `
       <div>
         <h3 style="color: #FFFFFF; font-size: 1.1rem; font-weight: 800; margin: 0 0 12px;">Tools &amp; Free Resources</h3>
         <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px;">
-          <li><a href="/tools/cat-college-predictor" style="color: #CBD5E1; text-decoration: none;">CAT Score &amp; College Predictor</a></li>
+          <li><a href="/tools/cat-college-predictor" style="color: #CBD5E1; text-decoration: none;">CAT Score Calculator &amp; Predictor</a></li>
+          <li><a href="/blog/cat-score-calculator-2026-response-sheet-percentile-predictor" style="color: #CBD5E1; text-decoration: none;">CAT Score Calculator Guide</a></li>
           <li><a href="/tools/xat-percentile-calculator" style="color: #CBD5E1; text-decoration: none;">XAT Score Calculator 2027</a></li>
           <li><a href="/tools/cmat-percentile-calculator" style="color: #CBD5E1; text-decoration: none;">CMAT Percentile Predictor 2026</a></li>
           <li><a href="/tools/snap-score-calculator" style="color: #CBD5E1; text-decoration: none;">SNAP Score Calculator 2026</a></li>

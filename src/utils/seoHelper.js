@@ -158,9 +158,10 @@ export async function updatePageSEO(page = 'home', sub = null, params = null) {
     case 'tools': {
       const toolSub = sub || params?.get('sub') || 'cat';
       if (toolSub === 'cat') {
-        meta.title = 'CAT Score Calculator 2026: Percentile & College Predictor';
-        meta.description = 'Calculate CAT 2026 raw score from your response sheet & answer key (+3/-1). Get estimated percentile, slot normalization & IIM college call predictions.';
+        meta.title = 'CAT Score Calculator 2026 & Percentile Predictor';
+        meta.description = 'Calculate CAT 2026 raw score from your response sheet URL (+3/-1). Predict scaled score, slot normalization, percentile & IIM calls on FindMyBSchool.';
         meta.canonical = `${BASE_URL}/tools/cat-college-predictor`;
+        meta.keywords = 'CAT score calculator, CAT score calculator 2026, CAT percentile calculator, CAT college predictor, CAT response sheet calculator, CAT answer key score calculator, CAT marks vs percentile, calculate CAT score from response sheet, IIM call predictor 2026';
         meta.toolSub = 'cat';
         meta.breadcrumbs = [
           { name: 'Home', url: `${BASE_URL}/` },
@@ -290,6 +291,11 @@ export async function updatePageSEO(page = 'home', sub = null, params = null) {
         meta.canonical = `${BASE_URL}/blog/${encodeURIComponent(specificBlog.id)}`;
         meta.ogType = 'article';
         meta.blogData = specificBlog;
+        if (specificBlog.tags && specificBlog.tags.length > 0) {
+          meta.keywords = specificBlog.tags.join(', ');
+        } else if (specificBlog.primaryKeyword) {
+          meta.keywords = specificBlog.primaryKeyword;
+        }
         if (specificBlog.image || specificBlog.coverImage) {
           meta.image = specificBlog.image || specificBlog.coverImage;
         }
@@ -480,6 +486,9 @@ export async function updatePageSEO(page = 'home', sub = null, params = null) {
 
   setMeta('name', 'title', meta.title);
   setMeta('name', 'description', meta.description);
+  if (meta.keywords) {
+    setMeta('name', 'keywords', meta.keywords);
+  }
   const robotsDirective = meta.robots || 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
   setMeta('name', 'robots', robotsDirective);
 

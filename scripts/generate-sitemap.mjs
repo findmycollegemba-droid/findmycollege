@@ -80,7 +80,7 @@ addMain(`${BASE_URL}/programs/specializations`, 'weekly', '0.85', TODAY);
 addMain(`${BASE_URL}/programs/roi`, 'weekly', '0.85', TODAY);
 addMain(`${BASE_URL}/blog`, 'daily', '0.85', TODAY, { loc: DEFAULT_IMAGE, title: 'MBA Strategy Blog & Editorial Prep Guides' });
 addMain(`${BASE_URL}/aiu-approved-campuses`, 'daily', '0.95', TODAY, { loc: DEFAULT_IMAGE, title: 'AIU Approved MBA & PGDM Campuses Directory' });
-addMain(`${BASE_URL}/tools/cat-college-predictor`, 'daily', '1.0', TODAY, { loc: DEFAULT_IMAGE, title: 'CAT Score Calculator 2026: Percentile & College Predictor' });
+addMain(`${BASE_URL}/tools/cat-college-predictor`, 'daily', '1.0', TODAY, { loc: DEFAULT_IMAGE, title: 'CAT Score Calculator 2026 & Percentile Predictor' });
 addMain(`${BASE_URL}/tools/xat-percentile-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'XAT Score Calculator & XLRI Percentile Predictor 2027' });
 addMain(`${BASE_URL}/tools/cmat-percentile-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'CMAT Score Calculator & JBIMS Cutoff Predictor 2026' });
 addMain(`${BASE_URL}/tools/snap-score-calculator`, 'weekly', '0.9', TODAY, { loc: DEFAULT_IMAGE, title: 'SNAP 2026 Score Calculator & SIBM Percentile Predictor' });
