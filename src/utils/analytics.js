@@ -65,23 +65,37 @@ export function initGA(customId = null) {
   }
 }
 
+let isInitialPixelPageView = true;
+
 /**
  * Track virtual page views on SPA route changes.
  * @param {string} pagePath - URL path (e.g. '/colleges/iim-ahmedabad')
  * @param {string} pageTitle - Document Title (e.g. 'IIM Ahmedabad Admission 2027-29...')
  */
 export function trackPageView(pagePath, pageTitle) {
-  if (typeof window === 'undefined' || typeof window.gtag !== 'function') return;
+  if (typeof window === 'undefined') return;
 
   const currentPath = pagePath || window.location.pathname + window.location.search;
   const currentTitle = pageTitle || document.title;
   const currentUrl = window.location.href;
 
-  window.gtag('event', 'page_view', {
-    page_path: currentPath,
-    page_title: currentTitle,
-    page_location: currentUrl,
-  });
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', 'page_view', {
+      page_path: currentPath,
+      page_title: currentTitle,
+      page_location: currentUrl,
+    });
+  }
+
+  // Meta Pixel SPA virtual page view tracking
+  if (typeof window.fbq === 'function') {
+    if (isInitialPixelPageView) {
+      // The base Meta Pixel snippet in index.html already tracks PageView on initial load
+      isInitialPixelPageView = false;
+    } else {
+      window.fbq('track', 'PageView');
+    }
+  }
 }
 
 /**
@@ -103,7 +117,7 @@ export function trackEvent(eventName, eventParams = {}) {
 }
 
 /**
- * Track Student Lead Generation (Standard GA4 Recommended Event)
+ * Track Student Lead Generation (Standard GA4 Recommended Event & Meta Pixel Lead)
  */
 export function trackLeadSubmission({ formName, source, collegeName = '', leadCategory = 'counseling' }) {
   trackEvent('generate_lead', {
@@ -114,6 +128,18 @@ export function trackLeadSubmission({ formName, source, collegeName = '', leadCa
     currency: 'INR',
     value: 100, // Nominal lead conversion value
   });
+
+  if (typeof window.fbq === 'function') {
+    try {
+      window.fbq('track', 'Lead', {
+        content_name: formName || 'Admissions Inquiry',
+        content_category: leadCategory,
+        college_name: collegeName,
+        currency: 'INR',
+        value: 100,
+      });
+    } catch (_) {}
+  }
 }
 
 /**
@@ -135,6 +161,18 @@ export function trackBrochureDownload(college) {
     currency: 'INR',
     value: 100,
   });
+
+  if (typeof window.fbq === 'function') {
+    try {
+      window.fbq('track', 'Lead', {
+        content_name: `${collegeName} Brochure Download`,
+        content_category: 'Brochure',
+        college_name: collegeName,
+        currency: 'INR',
+        value: 100,
+      });
+    } catch (_) {}
+  }
 }
 
 /**
@@ -156,6 +194,15 @@ export function trackSearch(searchQuery, resultsCount = 0) {
     search_term: searchQuery,
     results_count: resultsCount,
   });
+
+  if (typeof window.fbq === 'function') {
+    try {
+      window.fbq('track', 'Search', {
+        search_string: searchQuery,
+        content_category: 'Colleges',
+      });
+    } catch (_) {}
+  }
 }
 
 /**

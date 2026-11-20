@@ -177,6 +177,7 @@ for (const file of htmlFiles) {
   // 8. Image Alts
   const imgMatches = content.match(/<img\b[^>]*>/gi) || [];
   for (const img of imgMatches) {
+    if (img.includes('facebook.com/tr') || img.includes('display:none')) continue;
     if (!img.includes('alt=') || /alt=["']\s*["']/.test(img)) {
       results.stats.imagesWithoutAlt++;
       // sample
