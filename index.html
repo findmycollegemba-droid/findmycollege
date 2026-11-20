@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Analytics (GA4) -->
+    <!-- Google Tag (AW-630226159) -->
+    <script async src="https://www.googletagmanager.com/gtm.js?id=AW-630226159"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+      gtag('config', 'AW-630226159');
+    </script>
+
+    <!-- Google Analytics (GA4) -->
+    <script>
       gtag('config', '%VITE_GA_MEASUREMENT_ID%', {
         send_page_view: false
       });

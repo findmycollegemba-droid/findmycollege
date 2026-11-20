@@ -8,6 +8,9 @@ export const GA_MEASUREMENT_ID =
   (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_GA_MEASUREMENT_ID) || 
   'G-J7B8H8M9FE';
 
+// Google Ads / Google Tag ID
+export const GOOGLE_ADS_ID = 'AW-630226159';
+
 /**
  * Initialize Google Analytics (gtag.js) script dynamically if not present in HTML.
  */
@@ -42,6 +45,7 @@ export function initGA(customId = null) {
     send_page_view: false, // SPA handles pageviews to prevent duplicate counts
     cookie_flags: 'SameSite=None;Secure',
   });
+  window.gtag('config', GOOGLE_ADS_ID);
 
   // 3. Inject Google Tag Manager script non-blockingly on idle or interaction
   const scriptId = 'google-analytics-script';
